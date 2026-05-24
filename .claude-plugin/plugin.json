@@ -1,0 +1,50 @@
+{
+  "name": "skillscale",
+  "version": "1.0.0",
+  "description": "Skillscale — The AI Skills Marketplace. Discover, buy, sell, and mint Claude Code plugins with gem-tier quality scores and live Polymarket-style trading.",
+  "author": "kitmike",
+  "homepage": "https://skillscale.dev",
+  "license": "MIT",
+  "tags": ["marketplace", "skills", "plugins", "trading", "gems", "mcp"],
+  "commands": [
+    {
+      "name": "browse",
+      "description": "Browse the Skillscale marketplace for AI skills",
+      "script": "commands/browse.md"
+    },
+    {
+      "name": "submit",
+      "description": "Submit a new skill to the Skillscale marketplace",
+      "script": "commands/submit.md"
+    },
+    {
+      "name": "audit",
+      "description": "Run the AI agent security audit on a skill",
+      "script": "commands/audit.md"
+    }
+  ],
+  "agents": [
+    {
+      "name": "SecurityAuditor",
+      "description": "Analyzes Claude Code plugins for security risks, prompt injection, data exfiltration, and permission over-scope",
+      "model": "claude-opus-4-7"
+    },
+    {
+      "name": "ModelMatcher",
+      "description": "Recommends the optimal Claude model for a given skill based on task complexity and requirements",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "name": "QualityChecker",
+      "description": "Evaluates skill documentation quality, description clarity, and example coverage",
+      "model": "claude-haiku-4-5"
+    }
+  ],
+  "mcp": {
+    "server": "node",
+    "args": ["node_modules/.bin/next", "start"],
+    "env": {
+      "PORT": "3000"
+    }
+  }
+}

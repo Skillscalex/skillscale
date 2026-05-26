@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    {
+      "name": "Database Inspector",
+      "description": "Plugin that helps Claude inspect database schemas.",
+      "type": "plugin",
+      "author": "Hub Author",
+      "github_url": "https://github.com/example/database-inspector",
+      "tags": ["database", "claude"]
+    }
+  ]
+}

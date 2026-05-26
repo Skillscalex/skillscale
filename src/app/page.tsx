@@ -31,20 +31,8 @@ export default function HomePage() {
       {/* ── Hero ──────────────────────────────────────────────── */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #fdf8f3 0%, #ede9fe 50%, #fdf8f3 100%)" }}
+        style={{ background: "linear-gradient(135deg, #fffaf4 0%, #f1eefe 58%, #fff6ea 100%)" }}
       >
-        {/* Decorative blobs */}
-        <div
-          aria-hidden
-          className="absolute -top-32 -right-32 w-96 h-96 rounded-full opacity-20"
-          style={{ background: "radial-gradient(circle, #7c3aed, transparent)" }}
-        />
-        <div
-          aria-hidden
-          className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full opacity-15"
-          style={{ background: "radial-gradient(circle, #60efff, transparent)" }}
-        />
-
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold mb-6"
                style={{ background: "var(--accent-light)", color: "var(--accent)" }}>
@@ -137,6 +125,12 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+
+      <footer className="border-t" style={{ borderColor: "var(--border)", background: "var(--bg-surface)" }}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 text-sm" style={{ color: "var(--text-secondary)" }}>
+          Component source methodology, crawl provenance, and stale-record handling are documented outside the hero in the ingestion docs.
+        </div>
+      </footer>
     </main>
   );
 }

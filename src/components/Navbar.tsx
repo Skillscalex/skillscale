@@ -103,8 +103,16 @@ export function Navbar({ currency, onCurrencyChange }: NavbarProps) {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-[#1e1e2e] bg-[#0a0a0f] px-4 py-3 space-y-1">
-          <div className="flex items-center gap-2 px-3 py-2 rounded-xl border border-[#1e1e2e] bg-[#12121a] mb-3">
+        <div className="md:hidden fixed inset-0 z-50">
+          <button className="absolute inset-0 bg-black/60" onClick={() => setMobileOpen(false)} aria-label="Close menu" />
+          <div className="absolute right-0 top-0 bottom-0 w-[min(21rem,88vw)] border-l border-[#1e1e2e] bg-[#0a0a0f]/95 backdrop-blur-xl px-4 py-[calc(env(safe-area-inset-top)+1rem)] shadow-2xl">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-sm font-semibold text-[#f8f8ff]">Navigation</span>
+              <button className="min-h-11 min-w-11 rounded-lg text-[#8b8ba7] hover:bg-[#1e1e2e]" onClick={() => setMobileOpen(false)} aria-label="Close menu">
+                <X size={18} className="mx-auto" />
+              </button>
+            </div>
+          <div className="flex min-h-11 items-center gap-2 px-3 py-2 rounded-xl border border-[#1e1e2e] bg-[#12121a] mb-3">
             <Search size={15} className="text-[#8b8ba7]" />
             <input
               type="text"
@@ -122,11 +130,12 @@ export function Navbar({ currency, onCurrencyChange }: NavbarProps) {
               key={l.href}
               href={l.href}
               onClick={() => setMobileOpen(false)}
-              className="block px-3 py-2.5 rounded-lg text-sm text-[#8b8ba7] hover:text-[#f8f8ff] hover:bg-[#1e1e2e] transition-colors"
+              className="block min-h-11 px-3 py-2.5 rounded-lg text-sm text-[#8b8ba7] hover:text-[#f8f8ff] hover:bg-[#1e1e2e] transition-colors"
             >
               {l.label}
             </Link>
           ))}
+          </div>
         </div>
       )}
     </header>

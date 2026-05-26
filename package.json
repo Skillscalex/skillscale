@@ -5,7 +5,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "ingest:all": "jiti src/ingestion/cli.ts",
+    "ingest:source": "jiti src/ingestion/cli.ts",
+    "ingest:dry-run": "jiti src/ingestion/cli.ts --dry-run",
+    "ingest:resume": "jiti src/ingestion/cli.ts --resume",
+    "test:ingestion": "jiti src/ingestion/__tests__/ingestion.test.ts",
+    "test:e2e:mobile": "jiti src/ingestion/__tests__/mobile-layout.test.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.98.0",

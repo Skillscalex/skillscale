@@ -1,287 +1,312 @@
 "use client";
 
-import { useState, useMemo } from "react";
-import { Search, SlidersHorizontal, X } from "lucide-react";
-import { SkillCard } from "@/components/SkillCard";
-import { GemBadge } from "@/components/GemBadge";
-import { MOCK_SKILLS, CATEGORIES } from "@/lib/mock-data";
-import { useCurrency } from "@/components/Providers";
-import type { GemTier } from "@/types/skill";
+import { useEffect, useMemo, useState } from "react";
+import {
+  Boxes,
+  Code2,
+  ExternalLink,
+  Filter,
+  Github,
+  Menu,
+  Package,
+  Search,
+  ShieldAlert,
+  Sparkles,
+  X,
+} from "lucide-react";
 
-const GEM_TIERS: GemTier[] = ["diamond", "emerald", "pearl", "quartz", "coal"];
-const SORT_OPTIONS = [
-  { value: "trending", label: "Trending" },
-  { value: "newest", label: "Newest" },
-  { value: "price_asc", label: "Price: Low to High" },
-  { value: "price_desc", label: "Price: High to Low" },
-  { value: "score", label: "Secure Score" },
-  { value: "downloads", label: "Most Downloaded" },
+type ComponentType =
+  | "all"
+  | "plugin"
+  | "skill"
+  | "agent"
+  | "command"
+  | "hook"
+  | "mcp_server"
+  | "lsp_server"
+  | "template"
+  | "marketplace"
+  | "theme"
+  | "style"
+  | "unknown";
+
+interface DiscoveryComponent {
+  canonicalSlug: string;
+  name: string;
+  description: string;
+  componentType: ComponentType;
+  categories: string[];
+  tags: string[];
+  authorName?: string;
+  githubUrl?: string;
+  packageUrl?: string;
+  installCommand?: string;
+  marketplaceName?: string;
+  officialVerified: boolean;
+  installCount?: number;
+  starCount?: number;
+  riskFlags: string[];
+  securityNotes?: string;
+  compatibility: string[];
+  sourceUrls: string[];
+  lastSeenAt?: string;
+  sourceUpdatedAt?: string;
+  provenance?: Array<{ sourceName: string; sourceUrl: string; extractionMethod: string; confidenceScore: number; contentHash?: string }>;
+}
+
+const TABS: Array<{ label: string; value: ComponentType }> = [
+  { label: "All", value: "all" },
+  { label: "Plugins", value: "plugin" },
+  { label: "Skills", value: "skill" },
+  { label: "Agents", value: "agent" },
+  { label: "Commands", value: "command" },
+  { label: "Hooks", value: "hook" },
+  { label: "MCP Servers", value: "mcp_server" },
+  { label: "LSP Servers", value: "lsp_server" },
+  { label: "Templates", value: "template" },
+  { label: "Marketplaces", value: "marketplace" },
+  { label: "Themes / Styles", value: "theme" },
+  { label: "More", value: "unknown" },
+];
+
+const FALLBACK_COMPONENTS: DiscoveryComponent[] = [
+  {
+    canonicalSlug: "claude-code-plugin-template",
+    name: "Claude Code Plugin Template",
+    description: "Starter template for packaging commands, hooks, and settings as a Claude Code plugin.",
+    componentType: "template",
+    categories: ["Developer Tools"],
+    tags: ["claude-code", "plugin", "template"],
+    authorName: "Skillscale Seed",
+    githubUrl: "https://github.com/anthropics/claude-plugins-official",
+    installCommand: "claude plugin install <repo>",
+    marketplaceName: "Seed Data",
+    officialVerified: false,
+    starCount: 0,
+    riskFlags: [],
+    compatibility: ["Claude Code"],
+    sourceUrls: ["https://github.com/anthropics/claude-plugins-official"],
+    provenance: [{ sourceName: "seed", sourceUrl: "local", extractionMethod: "registry", confidenceScore: 0.5 }],
+  },
+  {
+    canonicalSlug: "mcp-server-directory",
+    name: "MCP Server Directory",
+    description: "Directory-style component representing discoverable Model Context Protocol servers.",
+    componentType: "mcp_server",
+    categories: ["MCP"],
+    tags: ["mcp", "server", "directory"],
+    authorName: "Skillscale Seed",
+    marketplaceName: "Seed Data",
+    officialVerified: false,
+    riskFlags: ["review_permissions"],
+    securityNotes: "Review server permissions and requested scopes before installation.",
+    compatibility: ["Claude Desktop", "Claude Code"],
+    sourceUrls: ["https://mcpservers.org"],
+  },
+];
+
+const SORTS = [
+  ["relevance", "Relevance"],
+  ["newest", "Newest"],
+  ["install_count", "Install count"],
+  ["stars", "GitHub stars"],
+  ["last_updated", "Last updated"],
 ];
 
 export default function MarketplacePage() {
-  const { currency } = useCurrency();
-  const [search, setSearch] = useState("");
-  const [selectedTiers, setSelectedTiers] = useState<GemTier[]>([]);
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-  const [sort, setSort] = useState("trending");
-  const [freeOnly, setFreeOnly] = useState(false);
-  const [mintedOnly, setMintedOnly] = useState(false);
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [items, setItems] = useState<DiscoveryComponent[]>(FALLBACK_COMPONENTS);
+  const [count, setCount] = useState(FALLBACK_COMPONENTS.length);
+  const [query, setQuery] = useState("");
+  const [activeType, setActiveType] = useState<ComponentType>("all");
+  const [category, setCategory] = useState("");
+  const [source, setSource] = useState("");
+  const [sort, setSort] = useState("relevance");
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [selected, setSelected] = useState<DiscoveryComponent | null>(null);
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const filtered = useMemo(() => {
-    let skills = [...MOCK_SKILLS];
+  const categories = useMemo(() => Array.from(new Set(items.flatMap((item) => item.categories))).sort(), [items]);
+  const sources = useMemo(() => Array.from(new Set(items.flatMap((item) => item.provenance?.map((p) => p.sourceName) ?? item.marketplaceName ?? []))).sort(), [items]);
 
-    if (search) {
-      const q = search.toLowerCase();
-      skills = skills.filter(
-        (s) =>
-          s.title.toLowerCase().includes(q) ||
-          s.description.toLowerCase().includes(q) ||
-          s.tags.some((t) => t.toLowerCase().includes(q))
-      );
-    }
+  useEffect(() => {
+    const controller = new AbortController();
+    const params = new URLSearchParams();
+    if (query) params.set("q", query);
+    if (activeType !== "all") params.set("type", activeType);
+    if (category) params.set("category", category);
+    if (source) params.set("source", source);
+    params.set("sort", sort);
+    params.set("limit", "60");
+    setLoading(true);
+    fetch(`/api/components?${params}`, { signal: controller.signal })
+      .then((res) => (res.ok ? res.json() : Promise.reject(new Error("components unavailable"))))
+      .then((json) => {
+        if (Array.isArray(json.data) && json.data.length) {
+          setItems(json.data);
+          setCount(json.count ?? json.data.length);
+        }
+      })
+      .catch(() => {})
+      .finally(() => setLoading(false));
+    return () => controller.abort();
+  }, [query, activeType, category, source, sort]);
 
-    if (selectedTiers.length > 0) {
-      skills = skills.filter((s) => selectedTiers.includes(s.gem_tier));
-    }
-
-    if (selectedCategories.length > 0) {
-      skills = skills.filter((s) => selectedCategories.includes(s.category));
-    }
-
-    if (freeOnly) skills = skills.filter((s) => s.is_free);
-    if (mintedOnly) skills = skills.filter((s) => s.is_minted);
-
-    skills.sort((a, b) => {
-      switch (sort) {
-        case "newest": return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
-        case "price_asc": return (a.price_usd) - (b.price_usd);
-        case "price_desc": return (b.price_usd) - (a.price_usd);
-        case "score": return (b.secure_score ?? 0) - (a.secure_score ?? 0);
-        case "downloads": return b.downloads - a.downloads;
-        default: return (b.volume_24h ?? 0) - (a.volume_24h ?? 0);
-      }
-    });
-
-    return skills;
-  }, [search, selectedTiers, selectedCategories, sort, freeOnly, mintedOnly]);
-
-  function toggleTier(tier: GemTier) {
-    setSelectedTiers((prev) =>
-      prev.includes(tier) ? prev.filter((t) => t !== tier) : [...prev, tier]
-    );
-  }
-
-  function toggleCategory(cat: string) {
-    setSelectedCategories((prev) =>
-      prev.includes(cat) ? prev.filter((c) => c !== cat) : [...prev, cat]
-    );
-  }
-
-  const filterCount = selectedTiers.length + selectedCategories.length + (freeOnly ? 1 : 0) + (mintedOnly ? 1 : 0);
-
-  const Sidebar = () => (
-    <div className="space-y-6">
-      {/* Gem Tiers */}
-      <div>
-        <h3 className="text-xs font-semibold text-[#8b8ba7] uppercase tracking-wider mb-3">
-          Gem Tier
-        </h3>
-        <div className="space-y-1">
-          {GEM_TIERS.map((tier) => (
-            <button
-              key={tier}
-              onClick={() => toggleTier(tier)}
-              className={`w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${
-                selectedTiers.includes(tier)
-                  ? "bg-[#7c3aed20] border border-[#7c3aed30]"
-                  : "hover:bg-[#1e1e2e]"
-              }`}
-            >
-              <GemBadge tier={tier} size="xs" showLabel />
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Category */}
-      <div>
-        <h3 className="text-xs font-semibold text-[#8b8ba7] uppercase tracking-wider mb-3">
-          Category
-        </h3>
-        <div className="space-y-1">
-          {CATEGORIES.filter((c) => c !== "All").map((cat) => (
-            <button
-              key={cat}
-              onClick={() => toggleCategory(cat)}
-              className={`w-full flex items-center px-3 py-2 rounded-lg text-sm transition-colors text-left ${
-                selectedCategories.includes(cat)
-                  ? "bg-[#7c3aed20] text-[#f8f8ff] border border-[#7c3aed30]"
-                  : "text-[#8b8ba7] hover:bg-[#1e1e2e] hover:text-[#f8f8ff]"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Toggles */}
-      <div>
-        <h3 className="text-xs font-semibold text-[#8b8ba7] uppercase tracking-wider mb-3">
-          Filters
-        </h3>
-        <div className="space-y-2">
-          {[
-            { label: "Free only", value: freeOnly, toggle: () => setFreeOnly(!freeOnly) },
-            { label: "NFT minted", value: mintedOnly, toggle: () => setMintedOnly(!mintedOnly) },
-          ].map(({ label, value, toggle }) => (
-            <label key={label} className="flex items-center gap-3 cursor-pointer px-3 py-2">
-              <div
-                onClick={toggle}
-                className={`w-9 h-5 rounded-full transition-colors relative ${
-                  value ? "bg-[#7c3aed]" : "bg-[#1e1e2e]"
-                }`}
-              >
-                <div
-                  className={`absolute top-0.5 w-4 h-4 rounded-full bg-white transition-transform ${
-                    value ? "translate-x-4" : "translate-x-0.5"
-                  }`}
-                />
-              </div>
-              <span className="text-sm text-[#8b8ba7]">{label}</span>
-            </label>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
+  const openDetail = (item: DiscoveryComponent) => {
+    setSelected(item);
+    setDrawerOpen(true);
+  };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-      {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-[#f8f8ff] mb-1">Marketplace</h1>
-        <p className="text-[#8b8ba7]">{filtered.length} skills available</p>
-      </div>
-
-      {/* Search + Sort bar */}
-      <div className="flex items-center gap-3 mb-6">
-        <div className="flex-1 flex items-center gap-2 px-4 py-2.5 rounded-xl border border-[#1e1e2e] bg-[#12121a] focus-within:border-[#7c3aed] transition-colors">
-          <Search size={16} className="text-[#8b8ba7] shrink-0" />
-          <input
-            type="text"
-            placeholder="Search skills, tags, authors…"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="flex-1 bg-transparent text-sm text-[#f8f8ff] placeholder-[#8b8ba7] outline-none"
-          />
-          {search && (
-            <button onClick={() => setSearch("")}>
-              <X size={14} className="text-[#8b8ba7] hover:text-[#f8f8ff]" />
-            </button>
-          )}
+    <div className="discovery-shell">
+      <section className="discovery-hero">
+        <div>
+          <div className="discovery-kicker"><Sparkles size={15} /> Claude ecosystem discovery</div>
+          <h1>AI Components</h1>
+          <p>Search plugins, skills, agents, MCP servers, commands, hooks, templates, and marketplaces with provenance preserved from every crawl.</p>
         </div>
+        <div className="discovery-stats" aria-label="Discovery statistics">
+          <span>{count}</span>
+          <small>indexed components</small>
+        </div>
+      </section>
 
-        <select
-          value={sort}
-          onChange={(e) => setSort(e.target.value)}
-          className="bg-[#12121a] border border-[#1e1e2e] rounded-xl px-3 py-2.5 text-sm text-[#f8f8ff] focus:border-[#7c3aed] focus:outline-none hidden sm:block"
-        >
-          {SORT_OPTIONS.map((o) => (
-            <option key={o.value} value={o.value}>{o.label}</option>
-          ))}
+      <div className="discovery-toolbar glass">
+        <div className="discovery-search">
+          <Search size={18} />
+          <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search components, tags, authors..." />
+          {query && <button onClick={() => setQuery("")} aria-label="Clear search"><X size={17} /></button>}
+        </div>
+        <select value={sort} onChange={(event) => setSort(event.target.value)} aria-label="Sort components">
+          {SORTS.map(([value, label]) => <option key={value} value={value}>{label}</option>)}
         </select>
-
-        <button
-          onClick={() => setSidebarOpen(!sidebarOpen)}
-          className={`lg:hidden flex items-center gap-2 px-4 py-2.5 rounded-xl border text-sm transition-colors ${
-            filterCount > 0
-              ? "border-[#7c3aed] bg-[#7c3aed20] text-[#f8f8ff]"
-              : "border-[#1e1e2e] bg-[#12121a] text-[#8b8ba7]"
-          }`}
-        >
-          <SlidersHorizontal size={15} />
-          Filters {filterCount > 0 && `(${filterCount})`}
+        <button className="mobile-filter-button" onClick={() => setFiltersOpen(true)} aria-label="Open filters">
+          <Filter size={18} /> Filters
         </button>
       </div>
 
-      {/* Active filters */}
-      {filterCount > 0 && (
-        <div className="flex flex-wrap gap-2 mb-5">
-          {selectedTiers.map((tier) => (
-            <button
-              key={tier}
-              onClick={() => toggleTier(tier)}
-              className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#7c3aed20] border border-[#7c3aed30] text-sm text-[#a78bfa] hover:bg-[#7c3aed30] transition-colors"
-            >
-              <GemBadge tier={tier} size="xs" showLabel={false} />
-              <span className="capitalize">{tier}</span>
-              <X size={12} />
-            </button>
-          ))}
-          {selectedCategories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => toggleCategory(cat)}
-              className="flex items-center gap-1 px-3 py-1 rounded-full bg-[#7c3aed20] border border-[#7c3aed30] text-sm text-[#a78bfa] hover:bg-[#7c3aed30] transition-colors"
-            >
-              {cat} <X size={12} />
-            </button>
-          ))}
-          <button
-            onClick={() => {
-              setSelectedTiers([]);
-              setSelectedCategories([]);
-              setFreeOnly(false);
-              setMintedOnly(false);
-            }}
-            className="text-xs text-[#8b8ba7] hover:text-[#ff4d4d] transition-colors px-2"
-          >
-            Clear all
+      <nav className="discovery-tabs" aria-label="Component types">
+        {TABS.map((tab) => (
+          <button key={tab.value} className={activeType === tab.value ? "active" : ""} onClick={() => setActiveType(tab.value)}>
+            {tab.label}
           </button>
+        ))}
+      </nav>
+
+      <div className="discovery-layout">
+        <aside className="discovery-filters glass">
+          <Filters categories={categories} sources={sources} category={category} source={source} onCategory={setCategory} onSource={setSource} />
+        </aside>
+
+        <section className="component-grid" aria-busy={loading}>
+          {items.map((item) => (
+            <button key={item.canonicalSlug} className="component-card glass" onClick={() => openDetail(item)}>
+              <div className="component-card-top">
+                <span className="component-icon"><Package size={19} /></span>
+                <span className="component-type">{labelForType(item.componentType)}</span>
+              </div>
+              <h2>{item.name}</h2>
+              <p>{item.description || "No description was provided by the source."}</p>
+              <div className="component-meta">
+                {item.marketplaceName && <span>{item.marketplaceName}</span>}
+                {item.authorName && <span>{item.authorName}</span>}
+                {typeof item.starCount === "number" && <span>{item.starCount} stars</span>}
+              </div>
+              <div className="component-tags">
+                {[...item.categories, ...item.tags].slice(0, 4).map((tag) => <span key={tag}>{tag}</span>)}
+              </div>
+            </button>
+          ))}
+        </section>
+      </div>
+
+      {filtersOpen && (
+        <div className="mobile-filter-drawer" role="dialog" aria-modal="true">
+          <button className="drawer-backdrop" onClick={() => setFiltersOpen(false)} aria-label="Close filters" />
+          <div className="drawer-panel glass">
+            <div className="drawer-header"><strong>Filters</strong><button onClick={() => setFiltersOpen(false)}><X size={20} /></button></div>
+            <Filters categories={categories} sources={sources} category={category} source={source} onCategory={setCategory} onSource={setSource} />
+          </div>
         </div>
       )}
 
-      <div className="flex gap-6">
-        {/* Sidebar — desktop */}
-        <aside className="hidden lg:block w-56 shrink-0">
-          <Sidebar />
-        </aside>
-
-        {/* Grid */}
-        <div className="flex-1">
-          {filtered.length === 0 ? (
-            <div className="text-center py-16 text-[#8b8ba7]">
-              <p className="text-4xl mb-3">🔍</p>
-              <p className="text-lg font-medium text-[#f8f8ff]">No skills found</p>
-              <p className="text-sm mt-1">Try adjusting your filters or search term</p>
+      {drawerOpen && selected && (
+        <div className="detail-drawer" role="dialog" aria-modal="true">
+          <button className="drawer-backdrop" onClick={() => setDrawerOpen(false)} aria-label="Close details" />
+          <article className="detail-panel glass">
+            <div className="drawer-header">
+              <span className="component-type">{labelForType(selected.componentType)}</span>
+              <button onClick={() => setDrawerOpen(false)} aria-label="Close details"><X size={20} /></button>
             </div>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-              {filtered.map((skill) => (
-                <SkillCard key={skill.id} skill={skill} currency={currency} />
+            <h2>{selected.name}</h2>
+            <p>{selected.description}</p>
+            {selected.installCommand && <code className="install-command">{selected.installCommand}</code>}
+            <div className="detail-actions">
+              {selected.githubUrl && <a href={selected.githubUrl} target="_blank" rel="noreferrer"><Github size={17} /> GitHub</a>}
+              {selected.packageUrl && <a href={selected.packageUrl} target="_blank" rel="noreferrer"><Code2 size={17} /> Package</a>}
+              {selected.sourceUrls[0] && <a href={selected.sourceUrls[0]} target="_blank" rel="noreferrer"><ExternalLink size={17} /> Source</a>}
+            </div>
+            <dl className="detail-list">
+              <div><dt>Author</dt><dd>{selected.authorName ?? "Unknown"}</dd></div>
+              <div><dt>Marketplace</dt><dd>{selected.marketplaceName ?? "Unknown"}</dd></div>
+              <div><dt>Last seen</dt><dd>{formatDate(selected.lastSeenAt)}</dd></div>
+              <div><dt>Last updated</dt><dd>{formatDate(selected.sourceUpdatedAt)}</dd></div>
+            </dl>
+            {(selected.riskFlags.length > 0 || selected.securityNotes) && (
+              <div className="risk-note"><ShieldAlert size={18} /> <span>{selected.securityNotes ?? selected.riskFlags.join(", ")}</span></div>
+            )}
+            <div className="component-tags detail-tags">
+              {[...selected.categories, ...selected.tags, ...selected.compatibility].map((tag) => <span key={tag}>{tag}</span>)}
+            </div>
+            <section className="provenance">
+              <h3>Provenance</h3>
+              {(selected.provenance ?? []).map((entry, index) => (
+                <a key={`${entry.sourceName}-${index}`} href={entry.sourceUrl} target="_blank" rel="noreferrer">
+                  <span>{entry.sourceName}</span>
+                  <small>{entry.extractionMethod} · confidence {Math.round(entry.confidenceScore * 100)}%</small>
+                </a>
               ))}
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Mobile sidebar */}
-      {sidebarOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden">
-          <div className="absolute inset-0 bg-black/60" onClick={() => setSidebarOpen(false)} />
-          <div className="absolute right-0 top-0 bottom-0 w-72 bg-[#0e0e16] border-l border-[#1e1e2e] p-5 overflow-y-auto">
-            <div className="flex items-center justify-between mb-5">
-              <span className="font-semibold text-[#f8f8ff]">Filters</span>
-              <button onClick={() => setSidebarOpen(false)}>
-                <X size={18} className="text-[#8b8ba7]" />
-              </button>
-            </div>
-            <Sidebar />
-          </div>
+            </section>
+          </article>
         </div>
       )}
     </div>
   );
+}
+
+function Filters(props: {
+  categories: string[];
+  sources: string[];
+  category: string;
+  source: string;
+  onCategory: (value: string) => void;
+  onSource: (value: string) => void;
+}) {
+  return (
+    <>
+      <label>
+        <span>Category</span>
+        <select value={props.category} onChange={(event) => props.onCategory(event.target.value)}>
+          <option value="">Any category</option>
+          {props.categories.map((cat) => <option key={cat} value={cat}>{cat}</option>)}
+        </select>
+      </label>
+      <label>
+        <span>Source</span>
+        <select value={props.source} onChange={(event) => props.onSource(event.target.value)}>
+          <option value="">Any source</option>
+          {props.sources.map((src) => <option key={src} value={src}>{src}</option>)}
+        </select>
+      </label>
+    </>
+  );
+}
+
+function labelForType(type: string) {
+  return type.replace(/_/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function formatDate(value?: string) {
+  if (!value) return "Unknown";
+  return new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric", year: "numeric" }).format(new Date(value));
 }

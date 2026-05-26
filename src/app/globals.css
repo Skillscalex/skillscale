@@ -1,81 +1,232 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════
+   SKILLSCALE — Light Creamy Design System
+   Mobile-first, WCAG AA compliant
+   ═══════════════════════════════════════════ */
 
 :root {
-  --background: #0a0a0f;
-  --foreground: #f8f8ff;
-  --card: #12121a;
-  --card-border: #1e1e2e;
-  --muted: #8b8ba7;
-  --accent: #7c3aed;
+  /* Backgrounds */
+  --bg-base:    #fdf8f3;
+  --bg-surface: #fff9f4;
+  --bg-muted:   #f5ede4;
+  --bg-card:    #fffbf7;
 
-  --gem-coal: #4a4a5a;
-  --gem-quartz: #a78bfa;
-  --gem-pearl: #e8e8f0;
-  --gem-emerald: #00d97e;
+  /* Brand */
+  --accent:       #7c3aed;
+  --accent-hover: #6d28d9;
+  --accent-light: #ede9fe;
+  --accent-glow:  rgba(124,58,237,0.15);
+
+  /* Text */
+  --text-primary:   #1a0a2e;
+  --text-secondary: #5b4068;
+  --text-muted:     #9b7fa8;
+  --text-inverse:   #fdf8f3;
+
+  /* Borders */
+  --border:       #e8d5c4;
+  --border-focus: #7c3aed;
+
+  /* Gem tiers */
   --gem-diamond: #60efff;
+  --gem-emerald: #00d97e;
+  --gem-pearl:   #a78bfa;
+  --gem-quartz:  #c4b5fd;
+  --gem-coal:    #9b7fa8;
 
-  --buy: #00d97e;
-  --sell: #ff4d4d;
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(26,10,46,0.08);
+  --shadow-md:  0 4px 12px rgba(26,10,46,0.12);
+  --shadow-lg:  0 8px 32px rgba(26,10,46,0.16);
+  --shadow-gem: 0 0 20px rgba(124,58,237,0.25);
 
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-geist-mono);
+  /* Motion */
+  --transition: 200ms ease;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-border: var(--card-border);
-  --color-muted: var(--muted);
-  --color-accent: var(--accent);
-  --color-buy: var(--buy);
-  --color-sell: var(--sell);
-  --color-gem-coal: var(--gem-coal);
-  --color-gem-quartz: var(--gem-quartz);
-  --color-gem-pearl: var(--gem-pearl);
-  --color-gem-emerald: var(--gem-emerald);
-  --color-gem-diamond: var(--gem-diamond);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
-}
+/* ── Base ───────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
 
-* {
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  min-height: 100dvh;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Scrollbar */
-::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: var(--card); }
-::-webkit-scrollbar-thumb { background: var(--card-border); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+/* ── Typography scale ───────────────────── */
+h1 { font-size: clamp(1.75rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.1; }
+h2 { font-size: clamp(1.4rem,  4vw, 2.5rem); font-weight: 700; line-height: 1.2; }
+h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3; }
 
-/* Polymarket-style number animation */
-@keyframes price-up {
-  0% { color: var(--buy); }
-  100% { color: var(--foreground); }
+/* ── Cards ──────────────────────────────── */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition), transform var(--transition);
 }
-@keyframes price-down {
-  0% { color: var(--sell); }
-  100% { color: var(--foreground); }
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
-.price-flash-up { animation: price-up 1s ease-out; }
+
+/* ── Glass (light version) ──────────────── */
+.glass {
+  background: rgba(255,251,247,0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(232,213,196,0.6);
+}
+
+/* ── Buttons ────────────────────────────── */
+.btn-primary {
+  background: var(--accent);
+  color: var(--text-inverse);
+  border-radius: 0.625rem;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  transition: background var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+.btn-primary:hover {
+  background: var(--accent-hover);
+  box-shadow: var(--shadow-gem);
+  transform: translateY(-1px);
+}
+.btn-secondary {
+  background: var(--accent-light);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 0.625rem;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  transition: background var(--transition);
+}
+.btn-secondary:hover { background: #ddd6fe; }
+
+/* ── Gem effects (light-adapted) ────────── */
+.gem-diamond { filter: drop-shadow(0 0 8px var(--gem-diamond)); }
+.gem-emerald { filter: drop-shadow(0 0 6px var(--gem-emerald)); }
+.gem-pearl   { filter: drop-shadow(0 0 5px var(--gem-pearl)); }
+.gem-quartz  { filter: drop-shadow(0 0 4px var(--gem-quartz)); }
+
+/* ── Secure score bar ───────────────────── */
+.score-bar-track {
+  background: var(--bg-muted);
+  border-radius: 9999px;
+  height: 8px;
+  overflow: hidden;
+}
+.score-bar-fill {
+  height: 100%;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--accent), var(--gem-diamond));
+  transition: width 0.8s cubic-bezier(.4,0,.2,1);
+}
+
+/* ── Nav ────────────────────────────────── */
+.nav-link {
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: color var(--transition);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* ── AgentOS widget ─────────────────────── */
+.agent-widget {
+  background: linear-gradient(135deg, var(--accent-light) 0%, var(--bg-surface) 100%);
+  border: 1px solid var(--accent);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.agent-progress {
+  height: 6px;
+  background: var(--bg-muted);
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+.agent-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--gem-emerald));
+  border-radius: 9999px;
+  animation: agent-pulse 2s ease-in-out infinite;
+}
+@keyframes agent-pulse {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0.7; }
+}
+
+/* ── Price animations ───────────────────── */
+@keyframes price-up   { 0% { color:inherit } 50% { color:#ef4444 } 100% { color:inherit } }
+@keyframes price-down { 0% { color:inherit } 50% { color:#22c55e } 100% { color:inherit } }
+.price-flash-up   { animation: price-up   1s ease-out; }
 .price-flash-down { animation: price-down 1s ease-out; }
 
-/* Gem glow effects */
-.gem-diamond { filter: drop-shadow(0 0 8px #60efff88); }
-.gem-emerald { filter: drop-shadow(0 0 6px #00d97e66); }
-.gem-quartz  { filter: drop-shadow(0 0 5px #a78bfa55); }
-
-/* Glass card */
-.glass {
-  background: rgba(18, 18, 26, 0.8);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--card-border);
+/* ── Mobile nav (hamburger) ─────────────── */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background: rgba(26,10,46,0.5);
+  z-index: 40;
+  backdrop-filter: blur(4px);
 }
+.mobile-menu-panel {
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  width: min(280px, 85vw);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-lg);
+  padding: 2rem 1.5rem;
+}
+
+/* ── Responsive skill grid ──────────────── */
+.skill-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 480px)  { .skill-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 768px)  { .skill-grid { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; } }
+@media (min-width: 1024px) { .skill-grid { grid-template-columns: repeat(4, 1fr); gap: 1.5rem; } }
+@media (min-width: 1280px) { .skill-grid { grid-template-columns: repeat(5, 1fr); } }
+
+/* ── Stat cards ─────────────────────────── */
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  text-align: center;
+}
+.stat-card .stat-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.stat-card .stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* ── Utility overrides ──────────────────── */
+::selection { background: var(--accent-light); color: var(--accent); }
+:focus-visible { outline: 2px solid var(--border-focus); outline-offset: 2px; border-radius: 4px; }

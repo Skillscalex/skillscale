@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio — Skillscale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html,body{height:100%;margin:0;padding:0;}
+    #root{height:100vh;display:flex;flex-direction:column;overflow:hidden;}
+    .studio-layout{display:grid;grid-template-columns:284px 1fr 344px;flex:1;height:calc(100vh - 65px);overflow:hidden;}
+    .agent-sidebar{border-right:1px solid var(--border);display:flex;flex-direction:column;background:var(--bg);overflow:hidden;}
+    .sidebar-scroll{flex:1;overflow-y:auto;}
+    .sidebar-scroll::-webkit-scrollbar{width:3px;}
+    .sidebar-scroll::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
+    .chat-area{display:flex;flex-direction:column;background:var(--bg-1,rgba(0,0,0,0.02));overflow:hidden;}
+    .messages-scroll{flex:1;overflow-y:auto;padding:20px 22px;display:flex;flex-direction:column;gap:10px;}
+    .messages-scroll::-webkit-scrollbar{width:4px;}
+    .messages-scroll::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
+    .studio-right{border-left:1px solid var(--border);display:flex;flex-direction:column;background:var(--bg);overflow:hidden;}
+    .bubble-agent{max-width:70%;background:var(--bg);border:1px solid var(--border);border-radius:4px 18px 18px 18px;padding:10px 14px;align-self:flex-start;}
+    .bubble-user{max-width:70%;background:var(--accent);border-radius:18px 4px 18px 18px;padding:10px 14px;align-self:flex-end;}
+    .agent-item{display:flex;align-items:center;gap:10px;padding:9px 14px;cursor:pointer;transition:background 0.12s;border-bottom:1px solid rgba(0,0,0,0.03);}
+    .agent-item:hover{background:var(--bg-1,rgba(0,0,0,0.04));}
+    .agent-item.active{background:rgba(212,102,26,0.08);border-left:2px solid var(--accent);}
+    .xsearch-result{border:1px solid var(--border);border-radius:12px;padding:11px 13px;background:var(--bg);transition:border-color 0.15s;cursor:pointer;margin-bottom:8px;}
+    .xsearch-result:hover{border-color:var(--accent);}
+    .studio-tab{flex:1;padding:11px 4px;border:none;background:transparent;border-bottom:2px solid transparent;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;transition:all 0.15s;}
+    .studio-tab.active{background:var(--bg);border-bottom-color:var(--accent);}
+    .wave-bar{width:3px;background:var(--accent);border-radius:2px;}
+    @keyframes wave{0%,100%{height:4px}50%{height:18px}}
+    @keyframes online-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.55;transform:scale(0.82)}}
+    @keyframes shimmer{0%{opacity:1}50%{opacity:0.45}100%{opacity:1}}
+    .call-overlay{position:fixed;inset:0;z-index:500;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);backdrop-filter:blur(14px);}
+    @media(max-width:1080px){.studio-layout{grid-template-columns:260px 1fr 300px;}}
+    @media(max-width:800px){.studio-layout{grid-template-columns:1fr;}.agent-sidebar,.studio-right{display:none;}}
+  </style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script src="https://unpkg.com/framer-motion@11.11.17/dist/framer-motion.js"></script>
+<script type="text/babel">
+const { useState, useEffect, useRef, useCallback } = React;
+const { motion, AnimatePresence } = window.Motion;
+
+/* ── Agent data ─────────────────────────────────────────────────── */
+const AGENT_GROUPS = [
+  { id:'assistants', label:'AI Assistants', icon:'◈', agents:[
+    { id:'aria',  name:'Aria',       role:'Generalist',  status:'online', style:'avataaars', seed:'aria-skill', color:'#D4661A' },
+    { id:'rex',   name:'Rex',        role:'Analysis',    status:'online', style:'avataaars', seed:'rex-blue',   color:'#1565C0' },
+    { id:'nova',  name:'Nova',       role:'Research',    status:'away',   style:'avataaars', seed:'nova-nb',    color:'#7B2FBE' },
+  ]},
+  { id:'pets', label:'Creative Pets', icon:'🐾', agents:[
+    { id:'pip',   name:'Pip',        role:'Art & Design', status:'online', style:'fun-emoji', seed:'pip-star',   color:'#E91E63' },
+    { id:'mochi', name:'Mochi',      role:'Writing',      status:'online', style:'fun-emoji', seed:'mochi-leaf', color:'#2E7D32' },
+    { id:'byte',  name:'Byte',       role:'Code',         status:'online', style:'fun-emoji', seed:'byte-zap',   color:'#FF8F00' },
+  ]},
+  { id:'data', label:'Data Bots', icon:'⬡', agents:[
+    { id:'db7',   name:'DataBot-7',  role:'Analytics',    status:'online', style:'bottts',    seed:'db7-alpha',  color:'#0D6E8A' },
+    { id:'qm',    name:'QueryMind',  role:'SQL & BI',     status:'online', style:'bottts',    seed:'qm-sigma',   color:'#1B5E20' },
+  ]},
+  { id:'security', label:'Security Agents', icon:'🛡', agents:[
+    { id:'vg',    name:'VaultGuard',    role:'2FA & Auth',   status:'online', style:'shapes',    seed:'vaultguard',    color:'#B71C1C' },
+    { id:'cs',    name:'CipherShield', role:'Encryption',   status:'online', style:'shapes',    seed:'ciphershield',  color:'#6A1B9A' },
+  ]},
+];
+const ALL_AGENTS = AGENT_GROUPS.flatMap(g => g.agents);
+
+/* ── Sample messages ────────────────────────────────────────────── */
+const AGENT_MESSAGES = {
+  aria:[
+    { id:1, from:'agent', text:"Hi! I'm Aria — your generalist assistant. Ready to help with research, writing, analysis, or anything else. What are we building today?", time:'10:24' },
+    { id:2, from:'user',  text:"Summarize the top AI agent frameworks right now", time:'10:25' },
+    { id:3, from:'agent', text:"Here's the landscape:\n\n**CrewAI** — Role-based multi-agent teams. Best for structured pipelines.\n**AutoGen** (Microsoft) — Conversational agents with code execution loops.\n**LangGraph** — Graph-based state machines for complex orchestration.\n**OpenAI Swarm** — Lightweight handoff-based coordination.\n\nCrewAI and AutoGen have the largest production deployments right now. Want a live X-Search on any of them?", time:'10:25' },
+    { id:4, from:'user',  text:"Yes — search X for CrewAI", time:'10:26' },
+    { id:5, from:'agent', type:'xsearch_ref', text:'Searching X for "CrewAI" → see X-Search panel →', time:'10:26' },
+  ],
+  pip:[
+    { id:1, from:'agent', text:"✨ Hiii! I'm Pip — your creative companion. Describe anything and I'll generate art using Grok Image Mode. 🎨", time:'09:10' },
+    { id:2, from:'user',  text:"Neon cyberpunk cityscape at dusk", time:'09:11' },
+    { id:3, from:'agent', type:'image', text:'Generated with Grok 4.3 · Image Mode — saved to Workspace → Images', img:'https://api.dicebear.com/7.x/shapes/svg?seed=cyberpunk-night&backgroundColor=0d0d1a', time:'09:12' },
+    { id:4, from:'agent', text:"Done! Saved to your Workspace. Want a rainy variant or different aspect ratio?", time:'09:12' },
+  ],
+  mochi:[
+    { id:1, from:'agent', text:"Hello! 🌿 I'm Mochi — your writing partner. Drafts, edits, tone-matching, storytelling. What would you like to write?", time:'11:00' },
+    { id:2, from:'user',  text:"Write a LinkedIn post about AI in education", time:'11:01' },
+    { id:3, from:'agent', text:"Here's a draft:\n\n---\n**AI isn't replacing teachers. It's giving them superpowers.**\n\nThe best educators I know aren't afraid of AI. They're using it to personalise lesson plans, auto-generate quizzes, and free up time for the 1-on-1 moments that actually change lives.\n\nTools evolve. The irreplaceable human connection doesn't.\n\n#EdTech #AI #Education\n---\n\nWant a shorter version or a different tone?", time:'11:01' },
+  ],
+  byte:[
+    { id:1, from:'agent', text:"Hey! ⚡ I'm Byte. I write, debug, review, and explain code. Drop some code or describe what to build.", time:'14:30' },
+    { id:2, from:'user',  text:"Review this function for edge cases", time:'14:31' },
+    { id:3, from:'agent', type:'code', lang:'python', text:'def parse_amount(val):\n    return float(str(val).replace(",","").strip())', time:'14:31' },
+    { id:4, from:'agent', text:"Edge cases to handle:\n\n• **None input** → raises AttributeError\n• **Empty string** → float(\"\") raises ValueError\n• **Currency symbols** (€, £, $) not stripped\n• **Parentheses** for negatives like (1,200) won't parse\n\nWant me to write a hardened version with tests?", time:'14:32' },
+  ],
+  db7:[
+    { id:1, from:'agent', text:"DataBot-7 online. I specialise in analytics, pattern detection, and data pipeline design. Send a dataset or ask a data question.", time:'15:00' },
+    { id:2, from:'user',  text:"Best approach for time-series anomaly detection?", time:'15:01' },
+    { id:3, from:'agent', text:"Three battle-tested approaches:\n\n**1. Z-score / IQR** — Simple, fast. Good for stationary distributions.\n**2. STL Decomposition** — Separates trend + seasonality + residuals. Anomalies live in the residual.\n**3. Isolation Forest** — Best for complex, non-stationary series.\n\nI'd start with STL + 3σ threshold in production, layer Isolation Forest if you need higher precision. Want a Python implementation?", time:'15:02' },
+  ],
+  vg:[
+    { id:1, from:'agent', type:'system', text:'VaultGuard connected — session secured with AES-256-GCM + 2FA', time:'08:00' },
+    { id:2, from:'agent', text:"VaultGuard here. I monitor auth events, manage 2FA, and flag suspicious activity. Your current session: ✅ HIGH security.\n\nAll Studio conversations are end-to-end encrypted. Encryption keys rotate every 24h.", time:'08:01' },
+    { id:3, from:'user',  text:"Show my active sessions", time:'08:02' },
+    { id:4, from:'agent', type:'sessions', sessions:[
+      { device:'MacBook Pro 14"', loc:'San Francisco, CA', ip:'142.xxx.xxx.12', time:'Active now', trusted:true },
+      { device:'iPhone 15 Pro',   loc:'San Francisco, CA', ip:'142.xxx.xxx.15', time:'2 min ago',  trusted:true },
+    ], time:'08:02' },
+  ],
+};
+
+/* ── X-Search mock data ─────────────────────────────────────────── */
+const XSEARCH_RESULTS = [
+  { id:1, type:'post',    handle:'@AndrewNg',    name:'Andrew Ng',       content:'Multi-agent AI is the most underrated paradigm shift right now. Not LLMs themselves — the *composition* of LLMs into coordinated teams. The emergent behaviours are genuinely surprising. 🧵', time:'3m',  likes:4821, rt:1203, verified:true },
+  { id:2, type:'article', handle:'@TechCrunch',  name:'TechCrunch',      content:'CrewAI raises $18M to build the "OS for AI agents" — the platform now powers 47,000 production agentic workflows across Fortune 500 companies.', time:'12m', likes:892,  rt:341,  verified:true },
+  { id:3, type:'post',    handle:'@karpathy',    name:'Andrej Karpathy', content:'The key insight in multi-agent: you want agents that FAIL LOUDLY and CHEAPLY, not silently and expensively. Evals everywhere. Observability from day one.', time:'24m', likes:7234, rt:2108, verified:true },
+  { id:4, type:'reply',   handle:'@swyx',        name:'swyx',            content:'@karpathy 100%. The best orchestration patterns treat agent composition like a compiler problem — write intent, system optimises execution path.', time:'31m', likes:1102, rt:287,  verified:false },
+  { id:5, type:'article', handle:'@VentureBeat', name:'VentureBeat',     content:'AutoGen 2.0 benchmarks show 3.4× throughput over single-agent baselines on complex reasoning tasks. Microsoft\'s bet on parallel agent execution is paying off.', time:'1h',  likes:543,  rt:189,  verified:true },
+];
+const XSEARCH_SYNTHESIS = `Multi-agent frameworks (CrewAI, AutoGen, LangGraph) are hitting enterprise adoption in 2026. Key signals: role-based specialisation [1][2], loud failure modes with evals [3], and parallel execution for throughput [5]. The consensus: *composition* of LLMs — not raw model capability — is the next frontier [1][3].`;
+
+/* ── Helpers ────────────────────────────────────────────────────── */
+function getVaultCount(){try{const v=JSON.parse(localStorage.getItem('skillscale_vault')||'{"dreamed":[],"owned":[]}');return v.dreamed.length+v.owned.length;}catch{return 0;}}
+
+/* ── Nav ────────────────────────────────────────────────────────── */
+function ThemeToggle({theme,onToggle}){
+  return <button onClick={onToggle} className="lg" style={{width:38,height:38,borderRadius:'50%',border:'none',display:'flex',alignItems:'center',justifyContent:'center',fontSize:16,color:theme==='light'?'#1A1714':'#F1E9D8',cursor:'pointer',flexShrink:0}}>{theme==='light'?'☀️':'🌙'}</button>;
+}
+
+function Nav({theme,onToggle}){
+  const [vc,setVc]=useState(getVaultCount);
+  useEffect(()=>{const s=()=>setVc(getVaultCount());window.addEventListener('vault-updated',s);window.addEventListener('storage',s);return()=>{window.removeEventListener('vault-updated',s);window.removeEventListener('storage',s);};},[]);
+  const pages=[{href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},{href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'}];
+  return(
+    <nav className="nav lg" style={{padding:'12px 24px',borderBottom:'1px solid var(--border)',borderRadius:0,flexShrink:0}}>
+      <div className="nav-inner">
+        <a href="index.html" style={{fontFamily:'Archivo Black',fontSize:'1.05rem',color:'var(--text)',letterSpacing:'-.01em',flexShrink:0}}>skill<span style={{color:'var(--accent)'}}>scale</span></a>
+        <div className="nav-links" style={{display:'flex',alignItems:'center',padding:'6px',borderRadius:9999,gap:2}}>
+          {pages.map(p=><a key={p.href} href={p.href} style={{fontFamily:'JetBrains Mono',fontSize:'.72rem',letterSpacing:'.04em',padding:'6px 14px',borderRadius:9999,color:'var(--text-2)',transition:'all 0.15s'}}>{p.label}</a>)}
+        </div>
+        <div style={{display:'flex',alignItems:'center',gap:8}}>
+          <a href="vault.html" style={{position:'relative',display:'flex',alignItems:'center',gap:6,fontFamily:'JetBrains Mono',fontSize:'.72rem',padding:'7px 14px',borderRadius:9999,color:'var(--text-2)',border:'1px solid var(--border)',transition:'all 0.15s',textDecoration:'none'}}>
+            ✦ Vault{vc>0&&<span style={{position:'absolute',top:-5,right:-5,minWidth:16,height:16,borderRadius:9999,background:'var(--accent)',color:'#fff',fontSize:'.55rem',fontWeight:700,display:'flex',alignItems:'center',justifyContent:'center',padding:'0 4px'}}>{vc}</span>}
+          </a>
+          <a href="hubs.html" style={{display:'flex',alignItems:'center',gap:6,fontFamily:'JetBrains Mono',fontSize:'.72rem',padding:'7px 14px',borderRadius:9999,color:'var(--text-2)',border:'1px solid var(--border)',transition:'all 0.15s',textDecoration:'none'}}>⬡ Hubs</a>
+          <a href="studio.html" style={{display:'flex',alignItems:'center',gap:6,fontFamily:'JetBrains Mono',fontSize:'.72rem',padding:'7px 14px',borderRadius:9999,color:'var(--accent)',background:'rgba(212,102,26,0.08)',border:'1px solid rgba(212,102,26,0.3)',transition:'all 0.15s',textDecoration:'none'}}>⌬ Studio</a>
+          <a href="auth.html" className="btn btn-sm lg" style={{fontFamily:'JetBrains Mono',fontSize:'.72rem',padding:'7px 16px',border:'1px solid var(--border)'}}>Sign In</a>
+          <ThemeToggle theme={theme} onToggle={onToggle}/>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+/* ── AgentAvatar ────────────────────────────────────────────────── */
+function AgentAvatar({agent,size=38}){
+  const s=agent.style||'shapes';
+  return(
+    <div style={{width:size,height:size,borderRadius:'50%',flexShrink:0,overflow:'hidden',border:`2px solid ${agent.color}40`,background:'var(--bg-1)'}}>
+      <img src={`https://api.dicebear.com/7.x/${s}/svg?seed=${encodeURIComponent(agent.seed)}`} alt={agent.name} width={size} height={size} style={{display:'block'}} onError={e=>{e.target.style.display='none';}}/>
+    </div>
+  );
+}
+
+function StatusDot({status}){
+  const c={online:'#22c55e',away:'#f59e0b',offline:'var(--border)'}[status]||'var(--border)';
+  return <div style={{width:8,height:8,borderRadius:'50%',background:c,flexShrink:0,animation:status==='online'?'online-pulse 2.5s infinite':undefined}}/>;
+}
+
+/* ── Sidebar ────────────────────────────────────────────────────── */
+function AgentSidebar({activeId,onSelect,searchQ,setSearchQ}){
+  return(
+    <div className="agent-sidebar">
+      <div style={{padding:'12px 14px',borderBottom:'1px solid var(--border)',display:'flex',flexDirection:'column',gap:9}}>
+        <div style={{display:'flex',alignItems:'center',gap:8,padding:'7px 10px',borderRadius:9,background:'rgba(34,197,94,0.07)',border:'1px solid rgba(34,197,94,0.18)'}}>
+          <span style={{fontSize:13}}>🔒</span>
+          <div>
+            <div style={{fontFamily:'JetBrains Mono',fontSize:'.6rem',color:'#16a34a',fontWeight:700}}>E2E Encrypted</div>
+            <div style={{fontFamily:'JetBrains Mono',fontSize:'.55rem',color:'var(--text-2)'}}>2FA ✓ · AES-256-GCM · Key rotates 24h</div>
+          </div>
+        </div>
+        <div style={{position:'relative'}}>
+          <input value={searchQ} onChange={e=>setSearchQ(e.target.value)} placeholder="Search agents…"
+            style={{width:'100%',padding:'7px 10px 7px 28px',borderRadius:8,border:'1px solid var(--border)',background:'var(--bg-1,rgba(0,0,0,0.03))',color:'var(--text)',fontFamily:'DM Sans',fontSize:'.8rem',outline:'none',boxSizing:'border-box'}}/>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{position:'absolute',left:8,top:'50%',transform:'translateY(-50%)',color:'var(--text-2)'}}><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+      </div>
+      <div className="sidebar-scroll">
+        {AGENT_GROUPS.map(group=>{
+          const filtered=group.agents.filter(a=>!searchQ||a.name.toLowerCase().includes(searchQ.toLowerCase())||a.role.toLowerCase().includes(searchQ.toLowerCase()));
+          if(!filtered.length) return null;
+          return(
+            <div key={group.id}>
+              <div style={{padding:'10px 14px 3px',fontFamily:'JetBrains Mono',fontSize:'.58rem',letterSpacing:'.09em',color:'var(--text-2)',textTransform:'uppercase',display:'flex',alignItems:'center',gap:5}}>
+                <span>{group.icon}</span>{group.label}
+              </div>
+              {filtered.map(agent=>(
+                <div key={agent.id} className={`agent-item${activeId===agent.id?' active':''}`} onClick={()=>onSelect(agent)}>
+                  <div style={{position:'relative'}}>
+                    <AgentAvatar agent={agent} size={36}/>
+                    <div style={{position:'absolute',bottom:0,right:0}}><StatusDot status={agent.status}/></div>
+                  </div>
+                  <div style={{flex:1,minWidth:0}}>
+                    <div style={{fontFamily:'DM Sans',fontSize:'.85rem',fontWeight:600,color:'var(--text)',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'}}>{agent.name}</div>
+                    <div style={{fontFamily:'JetBrains Mono',fontSize:'.6rem',color:'var(--text-2)'}}>{agent.role}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          );
+        })}
+      </div>
+      <div style={{padding:'10px 14px',borderTop:'1px solid var(--border)'}}>
+        <a href="workspace.html" style={{display:'flex',alignItems:'center',gap:8,padding:'9px 12px',borderRadius:10,border:'1px solid var(--border)',textDecoration:'none',color:'var(--text-2)',fontFamily:'JetBrains Mono',fontSize:'.67rem',transition:'all 0.15s'}}
+          onMouseEnter={e=>{e.currentTarget.style.borderColor='var(--accent)';e.currentTarget.style.color='var(--accent)';}}
+          onMouseLeave={e=>{e.currentTarget.style.borderColor='var(--border)';e.currentTarget.style.color='var(--text-2)';}}>
+          <span>◫</span> Open Workspace <span style={{marginLeft:'auto'}}>→</span>
+        </a>
+      </div>
+    </div>
+  );
+}
+
+/* ── Message components ─────────────────────────────────────────── */
+function SessionsCard({sessions}){
+  return(
+    <div style={{marginTop:8,display:'flex',flexDirection:'column',gap:6}}>
+      {sessions.map((s,i)=>(
+        <div key={i} style={{display:'flex',alignItems:'center',gap:10,padding:'8px 10px',borderRadius:9,border:'1px solid var(--border)',background:'var(--bg)'}}>
+          <span style={{fontSize:15}}>{s.device.includes('iPhone')?'📱':'💻'}</span>
+          <div style={{flex:1}}>
+            <div style={{fontFamily:'DM Sans',fontSize:'.8rem',color:'var(--text)',fontWeight:500}}>{s.device}</div>
+            <div style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--text-2)'}}>{s.loc} · {s.ip}</div>
+          </div>
+          <div style={{textAlign:'right'}}>
+            <div style={{fontFamily:'JetBrains Mono',fontSize:'.6rem',color:s.time==='Active now'?'#22c55e':'var(--text-2)'}}>{s.time}</div>
+            {s.trusted&&<div style={{fontFamily:'JetBrains Mono',fontSize:'.55rem',color:'var(--text-2)'}}>✓ Trusted</div>}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function MessageBubble({msg,agent}){
+  const isUser=msg.from==='user';
+  if(msg.type==='system') return(
+    <div style={{textAlign:'center',padding:'4px 0'}}>
+      <span style={{fontFamily:'JetBrains Mono',fontSize:'.62rem',color:'var(--text-2)',background:'var(--bg-1,rgba(0,0,0,0.04))',padding:'4px 12px',borderRadius:9999}}>🔒 {msg.text}</span>
+    </div>
+  );
+  const bubbleCls=isUser?'bubble-user':'bubble-agent';
+  return(
+    <div style={{display:'flex',flexDirection:'column',alignItems:isUser?'flex-end':'flex-start',gap:4}}>
+      {!isUser&&(
+        <div style={{display:'flex',alignItems:'center',gap:5,marginLeft:4}}>
+          <AgentAvatar agent={agent} size={20}/>
+          <span style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--text-2)'}}>{agent.name}</span>
+        </div>
+      )}
+      <div className={bubbleCls}>
+        {msg.type==='image'&&(
+          <div>
+            <div style={{width:200,height:130,borderRadius:10,overflow:'hidden',marginBottom:7,background:'var(--bg-1)',border:'1px solid var(--border)',display:'flex',alignItems:'center',justifyContent:'center'}}>
+              <img src={msg.img} alt="" style={{width:'100%',height:'100%',objectFit:'cover'}} onError={e=>{e.target.style.display='none';e.target.parentElement.innerHTML='<span style="color:var(--text-2);font-size:.7rem">🖼</span>';}}/>
+            </div>
+            <p style={{fontFamily:'DM Sans',fontSize:'.8rem',color:isUser?'#fff':'var(--text-2)',margin:0,lineHeight:1.5}}>{msg.text}</p>
+          </div>
+        )}
+        {msg.type==='code'&&(
+          <div style={{background:'rgba(0,0,0,0.06)',borderRadius:8,padding:'9px 11px',fontFamily:'JetBrains Mono',fontSize:'.7rem',color:'var(--text)',whiteSpace:'pre'}}>
+            <div style={{fontFamily:'JetBrains Mono',fontSize:'.55rem',color:'var(--text-2)',marginBottom:5,textTransform:'uppercase',letterSpacing:'.06em'}}>{msg.lang}</div>
+            <code>{msg.text}</code>
+          </div>
+        )}
+        {msg.type==='sessions'&&(
+          <div><p style={{fontFamily:'DM Sans',fontSize:'.82rem',color:'var(--text-2)',margin:'0 0 2px'}}>Active sessions:</p><SessionsCard sessions={msg.sessions}/></div>
+        )}
+        {msg.type==='xsearch_ref'&&(
+          <div style={{display:'flex',alignItems:'center',gap:7}}>
+            <svg width="12" height="12" viewBox="0 0 1200 1227" fill="currentColor" style={{color:isUser?'rgba(255,255,255,0.9)':'var(--accent)',flexShrink:0}}><path d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z"/></svg>
+            <p style={{fontFamily:'JetBrains Mono',fontSize:'.7rem',color:isUser?'rgba(255,255,255,0.9)':'var(--text)',margin:0}}>{msg.text}</p>
+          </div>
+        )}
+        {(!msg.type||msg.type==='text')&&(
+          <p style={{fontFamily:'DM Sans',fontSize:'.85rem',color:isUser?'#fff':'var(--text)',margin:0,lineHeight:1.62,whiteSpace:'pre-wrap'}}>{msg.text}</p>
+        )}
+      </div>
+      <span style={{fontFamily:'JetBrains Mono',fontSize:'.56rem',color:'var(--text-2)',paddingLeft:4,paddingRight:4}}>{msg.time}</span>
+    </div>
+  );
+}
+
+/* ── Chat header & input ────────────────────────────────────────── */
+function ChatHeader({agent,onVoiceCall,onVideoCall}){
+  return(
+    <div style={{display:'flex',alignItems:'center',gap:11,padding:'11px 18px',borderBottom:'1px solid var(--border)',background:'var(--bg)',flexShrink:0}}>
+      <div style={{position:'relative'}}>
+        <AgentAvatar agent={agent} size={40}/>
+        <div style={{position:'absolute',bottom:0,right:0}}><StatusDot status={agent.status}/></div>
+      </div>
+      <div style={{flex:1}}>
+        <div style={{fontFamily:'DM Sans',fontSize:'.92rem',fontWeight:700,color:'var(--text)'}}>{agent.name}</div>
+        <div style={{display:'flex',alignItems:'center',gap:8}}>
+          <StatusDot status={agent.status}/>
+          <span style={{fontFamily:'JetBrains Mono',fontSize:'.6rem',color:'var(--text-2)'}}>{agent.status==='online'?'Online':'Away'} · {agent.role}</span>
+          <span style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'#16a34a'}}>🔒 E2E</span>
+        </div>
+      </div>
+      <div style={{display:'flex',alignItems:'center',gap:5}}>
+        {[['📞',onVoiceCall],['📹',onVideoCall],['⋯',()=>{}]].map(([icon,fn],i)=>(
+          <button key={i} onClick={fn} className="lg" style={{width:34,height:34,borderRadius:'50%',border:'none',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer',color:'var(--text-2)',fontSize:14}}>{icon}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ChatInput({onSend,agent}){
+  const [msg,setMsg]=useState('');
+  const [rec,setRec]=useState(false);
+  function send(){if(!msg.trim())return;onSend(msg);setMsg('');}
+  return(
+    <div style={{padding:'10px 14px',borderTop:'1px solid var(--border)',background:'var(--bg)',flexShrink:0}}>
+      <div style={{display:'flex',alignItems:'flex-end',gap:7}}>
+        <div style={{display:'flex',gap:3,flexShrink:0,paddingBottom:7}}>
+          {['📎','🖼','📹'].map((ic,i)=>(
+            <button key={i} className="lg" style={{width:30,height:30,borderRadius:'50%',border:'none',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer',fontSize:13,color:'var(--text-2)'}}>{ic}</button>
+          ))}
+        </div>
+        <div style={{flex:1,display:'flex',alignItems:'flex-end',gap:7,background:'var(--bg-1,rgba(0,0,0,0.03))',borderRadius:18,padding:'8px 14px',border:'1px solid var(--border)'}}>
+          <textarea value={msg} onChange={e=>setMsg(e.target.value)}
+            onKeyDown={e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send();}}}
+            placeholder={`Message ${agent.name}…`}
+            style={{flex:1,border:'none',outline:'none',background:'transparent',color:'var(--text)',fontFamily:'DM Sans',fontSize:'.88rem',resize:'none',maxHeight:100,lineHeight:1.5,padding:0}}
+            rows={1}/>
+        </div>
+        {msg.trim()
+          ?<button onClick={send} style={{width:38,height:38,borderRadius:'50%',border:'none',background:'var(--accent)',color:'#fff',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer',flexShrink:0,fontSize:15}}>➤</button>
+          :<button onClick={()=>setRec(r=>!r)} style={{width:38,height:38,borderRadius:'50%',border:'none',background:rec?'#ef4444':'var(--bg-1,rgba(0,0,0,0.06))',color:rec?'#fff':'var(--text-2)',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer',flexShrink:0,fontSize:15,transition:'all 0.15s'}}>🎤</button>
+        }
+      </div>
+      {rec&&(
+        <div style={{display:'flex',alignItems:'center',gap:8,paddingTop:6}}>
+          <div style={{display:'flex',alignItems:'flex-end',gap:2,height:18}}>
+            {[0,1,2,3,4].map(i=><div key={i} className="wave-bar" style={{animationDelay:`${i*0.12}s`,animation:`wave 1.2s ease-in-out ${i*0.12}s infinite`}}/>)}
+          </div>
+          <span style={{fontFamily:'JetBrains Mono',fontSize:'.6rem',color:'#ef4444'}}>Recording… tap mic to stop</span>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ── Chat window ────────────────────────────────────────────────── */
+function ChatWindow({agent,onVoiceCall,onVideoCall}){
+  const [messages,setMessages]=useState([]);
+  const scrollRef=useRef(null);
+  useEffect(()=>{setMessages(AGENT_MESSAGES[agent.id]||[]);},[agent.id]);
+  useEffect(()=>{if(scrollRef.current)scrollRef.current.scrollTop=scrollRef.current.scrollHeight;},[messages]);
+  function handleSend(text){
+    const now=new Date().toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',hour12:false});
+    setMessages(prev=>[...prev,{id:Date.now(),from:'user',text,time:now}]);
+    setTimeout(()=>{
+      const reply={id:Date.now()+1,from:'agent',text:`Thanks for your message! Connect this Studio to a live API endpoint to enable real agent responses. I received: "${text.slice(0,80)}${text.length>80?'…':''}"`,time:new Date().toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',hour12:false})};
+      setMessages(prev=>[...prev,reply]);
+    },1100);
+  }
+  return(
+    <div className="chat-area">
+      <ChatHeader agent={agent} onVoiceCall={onVoiceCall} onVideoCall={onVideoCall}/>
+      <div className="messages-scroll" ref={scrollRef}>
+        {messages.map(msg=><MessageBubble key={msg.id} msg={msg} agent={agent}/>)}
+      </div>
+      <ChatInput onSend={handleSend} agent={agent}/>
+    </div>
+  );
+}
+
+/* ── X-Search Panel ─────────────────────────────────────────────── */
+function XSearchPanel(){
+  const [q,setQ]=useState('');
+  const [results,setResults]=useState([]);
+  const [synthesis,setSynthesis]=useState('');
+  const [loading,setLoading]=useState(false);
+  const [searched,setSearched]=useState(false);
+  const [autoRefresh,setAutoRefresh]=useState(false);
+  const timerRef=useRef(null);
+
+  function doSearch(){
+    if(!q.trim())return;
+    setLoading(true);setSearched(false);
+    setTimeout(()=>{setResults(XSEARCH_RESULTS);setSynthesis(XSEARCH_SYNTHESIS);setLoading(false);setSearched(true);},1100);
+  }
+  useEffect(()=>{
+    if(autoRefresh&&searched){timerRef.current=setInterval(()=>setResults(r=>[...r].sort(()=>Math.random()-.5)),8000);}
+    else clearInterval(timerRef.current);
+    return()=>clearInterval(timerRef.current);
+  },[autoRefresh,searched]);
+
+  return(
+    <div style={{display:'flex',flexDirection:'column',height:'100%',overflow:'hidden'}}>
+      <div style={{padding:'12px 14px',borderBottom:'1px solid var(--border)',flexShrink:0}}>
+        <div style={{display:'flex',gap:7,marginBottom:8}}>
+          <div style={{flex:1,display:'flex',alignItems:'center',gap:8,background:'var(--bg-1,rgba(0,0,0,0.04))',borderRadius:9,padding:'8px 11px',border:'1px solid var(--border)'}}>
+            <svg width="11" height="11" viewBox="0 0 1200 1227" fill="currentColor" style={{flexShrink:0}}><path d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z"/></svg>
+            <input value={q} onChange={e=>setQ(e.target.value)} onKeyDown={e=>e.key==='Enter'&&doSearch()} placeholder="Search X in real time…"
+              style={{flex:1,border:'none',outline:'none',background:'transparent',color:'var(--text)',fontFamily:'JetBrains Mono',fontSize:'.73rem'}}/>
+          </div>
+          <button onClick={doSearch} disabled={loading||!q.trim()} style={{padding:'8px 13px',borderRadius:9,border:'none',background:'var(--accent)',color:'#fff',fontFamily:'JetBrains Mono',fontSize:'.7rem',fontWeight:700,cursor:'pointer',opacity:(loading||!q.trim())?0.5:1,flexShrink:0}}>
+            {loading?'…':'Search X'}
+          </button>
+        </div>
+        <div style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+          <span style={{fontFamily:'JetBrains Mono',fontSize:'.6rem',color:'var(--text-2)'}}>Auto-refresh</span>
+          <button onClick={()=>setAutoRefresh(r=>!r)} style={{width:34,height:18,borderRadius:9999,border:'none',background:autoRefresh?'var(--accent)':'var(--border)',cursor:'pointer',position:'relative',transition:'background 0.2s',flexShrink:0}}>
+            <div style={{position:'absolute',top:2,left:autoRefresh?16:2,width:14,height:14,borderRadius:'50%',background:'#fff',transition:'left 0.18s',boxShadow:'0 1px 3px rgba(0,0,0,0.2)'}}/>
+          </button>
+        </div>
+      </div>
+      <div style={{flex:1,overflowY:'auto',padding:'12px 14px'}}>
+        {loading&&[1,2,3].map(i=><div key={i} style={{height:68,borderRadius:12,background:'var(--bg-1,rgba(0,0,0,0.04))',marginBottom:8,animation:'shimmer 1.5s infinite'}}/>)}
+        {searched&&!loading&&(
+          <>
+            <div style={{padding:'11px 13px',borderRadius:12,background:'rgba(212,102,26,0.07)',border:'1px solid rgba(212,102,26,0.2)',marginBottom:12}}>
+              <div style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--accent)',textTransform:'uppercase',letterSpacing:'.07em',marginBottom:5}}>⚡ Grok Synthesis</div>
+              <p style={{fontFamily:'DM Sans',fontSize:'.82rem',color:'var(--text)',lineHeight:1.62,margin:0}}>{synthesis}</p>
+            </div>
+            <div style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--text-2)',textTransform:'uppercase',letterSpacing:'.07em',marginBottom:8}}>Live · {results.length} posts</div>
+            {results.map((r,i)=>(
+              <div key={r.id} className="xsearch-result">
+                <div style={{display:'flex',alignItems:'flex-start',gap:9,marginBottom:6}}>
+                  <div style={{width:30,height:30,borderRadius:'50%',background:`hsl(${r.id*55},55%,55%)`,flexShrink:0,display:'flex',alignItems:'center',justifyContent:'center',fontFamily:'Archivo Black',fontSize:'.7rem',color:'#fff'}}>{r.name[0]}</div>
+                  <div style={{flex:1,minWidth:0}}>
+                    <div style={{display:'flex',alignItems:'center',gap:5,flexWrap:'wrap'}}>
+                      <span style={{fontFamily:'DM Sans',fontSize:'.82rem',fontWeight:700,color:'var(--text)'}}>{r.name}</span>
+                      {r.verified&&<span style={{fontFamily:'JetBrains Mono',fontSize:'.55rem',color:'var(--accent)'}}>✓</span>}
+                      <span style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--text-2)'}}>{r.handle} · [{i+1}]</span>
+                    </div>
+                    <div style={{fontFamily:'JetBrains Mono',fontSize:'.55rem',color:'var(--text-2)'}}>{r.time} ago · {r.type}</div>
+                  </div>
+                </div>
+                <p style={{fontFamily:'DM Sans',fontSize:'.82rem',color:'var(--text-2)',margin:0,lineHeight:1.55}}>{r.content}</p>
+                <div style={{display:'flex',gap:12,marginTop:7}}>
+                  <span style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--text-2)'}}>♥ {r.likes.toLocaleString()}</span>
+                  <span style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--text-2)'}}>↻ {r.rt.toLocaleString()}</span>
+                  <span style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--accent)',marginLeft:'auto',cursor:'pointer'}}>Save →</span>
+                </div>
+              </div>
+            ))}
+          </>
+        )}
+        {!searched&&!loading&&(
+          <div style={{textAlign:'center',paddingTop:44}}>
+            <div style={{fontSize:26,marginBottom:10}}>𝕏</div>
+            <p style={{fontFamily:'JetBrains Mono',fontSize:'.7rem',color:'var(--text-2)',lineHeight:1.65}}>Search X posts, articles &amp; replies<br/>in real time via Grok 4.3 OAuth.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/* ── Image Gen Panel ────────────────────────────────────────────── */
+function ImageGenPanel(){
+  const [prompt,setPrompt]=useState('');
+  const [style,setStyle]=useState('Photorealistic');
+  const [generating,setGenerating]=useState(false);
+  const [generated,setGenerated]=useState(null);
+  const STYLES=['Photorealistic','Anime','Sketch','Cinematic','Pixel Art','Oil Painting'];
+  function generate(){
+    if(!prompt.trim())return;
+    setGenerating(true);setGenerated(null);
+    setTimeout(()=>{setGenerated({seed:prompt+style,prompt,style});setGenerating(false);},1800);
+  }
+  return(
+    <div style={{display:'flex',flexDirection:'column',height:'100%',overflow:'hidden'}}>
+      <div style={{padding:'12px 14px',borderBottom:'1px solid var(--border)',flexShrink:0,display:'flex',flexDirection:'column',gap:9}}>
+        <textarea value={prompt} onChange={e=>setPrompt(e.target.value)} placeholder="Describe what to generate…"
+          style={{width:'100%',padding:'9px 11px',borderRadius:9,border:'1px solid var(--border)',background:'var(--bg-1,rgba(0,0,0,0.03))',color:'var(--text)',fontFamily:'DM Sans',fontSize:'.83rem',resize:'none',outline:'none',boxSizing:'border-box',minHeight:66}}
+          rows={3}/>
+        <div style={{display:'flex',flexWrap:'wrap',gap:5}}>
+          {STYLES.map(s=>(
+            <button key={s} onClick={()=>setStyle(s)} style={{padding:'4px 9px',borderRadius:9999,border:`1px solid ${style===s?'var(--accent)':'var(--border)'}`,background:style===s?'rgba(212,102,26,0.09)':'transparent',color:style===s?'var(--accent)':'var(--text-2)',fontFamily:'JetBrains Mono',fontSize:'.58rem',cursor:'pointer',transition:'all 0.12s'}}>{s}</button>
+          ))}
+        </div>
+        <button onClick={generate} disabled={!prompt.trim()||generating} style={{padding:'9px',borderRadius:9,border:'none',background:'var(--accent)',color:'#fff',fontFamily:'JetBrains Mono',fontSize:'.73rem',fontWeight:700,cursor:'pointer',opacity:(!prompt.trim()||generating)?0.5:1}}>
+          {generating?'Generating via Grok 4.3…':'🖼 Generate Image'}
+        </button>
+      </div>
+      <div style={{flex:1,overflowY:'auto',padding:'12px 14px'}}>
+        {generating&&<div style={{height:180,borderRadius:12,background:'var(--bg-1,rgba(0,0,0,0.04))',display:'flex',alignItems:'center',justifyContent:'center',animation:'shimmer 1.5s infinite'}}><span style={{fontFamily:'JetBrains Mono',fontSize:'.68rem',color:'var(--text-2)'}}>Generating…</span></div>}
+        {generated&&(
+          <div>
+            <div style={{borderRadius:12,overflow:'hidden',border:'1px solid var(--border)',background:'var(--bg-1)',marginBottom:9}}>
+              <img src={`https://api.dicebear.com/7.x/shapes/svg?seed=${encodeURIComponent(generated.seed)}&backgroundColor=0d0d1a`} alt="" style={{width:'100%',display:'block'}} onError={e=>e.target.style.display='none'}/>
+            </div>
+            <div style={{fontFamily:'JetBrains Mono',fontSize:'.6rem',color:'var(--text-2)',marginBottom:9}}>{generated.style} · Grok 4.3 Image Mode</div>
+            <div style={{display:'flex',gap:7}}>
+              <button style={{flex:1,padding:'8px',borderRadius:8,border:'1px solid var(--border)',background:'transparent',color:'var(--text-2)',fontFamily:'JetBrains Mono',fontSize:'.63rem',cursor:'pointer'}}>↓ Download</button>
+              <button style={{flex:1,padding:'8px',borderRadius:8,border:'none',background:'var(--accent)',color:'#fff',fontFamily:'JetBrains Mono',fontSize:'.63rem',fontWeight:600,cursor:'pointer'}}>→ Workspace</button>
+            </div>
+          </div>
+        )}
+        {!generated&&!generating&&(
+          <div style={{textAlign:'center',paddingTop:40}}>
+            <div style={{fontSize:26,marginBottom:10}}>🖼</div>
+            <p style={{fontFamily:'JetBrains Mono',fontSize:'.68rem',color:'var(--text-2)',lineHeight:1.65}}>Generate images with Grok 4.3.<br/>Outputs auto-save to Workspace.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/* ── Voice Panel ────────────────────────────────────────────────── */
+function VoicePanel(){
+  const [rec,setRec]=useState(false);
+  const [transcript,setTranscript]=useState('');
+  const [secs,setSecs]=useState(0);
+  const timerRef=useRef(null);
+  function toggle(){
+    if(rec){
+      setRec(false);clearInterval(timerRef.current);
+      if(secs>0) setTranscript(['Transcription: "Schedule a review for the workspace feature tomorrow at 3 PM."','Transcription: "Summarise the latest CrewAI framework updates."','Transcription: "Great idea for the agent flow — let\'s handle the memory module first."'][Math.floor(Math.random()*3)]);
+    } else {
+      setRec(true);setSecs(0);setTranscript('');
+      timerRef.current=setInterval(()=>setSecs(s=>s+1),1000);
+    }
+  }
+  useEffect(()=>()=>clearInterval(timerRef.current),[]);
+  const fmt=s=>`${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
+  return(
+    <div style={{display:'flex',flexDirection:'column',alignItems:'center',padding:'22px 14px',gap:18,overflowY:'auto',height:'100%',boxSizing:'border-box'}}>
+      <button onClick={toggle} style={{width:76,height:76,borderRadius:'50%',border:`3px solid ${rec?'#ef4444':'var(--accent)'}`,background:rec?'rgba(239,68,68,0.09)':'rgba(212,102,26,0.08)',display:'flex',alignItems:'center',justifyContent:'center',fontSize:26,cursor:'pointer',transition:'all 0.2s'}}>
+        {rec?'⏹':'🎤'}
+      </button>
+      {rec&&(
+        <div style={{textAlign:'center'}}>
+          <div style={{display:'flex',alignItems:'flex-end',gap:3,height:22,justifyContent:'center',marginBottom:7}}>
+            {[0,1,2,3,4,5,6].map(i=><div key={i} className="wave-bar" style={{animation:`wave 1.2s ease-in-out ${i*0.1}s infinite`}}/>)}
+          </div>
+          <div style={{fontFamily:'JetBrains Mono',fontSize:'.82rem',color:'#ef4444'}}>{fmt(secs)}</div>
+        </div>
+      )}
+      <p style={{fontFamily:'DM Sans',fontSize:'.82rem',color:'var(--text-2)',textAlign:'center',margin:0}}>{rec?'Recording — tap to stop':'Tap to record a voice message'}</p>
+      {transcript&&(
+        <div style={{width:'100%',padding:'11px 13px',borderRadius:12,border:'1px solid var(--border)',background:'var(--bg-1,rgba(0,0,0,0.03))'}}>
+          <div style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--accent)',textTransform:'uppercase',letterSpacing:'.07em',marginBottom:5}}>Transcript</div>
+          <p style={{fontFamily:'DM Sans',fontSize:'.85rem',color:'var(--text)',margin:0,lineHeight:1.6}}>{transcript}</p>
+          <div style={{display:'flex',gap:7,marginTop:10}}>
+            <button style={{flex:1,padding:'7px',borderRadius:8,border:'1px solid var(--border)',background:'transparent',color:'var(--text-2)',fontFamily:'JetBrains Mono',fontSize:'.6rem',cursor:'pointer'}}>↓ Save Memo</button>
+            <button style={{flex:1,padding:'7px',borderRadius:8,border:'none',background:'var(--accent)',color:'#fff',fontFamily:'JetBrains Mono',fontSize:'.6rem',fontWeight:600,cursor:'pointer'}}>➤ Send to Chat</button>
+          </div>
+        </div>
+      )}
+      <div style={{width:'100%',padding:'11px 13px',borderRadius:12,border:'1px solid var(--border)'}}>
+        <div style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--text-2)',textTransform:'uppercase',letterSpacing:'.07em',marginBottom:8}}>Voice Features</div>
+        {['Voice messages sent & received','Live transcription via Grok 4.3','Auto-save to Workspace → Memos','Send voice notes to any agent'].map((f,i)=>(
+          <div key={i} style={{display:'flex',alignItems:'center',gap:8,padding:'5px 0',borderBottom:i<3?'1px solid var(--border)':'none'}}>
+            <span style={{color:'var(--accent)',fontSize:11}}>✓</span>
+            <span style={{fontFamily:'DM Sans',fontSize:'.8rem',color:'var(--text-2)'}}>{f}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ── Video Panel ────────────────────────────────────────────────── */
+function VideoPanel({onVideoCall}){
+  return(
+    <div style={{display:'flex',flexDirection:'column',alignItems:'center',padding:'20px 14px',gap:16,overflowY:'auto',height:'100%',boxSizing:'border-box'}}>
+      <div style={{width:'100%',aspectRatio:'16/9',borderRadius:12,overflow:'hidden',background:'#0a0a0a',display:'flex',alignItems:'center',justifyContent:'center',position:'relative',border:'1px solid var(--border)'}}>
+        <div style={{textAlign:'center'}}><div style={{fontSize:28,marginBottom:7}}>📹</div><p style={{fontFamily:'JetBrains Mono',fontSize:'.65rem',color:'rgba(255,255,255,0.4)',margin:0}}>Camera preview</p></div>
+        <div style={{position:'absolute',bottom:8,left:'50%',transform:'translateX(-50%)',display:'flex',gap:8}}>
+          {['🎙','🔇','🔄'].map((ic,i)=>(
+            <button key={i} style={{width:32,height:32,borderRadius:'50%',border:'none',background:'rgba(255,255,255,0.15)',color:'#fff',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer',fontSize:13}}>{ic}</button>
+          ))}
+        </div>
+      </div>
+      <button onClick={onVideoCall} style={{width:'100%',padding:'11px',borderRadius:10,border:'none',background:'var(--accent)',color:'#fff',fontFamily:'JetBrains Mono',fontSize:'.75rem',fontWeight:700,cursor:'pointer'}}>📹 Start Video Call</button>
+      <div style={{width:'100%'}}>
+        <div style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--text-2)',textTransform:'uppercase',letterSpacing:'.07em',marginBottom:8}}>Video Features</div>
+        {['HD video calls with any agent','Screen sharing during calls','Auto-recording to Workspace','Real-time captions via Grok 4.3'].map((f,i)=>(
+          <div key={i} style={{display:'flex',alignItems:'center',gap:8,padding:'5px 0',borderBottom:i<3?'1px solid var(--border)':'none'}}>
+            <span style={{color:'var(--accent)',fontSize:11}}>✓</span>
+            <span style={{fontFamily:'DM Sans',fontSize:'.8rem',color:'var(--text-2)'}}>{f}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ── Studio right panel ─────────────────────────────────────────── */
+function StudioPanel({onVideoCall}){
+  const [mode,setMode]=useState('xsearch');
+  const MODES=[{id:'image',label:'Image',icon:'🖼'},{id:'xsearch',label:'X-Search',icon:'𝕏'},{id:'voice',label:'Voice',icon:'🎤'},{id:'video',label:'Video',icon:'📹'}];
+  return(
+    <div className="studio-right">
+      <div style={{display:'flex',borderBottom:'1px solid var(--border)',flexShrink:0}}>
+        {MODES.map(m=>(
+          <button key={m.id} onClick={()=>setMode(m.id)} className={`studio-tab${mode===m.id?' active':''}`}>
+            <span style={{fontSize:15}}>{m.icon}</span>
+            <span style={{fontFamily:'JetBrains Mono',fontSize:'.56rem',color:mode===m.id?'var(--accent)':'var(--text-2)',letterSpacing:'.04em'}}>{m.label}</span>
+          </button>
+        ))}
+      </div>
+      <div style={{flex:1,overflow:'hidden',display:'flex',flexDirection:'column'}}>
+        {mode==='xsearch'&&<XSearchPanel/>}
+        {mode==='image'&&<ImageGenPanel/>}
+        {mode==='voice'&&<VoicePanel/>}
+        {mode==='video'&&<VideoPanel onVideoCall={onVideoCall}/>}
+      </div>
+    </div>
+  );
+}
+
+/* ── Call overlay ───────────────────────────────────────────────── */
+function CallOverlay({type,agent,onEnd}){
+  const [dur,setDur]=useState(0);
+  useEffect(()=>{const t=setInterval(()=>setDur(d=>d+1),1000);return()=>clearInterval(t);},[]);
+  const fmt=s=>`${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
+  return(
+    <div className="call-overlay" onClick={e=>e.target===e.currentTarget&&onEnd()}>
+      <motion.div initial={{scale:0.85,opacity:0}} animate={{scale:1,opacity:1}} exit={{scale:0.85,opacity:0}} transition={{type:'spring',damping:22,stiffness:300}}
+        className="lg-s" style={{background:'var(--bg)',borderRadius:28,padding:'44px 38px',textAlign:'center',minWidth:300,display:'flex',flexDirection:'column',alignItems:'center',gap:22}}>
+        <div style={{position:'relative'}}>
+          <AgentAvatar agent={agent} size={80}/>
+          <div style={{position:'absolute',inset:-5,borderRadius:'50%',border:`2px solid ${agent.color}`,animation:'online-pulse 1.5s infinite'}}/>
+        </div>
+        <div>
+          <div style={{fontFamily:'Archivo Black',fontSize:'1.35rem',color:'var(--text)',marginBottom:4}}>{agent.name}</div>
+          <div style={{fontFamily:'JetBrains Mono',fontSize:'.68rem',color:'var(--text-2)'}}>{type==='video'?'Video Call':'Voice Call'} · {fmt(dur)}</div>
+          <div style={{fontFamily:'JetBrains Mono',fontSize:'.6rem',color:'#16a34a',marginTop:4}}>🔒 End-to-end encrypted</div>
+        </div>
+        {type==='voice'&&(
+          <div style={{display:'flex',alignItems:'flex-end',gap:3,height:28}}>
+            {[0,1,2,3,4,5,6,7].map(i=><div key={i} className="wave-bar" style={{animation:`wave 1.2s ease-in-out ${i*0.1}s infinite`}}/>)}
+          </div>
+        )}
+        {type==='video'&&(
+          <div style={{width:'100%',height:100,borderRadius:10,background:'#0a0a0a',display:'flex',alignItems:'center',justifyContent:'center',border:'1px solid rgba(255,255,255,0.08)'}}>
+            <p style={{fontFamily:'JetBrains Mono',fontSize:'.62rem',color:'rgba(255,255,255,0.35)',margin:0}}>Video stream</p>
+          </div>
+        )}
+        <div style={{display:'flex',gap:12}}>
+          <button style={{width:50,height:50,borderRadius:'50%',border:'none',background:'rgba(0,0,0,0.06)',color:'var(--text)',cursor:'pointer',fontSize:18,display:'flex',alignItems:'center',justifyContent:'center'}}>🔇</button>
+          {type==='video'&&<button style={{width:50,height:50,borderRadius:'50%',border:'none',background:'rgba(0,0,0,0.06)',color:'var(--text)',cursor:'pointer',fontSize:18,display:'flex',alignItems:'center',justifyContent:'center'}}>📵</button>}
+          <button onClick={onEnd} style={{width:50,height:50,borderRadius:'50%',border:'none',background:'#ef4444',color:'#fff',cursor:'pointer',fontSize:18,display:'flex',alignItems:'center',justifyContent:'center'}}>📵</button>
+        </div>
+      </motion.div>
+    </div>
+  );
+}
+
+/* ── App ────────────────────────────────────────────────────────── */
+function App(){
+  const [theme,setTheme]=useState(()=>localStorage.getItem('sk-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+  const [activeAgent,setActiveAgent]=useState(ALL_AGENTS[0]);
+  const [sidebarSearch,setSidebarSearch]=useState('');
+  const [call,setCall]=useState(null);
+
+  useEffect(()=>{document.documentElement.setAttribute('data-theme',theme);localStorage.setItem('sk-theme',theme);},[theme]);
+
+  return(
+    <>
+      <style>{`
+        @keyframes online-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.55;transform:scale(0.82)}}
+        @keyframes wave{0%,100%{height:4px}50%{height:18px}}
+        .wave-bar{width:3px;background:var(--accent);border-radius:2px;}
+        @keyframes shimmer{0%,100%{opacity:1}50%{opacity:0.45}}
+      `}</style>
+      <Nav theme={theme} onToggle={()=>setTheme(t=>t==='light'?'dark':'light')}/>
+      <div className="studio-layout">
+        <AgentSidebar activeId={activeAgent.id} onSelect={setActiveAgent} searchQ={sidebarSearch} setSearchQ={setSidebarSearch}/>
+        <ChatWindow agent={activeAgent} onVoiceCall={()=>setCall({type:'voice'})} onVideoCall={()=>setCall({type:'video'})}/>
+        <StudioPanel onVideoCall={()=>setCall({type:'video'})}/>
+      </div>
+      <AnimatePresence>
+        {call&&<CallOverlay key="call" type={call.type} agent={activeAgent} onEnd={()=>setCall(null)}/>}
+      </AnimatePresence>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>

@@ -324,7 +324,9 @@ function App() {
           <a href="index.html" style={{ fontFamily:'Archivo Black', fontSize:'1.05rem', color:'var(--text)', letterSpacing:'-.01em' }}>
             skill<span style={{ color:'var(--accent)' }}>scale</span>
           </a>
-          <div style={{ display:'flex', alignItems:'center', gap:10 }}>
+          <div style={{ display:'flex', alignItems:'center', gap:8 }}>
+            <a href="hubs.html" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)', padding:'6px 12px', borderRadius:9999, border:'1px solid var(--border)', textDecoration:'none' }}>⬡ Hubs</a>
+            <a href="studio.html" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)', padding:'6px 12px', borderRadius:9999, border:'1px solid var(--border)', textDecoration:'none' }}>⌬ Studio</a>
             <a href="index.html" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)' }}>← Back</a>
             <ThemeToggle theme={theme} onToggle={() => setTheme(t => t==='light'?'dark':'light')} />
           </div>

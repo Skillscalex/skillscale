@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workspace — Skillscale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{display:['Instrument Serif','serif'],heading:['Archivo Black','sans-serif'],body:['DM Sans','sans-serif'],mono:['JetBrains Mono','monospace']}},borderRadius:{DEFAULT:'9999px',none:'0',sm:'4px',md:'8px',lg:'16px',xl:'24px','2xl':'32px',full:'9999px'}}}</script>
+  <style>
+    #root{min-height:100vh;}
+    .page-top{padding-top:88px;}
+    *,*::before,*::after{transition-property:background-color,border-color,color;transition-duration:0.3s;}
+    video,canvas,img,svg{transition:none!important;}
+    .bucket-card{border:1px solid var(--border);border-radius:18px;padding:20px;background:var(--bg);cursor:pointer;transition:border-color 0.18s,box-shadow 0.18s;}
+    .bucket-card:hover{border-color:var(--accent);box-shadow:0 4px 24px rgba(212,102,26,0.1);}
+    .artifact-row{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--border);}
+    .artifact-row:last-child{border-bottom:none;}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+    .activity-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+    @keyframes slide-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+<script src="https://unpkg.com/framer-motion@11.11.17/dist/framer-motion.js"></script>
+<script type="text/babel">
+const { useState, useEffect, useRef, useCallback } = React;
+const { motion, AnimatePresence, useInView } = window.Motion;
+
+/* ── Workspace buckets ──────────────────────────────────────────── */
+const BUCKETS = [
+  {
+    id:'images', icon:'🖼', label:'Images & Art', count:47, color:'#E91E63', bg:'rgba(233,30,99,0.08)',
+    desc:'Generated images, art, and visual outputs from Grok Image Mode.',
+    recent:[
+      { name:'cyberpunk-cityscape.png', agent:'Pip', time:'9 min ago', size:'2.1 MB' },
+      { name:'brand-logo-v3.svg',       agent:'Pip', time:'1h ago',    size:'48 KB'  },
+      { name:'dashboard-mockup.png',    agent:'Pip', time:'3h ago',    size:'1.4 MB' },
+    ],
+    tags:['Generated','SVG','PNG'],
+  },
+  {
+    id:'code', icon:'💻', label:'Code & Scripts', count:123, color:'#FF8F00', bg:'rgba(255,143,0,0.08)',
+    desc:'Code files, scripts, functions, and implementation snippets from all agents.',
+    recent:[
+      { name:'anomaly-detector.py',    agent:'Byte',     time:'14 min ago', size:'4.2 KB'  },
+      { name:'schema-migration.sql',   agent:'QueryMind',time:'2h ago',     size:'1.8 KB'  },
+      { name:'agent-orchestrator.ts',  agent:'Byte',     time:'5h ago',     size:'12.4 KB' },
+    ],
+    tags:['Python','TypeScript','SQL'],
+  },
+  {
+    id:'xsearch', icon:'𝕏', label:'X-Search Results', count:89, color:'#212121', bg:'rgba(0,0,0,0.05)',
+    desc:'Saved X-Search queries, synthesised answers, and live citation exports.',
+    recent:[
+      { name:'"CrewAI" — 5 sources',     agent:'Aria',  time:'10 min ago', size:'—' },
+      { name:'"AI agents 2026" — 8 src', agent:'Nova',  time:'1h ago',     size:'—' },
+      { name:'"LangGraph" — 4 sources',  agent:'Rex',   time:'4h ago',     size:'—' },
+    ],
+    tags:['Synthesis','Citations','Live'],
+  },
+  {
+    id:'voice', icon:'🎤', label:'Voice Memos', count:34, color:'#7B2FBE', bg:'rgba(123,47,190,0.08)',
+    desc:'Recorded voice notes, agent voice messages, and transcription exports.',
+    recent:[
+      { name:'session-brief-0526.mp3',  agent:'You',   time:'32 min ago', size:'1.1 MB' },
+      { name:'aria-response-0526.mp3',  agent:'Aria',  time:'1h ago',     size:'620 KB' },
+      { name:'standup-notes-0525.mp3',  agent:'You',   time:'Yesterday',  size:'2.4 MB' },
+    ],
+    tags:['MP3','Transcribed','Auto-save'],
+  },
+  {
+    id:'video', icon:'📹', label:'Video Clips', count:12, color:'#B71C1C', bg:'rgba(183,28,28,0.08)',
+    desc:'Video call recordings, screen shares, and agent-generated video content.',
+    recent:[
+      { name:'call-aria-20min.mp4',     agent:'Aria',  time:'2h ago',    size:'180 MB' },
+      { name:'screen-share-arch.mp4',   agent:'Byte',  time:'Yesterday', size:'94 MB'  },
+      { name:'onboarding-demo.mp4',     agent:'Nova',  time:'2 days ago',size:'210 MB' },
+    ],
+    tags:['MP4','Calls','Recordings'],
+  },
+  {
+    id:'docs', icon:'📄', label:'Documents', count:67, color:'#1565C0', bg:'rgba(21,101,192,0.08)',
+    desc:'Reports, proposals, drafts, README files, and other structured documents.',
+    recent:[
+      { name:'agent-audit-report.md',   agent:'VaultGuard', time:'1h ago',    size:'28 KB'  },
+      { name:'product-spec-v2.md',      agent:'Rex',        time:'3h ago',    size:'14 KB'  },
+      { name:'linkedin-post-draft.txt', agent:'Mochi',      time:'Yesterday', size:'2.1 KB' },
+    ],
+    tags:['Markdown','PDF','DOCX'],
+  },
+  {
+    id:'analysis', icon:'📊', label:'Analysis Reports', count:28, color:'#0D6E8A', bg:'rgba(13,110,138,0.08)',
+    desc:'Data analysis outputs, statistical summaries, and research findings.',
+    recent:[
+      { name:'timeseries-anomaly-v2.html', agent:'DataBot-7', time:'2h ago',    size:'62 KB' },
+      { name:'market-sizing-q2.csv',       agent:'Rex',       time:'Yesterday', size:'8.4 KB'},
+      { name:'cohort-analysis-may.pdf',    agent:'DataBot-7', time:'2 days ago',size:'1.2 MB'},
+    ],
+    tags:['HTML','CSV','PDF'],
+  },
+  {
+    id:'text', icon:'✍️', label:'Generated Text', count:204, color:'#2E7D32', bg:'rgba(46,125,50,0.08)',
+    desc:'All text outputs — copy, summaries, explanations, and AI-authored content.',
+    recent:[
+      { name:'cold-email-batch-50.txt',  agent:'Mochi',  time:'30 min ago', size:'12 KB' },
+      { name:'seo-descriptions-v4.txt',  agent:'Mochi',  time:'2h ago',     size:'8.1 KB'},
+      { name:'framework-summary.md',     agent:'Aria',   time:'4h ago',     size:'3.8 KB'},
+    ],
+    tags:['TXT','MD','Auto-save'],
+  },
+  {
+    id:'convos', icon:'💬', label:'Conversations', count:156, color:'#D4661A', bg:'rgba(212,102,26,0.08)',
+    desc:'Full chat histories with all agents, searchable and exportable.',
+    recent:[
+      { name:'aria-session-0526.json',  agent:'Aria',       time:'Active',    size:'—' },
+      { name:'vaultguard-auth-log.json',agent:'VaultGuard', time:'1h ago',    size:'—' },
+      { name:'byte-code-review.json',   agent:'Byte',       time:'3h ago',    size:'—' },
+    ],
+    tags:['JSON','Searchable','Export'],
+  },
+  {
+    id:'data', icon:'📈', label:'Spreadsheets & Data', count:19, color:'#1B5E20', bg:'rgba(27,94,32,0.08)',
+    desc:'CSV files, structured data exports, and spreadsheet outputs from data agents.',
+    recent:[
+      { name:'sales-forecast-q3.csv',   agent:'QueryMind', time:'1h ago',    size:'44 KB' },
+      { name:'churn-signals.csv',       agent:'DataBot-7', time:'Yesterday', size:'112 KB'},
+      { name:'ab-test-results.xlsx',    agent:'Rex',       time:'2 days ago',size:'280 KB'},
+    ],
+    tags:['CSV','XLSX','JSON'],
+  },
+  {
+    id:'diagrams', icon:'🗺', label:'Diagrams & Charts', count:31, color:'#4A148C', bg:'rgba(74,20,140,0.08)',
+    desc:'System diagrams, flowcharts, architecture visuals, and data visualisations.',
+    recent:[
+      { name:'agent-pipeline-v3.svg',   agent:'Byte',      time:'3h ago',    size:'22 KB' },
+      { name:'db-schema-diagram.png',   agent:'QueryMind', time:'Yesterday', size:'140 KB'},
+      { name:'funnel-chart-q2.svg',     agent:'DataBot-7', time:'2 days ago',size:'18 KB' },
+    ],
+    tags:['SVG','PNG','Mermaid'],
+  },
+  {
+    id:'webclips', icon:'🌐', label:'Web Clips', count:88, color:'#006064', bg:'rgba(0,96,100,0.08)',
+    desc:'Saved web pages, article clippings, X-Search results, and bookmarked references.',
+    recent:[
+      { name:'crewai-docs-overview.clip', agent:'Nova',  time:'45 min ago', size:'—' },
+      { name:'llm-benchmarks-2026.clip',  agent:'Aria',  time:'2h ago',     size:'—' },
+      { name:'arxiv-2502.03144.clip',     agent:'Nova',  time:'Yesterday',  size:'—' },
+    ],
+    tags:['HTML','Clipped','Referenced'],
+  },
+  {
+    id:'workflows', icon:'⚙️', label:'Workflows', count:14, color:'#37474F', bg:'rgba(55,71,79,0.08)',
+    desc:'Saved automation workflows, agent pipelines, and skill chain definitions.',
+    recent:[
+      { name:'content-calendar-flow.yaml',  agent:'You',   time:'1 day ago',  size:'3.2 KB' },
+      { name:'lead-enrichment-pipe.yaml',   agent:'Rex',   time:'3 days ago', size:'5.6 KB' },
+      { name:'weekly-report-auto.yaml',     agent:'Aria',  time:'5 days ago', size:'2.8 KB' },
+    ],
+    tags:['YAML','Automation','Reusable'],
+  },
+];
+
+const TOTAL = BUCKETS.reduce((s,b)=>s+b.count,0);
+
+const ACTIVITY = [
+  { text:'Pip generated "cyberpunk-cityscape.png"',         time:'9 min ago',   color:'#E91E63' },
+  { text:'Aria completed X-Search · "CrewAI" · 5 sources', time:'10 min ago',  color:'#D4661A' },
+  { text:'You sent voice memo to VaultGuard',               time:'32 min ago',  color:'#7B2FBE' },
+  { text:'Byte reviewed anomaly-detector.py',               time:'14 min ago',  color:'#FF8F00' },
+  { text:'QueryMind exported sales-forecast-q3.csv',        time:'1h ago',      color:'#1B5E20' },
+  { text:'Nova clipped arxiv-2502.03144',                   time:'Yesterday',   color:'#006064' },
+  { text:'DataBot-7 generated cohort-analysis-may.pdf',     time:'2 days ago',  color:'#0D6E8A' },
+];
+
+/* ── Helpers ────────────────────────────────────────────────────── */
+function getVaultCount(){try{const v=JSON.parse(localStorage.getItem('skillscale_vault')||'{"dreamed":[],"owned":[]}');return v.dreamed.length+v.owned.length;}catch{return 0;}}
+
+/* ── Nav ────────────────────────────────────────────────────────── */
+function ThemeToggle({theme,onToggle}){
+  return <button onClick={onToggle} className="lg" style={{width:38,height:38,borderRadius:'50%',border:'none',display:'flex',alignItems:'center',justifyContent:'center',fontSize:16,color:theme==='light'?'#1A1714':'#F1E9D8',cursor:'pointer',flexShrink:0}}>{theme==='light'?'☀️':'🌙'}</button>;
+}
+function Nav({theme,onToggle}){
+  const [vc,setVc]=useState(getVaultCount);
+  useEffect(()=>{const s=()=>setVc(getVaultCount());window.addEventListener('vault-updated',s);window.addEventListener('storage',s);return()=>{window.removeEventListener('vault-updated',s);window.removeEventListener('storage',s);};},[]);
+  const pages=[{href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},{href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'}];
+  return(
+    <nav className="nav lg" style={{padding:'12px 24px',borderBottom:'1px solid var(--border)',borderRadius:0}}>
+      <div className="nav-inner">
+        <a href="index.html" style={{fontFamily:'Archivo Black',fontSize:'1.05rem',color:'var(--text)',letterSpacing:'-.01em',flexShrink:0}}>skill<span style={{color:'var(--accent)'}}>scale</span></a>
+        <div className="nav-links" style={{display:'flex',alignItems:'center',padding:'6px',borderRadius:9999,gap:2}}>
+          {pages.map(p=><a key={p.href} href={p.href} style={{fontFamily:'JetBrains Mono',fontSize:'.72rem',letterSpacing:'.04em',padding:'6px 14px',borderRadius:9999,color:'var(--text-2)',transition:'all 0.15s'}}>{p.label}</a>)}
+        </div>
+        <div style={{display:'flex',alignItems:'center',gap:8}}>
+          <a href="vault.html" style={{position:'relative',display:'flex',alignItems:'center',gap:6,fontFamily:'JetBrains Mono',fontSize:'.72rem',padding:'7px 14px',borderRadius:9999,color:'var(--text-2)',border:'1px solid var(--border)',transition:'all 0.15s',textDecoration:'none'}}>
+            ✦ Vault{vc>0&&<span style={{position:'absolute',top:-5,right:-5,minWidth:16,height:16,borderRadius:9999,background:'var(--accent)',color:'#fff',fontSize:'.55rem',fontWeight:700,display:'flex',alignItems:'center',justifyContent:'center',padding:'0 4px'}}>{vc}</span>}
+          </a>
+          <a href="hubs.html" style={{display:'flex',alignItems:'center',gap:6,fontFamily:'JetBrains Mono',fontSize:'.72rem',padding:'7px 14px',borderRadius:9999,color:'var(--text-2)',border:'1px solid var(--border)',transition:'all 0.15s',textDecoration:'none'}}>⬡ Hubs</a>
+          <a href="studio.html" style={{display:'flex',alignItems:'center',gap:6,fontFamily:'JetBrains Mono',fontSize:'.72rem',padding:'7px 14px',borderRadius:9999,color:'var(--text-2)',border:'1px solid var(--border)',transition:'all 0.15s',textDecoration:'none'}}>⌬ Studio</a>
+          <a href="auth.html" className="btn btn-sm lg" style={{fontFamily:'JetBrains Mono',fontSize:'.72rem',padding:'7px 16px',border:'1px solid var(--border)'}}>Sign In</a>
+          <ThemeToggle theme={theme} onToggle={onToggle}/>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function Footer(){
+  return(
+    <footer className="footer" style={{background:'var(--bg)'}}>
+      <div className="container footer-inner">
+        <span style={{fontFamily:'Archivo Black',fontSize:'.9rem',color:'var(--text)'}}>skill<span style={{color:'var(--accent)'}}>scale</span></span>
+        <div style={{display:'flex',gap:24,flexWrap:'wrap'}}>
+          {[['index.html','Home'],['skills.html','Skills'],['market.html','Market'],['vault.html','Vault'],['hubs.html','Hubs'],['studio.html','Studio'],['workspace.html','Workspace']].map(([h,l])=>(
+            <a key={h} href={h} style={{fontFamily:'JetBrains Mono',fontSize:'.72rem',color:'var(--text-2)'}}>{l}</a>
+          ))}
+        </div>
+        <span style={{fontFamily:'JetBrains Mono',fontSize:'.68rem',color:'var(--text-2)'}}>© 2026 Skillscale</span>
+      </div>
+    </footer>
+  );
+}
+
+/* ── Bucket Card ────────────────────────────────────────────────── */
+function BucketCard({bucket,index,onOpen}){
+  const ref=useRef(null);
+  const inView=useInView(ref,{once:true,margin:'0px'});
+  const pct=Math.min(100,Math.round((bucket.count/204)*100));
+  return(
+    <motion.div ref={ref} className="bucket-card" onClick={()=>onOpen(bucket)}
+      initial={{opacity:0,y:18}} animate={inView?{opacity:1,y:0}:{}}
+      transition={{duration:0.38,delay:Math.min(index*0.04,0.32),ease:'easeOut'}}>
+      <div style={{display:'flex',alignItems:'flex-start',justifyContent:'space-between',marginBottom:14}}>
+        <div style={{width:44,height:44,borderRadius:12,background:bucket.bg,display:'flex',alignItems:'center',justifyContent:'center',fontSize:20,flexShrink:0}}>
+          {bucket.icon}
+        </div>
+        <span style={{fontFamily:'Archivo Black',fontSize:'1.55rem',color:'var(--text)',lineHeight:1}}>{bucket.count}</span>
+      </div>
+      <div style={{fontFamily:'DM Sans',fontSize:'.9rem',fontWeight:700,color:'var(--text)',marginBottom:4}}>{bucket.label}</div>
+      <p style={{fontFamily:'DM Sans',fontSize:'.78rem',color:'var(--text-2)',lineHeight:1.5,margin:'0 0 12px',display:'-webkit-box',WebkitLineClamp:2,WebkitBoxOrient:'vertical',overflow:'hidden'}}>{bucket.desc}</p>
+      {/* Progress bar */}
+      <div style={{height:4,borderRadius:9999,background:'var(--border)',overflow:'hidden',marginBottom:10}}>
+        <div style={{height:'100%',borderRadius:9999,width:`${pct}%`,background:`linear-gradient(90deg,${bucket.color}99,${bucket.color})`}}/>
+      </div>
+      {/* Tags */}
+      <div style={{display:'flex',flexWrap:'wrap',gap:5}}>
+        {bucket.tags.map(t=>(
+          <span key={t} style={{fontFamily:'JetBrains Mono',fontSize:'.56rem',color:bucket.color,background:bucket.bg,padding:'3px 8px',borderRadius:9999,border:`1px solid ${bucket.color}30`}}>{t}</span>
+        ))}
+      </div>
+    </motion.div>
+  );
+}
+
+/* ── Bucket detail panel ────────────────────────────────────────── */
+function BucketPanel({bucket,onClose}){
+  useEffect(()=>{
+    const k=e=>{if(e.key==='Escape')onClose();};
+    document.addEventListener('keydown',k);
+    return()=>document.removeEventListener('keydown',k);
+  },[onClose]);
+  if(!bucket)return null;
+  return(
+    <AnimatePresence>
+      <>
+        <motion.div key="bd" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.2}}
+          onClick={onClose} style={{position:'fixed',inset:0,zIndex:200,background:'rgba(0,0,0,0.36)',backdropFilter:'blur(4px)'}}/>
+        <motion.div key="bp" initial={{x:'100%'}} animate={{x:0}} exit={{x:'100%'}} transition={{type:'spring',damping:28,stiffness:280}}
+          className="lg-s" style={{position:'fixed',top:0,right:0,bottom:0,width:'min(80vw,560px)',zIndex:201,borderRadius:'24px 0 0 24px',background:'var(--bg)',display:'flex',flexDirection:'column',overflow:'hidden'}}>
+          {/* Header */}
+          <div style={{display:'flex',alignItems:'center',gap:14,padding:'20px 24px',borderBottom:'1px solid var(--border)',flexShrink:0}}>
+            <div style={{width:48,height:48,borderRadius:14,background:bucket.bg,display:'flex',alignItems:'center',justifyContent:'center',fontSize:22,flexShrink:0}}>{bucket.icon}</div>
+            <div style={{flex:1}}>
+              <div style={{fontFamily:'Archivo Black',fontSize:'1.1rem',color:'var(--text)'}}>{bucket.label}</div>
+              <div style={{fontFamily:'JetBrains Mono',fontSize:'.62rem',color:'var(--text-2)'}}>{bucket.count} artifacts</div>
+            </div>
+            <button onClick={onClose} className="lg" style={{width:34,height:34,borderRadius:'50%',border:'none',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer',color:'var(--text-2)',fontSize:14}}>✕</button>
+          </div>
+          {/* Body */}
+          <div style={{flex:1,overflowY:'auto',padding:'20px 24px'}}>
+            <p style={{fontFamily:'DM Sans',fontSize:'.88rem',color:'var(--text-2)',lineHeight:1.65,marginBottom:20}}>{bucket.desc}</p>
+            <div style={{fontFamily:'JetBrains Mono',fontSize:'.6rem',color:'var(--text-2)',textTransform:'uppercase',letterSpacing:'.08em',marginBottom:10}}>Recent Files</div>
+            <div style={{border:'1px solid var(--border)',borderRadius:12,overflow:'hidden',marginBottom:20}}>
+              {bucket.recent.map((f,i)=>(
+                <div key={i} className="artifact-row" style={{padding:'10px 14px'}}>
+                  <div style={{width:32,height:32,borderRadius:8,background:bucket.bg,display:'flex',alignItems:'center',justifyContent:'center',fontSize:14,flexShrink:0}}>{bucket.icon}</div>
+                  <div style={{flex:1,minWidth:0}}>
+                    <div style={{fontFamily:'JetBrains Mono',fontSize:'.7rem',color:'var(--text)',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'}}>{f.name}</div>
+                    <div style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--text-2)'}}>by {f.agent} · {f.time}{f.size!=='—'?` · ${f.size}`:''}</div>
+                  </div>
+                  <button style={{padding:'5px 10px',borderRadius:8,border:'1px solid var(--border)',background:'transparent',color:'var(--text-2)',fontFamily:'JetBrains Mono',fontSize:'.6rem',cursor:'pointer',flexShrink:0}}>↓</button>
+                </div>
+              ))}
+            </div>
+            <div style={{display:'flex',gap:8}}>
+              <button style={{flex:1,padding:'10px',borderRadius:10,border:'1px solid var(--border)',background:'transparent',color:'var(--text-2)',fontFamily:'JetBrains Mono',fontSize:'.68rem',cursor:'pointer'}}>Export All</button>
+              <button style={{flex:1,padding:'10px',borderRadius:10,border:'none',background:'var(--accent)',color:'#fff',fontFamily:'JetBrains Mono',fontSize:'.68rem',fontWeight:700,cursor:'pointer'}}>Open in Studio →</button>
+            </div>
+          </div>
+        </motion.div>
+      </>
+    </AnimatePresence>
+  );
+}
+
+/* ── App ────────────────────────────────────────────────────────── */
+function App(){
+  const [theme,setTheme]=useState(()=>localStorage.getItem('sk-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+  const [filter,setFilter]=useState('all');
+  const [searchQ,setSearchQ]=useState('');
+  const [openBucket,setOpenBucket]=useState(null);
+
+  useEffect(()=>{document.documentElement.setAttribute('data-theme',theme);localStorage.setItem('sk-theme',theme);},[theme]);
+
+  const FILTERS=[
+    {id:'all',label:'All Buckets'},
+    {id:'media',label:'Media',ids:['images','video','voice']},
+    {id:'code',label:'Code',ids:['code','workflows','diagrams']},
+    {id:'knowledge',label:'Knowledge',ids:['docs','text','analysis','xsearch','webclips','convos']},
+    {id:'data',label:'Data',ids:['data']},
+  ];
+
+  const shown=BUCKETS.filter(b=>{
+    const activeF=FILTERS.find(f=>f.id===filter);
+    const matchF=filter==='all'||(activeF?.ids||[]).includes(b.id);
+    const q=searchQ.toLowerCase().trim();
+    const matchQ=!q||b.label.toLowerCase().includes(q)||b.desc.toLowerCase().includes(q)||b.tags.some(t=>t.toLowerCase().includes(q));
+    return matchF&&matchQ;
+  });
+
+  return(
+    <>
+      <Nav theme={theme} onToggle={()=>setTheme(t=>t==='light'?'dark':'light')}/>
+      <BucketPanel bucket={openBucket} onClose={()=>setOpenBucket(null)}/>
+
+      <main style={{background:'var(--bg)',minHeight:'100vh'}}>
+        {/* Hero */}
+        <div className="page-top" style={{borderBottom:'1px solid var(--border)',paddingBottom:44}}>
+          <div className="container" style={{paddingTop:40}}>
+            <motion.div initial={{opacity:0,y:18}} animate={{opacity:1,y:0}} transition={{duration:0.5,ease:'easeOut'}}>
+              <span style={{fontFamily:'JetBrains Mono',fontSize:'.68rem',letterSpacing:'.08em',color:'var(--accent)',textTransform:'uppercase',display:'block',marginBottom:10}}>// Workspace</span>
+              <div style={{display:'flex',alignItems:'flex-end',justifyContent:'space-between',flexWrap:'wrap',gap:16,marginBottom:18}}>
+                <h1 className="t-display" style={{fontSize:'clamp(2.4rem,5.5vw,4.8rem)',color:'var(--text)',lineHeight:.9,margin:0}}>
+                  Everything<br/>You've Built
+                </h1>
+                <p style={{fontFamily:'DM Sans',fontSize:'.95rem',color:'var(--text-2)',lineHeight:1.6,maxWidth:'38ch',margin:0}}>
+                  Every artifact from every agent — images, code, conversations, data, and more — all in one searchable dashboard.
+                </p>
+              </div>
+              {/* Search */}
+              <div style={{display:'flex',gap:10,flexWrap:'wrap',alignItems:'center'}}>
+                <div className="search-wrap" style={{maxWidth:400}}>
+                  <input className="search-input" type="text" placeholder="Search workspace…" value={searchQ} onChange={e=>setSearchQ(e.target.value)}/>
+                  <span className="search-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                  </span>
+                </div>
+                <a href="studio.html" style={{display:'flex',alignItems:'center',gap:6,padding:'9px 18px',borderRadius:9999,border:'1px solid var(--border)',textDecoration:'none',color:'var(--text-2)',fontFamily:'JetBrains Mono',fontSize:'.7rem',transition:'all 0.15s'}}
+                  onMouseEnter={e=>{e.currentTarget.style.borderColor='var(--accent)';e.currentTarget.style.color='var(--accent)';}}
+                  onMouseLeave={e=>{e.currentTarget.style.borderColor='var(--border)';e.currentTarget.style.color='var(--text-2)';}}>
+                  ⌬ Open Studio →
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Stats strip */}
+        <div style={{borderBottom:'1px solid var(--border)',background:'var(--bg-1,var(--bg))'}}>
+          <div className="container" style={{padding:'16px 24px',display:'flex',gap:36,flexWrap:'wrap',justifyContent:'center'}}>
+            {[
+              {n:TOTAL.toLocaleString(), label:'Total artifacts'},
+              {n:'13', label:'Artifact types'},
+              {n:'11', label:'Active agents'},
+              {n:'4', label:'Creation modes'},
+            ].map((s,i)=>(
+              <motion.div key={s.label} initial={{opacity:0,y:8}} animate={{opacity:1,y:0}} transition={{duration:0.36,delay:i*0.06}}
+                style={{display:'flex',alignItems:'baseline',gap:8}}>
+                <span className="t-display" style={{fontSize:'1.7rem',color:'var(--text)'}}>{s.n}</span>
+                <span style={{fontFamily:'JetBrains Mono',fontSize:'.63rem',color:'var(--text-2)'}}>{s.label}</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Main content */}
+        <div className="section-sm" style={{background:'var(--bg)'}}>
+          <div className="container">
+            <div style={{display:'grid',gridTemplateColumns:'1fr 280px',gap:32,alignItems:'start'}}>
+              {/* Left: bucket grid */}
+              <div>
+                {/* Filter tabs */}
+                <div style={{display:'flex',gap:6,marginBottom:28,flexWrap:'wrap'}}>
+                  {FILTERS.map(f=>(
+                    <button key={f.id} onClick={()=>setFilter(f.id)}
+                      style={{padding:'7px 16px',borderRadius:9999,border:`1px solid ${filter===f.id?'var(--accent)':'var(--border)'}`,background:filter===f.id?'rgba(212,102,26,0.09)':'transparent',color:filter===f.id?'var(--accent)':'var(--text-2)',fontFamily:'JetBrains Mono',fontSize:'.68rem',cursor:'pointer',transition:'all 0.14s'}}>
+                      {f.label}
+                    </button>
+                  ))}
+                </div>
+                {/* Grid */}
+                <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(220px,1fr))',gap:14}}>
+                  {shown.map((b,i)=><BucketCard key={b.id} bucket={b} index={i} onOpen={setOpenBucket}/>)}
+                </div>
+                {shown.length===0&&(
+                  <div style={{textAlign:'center',padding:'48px 0'}}>
+                    <p style={{fontFamily:'JetBrains Mono',fontSize:'.82rem',color:'var(--text-2)'}}>No buckets match your search.</p>
+                  </div>
+                )}
+              </div>
+
+              {/* Right: recent activity */}
+              <div style={{position:'sticky',top:96}}>
+                <div className="lg" style={{borderRadius:18,padding:'18px 20px'}}>
+                  <div style={{fontFamily:'JetBrains Mono',fontSize:'.6rem',letterSpacing:'.08em',color:'var(--text-2)',textTransform:'uppercase',marginBottom:14}}>Recent Activity</div>
+                  <div style={{display:'flex',flexDirection:'column',gap:0}}>
+                    {ACTIVITY.map((a,i)=>(
+                      <div key={i} style={{display:'flex',gap:10,padding:'9px 0',borderBottom:i<ACTIVITY.length-1?'1px solid var(--border)':'none'}}>
+                        <div style={{width:8,height:8,borderRadius:'50%',background:a.color,flexShrink:0,marginTop:5}}/>
+                        <div style={{flex:1}}>
+                          <div style={{fontFamily:'DM Sans',fontSize:'.78rem',color:'var(--text)',lineHeight:1.4}}>{a.text}</div>
+                          <div style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--text-2)',marginTop:2}}>{a.time}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <a href="studio.html" style={{display:'block',marginTop:14,padding:'9px',borderRadius:10,border:'1px solid var(--border)',textAlign:'center',textDecoration:'none',fontFamily:'JetBrains Mono',fontSize:'.65rem',color:'var(--text-2)',transition:'all 0.15s'}}
+                    onMouseEnter={e=>{e.currentTarget.style.borderColor='var(--accent)';e.currentTarget.style.color='var(--accent)';}}
+                    onMouseLeave={e=>{e.currentTarget.style.borderColor='var(--border)';e.currentTarget.style.color='var(--text-2)';}}>
+                    ⌬ Back to Studio →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <Footer/>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>

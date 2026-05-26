@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hubs — Skillscale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: { fontFamily: { display:['Instrument Serif','serif'], heading:['Archivo Black','sans-serif'], body:['DM Sans','sans-serif'], mono:['JetBrains Mono','monospace'] } },
+        borderRadius: { DEFAULT:'9999px', none:'0', sm:'4px', md:'8px', lg:'16px', xl:'24px', '2xl':'32px', full:'9999px' }
+      }
+    }
+  </script>
+  <style>
+    #root { min-height: 100vh; }
+    .page-top { padding-top: 88px; }
+    *, *::before, *::after { transition-property: background-color, border-color, color; transition-duration: 0.3s; }
+    video, canvas, img, svg { transition: none !important; }
+    .hub-detail-panel { overflow-y: auto; }
+    .hub-detail-panel::-webkit-scrollbar { width: 4px; }
+    .hub-detail-panel::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+    @media (max-width: 640px) { .hub-detail-panel { width: 100vw !important; border-radius: 0 !important; } }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/framer-motion@11.11.17/dist/framer-motion.js"></script>
+
+<script type="text/babel">
+const { useState, useEffect, useRef, useCallback } = React;
+const { motion, AnimatePresence, useInView } = window.Motion;
+
+/* ====================================================
+   Vault helpers
+   ==================================================== */
+const VAULT_KEY = 'skillscale_vault';
+function getVault() {
+  try { return JSON.parse(localStorage.getItem(VAULT_KEY) || '{"dreamed":[],"owned":[]}'); }
+  catch { return { dreamed:[], owned:[] }; }
+}
+function getVaultCount() { const v = getVault(); return v.dreamed.length + v.owned.length; }
+
+/* ====================================================
+   Hub data
+   ==================================================== */
+const HUBS = [
+  {
+    id:'h001', name:'Anthropic Official', slug:'anthropic', creator:'anthropic',
+    type:'official', coverColor:'#C05010', coverPattern:'hub-pat-radial',
+    description:'Officially supported and security-audited skills from the Anthropic team. Production-ready, documentation-complete, and actively maintained with zero-day patches.',
+    longDesc:'Every skill in this hub passes the full three-agent audit pipeline (SecurityAuditor, ModelMatcher, QualityChecker) before listing. All are MIT-licensed, documented with SKILL.md, and tested against Claude Opus 4.7 and Sonnet 4.6.',
+    skillCount:24, followers:14200, verified:true,
+    topSkills:['code-review-agent','claude-summarizer','security-scanner','test-writer','api-designer','readme-writer'],
+    tags:['Official','Verified','Security-Audited'], avgScore:97, featured:true,
+  },
+  {
+    id:'h002', name:'skillsmp.com', slug:'skillsmp', creator:'skillsmp',
+    type:'official', coverColor:'#1565C0', coverPattern:'hub-pat-grid',
+    description:'The canonical skill registry. Over 1M community-published skills organized by 23 Standard Occupational Classification groups from the U.S. Bureau of Labor Statistics.',
+    longDesc:'skillsmp.com is the upstream data source for the Skillscale marketplace. Skills are submitted by the community, reviewed by moderators, and tagged with SOC taxonomy codes. The registry is updated daily.',
+    skillCount:1000000, followers:8900, verified:true,
+    topSkills:['data-analyzer','report-writer','email-assistant','meeting-minutes','sql-genius','rag-pipeline'],
+    tags:['Registry','SOC-Standard','23 Occupations'], avgScore:88, featured:true,
+  },
+  {
+    id:'h003', name:'DevOps Essentials', slug:'devops-essentials', creator:'dev_kai',
+    type:'themed', coverColor:'#1A6B3A', coverPattern:'hub-pat-dots',
+    description:'The must-have CI/CD, infrastructure, containerization, and deployment automation skills for modern engineering teams building at speed.',
+    longDesc:'Curated by @dev_kai, a senior platform engineer with 10+ years in DevOps. Every skill in this hub is tested on real production pipelines before inclusion. Updated monthly.',
+    skillCount:18, followers:3240, verified:false,
+    topSkills:['ci-pipeline-builder','docker-composer','arch-advisor','security-scanner','debug-detective','perf-profiler'],
+    tags:['DevOps','Infrastructure','CI/CD'], avgScore:82, featured:false,
+  },
+  {
+    id:'h004', name:'Writing Arsenal', slug:'writing-arsenal', creator:'creative_jo',
+    type:'creator', coverColor:'#7B2FBE', coverPattern:'hub-pat-wave',
+    description:'Professional writing skills for marketers, content creators, and founders. Cold emails to brand voice to SEO copy — words that actually convert.',
+    longDesc:'Built by @creative_jo, a freelance copywriter who\'s worked with 50+ startups. Each skill is tested on real campaigns before publishing. All prompts are brand-voice aware.',
+    skillCount:12, followers:2780, verified:false,
+    topSkills:['copy-crafter','brand-voice','seo-optimizer','script-writer','cold-email-agent','report-writer'],
+    tags:['Writing','Marketing','Content'], avgScore:79, featured:false,
+  },
+  {
+    id:'h005', name:'Data & Analytics', slug:'data-analytics', creator:'li_xuan',
+    type:'themed', coverColor:'#0D6E8A', coverPattern:'hub-pat-mesh',
+    description:'End-to-end data pipeline skills — from raw cleaning and analysis to visualization and storytelling. For data scientists and analysts who live in spreadsheets.',
+    longDesc:'@li_xuan is a data scientist at a Series B startup. These are the actual skills used daily in production pipelines. Strong emphasis on reproducibility and documentation.',
+    skillCount:15, followers:2150, verified:false,
+    topSkills:['data-analyzer','rag-pipeline','data-viz-agent','data-cleaner','sql-genius','web-scraper'],
+    tags:['Data','Analytics','Visualization'], avgScore:85, featured:false,
+  },
+  {
+    id:'h006', name:'Healthcare AI', slug:'healthcare-ai', creator:'health_ai',
+    type:'community', coverColor:'#C0392B', coverPattern:'hub-pat-grid',
+    description:'HIPAA-aware clinical skills for healthcare professionals. Note-taking, research synthesis, coding assistance, and patient communication tools.',
+    longDesc:'Community-maintained hub reviewed by practicing clinicians. Skills are flagged with HIPAA sensitivity levels. No PHI is required to use any skill in this hub.',
+    skillCount:9, followers:1890, verified:false,
+    topSkills:['clinical-notes','research-synthesizer','compliance-checker','doc-formatter','paper-reviewer'],
+    tags:['Healthcare','HIPAA','Clinical'], avgScore:91, featured:false,
+  },
+  {
+    id:'h007', name:'Productivity Pack', slug:'productivity-pack', creator:'productivity_ai',
+    type:'community', coverColor:'#D4661A', coverPattern:'hub-pat-radial',
+    description:'Daily workflow essentials — email, calendar, meetings, documents, and task management for any role. The starter kit every knowledge worker needs.',
+    longDesc:'The most-followed community hub on Skillscale. Covers the tools that save at least 2 hours/day for most knowledge workers. All skills work offline with local context.',
+    skillCount:14, followers:5670, verified:false,
+    topSkills:['email-assistant','meeting-minutes','calendar-agent','notion-sync','doc-formatter','claude-summarizer'],
+    tags:['Productivity','Workflow','Automation'], avgScore:78, featured:false,
+  },
+  {
+    id:'h008', name:'Legal Tech', slug:'legal-tech', creator:'legal_ai',
+    type:'creator', coverColor:'#2C3E50', coverPattern:'hub-pat-lines',
+    description:'Specialized skills for legal professionals — contract review, case research, compliance checking, and drafting assistance. Jurisdiction-aware.',
+    longDesc:'Built by a team of legal tech practitioners. Skills include jurisdiction toggles (US, UK, EU) and disclaimer footers. Not a substitute for qualified legal advice.',
+    skillCount:8, followers:1240, verified:false,
+    topSkills:['case-researcher','compliance-checker','contract-reviewer','doc-formatter'],
+    tags:['Legal','Compliance','Research'], avgScore:88, featured:false,
+  },
+  {
+    id:'h009', name:'Startup Toolkit', slug:'startup-toolkit', creator:'biz_anna',
+    type:'community', coverColor:'#E8A020', coverPattern:'hub-pat-hex',
+    description:'Everything a founder needs — from pitch deck writing and financial modeling to cold outreach and investor updates. Built by founders, for founders.',
+    longDesc:'@biz_anna has been building startups for 8 years and curates this hub from personal use. All skills are tested on real fundraising and sales workflows.',
+    skillCount:11, followers:4230, verified:false,
+    topSkills:['cold-email-agent','financial-analyzer','report-writer','okr-coach','market-analyzer','crm-assistant'],
+    tags:['Startup','Business','Founders'], avgScore:75, featured:false,
+  },
+  {
+    id:'h010', name:'Security Ops', slug:'security-ops', creator:'sec_pro',
+    type:'themed', coverColor:'#1A1A2E', coverPattern:'hub-pat-dots',
+    description:'Offensive and defensive security automation — vuln scanning, compliance auditing, threat modeling, and incident response tools for security teams.',
+    longDesc:'All skills go through a red-team review before listing. Skills that could be misused are gated behind verified accounts. The hub maintainer is a CISSP-certified practitioner.',
+    skillCount:7, followers:1870, verified:false,
+    topSkills:['security-scanner','compliance-checker','debug-detective','arch-advisor'],
+    tags:['Security','Compliance','DevSecOps'], avgScore:93, featured:false,
+  },
+  {
+    id:'h011', name:'Education Lab', slug:'education-lab', creator:'edu_team',
+    type:'community', coverColor:'#2E7D32', coverPattern:'hub-pat-wave',
+    description:'Transform teaching with AI-powered lesson planning, quiz generation, adaptive learning paths, and student feedback automation for educators.',
+    longDesc:'Community hub maintained by a network of K-12 and university educators. Skills comply with FERPA and COPPA guidelines. Differentiation strategies included.',
+    skillCount:9, followers:2340, verified:false,
+    topSkills:['lesson-planner','quiz-generator','paper-reviewer','claude-summarizer'],
+    tags:['Education','Teaching','EdTech'], avgScore:80, featured:false,
+  },
+  {
+    id:'h012', name:'Open Source Club', slug:'open-source', creator:'community',
+    type:'community', coverColor:'#4A148C', coverPattern:'hub-pat-mesh',
+    description:'Community-voted best open-source skills. Transparent, MIT-licensed, and maintained by contributors worldwide. No paywalls, ever.',
+    longDesc:'Any skill with 50+ GitHub stars and an MIT license is eligible for nomination. Voting happens monthly. The top 32 skills by community vote are featured.',
+    skillCount:32, followers:6780, verified:false,
+    topSkills:['github-pr-helper','readme-writer','test-writer','code-review-agent','refactor-bot','web-scraper'],
+    tags:['Open Source','Community','MIT'], avgScore:83, featured:false,
+  },
+];
+
+const TYPE_CONFIG = {
+  official:  { label:'Official',  color:'var(--accent)',    bg:'rgba(212,102,26,0.09)' },
+  creator:   { label:'Creator',   color:'#7B2FBE',          bg:'rgba(123,47,190,0.09)' },
+  themed:    { label:'Themed',    color:'#1565C0',          bg:'rgba(21,101,192,0.09)' },
+  community: { label:'Community', color:'#2D6A4F',          bg:'rgba(45,106,79,0.09)'  },
+};
+
+/* ====================================================
+   Shared: ThemeToggle
+   ==================================================== */
+function ThemeToggle({ theme, onToggle }) {
+  return (
+    <button onClick={onToggle} className="lg"
+      style={{ width:38, height:38, borderRadius:'50%', border:'none', display:'flex', alignItems:'center', justifyContent:'center', fontSize:16, color: theme==='light'?'#1A1714':'#F1E9D8', cursor:'pointer', flexShrink:0 }}>
+      {theme==='light'?'☀️':'🌙'}
+    </button>
+  );
+}
+
+/* ====================================================
+   Nav
+   ==================================================== */
+function Nav({ theme, onToggle }) {
+  const [vaultCount, setVaultCount] = useState(getVaultCount);
+  const pages = [
+    {href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},
+    {href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'},
+  ];
+  useEffect(() => {
+    function sync() { setVaultCount(getVaultCount()); }
+    window.addEventListener('vault-updated', sync);
+    window.addEventListener('storage', sync);
+    return () => { window.removeEventListener('vault-updated', sync); window.removeEventListener('storage', sync); };
+  }, []);
+  return (
+    <nav className="nav lg" style={{ padding:'12px 24px', borderBottom:'1px solid var(--border)', borderRadius:0 }}>
+      <div className="nav-inner">
+        <a href="index.html" style={{ fontFamily:'Archivo Black', fontSize:'1.05rem', color:'var(--text)', letterSpacing:'-.01em', flexShrink:0 }}>
+          skill<span style={{ color:'var(--accent)' }}>scale</span>
+        </a>
+        <div className="nav-links" style={{ display:'flex', alignItems:'center', padding:'6px', borderRadius:9999, gap:2 }}>
+          {pages.map(p => (
+            <a key={p.href} href={p.href} style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', letterSpacing:'.04em', padding:'6px 14px', borderRadius:9999, color:'var(--text-2)', background:'transparent', transition:'all 0.15s' }}>
+              {p.label}
+            </a>
+          ))}
+        </div>
+        <div style={{ display:'flex', alignItems:'center', gap:10 }}>
+          <a href="vault.html" style={{ position:'relative', display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color:'var(--text-2)', border:'1px solid var(--border)', transition:'all 0.15s', textDecoration:'none' }}>
+            ✦ Vault
+            {vaultCount > 0 && (
+              <span style={{ position:'absolute', top:-5, right:-5, minWidth:16, height:16, borderRadius:9999, background:'var(--accent)', color:'#fff', fontSize:'.55rem', fontWeight:700, display:'flex', alignItems:'center', justifyContent:'center', padding:'0 4px' }}>
+                {vaultCount}
+              </span>
+            )}
+          </a>
+          <a href="hubs.html" style={{ display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color:'var(--accent)', background:'rgba(212,102,26,0.08)', border:'1px solid rgba(212,102,26,0.3)', transition:'all 0.15s', textDecoration:'none' }}>
+            ⬡ Hubs
+          </a>
+          <a href="auth.html" className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 16px', border:'1px solid var(--border)' }}>
+            Sign In
+          </a>
+          <ThemeToggle theme={theme} onToggle={onToggle} />
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+/* ====================================================
+   Footer
+   ==================================================== */
+function Footer() {
+  return (
+    <footer className="footer" style={{ background:'var(--bg)' }}>
+      <div className="container footer-inner">
+        <span style={{ fontFamily:'Archivo Black', fontSize:'.9rem', color:'var(--text)' }}>skill<span style={{ color:'var(--accent)' }}>scale</span></span>
+        <div style={{ display:'flex', gap:24, flexWrap:'wrap' }}>
+          {[['index.html','Home'],['skills.html','Skills'],['market.html','Market'],['vault.html','Vault'],['hubs.html','Hubs'],['community.html','Community'],['mcps.html','MCPs']].map(([h,l]) => (
+            <a key={h} href={h} style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)' }}>{l}</a>
+          ))}
+        </div>
+        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)' }}>© 2026 Skillscale</span>
+      </div>
+    </footer>
+  );
+}
+
+/* ====================================================
+   Hub Cover Generator
+   ==================================================== */
+function HubCover({ hub, height=118 }) {
+  return (
+    <div
+      className={`hub-cover ${hub.coverPattern}`}
+      style={{
+        height,
+        background: `linear-gradient(135deg, ${hub.coverColor}ee 0%, ${hub.coverColor}99 60%, ${hub.coverColor}66 100%)`,
+      }}
+    >
+      {/* Floating name watermark */}
+      <div style={{
+        position:'absolute', bottom:12, left:16, right:16,
+        display:'flex', alignItems:'flex-end', justifyContent:'space-between'
+      }}>
+        <span style={{ fontFamily:'Archivo Black', fontSize:'1.05rem', color:'rgba(255,255,255,0.92)', letterSpacing:'-.01em', lineHeight:1, textShadow:'0 1px 8px rgba(0,0,0,0.25)' }}>
+          {hub.name}
+        </span>
+        {hub.verified && (
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.58rem', fontWeight:700, color:'rgba(255,255,255,0.9)', background:'rgba(0,0,0,0.3)', padding:'2px 8px', borderRadius:9999, backdropFilter:'blur(4px)' }}>
+            ✓ Official
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/* ====================================================
+   Skill Chip
+   ==================================================== */
+function SkillChip({ name, onClick }) {
+  return (
+    <button
+      className="skill-chip-sm"
+      onClick={e => { e.stopPropagation(); if (onClick) onClick(); }}
+      style={{ cursor:'pointer', background:'transparent', border:'none', padding:0 }}
+    >
+      <span style={{ color:'var(--accent)', marginRight:1 }}>/</span>{name}
+    </button>
+  );
+}
+
+/* ====================================================
+   Hub Card (grid)
+   ==================================================== */
+function HubCard({ hub, index, onOpen }) {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once:true, margin:'0px' });
+  const [following, setFollowing] = useState(() => {
+    try { return JSON.parse(localStorage.getItem(`hub-follow-${hub.id}`) || 'false'); }
+    catch { return false; }
+  });
+  const typeCfg = TYPE_CONFIG[hub.type] || TYPE_CONFIG.community;
+  const followerStr = hub.followers >= 1000 ? `${(hub.followers/1000).toFixed(1)}k` : hub.followers;
+
+  function toggleFollow(e) {
+    e.stopPropagation();
+    const next = !following;
+    setFollowing(next);
+    localStorage.setItem(`hub-follow-${hub.id}`, JSON.stringify(next));
+  }
+
+  return (
+    <motion.div
+      ref={ref}
+      className="hub-card"
+      onClick={() => onOpen(hub)}
+      initial={{ opacity:0, y:20 }}
+      animate={inView ? { opacity:1, y:0 } : {}}
+      transition={{ duration:0.4, delay: Math.min(index*0.06, 0.4), ease:'easeOut' }}
+    >
+      <HubCover hub={hub} height={118} />
+
+      <div style={{ padding:'16px 18px 18px', display:'flex', flexDirection:'column', gap:12, flex:1 }}>
+        {/* Identity row */}
+        <div style={{ display:'flex', alignItems:'flex-start', justifyContent:'space-between', gap:10 }}>
+          <div>
+            <div style={{ display:'flex', alignItems:'center', gap:7, flexWrap:'wrap', marginBottom:4 }}>
+              <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--text-2)' }}>@{hub.creator}</span>
+              {hub.verified && <span className="hub-verified">✓ Verified</span>}
+              <span className="hub-type-badge" style={{ background: typeCfg.bg, color: typeCfg.color, borderColor: typeCfg.color + '30' }}>
+                {typeCfg.label}
+              </span>
+            </div>
+            <div style={{ display:'flex', alignItems:'center', gap:10 }}>
+              <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)' }}>
+                {hub.skillCount >= 1000000 ? `${(hub.skillCount/1000000).toFixed(1)}M` : hub.skillCount} skills
+              </span>
+              <span style={{ width:2, height:2, borderRadius:'50%', background:'var(--border)' }} />
+              <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)' }}>{followerStr} followers</span>
+            </div>
+          </div>
+          <button className={`hub-follow-btn${following?' following':''}`} onClick={toggleFollow}>
+            {following ? '✓ Following' : '+ Follow'}
+          </button>
+        </div>
+
+        {/* Description */}
+        <p style={{ fontFamily:'DM Sans', fontSize:'.82rem', color:'var(--text-2)', lineHeight:1.55, margin:0, display:'-webkit-box', WebkitLineClamp:2, WebkitBoxOrient:'vertical', overflow:'hidden' }}>
+          {hub.description}
+        </p>
+
+        {/* Skill chips */}
+        <div style={{ display:'flex', flexWrap:'wrap', gap:5, marginTop:'auto' }}>
+          {hub.topSkills.slice(0,4).map(s => <SkillChip key={s} name={s} />)}
+          {hub.topSkills.length > 4 && (
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)', padding:'3px 6px' }}>+{hub.topSkills.length - 4}</span>
+          )}
+        </div>
+      </div>
+    </motion.div>
+  );
+}
+
+/* ====================================================
+   Featured Hub Banner (2-column)
+   ==================================================== */
+function FeaturedHubs({ hubs, onOpen }) {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once:true, margin:'-5%' });
+  const featured = hubs.filter(h => h.featured).slice(0,2);
+
+  return (
+    <div ref={ref} style={{ marginBottom:52 }}>
+      <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:20, flexWrap:'wrap', gap:10 }}>
+        <div>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', letterSpacing:'.08em', color:'var(--accent)', textTransform:'uppercase', display:'block', marginBottom:6 }}>// Featured</span>
+          <h2 className="t-heading" style={{ fontSize:'clamp(1.4rem,3vw,2rem)', color:'var(--text)', margin:0 }}>Official Hubs</h2>
+        </div>
+      </div>
+      <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(440px, 1fr))', gap:20 }}>
+        {featured.map((hub, i) => (
+          <motion.div
+            key={hub.id}
+            className="hub-card"
+            onClick={() => onOpen(hub)}
+            initial={{ opacity:0, y:24 }} animate={inView ? { opacity:1, y:0 } : {}}
+            transition={{ duration:0.5, delay: i*0.1, ease:'easeOut' }}
+          >
+            <HubCover hub={hub} height={180} />
+            <div style={{ padding:'20px 22px 22px', display:'flex', flexDirection:'column', gap:14 }}>
+              <div style={{ display:'flex', alignItems:'flex-start', justifyContent:'space-between', gap:12 }}>
+                <div>
+                  <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:5 }}>
+                    <span className="hub-verified">✓ Official</span>
+                    <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)' }}>
+                      {hub.skillCount >= 1000000 ? `${(hub.skillCount/1000000).toFixed(1)}M` : hub.skillCount} skills
+                      · {(hub.followers/1000).toFixed(1)}k followers
+                    </span>
+                  </div>
+                  <p style={{ fontFamily:'DM Sans', fontSize:'.9rem', color:'var(--text-2)', lineHeight:1.6, margin:0, maxWidth:'52ch' }}>
+                    {hub.description}
+                  </p>
+                </div>
+              </div>
+              <div style={{ display:'flex', flexWrap:'wrap', gap:6 }}>
+                {hub.topSkills.map(s => <SkillChip key={s} name={s} />)}
+              </div>
+              <div style={{ display:'flex', alignItems:'center', gap:12 }}>
+                <button
+                  className="btn btn-primary"
+                  style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'9px 20px' }}
+                  onClick={e => { e.stopPropagation(); onOpen(hub); }}
+                >
+                  Explore Hub →
+                </button>
+                <div style={{ display:'flex', flexWrap:'wrap', gap:6 }}>
+                  {hub.tags.map(t => <span key={t} className="tag">{t}</span>)}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ====================================================
+   Hub Detail Panel (slide-in)
+   ==================================================== */
+function HubDetailPanel({ hub, onClose }) {
+  const [tab, setTab] = useState('skills');
+  const [following, setFollowing] = useState(false);
+
+  useEffect(() => {
+    if (!hub) return;
+    try { setFollowing(JSON.parse(localStorage.getItem(`hub-follow-${hub.id}`) || 'false')); }
+    catch { setFollowing(false); }
+  }, [hub?.id]);
+
+  useEffect(() => {
+    const onKey = e => { if (e.key === 'Escape') onClose(); };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [onClose]);
+
+  function toggleFollow() {
+    const next = !following;
+    setFollowing(next);
+    if (hub) localStorage.setItem(`hub-follow-${hub.id}`, JSON.stringify(next));
+  }
+
+  if (!hub) return null;
+  const typeCfg = TYPE_CONFIG[hub.type] || TYPE_CONFIG.community;
+  const followerStr = hub.followers >= 1000 ? `${(hub.followers/1000).toFixed(1)}k` : hub.followers;
+
+  return (
+    <AnimatePresence>
+      <>
+        <motion.div
+          key="hub-backdrop"
+          initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }}
+          transition={{ duration:0.22 }}
+          onClick={onClose}
+          style={{ position:'fixed', inset:0, zIndex:200, background:'rgba(0,0,0,0.38)', backdropFilter:'blur(4px)', WebkitBackdropFilter:'blur(4px)' }}
+        />
+        <motion.div
+          key="hub-panel"
+          initial={{ x:'100%' }} animate={{ x:0 }} exit={{ x:'100%' }}
+          transition={{ type:'spring', damping:28, stiffness:280 }}
+          className="hub-detail-panel lg-s"
+          style={{ position:'fixed', top:0, right:0, bottom:0, width:'min(82vw,680px)', zIndex:201, borderRadius:'28px 0 0 28px', background:'var(--bg)', display:'flex', flexDirection:'column' }}
+        >
+          {/* Cover */}
+          <div style={{ position:'relative', flexShrink:0 }}>
+            <HubCover hub={hub} height={180} />
+            <button onClick={onClose} className="lg"
+              style={{ position:'absolute', top:12, right:12, width:34, height:34, borderRadius:'50%', border:'none', display:'flex', alignItems:'center', justifyContent:'center', fontSize:14, color:'rgba(255,255,255,0.9)', cursor:'pointer', background:'rgba(0,0,0,0.35)', backdropFilter:'blur(4px)' }}>
+              ✕
+            </button>
+          </div>
+
+          {/* Scrollable body */}
+          <div style={{ flex:1, overflowY:'auto', padding:'20px 28px 48px' }}>
+            {/* Identity */}
+            <div style={{ display:'flex', alignItems:'flex-start', justifyContent:'space-between', gap:12, marginBottom:16 }}>
+              <div>
+                <div style={{ display:'flex', alignItems:'center', gap:8, flexWrap:'wrap', marginBottom:6 }}>
+                  {hub.verified && <span className="hub-verified">✓ Verified</span>}
+                  <span className="hub-type-badge" style={{ background: typeCfg.bg, color: typeCfg.color, borderColor: typeCfg.color + '30' }}>
+                    {typeCfg.label}
+                  </span>
+                </div>
+                <div style={{ display:'flex', alignItems:'center', gap:12 }}>
+                  <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--accent)' }}>@{hub.creator}</span>
+                  <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)' }}>
+                    {hub.skillCount >= 1000000 ? `${(hub.skillCount/1000000).toFixed(1)}M` : hub.skillCount} skills
+                  </span>
+                  <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)' }}>{followerStr} followers</span>
+                </div>
+              </div>
+              <button className={`hub-follow-btn${following?' following':''}`} onClick={toggleFollow} style={{ flexShrink:0 }}>
+                {following ? '✓ Following' : '+ Follow'}
+              </button>
+            </div>
+
+            {/* Tags */}
+            <div style={{ display:'flex', flexWrap:'wrap', gap:7, marginBottom:20 }}>
+              {hub.tags.map(t => <span key={t} className="tag">{t}</span>)}
+            </div>
+
+            {/* Avg score */}
+            <div className="lg" style={{ display:'flex', alignItems:'center', gap:14, padding:'12px 16px', borderRadius:14, marginBottom:22 }}>
+              <div style={{ textAlign:'center', minWidth:48 }}>
+                <div style={{ fontFamily:'Archivo Black', fontSize:'1.8rem', color:'var(--text)', lineHeight:1 }}>{hub.avgScore}</div>
+                <div style={{ fontFamily:'JetBrains Mono', fontSize:'.55rem', color:'var(--text-2)', marginTop:3 }}>avg score</div>
+              </div>
+              <div style={{ flex:1 }}>
+                <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:5 }}>
+                  <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)', textTransform:'uppercase', letterSpacing:'.05em' }}>Hub SecureScore</span>
+                  <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color: hub.avgScore>=90?'#C09A2A':hub.avgScore>=80?'#7B2FBE':hub.avgScore>=65?'#1565C0':'#2D6A4F' }}>
+                    {hub.avgScore>=90?'🌟 Legendary':hub.avgScore>=80?'⚡ Epic':hub.avgScore>=65?'💎 Rare':'🌿 Standard'}
+                  </span>
+                </div>
+                <div style={{ height:6, borderRadius:9999, background:'var(--border)', overflow:'hidden' }}>
+                  <div style={{ height:'100%', borderRadius:9999, width:`${hub.avgScore}%`, background:'linear-gradient(90deg,#C05010,#C09A2A)', transition:'width 0.7s ease' }} />
+                </div>
+              </div>
+            </div>
+
+            {/* Tabs */}
+            <div style={{ display:'flex', gap:4, marginBottom:24, background:'var(--bg-1,rgba(0,0,0,0.04))', borderRadius:9999, padding:4, width:'fit-content' }}>
+              {['skills','about'].map(t => (
+                <button key={t} onClick={() => setTab(t)}
+                  style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', padding:'6px 18px', borderRadius:9999, border:'none', cursor:'pointer', transition:'all 0.15s',
+                    background: tab===t ? 'var(--bg)' : 'transparent',
+                    color: tab===t ? 'var(--text)' : 'var(--text-2)',
+                    boxShadow: tab===t ? '0 1px 6px rgba(0,0,0,0.09)' : 'none',
+                    fontWeight: tab===t ? '500' : '400',
+                  }}>
+                  {t.charAt(0).toUpperCase()+t.slice(1)}
+                </button>
+              ))}
+            </div>
+
+            {/* Tab content */}
+            {tab === 'skills' && (
+              <div>
+                <div style={{ display:'flex', alignItems:'center', gap:12, marginBottom:16 }}>
+                  <span style={{ fontFamily:'JetBrains Mono', fontSize:'.63rem', textTransform:'uppercase', letterSpacing:'.08em', color:'var(--text-2)' }}>Top Skills</span>
+                  <div style={{ flex:1, height:1, background:'var(--border)' }} />
+                </div>
+                <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(200px, 1fr))', gap:10 }}>
+                  {hub.topSkills.map((name, i) => (
+                    <motion.a
+                      key={name} href="skills.html"
+                      initial={{ opacity:0, x:8 }} animate={{ opacity:1, x:0 }}
+                      transition={{ duration:0.3, delay:i*0.04 }}
+                      className="lg"
+                      style={{ display:'flex', alignItems:'center', gap:10, padding:'11px 14px', borderRadius:12, border:'1px solid var(--border)', textDecoration:'none', cursor:'pointer' }}
+                      whileHover={{ scale:1.01 }}
+                    >
+                      <img src={`https://api.dicebear.com/7.x/shapes/svg?seed=${encodeURIComponent(name)}`} alt="" width={28} height={28} style={{ borderRadius:7, flexShrink:0, background:'var(--bg-1)' }} />
+                      <div>
+                        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text)', fontWeight:600, display:'block' }}>/{name}</span>
+                        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.58rem', color:'var(--accent)' }}>@{hub.creator}</span>
+                      </div>
+                    </motion.a>
+                  ))}
+                </div>
+                <a href="skills.html" className="btn btn-outline btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', marginTop:20, display:'inline-flex' }}>
+                  Browse all {hub.skillCount >= 1000000 ? `${(hub.skillCount/1000000).toFixed(1)}M` : hub.skillCount} skills →
+                </a>
+              </div>
+            )}
+
+            {tab === 'about' && (
+              <div style={{ display:'flex', flexDirection:'column', gap:18 }}>
+                <div>
+                  <span style={{ fontFamily:'JetBrains Mono', fontSize:'.63rem', textTransform:'uppercase', letterSpacing:'.08em', color:'var(--text-2)', display:'block', marginBottom:10 }}>About this Hub</span>
+                  <p style={{ fontFamily:'DM Sans', fontSize:'.9rem', color:'var(--text-2)', lineHeight:1.7, margin:0 }}>{hub.longDesc}</p>
+                </div>
+                <div className="lg" style={{ padding:'16px 18px', borderRadius:14, display:'flex', flexDirection:'column', gap:10 }}>
+                  {[
+                    { label:'Hub type',       value: (TYPE_CONFIG[hub.type]||{}).label || hub.type },
+                    { label:'Total skills',   value: hub.skillCount >= 1000000 ? `${(hub.skillCount/1000000).toFixed(1)}M` : hub.skillCount.toLocaleString() },
+                    { label:'Followers',      value: hub.followers.toLocaleString() },
+                    { label:'Avg SecureScore',value: `${hub.avgScore}/100` },
+                    { label:'Maintainer',     value: `@${hub.creator}` },
+                  ].map(row => (
+                    <div key={row.label} style={{ display:'flex', alignItems:'center', justifyContent:'space-between', paddingBottom:8, borderBottom:'1px solid var(--border)' }}>
+                      <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--text-2)' }}>{row.label}</span>
+                      <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--text)', fontWeight:600 }}>{row.value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </motion.div>
+      </>
+    </AnimatePresence>
+  );
+}
+
+/* ====================================================
+   Hero Section
+   ==================================================== */
+function HeroSection({ searchQ, setSearchQ }) {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once:true });
+  return (
+    <div className="page-top" ref={ref} style={{ borderBottom:'1px solid var(--border)', paddingBottom:48 }}>
+      <div className="container" style={{ paddingTop:44 }}>
+        <motion.div
+          initial={{ opacity:0, y:20 }} animate={inView ? { opacity:1, y:0 } : {}}
+          transition={{ duration:0.55, ease:'easeOut' }}
+        >
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', letterSpacing:'.08em', color:'var(--accent)', textTransform:'uppercase', display:'block', marginBottom:12 }}>
+            // Hubs
+          </span>
+          <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'space-between', flexWrap:'wrap', gap:20, marginBottom:20 }}>
+            <h1 className="t-display" style={{ fontSize:'clamp(2.8rem,6vw,5.5rem)', color:'var(--text)', lineHeight:.9, margin:0 }}>
+              Discover<br/>Hubs
+            </h1>
+            <p style={{ fontFamily:'DM Sans', fontSize:'1rem', color:'var(--text-2)', lineHeight:1.6, maxWidth:'40ch', margin:0 }}>
+              Curated skill collections by creators, organizations, and the community — your gateway to purpose-built AI workflows.
+            </p>
+          </div>
+          {/* Search */}
+          <div className="search-wrap" style={{ maxWidth:480 }}>
+            <input
+              className="search-input"
+              type="text"
+              placeholder="Search hubs…"
+              value={searchQ}
+              onChange={e => setSearchQ(e.target.value)}
+            />
+            <span className="search-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+              </svg>
+            </span>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+}
+
+/* ====================================================
+   Stats Strip
+   ==================================================== */
+function StatsStrip() {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once:true });
+  const stats = [
+    { n:'12', label:'Hubs available' },
+    { n:'2', label:'Official hubs' },
+    { n:'1M+', label:'Total skills' },
+    { n:'42k+', label:'Hub followers' },
+  ];
+  return (
+    <div ref={ref} style={{ borderBottom:'1px solid var(--border)', background:'var(--bg-1, var(--bg))' }}>
+      <div className="container" style={{ padding:'18px 24px', display:'flex', gap:40, flexWrap:'wrap', justifyContent:'center' }}>
+        {stats.map((s,i) => (
+          <motion.div key={s.label}
+            initial={{ opacity:0, y:8 }} animate={inView ? { opacity:1, y:0 } : {}}
+            transition={{ duration:0.4, delay:i*0.07 }}
+            style={{ display:'flex', alignItems:'baseline', gap:8 }}
+          >
+            <span className="t-display" style={{ fontSize:'1.8rem', color:'var(--text)' }}>{s.n}</span>
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--text-2)' }}>{s.label}</span>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ====================================================
+   Main App
+   ==================================================== */
+function App() {
+  const [theme, setTheme] = useState(() => {
+    const s = localStorage.getItem('sk-theme');
+    if (s) return s;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
+  const [activeFilter, setActiveFilter] = useState('all');
+  const [searchQ, setSearchQ] = useState('');
+  const [openHub, setOpenHub] = useState(null);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('sk-theme', theme);
+  }, [theme]);
+
+  useEffect(() => {
+    document.body.style.overflow = openHub ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [openHub]);
+
+  const FILTERS = [
+    { id:'all',       label:'All' },
+    { id:'official',  label:'Official' },
+    { id:'creator',   label:'Creator' },
+    { id:'themed',    label:'Themed' },
+    { id:'community', label:'Community' },
+  ];
+
+  const filtered = HUBS.filter(h => {
+    const matchFilter = activeFilter === 'all' || h.type === activeFilter;
+    const q = searchQ.toLowerCase().trim();
+    const matchSearch = !q ||
+      h.name.toLowerCase().includes(q) ||
+      h.description.toLowerCase().includes(q) ||
+      h.creator.toLowerCase().includes(q) ||
+      h.tags.some(t => t.toLowerCase().includes(q));
+    return matchFilter && matchSearch;
+  });
+
+  const nonFeatured = filtered.filter(h => !h.featured || activeFilter !== 'all' || searchQ);
+  const showFeatured = activeFilter === 'all' && !searchQ;
+
+  return (
+    <>
+      <Nav theme={theme} onToggle={() => setTheme(t => t==='light'?'dark':'light')} />
+      <HubDetailPanel hub={openHub} onClose={() => setOpenHub(null)} />
+
+      <main style={{ background:'var(--bg)', minHeight:'100vh' }}>
+        <HeroSection searchQ={searchQ} setSearchQ={setSearchQ} />
+        <StatsStrip />
+
+        <div className="section-sm" style={{ background:'var(--bg)' }}>
+          <div className="container">
+            {/* Featured section */}
+            {showFeatured && <FeaturedHubs hubs={HUBS} onOpen={setOpenHub} />}
+
+            {/* Filter tabs */}
+            <div style={{ display:'flex', alignItems:'center', gap:6, marginBottom:32, overflowX:'auto', paddingBottom:4 }}>
+              {FILTERS.map(f => (
+                <button key={f.id} className={`hub-tab${activeFilter===f.id?' active':''}`} onClick={() => setActiveFilter(f.id)}>
+                  {f.label}
+                  <span style={{ marginLeft:6, fontFamily:'JetBrains Mono', fontSize:'.58rem',
+                    color: activeFilter===f.id ? 'rgba(255,255,255,0.65)' : 'var(--text-2)' }}>
+                    {f.id==='all' ? HUBS.length : HUBS.filter(h=>h.type===f.id).length}
+                  </span>
+                </button>
+              ))}
+            </div>
+
+            {/* Grid */}
+            {nonFeatured.length === 0 && filtered.length === 0 ? (
+              <div style={{ textAlign:'center', padding:'60px 0' }}>
+                <p style={{ fontFamily:'JetBrains Mono', fontSize:'.85rem', color:'var(--text-2)' }}>No hubs match your search.</p>
+              </div>
+            ) : (
+              <>
+                {(nonFeatured.length > 0 || !showFeatured) && (
+                  <>
+                    {showFeatured && (
+                      <div style={{ display:'flex', alignItems:'center', gap:12, marginBottom:20 }}>
+                        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', letterSpacing:'.08em', color:'var(--accent)', textTransform:'uppercase' }}>// Community & Creator</span>
+                        <div style={{ flex:1, height:1, background:'var(--border)' }} />
+                      </div>
+                    )}
+                    <div className="grid-3">
+                      {(showFeatured ? nonFeatured : filtered).map((hub, i) => (
+                        <HubCard key={hub.id} hub={hub} index={i} onOpen={setOpenHub} />
+                      ))}
+                    </div>
+                  </>
+                )}
+              </>
+            )}
+
+            {/* CTA */}
+            <motion.div
+              initial={{ opacity:0, y:20 }}
+              whileInView={{ opacity:1, y:0 }}
+              viewport={{ once:true }}
+              transition={{ duration:0.5 }}
+              className="lg"
+              style={{ marginTop:56, padding:'40px 36px', borderRadius:24, textAlign:'center', background:'linear-gradient(135deg,rgba(212,102,26,0.08) 0%,transparent 60%)' }}
+            >
+              <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', letterSpacing:'.08em', color:'var(--accent)', textTransform:'uppercase', display:'block', marginBottom:12 }}>
+                // Create a Hub
+              </span>
+              <h2 className="t-display" style={{ fontSize:'clamp(1.8rem,4vw,3rem)', color:'var(--text)', marginBottom:14 }}>
+                Share your stack
+              </h2>
+              <p style={{ fontFamily:'DM Sans', fontSize:'.95rem', color:'var(--text-2)', lineHeight:1.6, maxWidth:'46ch', margin:'0 auto 28px' }}>
+                Package your favourite skills into a Hub and share them with the Skillscale community. One link, all your tools.
+              </p>
+              <a href="auth.html" className="btn btn-primary btn-lg" style={{ fontFamily:'JetBrains Mono' }}>
+                Create a Hub →
+              </a>
+            </motion.div>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

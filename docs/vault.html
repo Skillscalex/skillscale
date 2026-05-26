@@ -46,11 +46,11 @@ function saveVault(v) { localStorage.setItem(VAULT_KEY, JSON.stringify(v)); }
 
 /* ===== SecureScore tier ===== */
 const SCORE_TIER_CONFIG = {
-  diamond: { label:'Diamond', color:'#1E6091', icon:'💎' },
-  emerald: { label:'Emerald', color:'#1A7A4A', icon:'💚' },
-  pearl:   { label:'Pearl',   color:'#7A6E5E', icon:'🤍' },
-  quartz:  { label:'Quartz',  color:'#7E5F9E', icon:'💜' },
-  coal:    { label:'Coal',    color:'#4A4540', icon:'⬛' },
+  diamond: { label:'Legendary', color:'#C09A2A', icon:'🌟' },
+  emerald: { label:'Epic',      color:'#7B2FBE', icon:'⚡' },
+  pearl:   { label:'Rare',      color:'#1565C0', icon:'💎' },
+  quartz:  { label:'Standard',  color:'#2D6A4F', icon:'🌿' },
+  coal:    { label:'Draft',     color:'#6A6460', icon:'⬜' },
 };
 function scoreTier(score) {
   if (score >= 90) return 'diamond';
@@ -95,6 +95,9 @@ function Nav({ theme, onToggle }) {
                 {vaultCount}
               </span>
             )}
+          </a>
+          <a href="hubs.html" style={{ display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color:'var(--text-2)', border:'1px solid var(--border)', transition:'all 0.15s', textDecoration:'none' }}>
+            ⬡ Hubs
           </a>
           <a href="auth.html" className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 16px', border:'1px solid var(--border)' }}>
             Sign In

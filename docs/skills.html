@@ -82,11 +82,11 @@ function scoreTier(score) {
   return 'coal';
 }
 const SCORE_TIER_CONFIG = {
-  diamond: { label:'Diamond', color:'#1E6091', icon:'💎' },
-  emerald: { label:'Emerald', color:'#1A7A4A', icon:'💚' },
-  pearl:   { label:'Pearl',   color:'#7A6E5E', icon:'🤍' },
-  quartz:  { label:'Quartz',  color:'#7E5F9E', icon:'💜' },
-  coal:    { label:'Coal',    color:'#4A4540', icon:'⬛' },
+  diamond: { label:'Legendary', color:'#C09A2A', icon:'🌟' },
+  emerald: { label:'Epic',      color:'#7B2FBE', icon:'⚡' },
+  pearl:   { label:'Rare',      color:'#1565C0', icon:'💎' },
+  quartz:  { label:'Standard',  color:'#2D6A4F', icon:'🌿' },
+  coal:    { label:'Draft',     color:'#6A6460', icon:'⬜' },
 };
 
 /* ===== SecureScore bar (full horizontal) ===== */
@@ -386,6 +386,9 @@ function Nav({ theme, onToggle, currentPage }) {
               </span>
             )}
           </a>
+          <a href="hubs.html" style={{ display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color: currentPage==='hubs.html'?'var(--accent)':'var(--text-2)', background: currentPage==='hubs.html'?'rgba(212,102,26,0.08)':'transparent', border:`1px solid ${currentPage==='hubs.html'?'rgba(212,102,26,0.3)':'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
+            ⬡ Hubs
+          </a>
           <a href="auth.html" className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 16px', border:'1px solid var(--border)' }}>
             Sign In
           </a>
@@ -402,7 +405,7 @@ function Footer() {
       <div className="container footer-inner">
         <span style={{ fontFamily:'Archivo Black', fontSize:'.9rem', color:'var(--text)' }}>skill<span style={{ color:'var(--accent)' }}>scale</span></span>
         <div style={{ display:'flex', gap:24 }}>
-          {[['index.html','Home'],['skills.html','Skills'],['market.html','Market'],['vault.html','Vault'],['community.html','Community'],['mcps.html','MCPs']].map(([h,l]) => (
+          {[['index.html','Home'],['skills.html','Skills'],['market.html','Market'],['vault.html','Vault'],['hubs.html','Hubs'],['community.html','Community'],['mcps.html','MCPs']].map(([h,l]) => (
             <a key={h} href={h} style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)' }}>{l}</a>
           ))}
         </div>
@@ -676,6 +679,109 @@ function SkillCard({ skill, index, onSelect }) {
   );
 }
 
+/* ===== Built-in skill library (always available) ===== */
+const STATIC_SKILLS = [
+  // 01 — Computer & Mathematical
+  { id:'s001', name:'code-review-agent',   author:'anthropic',    stars:1247, description:'Automated code review with security scanning, style checks, and best-practice suggestions for any language.', tags:['code','review','security'], updatedAt:'1745280000', occupationId:'01' },
+  { id:'s002', name:'test-writer',         author:'dev_kai',      stars:892,  description:'Generates comprehensive test suites from source code — unit, integration, and edge-case coverage included.', tags:['testing','automation'], updatedAt:'1745280000', occupationId:'01' },
+  { id:'s003', name:'rag-pipeline',        author:'li_xuan',      stars:756,  description:'Production-ready RAG pipeline with smart chunking, embedding generation, and semantic search over any corpus.', tags:['rag','embeddings','search'], updatedAt:'1745280000', occupationId:'01' },
+  { id:'s004', name:'sql-genius',          author:'oscar_t',      stars:634,  description:'Natural language to complex SQL — index suggestions, query optimization, and schema-aware rewrites.', tags:['sql','database'], updatedAt:'1745280000', occupationId:'01' },
+  { id:'s005', name:'github-pr-helper',    author:'alex_m',       stars:521,  description:'Automated PR descriptions, review checklists, changelog generation, and reviewer assignment suggestions.', tags:['github','automation'], updatedAt:'1745280000', occupationId:'01' },
+  { id:'s006', name:'docker-composer',     author:'mia_dev',      stars:445,  description:'Generate Docker Compose files, Dockerfiles, and deployment configs from project structure analysis.', tags:['docker','devops'], updatedAt:'1745280000', occupationId:'01' },
+  { id:'s007', name:'api-designer',        author:'priya_r',      stars:398,  description:'Design RESTful and GraphQL APIs, generate OpenAPI specs, and create client SDKs automatically.', tags:['api','design'], updatedAt:'1745280000', occupationId:'01' },
+  { id:'s008', name:'debug-detective',     author:'tomasz_w',     stars:367,  description:'Deep stack-trace analysis, root-cause identification, and fix suggestions for complex production bugs.', tags:['debugging','analysis'], updatedAt:'1745280000', occupationId:'01' },
+  { id:'s009', name:'refactor-bot',        author:'sarah_k',      stars:312,  description:'Automated code refactoring with design-pattern suggestions, dead-code removal, and dependency cleanup.', tags:['refactoring','clean-code'], updatedAt:'1745280000', occupationId:'01' },
+  { id:'s010', name:'ci-pipeline-builder', author:'dev_kai',      stars:287,  description:'Generate GitHub Actions, GitLab CI, and CircleCI pipelines from project analysis and deployment targets.', tags:['ci-cd','devops'], updatedAt:'1745280000', occupationId:'01' },
+  { id:'s011', name:'security-scanner',    author:'sec_pro',      stars:623,  description:'Scan codebases for OWASP Top 10 vulnerabilities, secrets leakage, and known dependency CVEs.', tags:['security','scanning'], updatedAt:'1745280000', occupationId:'01' },
+  { id:'s012', name:'readme-writer',       author:'doc_pro',      stars:734,  description:'Generate comprehensive README files from code analysis with badges, examples, and auto-generated API docs.', tags:['documentation','github'], updatedAt:'1745280000', occupationId:'01' },
+  // 02 — Business & Financial
+  { id:'s013', name:'report-writer',       author:'biz_anna',     stars:445,  description:'Transform raw data and bullet points into polished executive reports with narrative and recommendations.', tags:['reporting','business'], updatedAt:'1745280000', occupationId:'02' },
+  { id:'s014', name:'financial-analyzer',  author:'finance_pro',  stars:389,  description:'Analyze financial statements, calculate ratios, identify trends, and generate investment summaries.', tags:['finance','analysis'], updatedAt:'1745280000', occupationId:'02' },
+  { id:'s015', name:'contract-reviewer',   author:'legal_ai',     stars:312,  description:'Review contracts for risk clauses, unusual terms, and missing protections with plain-language summaries.', tags:['legal','contracts'], updatedAt:'1745280000', occupationId:'02' },
+  { id:'s016', name:'market-analyzer',     author:'oscar_t',      stars:278,  description:'Real-time market signal analysis, competitor tracking, and opportunity identification from financial data.', tags:['market','finance'], updatedAt:'1745280000', occupationId:'02' },
+  // 03 — Arts, Design & Media
+  { id:'s017', name:'copy-crafter',        author:'creative_jo',  stars:567,  description:'Write high-converting copy for ads, landing pages, emails, and social media in any brand voice.', tags:['copywriting','marketing'], updatedAt:'1745280000', occupationId:'03' },
+  { id:'s018', name:'brand-voice',         author:'mia_dev',      stars:423,  description:'Analyze brand guidelines and rewrite content to perfectly match tone, style, and messaging framework.', tags:['branding','writing'], updatedAt:'1745280000', occupationId:'03' },
+  { id:'s019', name:'seo-optimizer',       author:'search_pro',   stars:378,  description:'Keyword research, meta optimization, content gap analysis, and full SEO audit reports.', tags:['seo','content'], updatedAt:'1745280000', occupationId:'03' },
+  { id:'s020', name:'script-writer',       author:'creative_jo',  stars:334,  description:'Write video scripts, podcast outlines, and presentation decks with pacing and engagement hooks.', tags:['video','script'], updatedAt:'1745280000', occupationId:'03' },
+  // 04 — Office & Administrative
+  { id:'s035', name:'email-assistant',     author:'oscar_t',      stars:892,  description:'Draft, summarize, categorize, and schedule emails from natural language instructions.', tags:['email','productivity'], updatedAt:'1745280000', occupationId:'04' },
+  { id:'s036', name:'doc-formatter',       author:'mia_dev',      stars:534,  description:'Reformat Word docs, PDFs, and spreadsheets to style guides, extract data, and generate summaries.', tags:['documents','formatting'], updatedAt:'1745280000', occupationId:'04' },
+  { id:'s037', name:'notion-sync',         author:'alex_m',       stars:623,  description:'Bi-directional sync between Claude context and Notion — read pages, create databases, update properties.', tags:['notion','productivity'], updatedAt:'1745280000', occupationId:'04' },
+  { id:'s038', name:'calendar-agent',      author:'time_ai',      stars:512,  description:'Schedule meetings, find optimal times, send invites, and manage conflicts intelligently.', tags:['calendar','scheduling'], updatedAt:'1745280000', occupationId:'04' },
+  { id:'s046', name:'claude-summarizer',   author:'mia_dev',      stars:512,  description:'Summarize long documents, codebases, meetings, and threads into structured actionable briefs.', tags:['summarization','productivity'], updatedAt:'1745280000', occupationId:'04' },
+  // 05 — Educational & Library
+  { id:'s021', name:'lesson-planner',      author:'edu_team',     stars:445,  description:'Create detailed lesson plans with learning objectives, activities, assessments, and differentiation strategies.', tags:['education','curriculum'], updatedAt:'1745280000', occupationId:'05' },
+  { id:'s022', name:'quiz-generator',      author:'learn_ai',     stars:378,  description:'Generate quizzes, flashcards, and practice problems from any document or textbook chapter.', tags:['education','assessment'], updatedAt:'1745280000', occupationId:'05' },
+  { id:'s047', name:'research-assistant',  author:'academic_ai',  stars:312,  description:'Synthesize academic literature, check citations, identify gaps, and draft literature reviews.', tags:['research','academic'], updatedAt:'1745280000', occupationId:'05' },
+  // 06 — Life, Physical & Social Sciences
+  { id:'s031', name:'data-analyzer',       author:'sci_team',     stars:556,  description:'Statistical analysis, hypothesis testing, correlation finding, and research paper generation from datasets.', tags:['data','statistics'], updatedAt:'1745280000', occupationId:'06' },
+  { id:'s032', name:'paper-reviewer',      author:'academic_ai',  stars:478,  description:'Peer-review scientific papers, check methodology, identify gaps, and suggest improvements.', tags:['research','review'], updatedAt:'1745280000', occupationId:'06' },
+  { id:'s048', name:'data-cleaner',        author:'dev_kai',      stars:445,  description:'Automated data validation, deduplication, type coercion, and outlier detection for any dataset.', tags:['data','cleaning'], updatedAt:'1745280000', occupationId:'06' },
+  // 07 — Management
+  { id:'s033', name:'meeting-minutes',     author:'productivity_ai', stars:789, description:'Turn meeting recordings or notes into structured minutes, action items, and decision logs instantly.', tags:['meetings','productivity'], updatedAt:'1745280000', occupationId:'07' },
+  { id:'s034', name:'okr-coach',           author:'mgmt_pro',     stars:534,  description:'Help set, track, and score OKRs. Generate weekly updates, identify blockers, and suggest pivots.', tags:['okr','management'], updatedAt:'1745280000', occupationId:'07' },
+  { id:'s049', name:'hiring-helper',       author:'hr_ai',        stars:312,  description:'Screen resumes, draft job descriptions, generate interview questions, and score candidate fit.', tags:['hiring','hr'], updatedAt:'1745280000', occupationId:'07' },
+  // 08 — Legal
+  { id:'s025', name:'case-researcher',     author:'legal_ai',     stars:489,  description:'Legal case research, precedent finding, statute analysis, and brief drafting assistance.', tags:['legal','research'], updatedAt:'1745280000', occupationId:'08' },
+  { id:'s026', name:'compliance-checker',  author:'reg_expert',   stars:398,  description:'Check documents against regulatory requirements (GDPR, HIPAA, SOC2) and flag compliance gaps.', tags:['compliance','legal'], updatedAt:'1745280000', occupationId:'08' },
+  { id:'s050', name:'contract-drafter',    author:'legal_ai',     stars:334,  description:'Draft contracts, NDAs, and SaaS agreements from plain-English descriptions with jurisdiction awareness.', tags:['contracts','drafting'], updatedAt:'1745280000', occupationId:'08' },
+  // 09 — Sales & Related
+  { id:'s027', name:'cold-email-agent',    author:'sales_pro',    stars:634,  description:'Write personalized cold emails that convert, with A/B variants and follow-up sequences.', tags:['sales','email'], updatedAt:'1745280000', occupationId:'09' },
+  { id:'s028', name:'crm-assistant',       author:'biz_anna',     stars:512,  description:'Log calls, update CRM records, generate follow-up tasks, and draft proposals from meeting notes.', tags:['crm','sales'], updatedAt:'1745280000', occupationId:'09' },
+  { id:'s051', name:'proposal-writer',     author:'sales_pro',    stars:389,  description:'Generate winning sales proposals and RFP responses tailored to client pain points and budget.', tags:['proposals','sales'], updatedAt:'1745280000', occupationId:'09' },
+  // 10 — Architecture & Engineering
+  { id:'s029', name:'spec-writer',         author:'eng_pro',      stars:445,  description:'Convert requirements into detailed technical specifications, user stories, and acceptance criteria.', tags:['engineering','specs'], updatedAt:'1745280000', occupationId:'10' },
+  { id:'s030', name:'cad-assistant',       author:'mech_ai',      stars:312,  description:'Parse CAD drawings, extract dimensions, generate BOM, and identify design conflicts automatically.', tags:['cad','engineering'], updatedAt:'1745280000', occupationId:'10' },
+  { id:'s052', name:'arch-advisor',        author:'alex_m',       stars:389,  description:'System architecture recommendations, trade-off analysis, and migration-path planning for scalability.', tags:['architecture','systems'], updatedAt:'1745280000', occupationId:'10' },
+  // 11 — Healthcare Practitioners
+  { id:'s023', name:'clinical-notes',      author:'health_ai',    stars:523,  description:'Structure clinical notes from dictation, auto-fill SOAP format, and suggest ICD-10 codes.', tags:['healthcare','notes'], updatedAt:'1745280000', occupationId:'11' },
+  { id:'s024', name:'research-synthesizer',author:'med_research', stars:445,  description:'Synthesize medical literature, summarize studies, and generate evidence-based recommendations.', tags:['research','medical'], updatedAt:'1745280000', occupationId:'11' },
+  { id:'s053', name:'prior-auth-helper',   author:'health_ai',    stars:312,  description:'Draft prior authorization letters, appeal documents, and insurance correspondence for clinical staff.', tags:['insurance','healthcare'], updatedAt:'1745280000', occupationId:'11' },
+  // 12 — Personal Care & Service
+  { id:'s054', name:'wellness-planner',    author:'wellness_ai',  stars:234,  description:'Generate personalized wellness plans, meal schedules, and fitness routines from client goals.', tags:['wellness','planning'], updatedAt:'1745280000', occupationId:'12' },
+  { id:'s055', name:'client-intake',       author:'service_ai',   stars:178,  description:'Automate client intake forms, appointment reminders, and follow-up messages for service businesses.', tags:['intake','service'], updatedAt:'1745280000', occupationId:'12' },
+  // 13 — Community & Social Service
+  { id:'s039', name:'grant-writer',        author:'nonprofit_ai', stars:423,  description:'Write grant applications, foundation briefs, and impact reports for nonprofits and social organizations.', tags:['grants','writing'], updatedAt:'1745280000', occupationId:'13' },
+  { id:'s056', name:'case-notes',          author:'social_ai',    stars:267,  description:'Structure social worker case notes, progress reports, and intervention plans from session notes.', tags:['casework','notes'], updatedAt:'1745280000', occupationId:'13' },
+  // 14 — Military
+  { id:'s057', name:'after-action',        author:'ops_ai',       stars:189,  description:'Structure after-action reports, briefings, and SITREPs from raw notes and timeline data.', tags:['military','reports'], updatedAt:'1745280000', occupationId:'14' },
+  // 15 — Food Prep & Serving
+  { id:'s042', name:'recipe-scale',        author:'food_ai',      stars:234,  description:'Scale recipes, calculate nutrition, substitute ingredients, and optimize food costs for restaurants.', tags:['food','recipes'], updatedAt:'1745280000', occupationId:'15' },
+  { id:'s058', name:'menu-designer',       author:'food_ai',      stars:167,  description:'Generate seasonal menus, allergen labels, and cost-per-plate analyses for restaurants.', tags:['menu','food'], updatedAt:'1745280000', occupationId:'15' },
+  // 16 — Transportation & Moving
+  { id:'s040', name:'route-optimizer',     author:'logistics_ai', stars:312,  description:'Optimize delivery routes, analyze logistics data, and generate dispatch reports automatically.', tags:['logistics','optimization'], updatedAt:'1745280000', occupationId:'16' },
+  { id:'s059', name:'freight-quoter',      author:'logistics_ai', stars:198,  description:'Generate freight quotes, BOL documents, and carrier comparison reports from shipment details.', tags:['freight','logistics'], updatedAt:'1745280000', occupationId:'16' },
+  // 17 — Healthcare Support
+  { id:'s060', name:'patient-comms',       author:'health_ai',    stars:278,  description:'Draft patient education materials, discharge instructions, and appointment reminders in plain language.', tags:['patient','communications'], updatedAt:'1745280000', occupationId:'17' },
+  { id:'s061', name:'scheduling-bot',      author:'health_ai',    stars:212,  description:'Manage appointment scheduling, waitlist prioritization, and staff shift coverage for clinics.', tags:['scheduling','healthcare'], updatedAt:'1745280000', occupationId:'17' },
+  // 18 — Protective Service
+  { id:'s062', name:'incident-reporter',   author:'ops_ai',       stars:234,  description:'Structure incident reports, threat assessments, and post-incident reviews from field notes.', tags:['security','incidents'], updatedAt:'1745280000', occupationId:'18' },
+  // 19 — Construction & Extraction
+  { id:'s041', name:'blueprint-reader',    author:'construct_ai', stars:289,  description:'Analyze construction blueprints, extract material lists, estimate costs, and identify code issues.', tags:['construction','analysis'], updatedAt:'1745280000', occupationId:'19' },
+  { id:'s063', name:'rfi-writer',          author:'construct_ai', stars:198,  description:'Draft Requests for Information (RFIs), submittals, and change-order documentation for construction.', tags:['construction','documents'], updatedAt:'1745280000', occupationId:'19' },
+  // 20 — Farming, Fishing & Forestry
+  { id:'s064', name:'crop-planner',        author:'agri_ai',      stars:156,  description:'Generate crop rotation plans, soil amendment schedules, and harvest forecasts from field data.', tags:['farming','planning'], updatedAt:'1745280000', occupationId:'20' },
+  // 21 — Production
+  { id:'s065', name:'sop-writer',          author:'ops_ai',       stars:189,  description:'Generate Standard Operating Procedures from process descriptions with safety callouts and checklists.', tags:['sop','operations'], updatedAt:'1745280000', occupationId:'21' },
+  // 22 — Installation & Repair
+  { id:'s066', name:'work-order',          author:'field_ai',     stars:145,  description:'Convert field technician notes into structured work orders, parts lists, and job completion reports.', tags:['fieldwork','orders'], updatedAt:'1745280000', occupationId:'22' },
+  // 23 — Building & Grounds
+  { id:'s067', name:'inspection-report',   author:'facility_ai',  stars:112,  description:'Structure facility inspection findings into actionable reports with priority rankings and cost estimates.', tags:['facilities','inspection'], updatedAt:'1745280000', occupationId:'23' },
+];
+
+function getStaticSkills(occupationId, searchQ) {
+  if (searchQ && searchQ.trim()) {
+    const q = searchQ.trim().toLowerCase();
+    return STATIC_SKILLS.filter(s =>
+      s.name.toLowerCase().includes(q) ||
+      s.description.toLowerCase().includes(q) ||
+      (s.tags || []).some(t => t.includes(q))
+    ).slice(0, 18);
+  }
+  return STATIC_SKILLS.filter(s => s.occupationId === occupationId);
+}
+
 /* ===== Skills Grid + fetch ===== */
 function SkillsPane({ occupation, query, searchQ, onSelect }) {
   const [skills, setSkills] = useState([]);
@@ -718,18 +824,29 @@ function SkillsPane({ occupation, query, searchQ, onSelect }) {
     </div>
   );
 
-  if (error) return (
-    <div style={{ textAlign:'center', padding:'48px 0' }}>
-      <p style={{ fontFamily:'JetBrains Mono', fontSize:'.85rem', color:'var(--text-2)', marginBottom:8 }}>{error}</p>
-      <p style={{ fontFamily:'DM Sans', fontSize:'.8rem', color:'var(--text-2)' }}>Skills are fetched live from skillsmp.com</p>
-    </div>
-  );
-
-  if (!skills.length && !loading) return (
-    <div style={{ textAlign:'center', padding:'48px 0' }}>
-      <p style={{ fontFamily:'JetBrains Mono', fontSize:'.85rem', color:'var(--text-2)' }}>No skills found for this query.</p>
-    </div>
-  );
+  if (error || (!skills.length && !loading)) {
+    const fallback = getStaticSkills(occupation, searchQ);
+    if (fallback.length > 0) {
+      return (
+        <div>
+          <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:18, padding:'10px 16px', borderRadius:12, background:'rgba(212,102,26,0.06)', border:'1px solid rgba(212,102,26,0.15)' }}>
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--accent)' }}>◈ Showing curated library</span>
+            <span style={{ fontFamily:'DM Sans', fontSize:'.75rem', color:'var(--text-2)' }}>— live API unavailable. {fallback.length} built-in skills shown.</span>
+          </div>
+          <div className="grid-3">
+            {fallback.map((s, i) => <SkillCard key={s.id} skill={s} index={i} onSelect={onSelect} />)}
+          </div>
+        </div>
+      );
+    }
+    return (
+      <div style={{ textAlign:'center', padding:'48px 0' }}>
+        <p style={{ fontFamily:'JetBrains Mono', fontSize:'.85rem', color:'var(--text-2)', marginBottom:8 }}>
+          {searchQ ? `No results for "${searchQ}"` : 'No skills in library for this group yet.'}
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div>

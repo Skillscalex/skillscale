@@ -43,11 +43,17 @@ const { motion, useInView, AnimatePresence } = window.Motion;
 
 /* ===== Gem tier helpers (star-based, for trading cards) ===== */
 function gemTier(stars) {
-  if (stars >= 200) return 'Diamond';
-  if (stars >= 50)  return 'Emerald';
-  if (stars >= 10)  return 'Sapphire';
-  return 'Ruby';
+  if (stars >= 200) return 'Legendary';
+  if (stars >= 50)  return 'Epic';
+  if (stars >= 10)  return 'Rare';
+  return 'Standard';
 }
+const TIER_CFG = {
+  'Legendary': { color:'#C09A2A', icon:'🌟', glow:'rgba(192,154,42,0.28)' },
+  'Epic':      { color:'#7B2FBE', icon:'⚡', glow:'rgba(123,47,190,0.28)' },
+  'Rare':      { color:'#1565C0', icon:'💎', glow:'rgba(21,101,192,0.28)' },
+  'Standard':  { color:'#2D6A4F', icon:'🌿', glow:'rgba(45,106,79,0.20)' },
+};
 const GEM_COLORS = { Ruby:'#E11D48', Sapphire:'#3B82F6', Emerald:'#10B981', Diamond:'#A78BFA' };
 const GEM_ICONS  = { Ruby:'♦', Sapphire:'◆', Emerald:'◈', Diamond:'◇' };
 
@@ -190,6 +196,9 @@ function Nav({ theme, onToggle, currentPage }) {
                 {vaultCount}
               </span>
             )}
+          </a>
+          <a href="hubs.html" style={{ display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color: currentPage==='hubs.html'?'var(--accent)':'var(--text-2)', background: currentPage==='hubs.html'?'rgba(212,102,26,0.08)':'transparent', border:`1px solid ${currentPage==='hubs.html'?'rgba(212,102,26,0.3)':'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
+            ⬡ Hubs
           </a>
           <a href="auth.html" className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 16px', border:'1px solid var(--border)' }}>
             Sign In

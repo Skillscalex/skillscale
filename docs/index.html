@@ -225,6 +225,10 @@ function Nav({ theme, onToggle, currentPage }) {
             style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'rgba(255,255,255,0.85)', padding: '7px 14px', borderRadius: 9999 }}>
             ✦ Vault
           </a>
+          <a href="hubs.html" className="btn-glass lg btn btn-sm"
+            style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'rgba(255,255,255,0.85)', padding: '7px 14px', borderRadius: 9999 }}>
+            ⬡ Hubs
+          </a>
           <a href="skills.html" className="btn-glass lg-s btn btn-sm"
             style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'rgba(255,255,255,0.9)', padding: '7px 16px', borderRadius: 9999 }}>
             Browse Skills
@@ -289,6 +293,7 @@ function HeroSection() {
         <motion.p
           initial={motionBase} animate={motionIn}
           transition={{ duration: 0.6, delay: 0.8, ease }}
+          className="hero-sub-text"
           style={{ marginTop: 20, maxWidth: 520, textAlign: 'center', color: 'rgba(255,255,255,0.85)', fontFamily: 'DM Sans', fontSize: '1.05rem', fontWeight: 300, lineHeight: 1.55 }}
         >
           Browse MCPs, agent skills, and Claude plugins — curated and organized by occupation. Discover the tools that scale your workflow.
@@ -325,8 +330,8 @@ function HeroSection() {
           ].map(s => (
             <div key={s.label} className="stat-card lg" style={{ display: 'flex', flexDirection: 'column', gap: 10, minWidth: 160 }}>
               <span style={{ fontSize: '1.5rem' }}>{s.icon}</span>
-              <span className="t-display" style={{ fontSize: '2.4rem', color: '#fff', lineHeight: 1 }}>{s.num}</span>
-              <span style={{ fontFamily: 'DM Sans', fontSize: '.8rem', color: 'rgba(255,255,255,0.6)', fontWeight: 300 }}>{s.label}</span>
+              <span className="t-display hero-stat-num" style={{ fontSize: '2.4rem', color: '#fff', lineHeight: 1 }}>{s.num}</span>
+              <span className="hero-stat-label" style={{ fontFamily: 'DM Sans', fontSize: '.8rem', color: 'rgba(255,255,255,0.6)', fontWeight: 300 }}>{s.label}</span>
             </div>
           ))}
         </motion.div>
@@ -695,6 +700,7 @@ function Footer() {
           <a href="skills.html" style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)' }}>Skills</a>
           <a href="market.html" style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)' }}>Market</a>
           <a href="vault.html"  style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)' }}>Vault</a>
+          <a href="hubs.html"   style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)' }}>Hubs</a>
           <a href="mcps.html"   style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)' }}>MCPs</a>
         </div>
         <span style={{ fontFamily: 'JetBrains Mono', fontSize: '.68rem', color: 'var(--text-2)' }}>

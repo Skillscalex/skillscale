@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vault — Skillscale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: { fontFamily: { display:['Instrument Serif','serif'], heading:['Archivo Black','sans-serif'], body:['DM Sans','sans-serif'], mono:['JetBrains Mono','monospace'] } },
+        borderRadius: { DEFAULT:'9999px', none:'0', sm:'4px', md:'8px', lg:'16px', xl:'24px', '2xl':'32px', full:'9999px' }
+      }
+    }
+  </script>
+  <style>
+    #root { min-height: 100vh; }
+    .page-top { padding-top: 96px; }
+    *, *::before, *::after { transition-property: background-color, border-color, color; transition-duration: 0.3s; }
+    video, canvas, img, svg { transition: none !important; }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/framer-motion@11.11.17/dist/framer-motion.js"></script>
+
+<script type="text/babel">
+const { useState, useEffect, useRef } = React;
+const { motion, AnimatePresence } = window.Motion;
+
+/* ===== Vault storage ===== */
+const VAULT_KEY = 'skillscale_vault';
+function getVault() {
+  try { return JSON.parse(localStorage.getItem(VAULT_KEY) || '{"dreamed":[],"owned":[]}'); }
+  catch { return { dreamed:[], owned:[] }; }
+}
+function saveVault(v) { localStorage.setItem(VAULT_KEY, JSON.stringify(v)); }
+
+/* ===== SecureScore tier ===== */
+const SCORE_TIER_CONFIG = {
+  diamond: { label:'Diamond', color:'#1E6091', icon:'💎' },
+  emerald: { label:'Emerald', color:'#1A7A4A', icon:'💚' },
+  pearl:   { label:'Pearl',   color:'#7A6E5E', icon:'🤍' },
+  quartz:  { label:'Quartz',  color:'#7E5F9E', icon:'💜' },
+  coal:    { label:'Coal',    color:'#4A4540', icon:'⬛' },
+};
+function scoreTier(score) {
+  if (score >= 90) return 'diamond';
+  if (score >= 80) return 'emerald';
+  if (score >= 65) return 'pearl';
+  if (score >= 50) return 'quartz';
+  return 'coal';
+}
+
+/* ===== Theme Toggle ===== */
+function ThemeToggle({ theme, onToggle }) {
+  return (
+    <button onClick={onToggle} className="lg"
+      style={{ width:38, height:38, borderRadius:'50%', border:'none', display:'flex', alignItems:'center', justifyContent:'center', fontSize:16, color: theme==='light'?'#111110':'#F1E9D8', cursor:'pointer', flexShrink:0 }}>
+      {theme==='light'?'☀️':'🌙'}
+    </button>
+  );
+}
+
+/* ===== Nav ===== */
+function Nav({ theme, onToggle }) {
+  const vaultCount = getVault().dreamed.length + getVault().owned.length;
+  const pages = [{href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},{href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'}];
+  return (
+    <nav className="nav lg" style={{ padding:'12px 24px', borderBottom:'1px solid var(--border)', borderRadius:0 }}>
+      <div className="nav-inner">
+        <a href="index.html" style={{ fontFamily:'Archivo Black', fontSize:'1.05rem', color:'var(--text)', letterSpacing:'-.01em', flexShrink:0 }}>
+          skill<span style={{ color:'var(--accent)' }}>scale</span>
+        </a>
+        <div className="nav-links" style={{ display:'flex', alignItems:'center', padding:'6px', borderRadius:9999, gap:2 }}>
+          {pages.map(p => (
+            <a key={p.href} href={p.href} style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', letterSpacing:'.04em', padding:'6px 14px', borderRadius:9999, color:'var(--text-2)', background:'transparent', transition:'all 0.15s', textDecoration:'none' }}>
+              {p.label}
+            </a>
+          ))}
+        </div>
+        <div style={{ display:'flex', alignItems:'center', gap:10 }}>
+          <a href="vault.html" style={{ position:'relative', display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color:'var(--accent)', background:'rgba(212,102,26,0.08)', border:'1px solid rgba(212,102,26,0.3)', transition:'all 0.15s', textDecoration:'none' }}>
+            ✦ Vault
+            {vaultCount > 0 && (
+              <span style={{ position:'absolute', top:-5, right:-5, minWidth:16, height:16, borderRadius:9999, background:'var(--accent)', color:'#fff', fontSize:'.55rem', fontWeight:700, display:'flex', alignItems:'center', justifyContent:'center', padding:'0 4px' }}>
+                {vaultCount}
+              </span>
+            )}
+          </a>
+          <a href="auth.html" className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 16px', border:'1px solid var(--border)' }}>
+            Sign In
+          </a>
+          <ThemeToggle theme={theme} onToggle={onToggle} />
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+/* ===== Footer ===== */
+function Footer() {
+  return (
+    <footer className="footer" style={{ background:'var(--bg)' }}>
+      <div className="container footer-inner">
+        <span style={{ fontFamily:'Archivo Black', fontSize:'.9rem', color:'var(--text)' }}>skill<span style={{ color:'var(--accent)' }}>scale</span></span>
+        <div style={{ display:'flex', gap:24 }}>
+          {[['index.html','Home'],['skills.html','Skills'],['market.html','Market'],['vault.html','Vault'],['community.html','Community'],['mcps.html','MCPs']].map(([h,l]) => (
+            <a key={h} href={h} style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)', textDecoration:'none' }}>{l}</a>
+          ))}
+        </div>
+        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)' }}>© 2026 Skillscale</span>
+      </div>
+    </footer>
+  );
+}
+
+/* ===== Vault Item ===== */
+function VaultItem({ item, onRemove, onNoteChange }) {
+  const [editing, setEditing] = useState(false);
+  const [note, setNote] = useState(item.note || '');
+  const tier = item.tier || scoreTier(item.score || 70);
+  const cfg = SCORE_TIER_CONFIG[tier];
+
+  function saveNote() {
+    onNoteChange(item.id, note);
+    setEditing(false);
+  }
+
+  const relDate = (() => {
+    const d = Math.floor((Date.now() - new Date(item.savedAt).getTime()) / 86400000);
+    if (d < 1) return 'today';
+    if (d === 1) return '1d ago';
+    if (d < 7) return `${d}d ago`;
+    return `${Math.floor(d/7)}w ago`;
+  })();
+
+  return (
+    <motion.div
+      layout
+      initial={{ opacity:0, y:12 }} animate={{ opacity:1, y:0 }} exit={{ opacity:0, scale:0.95 }}
+      transition={{ duration:0.28 }}
+      className="lg"
+      style={{ borderRadius:16, padding:20, display:'flex', flexDirection:'column', gap:12 }}
+    >
+      <div style={{ display:'flex', alignItems:'flex-start', gap:14 }}>
+        <img src={`https://api.dicebear.com/7.x/shapes/svg?seed=${encodeURIComponent(item.name || item.id)}`}
+          alt="" style={{ width:44, height:44, borderRadius:11, flexShrink:0, background:'var(--bg-1)' }} />
+        <div style={{ flex:1, minWidth:0 }}>
+          <span style={{ fontFamily:'JetBrains Mono', fontWeight:700, fontSize:'.82rem', color:'var(--text)', display:'block', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
+            /{item.name || item.id}
+          </span>
+          {item.author && (
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--accent)' }}>@{item.author}</span>
+          )}
+        </div>
+        <div style={{ display:'flex', alignItems:'center', gap:8, flexShrink:0 }}>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)' }}>{relDate}</span>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', padding:'2px 8px', borderRadius:9999, background: cfg.color + '18', color: cfg.color, border:`1px solid ${cfg.color}30` }}>
+            {cfg.icon} {cfg.label}
+          </span>
+        </div>
+      </div>
+
+      {/* SecureScore mini bar */}
+      {item.score != null && (
+        <div>
+          <div style={{ display:'flex', justifyContent:'space-between', marginBottom:4 }}>
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.58rem', color:'var(--text-2)', textTransform:'uppercase', letterSpacing:'.06em' }}>SecureScore</span>
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', fontWeight:700, color: cfg.color }}>{item.score}</span>
+          </div>
+          <div style={{ height:5, borderRadius:9999, background:'var(--border)', overflow:'hidden', position:'relative' }}>
+            <div style={{ position:'absolute', height:'100%', borderRadius:9999, background:'linear-gradient(90deg, #C0392B 0%, #E67E22 30%, #27AE60 65%, #1E6091 100%)', backgroundSize:'500px 100%', width:`${item.score}%` }} />
+          </div>
+        </div>
+      )}
+
+      {/* Private note */}
+      <div>
+        {editing ? (
+          <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
+            <textarea
+              value={note} onChange={e => setNote(e.target.value)}
+              placeholder="Add a private note…"
+              rows={2}
+              style={{ fontFamily:'DM Sans', fontSize:'.8rem', color:'var(--text)', background:'var(--bg)', border:'1px solid var(--border)', borderRadius:10, padding:'8px 12px', resize:'vertical', outline:'none', lineHeight:1.5, width:'100%' }}
+            />
+            <div style={{ display:'flex', gap:8 }}>
+              <button onClick={saveNote} className="btn btn-primary btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem' }}>Save</button>
+              <button onClick={() => { setEditing(false); setNote(item.note||''); }} className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', border:'1px solid var(--border)' }}>Cancel</button>
+            </div>
+          </div>
+        ) : (
+          <div onClick={() => setEditing(true)} style={{ cursor:'pointer', padding:'8px 12px', borderRadius:10, background:'var(--bg)', border:'1px dashed var(--border)', minHeight:36, display:'flex', alignItems:'center' }}>
+            {note ? (
+              <p style={{ fontFamily:'DM Sans', fontSize:'.8rem', color:'var(--text-2)', margin:0, lineHeight:1.4 }}>{note}</p>
+            ) : (
+              <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)', opacity:.6 }}>+ Add private note…</span>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* Actions */}
+      <div style={{ display:'flex', gap:8 }}>
+        <a href={`skills.html`} className="btn btn-sm lg" style={{ flex:1, fontFamily:'JetBrains Mono', fontSize:'.68rem', textAlign:'center', border:'1px solid var(--border)', textDecoration:'none' }}>
+          View
+        </a>
+        <a href={`market.html#create`} className="btn btn-sm" style={{ flex:1, fontFamily:'JetBrains Mono', fontSize:'.68rem', textAlign:'center', background:'rgba(212,102,26,0.08)', color:'var(--accent)', border:'1px solid rgba(212,102,26,0.25)', textDecoration:'none' }}>
+          Publish →
+        </a>
+        <button onClick={() => onRemove(item.id)}
+          style={{ padding:'7px 12px', borderRadius:10, border:'1px solid var(--border)', background:'transparent', color:'var(--text-2)', cursor:'pointer', fontSize:'.78rem', transition:'all 0.15s', flexShrink:0 }}
+          title="Remove from Vault">
+          ✕
+        </button>
+      </div>
+    </motion.div>
+  );
+}
+
+/* ===== Empty State ===== */
+function EmptyState({ tab }) {
+  return (
+    <motion.div initial={{ opacity:0, y:16 }} animate={{ opacity:1, y:0 }} transition={{ duration:0.4 }}
+      style={{ textAlign:'center', padding:'64px 24px', display:'flex', flexDirection:'column', alignItems:'center', gap:16 }}>
+      <span style={{ fontSize:'3rem' }}>{tab === 'dreamed' ? '✧' : '🔒'}</span>
+      <h3 style={{ fontFamily:'Archivo Black', fontSize:'1.4rem', color:'var(--text)', margin:0 }}>
+        {tab === 'dreamed' ? 'Your Dreamed skills live here' : 'No owned skills yet'}
+      </h3>
+      <p style={{ fontFamily:'DM Sans', fontSize:'.9rem', color:'var(--text-2)', maxWidth:340, lineHeight:1.6, margin:0 }}>
+        {tab === 'dreamed'
+          ? 'Hit ✧ Dream on any skill in the marketplace to save it privately here.'
+          : 'Purchase a skill from the marketplace to see it here.'}
+      </p>
+      <div style={{ display:'flex', gap:12, flexWrap:'wrap', justifyContent:'center' }}>
+        <a href="skills.html" className="btn btn-primary" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'9px 20px' }}>Browse Skills</a>
+        <a href="market.html" className="btn lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'9px 20px', border:'1px solid var(--border)' }}>Go to Market</a>
+      </div>
+    </motion.div>
+  );
+}
+
+/* ===== App ===== */
+function App() {
+  const [theme, setTheme] = useState(() => {
+    const s = localStorage.getItem('sk-theme');
+    if (s) return s;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
+  const [tab, setTab] = useState('dreamed');
+  const [vault, setVault] = useState(getVault);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('sk-theme', theme);
+  }, [theme]);
+
+  function refresh() { setVault(getVault()); }
+
+  function removeItem(id) {
+    const v = getVault();
+    if (tab === 'dreamed') v.dreamed = v.dreamed.filter(s => s.id !== id);
+    else v.owned = v.owned.filter(s => s.id !== id);
+    saveVault(v);
+    refresh();
+  }
+
+  function updateNote(id, note) {
+    const v = getVault();
+    const arr = tab === 'dreamed' ? v.dreamed : v.owned;
+    const item = arr.find(s => s.id === id);
+    if (item) item.note = note;
+    saveVault(v);
+    refresh();
+  }
+
+  const items = tab === 'dreamed' ? vault.dreamed : vault.owned;
+  const totalCount = vault.dreamed.length + vault.owned.length;
+
+  return (
+    <>
+      <Nav theme={theme} onToggle={() => setTheme(t => t==='light'?'dark':'light')} />
+
+      <main style={{ background:'var(--bg)', minHeight:'100vh' }}>
+        {/* Header */}
+        <div className="page-top" style={{ borderBottom:'1px solid var(--border)', paddingBottom:40 }}>
+          <div className="container" style={{ paddingTop:40 }}>
+            <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'space-between', flexWrap:'wrap', gap:20 }}>
+              <div>
+                <span style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', letterSpacing:'.08em', color:'var(--accent)', textTransform:'uppercase', display:'block', marginBottom:10 }}>
+                  // Private Storage
+                </span>
+                <h1 className="t-display" style={{ fontSize:'clamp(2.8rem,6vw,5rem)', color:'var(--text)', lineHeight:.9 }}>
+                  ✦ Your Vault
+                </h1>
+              </div>
+              <div className="lg" style={{ padding:'10px 18px', borderRadius:14, display:'flex', alignItems:'center', gap:10 }}>
+                <span style={{ fontSize:'1.1rem' }}>🔒</span>
+                <div>
+                  <div style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', fontWeight:600, color:'var(--text)' }}>Private &amp; local</div>
+                  <div style={{ fontFamily:'DM Sans', fontSize:'.75rem', color:'var(--text-2)' }}>Only visible to you · stored on this device</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-sm">
+          <div className="container">
+            {/* Tabs */}
+            <div style={{ display:'flex', gap:4, marginBottom:32, background:'var(--bg-1,rgba(0,0,0,0.05))', borderRadius:12, padding:4, width:'fit-content' }}>
+              {[['dreamed', `✧ Dreamed (${vault.dreamed.length})`], ['owned', `🔒 Owned (${vault.owned.length})`]].map(([t, label]) => (
+                <button key={t} onClick={() => setTab(t)}
+                  style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'8px 20px', borderRadius:9, border:'none', cursor:'pointer', transition:'all 0.18s',
+                    background: tab===t ? 'var(--bg)' : 'transparent',
+                    color: tab===t ? 'var(--text)' : 'var(--text-2)',
+                    boxShadow: tab===t ? '0 1px 6px rgba(0,0,0,0.1)' : 'none',
+                    fontWeight: tab===t ? '500' : '400' }}>
+                  {label}
+                </button>
+              ))}
+            </div>
+
+            {/* Grid */}
+            {items.length === 0 ? (
+              <EmptyState tab={tab} />
+            ) : (
+              <div>
+                <p style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)', marginBottom:20 }}>
+                  {items.length} skill{items.length !== 1 ? 's' : ''} · {tab === 'dreamed' ? 'saved privately, not published' : 'purchased'}
+                </p>
+                <div className="grid-3">
+                  <AnimatePresence mode="popLayout">
+                    {items.map(item => (
+                      <VaultItem key={item.id} item={item} onRemove={removeItem} onNoteChange={updateNote} />
+                    ))}
+                  </AnimatePresence>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

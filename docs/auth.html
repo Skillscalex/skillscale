@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In — Skillscale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    #root { min-height:100vh; display:flex; flex-direction:column; }
+    .auth-wrap { flex:1; display:flex; align-items:center; justify-content:center; padding:80px 20px 40px; }
+    .auth-card { width:100%; max-width:440px; }
+    .auth-tabs { display:flex; background:var(--bg-1,rgba(0,0,0,0.04)); border-radius:12px; padding:4px; margin-bottom:28px; }
+    .auth-tab { flex:1; padding:8px; border:none; border-radius:9px; cursor:pointer; font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.04em; transition:all .15s; background:transparent; color:var(--text-2); }
+    .auth-tab.active { background:var(--bg); color:var(--text); font-weight:500; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+    [data-theme="dark"] .auth-tabs { background:rgba(255,255,255,.06); }
+    [data-theme="dark"] .auth-tab.active { background:rgba(255,255,255,.1); box-shadow:0 1px 4px rgba(0,0,0,.3); }
+    .auth-input { width:100%; padding:12px 16px; border-radius:12px; border:1px solid var(--border); background:var(--bg-1,rgba(0,0,0,.03)); color:var(--text); font-family:'DM Sans',sans-serif; font-size:.9rem; outline:none; transition:border-color .15s; box-sizing:border-box; }
+    .auth-input:focus { border-color:var(--accent); }
+    [data-theme="dark"] .auth-input { background:rgba(255,255,255,.05); }
+    .auth-divider { display:flex; align-items:center; gap:12; margin:20px 0; }
+    .auth-divider span { font-family:'JetBrains Mono',monospace; font-size:.68rem; color:var(--text-2); white-space:nowrap; }
+    .auth-divider::before, .auth-divider::after { content:''; flex:1; height:1px; background:var(--border); }
+    .social-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+    .social-btn { display:flex; align-items:center; gap:8; padding:10px 12px; border-radius:12px; border:1px solid var(--border); background:transparent; cursor:pointer; color:var(--text); font-family:'JetBrains Mono',monospace; font-size:.65rem; letter-spacing:.03em; transition:background .15s,border-color .15s; text-align:left; white-space:nowrap; width:100%; }
+    .social-btn:hover { background:var(--bg-1,rgba(0,0,0,.04)); border-color:var(--accent); }
+    [data-theme="dark"] .social-btn:hover { background:rgba(255,255,255,.06); }
+    .social-btn img, .social-btn svg { flex-shrink:0; }
+    .auth-submit { width:100%; padding:13px; border-radius:12px; border:none; background:var(--accent); color:#fff; font-family:'JetBrains Mono',monospace; font-size:.78rem; font-weight:600; cursor:pointer; letter-spacing:.04em; transition:opacity .15s; }
+    .auth-submit:hover { opacity:.88; }
+    .auth-submit:disabled { opacity:.5; cursor:not-allowed; }
+    .auth-msg { padding:12px 14px; border-radius:10px; font-family:'DM Sans',sans-serif; font-size:.83rem; margin-top:14px; }
+    .auth-msg.error { background:rgba(239,68,68,.1); color:#EF4444; border:1px solid rgba(239,68,68,.2); }
+    .auth-msg.success { background:rgba(16,185,129,.1); color:#10B981; border:1px solid rgba(16,185,129,.2); }
+    .otp-row { display:flex; gap:8; }
+    .otp-send { padding:12px 16px; border-radius:12px; border:1px solid var(--border); background:transparent; color:var(--accent); font-family:'JetBrains Mono',monospace; font-size:.72rem; cursor:pointer; white-space:nowrap; flex-shrink:0; transition:border-color .15s; }
+    .otp-send:hover { border-color:var(--accent); }
+    .phone-prefix { display:flex; align-items:center; gap:0; }
+    .flag-select { padding:12px 10px; border-radius:12px 0 0 12px; border:1px solid var(--border); border-right:none; background:var(--bg-1,rgba(0,0,0,.03)); color:var(--text); font-family:'JetBrains Mono',monospace; font-size:.78rem; cursor:pointer; }
+    .auth-input.phone-input { border-radius:0 12px 12px 0; }
+    .provider-badge { font-family:'JetBrains Mono',monospace; font-size:.55rem; color:var(--text-2); display:block; margin-top:2px; }
+    .section-label { font-family:'JetBrains Mono',monospace; font-size:.62rem; text-transform:uppercase; letter-spacing:.1em; color:var(--text-2); margin:20px 0 12px; }
+    .setup-guide { margin-top:36px; padding:20px; border-radius:16px; border:1px solid var(--border); }
+    .setup-guide summary { cursor:pointer; font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--text-2); list-style:none; }
+    .setup-guide summary::marker { display:none; }
+    .setup-step { padding:10px 0; border-bottom:1px solid var(--border); }
+    .setup-step:last-child { border-bottom:none; }
+    .setup-step h4 { font-family:'JetBrains Mono',monospace; font-size:.68rem; color:var(--text); margin-bottom:4px; }
+    .setup-step p { font-family:'DM Sans',sans-serif; font-size:.8rem; color:var(--text-2); margin:0; line-height:1.5; }
+    .setup-step code { font-family:'JetBrains Mono',monospace; font-size:.72rem; background:var(--bg-1,rgba(0,0,0,.06)); padding:2px 6px; border-radius:4px; }
+    .user-pill { display:flex; align-items:center; gap:10; padding:10px 16px; border-radius:12px; border:1px solid var(--border); }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+
+<script type="text/babel">
+const { useState, useEffect, useRef } = React;
+
+/* ===== Supabase config — replace before deploy ===== */
+const SUPABASE_URL  = 'YOUR_SUPABASE_URL';
+const SUPABASE_KEY  = 'YOUR_SUPABASE_ANON_KEY';
+const supabase = (typeof window.supabase !== 'undefined' && SUPABASE_URL !== 'YOUR_SUPABASE_URL')
+  ? window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY)
+  : null; // demo mode when not configured
+
+/* ===== Icons ===== */
+function GitHubIcon({ size=18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 16 16" fill="currentColor">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+    </svg>
+  );
+}
+
+function DiscordIcon({ size=18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.08.113 18.1.131 18.11a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.04.001-.088-.041-.104a13.201 13.201 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+    </svg>
+  );
+}
+
+function TelegramIcon({ size=18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M11.944 0A12 12 0 1 0 24 12 12 12 0 0 0 11.944 0zm4.967 7.515-2.028 9.562c-.15.666-.537.833-1.087.518l-3-2.21-1.447 1.393c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.566-4.46c.537-.193 1.006.13.898.65z"/>
+    </svg>
+  );
+}
+
+function MicrosoftIcon({ size=18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 23 23" fill="none">
+      <path fill="#F35325" d="M0 0h11v11H0z"/><path fill="#81BC06" d="M12 0h11v11H12z"/>
+      <path fill="#05A6F0" d="M0 12h11v11H0z"/><path fill="#FFBA08" d="M12 12h11v11H12z"/>
+    </svg>
+  );
+}
+
+function KakaoIcon({ size=18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" style={{ color:'#3A1D1D' }}>
+      <path d="M12 3C6.48 3 2 6.36 2 10.5c0 2.64 1.7 4.96 4.28 6.34L5.18 21l4.52-2.98c.75.1 1.52.16 2.3.16 5.52 0 10-3.36 10-7.5S17.52 3 12 3z"/>
+    </svg>
+  );
+}
+
+function LineIcon({ size=18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" style={{ color:'#06C755' }}>
+      <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.065-.024.134-.033.202-.033.195 0 .375.088.494.242l2.44 3.317V8.108c0-.345.282-.63.63-.63.348 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+    </svg>
+  );
+}
+
+/* ===== Social button ===== */
+function SocialButton({ logo, label, sublabel, onClick, disabled }) {
+  return (
+    <button onClick={onClick} disabled={disabled} className="social-btn lg">
+      {typeof logo === 'string'
+        ? <img src={logo} alt="" width={18} height={18} style={{ objectFit:'contain', borderRadius:3 }} onError={e => e.target.style.display='none'} />
+        : logo}
+      <div>
+        <div>{label}</div>
+        {sublabel && <span className="provider-badge">{sublabel}</span>}
+      </div>
+    </button>
+  );
+}
+
+/* ===== Theme toggle ===== */
+function ThemeToggle({ theme, onToggle }) {
+  return (
+    <button onClick={onToggle} className="lg"
+      style={{ width:38, height:38, borderRadius:'50%', border:'none', display:'flex', alignItems:'center', justifyContent:'center', fontSize:16, color: theme==='light'?'#1A1714':'#F1E9D8', cursor:'pointer', flexShrink:0 }}>
+      {theme==='light'?'☀️':'🌙'}
+    </button>
+  );
+}
+
+/* ===== Country codes ===== */
+const COUNTRY_CODES = [
+  { code:'+1',  flag:'🇺🇸', label:'US' }, { code:'+44', flag:'🇬🇧', label:'UK' },
+  { code:'+81', flag:'🇯🇵', label:'JP' }, { code:'+82', flag:'🇰🇷', label:'KR' },
+  { code:'+86', flag:'🇨🇳', label:'CN' }, { code:'+852',flag:'🇭🇰', label:'HK' },
+  { code:'+65', flag:'🇸🇬', label:'SG' }, { code:'+61', flag:'🇦🇺', label:'AU' },
+  { code:'+49', flag:'🇩🇪', label:'DE' }, { code:'+33', flag:'🇫🇷', label:'FR' },
+  { code:'+91', flag:'🇮🇳', label:'IN' }, { code:'+55', flag:'🇧🇷', label:'BR' },
+  { code:'+66', flag:'🇹🇭', label:'TH' }, { code:'+60', flag:'🇲🇾', label:'MY' },
+];
+
+/* ===== Main Auth App ===== */
+function App() {
+  const [theme, setTheme] = useState(() => {
+    const s = localStorage.getItem('sk-theme');
+    if (s) return s;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
+  const [tab, setTab] = useState('signin'); // signin | signup | reset
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPw, setConfirmPw] = useState('');
+  const [countryCode, setCountryCode] = useState('+1');
+  const [phone, setPhone] = useState('');
+  const [otp, setOtp] = useState('');
+  const [otpSent, setOtpSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [msg, setMsg] = useState(null); // {type:'error'|'success', text}
+  const [session, setSession] = useState(null);
+  const isConfigured = supabase !== null;
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('sk-theme', theme);
+  }, [theme]);
+
+  useEffect(() => {
+    if (!isConfigured) return;
+    supabase.auth.getSession().then(({ data: { session } }) => setSession(session));
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session);
+      if (session) {
+        setTimeout(() => { window.location.href = 'index.html'; }, 1200);
+        setMsg({ type:'success', text:`Signed in as ${session.user.email || session.user.phone || 'user'} — redirecting…` });
+      }
+    });
+    return () => subscription.unsubscribe();
+  }, [isConfigured]);
+
+  function clearMsg() { setMsg(null); }
+
+  async function handleEmailSignIn(e) {
+    e.preventDefault(); clearMsg(); setLoading(true);
+    if (!isConfigured) { setMsg({ type:'error', text:'Supabase not configured — see Setup Guide below.' }); setLoading(false); return; }
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    if (error) setMsg({ type:'error', text: error.message });
+    setLoading(false);
+  }
+
+  async function handleEmailSignUp(e) {
+    e.preventDefault(); clearMsg(); setLoading(true);
+    if (!isConfigured) { setMsg({ type:'error', text:'Supabase not configured — see Setup Guide below.' }); setLoading(false); return; }
+    if (password !== confirmPw) { setMsg({ type:'error', text:'Passwords do not match.' }); setLoading(false); return; }
+    if (password.length < 8) { setMsg({ type:'error', text:'Password must be at least 8 characters.' }); setLoading(false); return; }
+    const { error } = await supabase.auth.signUp({ email, password });
+    if (error) setMsg({ type:'error', text: error.message });
+    else setMsg({ type:'success', text:'Check your email for a confirmation link!' });
+    setLoading(false);
+  }
+
+  async function handleReset(e) {
+    e.preventDefault(); clearMsg(); setLoading(true);
+    if (!isConfigured) { setMsg({ type:'error', text:'Supabase not configured — see Setup Guide below.' }); setLoading(false); return; }
+    const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo: window.location.origin + '/auth.html' });
+    if (error) setMsg({ type:'error', text: error.message });
+    else setMsg({ type:'success', text:'Password reset email sent!' });
+    setLoading(false);
+  }
+
+  async function handleOAuth(provider) {
+    clearMsg();
+    if (!isConfigured) { setMsg({ type:'error', text:'Supabase not configured — see Setup Guide below.' }); return; }
+    const { error } = await supabase.auth.signInWithOAuth({ provider, options: { redirectTo: window.location.origin + '/auth.html' } });
+    if (error) setMsg({ type:'error', text: error.message });
+  }
+
+  async function handleSendOTP() {
+    clearMsg(); setLoading(true);
+    if (!isConfigured) { setMsg({ type:'error', text:'Supabase not configured — see Setup Guide below.' }); setLoading(false); return; }
+    const fullPhone = countryCode + phone.replace(/\D/g,'');
+    const { error } = await supabase.auth.signInWithOtp({ phone: fullPhone });
+    if (error) setMsg({ type:'error', text: error.message });
+    else { setOtpSent(true); setMsg({ type:'success', text:`OTP sent to ${fullPhone}` }); }
+    setLoading(false);
+  }
+
+  async function handleVerifyOTP() {
+    clearMsg(); setLoading(true);
+    if (!isConfigured) { setMsg({ type:'error', text:'Supabase not configured — see Setup Guide below.' }); setLoading(false); return; }
+    const fullPhone = countryCode + phone.replace(/\D/g,'');
+    const { error } = await supabase.auth.verifyOtp({ phone: fullPhone, token: otp, type: 'sms' });
+    if (error) setMsg({ type:'error', text: error.message });
+    setLoading(false);
+  }
+
+  function onTelegramAuth(user) {
+    clearMsg();
+    fetch('/api/auth/telegram', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(user) })
+      .then(r => r.json())
+      .then(d => { if (d.error) setMsg({ type:'error', text: d.error }); else setMsg({ type:'success', text:`Welcome, ${user.first_name}!` }); })
+      .catch(() => setMsg({ type:'error', text:'Telegram auth failed — server not configured.' }));
+  }
+  // Expose to Telegram widget
+  window.onTelegramAuth = onTelegramAuth;
+
+  if (session) {
+    return (
+      <div className="auth-wrap">
+        <div className="auth-card">
+          <div style={{ textAlign:'center', marginBottom:28 }}>
+            <img src={`https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(session.user.email||'user')}&backgroundColor=transparent`} alt="" width={64} height={64} style={{ borderRadius:'50%', border:'2px solid var(--border)' }} />
+          </div>
+          <div className="user-pill lg" style={{ marginBottom:16, justifyContent:'center' }}>
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text)' }}>{session.user.email || session.user.phone}</span>
+          </div>
+          <p style={{ fontFamily:'DM Sans', fontSize:'.85rem', color:'var(--text-2)', textAlign:'center', marginBottom:20 }}>
+            You are signed in.
+          </p>
+          <a href="index.html" className="auth-submit" style={{ display:'block', textAlign:'center', marginBottom:12, textDecoration:'none', padding:'13px', borderRadius:12, background:'var(--accent)', color:'#fff', fontFamily:'JetBrains Mono', fontSize:'.78rem' }}>
+            Go to Home
+          </a>
+          <button className="auth-submit" style={{ background:'transparent', border:'1px solid var(--border)', color:'var(--text-2)' }}
+            onClick={async () => { await supabase.auth.signOut(); setSession(null); }}>
+            Sign Out
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      <nav className="nav lg" style={{ padding:'12px 24px', borderBottom:'1px solid var(--border)', borderRadius:0 }}>
+        <div className="nav-inner">
+          <a href="index.html" style={{ fontFamily:'Archivo Black', fontSize:'1.05rem', color:'var(--text)', letterSpacing:'-.01em' }}>
+            skill<span style={{ color:'var(--accent)' }}>scale</span>
+          </a>
+          <div style={{ display:'flex', alignItems:'center', gap:10 }}>
+            <a href="index.html" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)' }}>← Back</a>
+            <ThemeToggle theme={theme} onToggle={() => setTheme(t => t==='light'?'dark':'light')} />
+          </div>
+        </div>
+      </nav>
+
+      <div className="auth-wrap">
+        <div className="auth-card">
+          {/* Logo */}
+          <div style={{ textAlign:'center', marginBottom:28 }}>
+            <h1 style={{ fontFamily:'Archivo Black', fontSize:'1.6rem', color:'var(--text)', marginBottom:6 }}>
+              skill<span style={{ color:'var(--accent)' }}>scale</span>
+            </h1>
+            <p style={{ fontFamily:'DM Sans', fontSize:'.85rem', color:'var(--text-2)' }}>
+              {tab==='signin' ? 'Sign in to your account' : tab==='signup' ? 'Create an account' : 'Reset your password'}
+            </p>
+          </div>
+
+          {/* Tabs */}
+          <div className="auth-tabs">
+            {[['signin','Sign In'],['signup','Sign Up'],['reset','Reset']].map(([id,label]) => (
+              <button key={id} className={`auth-tab${tab===id?' active':''}`} onClick={() => { setTab(id); clearMsg(); }}>
+                {label}
+              </button>
+            ))}
+          </div>
+
+          {/* ── Email/Password form ── */}
+          {(tab === 'signin' || tab === 'signup') && (
+            <form onSubmit={tab==='signin' ? handleEmailSignIn : handleEmailSignUp}>
+              <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
+                <input className="auth-input" type="email" placeholder="Email address" value={email} onChange={e=>setEmail(e.target.value)} required autoComplete="email" />
+                <input className="auth-input" type="password" placeholder="Password" value={password} onChange={e=>setPassword(e.target.value)} required autoComplete={tab==='signup'?'new-password':'current-password'} />
+                {tab === 'signup' && (
+                  <input className="auth-input" type="password" placeholder="Confirm password" value={confirmPw} onChange={e=>setConfirmPw(e.target.value)} required autoComplete="new-password" />
+                )}
+              </div>
+              {tab === 'signin' && (
+                <div style={{ textAlign:'right', marginTop:6 }}>
+                  <button type="button" onClick={() => { setTab('reset'); clearMsg(); }} style={{ background:'none', border:'none', cursor:'pointer', fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--accent)' }}>
+                    Forgot password?
+                  </button>
+                </div>
+              )}
+              <button type="submit" className="auth-submit" style={{ marginTop:16 }} disabled={loading}>
+                {loading ? 'Loading…' : tab==='signin' ? 'Sign In with Email' : 'Create Account'}
+              </button>
+            </form>
+          )}
+
+          {/* ── Reset form ── */}
+          {tab === 'reset' && (
+            <form onSubmit={handleReset}>
+              <input className="auth-input" type="email" placeholder="Email address" value={email} onChange={e=>setEmail(e.target.value)} required autoComplete="email" />
+              <button type="submit" className="auth-submit" style={{ marginTop:14 }} disabled={loading}>
+                {loading ? 'Sending…' : 'Send Reset Link'}
+              </button>
+            </form>
+          )}
+
+          {msg && <div className={`auth-msg ${msg.type}`}>{msg.text}</div>}
+
+          {/* ── Phone OTP ── */}
+          {tab !== 'reset' && (
+            <>
+              <div className="auth-divider"><span>or phone OTP</span></div>
+              <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
+                <div className="otp-row" style={{ alignItems:'stretch' }}>
+                  <select className="flag-select" value={countryCode} onChange={e=>setCountryCode(e.target.value)}>
+                    {COUNTRY_CODES.map(c => <option key={c.code+c.label} value={c.code}>{c.flag} {c.code}</option>)}
+                  </select>
+                  <input className="auth-input phone-input" type="tel" placeholder="Phone number" value={phone} onChange={e=>setPhone(e.target.value)} style={{ flex:1 }} />
+                </div>
+                {otpSent ? (
+                  <div className="otp-row">
+                    <input className="auth-input" type="text" placeholder="Enter OTP code" value={otp} onChange={e=>setOtp(e.target.value)} style={{ flex:1 }} maxLength={6} />
+                    <button type="button" className="otp-send" onClick={handleVerifyOTP} disabled={loading}>Verify</button>
+                  </div>
+                ) : (
+                  <button type="button" className="otp-send" onClick={handleSendOTP} disabled={loading || !phone.trim()} style={{ borderRadius:12, padding:'12px 16px', textAlign:'center' }}>
+                    {loading ? 'Sending…' : 'Send OTP'}
+                  </button>
+                )}
+              </div>
+              <p style={{ fontFamily:'JetBrains Mono', fontSize:'.58rem', color:'var(--text-2)', marginTop:6 }}>
+                Phone OTP requires Twilio (≈$0.0075/SMS). Free alternative: use email above.
+              </p>
+            </>
+          )}
+
+          {/* ── OAuth providers ── */}
+          {tab !== 'reset' && (
+            <>
+              <div className="auth-divider"><span>or continue with</span></div>
+
+              <p className="section-label">Instant setup</p>
+              <div className="social-grid">
+                <SocialButton
+                  logo="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+                  label="Google" onClick={() => handleOAuth('google')} />
+                <SocialButton
+                  logo={<GitHubIcon size={18} />}
+                  label="GitHub" onClick={() => handleOAuth('github')} />
+                <SocialButton
+                  logo={<MicrosoftIcon size={18} />}
+                  label="Microsoft" sublabel="Azure AD" onClick={() => handleOAuth('azure')} />
+                <SocialButton
+                  logo={<DiscordIcon size={18} />}
+                  label="Discord" onClick={() => handleOAuth('discord')} />
+                <SocialButton
+                  logo="https://www.facebook.com/images/fb_icon_325x325.png"
+                  label="Facebook" sublabel="Meta review for 100+" onClick={() => handleOAuth('facebook')} />
+                <SocialButton
+                  logo="https://cdn.worldvectorlogo.com/logos/apple-14.svg"
+                  label="Apple" onClick={() => handleOAuth('apple')} />
+              </div>
+
+              <p className="section-label" style={{ marginTop:20 }}>Custom setup needed</p>
+              <div className="social-grid">
+                {/* Telegram Login Widget */}
+                <div style={{ position:'relative' }}>
+                  <div id="telegram-login-widget" style={{ display:'flex' }}>
+                    <SocialButton
+                      logo={<TelegramIcon size={18} />}
+                      label="Telegram" sublabel="@BotFather 2min"
+                      onClick={() => setMsg({ type:'error', text:'Add your Telegram bot token to server.py and set TELEGRAM_BOT_TOKEN env var.' })} />
+                  </div>
+                </div>
+                <SocialButton
+                  logo={<LineIcon size={18} />}
+                  label="LINE" sublabel="developers.line.biz"
+                  onClick={() => setMsg({ type:'error', text:'LINE OAuth requires LINE_CLIENT_ID + LINE_CLIENT_SECRET in server.py. See setup guide below.' })} />
+                <SocialButton
+                  logo={<KakaoIcon size={18} />}
+                  label="Kakao" sublabel="developers.kakao.com"
+                  onClick={() => setMsg({ type:'error', text:'Kakao requires KAKAO_APP_KEY. See setup guide below.' })} />
+              </div>
+
+              <p className="section-label" style={{ marginTop:20 }}>Requires approval (weeks)</p>
+              <div className="social-grid">
+                <SocialButton
+                  logo="https://sf16-sg.tiktokcdn.com/obj/eden-sg/uvhpnuhrX/tiktok-icon2.png"
+                  label="TikTok" sublabel="App review required"
+                  onClick={() => setMsg({ type:'error', text:'TikTok requires app review. Apply at developers.tiktok.com.' })} />
+                <SocialButton
+                  logo="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                  label="Instagram" sublabel="Via Facebook/Meta"
+                  onClick={() => handleOAuth('facebook')} />
+                <SocialButton
+                  logo="https://upload.wikimedia.org/wikipedia/commons/7/73/WeChat_logo_2017.png"
+                  label="WeChat" sublabel="Chinese biz reg."
+                  onClick={() => setMsg({ type:'error', text:'WeChat OAuth requires Chinese business registration. Not feasible without it.' })} />
+              </div>
+            </>
+          )}
+
+          {/* ── Setup guide ── */}
+          <details className="setup-guide lg" style={{ marginTop:32 }}>
+            <summary>Supabase Setup Guide — click to expand</summary>
+            <div style={{ marginTop:16 }}>
+              <div className="setup-step">
+                <h4>1. Create Supabase project</h4>
+                <p>Go to <strong>supabase.com</strong> → New Project. Copy your <code>Project URL</code> and <code>anon key</code> from Settings → API.</p>
+              </div>
+              <div className="setup-step">
+                <h4>2. Replace keys in auth.html</h4>
+                <p>Find <code>YOUR_SUPABASE_URL</code> and <code>YOUR_SUPABASE_ANON_KEY</code> at the top of the script block and replace them.</p>
+              </div>
+              <div className="setup-step">
+                <h4>3. Enable OAuth providers</h4>
+                <p>In Supabase Dashboard → Authentication → Providers:<br/>
+                <strong>Google</strong>: OAuth client from console.cloud.google.com<br/>
+                <strong>GitHub</strong>: OAuth app from github.com/settings/developers<br/>
+                <strong>Microsoft</strong>: App registration from portal.azure.com<br/>
+                <strong>Discord</strong>: App from discord.com/developers/applications<br/>
+                <strong>Facebook</strong>: App from developers.facebook.com</p>
+              </div>
+              <div className="setup-step">
+                <h4>4. Set redirect URLs</h4>
+                <p>Auth → URL Configuration:<br/>
+                Site URL: <code>http://localhost:3131</code><br/>
+                Redirect URL: <code>http://localhost:3131/auth.html</code></p>
+              </div>
+              <div className="setup-step">
+                <h4>5. Phone OTP (optional)</h4>
+                <p>Auth → Providers → Phone → enable Twilio integration. Costs ~$0.0075/SMS (US). Free alternative: use email OTP instead.</p>
+              </div>
+              <div className="setup-step">
+                <h4>6. Telegram (custom)</h4>
+                <p>Create a bot via @BotFather on Telegram. Set env var <code>TELEGRAM_BOT_TOKEN</code>. Add verification endpoint to server.py.</p>
+              </div>
+              <div className="setup-step">
+                <h4>7. LINE (custom)</h4>
+                <p>Create app at developers.line.biz (free). Set <code>LINE_CLIENT_ID</code> + <code>LINE_CLIENT_SECRET</code> in server.py.</p>
+              </div>
+              <div className="setup-step">
+                <h4>8. Kakao (custom)</h4>
+                <p>Create app at developers.kakao.com (free). Set <code>KAKAO_APP_KEY</code> in auth.html.</p>
+              </div>
+            </div>
+          </details>
+
+          <p style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)', textAlign:'center', marginTop:24 }}>
+            By continuing, you agree to our Terms of Service and Privacy Policy.
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community — Skillscale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    #root { min-height:100vh; }
+    .page-top { padding-top:80px; }
+    *, *::before, *::after { transition-property:background-color,border-color,color; transition-duration:0.3s; }
+    video,canvas,img,svg { transition:none !important; }
+
+    .community-layout { display:grid; grid-template-columns:1fr 320px; gap:28px; max-width:1100px; margin:0 auto; padding:0 24px 60px; }
+    @media(max-width:860px) { .community-layout { grid-template-columns:1fr; } }
+
+    .post-card { border-radius:16px; padding:20px; margin-bottom:16px; border:1px solid var(--border); background:var(--bg); transition:border-color .2s !important; }
+    .post-card:hover { border-color:var(--accent); }
+    .reaction-bar { display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }
+    .reaction-btn { display:flex; align-items:center; gap:5px; padding:5px 12px; border-radius:9999px; border:1px solid var(--border); background:transparent; cursor:pointer; font-family:'JetBrains Mono',monospace; font-size:.68rem; color:var(--text-2); transition:background .15s,border-color .15s; }
+    .reaction-btn:hover, .reaction-btn.active { background:var(--bg-1,rgba(0,0,0,.06)); border-color:var(--accent); color:var(--accent); }
+    [data-theme="dark"] .reaction-btn:hover, [data-theme="dark"] .reaction-btn.active { background:rgba(255,255,255,.06); }
+    .comment-input { width:100%; padding:10px 14px; border-radius:10px; border:1px solid var(--border); background:var(--bg-1,rgba(0,0,0,.03)); color:var(--text); font-family:'DM Sans',sans-serif; font-size:.85rem; resize:none; outline:none; box-sizing:border-box; transition:border-color .15s; }
+    .comment-input:focus { border-color:var(--accent); }
+    [data-theme="dark"] .comment-input { background:rgba(255,255,255,.05); }
+    .comment-thread { margin-top:14px; border-top:1px solid var(--border); padding-top:14px; display:flex; flex-direction:column; gap:10px; }
+    .comment-item { display:flex; gap:10px; }
+    .comment-body { flex:1; }
+    .comment-reply { margin-left:32px; margin-top:8px; display:flex; flex-direction:column; gap:8px; }
+    .trending-chip { display:flex; align-items:center; gap:8px; padding:8px 14px; border-radius:12px; border:1px solid var(--border); background:transparent; cursor:pointer; width:100%; text-align:left; transition:border-color .15s; }
+    .trending-chip:hover { border-color:var(--accent); }
+    .create-bar { border-radius:16px; padding:16px 20px; margin-bottom:24px; border:1px solid var(--border); display:flex; gap:12px; align-items:flex-start; }
+    .create-textarea { flex:1; padding:10px 14px; border-radius:12px; border:1px solid var(--border); background:var(--bg-1,rgba(0,0,0,.03)); color:var(--text); font-family:'DM Sans',sans-serif; font-size:.88rem; resize:none; outline:none; min-height:60px; box-sizing:border-box; transition:border-color .15s; }
+    .create-textarea:focus { border-color:var(--accent); }
+    [data-theme="dark"] .create-textarea { background:rgba(255,255,255,.05); }
+    .hot-strip { display:flex; gap:8px; overflow-x:auto; padding-bottom:6px; margin-bottom:24px; }
+    .hot-strip::-webkit-scrollbar { height:3px; }
+    .hot-strip::-webkit-scrollbar-thumb { background:var(--border); border-radius:9999px; }
+    .hot-chip { flex-shrink:0; padding:6px 14px; border-radius:9999px; border:1px solid var(--border); font-family:'JetBrains Mono',monospace; font-size:.65rem; color:var(--text); cursor:pointer; white-space:nowrap; transition:border-color .15s; }
+    .hot-chip:hover { border-color:var(--accent); color:var(--accent); }
+    .skill-chip-inline { display:inline-flex; align-items:center; gap:6px; padding:3px 10px; border-radius:9999px; background:rgba(var(--accent-rgb,.212,.0.4,.1),.08); border:1px solid var(--border); font-family:'JetBrains Mono',monospace; font-size:.65rem; color:var(--accent); cursor:pointer; }
+    .panel-section { background:var(--bg); border:1px solid var(--border); border-radius:16px; padding:18px; margin-bottom:18px; }
+    .panel-section h3 { font-family:'JetBrains Mono',monospace; font-size:.68rem; text-transform:uppercase; letter-spacing:.08em; color:var(--text-2); margin-bottom:12px; }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/framer-motion@11.11.17/dist/framer-motion.js"></script>
+
+<script type="text/babel">
+const { useState, useEffect, useRef, useCallback } = React;
+const { motion, useInView, AnimatePresence } = window.Motion;
+
+/* ===== Shared components ===== */
+function ThemeToggle({ theme, onToggle }) {
+  return (
+    <button onClick={onToggle} className="lg"
+      style={{ width:38, height:38, borderRadius:'50%', border:'none', display:'flex', alignItems:'center', justifyContent:'center', fontSize:16, color: theme==='light'?'#1A1714':'#F1E9D8', cursor:'pointer', flexShrink:0 }}>
+      {theme==='light'?'☀️':'🌙'}
+    </button>
+  );
+}
+
+function Nav({ theme, onToggle }) {
+  const pages = [{href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},{href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'}];
+  return (
+    <nav className="nav lg" style={{ padding:'12px 24px', borderBottom:'1px solid var(--border)', borderRadius:0 }}>
+      <div className="nav-inner">
+        <a href="index.html" style={{ fontFamily:'Archivo Black', fontSize:'1.05rem', color:'var(--text)', letterSpacing:'-.01em', flexShrink:0 }}>
+          skill<span style={{ color:'var(--accent)' }}>scale</span>
+        </a>
+        <div className="nav-links" style={{ display:'flex', alignItems:'center', padding:'6px', borderRadius:9999, gap:2 }}>
+          {pages.map(p => (
+            <a key={p.href} href={p.href} style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', letterSpacing:'.04em', padding:'6px 14px', borderRadius:9999, color: p.href==='community.html'?'var(--text)':'var(--text-2)', background: p.href==='community.html'?'var(--bg-1,rgba(0,0,0,0.06))':'transparent', fontWeight: p.href==='community.html'?'500':'400', transition:'all 0.15s' }}>
+              {p.label}
+            </a>
+          ))}
+        </div>
+        <div style={{ display:'flex', alignItems:'center', gap:10 }}>
+          <a href="vault.html" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color:'var(--text-2)', border:'1px solid var(--border)', textDecoration:'none', transition:'all 0.15s' }}>
+            ✦ Vault
+          </a>
+          <a href="auth.html" className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 16px', border:'1px solid var(--border)' }}>
+            Sign In
+          </a>
+          <ThemeToggle theme={theme} onToggle={onToggle} />
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer" style={{ background:'var(--bg)' }}>
+      <div className="container footer-inner">
+        <span style={{ fontFamily:'Archivo Black', fontSize:'.9rem', color:'var(--text)' }}>skill<span style={{ color:'var(--accent)' }}>scale</span></span>
+        <div style={{ display:'flex', gap:24 }}>
+          {[['index.html','Home'],['skills.html','Skills'],['market.html','Market'],['vault.html','Vault'],['community.html','Community'],['mcps.html','MCPs']].map(([h,l]) => (
+            <a key={h} href={h} style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)' }}>{l}</a>
+          ))}
+        </div>
+        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)' }}>© 2026 Skillscale</span>
+      </div>
+    </footer>
+  );
+}
+
+/* ===== Avatar ===== */
+function Avatar({ seed, size=32, style={} }) {
+  return (
+    <img
+      src={`https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(seed)}&backgroundColor=transparent`}
+      alt="" width={size} height={size}
+      style={{ borderRadius:'50%', border:'1px solid var(--border)', flexShrink:0, ...style }}
+    />
+  );
+}
+
+/* ===== Mock data ===== */
+const EMOJIS = ['👍','⭐','🔥','🤯','🛠'];
+
+const MOCK_SKILLS = [
+  'code-review-agent','rag-pipeline','sql-genius','market-analyzer','notion-sync',
+  'github-pr-helper','data-cleaner','claude-summarizer','web-scraper','email-assistant'
+];
+
+let _pid = 1;
+function mkPost(author, content, skillRef, ago, reactions, comments) {
+  const id = _pid++;
+  return { id, author, content, skillRef, ago, reactions: reactions || {}, comments: comments || [], showComments: false };
+}
+
+const INITIAL_POSTS = [
+  mkPost('alex_m', 'Just tried the new code-review-agent skill — it caught 3 edge cases my team missed in review. Highly recommend for any TypeScript project.', 'code-review-agent', '2h', { '👍':14, '🔥':7, '⭐':3 }, [
+    { id:101, author:'sara_k', content:'Which version? The one with strict mode on?', ago:'1h', reactions:{ '👍':2 }, replies:[
+      { id:201, author:'alex_m', content:'Yes! v0.4.2, strict mode works great.', ago:'55m', reactions:{} }
+    ]},
+    { id:102, author:'priya_r', content:'Does it handle async/await patterns?', ago:'45m', reactions:{ '👍':1 }, replies:[] }
+  ]),
+  mkPost('dev_kai', 'Built a RAG pipeline for my company\'s internal docs using rag-pipeline skill. Cut knowledge retrieval time from 45s to under 2s. The embeddings chunking defaults are really well tuned.', 'rag-pipeline', '5h', { '⭐':21, '🔥':18, '🤯':6 }, [
+    { id:103, author:'tomasz_w', content:'What vector DB are you using?', ago:'3h', reactions:{ '👍':4 }, replies:[
+      { id:202, author:'dev_kai', content:'Pinecone free tier for now, migrating to pgvector next month.', ago:'2h', reactions:{ '👍':2 } }
+    ]}
+  ]),
+  mkPost('li_xuan', 'The sql-genius skill just wrote a 12-table join with window functions for my analytics query. I\'ve been staring at this problem for 2 days. Absolutely wild.', 'sql-genius', '1d', { '🤯':34, '🔥':22, '👍':19 }, [
+    { id:104, author:'ana_costa', content:'Did it get the indexes right too?', ago:'20h', reactions:{ '👍':5 }, replies:[
+      { id:203, author:'li_xuan', content:'Yes! Even suggested a partial index I hadn\'t thought of.', ago:'19h', reactions:{ '⭐':3 } }
+    ]}
+  ]),
+  mkPost('mia_dev', 'PSA: web-scraper skill works with JS-heavy SPAs now — it auto-detects dynamic content and waits for the right elements. No more manually tuning wait times!', 'web-scraper', '2d', { '👍':11, '🛠':8 }, []),
+  mkPost('oscar_t', 'Anyone tried chaining market-analyzer with email-assistant? I\'m generating daily market digests and sending them automatically. The combo is incredibly powerful.', null, '3d', { '⭐':9, '🔥':6, '🤯':4 }, [
+    { id:105, author:'zoe_p', content:'Would love a template for this setup!', ago:'2d', reactions:{ '👍':7 }, replies:[] }
+  ]),
+];
+
+const TRENDING_SKILLS = [
+  { name:'code-review-agent', stars:347, tag:'dev' },
+  { name:'rag-pipeline', stars:289, tag:'ai' },
+  { name:'sql-genius', stars:201, tag:'data' },
+  { name:'market-analyzer', stars:178, tag:'finance' },
+  { name:'github-pr-helper', stars:156, tag:'dev' },
+  { name:'notion-sync', stars:134, tag:'productivity' },
+];
+
+const HOT_TOPICS = ['#TypeScript','#RAG','#SQLAgent','#OpenSource','#Productivity','#DataPipeline','#LLMOps','#MCP'];
+
+/* ===== Reaction bar ===== */
+function ReactionBar({ reactions, onReact }) {
+  const [local, setLocal] = useState(reactions);
+  const [myReactions, setMy] = useState({});
+  function toggle(e) {
+    const active = myReactions[e];
+    setMy(m => ({ ...m, [e]: !active }));
+    setLocal(r => ({ ...r, [e]: Math.max(0, (r[e]||0) + (active ? -1 : 1)) }));
+    onReact && onReact(e);
+  }
+  return (
+    <div className="reaction-bar">
+      {EMOJIS.map(e => (
+        <button key={e} className={`reaction-btn${myReactions[e]?' active':''}`} onClick={() => toggle(e)}>
+          {e} {local[e] > 0 && <span>{local[e]}</span>}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+/* ===== Comment ===== */
+function CommentItem({ comment, depth=0 }) {
+  const [showReply, setShowReply] = useState(false);
+  const [replyText, setReplyText] = useState('');
+  const [localReplies, setLocalReplies] = useState(comment.replies || []);
+
+  function submitReply() {
+    if (!replyText.trim()) return;
+    setLocalReplies(r => [...r, { id: Date.now(), author:'you', content:replyText, ago:'just now', reactions:{}, replies:[] }]);
+    setReplyText('');
+    setShowReply(false);
+  }
+
+  return (
+    <div className="comment-item">
+      <Avatar seed={comment.author} size={28} />
+      <div className="comment-body">
+        <div style={{ display:'flex', alignItems:'baseline', gap:8, marginBottom:4 }}>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.67rem', color:'var(--text)', fontWeight:500 }}>{comment.author}</span>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)' }}>{comment.ago}</span>
+        </div>
+        <p style={{ fontFamily:'DM Sans', fontSize:'.84rem', color:'var(--text)', margin:0, lineHeight:1.5 }}>{comment.content}</p>
+        <div style={{ display:'flex', gap:12, marginTop:6 }}>
+          <ReactionBar reactions={comment.reactions} />
+          {depth < 1 && (
+            <button onClick={() => setShowReply(!showReply)} style={{ background:'none', border:'none', cursor:'pointer', fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--accent)', padding:0 }}>
+              Reply
+            </button>
+          )}
+        </div>
+        {localReplies.length > 0 && (
+          <div className="comment-reply">
+            {localReplies.map(r => <CommentItem key={r.id} comment={r} depth={depth+1} />)}
+          </div>
+        )}
+        {showReply && (
+          <div style={{ display:'flex', gap:8, marginTop:10, marginLeft:0 }}>
+            <textarea className="comment-input" rows={2} placeholder="Write a reply…" value={replyText} onChange={e=>setReplyText(e.target.value)} style={{ flex:1 }} />
+            <button onClick={submitReply} className="btn btn-primary btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', alignSelf:'flex-end', padding:'8px 14px' }}>Post</button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/* ===== Post card ===== */
+function PostCard({ post: initialPost }) {
+  const [post, setPost] = useState(initialPost);
+  const [showComments, setShowComments] = useState(false);
+  const [commentText, setCommentText] = useState('');
+  const [localComments, setLocalComments] = useState(initialPost.comments || []);
+
+  function submitComment() {
+    if (!commentText.trim()) return;
+    setLocalComments(c => [...c, { id: Date.now(), author:'you', content:commentText, ago:'just now', reactions:{}, replies:[] }]);
+    setCommentText('');
+  }
+
+  const totalComments = localComments.length + localComments.reduce((a,c) => a + (c.replies?.length||0), 0);
+
+  return (
+    <motion.div className="post-card lg" initial={{ opacity:0, y:12 }} animate={{ opacity:1, y:0 }} transition={{ duration:.35 }}>
+      {/* Header */}
+      <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:12 }}>
+        <Avatar seed={post.author} size={36} />
+        <div>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text)', fontWeight:500 }}>{post.author}</span>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)', display:'block' }}>{post.ago}</span>
+        </div>
+      </div>
+
+      {/* Content */}
+      <p style={{ fontFamily:'DM Sans', fontSize:'.9rem', color:'var(--text)', lineHeight:1.6, margin:0 }}>{post.content}</p>
+
+      {/* Skill chip */}
+      {post.skillRef && (
+        <div style={{ marginTop:10 }}>
+          <a href="skills.html" className="skill-chip-inline lg">
+            <img src={`https://api.dicebear.com/7.x/shapes/svg?seed=${encodeURIComponent(post.skillRef)}`} alt="" width={14} height={14} style={{ borderRadius:3 }} />
+            {post.skillRef}
+          </a>
+        </div>
+      )}
+
+      {/* Reactions */}
+      <ReactionBar reactions={post.reactions} />
+
+      {/* Comments toggle */}
+      <div style={{ marginTop:10, display:'flex', alignItems:'center', gap:12 }}>
+        <button
+          onClick={() => setShowComments(!showComments)}
+          style={{ background:'none', border:'none', cursor:'pointer', fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--text-2)', padding:0 }}
+        >
+          {showComments ? 'Hide' : `${totalComments} comment${totalComments!==1?'s':''}`}
+        </button>
+      </div>
+
+      {/* Comments */}
+      {showComments && (
+        <div className="comment-thread">
+          {localComments.map(c => <CommentItem key={c.id} comment={c} />)}
+          <div style={{ display:'flex', gap:8, marginTop:4 }}>
+            <Avatar seed="you" size={28} />
+            <div style={{ flex:1, display:'flex', gap:8 }}>
+              <textarea className="comment-input" rows={2} placeholder="Add a comment…" value={commentText} onChange={e=>setCommentText(e.target.value)} style={{ flex:1 }} />
+              <button onClick={submitComment} className="btn btn-primary btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', alignSelf:'flex-end', padding:'8px 14px' }}>Post</button>
+            </div>
+          </div>
+        </div>
+      )}
+    </motion.div>
+  );
+}
+
+/* ===== Create post bar ===== */
+function CreatePostBar({ onPost }) {
+  const [text, setText] = useState('');
+  const [skillRef, setSkillRef] = useState('');
+  const [showSkillPicker, setShowSkillPicker] = useState(false);
+
+  function submit() {
+    if (!text.trim()) return;
+    onPost({ content: text, skillRef: skillRef || null });
+    setText('');
+    setSkillRef('');
+    setShowSkillPicker(false);
+  }
+
+  return (
+    <div className="create-bar lg">
+      <Avatar seed="you" size={36} style={{ marginTop:4 }} />
+      <div style={{ flex:1 }}>
+        <textarea
+          className="create-textarea"
+          style={{ width:'100%' }}
+          placeholder="Share a skill, tip, or question with the community…"
+          value={text}
+          onChange={e => setText(e.target.value)}
+        />
+        {skillRef && (
+          <div style={{ marginTop:8 }}>
+            <span className="skill-chip-inline lg">
+              <img src={`https://api.dicebear.com/7.x/shapes/svg?seed=${encodeURIComponent(skillRef)}`} alt="" width={14} height={14} style={{ borderRadius:3 }} />
+              {skillRef}
+              <button onClick={() => setSkillRef('')} style={{ background:'none', border:'none', cursor:'pointer', padding:0, color:'var(--text-2)', fontSize:'.8rem', lineHeight:1 }}>×</button>
+            </span>
+          </div>
+        )}
+        {showSkillPicker && (
+          <div className="lg" style={{ marginTop:8, padding:12, borderRadius:12, border:'1px solid var(--border)', display:'flex', flexWrap:'wrap', gap:8 }}>
+            {MOCK_SKILLS.map(s => (
+              <button key={s} onClick={() => { setSkillRef(s); setShowSkillPicker(false); }}
+                style={{ padding:'4px 12px', borderRadius:9999, border:'1px solid var(--border)', background:'transparent', cursor:'pointer', fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--text-2)' }}>
+                {s}
+              </button>
+            ))}
+          </div>
+        )}
+        <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginTop:10 }}>
+          <button
+            onClick={() => setShowSkillPicker(!showSkillPicker)}
+            style={{ background:'none', border:'none', cursor:'pointer', fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--accent)', padding:0 }}>
+            + Link a skill
+          </button>
+          <button onClick={submit} className="btn btn-primary btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', padding:'8px 18px' }} disabled={!text.trim()}>
+            Post
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ===== Right panel ===== */
+function SidePanel() {
+  return (
+    <aside>
+      <div className="panel-section lg">
+        <h3>Hot this week</h3>
+        <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
+          {TRENDING_SKILLS.map((s, i) => (
+            <a href="skills.html" key={s.name} className="trending-chip">
+              <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)', width:18, flexShrink:0 }}>{i+1}</span>
+              <img src={`https://api.dicebear.com/7.x/shapes/svg?seed=${encodeURIComponent(s.name)}`} alt="" width={22} height={22} style={{ borderRadius:5 }} />
+              <div style={{ flex:1 }}>
+                <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text)', display:'block' }}>{s.name}</span>
+                <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)' }}>{s.stars} ★ · {s.tag}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div className="panel-section lg">
+        <h3>Hot topics</h3>
+        <div style={{ display:'flex', flexWrap:'wrap', gap:8 }}>
+          {HOT_TOPICS.map(t => (
+            <span key={t} className="hot-chip">{t}</span>
+          ))}
+        </div>
+      </div>
+
+      <div className="panel-section lg">
+        <h3>Featured skill</h3>
+        <div style={{ display:'flex', gap:12, alignItems:'center' }}>
+          <img src="https://api.dicebear.com/7.x/shapes/svg?seed=code-review-agent" alt="" width={44} height={44} style={{ borderRadius:10 }} />
+          <div>
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text)', display:'block', marginBottom:3 }}>code-review-agent</span>
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)' }}>347 ★ · Community pick</span>
+          </div>
+        </div>
+        <p style={{ fontFamily:'DM Sans', fontSize:'.82rem', color:'var(--text-2)', marginTop:10, marginBottom:12, lineHeight:1.5 }}>
+          Automated code review with security, performance, and style checks. Works with TypeScript, Python, Go.
+        </p>
+        <a href="skills.html" className="btn btn-primary btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', display:'block', textAlign:'center', padding:'9px' }}>
+          View Skill
+        </a>
+      </div>
+
+      <div className="panel-section lg">
+        <h3>Top contributors</h3>
+        <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
+          {[['dev_kai','23 skills'],['li_xuan','18 skills'],['alex_m','14 skills'],['mia_dev','11 skills']].map(([u,s]) => (
+            <div key={u} style={{ display:'flex', alignItems:'center', gap:10 }}>
+              <Avatar seed={u} size={28} />
+              <div>
+                <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text)', display:'block' }}>{u}</span>
+                <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)' }}>{s}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="panel-section lg" style={{ textAlign:'center' }}>
+        <h3>Coming soon</h3>
+        <p style={{ fontFamily:'DM Sans', fontSize:'.82rem', color:'var(--text-2)', lineHeight:1.5 }}>
+          Short-form skill reels — share 60-second demos of your skills. Video hosting powered by Cloudinary.
+        </p>
+        <div style={{ padding:'20px', borderRadius:12, border:'2px dashed var(--border)', marginTop:10 }}>
+          <span style={{ fontSize:'2rem' }}>🎬</span>
+          <p style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--text-2)', margin:'8px 0 0' }}>Reels — Phase 2</p>
+        </div>
+      </div>
+    </aside>
+  );
+}
+
+/* ===== App ===== */
+function App() {
+  const [theme, setTheme] = useState(() => {
+    const s = localStorage.getItem('sk-theme');
+    if (s) return s;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
+  const [posts, setPosts] = useState(INITIAL_POSTS);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('sk-theme', theme);
+  }, [theme]);
+
+  function addPost({ content, skillRef }) {
+    setPosts(p => [{
+      id: Date.now(), author:'you', content, skillRef, ago:'just now',
+      reactions:{}, comments:[], showComments:false
+    }, ...p]);
+  }
+
+  return (
+    <>
+      <Nav theme={theme} onToggle={() => setTheme(t => t==='light'?'dark':'light')} />
+
+      <main style={{ background:'var(--bg)', minHeight:'100vh' }}>
+        {/* Page header */}
+        <div className="page-top" style={{ borderBottom:'1px solid var(--border)', paddingBottom:32 }}>
+          <div className="container" style={{ paddingTop:36 }}>
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', letterSpacing:'.08em', color:'var(--accent)', textTransform:'uppercase', display:'block', marginBottom:10 }}>
+              // Community
+            </span>
+            <h1 className="t-display" style={{ fontSize:'clamp(2.6rem,5.5vw,5rem)', color:'var(--text)', lineHeight:.95 }}>
+              Share Skills,<br/>Grow Together
+            </h1>
+            <p style={{ fontFamily:'DM Sans', fontSize:'1rem', color:'var(--text-2)', marginTop:14, maxWidth:480 }}>
+              Post discoveries, ask questions, and explore what the community is building.
+            </p>
+          </div>
+        </div>
+
+        {/* Hot strip */}
+        <div style={{ borderBottom:'1px solid var(--border)', padding:'14px 0' }}>
+          <div className="container">
+            <div className="hot-strip">
+              {HOT_TOPICS.map(t => <span key={t} className="hot-chip">{t}</span>)}
+              {TRENDING_SKILLS.map(s => (
+                <span key={s.name} className="hot-chip">
+                  <img src={`https://api.dicebear.com/7.x/shapes/svg?seed=${encodeURIComponent(s.name)}`} alt="" width={12} height={12} style={{ borderRadius:2, marginRight:4, verticalAlign:'middle' }} />
+                  {s.name}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Main layout */}
+        <div style={{ paddingTop:28 }}>
+          <div className="community-layout">
+            {/* Feed */}
+            <div>
+              <CreatePostBar onPost={addPost} />
+              <AnimatePresence>
+                {posts.map(p => <PostCard key={p.id} post={p} />)}
+              </AnimatePresence>
+            </div>
+
+            {/* Side panel */}
+            <SidePanel />
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

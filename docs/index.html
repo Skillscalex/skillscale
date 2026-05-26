@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skillscale — Scale Your AI Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Instrument Serif', 'serif'],
+            heading: ['Archivo Black', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        },
+        borderRadius: {
+          DEFAULT: '9999px', none: '0', sm: '4px', md: '8px', lg: '16px', xl: '24px', '2xl': '32px', full: '9999px'
+        }
+      }
+    }
+  </script>
+  <style>
+    #root { min-height: 100vh; }
+    /* Hero section */
+    .hero-section { position: relative; height: 100vh; min-height: 640px; display: flex; flex-direction: column; overflow: hidden; }
+    .hero-content  { position: relative; z-index: 10; flex: 1; display: flex; flex-direction: column; padding-top: 80px; }
+    /* Page background outside hero */
+    .page-bg { background: var(--bg); transition: background 0.35s; }
+    /* Stat card */
+    .stat-card { padding: 20px 24px; border-radius: 20px; width: 200px; flex-shrink: 0; }
+    /* Feature card */
+    .feat-card { border-radius: 20px; padding: 28px; min-height: 320px; display: flex; flex-direction: column; }
+    /* Partner name */
+    .partner-name { font-family: 'Instrument Serif', serif; font-style: italic; color: rgba(255,255,255,0.85); font-size: 1.4rem; }
+    /* Smooth theme transition */
+    *, *::before, *::after { transition-property: background-color, border-color, color; transition-duration: 0.3s; transition-timing-function: ease; }
+    video, canvas, img, svg, .hero-video-wrap { transition: none !important; }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+<!-- React + ReactDOM -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<!-- Babel standalone for JSX -->
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<!-- Framer Motion -->
+<script src="https://unpkg.com/framer-motion@11.11.17/dist/framer-motion.js"></script>
+<!-- window.Motion is set by the UMD bundle above (globalThis.Motion = exports) -->
+
+<script type="text/babel">
+const { useState, useEffect, useRef, useCallback } = React;
+const { motion, AnimatePresence, useInView } = window.Motion;
+
+/* ====================================================
+   FadingVideo — rAF-driven crossfade loop
+   (no CSS transitions — exactly as in the spec)
+   ==================================================== */
+const FADE_MS = 500;
+const FADE_OUT_LEAD = 0.55;
+
+function FadingVideo({ src, className, style }) {
+  const videoRef = useRef(null);
+  const rafRef   = useRef(null);
+  const fadingOutRef = useRef(false);
+
+  const fadeTo = useCallback((target, durationMs) => {
+    if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    const el    = videoRef.current;
+    if (!el) return;
+    const start = parseFloat(el.style.opacity) || 0;
+    const diff  = target - start;
+    const t0    = performance.now();
+    function step(now) {
+      const t = Math.min((now - t0) / durationMs, 1);
+      el.style.opacity = String(start + diff * t);
+      if (t < 1) rafRef.current = requestAnimationFrame(step);
+    }
+    rafRef.current = requestAnimationFrame(step);
+  }, []);
+
+  useEffect(() => {
+    const el = videoRef.current;
+    if (!el) return;
+    el.style.opacity = '0';
+
+    const onLoaded = () => {
+      el.style.opacity = '0';
+      el.play().catch(()=>{});
+      fadeTo(1, FADE_MS);
+    };
+    const onTimeUpdate = () => {
+      if (!fadingOutRef.current && el.duration && (el.duration - el.currentTime) <= FADE_OUT_LEAD && (el.duration - el.currentTime) > 0) {
+        fadingOutRef.current = true;
+        fadeTo(0, FADE_MS);
+      }
+    };
+    const onEnded = () => {
+      el.style.opacity = '0';
+      setTimeout(() => {
+        el.currentTime = 0;
+        el.play().catch(()=>{});
+        fadingOutRef.current = false;
+        fadeTo(1, FADE_MS);
+      }, 100);
+    };
+
+    el.addEventListener('loadeddata', onLoaded);
+    el.addEventListener('timeupdate', onTimeUpdate);
+    el.addEventListener('ended', onEnded);
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      el.removeEventListener('loadeddata', onLoaded);
+      el.removeEventListener('timeupdate', onTimeUpdate);
+      el.removeEventListener('ended', onEnded);
+    };
+  }, [fadeTo]);
+
+  return (
+    <video
+      ref={videoRef}
+      autoPlay muted playsInline preload="auto"
+      style={{ opacity: 0, ...style }}
+      className={className}
+    >
+      <source src={src} type="video/mp4" />
+    </video>
+  );
+}
+
+/* ====================================================
+   BlurText — word-by-word blur-in animation
+   ==================================================== */
+function BlurText({ text, className }) {
+  const ref   = useRef(null);
+  const inView = useInView(ref, { once: true, margin: '-10%' });
+  const words = text.split(' ');
+
+  return (
+    <p ref={ref} style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', rowGap: '0.1em' }} className={className}>
+      {words.map((word, i) => (
+        <motion.span
+          key={i}
+          style={{ display: 'inline-block', marginRight: '0.28em' }}
+          initial={{ filter: 'blur(10px)', opacity: 0, y: 50 }}
+          animate={inView ? [
+            { filter: 'blur(5px)',  opacity: 0.5, y: -5 },
+            { filter: 'blur(0px)',  opacity: 1,   y: 0  },
+          ] : {}}
+          transition={{ duration: 0.7, delay: (i * 100) / 1000, ease: 'easeOut', times: [0.5, 1] }}
+        >
+          {word}
+        </motion.span>
+      ))}
+    </p>
+  );
+}
+
+/* ====================================================
+   ThemeToggle — liquid glass sun/moon pill
+   ==================================================== */
+function ThemeToggle({ theme, onToggle }) {
+  return (
+    <button
+      onClick={onToggle}
+      title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+      className="lg"
+      style={{
+        width: 38, height: 38, borderRadius: '50%', border: 'none',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        fontSize: 16, flexShrink: 0,
+        color: theme === 'light' ? '#1A1714' : '#F1E9D8',
+        cursor: 'pointer'
+      }}
+    >
+      {theme === 'light' ? '☀️' : '🌙'}
+    </button>
+  );
+}
+
+/* ====================================================
+   Nav
+   ==================================================== */
+function Nav({ theme, onToggle, currentPage }) {
+  const pages = [
+    { href: 'skills.html',    label: 'Skills'    },
+    { href: 'market.html',    label: 'Market'    },
+    { href: 'community.html', label: 'Community' },
+    { href: 'mcps.html',      label: 'MCPs'      },
+  ];
+  return (
+    <nav className="nav" style={{ padding: '12px 24px' }}>
+      <div className="nav-inner">
+        {/* Logo */}
+        <a href="index.html" style={{ fontFamily: 'Archivo Black', fontSize: '1.05rem', color: 'rgba(255,255,255,0.95)', letterSpacing: '-.01em', flexShrink: 0 }}>
+          skill<span style={{ color: 'var(--accent)' }}>scale</span>
+        </a>
+
+        {/* Nav links pill */}
+        <div className="lg nav-links" style={{ display: 'flex', alignItems: 'center', padding: '6px 6px', borderRadius: 9999, gap: 2 }}>
+          {pages.map(p => (
+            <a key={p.href} href={p.href}
+              style={{
+                fontFamily: 'JetBrains Mono', fontSize: '.72rem', letterSpacing: '.04em',
+                padding: '6px 14px', borderRadius: 9999,
+                color: currentPage === p.href ? '#fff' : 'rgba(255,255,255,0.7)',
+                background: currentPage === p.href ? 'rgba(255,255,255,0.15)' : 'transparent',
+                transition: 'all 0.15s',
+              }}
+            >{p.label}</a>
+          ))}
+        </div>
+
+        {/* Right side */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <a href="vault.html" className="btn-glass lg btn btn-sm"
+            style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'rgba(255,255,255,0.85)', padding: '7px 14px', borderRadius: 9999 }}>
+            ✦ Vault
+          </a>
+          <a href="skills.html" className="btn-glass lg-s btn btn-sm"
+            style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'rgba(255,255,255,0.9)', padding: '7px 16px', borderRadius: 9999 }}>
+            Browse Skills
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M7 17L17 7M7 7h10v10"/>
+            </svg>
+          </a>
+          <a href="auth.html" className="btn-glass lg btn btn-sm"
+            style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'rgba(255,255,255,0.85)', padding: '7px 14px', borderRadius: 9999 }}>
+            Sign In
+          </a>
+          <ThemeToggle theme={theme} onToggle={onToggle} />
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+/* ====================================================
+   HeroSection
+   ==================================================== */
+function HeroSection() {
+  const VIDEO_SRC = 'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260418_080021_d598092b-c4c2-4e53-8e46-94cf9064cd50.mp4';
+
+  const motionBase = { filter: 'blur(10px)', opacity: 0, y: 20 };
+  const motionIn   = { filter: 'blur(0px)',  opacity: 1, y: 0  };
+  const ease = [0.25, 0.46, 0.45, 0.94];
+
+  return (
+    <section className="hero-section">
+      {/* Video bg */}
+      <div className="hero-video-wrap">
+        <FadingVideo src={VIDEO_SRC} />
+        <div className="hero-overlay" />
+      </div>
+
+      {/* Content */}
+      <div className="hero-content" style={{ padding: '80px 24px 0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 1 }}>
+
+        {/* Badge */}
+        <motion.div
+          initial={motionBase} animate={motionIn}
+          transition={{ duration: 0.6, delay: 0.4, ease }}
+          style={{ marginBottom: 28 }}
+        >
+          <div className="badge lg">
+            <span className="badge-chip">New</span>
+            <span style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'JetBrains Mono', fontSize: '.7rem', paddingRight: 6 }}>
+              Skills organized by 23 occupation groups
+            </span>
+          </div>
+        </motion.div>
+
+        {/* Headline */}
+        <BlurText
+          text="Scale Your AI Stack"
+          className="t-display"
+          style={{ fontSize: 'clamp(3.2rem,8.5vw,7.5rem)', color: 'var(--text-hero)', textAlign: 'center', maxWidth: 900, letterSpacing: '-.04em' }}
+        />
+
+        {/* Sub */}
+        <motion.p
+          initial={motionBase} animate={motionIn}
+          transition={{ duration: 0.6, delay: 0.8, ease }}
+          style={{ marginTop: 20, maxWidth: 520, textAlign: 'center', color: 'rgba(255,255,255,0.85)', fontFamily: 'DM Sans', fontSize: '1.05rem', fontWeight: 300, lineHeight: 1.55 }}
+        >
+          Browse MCPs, agent skills, and Claude plugins — curated and organized by occupation. Discover the tools that scale your workflow.
+        </motion.p>
+
+        {/* CTAs */}
+        <motion.div
+          initial={motionBase} animate={motionIn}
+          transition={{ duration: 0.6, delay: 1.1, ease }}
+          style={{ marginTop: 28, display: 'flex', alignItems: 'center', gap: 20 }}
+        >
+          <a href="skills.html" className="lg-s lg"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: 'JetBrains Mono', fontSize: '.8rem', padding: '11px 24px', borderRadius: 9999, color: 'rgba(255,255,255,0.95)' }}>
+            Browse Skills
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+          <a href="mcps.html"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: 'JetBrains Mono', fontSize: '.8rem', color: 'rgba(255,255,255,0.72)' }}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20"/></svg>
+            Explore MCPs
+          </a>
+        </motion.div>
+
+        {/* Stats row */}
+        <motion.div
+          initial={motionBase} animate={motionIn}
+          transition={{ duration: 0.6, delay: 1.3, ease }}
+          style={{ marginTop: 40, display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center' }}
+        >
+          {[
+            { icon: '🧩', num: '1M+',   label: 'Community skills' },
+            { icon: '⚙️', num: '9',     label: 'Active MCPs'      },
+            { icon: '🗂️', num: '23',    label: 'Occupation groups'  },
+          ].map(s => (
+            <div key={s.label} className="stat-card lg" style={{ display: 'flex', flexDirection: 'column', gap: 10, minWidth: 160 }}>
+              <span style={{ fontSize: '1.5rem' }}>{s.icon}</span>
+              <span className="t-display" style={{ fontSize: '2.4rem', color: '#fff', lineHeight: 1 }}>{s.num}</span>
+              <span style={{ fontFamily: 'DM Sans', fontSize: '.8rem', color: 'rgba(255,255,255,0.6)', fontWeight: 300 }}>{s.label}</span>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+
+      {/* Partners strip */}
+      <motion.div
+        initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 1.45 }}
+        style={{ position: 'relative', zIndex: 10, padding: '0 24px 32px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}
+      >
+        <div className="lg" style={{ borderRadius: 9999, padding: '5px 16px' }}>
+          <span style={{ fontFamily: 'JetBrains Mono', fontSize: '.65rem', color: 'rgba(255,255,255,0.7)' }}>
+            Data from
+          </span>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 40, flexWrap: 'wrap', justifyContent: 'center' }}>
+          {['skillsmp.com', 'Anthropic', 'Claude.ai', 'GitHub', 'SOC/BLS'].map(p => (
+            <span key={p} className="partner-name" style={{ fontSize: '1.15rem' }}>{p}</span>
+          ))}
+        </div>
+      </motion.div>
+    </section>
+  );
+}
+
+/* ====================================================
+   FeaturesSection
+   ==================================================== */
+const FEATURES = [
+  {
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21H5Zm1-4h12l-3.75-5-3 4L9 13l-3 4Z"/>
+      </svg>
+    ),
+    tags: ['23 Occupations', 'SOC Standard', '1M+ Skills', 'Live API'],
+    title: 'Skills by Occupation',
+    desc: 'Every agent skill organized by U.S. Bureau of Labor Statistics Standard Occupational Classification — from software developers to surgeons.',
+    href: 'skills.html',
+  },
+  {
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M4 6.47 5.76 10H20v8H4V6.47M22 4h-4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.89-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4Z"/>
+      </svg>
+    ),
+    tags: ['9 Installed', 'Marketplace', 'claude.ai', 'Official'],
+    title: 'MCP Catalog',
+    desc: 'Your active Model Context Protocols alongside the full official Claude marketplace — Gmail, Hugging Face, Google Drive, and more.',
+    href: 'mcps.html',
+  },
+  {
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1Zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7Z"/>
+      </svg>
+    ),
+    tags: ['gstack', 'Framer Motion', 'Liquid Glass', 'CDN-only'],
+    title: 'Built with Glass',
+    desc: 'This site is itself a reference implementation — React via CDN, Framer Motion animations, and a liquid glass design system you can fork.',
+    href: '#',
+  },
+];
+
+function FeaturesSection() {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: '-10%' });
+
+  return (
+    <section className="section page-bg" ref={ref} style={{ background: 'var(--bg)' }}>
+      <div className="container">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }} animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          style={{ marginBottom: 48 }}
+        >
+          <span style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', letterSpacing: '.08em', color: 'var(--accent)', textTransform: 'uppercase', display: 'block', marginBottom: 12 }}>
+            // Features
+          </span>
+          <h2 className="t-heading" style={{ fontSize: 'clamp(2rem,4vw,3.2rem)', color: 'var(--text)' }}>
+            Everything you need<br/>
+            <span className="t-display" style={{ fontSize: '1.05em' }}>to move fast</span>
+          </h2>
+        </motion.div>
+
+        {/* Cards grid */}
+        <div className="grid-3">
+          {FEATURES.map((f, i) => (
+            <motion.a
+              key={f.title}
+              href={f.href}
+              initial={{ opacity: 0, y: 32 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.55, delay: i * 0.1, ease: 'easeOut' }}
+              className="feat-card lg"
+              style={{ textDecoration: 'none', cursor: 'pointer' }}
+            >
+              {/* Top row */}
+              <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12, marginBottom: 24 }}>
+                <div className="lg" style={{ width: 44, height: 44, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent)', flexShrink: 0 }}>
+                  {f.icon}
+                </div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-end', gap: 6, maxWidth: '68%' }}>
+                  {f.tags.map(t => (
+                    <span key={t} className="tag">{t}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div style={{ flex: 1 }} />
+
+              {/* Bottom */}
+              <div>
+                <h3 className="t-heading" style={{ fontSize: '1.5rem', color: 'var(--text)', marginBottom: 10 }}>{f.title}</h3>
+                <p style={{ fontFamily: 'DM Sans', fontSize: '.88rem', color: 'var(--text-2)', lineHeight: 1.6, maxWidth: '32ch' }}>{f.desc}</p>
+              </div>
+            </motion.a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ====================================================
+   HowSection — 3-step flow
+   ==================================================== */
+function HowSection() {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: '-10%' });
+
+  const steps = [
+    { n: '01', title: 'Find the skill', desc: 'Search or browse by occupation using the SOC taxonomy from skillsmp.com. Filter by category, stars, or recency.' },
+    { n: '02', title: 'Check your MCPs', desc: 'See which Model Context Protocols you have installed and discover new ones from the official Claude marketplace.' },
+    { n: '03', title: 'Scale your stack', desc: 'Each skill links directly to GitHub. Install with one command in Claude Code and start augmenting your workflow.' },
+  ];
+
+  return (
+    <section className="section-sm page-bg" ref={ref} style={{ background: 'var(--bg-1, var(--bg))', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
+      <div className="container">
+        <div className="grid-3" style={{ alignItems: 'start' }}>
+          {steps.map((s, i) => (
+            <motion.div
+              key={s.n}
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: i * 0.12, ease: 'easeOut' }}
+              style={{ padding: '8px 0' }}
+            >
+              <span className="t-mono" style={{ fontSize: '.68rem', color: 'var(--accent)', letterSpacing: '.08em', marginBottom: 12, display: 'block' }}>{s.n}</span>
+              <h3 className="t-heading" style={{ fontSize: '1.2rem', color: 'var(--text)', marginBottom: 10 }}>{s.title}</h3>
+              <p style={{ fontFamily: 'DM Sans', fontSize: '.88rem', color: 'var(--text-2)', lineHeight: 1.6 }}>{s.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ====================================================
+   TrendingSection
+   ==================================================== */
+function TrendingSection() {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: '-10%' });
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/v1/skills/search?q=software+development&limit=6&page=1')
+      .then(r => r.json())
+      .then(d => { if (d.success && d.data?.skills) setSkills(d.data.skills.slice(0,6)); })
+      .catch(() => {});
+  }, []);
+
+  const fallback = [
+    { id:'f1', name:'code-review-agent', author:'anthropic', stars:347, description:'Automated code review with security & style checks.' },
+    { id:'f2', name:'rag-pipeline', author:'dev_kai', stars:289, description:'Production-ready RAG with smart chunking & embeddings.' },
+    { id:'f3', name:'sql-genius', author:'li_xuan', stars:201, description:'Natural language to complex SQL with index suggestions.' },
+    { id:'f4', name:'market-analyzer', author:'oscar_t', stars:178, description:'Real-time market signal analysis for financial data.' },
+    { id:'f5', name:'github-pr-helper', author:'alex_m', stars:156, description:'Automated PR descriptions, review checklists, changelogs.' },
+    { id:'f6', name:'notion-sync', author:'mia_dev', stars:134, description:'Bi-directional sync between Claude context and Notion.' },
+  ];
+  const display = skills.length > 0 ? skills : fallback;
+
+  return (
+    <section className="section page-bg" ref={ref} style={{ background:'var(--bg)', borderTop:'1px solid var(--border)' }}>
+      <div className="container">
+        <motion.div initial={{ opacity:0, y:20 }} animate={inView ? { opacity:1, y:0 } : {}} transition={{ duration:0.5, ease:'easeOut' }}>
+          <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:28, flexWrap:'wrap', gap:12 }}>
+            <div>
+              <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', letterSpacing:'.08em', color:'var(--accent)', textTransform:'uppercase', display:'block', marginBottom:8 }}>// Trending</span>
+              <h2 className="t-heading" style={{ fontSize:'clamp(1.6rem,3.5vw,2.4rem)', color:'var(--text)', margin:0 }}>Trending this week</h2>
+            </div>
+            <a href="skills.html" className="btn btn-outline btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'9px 20px' }}>
+              Browse all skills →
+            </a>
+          </div>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(260px, 1fr))', gap:16 }}>
+            {display.map((s, i) => (
+              <motion.a
+                key={s.id} href="skills.html"
+                initial={{ opacity:0, y:16 }} animate={inView ? { opacity:1, y:0 } : {}}
+                transition={{ duration:0.4, delay:i*0.06, ease:'easeOut' }}
+                className="lg"
+                style={{ display:'flex', gap:12, padding:'14px 16px', borderRadius:14, border:'1px solid var(--border)', alignItems:'flex-start', textDecoration:'none', cursor:'pointer', transition:'border-color .2s' }}
+                whileHover={{ scale:1.01 }}
+              >
+                <img src={`https://api.dicebear.com/7.x/shapes/svg?seed=${encodeURIComponent(s.name)}`} alt="" width={36} height={36} style={{ borderRadius:8, flexShrink:0 }} />
+                <div style={{ flex:1, minWidth:0 }}>
+                  <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:4 }}>
+                    <span style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text)', fontWeight:500 }}>{s.name}</span>
+                    <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--accent)', flexShrink:0 }}>🔥</span>
+                  </div>
+                  <p style={{ fontFamily:'DM Sans', fontSize:'.8rem', color:'var(--text-2)', margin:0, lineHeight:1.45, overflow:'hidden', display:'-webkit-box', WebkitLineClamp:2, WebkitBoxOrient:'vertical' }}>
+                    {s.description || s.desc || ''}
+                  </p>
+                  <div style={{ marginTop:8, display:'flex', alignItems:'center', gap:8 }}>
+                    <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)' }}>★ {s.stars}</span>
+                    {s.author && <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)' }}>· {s.author}</span>}
+                  </div>
+                </div>
+              </motion.a>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+/* ====================================================
+   RecommendedSection — localStorage-based personalization
+   ==================================================== */
+function RecommendedSection() {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: '-10%' });
+  const [recs, setRecs] = useState([]);
+
+  useEffect(() => {
+    const viewed = JSON.parse(localStorage.getItem('sk-viewed-occs') || '[]');
+    const queries = viewed.length > 0
+      ? ['data analysis', 'machine learning', 'automation']
+      : ['productivity', 'writing', 'research'];
+
+    Promise.all(queries.slice(0,2).map(q =>
+      fetch(`/api/v1/skills/search?q=${encodeURIComponent(q)}&limit=3&page=1`)
+        .then(r => r.json())
+        .then(d => d.success ? (d.data?.skills || []) : [])
+        .catch(() => [])
+    )).then(results => {
+      const all = results.flat().slice(0,6);
+      if (all.length > 0) setRecs(all);
+    });
+  }, []);
+
+  const fallback = [
+    { id:'r1', name:'web-scraper', author:'priya_r', stars:122, description:'JS-aware scraper that handles SPAs and dynamic content.' },
+    { id:'r2', name:'email-assistant', author:'oscar_t', stars:98, description:'Draft, summarize, and schedule emails from natural language.' },
+    { id:'r3', name:'data-cleaner', author:'dev_kai', stars:87, description:'Automated data validation, deduplication, and formatting.' },
+    { id:'r4', name:'claude-summarizer', author:'mia_dev', stars:76, description:'Summarize documents, threads, and codebases with structure.' },
+    { id:'r5', name:'notion-sync', author:'alex_m', stars:134, description:'Bi-directional sync between Claude context and Notion.' },
+    { id:'r6', name:'github-pr-helper', author:'tomasz_w', stars:156, description:'Automated PR descriptions, review checklists, changelogs.' },
+  ];
+  const display = recs.length > 0 ? recs : fallback;
+
+  return (
+    <section className="section-sm page-bg" ref={ref} style={{ background:'var(--bg-1, var(--bg))', borderTop:'1px solid var(--border)' }}>
+      <div className="container">
+        <motion.div initial={{ opacity:0, y:20 }} animate={inView ? { opacity:1, y:0 } : {}} transition={{ duration:0.5, ease:'easeOut' }}>
+          <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:24, flexWrap:'wrap', gap:12 }}>
+            <div>
+              <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', letterSpacing:'.08em', color:'var(--accent)', textTransform:'uppercase', display:'block', marginBottom:8 }}>// For You</span>
+              <h2 className="t-heading" style={{ fontSize:'clamp(1.5rem,3vw,2.2rem)', color:'var(--text)', margin:0 }}>Recommended for you</h2>
+            </div>
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)' }}>Based on your browsing</span>
+          </div>
+          <div style={{ display:'flex', gap:12, overflowX:'auto', paddingBottom:8 }}>
+            {display.map((s, i) => (
+              <motion.a
+                key={s.id} href="skills.html"
+                initial={{ opacity:0, x:16 }} animate={inView ? { opacity:1, x:0 } : {}}
+                transition={{ duration:0.4, delay:i*0.07, ease:'easeOut' }}
+                className="lg"
+                style={{ flexShrink:0, width:220, display:'flex', flexDirection:'column', gap:10, padding:'14px 16px', borderRadius:14, border:'1px solid var(--border)', textDecoration:'none', cursor:'pointer' }}
+                whileHover={{ scale:1.02 }}
+              >
+                <img src={`https://api.dicebear.com/7.x/shapes/svg?seed=${encodeURIComponent(s.name)}`} alt="" width={40} height={40} style={{ borderRadius:10 }} />
+                <div>
+                  <span style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', color:'var(--text)', fontWeight:500, display:'block', marginBottom:4 }}>{s.name}</span>
+                  <p style={{ fontFamily:'DM Sans', fontSize:'.78rem', color:'var(--text-2)', margin:0, lineHeight:1.45, overflow:'hidden', display:'-webkit-box', WebkitLineClamp:3, WebkitBoxOrient:'vertical' }}>
+                    {s.description || s.desc || ''}
+                  </p>
+                </div>
+                <div style={{ marginTop:'auto', display:'flex', alignItems:'center', gap:8 }}>
+                  <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)' }}>★ {s.stars}</span>
+                  {s.author && <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)' }}>· {s.author}</span>}
+                </div>
+              </motion.a>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+/* ====================================================
+   CTASection
+   ==================================================== */
+function CTASection() {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: '-10%' });
+
+  return (
+    <section className="section page-bg" ref={ref} style={{ background: 'var(--bg)' }}>
+      <div className="container" style={{ display: 'flex', justifyContent: 'center' }}>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.97 }}
+          animate={inView ? { opacity: 1, scale: 1 } : {}}
+          transition={{ duration: 0.55, ease: 'easeOut' }}
+          className="lg-s lg"
+          style={{
+            borderRadius: 28, padding: '56px 48px',
+            maxWidth: 680, width: '100%', textAlign: 'center',
+            background: 'linear-gradient(135deg, rgba(212,102,26,0.12) 0%, transparent 60%)'
+          }}
+        >
+          <span style={{ fontFamily: 'JetBrains Mono', fontSize: '.7rem', letterSpacing: '.08em', color: 'var(--accent)', textTransform: 'uppercase', marginBottom: 16, display: 'block' }}>
+            // Get started
+          </span>
+          <h2 className="t-display" style={{ fontSize: 'clamp(2.2rem,5vw,4rem)', color: 'var(--text)', marginBottom: 16 }}>
+            Ready to scale?
+          </h2>
+          <p style={{ fontFamily: 'DM Sans', color: 'var(--text-2)', fontSize: '1rem', lineHeight: 1.6, marginBottom: 32 }}>
+            Start with the skills catalog — 23 occupational categories, over a million community-published agent skills.
+          </p>
+          <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a href="skills.html" className="btn btn-primary btn-lg" style={{ fontFamily: 'JetBrains Mono' }}>
+              Browse Skills →
+            </a>
+            <a href="mcps.html" className="btn btn-outline btn-lg" style={{ fontFamily: 'JetBrains Mono' }}>
+              View MCPs
+            </a>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+/* ====================================================
+   Footer
+   ==================================================== */
+function Footer() {
+  return (
+    <footer className="footer page-bg" style={{ background: 'var(--bg)' }}>
+      <div className="container footer-inner">
+        <span style={{ fontFamily: 'Archivo Black', fontSize: '.9rem', color: 'var(--text)' }}>
+          skill<span style={{ color: 'var(--accent)' }}>scale</span>
+        </span>
+        <div style={{ display: 'flex', gap: 24 }}>
+          <a href="index.html"  style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)' }}>Home</a>
+          <a href="skills.html" style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)' }}>Skills</a>
+          <a href="market.html" style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)' }}>Market</a>
+          <a href="vault.html"  style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)' }}>Vault</a>
+          <a href="mcps.html"   style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)' }}>MCPs</a>
+        </div>
+        <span style={{ fontFamily: 'JetBrains Mono', fontSize: '.68rem', color: 'var(--text-2)' }}>
+          © 2026 Skillscale
+        </span>
+      </div>
+    </footer>
+  );
+}
+
+/* ====================================================
+   App
+   ==================================================== */
+function App() {
+  const [theme, setTheme] = useState(() => {
+    const stored = localStorage.getItem('sk-theme');
+    if (stored) return stored;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('sk-theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => setTheme(t => t === 'light' ? 'dark' : 'light');
+
+  return (
+    <>
+      <Nav theme={theme} onToggle={toggleTheme} currentPage="index.html" />
+      <HeroSection />
+      <FeaturesSection />
+      <HowSection />
+      <TrendingSection />
+      <RecommendedSection />
+      <CTASection />
+      <Footer />
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

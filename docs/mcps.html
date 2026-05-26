@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCPs — Skillscale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: { fontFamily: { display:['Instrument Serif','serif'], heading:['Archivo Black','sans-serif'], body:['DM Sans','sans-serif'], mono:['JetBrains Mono','monospace'] } },
+        borderRadius: { DEFAULT:'9999px', none:'0', sm:'4px', md:'8px', lg:'16px', xl:'24px', '2xl':'32px', full:'9999px' }
+      }
+    }
+  </script>
+  <style>
+    #root { min-height: 100vh; }
+    .page-top { padding-top: 96px; }
+    *, *::before, *::after { transition-property: background-color, border-color, color; transition-duration: 0.3s; }
+    video, canvas, img, svg { transition: none !important; }
+    .mcp-card { border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 14px; cursor: default; transition: box-shadow 0.2s, border-color 0.2s !important; }
+    .mcp-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.10); }
+    [data-theme="dark"] .mcp-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.45); }
+    .plug-card { border-radius: 12px; padding: 18px 20px; display: flex; align-items: center; gap: 14px; transition: box-shadow 0.2s, border-color 0.2s !important; }
+    .plug-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-color: rgba(0,0,0,0.14) !important; }
+    [data-theme="dark"] .plug-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.4); border-color: rgba(255,255,255,0.14) !important; }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/framer-motion@11.11.17/dist/framer-motion.js"></script>
+<!-- window.Motion is set by the UMD bundle above -->
+
+<script type="text/babel">
+const { useState, useEffect, useRef } = React;
+const { motion, useInView } = window.Motion;
+
+/* ===== Data ===== */
+const INSTALLED = [
+  { name: 'Gmail',          id: 'gmail',   status: 'connected',  desc: 'Read, compose, and manage emails. Search threads, draft replies, and handle attachments.', tools: 8,
+    logoUrl: 'https://www.gstatic.com/images/branding/product/2x/gmail_512dp.png',
+    marketplaceUrl: 'https://claude.ai/marketplace/mcp/gmail' },
+  { name: 'Google Calendar',id: 'gcal',    status: 'connected',  desc: 'Create events, check availability, manage invites, and schedule across calendars.', tools: 6,
+    logoUrl: 'https://www.gstatic.com/images/branding/product/2x/calendar_512dp.png',
+    marketplaceUrl: 'https://claude.ai/marketplace/mcp/google-calendar' },
+  { name: 'Google Drive',   id: 'gdrive',  status: 'connected',  desc: 'Browse, read, upload, and share files. Search documents and export content.', tools: 7,
+    logoUrl: 'https://www.gstatic.com/images/branding/product/2x/drive_512dp.png',
+    marketplaceUrl: 'https://claude.ai/marketplace/mcp/google-drive' },
+  { name: 'Hugging Face',   id: 'hf',      status: 'connected',  desc: 'Search models, datasets, and papers. Browse spaces and fetch Hub documentation.', tools: 12,
+    logoUrl: 'https://huggingface.co/front/assets/huggingface_logo-nobg.svg',
+    marketplaceUrl: 'https://claude.ai/marketplace/mcp/hugging-face' },
+  { name: 'Excalidraw',     id: 'excali',  status: 'connected',  desc: 'Create diagrams and visual sketches. Save checkpoints and export drawings.', tools: 5,
+    logoUrl: 'https://excalidraw.com/apple-touch-icon.png',
+    marketplaceUrl: 'https://claude.ai/marketplace/mcp/excalidraw' },
+  { name: 'ZipRecruiter',   id: 'ziprec',  status: 'connected',  desc: 'Search job listings and filter by occupation, location, and salary range.', tools: 3,
+    logoUrl: 'https://www.ziprecruiter.com/apple-touch-icon-180x180.png',
+    marketplaceUrl: 'https://claude.ai/marketplace/mcp/ziprecruiter' },
+  { name: 'MSCI',           id: 'msci',    status: 'needs_auth', desc: 'Access MSCI risk and ESG analytics, factor data, and portfolio insights.', tools: 4,
+    logoUrl: null,
+    marketplaceUrl: 'https://claude.ai/marketplace/mcp/msci' },
+  { name: 'Morningstar',    id: 'morning', status: 'needs_auth', desc: 'Fund data, analyst ratings, portfolio analysis, and market research tools.', tools: 5,
+    logoUrl: null,
+    marketplaceUrl: 'https://claude.ai/marketplace/mcp/morningstar' },
+  { name: 'Zoom',           id: 'zoom',    status: 'needs_auth', desc: 'Schedule and manage Zoom meetings, retrieve recordings, and manage participants.', tools: 4,
+    logoUrl: 'https://zoom.us/docs/doc/logos-and-brand-guidelines/zoom-blue-logo.svg',
+    marketplaceUrl: 'https://claude.ai/marketplace/mcp/zoom' },
+];
+
+const PLUGINS = [
+  { name: 'code-review',         cat: 'Development', desc: 'Structured code review with diff analysis and inline comments.' },
+  { name: 'pr-review-toolkit',   cat: 'Development', desc: 'Multi-angle pull request review with checklist and risk scoring.' },
+  { name: 'feature-dev',         cat: 'Development', desc: 'End-to-end feature development from spec to implementation.' },
+  { name: 'code-modernization',  cat: 'Development', desc: 'Upgrade legacy code to modern idioms and patterns.' },
+  { name: 'code-simplifier',     cat: 'Development', desc: 'Reduce complexity, remove dead code, improve readability.' },
+  { name: 'frontend-design',     cat: 'Design',      desc: 'UI/UX design workflows, component planning and visual review.' },
+  { name: 'commit-commands',     cat: 'Git',         desc: 'Semantic commit messages, conventional commits, and changelogs.' },
+  { name: 'hookify',             cat: 'Git',         desc: 'Configure Claude Code hooks for automated workflow triggers.' },
+  { name: 'claude-code-setup',   cat: 'Setup',       desc: 'One-command project setup with CLAUDE.md and settings.' },
+  { name: 'claude-md-management',cat: 'Setup',       desc: 'Keep CLAUDE.md synchronized with evolving project conventions.' },
+  { name: 'plugin-dev',          cat: 'Plugin Dev',  desc: 'Scaffold and publish plugins to the official marketplace.' },
+  { name: 'mcp-server-dev',      cat: 'Plugin Dev',  desc: 'Build and test MCP servers with spec-compliant scaffolding.' },
+  { name: 'mcp-tunnels',         cat: 'Plugin Dev',  desc: 'Expose local MCP servers via tunnels for remote testing.' },
+  { name: 'agent-sdk-dev',       cat: 'Plugin Dev',  desc: 'Build Claude agent SDK apps with tool use and streaming.' },
+  { name: 'playground',          cat: 'Exploration', desc: 'Interactive sandbox for prototyping and testing ideas.' },
+  { name: 'math-olympiad',       cat: 'Education',   desc: 'Olympiad-grade math problem solving with step-by-step proofs.' },
+  { name: 'learning-output-style',cat:'Education',   desc: 'Adapt output style for learning contexts and tutorials.' },
+  { name: 'explanatory-output-style',cat:'Education',desc: 'Structured explanations with analogies and worked examples.' },
+  { name: 'ralph-loop',          cat: 'Automation',  desc: 'Iterative loop automation with quality gates and retries.' },
+  { name: 'cwc-makers',          cat: 'Automation',  desc: 'Multi-agent content workflows with review and publishing.' },
+  { name: 'clangd-lsp',          cat: 'Language Servers', desc: 'C/C++ language server integration for IntelliSense.' },
+  { name: 'gopls-lsp',           cat: 'Language Servers', desc: 'Go language server for completions and diagnostics.' },
+  { name: 'pyright-lsp',         cat: 'Language Servers', desc: 'Python static type checking and IntelliSense.' },
+  { name: 'ruby-lsp',            cat: 'Language Servers', desc: 'Ruby/Rails language server with Sorbet support.' },
+  { name: 'csharp-lsp',          cat: 'Language Servers', desc: 'C# / .NET language server (OmniSharp).' },
+  { name: 'jdtls-lsp',           cat: 'Language Servers', desc: 'Java language server via Eclipse JDT.' },
+  { name: 'kotlin-lsp',          cat: 'Language Servers', desc: 'Kotlin language server with Android support.' },
+  { name: 'lua-lsp',             cat: 'Language Servers', desc: 'Lua language server with Neovim plugin awareness.' },
+  { name: 'php-lsp',             cat: 'Language Servers', desc: 'PHP/Laravel language server and diagnostics.' },
+];
+
+const PLUGIN_CATS = [...new Set(PLUGINS.map(p => p.cat))];
+const CAT_COLORS = {
+  'Development': '#3B82F6', 'Design': '#A855F7', 'Git': '#F59E0B',
+  'Setup': '#10B981', 'Plugin Dev': '#D4661A', 'Exploration': '#06B6D4',
+  'Education': '#EC4899', 'Automation': '#8B5CF6', 'Language Servers': '#6B7280',
+};
+
+/* ===== Shared Components ===== */
+function ThemeToggle({ theme, onToggle }) {
+  return (
+    <button onClick={onToggle} title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+      className="lg"
+      style={{ width:38, height:38, borderRadius:'50%', border:'none', display:'flex', alignItems:'center', justifyContent:'center', fontSize:16, color: theme==='light'?'#1A1714':'#F1E9D8', cursor:'pointer', flexShrink:0 }}>
+      {theme==='light'?'☀️':'🌙'}
+    </button>
+  );
+}
+
+function Nav({ theme, onToggle, currentPage }) {
+  const pages = [{href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},{href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'}];
+  return (
+    <nav className="nav lg" style={{ padding:'12px 24px', borderBottom:'1px solid var(--border)', borderRadius:0 }}>
+      <div className="nav-inner">
+        <a href="index.html" style={{ fontFamily:'Archivo Black', fontSize:'1.05rem', color:'var(--text)', letterSpacing:'-.01em', flexShrink:0 }}>
+          skill<span style={{ color:'var(--accent)' }}>scale</span>
+        </a>
+        <div className="nav-links" style={{ display:'flex', alignItems:'center', padding:'6px', borderRadius:9999, gap:2 }}>
+          {pages.map(p => (
+            <a key={p.href} href={p.href} style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', letterSpacing:'.04em', padding:'6px 14px', borderRadius:9999, color: currentPage===p.href?'var(--text)':'var(--text-2)', background: currentPage===p.href?'var(--bg-1,var(--bg))':'transparent', fontWeight: currentPage===p.href?'500':'400', transition:'all 0.15s' }}>
+              {p.label}
+            </a>
+          ))}
+        </div>
+        <div style={{ display:'flex', alignItems:'center', gap:10 }}>
+          <a href="vault.html" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color:'var(--text-2)', border:'1px solid var(--border)', textDecoration:'none', transition:'all 0.15s' }}>
+            ✦ Vault
+          </a>
+          <a href="auth.html" className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 16px', border:'1px solid var(--border)' }}>
+            Sign In
+          </a>
+          <ThemeToggle theme={theme} onToggle={onToggle} />
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer" style={{ background:'var(--bg)' }}>
+      <div className="container footer-inner">
+        <span style={{ fontFamily:'Archivo Black', fontSize:'.9rem', color:'var(--text)' }}>skill<span style={{ color:'var(--accent)' }}>scale</span></span>
+        <div style={{ display:'flex', gap:24 }}>
+          {[['index.html','Home'],['skills.html','Skills'],['market.html','Market'],['vault.html','Vault'],['community.html','Community'],['mcps.html','MCPs']].map(([h,l]) => (
+            <a key={h} href={h} style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)' }}>{l}</a>
+          ))}
+        </div>
+        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)' }}>© 2026 Skillscale</span>
+      </div>
+    </footer>
+  );
+}
+
+/* ===== MCP Card ===== */
+function MCPCard({ mcp, index }) {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: '-5%' });
+  const fallbackLogo = `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(mcp.name)}&backgroundColor=transparent&fontFamily=Arial`;
+
+  return (
+    <a href={mcp.marketplaceUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration:'none', color:'inherit', display:'block' }}>
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 24 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.45, delay: index * 0.07, ease: 'easeOut' }}
+        className="mcp-card lg"
+      >
+        {/* Logo */}
+        <div className="lg" style={{ width:44, height:44, borderRadius:12, display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0, padding:6, overflow:'hidden' }}>
+          <img
+            src={mcp.logoUrl || fallbackLogo}
+            alt={mcp.name}
+            style={{ width:'100%', height:'100%', objectFit:'contain' }}
+            onError={e => { e.target.src = fallbackLogo; }}
+          />
+        </div>
+
+        <div style={{ flex:1 }}>
+          <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:8 }}>
+            <span className="t-heading" style={{ fontSize:'1rem', color:'var(--text)' }}>{mcp.name}</span>
+            <div style={{ display:'flex', alignItems:'center', gap:6 }}>
+              {mcp.status === 'connected' ? (
+                <><span className="status-dot" /><span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'#2DBD76' }}>active</span></>
+              ) : (
+                <><span className="status-dot pending" /><span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)' }}>needs auth</span></>
+              )}
+            </div>
+          </div>
+          <p style={{ fontFamily:'DM Sans', fontSize:'.85rem', color:'var(--text-2)', lineHeight:1.55 }}>{mcp.desc}</p>
+        </div>
+
+        <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginTop:4 }}>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--text-2)' }}>{mcp.tools} tools available</span>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--accent)' }}>claude.ai MCP ↗</span>
+        </div>
+      </motion.div>
+    </a>
+  );
+}
+
+/* ===== Plugin Card ===== */
+function PluginCard({ plugin, index }) {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: '-5%' });
+  const dotColor = CAT_COLORS[plugin.cat] || '#6B7280';
+
+  const pluginUrl = `https://github.com/anthropics/claude-code/tree/main/.claude/plugins/marketplaces/claude-plugins-official/plugins/${plugin.name}`;
+
+  return (
+    <a href={pluginUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration:'none', color:'inherit', display:'block' }}>
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 16 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.4, delay: index * 0.04, ease: 'easeOut' }}
+        className="plug-card"
+        style={{ background:'var(--bg)', border:'1px solid var(--border)' }}
+      >
+        <div style={{ width:8, height:8, borderRadius:'50%', background:dotColor, flexShrink:0, marginTop:2 }} />
+        <div style={{ flex:1, minWidth:0 }}>
+          <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:8, marginBottom:4 }}>
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.78rem', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis' }}>{plugin.name}</span>
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)', flexShrink:0, paddingLeft:4 }}>{plugin.cat}</span>
+          </div>
+          <p style={{ fontFamily:'DM Sans', fontSize:'.8rem', color:'var(--text-2)', lineHeight:1.45 }}>{plugin.desc}</p>
+        </div>
+      </motion.div>
+    </a>
+  );
+}
+
+/* ===== App ===== */
+function App() {
+  const [theme, setTheme] = useState(() => {
+    const s = localStorage.getItem('sk-theme');
+    if (s) return s;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
+  const [activeCat, setActiveCat] = useState('All');
+  const headerRef = useRef(null);
+  const headerInView = useInView(headerRef, { once: true });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('sk-theme', theme);
+  }, [theme]);
+
+  const filteredPlugins = activeCat === 'All' ? PLUGINS : PLUGINS.filter(p => p.cat === activeCat);
+
+  return (
+    <>
+      <Nav theme={theme} onToggle={() => setTheme(t => t==='light'?'dark':'light')} currentPage="mcps.html" />
+
+      <main style={{ background:'var(--bg)', minHeight:'100vh' }}>
+        {/* Page header */}
+        <div className="page-top" style={{ background:'var(--bg)', borderBottom:'1px solid var(--border)', paddingBottom:48 }} ref={headerRef}>
+          <div className="container" style={{ paddingTop:40 }}>
+            <motion.div
+              initial={{ opacity:0, y:20 }}
+              animate={headerInView ? { opacity:1, y:0 } : {}}
+              transition={{ duration:0.55, ease:'easeOut' }}
+            >
+              <span style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', letterSpacing:'.08em', color:'var(--accent)', textTransform:'uppercase', display:'block', marginBottom:12 }}>
+                // Model Context Protocols
+              </span>
+              <h1 className="t-display" style={{ fontSize:'clamp(2.8rem,6vw,5.5rem)', color:'var(--text)', lineHeight:.9, marginBottom:16 }}>
+                Your MCP<br/>Catalog
+              </h1>
+              <p style={{ fontFamily:'DM Sans', color:'var(--text-2)', fontSize:'1rem', maxWidth:480, lineHeight:1.6 }}>
+                9 active cloud MCPs connected via claude.ai, plus 28 official Claude Code plugins from the Anthropic marketplace.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Installed MCPs */}
+        <section className="section-sm" style={{ background:'var(--bg)' }}>
+          <div className="container">
+            <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:32 }}>
+              <h2 className="t-heading" style={{ fontSize:'1.5rem', color:'var(--text)' }}>Installed MCPs</h2>
+              <div style={{ display:'flex', alignItems:'center', gap:8 }}>
+                <span className="status-dot" />
+                <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)' }}>6 connected · 3 need auth</span>
+              </div>
+            </div>
+            <div className="grid-3">
+              {INSTALLED.map((m, i) => <MCPCard key={m.id} mcp={m} index={i} />)}
+            </div>
+          </div>
+        </section>
+
+        {/* Official Plugins */}
+        <section className="section-sm" style={{ background:'var(--bg-1,var(--bg))', borderTop:'1px solid var(--border)' }}>
+          <div className="container">
+            <div style={{ marginBottom:28 }}>
+              <h2 className="t-heading" style={{ fontSize:'1.5rem', color:'var(--text)', marginBottom:8 }}>Official Plugins</h2>
+              <p style={{ fontFamily:'DM Sans', fontSize:'.9rem', color:'var(--text-2)' }}>
+                From the Anthropic <code style={{ fontFamily:'JetBrains Mono', fontSize:'.8em' }}>claude-plugins-official</code> marketplace — install via <code style={{ fontFamily:'JetBrains Mono', fontSize:'.8em' }}>/plugin install &lt;name&gt;</code>
+              </p>
+            </div>
+
+            {/* Category filters */}
+            <div style={{ display:'flex', gap:8, flexWrap:'wrap', marginBottom:28 }}>
+              {['All', ...PLUGIN_CATS].map(cat => (
+                <button key={cat} onClick={() => setActiveCat(cat)}
+                  className="tag"
+                  style={{ borderColor: activeCat===cat ? 'var(--accent)' : 'var(--border)', color: activeCat===cat ? 'var(--accent)' : 'var(--text-2)' }}>
+                  {cat}
+                </button>
+              ))}
+            </div>
+
+            <div className="grid-2">
+              {filteredPlugins.map((p, i) => <PluginCard key={p.name} plugin={p} index={i} />)}
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

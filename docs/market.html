@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market — Skillscale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: { fontFamily: { display:['Instrument Serif','serif'], heading:['Archivo Black','sans-serif'], body:['DM Sans','sans-serif'], mono:['JetBrains Mono','monospace'] } },
+        borderRadius: { DEFAULT:'9999px', none:'0', sm:'4px', md:'8px', lg:'16px', xl:'24px', '2xl':'32px', full:'9999px' }
+      }
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <style>
+    #root { min-height: 100vh; }
+    .page-top { padding-top: 96px; }
+    *, *::before, *::after { transition-property: background-color, border-color, color; transition-duration: 0.3s; }
+    video, canvas, img, svg { transition: none !important; }
+    input[type=range] { -webkit-appearance: none; appearance: none; height: 4px; border-radius: 2px; background: var(--border); outline: none; }
+    input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%; background: var(--accent); cursor: pointer; }
+    input[type=range]::-moz-range-thumb { width: 16px; height: 16px; border-radius: 50%; background: var(--accent); cursor: pointer; border: none; }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/framer-motion@11.11.17/dist/framer-motion.js"></script>
+<!-- window.Motion is set by the UMD bundle above -->
+
+<script type="text/babel">
+const { useState, useEffect, useRef, useCallback } = React;
+const { motion, useInView, AnimatePresence } = window.Motion;
+
+/* ===== Gem tier helpers (star-based, for trading cards) ===== */
+function gemTier(stars) {
+  if (stars >= 200) return 'Diamond';
+  if (stars >= 50)  return 'Emerald';
+  if (stars >= 10)  return 'Sapphire';
+  return 'Ruby';
+}
+const GEM_COLORS = { Ruby:'#E11D48', Sapphire:'#3B82F6', Emerald:'#10B981', Diamond:'#A78BFA' };
+const GEM_ICONS  = { Ruby:'♦', Sapphire:'◆', Emerald:'◈', Diamond:'◇' };
+
+/* ===== SecureScore gem tier (score-based, for sale cards) ===== */
+function scoreTier(score) {
+  if (score >= 90) return 'diamond';
+  if (score >= 80) return 'emerald';
+  if (score >= 65) return 'pearl';
+  if (score >= 50) return 'quartz';
+  return 'coal';
+}
+const SCORE_TIER_CONFIG = {
+  diamond: { label:'Diamond', color:'#1E6091', icon:'💎' },
+  emerald: { label:'Emerald', color:'#1A7A4A', icon:'💚' },
+  pearl:   { label:'Pearl',   color:'#7A6E5E', icon:'🤍' },
+  quartz:  { label:'Quartz',  color:'#7E5F9E', icon:'💜' },
+  coal:    { label:'Coal',    color:'#4A4540', icon:'⬛' },
+};
+
+/* ===== Vault helpers ===== */
+const VAULT_KEY = 'skillscale_vault';
+function getVault() {
+  try { return JSON.parse(localStorage.getItem(VAULT_KEY) || '{"dreamed":[],"owned":[]}'); }
+  catch { return { dreamed:[], owned:[] }; }
+}
+function saveVault(v) { localStorage.setItem(VAULT_KEY, JSON.stringify(v)); }
+function getVaultCount() { const v = getVault(); return v.dreamed.length + v.owned.length; }
+function isDreamed(id) { return getVault().dreamed.some(s => s.id === id); }
+function dreamSkill(skill, score) {
+  const v = getVault();
+  if (!v.dreamed.find(s => s.id === skill.id)) {
+    v.dreamed.push({ id:skill.id, name:skill.name, author:skill.author, score, tier:scoreTier(score), price:skill.price, savedAt:new Date().toISOString(), note:'' });
+    saveVault(v);
+  }
+  return getVaultCount();
+}
+function undreamSkill(id) {
+  const v = getVault();
+  v.dreamed = v.dreamed.filter(s => s.id !== id);
+  saveVault(v);
+  return getVaultCount();
+}
+
+/* ===== SecureScore bar (compact card variant) ===== */
+function SecureScoreBarSm({ score }) {
+  const tier = scoreTier(score);
+  const cfg = SCORE_TIER_CONFIG[tier];
+  const thumbLeft = Math.min(Math.max(score, 2), 98);
+  return (
+    <div className="secure-score-bar secure-score-bar-sm">
+      <div className="secure-score-label">
+        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.58rem', color:'var(--text-2)', textTransform:'uppercase', letterSpacing:'.06em' }}>SecureScore</span>
+        <div style={{ display:'flex', alignItems:'center', gap:5 }}>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color: cfg.color, fontWeight:600 }}>{score}</span>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.55rem', padding:'1px 6px', borderRadius:9999, background: cfg.color + '18', color: cfg.color, border:`1px solid ${cfg.color}30` }}>{cfg.icon} {cfg.label}</span>
+        </div>
+      </div>
+      <div className="secure-score-track">
+        <div className="secure-score-fill" style={{ width:`${score}%` }} />
+        <div className="secure-score-thumb" style={{ left:`${thumbLeft}%`, background: cfg.color }} />
+      </div>
+    </div>
+  );
+}
+
+/* ===== Mock market data ===== */
+const MARKET_SKILLS = [
+  { id:'code-review',        name:'code-review',        author:'anthropic',  stars:312, auditStatus:'approved',
+    yesPrice:0.71, volume:4820,  liquidity:12500, priceHistory:[0.55,0.58,0.62,0.67,0.70,0.69,0.71] },
+  { id:'software-developer', name:'software-developer', author:'anthropic',  stars:287, auditStatus:'approved',
+    yesPrice:0.65, volume:3610,  liquidity:9800,  priceHistory:[0.60,0.61,0.63,0.65,0.64,0.66,0.65] },
+  { id:'frontend-design',    name:'frontend-design',    author:'garry',      stars:148, auditStatus:'approved',
+    yesPrice:0.82, volume:6240,  liquidity:15200, priceHistory:[0.70,0.73,0.75,0.79,0.80,0.81,0.82] },
+  { id:'data-analysis',      name:'data-analysis',      author:'mlteam',     stars:93,  auditStatus:'approved',
+    yesPrice:0.48, volume:1980,  liquidity:5400,  priceHistory:[0.52,0.51,0.49,0.47,0.48,0.48,0.48] },
+  { id:'pr-review-toolkit',  name:'pr-review-toolkit',  author:'opendev',    stars:76,  auditStatus:'approved',
+    yesPrice:0.59, volume:2450,  liquidity:7100,  priceHistory:[0.50,0.52,0.55,0.57,0.58,0.59,0.59] },
+  { id:'security-scanner',   name:'security-scanner',   author:'seclab',     stars:42,  auditStatus:'approved',
+    yesPrice:0.37, volume:890,   liquidity:2600,  priceHistory:[0.45,0.43,0.41,0.39,0.38,0.37,0.37] },
+  { id:'api-integrator',     name:'api-integrator',     author:'devcraft',   stars:28,  auditStatus:'needs_review',
+    yesPrice:0.55, volume:1120,  liquidity:3200,  priceHistory:[0.48,0.50,0.52,0.54,0.55,0.55,0.55] },
+  { id:'doc-generator',      name:'doc-generator',      author:'writebot',   stars:17,  auditStatus:'approved',
+    yesPrice:0.41, volume:640,   liquidity:1900,  priceHistory:[0.38,0.39,0.40,0.41,0.41,0.42,0.41] },
+  { id:'test-writer',        name:'test-writer',         author:'qatools',   stars:11,  auditStatus:'needs_review',
+    yesPrice:0.28, volume:320,   liquidity:800,   priceHistory:[0.35,0.33,0.31,0.29,0.28,0.28,0.28] },
+  { id:'refactor-helper',    name:'refactor-helper',    author:'cleancode',  stars:6,   auditStatus:'approved',
+    yesPrice:0.19, volume:180,   liquidity:500,   priceHistory:[0.25,0.23,0.21,0.20,0.19,0.19,0.19] },
+];
+
+const SALE_SKILLS = [
+  { id:'code-review',      name:'code-review',      author:'anthropic', stars:312, price:0,   auditStatus:'approved',     secureScore:96 },
+  { id:'frontend-design',  name:'frontend-design',  author:'garry',     stars:148, price:25,  auditStatus:'approved',     secureScore:88 },
+  { id:'data-analysis',    name:'data-analysis',    author:'mlteam',    stars:93,  price:15,  auditStatus:'approved',     secureScore:82 },
+  { id:'security-scanner', name:'security-scanner', author:'seclab',    stars:42,  price:40,  auditStatus:'approved',     secureScore:99 },
+  { id:'api-integrator',   name:'api-integrator',   author:'devcraft',  stars:28,  price:10,  auditStatus:'needs_review', secureScore:61 },
+  { id:'doc-generator',    name:'doc-generator',    author:'writebot',  stars:17,  price:5,   auditStatus:'approved',     secureScore:74 },
+];
+
+/* ===== Shared: ThemeToggle ===== */
+function ThemeToggle({ theme, onToggle }) {
+  return (
+    <button onClick={onToggle} title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+      className="lg"
+      style={{ width:38, height:38, borderRadius:'50%', border:'none', display:'flex', alignItems:'center', justifyContent:'center', fontSize:16, color: theme==='light'?'#111110':'#F1E9D8', cursor:'pointer', flexShrink:0 }}>
+      {theme==='light'?'☀️':'🌙'}
+    </button>
+  );
+}
+
+/* ===== Nav ===== */
+function Nav({ theme, onToggle, currentPage }) {
+  const pages = [{href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},{href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'}];
+  const [vaultCount, setVaultCount] = React.useState(getVaultCount);
+
+  React.useEffect(() => {
+    function sync() { setVaultCount(getVaultCount()); }
+    window.addEventListener('vault-updated', sync);
+    window.addEventListener('storage', sync);
+    return () => { window.removeEventListener('vault-updated', sync); window.removeEventListener('storage', sync); };
+  }, []);
+
+  return (
+    <nav className="nav lg" style={{ padding:'12px 24px', borderBottom:'1px solid var(--border)', borderRadius:0 }}>
+      <div className="nav-inner">
+        <a href="index.html" style={{ fontFamily:'Archivo Black', fontSize:'1.05rem', color:'var(--text)', letterSpacing:'-.01em', flexShrink:0 }}>
+          skill<span style={{ color:'var(--accent)' }}>scale</span>
+        </a>
+        <div className="nav-links" style={{ display:'flex', alignItems:'center', padding:'6px', borderRadius:9999, gap:2 }}>
+          {pages.map(p => (
+            <a key={p.href} href={p.href} style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', letterSpacing:'.04em', padding:'6px 14px', borderRadius:9999, color: currentPage===p.href?'var(--text)':'var(--text-2)', background: currentPage===p.href?'var(--bg-1,rgba(0,0,0,0.06))':'transparent', fontWeight: currentPage===p.href?'500':'400', transition:'all 0.15s' }}>
+              {p.label}
+            </a>
+          ))}
+        </div>
+        <div style={{ display:'flex', alignItems:'center', gap:10 }}>
+          <a href="vault.html" style={{ position:'relative', display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color: currentPage==='vault.html'?'var(--accent)':'var(--text-2)', background: currentPage==='vault.html'?'rgba(212,102,26,0.08)':'transparent', border:`1px solid ${currentPage==='vault.html'?'rgba(212,102,26,0.3)':'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
+            ✦ Vault
+            {vaultCount > 0 && (
+              <span style={{ position:'absolute', top:-5, right:-5, minWidth:16, height:16, borderRadius:9999, background:'var(--accent)', color:'#fff', fontSize:'.55rem', fontWeight:700, display:'flex', alignItems:'center', justifyContent:'center', padding:'0 4px' }}>
+                {vaultCount}
+              </span>
+            )}
+          </a>
+          <a href="auth.html" className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 16px', border:'1px solid var(--border)' }}>
+            Sign In
+          </a>
+          <ThemeToggle theme={theme} onToggle={onToggle} />
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+/* ===== Footer ===== */
+function Footer() {
+  return (
+    <footer className="footer" style={{ background:'var(--bg)' }}>
+      <div className="container footer-inner">
+        <span style={{ fontFamily:'Archivo Black', fontSize:'.9rem', color:'var(--text)' }}>skill<span style={{ color:'var(--accent)' }}>scale</span></span>
+        <div style={{ display:'flex', gap:24 }}>
+          {[['index.html','Home'],['skills.html','Skills'],['market.html','Market'],['vault.html','Vault'],['community.html','Community'],['mcps.html','MCPs']].map(([h,l]) => (
+            <a key={h} href={h} style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)' }}>{l}</a>
+          ))}
+        </div>
+        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)' }}>© 2026 Skillscale</span>
+      </div>
+    </footer>
+  );
+}
+
+/* ===== Toast ===== */
+function Toast({ message, visible }) {
+  return (
+    <AnimatePresence>
+      {visible && (
+        <motion.div className="toast"
+          initial={{ opacity:0, y:16 }} animate={{ opacity:1, y:0 }} exit={{ opacity:0, y:16 }}
+          transition={{ duration:0.22 }}>
+          {message}
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}
+
+/* ===== Sparkline SVG ===== */
+function SparklineSvg({ data, width=200, height=36 }) {
+  const min = Math.min(...data), max = Math.max(...data);
+  const range = max - min || 0.01;
+  const pts = data.map((v, i) => {
+    const x = (i / (data.length - 1)) * width;
+    const y = height - ((v - min) / range) * (height - 6) - 3;
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(' ');
+  const isUp = data[data.length - 1] >= data[0];
+  return (
+    <svg viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none" style={{ width:'100%', height:36, display:'block' }}>
+      <polyline points={pts} fill="none"
+        stroke={isUp ? '#10B981' : '#EF4444'}
+        strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+/* ===== Trading Card ===== */
+function TradingCard({ market, index, onBuy }) {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: '-5%' });
+  const tier = gemTier(market.stars);
+  const tierColor = GEM_COLORS[tier];
+  const yPct = Math.round(market.yesPrice * 100);
+  const nPct = 100 - yPct;
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity:0, y:20 }} animate={inView ? { opacity:1, y:0 } : {}}
+      transition={{ duration:0.4, delay: Math.min(index * 0.06, 0.4), ease:'easeOut' }}
+      className="trading-card lg"
+      style={{ borderRadius:20, padding:20, display:'flex', flexDirection:'column', gap:12 }}
+    >
+      {/* Header */}
+      <div style={{ display:'flex', alignItems:'flex-start', gap:12 }}>
+        <img src={`https://api.dicebear.com/7.x/shapes/svg?seed=${encodeURIComponent(market.name)}`}
+          alt="" style={{ width:36, height:36, borderRadius:9, flexShrink:0, background:'var(--bg-1)' }} />
+        <div style={{ flex:1, minWidth:0 }}>
+          <span style={{ fontFamily:'JetBrains Mono', fontWeight:700, fontSize:'.82rem', color:'var(--text)', display:'block', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>/{market.name}</span>
+          <div style={{ display:'flex', gap:5, marginTop:5, flexWrap:'wrap' }}>
+            <span className="gem-badge" style={{ background: tierColor + '22', color: tierColor }}>{GEM_ICONS[tier]} {tier}</span>
+            {market.auditStatus === 'approved' && (
+              <span className="gem-badge" style={{ background:'#10B98122', color:'#10B981' }}>✓ Audited</span>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Sparkline */}
+      <SparklineSvg data={market.priceHistory} />
+
+      {/* Buy buttons */}
+      <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:8 }}>
+        <button className="btn btn-sm"
+          onClick={() => onBuy(market, 'YES')}
+          style={{ background:'#10B98118', color:'#10B981', borderRadius:10, fontFamily:'JetBrains Mono', fontSize:'.72rem', fontWeight:700, padding:'8px 0', border:'1px solid #10B98130' }}>
+          YES {yPct}¢
+        </button>
+        <button className="btn btn-sm"
+          onClick={() => onBuy(market, 'NO')}
+          style={{ background:'#EF444418', color:'#EF4444', borderRadius:10, fontFamily:'JetBrains Mono', fontSize:'.72rem', fontWeight:700, padding:'8px 0', border:'1px solid #EF444430' }}>
+          NO {nPct}¢
+        </button>
+      </div>
+
+      {/* Stats */}
+      <div style={{ display:'flex', justifyContent:'space-between' }}>
+        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)' }}>Vol ${market.volume.toLocaleString()}</span>
+        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)' }}>Liq ${market.liquidity.toLocaleString()}</span>
+      </div>
+    </motion.div>
+  );
+}
+
+/* ===== Sale Card ===== */
+function SaleCard({ skill, index, onBuy }) {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: '-5%' });
+  const tier = gemTier(skill.stars);
+  const tierColor = GEM_COLORS[tier];
+  const [dreamed, setDreamed] = React.useState(() => isDreamed(skill.id));
+
+  function toggleDream(e) {
+    e.stopPropagation();
+    if (dreamed) {
+      undreamSkill(skill.id);
+      setDreamed(false);
+    } else {
+      dreamSkill(skill, skill.secureScore ?? 75);
+      setDreamed(true);
+    }
+    window.dispatchEvent(new Event('vault-updated'));
+  }
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity:0, y:16 }} animate={inView ? { opacity:1, y:0 } : {}}
+      transition={{ duration:0.38, delay: Math.min(index * 0.05, 0.35), ease:'easeOut' }}
+      className="lg"
+      style={{ borderRadius:16, padding:20, display:'flex', flexDirection:'column', gap:12, cursor:'default' }}
+    >
+      <div style={{ display:'flex', alignItems:'center', gap:12 }}>
+        <img src={`https://api.dicebear.com/7.x/shapes/svg?seed=${encodeURIComponent(skill.name)}`}
+          alt="" style={{ width:44, height:44, borderRadius:11, background:'var(--bg-1)' }} />
+        <div style={{ flex:1, minWidth:0 }}>
+          <span style={{ fontFamily:'JetBrains Mono', fontWeight:700, fontSize:'.82rem', color:'var(--text)', display:'block', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>/{skill.name}</span>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--accent)' }}>@{skill.author}</span>
+        </div>
+        <div style={{ textAlign:'right', flexShrink:0 }}>
+          <span style={{ fontFamily:'JetBrains Mono', fontWeight:700, fontSize:'.9rem', color: skill.price===0 ? '#10B981' : tierColor, display:'block' }}>
+            {skill.price === 0 ? 'Free' : `${skill.price} 💎`}
+          </span>
+        </div>
+      </div>
+      <div style={{ display:'flex', gap:6, flexWrap:'wrap' }}>
+        <span className="gem-badge" style={{ background: tierColor + '22', color: tierColor }}>{GEM_ICONS[tier]} {tier}</span>
+        {skill.auditStatus === 'approved' && <span className="gem-badge" style={{ background:'#10B98122', color:'#10B981' }}>✓ Audited</span>}
+      </div>
+      {skill.secureScore != null && <SecureScoreBarSm score={skill.secureScore} />}
+      <div style={{ display:'flex', gap:8, marginTop:'auto' }}>
+        <button onClick={() => onBuy(skill)} className="btn btn-primary btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', flex:1 }}>
+          {skill.price === 0 ? 'Get Free →' : 'Buy →'}
+        </button>
+        <button onClick={toggleDream} title={dreamed ? 'Remove from Vault' : 'Dream — save to Vault'}
+          style={{ padding:'7px 12px', borderRadius:10, border:`1px solid ${dreamed ? 'var(--accent)' : 'var(--border)'}`,
+            background: dreamed ? 'rgba(212,102,26,0.1)' : 'transparent',
+            color: dreamed ? 'var(--accent)' : 'var(--text-2)', cursor:'pointer', fontSize:'.82rem', lineHeight:1,
+            transition:'all 0.18s', flexShrink:0 }}>
+          {dreamed ? '✦' : '✧'}
+        </button>
+      </div>
+    </motion.div>
+  );
+}
+
+/* ===== API Key Modal ===== */
+function ApiKeyModal({ provider, onClose, onSave }) {
+  const [key, setKey] = useState('');
+  return (
+    <motion.div
+      initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }}
+      style={{ position:'fixed', inset:0, zIndex:300, display:'flex', alignItems:'center', justifyContent:'center', background:'rgba(0,0,0,0.45)', backdropFilter:'blur(6px)' }}
+      onClick={e => { if (e.target === e.currentTarget) onClose(); }}
+    >
+      <motion.div
+        initial={{ scale:0.94, y:12 }} animate={{ scale:1, y:0 }} exit={{ scale:0.94, y:12 }}
+        transition={{ type:'spring', damping:26, stiffness:300 }}
+        className="lg-s"
+        style={{ width:'min(92vw,480px)', borderRadius:24, padding:'32px', background:'var(--bg)', display:'flex', flexDirection:'column', gap:20 }}
+      >
+        <div>
+          <h2 style={{ fontFamily:'Archivo Black', fontSize:'1.2rem', color:'var(--text)', marginBottom:6 }}>
+            {provider === 'claude' ? 'Claude account' : 'ChatGPT account'}
+          </h2>
+          <p style={{ fontFamily:'DM Sans', fontSize:'.85rem', color:'var(--text-2)', lineHeight:1.55 }}>
+            Paste your {provider === 'claude' ? 'Anthropic' : 'OpenAI'} API key. It's stored locally in your browser and never sent to our servers.
+          </p>
+        </div>
+        <input
+          type="password"
+          placeholder={provider === 'claude' ? 'sk-ant-...' : 'sk-...'}
+          value={key}
+          onChange={e => setKey(e.target.value)}
+          style={{ width:'100%', background:'var(--bg-1)', border:'1px solid var(--border)', borderRadius:12, color:'var(--text)', fontFamily:'JetBrains Mono', fontSize:'.8rem', padding:'12px 16px', outline:'none' }}
+        />
+        <div style={{ display:'flex', gap:10, justifyContent:'flex-end' }}>
+          <button onClick={onClose} className="btn btn-outline btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem' }}>Cancel</button>
+          <button onClick={() => { onSave(provider, key); onClose(); }} className="btn btn-primary btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem' }}>Save key</button>
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+}
+
+/* ===== Skill Creation Bar ===== */
+function SkillCreationBar({ onToast }) {
+  const [expanded, setExpanded] = useState(false);
+  const [prompt, setPrompt] = useState('');
+  const [messages, setMessages] = useState([]);
+  const [skillMd, setSkillMd] = useState(TEMPLATE_SKILL_MD);
+  const [price, setPrice] = useState(0);
+  const [mintNft, setMintNft] = useState(false);
+  const [apiModal, setApiModal] = useState(null);
+  const [apiKeys, setApiKeys] = useState({});
+  const promptRef = useRef(null);
+  const chatEndRef = useRef(null);
+
+  useEffect(() => {
+    if (chatEndRef.current) chatEndRef.current.scrollIntoView({ behavior:'smooth' });
+  }, [messages]);
+
+  function handleFileImport(e, source) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    JSZip.loadAsync(file).then(zip => {
+      const conv = zip.file('conversations.json') || zip.file('chat_messages.json');
+      if (!conv) { onToast('conversations.json not found in the ZIP'); return; }
+      conv.async('string').then(text => {
+        try {
+          const data = JSON.parse(text);
+          const msgs = (Array.isArray(data) ? data : [data])
+            .flatMap(c => (c.chat_messages || c.messages || []))
+            .map(m => (typeof m.content === 'string' ? m.content : m.text || ''))
+            .filter(Boolean)
+            .slice(0, 30);
+          if (!msgs.length) { onToast('No messages found in export file'); return; }
+          onToast(`Imported ${msgs.length} messages from ${source}`);
+          setExpanded(true);
+          const userMsg = { role:'user', content: `Here's my ${source} conversation export. Please generate a SKILL.md from these interactions.` };
+          const asstMsg = { role:'assistant', content: generateSkillFromMessages(msgs) };
+          setMessages(prev => [...prev, userMsg, asstMsg]);
+          setSkillMd(asstMsg.content);
+        } catch {
+          onToast('Failed to parse export file');
+        }
+      });
+    }).catch(() => onToast('Failed to read ZIP file'));
+    e.target.value = '';
+  }
+
+  function generateSkillFromMessages(msgs) {
+    const sample = msgs.slice(0,5).join('\n').slice(0,200);
+    return `---\nname: my-skill\ndescription: A skill generated from your conversation export. Edit the description to match what this skill does.\nauthor: you\nversion: 0.1.0\ntags: [custom, generated]\n---\n\n## Overview\n\nThis skill was generated from your conversation history. Review and customize it before publishing.\n\n## When to use\n\nInvoke this skill when you need to reproduce the patterns from your conversations.\n\n## Instructions\n\n${sample.slice(0,120)}...\n\n## Notes\n\n- Review and edit before publishing\n- Test with your agent before listing for sale`;
+  }
+
+  function handleSend() {
+    if (!prompt.trim()) return;
+    const userMsg = { role:'user', content: prompt };
+    const asstMsg = {
+      role: 'assistant',
+      content: `I'll help you create a skill based on that. Here's a starting SKILL.md:\n\n\`\`\`\n---\nname: ${prompt.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'').slice(0,32)}\ndescription: ${prompt.slice(0,120)}\nauthor: you\nversion: 0.1.0\ntags: [custom]\n---\n\n## Overview\n\n${prompt}\n\n## When to use\n\nInvoke this skill when you need to ${prompt.toLowerCase()}.\n\n## Instructions\n\n1. Start by analyzing the context\n2. Apply the relevant patterns\n3. Return a well-structured result\n\`\`\`\n\nEdit the preview on the right. When ready, set your price and publish.`
+    };
+    setMessages(prev => [...prev, userMsg, asstMsg]);
+    const mdMatch = asstMsg.content.match(/```[\w]*\n([\s\S]+?)```/);
+    if (mdMatch) setSkillMd(mdMatch[1]);
+    setPrompt('');
+  }
+
+  return (
+    <div style={{ marginBottom: 64 }}>
+      <motion.div
+        layout
+        className="lg-s"
+        style={{ maxWidth:860, margin:'0 auto', borderRadius: expanded ? 24 : 9999, overflow:'hidden' }}
+        transition={{ type:'spring', damping:30, stiffness:300 }}
+      >
+        {/* Input row */}
+        <div style={{ display:'flex', alignItems:'center', gap:16, padding:'16px 22px', borderBottom: expanded ? '1px solid var(--border)' : 'none' }}>
+          <span style={{ fontSize:18, flexShrink:0 }}>✦</span>
+          <input
+            ref={promptRef}
+            className="creation-prompt"
+            placeholder="Describe a skill you want to create or sell…"
+            value={prompt}
+            onChange={e => setPrompt(e.target.value)}
+            onFocus={() => setExpanded(true)}
+            onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); } }}
+          />
+          <button
+            onClick={() => { if (!expanded) setExpanded(true); else handleSend(); }}
+            className="btn btn-primary btn-sm"
+            style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', flexShrink:0 }}
+          >
+            Generate →
+          </button>
+        </div>
+
+        {/* Expanded dashboard */}
+        <AnimatePresence>
+          {expanded && (
+            <motion.div
+              initial={{ height:0, opacity:0 }} animate={{ height:'auto', opacity:1 }} exit={{ height:0, opacity:0 }}
+              transition={{ duration:0.32, ease:'easeInOut' }}
+              style={{ overflow:'hidden' }}
+            >
+              {/* Two-column layout */}
+              <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', minHeight:340 }}>
+                {/* Left: chat */}
+                <div style={{ borderRight:'1px solid var(--border)', display:'flex', flexDirection:'column', maxHeight:400 }}>
+                  <div style={{ flex:1, overflowY:'auto', padding:'16px 18px', display:'flex', flexDirection:'column', gap:10 }}>
+                    {messages.length === 0 && (
+                      <p style={{ fontFamily:'DM Sans', fontSize:'.82rem', color:'var(--text-2)', textAlign:'center', marginTop:40 }}>
+                        Describe a skill or import a conversation export below
+                      </p>
+                    )}
+                    {messages.map((m, i) => (
+                      <div key={i} className={m.role === 'user' ? 'chat-msg-user' : 'chat-msg-assistant'}>
+                        {m.content}
+                      </div>
+                    ))}
+                    <div ref={chatEndRef} />
+                  </div>
+                </div>
+
+                {/* Right: SKILL.md preview */}
+                <div style={{ display:'flex', flexDirection:'column' }}>
+                  <div style={{ padding:'10px 16px', borderBottom:'1px solid var(--border)', display:'flex', alignItems:'center', justifyContent:'space-between' }}>
+                    <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)', textTransform:'uppercase', letterSpacing:'.07em' }}>SKILL.md preview</span>
+                    <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)' }}>editable</span>
+                  </div>
+                  <textarea
+                    className="skill-md-editor"
+                    value={skillMd}
+                    onChange={e => setSkillMd(e.target.value)}
+                    style={{ flex:1, padding:'14px 16px', minHeight:280 }}
+                  />
+                </div>
+              </div>
+
+              {/* Import row */}
+              <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:12, padding:'16px 20px', borderTop:'1px solid var(--border)', borderBottom:'1px solid var(--border)' }}>
+                <label style={{ cursor:'pointer' }}>
+                  <input type="file" accept=".zip" style={{ display:'none' }} onChange={e => handleFileImport(e, 'Claude.ai')} />
+                  <div className="lg" style={{ borderRadius:12, padding:'12px 14px', display:'flex', alignItems:'center', gap:10, cursor:'pointer' }}>
+                    <span style={{ fontSize:20 }}>🟣</span>
+                    <div>
+                      <div style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', fontWeight:600, color:'var(--text)' }}>Import from Claude.ai</div>
+                      <div style={{ fontFamily:'DM Sans', fontSize:'.72rem', color:'var(--text-2)' }}>Upload .zip export</div>
+                    </div>
+                  </div>
+                </label>
+
+                <label style={{ cursor:'pointer' }}>
+                  <input type="file" accept=".zip" style={{ display:'none' }} onChange={e => handleFileImport(e, 'ChatGPT')} />
+                  <div className="lg" style={{ borderRadius:12, padding:'12px 14px', display:'flex', alignItems:'center', gap:10, cursor:'pointer' }}>
+                    <span style={{ fontSize:20 }}>🟢</span>
+                    <div>
+                      <div style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', fontWeight:600, color:'var(--text)' }}>Import from ChatGPT</div>
+                      <div style={{ fontFamily:'DM Sans', fontSize:'.72rem', color:'var(--text-2)' }}>Upload .zip export</div>
+                    </div>
+                  </div>
+                </label>
+
+                <div className="lg" style={{ borderRadius:12, padding:'12px 14px', display:'flex', alignItems:'center', gap:10, cursor:'pointer' }}
+                  onClick={() => onToast('Coming soon: link your X and Telegram for attribution')}>
+                  <span style={{ fontSize:20 }}>🔗</span>
+                  <div>
+                    <div style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', fontWeight:600, color:'var(--text)' }}>Connect X / Telegram</div>
+                    <div style={{ fontFamily:'DM Sans', fontSize:'.72rem', color:'var(--text-2)' }}>Link for attribution</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Auth row */}
+              <div style={{ display:'flex', alignItems:'center', gap:10, padding:'12px 20px', borderBottom:'1px solid var(--border)', flexWrap:'wrap' }}>
+                <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)', textTransform:'uppercase', letterSpacing:'.07em', marginRight:4 }}>Connect</span>
+                <button onClick={() => setApiModal('claude')} className="btn btn-outline btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', gap:6 }}>
+                  🟣 Claude account {apiKeys['claude'] ? '✓' : ''}
+                </button>
+                <button onClick={() => setApiModal('openai')} className="btn btn-outline btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', gap:6 }}>
+                  🟢 ChatGPT account {apiKeys['openai'] ? '✓' : ''}
+                </button>
+                <span style={{ fontFamily:'DM Sans', fontSize:'.75rem', color:'var(--text-2)', marginLeft:4 }}>
+                  Keys are stored locally only
+                </span>
+              </div>
+
+              {/* Publish bar */}
+              <div style={{ display:'flex', alignItems:'center', gap:20, padding:'16px 20px', flexWrap:'wrap' }}>
+                <div style={{ flex:1, minWidth:180 }}>
+                  <label style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)', display:'block', marginBottom:6 }}>
+                    Price: {price === 0 ? 'Free' : `${price} gems`}
+                  </label>
+                  <input type="range" min={0} max={100} step={5} value={price} onChange={e => setPrice(+e.target.value)}
+                    style={{ width:'100%', accentColor:'var(--accent)' }} />
+                </div>
+                <label style={{ display:'flex', alignItems:'center', gap:8, fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)', cursor:'pointer', flexShrink:0 }}>
+                  <input type="checkbox" checked={mintNft} onChange={e => setMintNft(e.target.checked)} style={{ accentColor:'var(--accent)', width:14, height:14 }} />
+                  Mint as Rarible NFT
+                </label>
+                <button className="btn btn-primary" style={{ fontFamily:'JetBrains Mono', fontSize:'.75rem', flexShrink:0 }}
+                  onClick={() => onToast(mintNft ? 'Rarible mint + publish coming in Phase 3 (Polygon)' : 'Publishing to Skillscale marketplace…')}>
+                  Publish Skill ✦
+                </button>
+                <button onClick={() => setExpanded(false)} style={{ background:'none', border:'none', cursor:'pointer', fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--text-2)' }}>
+                  collapse
+                </button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.div>
+
+      {/* API Key Modal */}
+      <AnimatePresence>
+        {apiModal && (
+          <ApiKeyModal
+            provider={apiModal}
+            onClose={() => setApiModal(null)}
+            onSave={(p, k) => { setApiKeys(prev => ({...prev, [p]: k})); onToast(`${p === 'claude' ? 'Claude' : 'ChatGPT'} API key saved locally`); }}
+          />
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+const TEMPLATE_SKILL_MD = `---
+name: my-skill
+description: Describe what this skill does and when to use it.
+author: you
+version: 0.1.0
+tags: [custom]
+---
+
+## Overview
+
+Explain what this skill does.
+
+## When to use
+
+Describe the situations where this skill should activate.
+
+## Instructions
+
+1. Step one
+2. Step two
+3. Step three
+`;
+
+/* ===== App ===== */
+function App() {
+  const [theme, setTheme] = useState(() => {
+    const s = localStorage.getItem('sk-theme');
+    if (s) return s;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
+  const [marketFilter, setMarketFilter] = useState('All');
+  const [toast, setToast] = useState('');
+  const [toastVisible, setToastVisible] = useState(false);
+  const headerRef = useRef(null);
+  const headerInView = useInView(headerRef, { once: true });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('sk-theme', theme);
+  }, [theme]);
+
+  function showToast(msg) {
+    setToast(msg);
+    setToastVisible(true);
+    setTimeout(() => setToastVisible(false), 3000);
+  }
+
+  function handleBuy(item, side) {
+    showToast(`WalletConnect + Polygon trading coming in Phase 3 — ${side ? `Buying ${side} on` : 'Buying'} /${item.name}`);
+  }
+
+  const filterFns = {
+    'All': () => true,
+    'Ruby': m => gemTier(m.stars) === 'Ruby',
+    'Sapphire': m => gemTier(m.stars) === 'Sapphire',
+    'Emerald': m => gemTier(m.stars) === 'Emerald',
+    'Diamond': m => gemTier(m.stars) === 'Diamond',
+    'Audited Only': m => m.auditStatus === 'approved',
+  };
+  const filteredMarkets = MARKET_SKILLS.filter(filterFns[marketFilter] || (() => true));
+
+  return (
+    <>
+      <Nav theme={theme} onToggle={() => setTheme(t => t==='light'?'dark':'light')} currentPage="market.html" />
+      <Toast message={toast} visible={toastVisible} />
+
+      <main style={{ background:'var(--bg)', minHeight:'100vh' }}>
+        {/* Page header / banner */}
+        <div className="page-top lg-s" style={{ borderBottom:'1px solid var(--border)', paddingBottom:0, overflow:'hidden', position:'relative' }} ref={headerRef}>
+          {/* Animated accent strip */}
+          <motion.div
+            initial={{ scaleX:0, originX:0 }}
+            animate={headerInView ? { scaleX:1 } : {}}
+            transition={{ duration:1.1, ease:'easeOut', delay:0.2 }}
+            style={{ position:'absolute', bottom:0, left:0, right:0, height:2, background:`linear-gradient(90deg, var(--accent), transparent 60%)` }}
+          />
+          <div className="container" style={{ paddingTop:40, paddingBottom:36 }}>
+            <motion.div
+              initial={{ opacity:0, y:20 }} animate={headerInView ? { opacity:1, y:0 } : {}}
+              transition={{ duration:0.55, ease:'easeOut' }}
+            >
+              <span style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', letterSpacing:'.08em', color:'var(--accent)', textTransform:'uppercase', display:'block', marginBottom:10 }}>
+                // Skill Marketplace
+              </span>
+              <h1 className="t-display" style={{ fontSize:'clamp(2.4rem,5vw,4.5rem)', color:'var(--text)', lineHeight:.92, marginBottom:16 }}>
+                Create, trade &amp;<br/>collect skills
+              </h1>
+              <p style={{ fontFamily:'DM Sans', fontSize:'1rem', color:'var(--text-2)', maxWidth:540, lineHeight:1.6, marginBottom:32 }}>
+                Build skills from your AI conversations, trade skill markets on-chain, and earn gems when others install your work.
+              </p>
+            </motion.div>
+
+            {/* Stats row */}
+            <motion.div
+              initial={{ opacity:0, y:12 }} animate={headerInView ? { opacity:1, y:0 } : {}}
+              transition={{ duration:0.5, ease:'easeOut', delay:0.25 }}
+              style={{ display:'flex', gap:24, flexWrap:'wrap' }}
+            >
+              {[
+                { label:'Active markets', value:'247', icon:'📈' },
+                { label:'Total skills listed', value:'1,842', icon:'🛠' },
+                { label:'AI-audited', value:'893', icon:'🔐' },
+                { label:'Diamond skills', value:'34', icon:'◇' },
+              ].map(stat => (
+                <div key={stat.label} className="lg" style={{ display:'flex', alignItems:'center', gap:12, padding:'10px 18px', borderRadius:12 }}>
+                  <span style={{ fontSize:'1.1rem' }}>{stat.icon}</span>
+                  <div>
+                    <span style={{ fontFamily:'Archivo Black', fontSize:'1.1rem', color:'var(--text)', display:'block', lineHeight:1.1 }}>{stat.value}</span>
+                    <span style={{ fontFamily:'JetBrains Mono', fontSize:'.58rem', color:'var(--text-2)', textTransform:'uppercase', letterSpacing:'.07em' }}>{stat.label}</span>
+                  </div>
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+
+        <div className="section-sm">
+          <div className="container">
+
+            {/* Section A: Skill Creation Bar */}
+            <div style={{ marginBottom:72 }}>
+              <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:28, flexWrap:'wrap', gap:12 }}>
+                <h2 style={{ fontFamily:'Archivo Black', fontSize:'1.3rem', color:'var(--text)' }}>Create a skill</h2>
+                <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)' }}>
+                  Import from Claude.ai · ChatGPT · or describe from scratch
+                </span>
+              </div>
+              <SkillCreationBar onToast={showToast} />
+            </div>
+
+            {/* Section B: Live Market */}
+            <div style={{ marginBottom:72 }}>
+              <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:20, flexWrap:'wrap', gap:12 }}>
+                <div>
+                  <h2 style={{ fontFamily:'Archivo Black', fontSize:'1.3rem', color:'var(--text)', marginBottom:4 }}>Skill Markets</h2>
+                  <p style={{ fontFamily:'DM Sans', fontSize:'.82rem', color:'var(--text-2)' }}>
+                    Predict which skills will hit star milestones. Real trading on Polygon — coming Phase 3.
+                  </p>
+                </div>
+                <button
+                  onClick={() => showToast('WalletConnect + Polygon integration coming in Phase 3')}
+                  className="btn lg btn-sm"
+                  style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text)', gap:8 }}
+                >
+                  <span style={{ width:8, height:8, borderRadius:'50%', background:'#F59E0B', display:'inline-block', boxShadow:'0 0 6px #F59E0B88' }} />
+                  Connect Wallet
+                </button>
+              </div>
+
+              {/* Filter row */}
+              <div style={{ display:'flex', gap:7, flexWrap:'wrap', marginBottom:24 }}>
+                {['All','Ruby','Sapphire','Emerald','Diamond','Audited Only'].map(f => (
+                  <button key={f} className="tag"
+                    onClick={() => setMarketFilter(f)}
+                    style={{
+                      borderColor: marketFilter===f ? 'var(--accent)' : 'var(--border)',
+                      color: marketFilter===f ? 'var(--accent)' : 'var(--text-2)',
+                      background: marketFilter===f ? 'transparent' : 'transparent',
+                    }}>
+                    {f === 'Ruby' && <span style={{ color: GEM_COLORS.Ruby, marginRight:4 }}>♦</span>}
+                    {f === 'Sapphire' && <span style={{ color: GEM_COLORS.Sapphire, marginRight:4 }}>◆</span>}
+                    {f === 'Emerald' && <span style={{ color: GEM_COLORS.Emerald, marginRight:4 }}>◈</span>}
+                    {f === 'Diamond' && <span style={{ color: GEM_COLORS.Diamond, marginRight:4 }}>◇</span>}
+                    {f}
+                  </button>
+                ))}
+              </div>
+
+              <div className="grid-4" style={{ gap:16 }}>
+                {filteredMarkets.map((m, i) => (
+                  <TradingCard key={m.id} market={m} index={i} onBuy={handleBuy} />
+                ))}
+              </div>
+              {filteredMarkets.length === 0 && (
+                <p style={{ fontFamily:'JetBrains Mono', fontSize:'.8rem', color:'var(--text-2)', textAlign:'center', padding:'40px 0' }}>No markets match this filter.</p>
+              )}
+            </div>
+
+            {/* Section C: Top Skills for Sale */}
+            <div>
+              <div style={{ marginBottom:24 }}>
+                <h2 style={{ fontFamily:'Archivo Black', fontSize:'1.3rem', color:'var(--text)', marginBottom:4 }}>Top Skills for Sale</h2>
+                <p style={{ fontFamily:'DM Sans', fontSize:'.82rem', color:'var(--text-2)' }}>
+                  Gem-priced, AI-audited. One-time purchase, yours forever.
+                </p>
+              </div>
+              <div className="grid-3" style={{ gap:16 }}>
+                {SALE_SKILLS.map((s, i) => (
+                  <SaleCard key={s.id} skill={s} index={i} onBuy={handleBuy} />
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <Footer />
+      </main>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

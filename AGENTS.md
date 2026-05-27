@@ -15,7 +15,7 @@
 
 ## Evolutionary Loop (infinite, autonomous)
 search_and_learn → brainstorm → design → critique → engineer →
-code → debug → validate → reflect → iterate → repeat
+code → debug → validate → reflect → search_and_learn → iterate → repeat
 
 ## Adding a new agent
 1. Define agent in this file with model, weight, output schema, system prompt

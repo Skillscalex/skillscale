@@ -2,12 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import {
-  Boxes,
   Code2,
   ExternalLink,
   Filter,
-  Github,
-  Menu,
   Package,
   Search,
   ShieldAlert,
@@ -242,7 +239,7 @@ export default function MarketplacePage() {
             <p>{selected.description}</p>
             {selected.installCommand && <code className="install-command">{selected.installCommand}</code>}
             <div className="detail-actions">
-              {selected.githubUrl && <a href={selected.githubUrl} target="_blank" rel="noreferrer"><Github size={17} /> GitHub</a>}
+              {selected.githubUrl && <a href={selected.githubUrl} target="_blank" rel="noreferrer"><Code2 size={17} /> GitHub</a>}
               {selected.packageUrl && <a href={selected.packageUrl} target="_blank" rel="noreferrer"><Code2 size={17} /> Package</a>}
               {selected.sourceUrls[0] && <a href={selected.sourceUrls[0]} target="_blank" rel="noreferrer"><ExternalLink size={17} /> Source</a>}
             </div>

@@ -2,27 +2,22 @@
 
 ## Assumptions
 
-- Source adapters should prefer structured data before HTML extraction.
-- Crawling must respect robots.txt, published indexes, rate limits, and source access controls.
-- Playwright extraction is a fallback, not the default path.
-- A source is not fully supported until it has a tested adapter and fixture coverage.
+- Structured extraction should be attempted before static HTML.
+- Playwright should remain fallback-only and not be required for MVP.
+- Robots and rate limits must apply to live runs.
 
 ## Implementation Choices
 
-- Use a common adapter interface for discovery, fetching, extraction, normalization, checkpoints, and rate-limit metadata.
-- Implement resumable runs through `sync_state` checkpoints and crawl run status transitions.
-- Store raw payloads before normalization so failed normalization does not lose source evidence.
-- Use retries with bounded backoff for transient fetch failures and persist failures to crawl error records.
-- Classify extraction methods explicitly: API, registry, GitHub, sitemap, static HTML, embedded JSON, or Playwright.
+- Added `SourceAdapter` interface with discovery, fetch, extract, normalize, checkpoint methods, rate limits, and incremental support.
+- Implemented generic adapters for primary and optional sources.
+- Added extractors for registry JSON, GitHub markdown, embedded JSON, sitemap URLs, and static HTML.
+- Added retry handling and `crawl_errors` persistence.
 
 ## Risks
 
-- Public websites may change markup without notice.
-- Some listed sources may expose no reliable structured data and may only be suitable for partial support.
-- Robots.txt or rate limits may restrict crawl depth or frequency.
-- GitHub API rate limits may apply if unauthenticated requests are used.
+- Live source DOMs may need source-specific selectors after the first production dry run.
+- GitHub raw branch names may differ for some optional repos.
 
 ## Validation Results
 
-- Pending. Add fixture-backed adapter tests for every source claimed as supported.
-- Pending. Confirm ingestion writes raw items and checkpoints before marking any source adapter complete.
+- Fixture tests cover JSON, embedded JSON, static HTML, markdown, malformed HTML, missing fields, unknown types, duplicates, retries, and checkpoints.

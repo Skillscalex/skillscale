@@ -3,6 +3,10 @@
     {
       "path": "/api/audit",
       "schedule": "0 0 * * 0"
+    },
+    {
+      "path": "/api/admin/ingest/status",
+      "schedule": "10 7 * * *"
     }
   ]
 }

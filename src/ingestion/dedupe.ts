@@ -8,7 +8,7 @@ export function duplicateSignals(items: NormalizedComponent[]): DuplicateCandida
     if (!key) return;
     const normalizedKey = key.toLowerCase().trim();
     const prev = seen.get(`${reason}:${normalizedKey}`);
-    if (prev && prev.canonicalSlug !== item.canonicalSlug) {
+    if (prev) {
       candidates.push({ leftSlug: prev.canonicalSlug, rightSlug: item.canonicalSlug, reason, confidence });
     } else {
       seen.set(`${reason}:${normalizedKey}`, item);

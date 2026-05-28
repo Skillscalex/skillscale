@@ -57,16 +57,6 @@ await test("dedupe marks candidates without merging them", async () => {
   assert.equal(duplicateSignals(normalized).length >= 1, true);
 });
 
-await test("checkpoint resume and failed fetch retry behavior are wired through storage", async () => {
-  const storage = new MemoryStorage();
-  const adapter = new FixtureAdapter();
-  const result = await runIngestion({ source: adapter.sourceName, storage, adapters: [adapter] });
-  assert.equal(result.results.length, 1);
-  assert.equal(storage.rawItems.length, 1);
-  assert.equal(Object.keys(storage.checkpoints).length, 1);
-  assert.equal(storage.errors.length, 1);
-});
-
 class FixtureAdapter implements SourceAdapter {
   sourceName = "fixture-source";
   baseUrl = "https://fixture.test";
@@ -108,3 +98,13 @@ class MemoryStorage implements IngestionStorage {
   async getComponent() { return null; }
   async listSources() { return this.sources; }
 }
+
+await test("checkpoint resume and failed fetch retry behavior are wired through storage", async () => {
+  const storage = new MemoryStorage();
+  const adapter = new FixtureAdapter();
+  const result = await runIngestion({ source: adapter.sourceName, storage, adapters: [adapter] });
+  assert.equal(result.results.length, 1);
+  assert.equal(storage.rawItems.length, 1);
+  assert.equal(Object.keys(storage.checkpoints).length, 1);
+  assert.equal(storage.errors.length, 1);
+});

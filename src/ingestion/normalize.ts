@@ -3,7 +3,7 @@ import type { ComponentType, NormalizedComponent, RawSourceItem } from "./types"
 const TYPE_KEYWORDS: Array<[ComponentType, RegExp]> = [
   ["mcp_server", /\b(mcp|model context protocol)\b/i],
   ["lsp_server", /\b(lsp|language server)\b/i],
-  ["slash_command", /\bslash command|\/[a-z0-9_-]+/i],
+  ["slash_command", /\bslash command|(?:^|\s)\/[a-z0-9_-]+/i],
   ["command", /\bcommand\b/i],
   ["hook", /\bhook\b/i],
   ["subagent", /\bsub-?agent\b/i],

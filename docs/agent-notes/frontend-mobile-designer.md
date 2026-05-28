@@ -2,26 +2,21 @@
 
 ## Assumptions
 
-- The discovery experience should preserve a premium SaaS feel while becoming usable on narrow mobile screens.
-- Navigation below 768px should use a hamburger trigger and side drawer.
-- Discovery cards should avoid horizontal overflow and reflow from one column on narrow screens to wider grids on tablet and desktop.
-- Detail content should be available without navigating away from search results.
+- The marketplace route is the right first discovery surface.
+- Desktop layout should remain information-dense while mobile prioritizes one-column cards and drawer controls.
 
 ## Implementation Choices
 
-- Use responsive tabs for component groups: All, Plugins, Skills, Agents, Commands, Hooks, MCP Servers, LSP Servers, Templates, Marketplaces, Themes / Styles, and More.
-- Use a sticky safe-area-aware top bar with 44px minimum tap targets.
-- Use mobile-first grid rules with one column on narrow screens, two columns on larger mobile/tablet, and multi-column desktop layouts.
-- Put provenance, source links, install commands, tags, timestamps, and risk notes in a detail drawer or modal.
-- Keep filters compact on mobile by using drawer controls for type, category, source, and sort.
+- Replaced the marketplace with component discovery tabs, search, filters, sorting, responsive card grid, and detail drawer.
+- Added mobile filter drawer and hamburger side drawer navigation.
+- Used CSS breakpoints for 360, 390, 430, 768, 1024, and desktop coverage.
+- Kept tap targets at least 44px through CSS and `min-h-11` utilities.
 
 ## Risks
 
-- Dense source metadata can overflow cards if not truncated and moved into detail views.
-- Drawer stacking with sticky nav can create focus or scroll traps if not tested.
-- Existing desktop marketplace behavior may regress if responsive rules are too broad.
+- Browser screenshot validation depends on Playwright, which is not currently installed.
+- API-backed category/source filter options are derived from the current result set for MVP.
 
 ## Validation Results
 
-- Pending. Do not ship UI changes until breakpoints are checked at 360px, 390px, 430px, 768px, 1024px, and desktop.
-- Pending. Add Playwright or equivalent viewport tests for mobile navigation, filters, grid, and detail drawer.
+- Added `npm run test:e2e:mobile` smoke checks for mobile CSS and drawer affordances.

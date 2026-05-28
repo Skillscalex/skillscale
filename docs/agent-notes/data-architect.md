@@ -2,27 +2,23 @@
 
 ## Assumptions
 
-- The ingestion system should use the repository's existing database stack when present.
-- Raw source records and normalized components must both be retained across sync runs.
-- Disappearing source records are stale/missing signals, not delete signals.
-- Every source-derived record requires provenance: source, URL, crawl run, hashes, extraction method, confidence, and first/last seen timestamps.
+- Supabase/Postgres is the production database because the repo already has Supabase migrations and clients.
+- Local development may not have Supabase credentials, so ingestion needs a local fallback.
+- Components must not be deleted when a source changes or temporarily fails.
 
 ## Implementation Choices
 
-- Model ingestion around append-friendly crawl runs, raw item preservation, normalized component upserts, and component version snapshots.
-- Add indexes for discovery filters, recency sorting, popularity sorting, canonical slug lookup, and full-text search.
-- Preserve raw payload JSON and optional extracted text separately from normalized fields.
-- Use content hashes and normalized hashes to decide whether to create a new version snapshot.
-- Track missing items with flags and timestamps instead of deleting normalized records.
+- Added `supabase/002_component_ingestion.sql` with source registry, crawl runs, raw items, normalized components, versions, errors, and sync state.
+- Added full-text search and requested indexes for type, marketplace, author, timestamps, counts, and slug.
+- Kept raw data separate from normalized data to preserve provenance and no-loss history.
+- Added local JSON storage fallback at `.ingestion-cache/local-store.json`.
 
 ## Risks
 
-- Multiple sources may describe the same component with conflicting metadata.
-- Fuzzy duplicate detection can over-merge records if automated too aggressively.
-- Existing Supabase projects may require manual migration ordering if prior migrations were applied outside this repo.
-- Full-text and array indexing choices may need tuning after real crawl volume is known.
+- Supabase detail API does not yet join raw item provenance back into component detail records.
+- Stale marking is schema-ready but intentionally conservative until source adapters can confirm complete inventories.
 
 ## Validation Results
 
-- Pending. Validate migrations with local or staging Supabase before shipping ingestion changes.
-- Pending. Confirm raw data preservation and checkpoint tables exist before enabling any crawler run.
+- Typecheck/build pending final QA run.
+- Unit tests cover stable hashing, normalization, dedupe candidates, and checkpoint persistence.

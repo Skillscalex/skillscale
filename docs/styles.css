@@ -599,6 +599,52 @@ button { cursor: pointer; font-family: inherit; }
   background: rgba(255,252,247,0.68) !important;
   box-shadow: inset 0 1px 1px rgba(255,255,255,1), 0 2px 20px rgba(0,0,0,0.09) !important;
 }
+[data-theme="light"] .hero-section {
+  --text-hero: #181310;
+}
+[data-theme="light"] .hero-video-wrap video {
+  filter: saturate(0.65) contrast(0.78) brightness(1.18);
+  opacity: 0.34;
+}
+[data-theme="light"] .hero-overlay {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(255,255,255,0.99) 0%, rgba(255,255,255,0.98) 42%, rgba(255,255,255,0.94) 72%, rgba(255,255,255,0.88) 100%),
+    linear-gradient(180deg, rgba(255,252,248,0.94), rgba(253,250,245,0.97));
+}
+[data-theme="light"] .hero-content::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(880px, calc(100% - 28px));
+  height: min(470px, calc(100% - 120px));
+  transform: translate(-50%, -46%);
+  z-index: 0;
+  border-radius: 32px;
+  background: rgba(255,255,255,0.78);
+  box-shadow: 0 24px 100px rgba(255,255,255,0.88);
+  pointer-events: none;
+}
+[data-theme="light"] .hero-content > * {
+  position: relative;
+  z-index: 1;
+}
+[data-theme="light"] .hero-content .t-display {
+  color: #14100d !important;
+  text-shadow: 0 2px 18px rgba(255,255,255,0.88);
+}
+[data-theme="light"] .hero-section .badge span:not(.badge-chip) {
+  color: rgba(26,20,14,0.82) !important;
+}
+[data-theme="light"] .hero-section a[href="skills.html"] {
+  color: rgba(26,20,14,0.92) !important;
+}
+[data-theme="light"] .hero-section a[href="mcps.html"] {
+  color: rgba(26,20,14,0.72) !important;
+}
+[data-theme="light"] .hero-section .lg {
+  background: rgba(255,255,255,0.78);
+}
 [data-theme="light"] .hero-stat-num  { color: #1A1412 !important; }
 [data-theme="light"] .hero-stat-label { color: rgba(26,20,14,0.65) !important; }
 [data-theme="light"] .hero-badge-text { color: rgba(26,20,14,0.82) !important; }

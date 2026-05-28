@@ -139,13 +139,13 @@ function FadingVideo({ src, className, style }) {
 /* ====================================================
    BlurText — word-by-word blur-in animation
    ==================================================== */
-function BlurText({ text, className }) {
+function BlurText({ text, className, style }) {
   const ref   = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-10%' });
   const words = text.split(' ');
 
   return (
-    <p ref={ref} style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', rowGap: '0.1em' }} className={className}>
+    <p ref={ref} style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', rowGap: '0.1em', ...style }} className={className}>
       {words.map((word, i) => (
         <motion.span
           key={i}

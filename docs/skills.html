@@ -40,6 +40,31 @@
 const { useState, useEffect, useRef, useCallback } = React;
 const { motion, useInView, AnimatePresence } = window.Motion;
 
+function getApiBaseCandidates() {
+  const bases = [];
+  const origin = window.location.origin;
+  if (origin && origin !== 'null' && !origin.includes('github.io')) bases.push(origin);
+  if (origin.includes('-3000.app.github.dev')) bases.push(origin);
+  bases.push('http://localhost:3000');
+  bases.push('http://127.0.0.1:3000');
+  return [...new Set(bases)];
+}
+
+async function fetchSkillsSearch(params) {
+  const path = `/api/v1/skills/search?${params.toString()}`;
+  let lastError = null;
+  for (const base of getApiBaseCandidates()) {
+    try {
+      const resp = await fetch(`${base}${path}`);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      return await resp.json();
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError || new Error('Skills API unavailable');
+}
+
 /* ===== GitHub icon ===== */
 function GitHubIcon({ size=14 }) {
   return (
@@ -256,8 +281,8 @@ function ReviewsSection({ skill }) {
 function TrendingRow({ onSelect }) {
   const [trending, setTrending] = useState([]);
   useEffect(() => {
-    fetch('/api/v1/skills/search?q=software+development&limit=6&page=1')
-      .then(r => r.json())
+    const params = new URLSearchParams({ q:'software development', limit:'6', page:'1' });
+    fetchSkillsSearch(params)
       .then(d => { if (d.success && d.data?.skills) setTrending(d.data.skills.slice(0,6)); })
       .catch(() => {});
   }, []);
@@ -802,10 +827,8 @@ function SkillsPane({ occupation, query, searchQ, onSelect }) {
     if (!effectiveQuery) return;
     setLoading(true);
     setError(null);
-    const base = window.location.protocol === 'file:' ? 'https://skillsmp.com' : '';
-    const url = `${base}/api/v1/skills/search?q=${encodeURIComponent(effectiveQuery)}&limit=${LIMIT}&page=${page}&sortBy=stars`;
-    fetch(url)
-      .then(r => r.json())
+    const params = new URLSearchParams({ q: effectiveQuery, limit: String(LIMIT), page: String(page), sortBy: 'stars' });
+    fetchSkillsSearch(params)
       .then(data => {
         if (data.success) {
           setSkills(data.data.skills);
@@ -814,7 +837,7 @@ function SkillsPane({ occupation, query, searchQ, onSelect }) {
           setError('API error');
         }
       })
-      .catch(() => setError('Could not reach skillsmp.com — check your connection.'))
+      .catch(() => setError('Could not load the live catalog.'))
       .finally(() => setLoading(false));
   }, [effectiveQuery, page]);
 

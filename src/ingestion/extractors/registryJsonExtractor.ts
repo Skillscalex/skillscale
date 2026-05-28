@@ -7,15 +7,23 @@ export function extractRegistryJson(args: {
   marketplaceName?: string;
 }): RawSourceItem[] {
   const parsed = JSON.parse(args.body) as unknown;
+  const registry = parsed as {
+    items?: unknown[];
+    plugins?: unknown[];
+    agents?: unknown[];
+    data?: { skills?: unknown[] };
+  };
   const records = Array.isArray(parsed)
     ? parsed
-    : Array.isArray((parsed as { items?: unknown[] }).items)
-      ? (parsed as { items: unknown[] }).items
-      : Array.isArray((parsed as { plugins?: unknown[] }).plugins)
-        ? (parsed as { plugins: unknown[] }).plugins
-        : Array.isArray((parsed as { agents?: unknown[] }).agents)
-          ? (parsed as { agents: unknown[] }).agents
-          : [parsed];
+    : Array.isArray(registry.items)
+      ? registry.items
+      : Array.isArray(registry.data?.skills)
+        ? registry.data.skills
+        : Array.isArray(registry.plugins)
+          ? registry.plugins
+          : Array.isArray(registry.agents)
+            ? registry.agents
+            : [parsed];
 
   return records
     .filter((record): record is Record<string, unknown> => Boolean(record && typeof record === "object"))

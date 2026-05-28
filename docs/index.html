@@ -340,24 +340,6 @@ function HeroSection() {
           ))}
         </motion.div>
       </div>
-
-      {/* Partners strip */}
-      <motion.div
-        initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 1.45 }}
-        style={{ position: 'relative', zIndex: 10, padding: '0 24px 32px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}
-      >
-        <div className="lg" style={{ borderRadius: 9999, padding: '5px 16px' }}>
-          <span style={{ fontFamily: 'JetBrains Mono', fontSize: '.65rem', color: 'rgba(255,255,255,0.7)' }}>
-            Data from
-          </span>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 40, flexWrap: 'wrap', justifyContent: 'center' }}>
-          {['skillsmp.com', 'Anthropic', 'Claude.ai', 'GitHub', 'SOC/BLS'].map(p => (
-            <span key={p} className="partner-name" style={{ fontSize: '1.15rem' }}>{p}</span>
-          ))}
-        </div>
-      </motion.div>
     </section>
   );
 }

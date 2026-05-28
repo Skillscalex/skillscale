@@ -160,7 +160,7 @@ export default function MarketplacePage() {
         <div>
           <div className="discovery-kicker"><Sparkles size={15} /> Claude ecosystem discovery</div>
           <h1>AI Components</h1>
-          <p>Search plugins, skills, agents, MCP servers, commands, hooks, templates, and marketplaces with provenance preserved from every crawl.</p>
+          <p>Search plugins, skills, agents, MCP servers, commands, hooks, templates, and marketplaces in one organized discovery space.</p>
         </div>
         <div className="discovery-stats" aria-label="Discovery statistics">
           <span>{count}</span>

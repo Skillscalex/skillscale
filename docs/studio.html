@@ -53,8 +53,15 @@ const { useState, useEffect, useRef, useCallback } = React;
 const { motion, AnimatePresence } = window.Motion;
 
 /* ── API config ─────────────────────────────────────────────────── */
-const API_BASE_URL = 'https://expert-couscous-q66rp9wqpp4fjw-3000.app.github.dev';
-// Override for local dev: const API_BASE_URL = 'http://localhost:3000';
+function getApiBaseCandidates() {
+  const bases = [];
+  const origin = window.location.origin;
+  if (origin && origin !== 'null' && !origin.includes('github.io')) bases.push(origin);
+  if (origin.includes('-3000.app.github.dev')) bases.push(origin);
+  bases.push('http://localhost:3000');
+  bases.push('http://127.0.0.1:3000');
+  return [...new Set(bases)];
+}
 
 /* ── Agent data ─────────────────────────────────────────────────── */
 const AGENT_GROUPS = [
@@ -115,48 +122,77 @@ function now(){return new Date().toLocaleTimeString('en-US',{hour:'2-digit',minu
 
 /* ── Streaming fetch ────────────────────────────────────────────── */
 async function fetchAgentStream({ message, agentId, conversationHistory, onToken, onDone, onError }) {
-  try {
-    const resp = await fetch(`${API_BASE_URL}/api/studio/chat`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message, agentId, conversationHistory }),
-    });
+  const bases = getApiBaseCandidates();
+  let lastError = null;
 
-    if (!resp.ok) {
-      const errText = await resp.text().catch(() => `HTTP ${resp.status}`);
-      throw new Error(errText);
-    }
+  for (const base of bases) {
+    try {
+      const resp = await fetch(`${base}/api/studio/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message, agentId, conversationHistory }),
+      });
 
-    const reader = resp.body.getReader();
-    const decoder = new TextDecoder();
-    let buffer = '';
+      if (!resp.ok) {
+        const errText = await resp.text().catch(() => `HTTP ${resp.status}`);
+        throw new Error(errText);
+      }
 
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
+      const reader = resp.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
 
-      buffer += decoder.decode(value, { stream: true });
-      const lines = buffer.split('\n');
-      buffer = lines.pop() ?? '';
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
 
-      for (const line of lines) {
-        if (!line.startsWith('data: ')) continue;
-        const raw = line.slice(6).trim();
-        try {
-          const parsed = JSON.parse(raw);
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() ?? '';
+
+        for (const line of lines) {
+          if (!line.startsWith('data: ')) continue;
+          const raw = line.slice(6).trim();
+          let parsed;
+          try {
+            parsed = JSON.parse(raw);
+          } catch {
+            continue;
+          }
           if (parsed.type === 'token' && parsed.content) {
             onToken(parsed.content);
           } else if (parsed.type === 'done') {
             onDone(parsed.usage ?? null);
           } else if (parsed.type === 'error') {
-            onError(new Error(parsed.error || 'Agent error'));
+            throw new Error(parsed.error || 'Agent error');
           }
-        } catch { /* malformed chunk */ }
+        }
       }
+      return;
+    } catch (err) {
+      lastError = err;
     }
-  } catch (err) {
-    onError(err);
   }
+
+  streamLocalAgent({ message, agentId, onToken, onDone, onError, error: lastError });
+}
+
+function streamLocalAgent({ message, agentId, onToken, onDone, onError, error }) {
+  const agent = ALL_AGENTS.find(a => a.id === agentId) || ALL_AGENTS[0];
+  const isHermes = agentId === 'hermes';
+  const reply = isHermes
+    ? `Hermes is active in local Studio mode. The live model endpoint is unreachable, so I will keep the conversation moving here.\n\nOn "${message.trim()}": start by separating the question into values, facts, and action. Values tell you what matters, facts tell you what can be checked, and action turns the idea into evidence.`
+    : `${agent.name} is active in local Studio mode while the live API is unreachable.\n\nI received: "${message.trim()}". Tell me the outcome you want, and I will help you turn it into the next concrete step.`;
+  const tokens = reply.match(/\S+\s*/g) || [reply];
+  let index = 0;
+  const timer = setInterval(() => {
+    if (index < tokens.length) {
+      onToken(tokens[index++]);
+      return;
+    }
+    clearInterval(timer);
+    onDone({ local: true, error: error?.message || 'API unavailable' });
+  }, 24);
 }
 
 /* ── Nav ────────────────────────────────────────────────────────── */

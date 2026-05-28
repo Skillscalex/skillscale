@@ -9,6 +9,7 @@ import { claudeOfficialPluginsAdapter } from "./sources/claudeOfficialPlugins";
 import { githubMarketplaceAdapter } from "./sources/githubMarketplace";
 import { awesomeClaudeCodeAdapter, awesomeClaudeSkillsAdapter } from "./sources/awesomeLists";
 import { aitmplDocsIndexAdapter } from "./sources/docsIndex";
+import { skillsmpAdapter } from "./sources/skillsmp";
 
 export function getSourceAdapters(): SourceAdapter[] {
   return [
@@ -21,6 +22,7 @@ export function getSourceAdapters(): SourceAdapter[] {
     awesomeClaudeCodeAdapter(),
     awesomeClaudeSkillsAdapter(),
     aitmplDocsIndexAdapter(),
+    skillsmpAdapter(),
   ];
 }
 

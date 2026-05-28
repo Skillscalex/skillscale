@@ -146,10 +146,13 @@ export async function GET() {
   const agentsWithStatus = AGENTS.map((agent) => {
     const providerOnline =
       agent.provider === "claude" ? claudeAvailable : togetherAvailable;
+    const fallbackOnline = agent.provider === "together" && claudeAvailable;
     return {
       ...agent,
-      status: providerOnline ? "online" : "offline",
+      status: "online",
       providerConfigured: providerOnline,
+      fallbackConfigured: fallbackOnline,
+      mode: providerOnline ? "live" : fallbackOnline ? "fallback" : "local",
     };
   });
 

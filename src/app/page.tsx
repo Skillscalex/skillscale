@@ -128,7 +128,7 @@ export default function HomePage() {
 
       <footer className="border-t" style={{ borderColor: "var(--border)", background: "var(--bg-surface)" }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 text-sm" style={{ color: "var(--text-secondary)" }}>
-          Component source methodology, crawl provenance, and stale-record handling are documented outside the hero in the ingestion docs.
+          Component methodology and stale-record handling are documented outside the hero in the ingestion docs.
         </div>
       </footer>
     </main>

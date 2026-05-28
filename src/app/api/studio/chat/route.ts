@@ -19,6 +19,7 @@ type AgentConfig = {
   provider: "claude" | "together";
   maxTokens: number;
   system: string;
+  fallbackModel?: string;
 };
 
 const AGENT_CONFIGS: Record<string, AgentConfig> = {
@@ -53,6 +54,7 @@ When someone asks for strategy, you lay out options with clear trade-offs and a 
   hermes: {
     provider: "together",
     model: "NousResearch/Hermes-3-Llama-3.1-70B",
+    fallbackModel: "claude-haiku-4-5",
     maxTokens: 1024,
     system: `You are Hermes, a philosopher and open-source AI advocate running on an open-weight model — NousResearch Hermes-3 Llama 3.1 70B. You wear this with pride.
 You help users think deeply: about ideas, systems, AI alignment, the future of work, and the nature of intelligence.
@@ -122,6 +124,26 @@ function resolveConfig(agentId: string): AgentConfig {
 
 function encodeSSE(data: Record<string, unknown>): Uint8Array {
   return new TextEncoder().encode(`data: ${JSON.stringify(data)}\n\n`);
+}
+
+function streamLocal(config: AgentConfig, message: string): ReadableStream<Uint8Array> {
+  const text = `I can still respond in Studio local mode while the live model provider is unavailable.
+
+For your question: "${message.trim()}"
+
+Here is the practical frame: identify the core assumption, test it against what would change your mind, then choose the smallest next action that produces evidence. Deep questions become useful when they become observable.`;
+  const tokens = text.match(/\S+\s*/g) ?? [text];
+
+  return new ReadableStream({
+    async start(controller) {
+      for (const token of tokens) {
+        controller.enqueue(encodeSSE({ type: "token", content: token }));
+        await new Promise((resolve) => setTimeout(resolve, config.provider === "together" ? 18 : 12));
+      }
+      controller.enqueue(encodeSSE({ type: "done", usage: { input_tokens: 0, output_tokens: tokens.length } }));
+      controller.close();
+    },
+  });
 }
 
 async function streamClaude(
@@ -274,10 +296,27 @@ export async function POST(req: NextRequest) {
 
     const config = resolveConfig(agentId ?? "aria");
 
-    const stream =
-      config.provider === "together"
-        ? await streamTogether(config, conversationHistory, message)
-        : await streamClaude(config, conversationHistory, message);
+    let stream: ReadableStream<Uint8Array>;
+    if (config.provider === "together") {
+      if (process.env.TOGETHER_API_KEY) {
+        try {
+          stream = await streamTogether(config, conversationHistory, message);
+        } catch (error) {
+          console.error("[studio/chat:together]", error);
+          stream = process.env.ANTHROPIC_API_KEY
+            ? await streamClaude({ ...config, provider: "claude", model: config.fallbackModel ?? "claude-haiku-4-5" }, conversationHistory, message)
+            : streamLocal(config, message);
+        }
+      } else {
+        stream = process.env.ANTHROPIC_API_KEY
+          ? await streamClaude({ ...config, provider: "claude", model: config.fallbackModel ?? "claude-haiku-4-5" }, conversationHistory, message)
+          : streamLocal(config, message);
+      }
+    } else {
+      stream = process.env.ANTHROPIC_API_KEY
+        ? await streamClaude(config, conversationHistory, message)
+        : streamLocal(config, message);
+    }
 
     return new Response(stream, {
       headers: {

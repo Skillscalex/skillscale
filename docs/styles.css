@@ -648,5 +648,5 @@ button { cursor: pointer; font-family: inherit; }
 [data-theme="light"] .hero-stat-num  { color: #1A1412 !important; }
 [data-theme="light"] .hero-stat-label { color: rgba(26,20,14,0.65) !important; }
 [data-theme="light"] .hero-badge-text { color: rgba(26,20,14,0.82) !important; }
-[data-theme="light"] .hero-sub-text  { color: rgba(26,20,14,0.78) !important; }
+[data-theme="light"] .hero-sub-text  { color: rgba(20,16,13,0.82) !important; }
 [data-theme="light"] .hero-partner-name { color: rgba(26,20,14,0.68) !important; }

@@ -13,10 +13,12 @@
 
 import { createClient } from "@supabase/supabase-js";
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
+function getSupabaseSkillsClient() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key || url.includes("your-project")) return null;
+  return createClient(url, key, { auth: { persistSession: false } });
+}
 
 export interface NormalisedSkill {
   id: string;
@@ -104,6 +106,15 @@ export async function syncSkillsDatabase(): Promise<{
   updated: number;
   errors: string[];
 }> {
+  const supabase = getSupabaseSkillsClient();
+  if (!supabase) {
+    return {
+      inserted: 0,
+      updated: 0,
+      errors: ["Supabase is not configured. Set NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY."],
+    };
+  }
+
   const errors: string[] = [];
   let inserted = 0;
   let updated = 0;
@@ -167,6 +178,9 @@ export async function getAllSkills(opts?: {
   source?: string;
   limit?: number;
 }): Promise<NormalisedSkill[]> {
+  const supabase = getSupabaseSkillsClient();
+  if (!supabase) return [];
+
   let query = supabase
     .from("skills")
     .select("*")

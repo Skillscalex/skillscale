@@ -12,6 +12,7 @@
     "ingest:source": "jiti src/ingestion/cli.ts",
     "ingest:dry-run": "jiti src/ingestion/cli.ts --dry-run",
     "ingest:resume": "jiti src/ingestion/cli.ts --resume",
+    "agents:dev": "jiti src/agents/server.ts",
     "test:ingestion": "jiti src/ingestion/__tests__/ingestion.test.ts",
     "test:e2e:mobile": "jiti src/ingestion/__tests__/mobile-layout.test.ts"
   },

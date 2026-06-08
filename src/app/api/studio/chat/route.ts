@@ -1,7 +1,10 @@
 import { NextRequest } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
 
-const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY! });
+function getAnthropicClient() {
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  return apiKey ? new Anthropic({ apiKey }) : null;
+}
 
 type ConversationMessage = {
   role: "user" | "assistant";
@@ -159,6 +162,11 @@ async function streamClaude(
   return new ReadableStream({
     async start(controller) {
       try {
+        const anthropic = getAnthropicClient();
+        if (!anthropic) {
+          throw new Error("ANTHROPIC_API_KEY is not configured");
+        }
+
         const stream = anthropic.messages.stream({
           model: config.model,
           max_tokens: config.maxTokens,

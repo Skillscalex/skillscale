@@ -1,0 +1,4156 @@
+{
+  "sources": [
+    {
+      "name": "skillsmp",
+      "baseUrl": "https://skillsmp.com",
+      "sourceType": "registry_json",
+      "enabled": true,
+      "rateLimitPerMinute": 20,
+      "id": "src_1780040516494_hovfpef2"
+    }
+  ],
+  "runs": [
+    {
+      "id": "run_1780040516536_7667five",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "sourceName": "skillsmp",
+      "startedAt": "2026-05-29T07:41:56.536Z",
+      "status": "partial",
+      "pagesSeen": 0,
+      "itemsExtracted": 0,
+      "errorsCount": 5,
+      "configJson": {
+        "dryRun": true,
+        "resume": false,
+        "checkpoint": {}
+      },
+      "completedAt": "2026-05-29T07:42:09.531Z"
+    },
+    {
+      "id": "run_1780042634014_zc6od16p",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "sourceName": "skillsmp",
+      "startedAt": "2026-05-29T08:17:14.014Z",
+      "status": "partial",
+      "pagesSeen": 0,
+      "itemsExtracted": 0,
+      "errorsCount": 5,
+      "configJson": {
+        "dryRun": true,
+        "resume": false,
+        "checkpoint": {}
+      },
+      "completedAt": "2026-05-29T08:17:14.487Z"
+    },
+    {
+      "id": "run_1780042699911_w8jgx08t",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "sourceName": "skillsmp",
+      "startedAt": "2026-05-29T08:18:19.911Z",
+      "status": "completed",
+      "pagesSeen": 12,
+      "itemsExtracted": 54,
+      "errorsCount": 0,
+      "configJson": {
+        "dryRun": true,
+        "resume": false,
+        "checkpoint": {}
+      },
+      "completedAt": "2026-05-29T08:18:54.253Z"
+    },
+    {
+      "id": "run_1780042741478_2kt6q136",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "sourceName": "skillsmp",
+      "startedAt": "2026-05-29T08:19:01.478Z",
+      "status": "partial",
+      "pagesSeen": 0,
+      "itemsExtracted": 0,
+      "errorsCount": 12,
+      "configJson": {
+        "dryRun": false,
+        "resume": false,
+        "checkpoint": {}
+      },
+      "completedAt": "2026-05-29T08:19:35.358Z"
+    },
+    {
+      "id": "run_1780042785728_43hlhcr1",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "sourceName": "skillsmp",
+      "startedAt": "2026-05-29T08:19:45.728Z",
+      "status": "partial",
+      "pagesSeen": 0,
+      "itemsExtracted": 0,
+      "errorsCount": 12,
+      "configJson": {
+        "dryRun": false,
+        "resume": true,
+        "checkpoint": {
+          "lastUrl": "https://skillsmp.com/categories/tools",
+          "lastSuccessfulFetchAt": "2026-05-29T08:18:54.248Z"
+        }
+      },
+      "completedAt": "2026-05-29T08:20:19.620Z"
+    }
+  ],
+  "rawItems": [
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com",
+      "canonicalUrl": "https://skillsmp.com",
+      "rawTitle": "",
+      "rawDescription": "",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Skills Marketplace",
+            "alternateName": "SkillsMP",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "url": "https://skillsmp.com/about"
+            },
+            "sameAs": [
+              "https://x.com/God_I_13"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Skills Marketplace",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT",
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://skillsmp.com/search?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042701270_se43gg4v",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8",
+      "firstSeenAt": "2026-05-29T08:18:21.270Z",
+      "lastSeenAt": "2026-05-29T08:18:21.270Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com",
+      "canonicalUrl": "https://skillsmp.com",
+      "rawTitle": "",
+      "rawDescription": "",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "SkillsMP",
+            "alternateName": "Skills Marketplace",
+            "applicationCategory": "DeveloperApplication",
+            "applicationSubCategory": "AI Agent Skills Marketplace",
+            "operatingSystem": "Any (Web)",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT.",
+            "inLanguage": "en-US",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "url": "https://skillsmp.com/pricing"
+            },
+            "featureList": [
+              "Browse 1,526,098+ Claude Code skills",
+              "Keyword search with category and occupation filters",
+              "REST API with OpenAPI 3.0 spec",
+              "MCP (Model Context Protocol) server",
+              "Free API tier, no credit card required",
+              "9-language UI (en, zh, ja, ko, es, fr, de, pt, ar)"
+            ]
+          },
+          {
+            "@type": "CollectionPage",
+            "name": "Agent Skills Marketplace - Browse Skills from GitHub",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT. Find curated skills to supercharge your AI workflows.",
+            "url": "https://skillsmp.com",
+            "inLanguage": "en-US",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "h1",
+                "[data-speakable]"
+              ]
+            },
+            "mainEntity": {
+              "@type": "ItemList",
+              "numberOfItems": 1526098,
+              "name": "Agent Skills Collection"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://skillsmp.com"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What are Agent Skills?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Agent Skills are modular capabilities that extend AI coding assistants. Each skill consists of a SKILL.md file with instructions, plus optional scripts and templates. In December 2025, Anthropic released the Agent Skills specification as an open standard, and OpenAI adopted the same format for Codex CLI and ChatGPT. Skills are model-invoked—the AI automatically decides when to use them based on context."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I install an agent skill?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For Claude Code: Add to ~/.claude/skills/ (personal) or .claude/skills/ (project). For OpenAI Codex CLI: Add to ~/.codex/skills/. Both use the same SKILL.md format. Clone the GitHub repository and copy the skill folder to your chosen directory. The AI automatically discovers and loads skills from these locations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are these skills safe to use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Skills from this marketplace are sourced from public GitHub repositories. We filter out low-quality repos (minimum 2 stars) and scan for basic quality indicators, but you should always review the code before installing. Community skills should be treated like any open-source code—inspect before use."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use multiple skills together?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! Claude Code supports multiple skills simultaneously. Skills are modular and designed to work together. For example, you can combine a 'code-reviewer' skill with a 'git-automation' skill to automatically review and commit code changes. Claude intelligently selects the appropriate skills based on your request context."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I create and share my own skills?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! You can create custom Claude skills and share them on GitHub. Check out the skill-creator skill for detailed guidance on creating your own skills. The basic structure requires a SKILL.md file with instructions. You can also add optional scripts and templates."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do skills differ from slash commands?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Skills are model-invoked—Claude automatically decides when to use them based on context. Slash commands are user-invoked—you explicitly type the command to trigger them. Skills enable more intelligent, context-aware automation in your workflows."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How often are skills updated?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our scraper regularly syncs with GitHub to fetch the latest skills and updates. When a skill repository is updated on GitHub, the changes will appear on SkillsMP shortly after our next sync. You can see the last update timestamp on each skill card. We recommend checking back regularly for new skills and improvements to existing ones."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is this website affiliated with Anthropic or OpenAI?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No, SkillsMP is an independent community project. We aggregate and showcase agent skills from GitHub to make discovery easier. For official skills and documentation, refer to Anthropic's github.com/anthropics/skills or OpenAI's Codex documentation."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042701273_xvk2177o",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "720838ca43b25225d4d7b5c7dd71b837c80f53b202fb31b18ba13e1c74741914",
+      "firstSeenAt": "2026-05-29T08:18:21.273Z",
+      "lastSeenAt": "2026-05-29T08:18:21.273Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/developers",
+      "canonicalUrl": "https://skillsmp.com/developers",
+      "rawTitle": "Developer Portal",
+      "rawDescription": "— API docs, quickstart, and sandbox",
+      "rawPayload": {
+        "name": "Developer Portal",
+        "description": "— API docs, quickstart, and sandbox",
+        "url": "https://skillsmp.com/developers",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042703337_vc2opwwk",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "25179d24166b3f0dbfd8bd8998cc2348e3164d783ef2287cb436a9244d3fabd7",
+      "firstSeenAt": "2026-05-29T08:18:23.337Z",
+      "lastSeenAt": "2026-05-29T08:18:23.337Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/openapi.json",
+      "canonicalUrl": "https://skillsmp.com/openapi.json",
+      "rawTitle": "OpenAPI Spec",
+      "rawDescription": "— Auto-generated API specification",
+      "rawPayload": {
+        "name": "OpenAPI Spec",
+        "description": "— Auto-generated API specification",
+        "url": "https://skillsmp.com/openapi.json",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042703345_hh3w1s7i",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "e12dc5e4d29d4772fe30999705cda403a45247759f6fd2ebf2d199c63fa6dd8c",
+      "firstSeenAt": "2026-05-29T08:18:23.345Z",
+      "lastSeenAt": "2026-05-29T08:18:23.345Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/mcp",
+      "canonicalUrl": "https://skillsmp.com/mcp",
+      "rawTitle": "MCP Server",
+      "rawDescription": "— Model Context Protocol endpoint",
+      "rawPayload": {
+        "name": "MCP Server",
+        "description": "— Model Context Protocol endpoint",
+        "url": "https://skillsmp.com/mcp",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042703352_en8v1rlr",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "b273829dee68ee1ac7bd2b000866370446bfee3191460a65950abb7b91e6f831",
+      "firstSeenAt": "2026-05-29T08:18:23.352Z",
+      "lastSeenAt": "2026-05-29T08:18:23.352Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/.well-known/mcp",
+      "canonicalUrl": "https://skillsmp.com/.well-known/mcp",
+      "rawTitle": "MCP Manifest",
+      "rawDescription": "— MCP server discovery",
+      "rawPayload": {
+        "name": "MCP Manifest",
+        "description": "— MCP server discovery",
+        "url": "https://skillsmp.com/.well-known/mcp",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042703354_f0vnimre",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "09debb5d25435828d8dceec625919d5fa1722a09e60f31c5bee790c35f5cdc31",
+      "firstSeenAt": "2026-05-29T08:18:23.354Z",
+      "lastSeenAt": "2026-05-29T08:18:23.354Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/.well-known/agent-card.json",
+      "canonicalUrl": "https://skillsmp.com/.well-known/agent-card.json",
+      "rawTitle": "Agent Card",
+      "rawDescription": "— A2A capabilities",
+      "rawPayload": {
+        "name": "Agent Card",
+        "description": "— A2A capabilities",
+        "url": "https://skillsmp.com/.well-known/agent-card.json",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042703355_bbqhv3e4",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "9944391a6cd0ca9a6d0859907d5e9d956fcf7c9f1464b40f3c86e34986bb9244",
+      "firstSeenAt": "2026-05-29T08:18:23.356Z",
+      "lastSeenAt": "2026-05-29T08:18:23.356Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/llms-full.txt",
+      "canonicalUrl": "https://skillsmp.com/llms-full.txt",
+      "rawTitle": "Full Documentation",
+      "rawDescription": "— Complete docs in one file",
+      "rawPayload": {
+        "name": "Full Documentation",
+        "description": "— Complete docs in one file",
+        "url": "https://skillsmp.com/llms-full.txt",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042703358_w60gvhjf",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "49e2020d5cf4e47539538b206da2592b8b6eefdf5a015df460febe6cf50eb512",
+      "firstSeenAt": "2026-05-29T08:18:23.358Z",
+      "lastSeenAt": "2026-05-29T08:18:23.358Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories",
+      "canonicalUrl": "https://skillsmp.com/categories",
+      "rawTitle": "All Categories",
+      "rawDescription": "[By Occupation](https://skillsmp.com/occupations)",
+      "rawPayload": {
+        "name": "All Categories",
+        "description": "[By Occupation](https://skillsmp.com/occupations)",
+        "url": "https://skillsmp.com/categories",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042703362_swmytpg0",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "660ca8b2d483bd98810626c0c7be24fd7a044b69c4ba063d67436a4131bc4ce1",
+      "firstSeenAt": "2026-05-29T08:18:23.362Z",
+      "lastSeenAt": "2026-05-29T08:18:23.362Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/timeline",
+      "canonicalUrl": "https://skillsmp.com/timeline",
+      "rawTitle": "Timeline",
+      "rawDescription": "[Search](https://skillsmp.com/search)",
+      "rawPayload": {
+        "name": "Timeline",
+        "description": "[Search](https://skillsmp.com/search)",
+        "url": "https://skillsmp.com/timeline",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042703366_xkv7shy9",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "55c13f35169460d9c9f5ded16d653d2e62393e4693ba4dac6c0e259ca38dba4d",
+      "firstSeenAt": "2026-05-29T08:18:23.366Z",
+      "lastSeenAt": "2026-05-29T08:18:23.366Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/about",
+      "canonicalUrl": "https://skillsmp.com/about",
+      "rawTitle": "About",
+      "rawDescription": "[Documentation](https://skillsmp.com/docs)",
+      "rawPayload": {
+        "name": "About",
+        "description": "[Documentation](https://skillsmp.com/docs)",
+        "url": "https://skillsmp.com/about",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042703376_x7eyj96n",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "c1378c2fdcd6102d938a005620513e8272682a8a4db762492dfdb34212bce7a0",
+      "firstSeenAt": "2026-05-29T08:18:23.376Z",
+      "lastSeenAt": "2026-05-29T08:18:23.376Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/docs/api",
+      "canonicalUrl": "https://skillsmp.com/docs/api",
+      "rawTitle": "API Docs",
+      "rawDescription": "[Changelog](https://skillsmp.com/changelog)",
+      "rawPayload": {
+        "name": "API Docs",
+        "description": "[Changelog](https://skillsmp.com/changelog)",
+        "url": "https://skillsmp.com/docs/api",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042703379_m4x7epo1",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "921cc0c73bc12603d7522ff8dff9922209fdb2de4680030fda1034fde008e313",
+      "firstSeenAt": "2026-05-29T08:18:23.379Z",
+      "lastSeenAt": "2026-05-29T08:18:23.379Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/privacy",
+      "canonicalUrl": "https://skillsmp.com/privacy",
+      "rawTitle": "Privacy",
+      "rawDescription": "[Terms](https://skillsmp.com/terms)",
+      "rawPayload": {
+        "name": "Privacy",
+        "description": "[Terms](https://skillsmp.com/terms)",
+        "url": "https://skillsmp.com/privacy",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042703381_m8sqqiw6",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "80695054faad438a6364a31779ed3f9cc77d55edd44fe1f3ecbe4bdccb05b062",
+      "firstSeenAt": "2026-05-29T08:18:23.381Z",
+      "lastSeenAt": "2026-05-29T08:18:23.381Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/",
+      "canonicalUrl": "https://skillsmp.com/",
+      "rawTitle": "Homepage",
+      "rawDescription": "Search and browse all skills with keyword search and filters",
+      "rawPayload": {
+        "name": "Homepage",
+        "description": "Search and browse all skills with keyword search and filters",
+        "url": "https://skillsmp.com/",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706157_wyg2fzxp",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "77f159a040e0a099b7e68aec307eb0309dfba7becbab5eed10d6d33dacf8764f",
+      "firstSeenAt": "2026-05-29T08:18:26.157Z",
+      "lastSeenAt": "2026-05-29T08:18:26.157Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories",
+      "canonicalUrl": "https://skillsmp.com/categories",
+      "rawTitle": "Categories",
+      "rawDescription": "Browse skills organized by domain (Development, AI & ML, DevOps, etc.)",
+      "rawPayload": {
+        "name": "Categories",
+        "description": "Browse skills organized by domain (Development, AI & ML, DevOps, etc.)",
+        "url": "https://skillsmp.com/categories",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706159_oppsamnz",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "dcdd58759573f243a41979b2059e45822ac26c61cc54f75075989b0169801635",
+      "firstSeenAt": "2026-05-29T08:18:26.159Z",
+      "lastSeenAt": "2026-05-29T08:18:26.159Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/occupations",
+      "canonicalUrl": "https://skillsmp.com/occupations",
+      "rawTitle": "Occupations",
+      "rawDescription": "Browse skills by SOC occupation (Software Developers, Data Scientists, etc.)",
+      "rawPayload": {
+        "name": "Occupations",
+        "description": "Browse skills by SOC occupation (Software Developers, Data Scientists, etc.)",
+        "url": "https://skillsmp.com/occupations",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706161_8hoxqg2f",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "ed5e318e76beeca2c4fee70d252f79a8e2586101bacb043bddf40f9b92cd89c4",
+      "firstSeenAt": "2026-05-29T08:18:26.161Z",
+      "lastSeenAt": "2026-05-29T08:18:26.161Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/timeline",
+      "canonicalUrl": "https://skillsmp.com/timeline",
+      "rawTitle": "Timeline",
+      "rawDescription": "View skill updates and growth trends over time",
+      "rawPayload": {
+        "name": "Timeline",
+        "description": "View skill updates and growth trends over time",
+        "url": "https://skillsmp.com/timeline",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706163_bll7jwyk",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "e72c86fcc3ac92d644316598810cbb645f9da5a37ca781b0886fbdc5da9625fe",
+      "firstSeenAt": "2026-05-29T08:18:26.163Z",
+      "lastSeenAt": "2026-05-29T08:18:26.163Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/search",
+      "canonicalUrl": "https://skillsmp.com/search",
+      "rawTitle": "Search",
+      "rawDescription": "Advanced search with filters for marketplace.json, stars, and update time",
+      "rawPayload": {
+        "name": "Search",
+        "description": "Advanced search with filters for marketplace.json, stars, and update time",
+        "url": "https://skillsmp.com/search",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706164_54b69psx",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "3807fcadff8128a1ad48f60394713058325c6ada13c3043f27023d11e08de59e",
+      "firstSeenAt": "2026-05-29T08:18:26.164Z",
+      "lastSeenAt": "2026-05-29T08:18:26.164Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/changelog",
+      "canonicalUrl": "https://skillsmp.com/changelog",
+      "rawTitle": "Changelog",
+      "rawDescription": "Platform updates, new features, and improvements",
+      "rawPayload": {
+        "name": "Changelog",
+        "description": "Platform updates, new features, and improvements",
+        "url": "https://skillsmp.com/changelog",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706165_0vgi2kb1",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "4b5b9898a093558e0243c44020b508bf902fdf238bb12d83c2bbe18fc7a486b5",
+      "firstSeenAt": "2026-05-29T08:18:26.165Z",
+      "lastSeenAt": "2026-05-29T08:18:26.165Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/skills/{id}",
+      "canonicalUrl": "https://skillsmp.com/skills/{id}",
+      "rawTitle": "Skill Detail",
+      "rawDescription": "Individual skill pages with full details, README, installation instructions",
+      "rawPayload": {
+        "name": "Skill Detail",
+        "description": "Individual skill pages with full details, README, installation instructions",
+        "url": "https://skillsmp.com/skills/{id}",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706167_b1p7m4uy",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "f503e1c5dfdfb875e113e3047c7443c6baab209824c54be810da234a16a117b4",
+      "firstSeenAt": "2026-05-29T08:18:26.167Z",
+      "lastSeenAt": "2026-05-29T08:18:26.167Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/occupations/{slug}",
+      "canonicalUrl": "https://skillsmp.com/occupations/{slug}",
+      "rawTitle": "Occupation Detail",
+      "rawDescription": "Skills relevant to a specific occupation with SOC classification",
+      "rawPayload": {
+        "name": "Occupation Detail",
+        "description": "Skills relevant to a specific occupation with SOC classification",
+        "url": "https://skillsmp.com/occupations/{slug}",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706168_xiu1ztq3",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "f60ac2807f672ce17bcdda44e58a7a2e5f2e501533f21e94b7f560497cc09d42",
+      "firstSeenAt": "2026-05-29T08:18:26.168Z",
+      "lastSeenAt": "2026-05-29T08:18:26.168Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/favorites",
+      "canonicalUrl": "https://skillsmp.com/favorites",
+      "rawTitle": "Favorites",
+      "rawDescription": "Save and organize your favorite skills",
+      "rawPayload": {
+        "name": "Favorites",
+        "description": "Save and organize your favorite skills",
+        "url": "https://skillsmp.com/favorites",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706169_jp9rspd1",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "923718448f41c7f040168698d2158c48f0d3fddf3f2409b73873197c4d51233b",
+      "firstSeenAt": "2026-05-29T08:18:26.169Z",
+      "lastSeenAt": "2026-05-29T08:18:26.169Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/history",
+      "canonicalUrl": "https://skillsmp.com/history",
+      "rawTitle": "History",
+      "rawDescription": "Track your recently viewed skills",
+      "rawPayload": {
+        "name": "History",
+        "description": "Track your recently viewed skills",
+        "url": "https://skillsmp.com/history",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706170_mxs70sb2",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "0a5fe85a3c0b43e7592fe13365dd4f1e647101e85cb1107984130dd835bcb61e",
+      "firstSeenAt": "2026-05-29T08:18:26.170Z",
+      "lastSeenAt": "2026-05-29T08:18:26.170Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/docs",
+      "canonicalUrl": "https://skillsmp.com/docs",
+      "rawTitle": "Docs",
+      "rawDescription": "Getting started guide and official documentation links",
+      "rawPayload": {
+        "name": "Docs",
+        "description": "Getting started guide and official documentation links",
+        "url": "https://skillsmp.com/docs",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706172_tmmzc0mb",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "182ff8e4e1e313066a93344001de7ab3d4550bdea67e81fd16e446eca4e87032",
+      "firstSeenAt": "2026-05-29T08:18:26.172Z",
+      "lastSeenAt": "2026-05-29T08:18:26.172Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/docs/api",
+      "canonicalUrl": "https://skillsmp.com/docs/api",
+      "rawTitle": "API Docs",
+      "rawDescription": "REST API documentation with examples",
+      "rawPayload": {
+        "name": "API Docs",
+        "description": "REST API documentation with examples",
+        "url": "https://skillsmp.com/docs/api",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706175_zd2x099j",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "52f0bfb43348f7a2ce27344b00e4d6096b92086217851e319e885f68347aa406",
+      "firstSeenAt": "2026-05-29T08:18:26.175Z",
+      "lastSeenAt": "2026-05-29T08:18:26.175Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/developers",
+      "canonicalUrl": "https://skillsmp.com/developers",
+      "rawTitle": "Developer Portal",
+      "rawDescription": "Quickstart, MCP setup, sandbox, rate limits",
+      "rawPayload": {
+        "name": "Developer Portal",
+        "description": "Quickstart, MCP setup, sandbox, rate limits",
+        "url": "https://skillsmp.com/developers",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706176_5mlaj9hh",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "faa6a34d8de246db600262153a05cf62bc84345c8190cd74a3ce5a5a9fbaa457",
+      "firstSeenAt": "2026-05-29T08:18:26.176Z",
+      "lastSeenAt": "2026-05-29T08:18:26.176Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/developers#agent-auth",
+      "canonicalUrl": "https://skillsmp.com/developers#agent-auth",
+      "rawTitle": "Agent Authentication",
+      "rawDescription": "Step-by-step auth guide for AI agents",
+      "rawPayload": {
+        "name": "Agent Authentication",
+        "description": "Step-by-step auth guide for AI agents",
+        "url": "https://skillsmp.com/developers#agent-auth",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706177_0p6ks149",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "e33d95ff09eb2f3b4a88f286bd2d21201b9bf565c628a3a0d1323c08f90d98fb",
+      "firstSeenAt": "2026-05-29T08:18:26.177Z",
+      "lastSeenAt": "2026-05-29T08:18:26.177Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/developers#webhooks",
+      "canonicalUrl": "https://skillsmp.com/developers#webhooks",
+      "rawTitle": "Webhooks",
+      "rawDescription": "Polling patterns, timeline feed, webhook roadmap",
+      "rawPayload": {
+        "name": "Webhooks",
+        "description": "Polling patterns, timeline feed, webhook roadmap",
+        "url": "https://skillsmp.com/developers#webhooks",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706178_siw9f8br",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "7be9b241942f88c617639ae4a633ad2afe052946ce00685d1f39ee44138e26f9",
+      "firstSeenAt": "2026-05-29T08:18:26.178Z",
+      "lastSeenAt": "2026-05-29T08:18:26.178Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/docs/faq",
+      "canonicalUrl": "https://skillsmp.com/docs/faq",
+      "rawTitle": "FAQ",
+      "rawDescription": "Frequently asked questions about skills, installation, and quality",
+      "rawPayload": {
+        "name": "FAQ",
+        "description": "Frequently asked questions about skills, installation, and quality",
+        "url": "https://skillsmp.com/docs/faq",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706180_jjcc5e1c",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "5e5466ce05e54978be3d4d48abe01824befc202d86542cfff4dce2255d9af538",
+      "firstSeenAt": "2026-05-29T08:18:26.180Z",
+      "lastSeenAt": "2026-05-29T08:18:26.180Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/about",
+      "canonicalUrl": "https://skillsmp.com/about",
+      "rawTitle": "About",
+      "rawDescription": "Our mission and what we do",
+      "rawPayload": {
+        "name": "About",
+        "description": "Our mission and what we do",
+        "url": "https://skillsmp.com/about",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706183_e2nfm45v",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "e27c6f3135b035d5b7cc52091b911905c2654b35e9248bbbf70d94c3d658e3f7",
+      "firstSeenAt": "2026-05-29T08:18:26.183Z",
+      "lastSeenAt": "2026-05-29T08:18:26.183Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/llms-full.txt",
+      "canonicalUrl": "https://skillsmp.com/llms-full.txt",
+      "rawTitle": "Full Documentation (single file)",
+      "rawDescription": "Complete docs for AI agents",
+      "rawPayload": {
+        "name": "Full Documentation (single file)",
+        "description": "Complete docs for AI agents",
+        "url": "https://skillsmp.com/llms-full.txt",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706184_l8zmwhux",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "53449c2b84024cdedc19a37b4658a36d7ae714712baf3cf62ffe0728abedcd3f",
+      "firstSeenAt": "2026-05-29T08:18:26.184Z",
+      "lastSeenAt": "2026-05-29T08:18:26.184Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/agents.md",
+      "canonicalUrl": "https://skillsmp.com/agents.md",
+      "rawTitle": "Agent Integration Guide",
+      "rawDescription": "How agents should interact with SkillsMP",
+      "rawPayload": {
+        "name": "Agent Integration Guide",
+        "description": "How agents should interact with SkillsMP",
+        "url": "https://skillsmp.com/agents.md",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706186_kxj2c4dm",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "7eac49a6587e32b03cc6e2f7ee9db9d105b83c260cc02147e49d2773d68787b3",
+      "firstSeenAt": "2026-05-29T08:18:26.186Z",
+      "lastSeenAt": "2026-05-29T08:18:26.186Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://github.com/anthropics/claude-code",
+      "canonicalUrl": "https://github.com/anthropics/claude-code",
+      "rawTitle": "GitHub Repository",
+      "rawDescription": "Official Claude Code repository",
+      "rawPayload": {
+        "name": "GitHub Repository",
+        "description": "Official Claude Code repository",
+        "url": "https://github.com/anthropics/claude-code",
+        "github_url": "https://github.com/anthropics/claude-code",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706187_4juxcfgv",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "d199a6070ce4893cb53f440e2d32f23e0b862057adbf15b6d347254638a9631c",
+      "firstSeenAt": "2026-05-29T08:18:26.187Z",
+      "lastSeenAt": "2026-05-29T08:18:26.187Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://docs.anthropic.com/en/docs/claude-code/skills",
+      "canonicalUrl": "https://docs.anthropic.com/en/docs/claude-code/skills",
+      "rawTitle": "Official Skills Documentation",
+      "rawDescription": "Anthropic's guide to Claude Skills",
+      "rawPayload": {
+        "name": "Official Skills Documentation",
+        "description": "Anthropic's guide to Claude Skills",
+        "url": "https://docs.anthropic.com/en/docs/claude-code/skills",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706189_pocgce8u",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "894c53a3d8cc9e3b996097df05fb31248d28c81913eaa4833e6931aac33277c1",
+      "firstSeenAt": "2026-05-29T08:18:26.189Z",
+      "lastSeenAt": "2026-05-29T08:18:26.189Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/privacy",
+      "canonicalUrl": "https://skillsmp.com/privacy",
+      "rawTitle": "Privacy Policy",
+      "rawDescription": "Our privacy practices",
+      "rawPayload": {
+        "name": "Privacy Policy",
+        "description": "Our privacy practices",
+        "url": "https://skillsmp.com/privacy",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706190_8wcge33s",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "8245b9a38ff881d8dd71626546b5fa5b91e1f82445c0f9c6530afca9aa200ac3",
+      "firstSeenAt": "2026-05-29T08:18:26.190Z",
+      "lastSeenAt": "2026-05-29T08:18:26.190Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/terms",
+      "canonicalUrl": "https://skillsmp.com/terms",
+      "rawTitle": "Terms of Service",
+      "rawDescription": "Terms and conditions",
+      "rawPayload": {
+        "name": "Terms of Service",
+        "description": "Terms and conditions",
+        "url": "https://skillsmp.com/terms",
+        "marketplaceName": "SkillsMP"
+      },
+      "extractionMethod": "github",
+      "confidenceScore": 0.82,
+      "id": "raw_1780042706191_iauva2w5",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "5d0a30eb228f35c118c55f8d5672e3b589b10e5a7cde862479b0962e488ca790",
+      "firstSeenAt": "2026-05-29T08:18:26.191Z",
+      "lastSeenAt": "2026-05-29T08:18:26.191Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/backend",
+      "canonicalUrl": "https://skillsmp.com/categories/backend",
+      "rawTitle": "",
+      "rawDescription": "",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Skills Marketplace",
+            "alternateName": "SkillsMP",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "url": "https://skillsmp.com/about"
+            },
+            "sameAs": [
+              "https://x.com/God_I_13"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Skills Marketplace",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT",
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://skillsmp.com/search?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042710250_mkw41tqt",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8",
+      "firstSeenAt": "2026-05-29T08:18:30.250Z",
+      "lastSeenAt": "2026-05-29T08:18:30.250Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/backend",
+      "canonicalUrl": "https://skillsmp.com/categories/backend",
+      "rawTitle": "Backend",
+      "rawDescription": "Browse agent skills for server-side development, APIs, and backend systems",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Backend",
+        "description": "Browse agent skills for server-side development, APIs, and backend systems",
+        "url": "https://skillsmp.com/categories/backend",
+        "inLanguage": "en-US",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://skillsmp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Browse by Category",
+              "item": "https://skillsmp.com/categories"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Backend",
+              "item": "https://skillsmp.com/categories/backend"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": 48,
+          "name": "Backend Skills",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Openclaw Docker E2e Authoring",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-docker-e2e-authoring-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Acp Router",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-extensions-acpx-skills-acp-router-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Xurl",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-xurl-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "N8n Protect Endpoints",
+              "url": "https://skillsmp.com/skills/n8n-io-n8n-claude-plugins-n8n-skills-protect-endpoints-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Mcp Server Patterns",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-skills-mcp-server-patterns-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Api Design",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-agents-skills-api-design-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Backend Patterns",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-agents-skills-backend-patterns-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Mcp Server Patterns",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-agents-skills-mcp-server-patterns-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Mcp Server Patterns",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-cursor-skills-mcp-server-patterns-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "Backend Patterns",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-docs-ja-jp-skills-backend-patterns-skill-md"
+            }
+          ]
+        }
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042710253_qnq0z8c6",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "1da7239cbc57821053c01ae29165f9f9f2a911a76a1e6453b1f8439b748ad878",
+      "firstSeenAt": "2026-05-29T08:18:30.253Z",
+      "lastSeenAt": "2026-05-29T08:18:30.253Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/frontend",
+      "canonicalUrl": "https://skillsmp.com/categories/frontend",
+      "rawTitle": "",
+      "rawDescription": "",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Skills Marketplace",
+            "alternateName": "SkillsMP",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "url": "https://skillsmp.com/about"
+            },
+            "sameAs": [
+              "https://x.com/God_I_13"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Skills Marketplace",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT",
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://skillsmp.com/search?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042712676_kuhcb2qb",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8",
+      "firstSeenAt": "2026-05-29T08:18:32.676Z",
+      "lastSeenAt": "2026-05-29T08:18:32.676Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/frontend",
+      "canonicalUrl": "https://skillsmp.com/categories/frontend",
+      "rawTitle": "Frontend",
+      "rawDescription": "Browse agent skills for React, Vue, Angular, and modern frontend development",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Frontend",
+        "description": "Browse agent skills for React, Vue, Angular, and modern frontend development",
+        "url": "https://skillsmp.com/categories/frontend",
+        "inLanguage": "en-US",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://skillsmp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Browse by Category",
+              "item": "https://skillsmp.com/categories"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Frontend",
+              "item": "https://skillsmp.com/categories/frontend"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": 48,
+          "name": "Frontend Skills",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Extract Errors",
+              "url": "https://skillsmp.com/skills/facebook-react-claude-skills-extract-errors-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Motion Advanced",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-skills-motion-advanced-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Motion Foundations",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-skills-motion-foundations-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Motion Patterns",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-skills-motion-patterns-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Motion Ui",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-skills-motion-ui-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Documentation Lookup",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-agents-skills-documentation-lookup-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Frontend Patterns",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-agents-skills-frontend-patterns-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Documentation Lookup",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-cursor-skills-documentation-lookup-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Angular Developer",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-docs-ja-jp-skills-angular-developer-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "Frontend Patterns",
+              "url": "https://skillsmp.com/skills/affaan-m-ecc-docs-ja-jp-skills-frontend-patterns-skill-md"
+            }
+          ]
+        }
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042712678_amd9lfwq",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "f82c3e6ba7e976672a32858a2701c54c6112850929e25e5b49fdfb4d83dc8995",
+      "firstSeenAt": "2026-05-29T08:18:32.678Z",
+      "lastSeenAt": "2026-05-29T08:18:32.679Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/development",
+      "canonicalUrl": "https://skillsmp.com/categories/development",
+      "rawTitle": "",
+      "rawDescription": "",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Skills Marketplace",
+            "alternateName": "SkillsMP",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "url": "https://skillsmp.com/about"
+            },
+            "sameAs": [
+              "https://x.com/God_I_13"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Skills Marketplace",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT",
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://skillsmp.com/search?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042716051_o72pysb4",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8",
+      "firstSeenAt": "2026-05-29T08:18:36.051Z",
+      "lastSeenAt": "2026-05-29T08:18:36.051Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/development",
+      "canonicalUrl": "https://skillsmp.com/categories/development",
+      "rawTitle": "Development",
+      "rawDescription": "Browse agent skills for software development across all platforms and languages",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Development",
+        "description": "Browse agent skills for software development across all platforms and languages",
+        "url": "https://skillsmp.com/categories/development",
+        "inLanguage": "en-US",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://skillsmp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Browse by Category",
+              "item": "https://skillsmp.com/categories"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Development",
+              "item": "https://skillsmp.com/categories/development"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": 48,
+          "name": "Development Skills",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Openclaw Docker E2e Authoring",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-docker-e2e-authoring-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Acp Router",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-extensions-acpx-skills-acp-router-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Prose",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-extensions-open-prose-skills-prose-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Coding Agent",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-coding-agent-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Notion",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-notion-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Ordercli",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-ordercli-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Xurl",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-xurl-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Extract Errors",
+              "url": "https://skillsmp.com/skills/facebook-react-claude-skills-extract-errors-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Dispatching Parallel Agents",
+              "url": "https://skillsmp.com/skills/obra-superpowers-skills-dispatching-parallel-agents-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "N8n Protect Endpoints",
+              "url": "https://skillsmp.com/skills/n8n-io-n8n-claude-plugins-n8n-skills-protect-endpoints-skill-md"
+            }
+          ]
+        }
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042716053_dzlmmqc5",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "916f63aa56f1d5bb2312f0f295149a5ee457aaa2adda2a73d69cd0e10d768639",
+      "firstSeenAt": "2026-05-29T08:18:36.053Z",
+      "lastSeenAt": "2026-05-29T08:18:36.053Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/testing-security",
+      "canonicalUrl": "https://skillsmp.com/categories/testing-security",
+      "rawTitle": "",
+      "rawDescription": "",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Skills Marketplace",
+            "alternateName": "SkillsMP",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "url": "https://skillsmp.com/about"
+            },
+            "sameAs": [
+              "https://x.com/God_I_13"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Skills Marketplace",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT",
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://skillsmp.com/search?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042719255_27ftgwh5",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8",
+      "firstSeenAt": "2026-05-29T08:18:39.255Z",
+      "lastSeenAt": "2026-05-29T08:18:39.255Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/testing-security",
+      "canonicalUrl": "https://skillsmp.com/categories/testing-security",
+      "rawTitle": "Testing & Security",
+      "rawDescription": "Browse agent skills for testing, QA, security auditing, and code quality",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Testing & Security",
+        "description": "Browse agent skills for testing, QA, security auditing, and code quality",
+        "url": "https://skillsmp.com/categories/testing-security",
+        "inLanguage": "en-US",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://skillsmp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Browse by Category",
+              "item": "https://skillsmp.com/categories"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Testing & Security",
+              "item": "https://skillsmp.com/categories/testing-security"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": 48,
+          "name": "Testing & Security Skills",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Autoreview",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-autoreview-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Control Ui E2e",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-control-ui-e2e-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Openclaw Mac Release",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-mac-release-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Openclaw Small Bugfix Sweep",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-small-bugfix-sweep-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "1password",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-1password-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Spike",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-spike-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Feature Flags",
+              "url": "https://skillsmp.com/skills/facebook-react-claude-skills-feature-flags-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Fix",
+              "url": "https://skillsmp.com/skills/facebook-react-claude-skills-fix-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Flow",
+              "url": "https://skillsmp.com/skills/facebook-react-claude-skills-flow-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "Test",
+              "url": "https://skillsmp.com/skills/facebook-react-claude-skills-test-skill-md"
+            }
+          ]
+        }
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042719257_0q3gmm7y",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "7db7893fab2682848ff9965dd902f64adb8d540c5aa867145ef97632b33d5185",
+      "firstSeenAt": "2026-05-29T08:18:39.257Z",
+      "lastSeenAt": "2026-05-29T08:18:39.257Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/data-ai",
+      "canonicalUrl": "https://skillsmp.com/categories/data-ai",
+      "rawTitle": "",
+      "rawDescription": "",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Skills Marketplace",
+            "alternateName": "SkillsMP",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "url": "https://skillsmp.com/about"
+            },
+            "sameAs": [
+              "https://x.com/God_I_13"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Skills Marketplace",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT",
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://skillsmp.com/search?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042721741_zezlvjoi",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8",
+      "firstSeenAt": "2026-05-29T08:18:41.741Z",
+      "lastSeenAt": "2026-05-29T08:18:41.741Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/data-ai",
+      "canonicalUrl": "https://skillsmp.com/categories/data-ai",
+      "rawTitle": "Data & AI",
+      "rawDescription": "Browse agent skills for data science, AI, machine learning, and data engineering",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Data & AI",
+        "description": "Browse agent skills for data science, AI, machine learning, and data engineering",
+        "url": "https://skillsmp.com/categories/data-ai",
+        "inLanguage": "en-US",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://skillsmp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Browse by Category",
+              "item": "https://skillsmp.com/categories"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Data & AI",
+              "item": "https://skillsmp.com/categories/data-ai"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": 48,
+          "name": "Data & AI Skills",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Discord Clawd",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-discord-clawd-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Feishu Wiki",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-extensions-feishu-skills-feishu-wiki-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Prose",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-extensions-open-prose-skills-prose-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Clawhub",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-clawhub-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Coding Agent",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-coding-agent-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Gemini",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-gemini-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Model Usage",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-model-usage-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Openai Whisper",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-openai-whisper-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Sag",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-sag-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "Sherpa Onnx Tts",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-sherpa-onnx-tts-skill-md"
+            }
+          ]
+        }
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042721751_ep9c5fpa",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "77d16d95bf96005d15886f99b699ddad8182106b58841d22a7f932a3aaaab8fa",
+      "firstSeenAt": "2026-05-29T08:18:41.751Z",
+      "lastSeenAt": "2026-05-29T08:18:41.751Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/devops",
+      "canonicalUrl": "https://skillsmp.com/categories/devops",
+      "rawTitle": "",
+      "rawDescription": "",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Skills Marketplace",
+            "alternateName": "SkillsMP",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "url": "https://skillsmp.com/about"
+            },
+            "sameAs": [
+              "https://x.com/God_I_13"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Skills Marketplace",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT",
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://skillsmp.com/search?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042724599_9ejnfbu5",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8",
+      "firstSeenAt": "2026-05-29T08:18:44.599Z",
+      "lastSeenAt": "2026-05-29T08:18:44.599Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/devops",
+      "canonicalUrl": "https://skillsmp.com/categories/devops",
+      "rawTitle": "DevOps",
+      "rawDescription": "Browse agent skills for DevOps, CI/CD, infrastructure, and deployment automation",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "DevOps",
+        "description": "Browse agent skills for DevOps, CI/CD, infrastructure, and deployment automation",
+        "url": "https://skillsmp.com/categories/devops",
+        "inLanguage": "en-US",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://skillsmp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Browse by Category",
+              "item": "https://skillsmp.com/categories"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "DevOps",
+              "item": "https://skillsmp.com/categories/devops"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": 48,
+          "name": "DevOps Skills",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Crabbox",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-crabbox-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Openclaw Ghsa Maintainer",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-ghsa-maintainer-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Openclaw Parallels Smoke",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-parallels-smoke-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Openclaw Pre Release Plugin Testing",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-pre-release-plugin-testing-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Openclaw Testing",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-testing-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Optimizetests",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-optimizetests-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Security Triage",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-security-triage-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Tag Duplicate Prs Issues",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-tag-duplicate-prs-issues-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Feishu Drive",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-extensions-feishu-skills-feishu-drive-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "Github",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-extensions-oc-path-src-oc-path-tests-fixtures-real-skill-md"
+            }
+          ]
+        }
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042724601_9b20uc9g",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "e5033f2af153de1dc99455beedb8a60737d7b461bad4a02c11469e9fb4a6468d",
+      "firstSeenAt": "2026-05-29T08:18:44.601Z",
+      "lastSeenAt": "2026-05-29T08:18:44.601Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/documentation",
+      "canonicalUrl": "https://skillsmp.com/categories/documentation",
+      "rawTitle": "",
+      "rawDescription": "",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Skills Marketplace",
+            "alternateName": "SkillsMP",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "url": "https://skillsmp.com/about"
+            },
+            "sameAs": [
+              "https://x.com/God_I_13"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Skills Marketplace",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT",
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://skillsmp.com/search?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042727773_cih04xiw",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8",
+      "firstSeenAt": "2026-05-29T08:18:47.773Z",
+      "lastSeenAt": "2026-05-29T08:18:47.773Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/documentation",
+      "canonicalUrl": "https://skillsmp.com/categories/documentation",
+      "rawTitle": "Documentation",
+      "rawDescription": "Browse agent skills for documentation, technical writing, and knowledge management",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Documentation",
+        "description": "Browse agent skills for documentation, technical writing, and knowledge management",
+        "url": "https://skillsmp.com/categories/documentation",
+        "inLanguage": "en-US",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://skillsmp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Browse by Category",
+              "item": "https://skillsmp.com/categories"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Documentation",
+              "item": "https://skillsmp.com/categories/documentation"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": 48,
+          "name": "Documentation Skills",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Openclaw Docs",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-docs-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Openclaw Pr Maintainer",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-pr-maintainer-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Feishu Wiki",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-extensions-feishu-skills-feishu-wiki-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Obsidian Vault Maintainer",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-extensions-memory-wiki-skills-obsidian-vault-maintainer-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Wiki Maintainer",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-extensions-memory-wiki-skills-wiki-maintainer-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Tavily",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-extensions-tavily-skills-tavily-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Gemini",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-gemini-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Notion",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-notion-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "N8n Create Community Node Lint Rule",
+              "url": "https://skillsmp.com/skills/n8n-io-n8n-claude-plugins-n8n-skills-create-community-node-lint-rule-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "My Workflow",
+              "url": "https://skillsmp.com/skills/n8n-io-n8n-claude-plugins-n8n-skills-create-skill-skill-md"
+            }
+          ]
+        }
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042727776_eav63d6z",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "2f930aa7de9f085edd895db4da0cf214fe6abe74bc202f638cf20188bd53ff3b",
+      "firstSeenAt": "2026-05-29T08:18:47.776Z",
+      "lastSeenAt": "2026-05-29T08:18:47.776Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/business",
+      "canonicalUrl": "https://skillsmp.com/categories/business",
+      "rawTitle": "",
+      "rawDescription": "",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Skills Marketplace",
+            "alternateName": "SkillsMP",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "url": "https://skillsmp.com/about"
+            },
+            "sameAs": [
+              "https://x.com/God_I_13"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Skills Marketplace",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT",
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://skillsmp.com/search?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042730616_yi456vut",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8",
+      "firstSeenAt": "2026-05-29T08:18:50.616Z",
+      "lastSeenAt": "2026-05-29T08:18:50.616Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/business",
+      "canonicalUrl": "https://skillsmp.com/categories/business",
+      "rawTitle": "Business",
+      "rawDescription": "Browse agent skills for business applications, e-commerce, payments, and CRM",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Business",
+        "description": "Browse agent skills for business applications, e-commerce, payments, and CRM",
+        "url": "https://skillsmp.com/categories/business",
+        "inLanguage": "en-US",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://skillsmp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Browse by Category",
+              "item": "https://skillsmp.com/categories"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Business",
+              "item": "https://skillsmp.com/categories/business"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": 48,
+          "name": "Business Skills",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Graincrawl",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-graincrawl-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Feishu Perm",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-extensions-feishu-skills-feishu-perm-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Ordercli",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-ordercli-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Taskflow Inbox Triage",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-taskflow-inbox-triage-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Things Mac",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-things-mac-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Trello",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-trello-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Weather",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-skills-weather-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Brainstorming",
+              "url": "https://skillsmp.com/skills/obra-superpowers-skills-brainstorming-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Finishing A Development Branch",
+              "url": "https://skillsmp.com/skills/obra-superpowers-skills-finishing-a-development-branch-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "Using Superpowers",
+              "url": "https://skillsmp.com/skills/obra-superpowers-skills-using-superpowers-skill-md"
+            }
+          ]
+        }
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042730619_r5yi68ww",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "214f2062b77bf57e2dbc2bf1b670a6d616289cad12281dcd04bfbc924fb4f3f8",
+      "firstSeenAt": "2026-05-29T08:18:50.619Z",
+      "lastSeenAt": "2026-05-29T08:18:50.619Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/tools",
+      "canonicalUrl": "https://skillsmp.com/categories/tools",
+      "rawTitle": "",
+      "rawDescription": "",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Skills Marketplace",
+            "alternateName": "SkillsMP",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "url": "https://skillsmp.com/about"
+            },
+            "sameAs": [
+              "https://x.com/God_I_13"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Skills Marketplace",
+            "url": "https://skillsmp.com",
+            "description": "Discover and share high-quality Agent Skills compatible with Claude Code, Codex CLI and ChatGPT",
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://skillsmp.com/search?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042734242_5xljuhj8",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8",
+      "firstSeenAt": "2026-05-29T08:18:54.242Z",
+      "lastSeenAt": "2026-05-29T08:18:54.242Z",
+      "isMissingSinceLastCrawl": false
+    },
+    {
+      "sourceName": "skillsmp",
+      "sourceUrl": "https://skillsmp.com/categories/tools",
+      "canonicalUrl": "https://skillsmp.com/categories/tools",
+      "rawTitle": "Tools",
+      "rawDescription": "Browse agent skills for developer tools, CLI utilities, and productivity automation",
+      "rawPayload": {
+        "marketplaceName": "SkillsMP",
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Tools",
+        "description": "Browse agent skills for developer tools, CLI utilities, and productivity automation",
+        "url": "https://skillsmp.com/categories/tools",
+        "inLanguage": "en-US",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://skillsmp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Browse by Category",
+              "item": "https://skillsmp.com/categories"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Tools",
+              "item": "https://skillsmp.com/categories/tools"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": 48,
+          "name": "Tools Skills",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Channel Message Flows",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-channel-message-flows-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Clawdtributor",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-clawdtributor-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Clawsweeper",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-clawsweeper-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Discrawl",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-discrawl-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Gitcrawl",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-gitcrawl-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Notcrawl",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-notcrawl-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Openclaw Debugging",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-debugging-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Openclaw Landable Bug Sweep",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-landable-bug-sweep-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Openclaw Qa Testing",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-qa-testing-skill-md"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "Openclaw Refactor Docs",
+              "url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-openclaw-refactor-docs-skill-md"
+            }
+          ]
+        }
+      },
+      "extractionMethod": "embedded_json",
+      "confidenceScore": 0.88,
+      "id": "raw_1780042734245_kv22jhtu",
+      "crawlRunId": "run_1780042699911_w8jgx08t",
+      "contentHash": "8ed94a8c96573a5cb4a62f7961a63d94292c7c22b7fefb6ee6faf473420f68bb",
+      "firstSeenAt": "2026-05-29T08:18:54.245Z",
+      "lastSeenAt": "2026-05-29T08:18:54.245Z",
+      "isMissingSinceLastCrawl": false
+    }
+  ],
+  "components": [
+    {
+      "canonicalSlug": "developer-portal-skillsmp-unknown",
+      "name": "Developer Portal",
+      "description": "— API docs, quickstart, and sandbox",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/developers",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/developers"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/developers",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "25179d24166b3f0dbfd8bd8998cc2348e3164d783ef2287cb436a9244d3fabd7"
+        }
+      ],
+      "normalizedHash": "8f875954b97fb41b8add209c72a826a959da5c5c135f291d00df7bfbe11f0c3c",
+      "firstSeenAt": "2026-05-29T08:20:50.340Z",
+      "lastSeenAt": "2026-05-29T08:20:50.340Z",
+      "updatedAt": "2026-05-29T08:20:50.340Z"
+    },
+    {
+      "canonicalSlug": "openapi-spec-skillsmp-unknown",
+      "name": "OpenAPI Spec",
+      "description": "— Auto-generated API specification",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/openapi.json",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/openapi.json"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/openapi.json",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "e12dc5e4d29d4772fe30999705cda403a45247759f6fd2ebf2d199c63fa6dd8c"
+        }
+      ],
+      "normalizedHash": "7dd7b7496cf48878408838301555bb5ff518aec399103ef1a9b1697b4b789908",
+      "firstSeenAt": "2026-05-29T08:20:50.343Z",
+      "lastSeenAt": "2026-05-29T08:20:50.343Z",
+      "updatedAt": "2026-05-29T08:20:50.343Z"
+    },
+    {
+      "canonicalSlug": "mcp-server-skillsmp-mcp-server",
+      "name": "MCP Server",
+      "description": "— Model Context Protocol endpoint",
+      "componentType": "mcp_server",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/mcp",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/mcp"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/mcp",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "b273829dee68ee1ac7bd2b000866370446bfee3191460a65950abb7b91e6f831"
+        }
+      ],
+      "normalizedHash": "ec5372ebdc6fa5dc83dc049c36c886c69a2fac2f15aeff28c808ab002fddfada",
+      "firstSeenAt": "2026-05-29T08:20:50.346Z",
+      "lastSeenAt": "2026-05-29T08:20:50.346Z",
+      "updatedAt": "2026-05-29T08:20:50.346Z"
+    },
+    {
+      "canonicalSlug": "mcp-manifest-skillsmp-mcp-server",
+      "name": "MCP Manifest",
+      "description": "— MCP server discovery",
+      "componentType": "mcp_server",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/.well-known/mcp",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/.well-known/mcp"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/.well-known/mcp",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "09debb5d25435828d8dceec625919d5fa1722a09e60f31c5bee790c35f5cdc31"
+        }
+      ],
+      "normalizedHash": "3e50ee6a1ef052341a68e879fec309a2950a3c1d8b1f85123eacc299ec729ed4",
+      "firstSeenAt": "2026-05-29T08:20:50.349Z",
+      "lastSeenAt": "2026-05-29T08:20:50.349Z",
+      "updatedAt": "2026-05-29T08:20:50.349Z"
+    },
+    {
+      "canonicalSlug": "agent-card-skillsmp-agent",
+      "name": "Agent Card",
+      "description": "— A2A capabilities",
+      "componentType": "agent",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/.well-known/agent-card.json",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/.well-known/agent-card.json"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/.well-known/agent-card.json",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "9944391a6cd0ca9a6d0859907d5e9d956fcf7c9f1464b40f3c86e34986bb9244"
+        }
+      ],
+      "normalizedHash": "cf8a8238cc4a900696f72039047f5025d0b2b99e063250f2a373a2a1b0c4fa97",
+      "firstSeenAt": "2026-05-29T08:20:50.353Z",
+      "lastSeenAt": "2026-05-29T08:20:50.353Z",
+      "updatedAt": "2026-05-29T08:20:50.353Z"
+    },
+    {
+      "canonicalSlug": "full-documentation-skillsmp-unknown",
+      "name": "Full Documentation",
+      "description": "— Complete docs in one file",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/llms-full.txt",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/llms-full.txt"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/llms-full.txt",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "49e2020d5cf4e47539538b206da2592b8b6eefdf5a015df460febe6cf50eb512"
+        }
+      ],
+      "normalizedHash": "08d0ba8324dd89ed137ebdbd2c459a95d9198c7135717006ac463d811f8f0fd7",
+      "firstSeenAt": "2026-05-29T08:20:50.356Z",
+      "lastSeenAt": "2026-05-29T08:20:50.356Z",
+      "updatedAt": "2026-05-29T08:20:50.356Z"
+    },
+    {
+      "canonicalSlug": "all-categories-skillsmp-unknown",
+      "name": "All Categories",
+      "description": "[By Occupation](https://skillsmp.com/occupations)",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/categories",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/categories"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "660ca8b2d483bd98810626c0c7be24fd7a044b69c4ba063d67436a4131bc4ce1"
+        }
+      ],
+      "normalizedHash": "3fa09c0e9e35fb39b961ef66fd58b1b205e3cf7f62001c32aaea3771ecac9750",
+      "firstSeenAt": "2026-05-29T08:20:50.360Z",
+      "lastSeenAt": "2026-05-29T08:20:50.360Z",
+      "updatedAt": "2026-05-29T08:20:50.360Z"
+    },
+    {
+      "canonicalSlug": "timeline-skillsmp-unknown",
+      "name": "Timeline",
+      "description": "[Search](https://skillsmp.com/search)",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/timeline",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/timeline"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/timeline",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "55c13f35169460d9c9f5ded16d653d2e62393e4693ba4dac6c0e259ca38dba4d"
+        }
+      ],
+      "normalizedHash": "3b739736b8eaaca2cede4d2e28a01b1578704e70a57bd340c6413c0c1b726a42",
+      "firstSeenAt": "2026-05-29T08:20:50.368Z",
+      "lastSeenAt": "2026-05-29T08:20:50.368Z",
+      "updatedAt": "2026-05-29T08:20:50.368Z"
+    },
+    {
+      "canonicalSlug": "privacy-skillsmp-unknown",
+      "name": "Privacy",
+      "description": "[Terms](https://skillsmp.com/terms)",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/privacy",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/privacy"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/privacy",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "80695054faad438a6364a31779ed3f9cc77d55edd44fe1f3ecbe4bdccb05b062"
+        }
+      ],
+      "normalizedHash": "55e906f3248e57d3d8a52e6134409166c12bbc99d9bce3d5a534dbb924756f47",
+      "firstSeenAt": "2026-05-29T08:20:50.406Z",
+      "lastSeenAt": "2026-05-29T08:20:50.406Z",
+      "updatedAt": "2026-05-29T08:20:50.406Z"
+    },
+    {
+      "canonicalSlug": "homepage-skillsmp-unknown",
+      "name": "Homepage",
+      "description": "Search and browse all skills with keyword search and filters",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "77f159a040e0a099b7e68aec307eb0309dfba7becbab5eed10d6d33dacf8764f"
+        }
+      ],
+      "normalizedHash": "545aa035f49bacaf6c69841c5ffde380800dc96a4d632f76cf8e1b4f0bfd4537",
+      "firstSeenAt": "2026-05-29T08:20:50.410Z",
+      "lastSeenAt": "2026-05-29T08:20:50.410Z",
+      "updatedAt": "2026-05-29T08:20:50.410Z"
+    },
+    {
+      "canonicalSlug": "categories-skillsmp-unknown",
+      "name": "Categories",
+      "description": "Browse skills organized by domain (Development, AI & ML, DevOps, etc.)",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/categories",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/categories"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "dcdd58759573f243a41979b2059e45822ac26c61cc54f75075989b0169801635"
+        }
+      ],
+      "normalizedHash": "ea9ce83db4a1d3e01d66fb399d7f5c81fc5e6c49d48258ac92e93deb55ac9041",
+      "firstSeenAt": "2026-05-29T08:20:50.416Z",
+      "lastSeenAt": "2026-05-29T08:20:50.416Z",
+      "updatedAt": "2026-05-29T08:20:50.416Z"
+    },
+    {
+      "canonicalSlug": "occupations-skillsmp-unknown",
+      "name": "Occupations",
+      "description": "Browse skills by SOC occupation (Software Developers, Data Scientists, etc.)",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/occupations",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/occupations"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/occupations",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "ed5e318e76beeca2c4fee70d252f79a8e2586101bacb043bddf40f9b92cd89c4"
+        }
+      ],
+      "normalizedHash": "5d53548cc18e74ba3db5b15dbd1dc6b714749d296d7ed53a33b8a8ff85b4c6e6",
+      "firstSeenAt": "2026-05-29T08:20:50.420Z",
+      "lastSeenAt": "2026-05-29T08:20:50.420Z",
+      "updatedAt": "2026-05-29T08:20:50.420Z"
+    },
+    {
+      "canonicalSlug": "timeline-skillsmp-skill",
+      "name": "Timeline",
+      "description": "View skill updates and growth trends over time",
+      "componentType": "skill",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/timeline",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/timeline"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/timeline",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "e72c86fcc3ac92d644316598810cbb645f9da5a37ca781b0886fbdc5da9625fe"
+        }
+      ],
+      "normalizedHash": "482704932782f669f979234281def628a43f95d9700f46787728cfc0383f794f",
+      "firstSeenAt": "2026-05-29T08:20:50.425Z",
+      "lastSeenAt": "2026-05-29T08:20:50.425Z",
+      "updatedAt": "2026-05-29T08:20:50.425Z"
+    },
+    {
+      "canonicalSlug": "search-skillsmp-marketplace",
+      "name": "Search",
+      "description": "Advanced search with filters for marketplace.json, stars, and update time",
+      "componentType": "marketplace",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/search",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/search"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/search",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "3807fcadff8128a1ad48f60394713058325c6ada13c3043f27023d11e08de59e"
+        }
+      ],
+      "normalizedHash": "08b47f8bae3f458e6f8fce2471dbc3f66e38fc8ac67523984338f159e082ec45",
+      "firstSeenAt": "2026-05-29T08:20:50.428Z",
+      "lastSeenAt": "2026-05-29T08:20:50.428Z",
+      "updatedAt": "2026-05-29T08:20:50.428Z"
+    },
+    {
+      "canonicalSlug": "changelog-skillsmp-unknown",
+      "name": "Changelog",
+      "description": "Platform updates, new features, and improvements",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/changelog",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/changelog"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/changelog",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "4b5b9898a093558e0243c44020b508bf902fdf238bb12d83c2bbe18fc7a486b5"
+        }
+      ],
+      "normalizedHash": "1a022964ca9df8bb6c29b6eb84d3006598e5b280b0266e0e03675114f3b1b469",
+      "firstSeenAt": "2026-05-29T08:20:50.432Z",
+      "lastSeenAt": "2026-05-29T08:20:50.432Z",
+      "updatedAt": "2026-05-29T08:20:50.432Z"
+    },
+    {
+      "canonicalSlug": "skill-detail-skillsmp-skill",
+      "name": "Skill Detail",
+      "description": "Individual skill pages with full details, README, installation instructions",
+      "componentType": "skill",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/skills/{id}",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/skills/{id}"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/skills/{id}",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "f503e1c5dfdfb875e113e3047c7443c6baab209824c54be810da234a16a117b4"
+        }
+      ],
+      "normalizedHash": "b07c6bbffa3ec26ff638ea05f0f72d1a50ae26ce33bd2a2c1ed7046271727fff",
+      "firstSeenAt": "2026-05-29T08:20:50.440Z",
+      "lastSeenAt": "2026-05-29T08:20:50.440Z",
+      "updatedAt": "2026-05-29T08:20:50.440Z"
+    },
+    {
+      "canonicalSlug": "occupation-detail-skillsmp-unknown",
+      "name": "Occupation Detail",
+      "description": "Skills relevant to a specific occupation with SOC classification",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/occupations/{slug}",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/occupations/{slug}"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/occupations/{slug}",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "f60ac2807f672ce17bcdda44e58a7a2e5f2e501533f21e94b7f560497cc09d42"
+        }
+      ],
+      "normalizedHash": "5ec9a4031e3b1330814c2714a8c46d14a97a299b1b5ab6f32a9615897032e8bc",
+      "firstSeenAt": "2026-05-29T08:20:50.450Z",
+      "lastSeenAt": "2026-05-29T08:20:50.450Z",
+      "updatedAt": "2026-05-29T08:20:50.450Z"
+    },
+    {
+      "canonicalSlug": "favorites-skillsmp-unknown",
+      "name": "Favorites",
+      "description": "Save and organize your favorite skills",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/favorites",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/favorites"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/favorites",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "923718448f41c7f040168698d2158c48f0d3fddf3f2409b73873197c4d51233b"
+        }
+      ],
+      "normalizedHash": "aeca3c7f22679cfa5f61f4c3807fa5a7a69f70db31e827ac0c5b5571d07b53b7",
+      "firstSeenAt": "2026-05-29T08:20:50.455Z",
+      "lastSeenAt": "2026-05-29T08:20:50.455Z",
+      "updatedAt": "2026-05-29T08:20:50.455Z"
+    },
+    {
+      "canonicalSlug": "history-skillsmp-unknown",
+      "name": "History",
+      "description": "Track your recently viewed skills",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/history",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/history"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/history",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "0a5fe85a3c0b43e7592fe13365dd4f1e647101e85cb1107984130dd835bcb61e"
+        }
+      ],
+      "normalizedHash": "07b7af8aecf52f11ca4d70868610388859422a7fe0a7c5a2ca58d3a7d47f44cf",
+      "firstSeenAt": "2026-05-29T08:20:50.460Z",
+      "lastSeenAt": "2026-05-29T08:20:50.460Z",
+      "updatedAt": "2026-05-29T08:20:50.460Z"
+    },
+    {
+      "canonicalSlug": "docs-skillsmp-unknown",
+      "name": "Docs",
+      "description": "Getting started guide and official documentation links",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/docs",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/docs"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/docs",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "182ff8e4e1e313066a93344001de7ab3d4550bdea67e81fd16e446eca4e87032"
+        }
+      ],
+      "normalizedHash": "a27d8007724b4a46c78947666a5670166a271653df4144249c8d95a1d00a1920",
+      "firstSeenAt": "2026-05-29T08:20:50.464Z",
+      "lastSeenAt": "2026-05-29T08:20:50.464Z",
+      "updatedAt": "2026-05-29T08:20:50.464Z"
+    },
+    {
+      "canonicalSlug": "api-docs-skillsmp-unknown",
+      "name": "API Docs",
+      "description": "REST API documentation with examples",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/docs/api",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/docs/api"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/docs/api",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "921cc0c73bc12603d7522ff8dff9922209fdb2de4680030fda1034fde008e313"
+        },
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/docs/api",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "52f0bfb43348f7a2ce27344b00e4d6096b92086217851e319e885f68347aa406"
+        }
+      ],
+      "normalizedHash": "331f35464f9c2636db96f295dedffa252125e3b008dfcb196d6133ef224bd488",
+      "firstSeenAt": "2026-05-29T08:20:50.403Z",
+      "lastSeenAt": "2026-05-29T08:20:50.468Z",
+      "updatedAt": "2026-05-29T08:20:50.468Z"
+    },
+    {
+      "canonicalSlug": "developer-portal-skillsmp-mcp-server",
+      "name": "Developer Portal",
+      "description": "Quickstart, MCP setup, sandbox, rate limits",
+      "componentType": "mcp_server",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/developers",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/developers"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/developers",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "faa6a34d8de246db600262153a05cf62bc84345c8190cd74a3ce5a5a9fbaa457"
+        }
+      ],
+      "normalizedHash": "c280aeb9acf7704563339417feae6eb17881fe6c2fc02a021d8b8b05d4ee34f2",
+      "firstSeenAt": "2026-05-29T08:20:50.473Z",
+      "lastSeenAt": "2026-05-29T08:20:50.473Z",
+      "updatedAt": "2026-05-29T08:20:50.473Z"
+    },
+    {
+      "canonicalSlug": "agent-authentication-skillsmp-agent",
+      "name": "Agent Authentication",
+      "description": "Step-by-step auth guide for AI agents",
+      "componentType": "agent",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/developers#agent-auth",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/developers#agent-auth"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/developers#agent-auth",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "e33d95ff09eb2f3b4a88f286bd2d21201b9bf565c628a3a0d1323c08f90d98fb"
+        }
+      ],
+      "normalizedHash": "95d198fe991d38dc237d226fa482aaa192702220886597c956a0710e7ef6260d",
+      "firstSeenAt": "2026-05-29T08:20:50.479Z",
+      "lastSeenAt": "2026-05-29T08:20:50.479Z",
+      "updatedAt": "2026-05-29T08:20:50.479Z"
+    },
+    {
+      "canonicalSlug": "webhooks-skillsmp-unknown",
+      "name": "Webhooks",
+      "description": "Polling patterns, timeline feed, webhook roadmap",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/developers#webhooks",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/developers#webhooks"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/developers#webhooks",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "7be9b241942f88c617639ae4a633ad2afe052946ce00685d1f39ee44138e26f9"
+        }
+      ],
+      "normalizedHash": "6459ff4d37b0f5cbfb490a4f3b4dcee6d6911ca42c4e2349e0c2f5af1793502b",
+      "firstSeenAt": "2026-05-29T08:20:50.484Z",
+      "lastSeenAt": "2026-05-29T08:20:50.484Z",
+      "updatedAt": "2026-05-29T08:20:50.484Z"
+    },
+    {
+      "canonicalSlug": "faq-skillsmp-unknown",
+      "name": "FAQ",
+      "description": "Frequently asked questions about skills, installation, and quality",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/docs/faq",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/docs/faq"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/docs/faq",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "5e5466ce05e54978be3d4d48abe01824befc202d86542cfff4dce2255d9af538"
+        }
+      ],
+      "normalizedHash": "5ab4bfeaf8c3b66ae8eda20552663a030df695c5204eb11a84c03314533bb624",
+      "firstSeenAt": "2026-05-29T08:20:50.488Z",
+      "lastSeenAt": "2026-05-29T08:20:50.488Z",
+      "updatedAt": "2026-05-29T08:20:50.488Z"
+    },
+    {
+      "canonicalSlug": "about-skillsmp-unknown",
+      "name": "About",
+      "description": "Our mission and what we do",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/about",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/about"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/about",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "c1378c2fdcd6102d938a005620513e8272682a8a4db762492dfdb34212bce7a0"
+        },
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/about",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "e27c6f3135b035d5b7cc52091b911905c2654b35e9248bbbf70d94c3d658e3f7"
+        }
+      ],
+      "normalizedHash": "83493835a50d3fbf274593662f3cf49583da78bd85ae3844e25c167938483db3",
+      "firstSeenAt": "2026-05-29T08:20:50.392Z",
+      "lastSeenAt": "2026-05-29T08:20:50.493Z",
+      "updatedAt": "2026-05-29T08:20:50.493Z"
+    },
+    {
+      "canonicalSlug": "full-documentation-single-file-skillsmp-unknown",
+      "name": "Full Documentation (single file)",
+      "description": "Complete docs for AI agents",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/llms-full.txt",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/llms-full.txt"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/llms-full.txt",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "53449c2b84024cdedc19a37b4658a36d7ae714712baf3cf62ffe0728abedcd3f"
+        }
+      ],
+      "normalizedHash": "ddfe3763ac0dec6189a9fc6acdaf9d93be4f660fdd7f82a40e8d2443b94cd1ca",
+      "firstSeenAt": "2026-05-29T08:20:50.498Z",
+      "lastSeenAt": "2026-05-29T08:20:50.498Z",
+      "updatedAt": "2026-05-29T08:20:50.498Z"
+    },
+    {
+      "canonicalSlug": "agent-integration-guide-skillsmp-agent",
+      "name": "Agent Integration Guide",
+      "description": "How agents should interact with SkillsMP",
+      "componentType": "agent",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/agents.md",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/agents.md"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/agents.md",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "7eac49a6587e32b03cc6e2f7ee9db9d105b83c260cc02147e49d2773d68787b3"
+        }
+      ],
+      "normalizedHash": "f2ea643897b815d03cf24dcfbba8cf5fe97fa66b429244506161fcd203bab031",
+      "firstSeenAt": "2026-05-29T08:20:50.503Z",
+      "lastSeenAt": "2026-05-29T08:20:50.503Z",
+      "updatedAt": "2026-05-29T08:20:50.503Z"
+    },
+    {
+      "canonicalSlug": "github-com-anthropics-claude-code",
+      "name": "GitHub Repository",
+      "description": "Official Claude Code repository",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "githubUrl": "https://github.com/anthropics/claude-code",
+      "packageUrl": "https://github.com/anthropics/claude-code",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://github.com/anthropics/claude-code"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://github.com/anthropics/claude-code",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "d199a6070ce4893cb53f440e2d32f23e0b862057adbf15b6d347254638a9631c"
+        }
+      ],
+      "normalizedHash": "322e40892e11a2c18209a9890826bbf512dd9e7ba6310206b680be14b9945ed8",
+      "firstSeenAt": "2026-05-29T08:20:50.508Z",
+      "lastSeenAt": "2026-05-29T08:20:50.508Z",
+      "updatedAt": "2026-05-29T08:20:50.508Z"
+    },
+    {
+      "canonicalSlug": "official-skills-documentation-skillsmp-unknown",
+      "name": "Official Skills Documentation",
+      "description": "Anthropic's guide to Claude Skills",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://docs.anthropic.com/en/docs/claude-code/skills",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://docs.anthropic.com/en/docs/claude-code/skills"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://docs.anthropic.com/en/docs/claude-code/skills",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "894c53a3d8cc9e3b996097df05fb31248d28c81913eaa4833e6931aac33277c1"
+        }
+      ],
+      "normalizedHash": "a6ea1b99b481a567b5324446c9f43bab31a07dfdeb611597f3eddbe7689c7b11",
+      "firstSeenAt": "2026-05-29T08:20:50.516Z",
+      "lastSeenAt": "2026-05-29T08:20:50.516Z",
+      "updatedAt": "2026-05-29T08:20:50.516Z"
+    },
+    {
+      "canonicalSlug": "privacy-policy-skillsmp-unknown",
+      "name": "Privacy Policy",
+      "description": "Our privacy practices",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/privacy",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/privacy"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/privacy",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "8245b9a38ff881d8dd71626546b5fa5b91e1f82445c0f9c6530afca9aa200ac3"
+        }
+      ],
+      "normalizedHash": "0ac7b746049b877a464cfa70e3100c0b042364e79f03764e6bc8993b22ad5793",
+      "firstSeenAt": "2026-05-29T08:20:50.540Z",
+      "lastSeenAt": "2026-05-29T08:20:50.540Z",
+      "updatedAt": "2026-05-29T08:20:50.540Z"
+    },
+    {
+      "canonicalSlug": "terms-of-service-skillsmp-unknown",
+      "name": "Terms of Service",
+      "description": "Terms and conditions",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/terms",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/terms"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/terms",
+          "extractionMethod": "github",
+          "confidenceScore": 0.82,
+          "contentHash": "5d0a30eb228f35c118c55f8d5672e3b589b10e5a7cde862479b0962e488ca790"
+        }
+      ],
+      "normalizedHash": "21683543bdb08f8149f11d6ccf14f1958af6d7f7f6a2b90044e98faba5c6fa80",
+      "firstSeenAt": "2026-05-29T08:20:50.556Z",
+      "lastSeenAt": "2026-05-29T08:20:50.556Z",
+      "updatedAt": "2026-05-29T08:20:50.556Z"
+    },
+    {
+      "canonicalSlug": "backend-skillsmp-agent",
+      "name": "Backend",
+      "description": "Browse agent skills for server-side development, APIs, and backend systems",
+      "componentType": "agent",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/categories/backend",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/categories/backend"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/backend",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "1da7239cbc57821053c01ae29165f9f9f2a911a76a1e6453b1f8439b748ad878"
+        }
+      ],
+      "normalizedHash": "a0aae9bd184465ecedb03fc73571c169016e4b4b234862534e1c529c0f51807f",
+      "firstSeenAt": "2026-05-29T08:20:50.564Z",
+      "lastSeenAt": "2026-05-29T08:20:50.564Z",
+      "updatedAt": "2026-05-29T08:20:50.564Z"
+    },
+    {
+      "canonicalSlug": "frontend-skillsmp-agent",
+      "name": "Frontend",
+      "description": "Browse agent skills for React, Vue, Angular, and modern frontend development",
+      "componentType": "agent",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/categories/frontend",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/categories/frontend"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/frontend",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "f82c3e6ba7e976672a32858a2701c54c6112850929e25e5b49fdfb4d83dc8995"
+        }
+      ],
+      "normalizedHash": "d1aeb7607e915da09fcbf05ce53d9b69421225c116cb3e7705a2d53009fe08b0",
+      "firstSeenAt": "2026-05-29T08:20:50.573Z",
+      "lastSeenAt": "2026-05-29T08:20:50.573Z",
+      "updatedAt": "2026-05-29T08:20:50.573Z"
+    },
+    {
+      "canonicalSlug": "development-skillsmp-agent",
+      "name": "Development",
+      "description": "Browse agent skills for software development across all platforms and languages",
+      "componentType": "agent",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/categories/development",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/categories/development"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/development",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "916f63aa56f1d5bb2312f0f295149a5ee457aaa2adda2a73d69cd0e10d768639"
+        }
+      ],
+      "normalizedHash": "fa2d71f2d2c6d21de13437163e6cbcd33c047dbaaef14d37c90aafcd6ac9e53d",
+      "firstSeenAt": "2026-05-29T08:20:50.581Z",
+      "lastSeenAt": "2026-05-29T08:20:50.581Z",
+      "updatedAt": "2026-05-29T08:20:50.581Z"
+    },
+    {
+      "canonicalSlug": "testing-security-skillsmp-agent",
+      "name": "Testing & Security",
+      "description": "Browse agent skills for testing, QA, security auditing, and code quality",
+      "componentType": "agent",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/categories/testing-security",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/categories/testing-security"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/testing-security",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "7db7893fab2682848ff9965dd902f64adb8d540c5aa867145ef97632b33d5185"
+        }
+      ],
+      "normalizedHash": "bd7618729e232e6dc1d4e0bd1e067cb7ee5f57122dcde0c9467e7ec60688d3b2",
+      "firstSeenAt": "2026-05-29T08:20:50.588Z",
+      "lastSeenAt": "2026-05-29T08:20:50.588Z",
+      "updatedAt": "2026-05-29T08:20:50.588Z"
+    },
+    {
+      "canonicalSlug": "data-ai-skillsmp-agent",
+      "name": "Data & AI",
+      "description": "Browse agent skills for data science, AI, machine learning, and data engineering",
+      "componentType": "agent",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/categories/data-ai",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/categories/data-ai"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/data-ai",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "77d16d95bf96005d15886f99b699ddad8182106b58841d22a7f932a3aaaab8fa"
+        }
+      ],
+      "normalizedHash": "adbf17a37e20446b5496741f711edd45a6efee661e7ad10ae1fdcc2eb54d8411",
+      "firstSeenAt": "2026-05-29T08:20:50.596Z",
+      "lastSeenAt": "2026-05-29T08:20:50.596Z",
+      "updatedAt": "2026-05-29T08:20:50.596Z"
+    },
+    {
+      "canonicalSlug": "devops-skillsmp-agent",
+      "name": "DevOps",
+      "description": "Browse agent skills for DevOps, CI/CD, infrastructure, and deployment automation",
+      "componentType": "agent",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/categories/devops",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/categories/devops"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/devops",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "e5033f2af153de1dc99455beedb8a60737d7b461bad4a02c11469e9fb4a6468d"
+        }
+      ],
+      "normalizedHash": "a5cb96f75e6beff5fa6ff91a77111988310c6e51a3939d320f65016ceed5fab8",
+      "firstSeenAt": "2026-05-29T08:20:50.605Z",
+      "lastSeenAt": "2026-05-29T08:20:50.605Z",
+      "updatedAt": "2026-05-29T08:20:50.605Z"
+    },
+    {
+      "canonicalSlug": "documentation-skillsmp-agent",
+      "name": "Documentation",
+      "description": "Browse agent skills for documentation, technical writing, and knowledge management",
+      "componentType": "agent",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/categories/documentation",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/categories/documentation"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/documentation",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "2f930aa7de9f085edd895db4da0cf214fe6abe74bc202f638cf20188bd53ff3b"
+        }
+      ],
+      "normalizedHash": "0fc644ac35604788c24034ea7c66a9f3f04ff4c998cdd714cab44e0e031c62d2",
+      "firstSeenAt": "2026-05-29T08:20:50.615Z",
+      "lastSeenAt": "2026-05-29T08:20:50.615Z",
+      "updatedAt": "2026-05-29T08:20:50.615Z"
+    },
+    {
+      "canonicalSlug": "business-skillsmp-agent",
+      "name": "Business",
+      "description": "Browse agent skills for business applications, e-commerce, payments, and CRM",
+      "componentType": "agent",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/categories/business",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/categories/business"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/business",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "214f2062b77bf57e2dbc2bf1b670a6d616289cad12281dcd04bfbc924fb4f3f8"
+        }
+      ],
+      "normalizedHash": "56031cfd9c46a733df6af47960da71ef76782d259b9b3fd0ac334f82664ebe68",
+      "firstSeenAt": "2026-05-29T08:20:50.624Z",
+      "lastSeenAt": "2026-05-29T08:20:50.624Z",
+      "updatedAt": "2026-05-29T08:20:50.624Z"
+    },
+    {
+      "canonicalSlug": "skillsmp-unknown",
+      "name": "",
+      "description": "",
+      "componentType": "unknown",
+      "categories": [],
+      "tags": [],
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com",
+        "https://skillsmp.com/categories/backend",
+        "https://skillsmp.com/categories/frontend",
+        "https://skillsmp.com/categories/development",
+        "https://skillsmp.com/categories/testing-security",
+        "https://skillsmp.com/categories/data-ai",
+        "https://skillsmp.com/categories/devops",
+        "https://skillsmp.com/categories/documentation",
+        "https://skillsmp.com/categories/business",
+        "https://skillsmp.com/categories/tools"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8"
+        },
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "720838ca43b25225d4d7b5c7dd71b837c80f53b202fb31b18ba13e1c74741914"
+        },
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/backend",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8"
+        },
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/frontend",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8"
+        },
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/development",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8"
+        },
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/testing-security",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8"
+        },
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/data-ai",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8"
+        },
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/devops",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8"
+        },
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/documentation",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8"
+        },
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/business",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8"
+        },
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/tools",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "7304bbcf77eb8c81c4a0bd911f85ae0437087753496ca01621de49c265fb64b8"
+        }
+      ],
+      "normalizedHash": "bff1e3d0ccf104869ef3b8c90a322de5ab08982286e90dd9dfe72a6da3ff1b04",
+      "firstSeenAt": "2026-05-29T08:20:50.322Z",
+      "lastSeenAt": "2026-05-29T08:20:50.628Z",
+      "updatedAt": "2026-05-29T08:20:50.628Z"
+    },
+    {
+      "canonicalSlug": "tools-skillsmp-agent",
+      "name": "Tools",
+      "description": "Browse agent skills for developer tools, CLI utilities, and productivity automation",
+      "componentType": "agent",
+      "categories": [],
+      "tags": [],
+      "packageUrl": "https://skillsmp.com/categories/tools",
+      "marketplaceName": "SkillsMP",
+      "officialVerified": false,
+      "riskFlags": [],
+      "compatibility": [],
+      "sourceUrls": [
+        "https://skillsmp.com/categories/tools"
+      ],
+      "provenance": [
+        {
+          "sourceName": "skillsmp",
+          "sourceUrl": "https://skillsmp.com/categories/tools",
+          "extractionMethod": "embedded_json",
+          "confidenceScore": 0.88,
+          "contentHash": "8ed94a8c96573a5cb4a62f7961a63d94292c7c22b7fefb6ee6faf473420f68bb"
+        }
+      ],
+      "normalizedHash": "308ebe33aa15fd474cce131a7170056542c5efad4c035d4152273daa5deaa3c8",
+      "firstSeenAt": "2026-05-29T08:20:50.632Z",
+      "lastSeenAt": "2026-05-29T08:20:50.632Z",
+      "updatedAt": "2026-05-29T08:20:50.632Z"
+    }
+  ],
+  "errors": [
+    {
+      "id": "err_1780040517461_hh2wzhjm",
+      "runId": "run_1780040516536_7667five",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/api/v1/skills/search?q=software%20development&limit=50&page=1&sortBy=stars",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T07:41:57.461Z"
+    },
+    {
+      "id": "err_1780040520456_8lizc2ag",
+      "runId": "run_1780040516536_7667five",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/api/v1/skills/search?q=business%20finance&limit=50&page=1&sortBy=stars",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T07:42:00.456Z"
+    },
+    {
+      "id": "err_1780040523494_gpz5rpo2",
+      "runId": "run_1780040516536_7667five",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/api/v1/skills/search?q=design%20media&limit=50&page=1&sortBy=stars",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T07:42:03.494Z"
+    },
+    {
+      "id": "err_1780040526480_4ifsq4iv",
+      "runId": "run_1780040516536_7667five",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/api/v1/skills/search?q=education%20research&limit=50&page=1&sortBy=stars",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T07:42:06.480Z"
+    },
+    {
+      "id": "err_1780040529495_pwaeqn7a",
+      "runId": "run_1780040516536_7667five",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/api/v1/skills/search?q=healthcare%20legal%20operations&limit=50&page=1&sortBy=stars",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T07:42:09.495Z"
+    },
+    {
+      "id": "err_1780042634365_x1eptjnk",
+      "runId": "run_1780042634014_zc6od16p",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/api/v1/skills/search?q=software%20development&limit=50&page=1&sortBy=stars",
+      "errorType": "robots_disallow",
+      "errorMessage": "disallowed by /api/",
+      "retryCount": 0,
+      "createdAt": "2026-05-29T08:17:14.365Z"
+    },
+    {
+      "id": "err_1780042634389_f6y8lbdi",
+      "runId": "run_1780042634014_zc6od16p",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/api/v1/skills/search?q=business%20finance&limit=50&page=1&sortBy=stars",
+      "errorType": "robots_disallow",
+      "errorMessage": "disallowed by /api/",
+      "retryCount": 0,
+      "createdAt": "2026-05-29T08:17:14.389Z"
+    },
+    {
+      "id": "err_1780042634417_xlssh9ym",
+      "runId": "run_1780042634014_zc6od16p",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/api/v1/skills/search?q=design%20media&limit=50&page=1&sortBy=stars",
+      "errorType": "robots_disallow",
+      "errorMessage": "disallowed by /api/",
+      "retryCount": 0,
+      "createdAt": "2026-05-29T08:17:14.417Z"
+    },
+    {
+      "id": "err_1780042634446_vs6dr2sh",
+      "runId": "run_1780042634014_zc6od16p",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/api/v1/skills/search?q=education%20research&limit=50&page=1&sortBy=stars",
+      "errorType": "robots_disallow",
+      "errorMessage": "disallowed by /api/",
+      "retryCount": 0,
+      "createdAt": "2026-05-29T08:17:14.446Z"
+    },
+    {
+      "id": "err_1780042634479_ofinqqrv",
+      "runId": "run_1780042634014_zc6od16p",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/api/v1/skills/search?q=healthcare%20legal%20operations&limit=50&page=1&sortBy=stars",
+      "errorType": "robots_disallow",
+      "errorMessage": "disallowed by /api/",
+      "retryCount": 0,
+      "createdAt": "2026-05-29T08:17:14.479Z"
+    },
+    {
+      "id": "err_1780042742359_o67el3a3",
+      "runId": "run_1780042741478_2kt6q136",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:02.359Z"
+    },
+    {
+      "id": "err_1780042745349_y9axeuyp",
+      "runId": "run_1780042741478_2kt6q136",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/index.md",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:05.349Z"
+    },
+    {
+      "id": "err_1780042748361_qrpt9syq",
+      "runId": "run_1780042741478_2kt6q136",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/llms.txt",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:08.361Z"
+    },
+    {
+      "id": "err_1780042751346_yslc3gjz",
+      "runId": "run_1780042741478_2kt6q136",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/backend",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:11.346Z"
+    },
+    {
+      "id": "err_1780042754346_9i6d6ekw",
+      "runId": "run_1780042741478_2kt6q136",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/frontend",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:14.346Z"
+    },
+    {
+      "id": "err_1780042757347_91zfowea",
+      "runId": "run_1780042741478_2kt6q136",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/development",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:17.347Z"
+    },
+    {
+      "id": "err_1780042760345_qdlee5la",
+      "runId": "run_1780042741478_2kt6q136",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/testing-security",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:20.345Z"
+    },
+    {
+      "id": "err_1780042763348_w2qtcjev",
+      "runId": "run_1780042741478_2kt6q136",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/data-ai",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:23.348Z"
+    },
+    {
+      "id": "err_1780042766345_2diiuzzy",
+      "runId": "run_1780042741478_2kt6q136",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/devops",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:26.345Z"
+    },
+    {
+      "id": "err_1780042769352_x61ke3jr",
+      "runId": "run_1780042741478_2kt6q136",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/documentation",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:29.352Z"
+    },
+    {
+      "id": "err_1780042772352_pkne79cd",
+      "runId": "run_1780042741478_2kt6q136",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/business",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:32.352Z"
+    },
+    {
+      "id": "err_1780042775350_rizj2rt9",
+      "runId": "run_1780042741478_2kt6q136",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/tools",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:35.350Z"
+    },
+    {
+      "id": "err_1780042786626_gixa79i8",
+      "runId": "run_1780042785728_43hlhcr1",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:46.626Z"
+    },
+    {
+      "id": "err_1780042789621_tbet9p2w",
+      "runId": "run_1780042785728_43hlhcr1",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/index.md",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:49.621Z"
+    },
+    {
+      "id": "err_1780042792616_zmzruvds",
+      "runId": "run_1780042785728_43hlhcr1",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/llms.txt",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:52.616Z"
+    },
+    {
+      "id": "err_1780042795614_p9goig2c",
+      "runId": "run_1780042785728_43hlhcr1",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/backend",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:55.614Z"
+    },
+    {
+      "id": "err_1780042798616_qj849pfv",
+      "runId": "run_1780042785728_43hlhcr1",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/frontend",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:19:58.616Z"
+    },
+    {
+      "id": "err_1780042801614_jyhtqw74",
+      "runId": "run_1780042785728_43hlhcr1",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/development",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:20:01.614Z"
+    },
+    {
+      "id": "err_1780042804621_dshp78kq",
+      "runId": "run_1780042785728_43hlhcr1",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/testing-security",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:20:04.621Z"
+    },
+    {
+      "id": "err_1780042807617_mjek458f",
+      "runId": "run_1780042785728_43hlhcr1",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/data-ai",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:20:07.617Z"
+    },
+    {
+      "id": "err_1780042810621_hyhljf4x",
+      "runId": "run_1780042785728_43hlhcr1",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/devops",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:20:10.621Z"
+    },
+    {
+      "id": "err_1780042813614_vm1f5jl2",
+      "runId": "run_1780042785728_43hlhcr1",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/documentation",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:20:13.614Z"
+    },
+    {
+      "id": "err_1780042816624_t0humry7",
+      "runId": "run_1780042785728_43hlhcr1",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/business",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:20:16.624Z"
+    },
+    {
+      "id": "err_1780042819616_l7f01v8d",
+      "runId": "run_1780042785728_43hlhcr1",
+      "sourceId": "src_1780040516494_hovfpef2",
+      "url": "https://skillsmp.com/categories/tools",
+      "errorType": "TypeError",
+      "errorMessage": "fetch failed",
+      "retryCount": 2,
+      "createdAt": "2026-05-29T08:20:19.616Z"
+    }
+  ],
+  "checkpoints": {
+    "src_1780040516494_hovfpef2": {
+      "lastUrl": "https://skillsmp.com/categories/tools",
+      "lastSuccessfulFetchAt": "2026-05-29T08:18:54.248Z"
+    }
+  }
+}

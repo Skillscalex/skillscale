@@ -1,0 +1,258 @@
+{
+  "generatedAt": "2026-06-08T07:36:16.972Z",
+  "refreshSeconds": 15,
+  "mode": "governed-dry-run",
+  "totalSkills": 10,
+  "scannerSummary": {
+    "scanned": 8,
+    "allow": 6,
+    "review": 0,
+    "block": 2
+  },
+  "sourceCoverage": [
+    {
+      "sourceProfileId": "public-skill-registry",
+      "publicLabel": "Public skill registry",
+      "methods": [
+        "registry",
+        "sitemap",
+        "static_html",
+        "embedded_json"
+      ],
+      "status": "simulated"
+    },
+    {
+      "sourceProfileId": "open-agent-skill-index",
+      "publicLabel": "Open agent skill index",
+      "methods": [
+        "sitemap",
+        "static_html",
+        "embedded_json",
+        "playwright"
+      ],
+      "status": "simulated"
+    },
+    {
+      "sourceProfileId": "community-skill-market",
+      "publicLabel": "Community skill market",
+      "methods": [
+        "sitemap",
+        "static_html",
+        "embedded_json",
+        "playwright"
+      ],
+      "status": "simulated"
+    },
+    {
+      "sourceProfileId": "vendor-verified-skill-catalog",
+      "publicLabel": "Verified vendor skill catalog",
+      "methods": [
+        "github",
+        "registry",
+        "static_html"
+      ],
+      "status": "simulated"
+    }
+  ],
+  "governance": {
+    "decision": "simulate_only",
+    "constraints": [
+      "respect robots and rate limits",
+      "dry-run by default",
+      "no scraped command execution",
+      "block critical SkillSpector findings",
+      "civilization cycle cycle-1 produced 3 governance decision(s)"
+    ]
+  },
+  "strategy": [
+    "Prefer registry JSON, sitemap, static HTML, and embedded JSON extraction before dynamic rendering.",
+    "Use Playwright only for sources that require dynamic rendering and only after rate-limit and robots checks.",
+    "Never execute scraped install commands, hook scripts, package scripts, or remote code.",
+    "Apply SkillSpector-compatible scanning before storage or marketplace publication.",
+    "Route every cycle through Agentic Civilization governance before live fetch is allowed."
+  ],
+  "skills": [
+    {
+      "id": "agentic-civilization-loop",
+      "name": "agentic-civilization-loop",
+      "author": "skillscale",
+      "stars": 512,
+      "description": "Sense-to-evolve agent civilization loop that preserves diversity, produces trusted deltas, governs simulated actions, and records memory karma.",
+      "tags": [
+        "agentic",
+        "civilization",
+        "governance",
+        "memory",
+        "simulation"
+      ],
+      "updatedAt": "1780876800",
+      "occupationId": "01",
+      "source": "skillscale",
+      "secureScore": 96,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "autonomous-skill-harvester",
+      "name": "autonomous-skill-harvester",
+      "author": "skillscale",
+      "stars": 420,
+      "description": "Governed continuous skill discovery with SkillSpector-compatible scanning, dry-run defaults, and Agentic Civilization review before publication.",
+      "tags": [
+        "agentic",
+        "ingestion",
+        "skillspector",
+        "security",
+        "scraping"
+      ],
+      "updatedAt": "1780876800",
+      "occupationId": "01",
+      "source": "skillscale",
+      "secureScore": 97,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "community-skill-market-candidate-1",
+      "name": "community-skill-market-candidate-1",
+      "author": "agentic-loop",
+      "stars": 100,
+      "description": "Simulated candidate used to verify scan, governance, memory, and route behavior. Scanner recommendation: allow.",
+      "tags": [
+        "agentic",
+        "harvested",
+        "skillspector",
+        "allow"
+      ],
+      "updatedAt": "1780904176",
+      "occupationId": "01",
+      "source": "community-skill-market",
+      "secureScore": 100,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "open-agent-skill-index-candidate-1",
+      "name": "open-agent-skill-index-candidate-1",
+      "author": "agentic-loop",
+      "stars": 100,
+      "description": "Simulated candidate used to verify scan, governance, memory, and route behavior. Scanner recommendation: allow.",
+      "tags": [
+        "agentic",
+        "harvested",
+        "skillspector",
+        "allow"
+      ],
+      "updatedAt": "1780904176",
+      "occupationId": "01",
+      "source": "open-agent-skill-index",
+      "secureScore": 100,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "public-skill-registry-candidate-1",
+      "name": "public-skill-registry-candidate-1",
+      "author": "agentic-loop",
+      "stars": 100,
+      "description": "Simulated candidate used to verify scan, governance, memory, and route behavior. Scanner recommendation: allow.",
+      "tags": [
+        "agentic",
+        "harvested",
+        "skillspector",
+        "allow"
+      ],
+      "updatedAt": "1780904176",
+      "occupationId": "01",
+      "source": "public-skill-registry",
+      "secureScore": 100,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "public-skill-registry-candidate-2",
+      "name": "public-skill-registry-candidate-2",
+      "author": "agentic-loop",
+      "stars": 100,
+      "description": "Simulated candidate used to verify scan, governance, memory, and route behavior. Scanner recommendation: allow.",
+      "tags": [
+        "agentic",
+        "harvested",
+        "skillspector",
+        "allow"
+      ],
+      "updatedAt": "1780904176",
+      "occupationId": "01",
+      "source": "public-skill-registry",
+      "secureScore": 100,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "vendor-verified-skill-catalog-candidate-1",
+      "name": "verified-vendor-skill-catalog-candidate-1",
+      "author": "agentic-loop",
+      "stars": 100,
+      "description": "Simulated candidate used to verify scan, governance, memory, and route behavior. Scanner recommendation: allow.",
+      "tags": [
+        "agentic",
+        "harvested",
+        "skillspector",
+        "allow"
+      ],
+      "updatedAt": "1780904176",
+      "occupationId": "01",
+      "source": "vendor-verified-skill-catalog",
+      "secureScore": 100,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "vendor-verified-skill-catalog-candidate-2",
+      "name": "verified-vendor-skill-catalog-candidate-2",
+      "author": "agentic-loop",
+      "stars": 100,
+      "description": "Simulated candidate used to verify scan, governance, memory, and route behavior. Scanner recommendation: allow.",
+      "tags": [
+        "agentic",
+        "harvested",
+        "skillspector",
+        "allow"
+      ],
+      "updatedAt": "1780904176",
+      "occupationId": "01",
+      "source": "vendor-verified-skill-catalog",
+      "secureScore": 100,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "community-skill-market-candidate-2",
+      "name": "community-skill-market-candidate-2",
+      "author": "agentic-loop",
+      "stars": 58,
+      "description": "Simulated candidate used to verify scan, governance, memory, and route behavior. Scanner recommendation: block.",
+      "tags": [
+        "agentic",
+        "harvested",
+        "skillspector",
+        "block"
+      ],
+      "updatedAt": "1780904176",
+      "occupationId": "01",
+      "source": "community-skill-market",
+      "secureScore": 58,
+      "auditStatus": "blocked"
+    },
+    {
+      "id": "open-agent-skill-index-candidate-2",
+      "name": "open-agent-skill-index-candidate-2",
+      "author": "agentic-loop",
+      "stars": 58,
+      "description": "Simulated candidate used to verify scan, governance, memory, and route behavior. Scanner recommendation: block.",
+      "tags": [
+        "agentic",
+        "harvested",
+        "skillspector",
+        "block"
+      ],
+      "updatedAt": "1780904176",
+      "occupationId": "01",
+      "source": "open-agent-skill-index",
+      "secureScore": 58,
+      "auditStatus": "blocked"
+    }
+  ]
+}

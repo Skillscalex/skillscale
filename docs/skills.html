@@ -37,7 +37,7 @@
 <!-- window.Motion is set by the UMD bundle above -->
 
 <script type="text/babel">
-const { useState, useEffect, useRef, useCallback } = React;
+const { useState, useEffect, useRef, useCallback, useMemo } = React;
 const { motion, useInView, AnimatePresence } = window.Motion;
 
 function getApiBaseCandidates() {
@@ -63,6 +63,111 @@ async function fetchSkillsSearch(params) {
     }
   }
   throw lastError || new Error('Skills API unavailable');
+}
+
+const PAGES_CATALOG_URL = 'data/skills-catalog.json';
+const CATALOG_POLL_MS = 15000;
+
+async function fetchPagesCatalog() {
+  const resp = await fetch(`${PAGES_CATALOG_URL}?t=${Date.now()}`, { cache:'no-store' });
+  if (!resp.ok) throw new Error(`Catalog HTTP ${resp.status}`);
+  return await resp.json();
+}
+
+function normalizeCatalogSkill(skill) {
+  const name = String(skill?.name || skill?.id || 'unnamed-skill').trim();
+  const id = String(skill?.id || name).trim();
+  const tags = Array.isArray(skill?.tags) ? skill.tags.map(String).filter(Boolean).slice(0, 8) : [];
+  const updatedAt = String(skill?.updatedAt || Math.floor(Date.now() / 1000));
+  return {
+    id,
+    name,
+    author: String(skill?.author || 'skillscale'),
+    stars: Number.isFinite(Number(skill?.stars)) ? Number(skill.stars) : 0,
+    description: String(skill?.description || 'Governed skill catalog entry.'),
+    tags,
+    updatedAt,
+    occupationId: String(skill?.occupationId || '01'),
+    githubUrl: skill?.githubUrl ? String(skill.githubUrl) : undefined,
+    source: skill?.source ? String(skill.source) : 'skillscale',
+    secureScore: Number.isFinite(Number(skill?.secureScore)) ? Number(skill.secureScore) : 91,
+    auditStatus: skill?.auditStatus || 'approved',
+  };
+}
+
+function mergeSkills(...groups) {
+  const byKey = new Map();
+  const byName = new Map();
+  groups.flat().forEach(rawSkill => {
+    const skill = normalizeCatalogSkill(rawSkill);
+    if (!skill.id || !skill.name) return;
+    const nameKey = skill.name.toLowerCase();
+    const key = byName.get(nameKey) || skill.id;
+    const existing = byKey.get(key);
+    if (!existing || skill.secureScore > existing.secureScore || skill.stars > existing.stars) byKey.set(key, skill);
+    byName.set(nameKey, key);
+  });
+  return [...byKey.values()].sort((a, b) => b.stars - a.stars || a.name.localeCompare(b.name));
+}
+
+function filterCatalogSkills(skills, occupationId, searchQ) {
+  const q = searchQ.trim().toLowerCase();
+  if (!q) return skills.filter(skill => skill.occupationId === occupationId);
+  return skills.filter(skill => {
+    const text = [skill.name, skill.description, skill.author, skill.source, ...(skill.tags || [])].join(' ').toLowerCase();
+    return text.includes(q);
+  });
+}
+
+function usePagesSkillCatalog() {
+  const [state, setState] = useState({ status:'loading', skills:[], meta:null, lastLoadedAt:null, error:null });
+
+  useEffect(() => {
+    let alive = true;
+    let timer = null;
+
+    async function loadCatalog() {
+      try {
+        const catalog = await fetchPagesCatalog();
+        const skills = Array.isArray(catalog?.skills) ? catalog.skills.map(normalizeCatalogSkill) : [];
+        if (!alive) return;
+        setState({ status:'ready', skills, meta:catalog, lastLoadedAt:new Date(), error:null });
+      } catch (error) {
+        if (!alive) return;
+        setState(prev => ({
+          ...prev,
+          status: prev.skills.length ? 'stale' : 'error',
+          error: error?.message || 'Catalog unavailable',
+        }));
+      }
+    }
+
+    loadCatalog();
+    timer = window.setInterval(loadCatalog, CATALOG_POLL_MS);
+    return () => {
+      alive = false;
+      if (timer) window.clearInterval(timer);
+    };
+  }, []);
+
+  return state;
+}
+
+function formatCatalogTime(value) {
+  if (!value) return 'pending';
+  return value.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit', second:'2-digit' });
+}
+
+function auditLabel(status) {
+  if (status === 'blocked') return 'Blocked';
+  if (status === 'needs_review') return 'Review';
+  return 'Approved';
+}
+
+function auditColor(status) {
+  if (status === 'blocked') return '#B42318';
+  if (status === 'needs_review') return '#B45309';
+  return '#1A7A4A';
 }
 
 /* ===== GitHub icon ===== */
@@ -105,6 +210,10 @@ function scoreTier(score) {
   if (score >= 65) return 'pearl';
   if (score >= 50) return 'quartz';
   return 'coal';
+}
+function getSkillSecureScore(skill) {
+  if (Number.isFinite(Number(skill?.secureScore))) return Math.min(99, Math.max(1, Math.round(Number(skill.secureScore))));
+  return Math.min(99, Math.max(60, ((skill.name.charCodeAt(0) * 3 + skill.name.length * 7 + (skill.name.charCodeAt(skill.name.length-1) || 5) * 2) % 35) + 65));
 }
 const SCORE_TIER_CONFIG = {
   diamond: { label:'Legendary', color:'#C09A2A', icon:'🌟' },
@@ -278,15 +387,24 @@ function ReviewsSection({ skill }) {
 }
 
 /* ===== Trending Row ===== */
-function TrendingRow({ onSelect }) {
+function TrendingRow({ onSelect, catalogSkills }) {
   const [trending, setTrending] = useState([]);
+  const catalogTrending = useMemo(() => (
+    mergeSkills(catalogSkills, STATIC_SKILLS)
+      .filter(skill => skill.auditStatus !== 'blocked')
+      .slice(0, 6)
+  ), [catalogSkills]);
+
   useEffect(() => {
+    if (catalogTrending.length) return;
     const params = new URLSearchParams({ q:'software development', limit:'6', page:'1' });
     fetchSkillsSearch(params)
       .then(d => { if (d.success && d.data?.skills) setTrending(d.data.skills.slice(0,6)); })
       .catch(() => {});
-  }, []);
-  if (!trending.length) return null;
+  }, [catalogTrending.length]);
+
+  const displaySkills = catalogTrending.length ? catalogTrending : trending;
+  if (!displaySkills.length) return null;
   return (
     <div style={{ marginBottom:32 }}>
       <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:14 }}>
@@ -294,7 +412,7 @@ function TrendingRow({ onSelect }) {
         <div style={{ flex:1, height:1, background:'var(--border)' }} />
       </div>
       <div style={{ display:'flex', gap:10, overflowX:'auto', paddingBottom:6 }}>
-        {trending.map(s => (
+        {displaySkills.map(s => (
           <button
             key={s.id}
             onClick={() => onSelect(s)}
@@ -587,7 +705,7 @@ function SkillDetailPanel({ skill, onClose }) {
 
             {/* SecureScore bar */}
             {(() => {
-              const score = Math.min(99, Math.max(60, ((skill.name.charCodeAt(0) * 3 + skill.name.length * 7 + (skill.name.charCodeAt(skill.name.length-1) || 5) * 2) % 35) + 65));
+              const score = getSkillSecureScore(skill);
               const secScore = score;
               const modScore = Math.min(99, Math.max(55, ((skill.name.charCodeAt(1)||65) * 2 + skill.name.length * 3) % 45 + 55));
               const qualScore = Math.min(99, Math.max(50, ((skill.name.charCodeAt(2)||72) * 5 + skill.name.length * 11) % 45 + 50));
@@ -601,6 +719,16 @@ function SkillDetailPanel({ skill, onClose }) {
 
             {/* Compatibility + tags */}
             <div style={{ display:'flex', flexWrap:'wrap', gap:7, marginBottom:24 }}>
+              {skill.auditStatus && (
+                <span className="tag" style={{ fontSize:'.62rem', padding:'3px 10px', color:auditColor(skill.auditStatus), borderColor:auditColor(skill.auditStatus) + '50', background:auditColor(skill.auditStatus) + '10' }}>
+                  {auditLabel(skill.auditStatus)}
+                </span>
+              )}
+              {skill.source && (
+                <span className="tag" style={{ fontSize:'.62rem', padding:'3px 10px' }}>
+                  {skill.source}
+                </span>
+              )}
               {['Claude Code','ChatGPT','Codex'].map(c => (
                 <span key={c} className="tag" style={{ fontSize:'.62rem', padding:'3px 10px' }}>{c}</span>
               ))}
@@ -699,6 +827,21 @@ function SkillCard({ skill, index, onSelect }) {
         {skill.description}
       </p>
 
+      {(skill.auditStatus || skill.source) && (
+        <div style={{ display:'flex', alignItems:'center', gap:7, flexWrap:'wrap' }}>
+          {skill.auditStatus && (
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.58rem', color:auditColor(skill.auditStatus), border:`1px solid ${auditColor(skill.auditStatus)}44`, background:auditColor(skill.auditStatus) + '10', borderRadius:9999, padding:'2px 8px' }}>
+              {auditLabel(skill.auditStatus)}
+            </span>
+          )}
+          {skill.source && (
+            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.58rem', color:'var(--text-2)', border:'1px solid var(--border)', borderRadius:9999, padding:'2px 8px' }}>
+              {skill.source}
+            </span>
+          )}
+        </div>
+      )}
+
       <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginTop:'auto', paddingTop:4 }}>
         <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)' }}>{timeAgoStr(skill.updatedAt)}</span>
         <span style={{ fontFamily:'JetBrains Mono', fontSize:'.63rem', color:'var(--accent)' }}>View →</span>
@@ -722,6 +865,7 @@ const STATIC_SKILLS = [
   { id:'s010', name:'ci-pipeline-builder', author:'dev_kai',      stars:287,  description:'Generate GitHub Actions, GitLab CI, and CircleCI pipelines from project analysis and deployment targets.', tags:['ci-cd','devops'], updatedAt:'1745280000', occupationId:'01' },
   { id:'s011', name:'security-scanner',    author:'sec_pro',      stars:623,  description:'Scan codebases for OWASP Top 10 vulnerabilities, secrets leakage, and known dependency CVEs.', tags:['security','scanning'], updatedAt:'1745280000', occupationId:'01' },
   { id:'s012', name:'readme-writer',       author:'doc_pro',      stars:734,  description:'Generate comprehensive README files from code analysis with badges, examples, and auto-generated API docs.', tags:['documentation','github'], updatedAt:'1745280000', occupationId:'01' },
+  { id:'s069', name:'agentic-civilization-loop', author:'skillscale', stars:512, description:'Sense-to-evolve agent civilization loop that preserves diversity, produces trusted deltas, governs simulated actions, and records memory karma.', tags:['agentic','civilization','governance','memory'], updatedAt:'1780876800', occupationId:'01' },
   { id:'s068', name:'autonomous-skill-harvester', author:'skillscale', stars:420, description:'Governed continuous skill discovery with SkillSpector-compatible scanning, dry-run defaults, and Agentic Civilization review before publication.', tags:['agentic','ingestion','skillspector','security'], updatedAt:'1780876800', occupationId:'01' },
   // 02 — Business & Financial
   { id:'s013', name:'report-writer',       author:'biz_anna',     stars:445,  description:'Transform raw data and bullet points into polished executive reports with narrative and recommendations.', tags:['reporting','business'], updatedAt:'1745280000', occupationId:'02' },
@@ -811,61 +955,23 @@ function getStaticSkills(occupationId, searchQ) {
   return STATIC_SKILLS.filter(s => s.occupationId === occupationId);
 }
 
-/* ===== Skills Grid + fetch ===== */
-function SkillsPane({ occupation, query, searchQ, onSelect }) {
-  const [skills, setSkills] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+/* ===== Skills Grid + generated catalog ===== */
+function SkillsPane({ occupation, searchQ, onSelect, catalogSkills = [], catalogState }) {
   const [page, setPage] = useState(1);
-  const [total, setTotal] = useState(0);
   const LIMIT = 18;
+  const state = catalogState || { status:'loading', skills:[], meta:null, lastLoadedAt:null, error:null };
+  const mergedSkills = useMemo(() => mergeSkills(catalogSkills, STATIC_SKILLS), [catalogSkills]);
+  const filteredSkills = useMemo(() => filterCatalogSkills(mergedSkills, occupation, searchQ), [mergedSkills, occupation, searchQ]);
+  const total = filteredSkills.length;
+  const totalPages = Math.max(1, Math.ceil(total / LIMIT));
+  const currentPage = Math.min(page, totalPages);
+  const visibleSkills = filteredSkills.slice((currentPage - 1) * LIMIT, currentPage * LIMIT);
+  const scanner = state.meta?.scannerSummary;
+  const catalogCount = state.meta?.totalSkills || catalogSkills.length;
 
-  const effectiveQuery = searchQ.trim() || query;
+  useEffect(() => { setPage(1); }, [occupation, searchQ, mergedSkills.length]);
 
-  useEffect(() => { setPage(1); }, [occupation, searchQ]);
-
-  useEffect(() => {
-    if (!effectiveQuery) return;
-    setLoading(true);
-    setError(null);
-    const params = new URLSearchParams({ q: effectiveQuery, limit: String(LIMIT), page: String(page), sortBy: 'stars' });
-    fetchSkillsSearch(params)
-      .then(data => {
-        if (data.success) {
-          setSkills(data.data.skills);
-          setTotal(data.data.pagination.total);
-        } else {
-          setError('API error');
-        }
-      })
-      .catch(() => setError('Could not load the live catalog.'))
-      .finally(() => setLoading(false));
-  }, [effectiveQuery, page]);
-
-  const totalPages = Math.ceil(total / LIMIT);
-
-  if (loading) return (
-    <div className="loading-state" style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:12, padding:'60px 0', fontFamily:'JetBrains Mono', fontSize:'.8rem', color:'var(--text-2)' }}>
-      <span className="spinner" />
-      Fetching skills…
-    </div>
-  );
-
-  if (error || (!skills.length && !loading)) {
-    const fallback = getStaticSkills(occupation, searchQ);
-    if (fallback.length > 0) {
-      return (
-        <div>
-          <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:18, padding:'10px 16px', borderRadius:12, background:'rgba(212,102,26,0.06)', border:'1px solid rgba(212,102,26,0.15)' }}>
-            <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--accent)' }}>◈ Showing curated library</span>
-            <span style={{ fontFamily:'DM Sans', fontSize:'.75rem', color:'var(--text-2)' }}>— live API unavailable. {fallback.length} built-in skills shown.</span>
-          </div>
-          <div className="grid-3">
-            {fallback.map((s, i) => <SkillCard key={s.id} skill={s} index={i} onSelect={onSelect} />)}
-          </div>
-        </div>
-      );
-    }
+  if (!visibleSkills.length) {
     return (
       <div style={{ textAlign:'center', padding:'48px 0' }}>
         <p style={{ fontFamily:'JetBrains Mono', fontSize:'.85rem', color:'var(--text-2)', marginBottom:8 }}>
@@ -877,26 +983,28 @@ function SkillsPane({ occupation, query, searchQ, onSelect }) {
 
   return (
     <div>
-      {total > 0 && (
-        <p style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)', marginBottom:20 }}>
-          {total.toLocaleString()} skills found
-        </p>
-      )}
+      <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:18, padding:'10px 16px', borderRadius:12, background:'rgba(26,122,74,0.06)', border:'1px solid rgba(26,122,74,0.16)', flexWrap:'wrap' }}>
+        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'#1A7A4A' }}>Agentic live catalog</span>
+        <span style={{ fontFamily:'DM Sans', fontSize:'.75rem', color:'var(--text-2)' }}>
+          {state.status} · {catalogCount || mergedSkills.length} generated · {total.toLocaleString()} in view · refreshed {formatCatalogTime(state.lastLoadedAt)}
+          {scanner ? ` · scanned ${scanner.scanned} · review ${scanner.review} · blocked ${scanner.block}` : ''}
+        </span>
+      </div>
       <div className="grid-3">
-        {skills.map((s, i) => <SkillCard key={s.id} skill={s} index={i} onSelect={onSelect} />)}
+        {visibleSkills.map((s, i) => <SkillCard key={s.id} skill={s} index={i} onSelect={onSelect} />)}
       </div>
       {/* Pagination */}
       {totalPages > 1 && (
         <div style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, marginTop:40 }}>
-          <button className="page-btn" disabled={page<=1} onClick={() => setPage(p=>p-1)}>←</button>
+          <button className="page-btn" disabled={currentPage<=1} onClick={() => setPage(p=>p-1)}>←</button>
           {[...Array(Math.min(totalPages, 7))].map((_, i) => {
             const p = i + 1;
             return (
-              <button key={p} className={`page-btn${page===p?' active':''}`} onClick={() => setPage(p)}>{p}</button>
+              <button key={p} className={`page-btn${currentPage===p?' active':''}`} onClick={() => setPage(p)}>{p}</button>
             );
           })}
           {totalPages > 7 && <span style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)' }}>…</span>}
-          <button className="page-btn" disabled={page>=totalPages} onClick={() => setPage(p=>p+1)}>→</button>
+          <button className="page-btn" disabled={currentPage>=totalPages} onClick={() => setPage(p=>p+1)}>→</button>
         </div>
       )}
     </div>
@@ -913,8 +1021,10 @@ function App() {
   const [activeOcc, setActiveOcc] = useState(OCCUPATIONS[0]);
   const [searchQ, setSearchQ] = useState('');
   const [selectedSkill, setSelectedSkill] = useState(null);
+  const catalogState = usePagesSkillCatalog();
   const headerRef = useRef(null);
   const headerInView = useInView(headerRef, { once: true });
+  const headerScanner = catalogState.meta?.scannerSummary;
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -970,13 +1080,17 @@ function App() {
             <p style={{ marginTop:16, fontFamily:'DM Sans', fontSize:'.82rem', color:'var(--text-2)' }}>
               Powered by <a href="https://skillsmp.com" target="_blank" style={{ color:'var(--accent)', fontFamily:'JetBrains Mono', fontSize:'.8rem' }}>skillsmp.com</a> — 23 occupation groups · 867 occupations
             </p>
+            <p style={{ marginTop:8, fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)' }}>
+              Agentic live catalog: {catalogState.status} · {(catalogState.meta?.totalSkills || catalogState.skills.length || STATIC_SKILLS.length).toLocaleString()} skills · refreshed {formatCatalogTime(catalogState.lastLoadedAt)}
+              {headerScanner ? ` · scanned ${headerScanner.scanned} · review ${headerScanner.review} · blocked ${headerScanner.block}` : ''}
+            </p>
           </div>
         </div>
 
         {/* Sidebar + content */}
         <div className="section-sm">
           <div className="container">
-            <TrendingRow onSelect={setSelectedSkill} />
+            <TrendingRow onSelect={setSelectedSkill} catalogSkills={catalogState.skills} />
             <div className="sidebar-layout">
               {/* Sidebar */}
               <aside className="sidebar">
@@ -1022,9 +1136,10 @@ function App() {
 
                 <SkillsPane
                   occupation={activeOcc.id}
-                  query={OCC_QUERY[activeOcc.id]}
                   searchQ={searchQ}
                   onSelect={setSelectedSkill}
+                  catalogSkills={catalogState.skills}
+                  catalogState={catalogState}
                 />
               </div>
             </div>

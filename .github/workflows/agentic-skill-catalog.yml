@@ -1,0 +1,32 @@
+name: Agentic Skill Catalog
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  publish-catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run autonomous:skills:publish
+      - name: Commit catalog updates
+        run: |
+          if git diff --quiet docs/data/skills-catalog.json; then
+            echo "No catalog changes"
+            exit 0
+          fi
+          git config user.name "skillscale-agent"
+          git config user.email "actions@github.com"
+          git add docs/data/skills-catalog.json
+          git commit -m "Update agentic skill catalog"
+          git push

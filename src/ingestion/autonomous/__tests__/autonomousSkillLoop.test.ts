@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { runAutonomousSkillLoop } from "../loop";
+import { buildPagesSkillCatalog } from "../pagesCatalog";
 import { applySkillSpectorScan, scanSkillText } from "../../security/skillspector";
 import type { NormalizedComponent } from "../../types";
 
@@ -48,4 +49,36 @@ await test("autonomous skill loop defaults to simulated dry-run behavior", async
   assert.equal(run.scannerSummary.scanned, run.candidates.length);
   assert.equal(run.governance.decision, "simulate_only");
   assert.ok(run.governance.constraints.includes("no scraped command execution"));
+});
+
+await test("pages catalog includes created skills, cache skills, and governed loop metadata", async () => {
+  const run = await runAutonomousSkillLoop({ maxSources: 1, maxCandidatesPerSource: 1 });
+  const cacheComponent: NormalizedComponent = {
+    canonicalSlug: "cache-research-agent",
+    name: "Cache Research Agent",
+    description: "Cached source record promoted through the Pages catalog.",
+    componentType: "skill",
+    categories: ["Research"],
+    tags: ["research", "agent"],
+    authorName: "cache",
+    officialVerified: false,
+    riskFlags: [],
+    compatibility: ["codex"],
+    sourceUrls: ["https://example.test/cache-research-agent"],
+    starCount: 17,
+  };
+
+  const catalog = buildPagesSkillCatalog({
+    run,
+    cacheComponents: [cacheComponent],
+    generatedAt: "2026-06-08T00:00:00.000Z",
+  });
+
+  assert.equal(catalog.generatedAt, "2026-06-08T00:00:00.000Z");
+  assert.equal(catalog.refreshSeconds, 15);
+  assert.equal(catalog.mode, "governed-dry-run");
+  assert.equal(catalog.scannerSummary.scanned, run.candidates.length);
+  assert.ok(catalog.skills.some((skill) => skill.id === "agentic-civilization-loop"));
+  assert.ok(catalog.skills.some((skill) => skill.id === "autonomous-skill-harvester"));
+  assert.ok(catalog.skills.some((skill) => skill.id === "cache-research-agent"));
 });

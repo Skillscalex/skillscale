@@ -13,6 +13,7 @@
     "ingest:dry-run": "jiti src/ingestion/cli.ts --dry-run",
     "ingest:resume": "jiti src/ingestion/cli.ts --resume",
     "autonomous:skills": "jiti src/ingestion/autonomous/cli.ts",
+    "autonomous:skills:publish": "jiti src/ingestion/autonomous/publishPagesCatalog.ts",
     "agents:dev": "jiti src/agents/server.ts",
     "test:agentic-civilization": "jiti src/lib/agentic-civilization/__tests__/simulator.test.ts",
     "test:autonomous-skills": "jiti src/ingestion/autonomous/__tests__/autonomousSkillLoop.test.ts",

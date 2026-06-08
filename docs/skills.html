@@ -418,7 +418,7 @@ function Nav({ theme, onToggle, currentPage }) {
             ⌬ Studio
           </a>
           <a href="auth.html" className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 16px', border:'1px solid var(--border)' }}>
-            Sign In
+            Safety
           </a>
           <ThemeToggle theme={theme} onToggle={onToggle} />
         </div>
@@ -722,6 +722,7 @@ const STATIC_SKILLS = [
   { id:'s010', name:'ci-pipeline-builder', author:'dev_kai',      stars:287,  description:'Generate GitHub Actions, GitLab CI, and CircleCI pipelines from project analysis and deployment targets.', tags:['ci-cd','devops'], updatedAt:'1745280000', occupationId:'01' },
   { id:'s011', name:'security-scanner',    author:'sec_pro',      stars:623,  description:'Scan codebases for OWASP Top 10 vulnerabilities, secrets leakage, and known dependency CVEs.', tags:['security','scanning'], updatedAt:'1745280000', occupationId:'01' },
   { id:'s012', name:'readme-writer',       author:'doc_pro',      stars:734,  description:'Generate comprehensive README files from code analysis with badges, examples, and auto-generated API docs.', tags:['documentation','github'], updatedAt:'1745280000', occupationId:'01' },
+  { id:'s068', name:'autonomous-skill-harvester', author:'skillscale', stars:420, description:'Governed continuous skill discovery with SkillSpector-compatible scanning, dry-run defaults, and Agentic Civilization review before publication.', tags:['agentic','ingestion','skillspector','security'], updatedAt:'1780876800', occupationId:'01' },
   // 02 — Business & Financial
   { id:'s013', name:'report-writer',       author:'biz_anna',     stars:445,  description:'Transform raw data and bullet points into polished executive reports with narrative and recommendations.', tags:['reporting','business'], updatedAt:'1745280000', occupationId:'02' },
   { id:'s014', name:'financial-analyzer',  author:'finance_pro',  stars:389,  description:'Analyze financial statements, calculate ratios, identify trends, and generate investment summaries.', tags:['finance','analysis'], updatedAt:'1745280000', occupationId:'02' },

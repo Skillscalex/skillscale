@@ -518,6 +518,231 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   color: var(--text-muted);
   font-size: 0.75rem;
 }
+
+/* ── Agentic Civilization ───────────────── */
+.civilization-shell {
+  width: min(100% - 2rem, 1180px);
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem) 0 5rem;
+}
+.civilization-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: end;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  border: 1px solid rgba(232,213,196,0.78);
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(255,250,244,0.96), rgba(237,233,254,0.86));
+  box-shadow: var(--shadow-sm);
+}
+.civilization-hero p {
+  max-width: 760px;
+  margin-top: 0.8rem;
+  color: var(--text-secondary);
+  font-size: clamp(1rem, 2vw, 1.12rem);
+}
+.civilization-kicker,
+.civilization-guardrail,
+.civilization-panel-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.civilization-kicker {
+  min-height: 2rem;
+  color: #5b21b6;
+  font-weight: 800;
+  font-size: 0.88rem;
+}
+.civilization-guardrail {
+  min-height: 2.75rem;
+  white-space: nowrap;
+  padding: 0 0.85rem;
+  border: 1px solid rgba(0,166,106,0.3);
+  border-radius: 0.75rem;
+  color: #047857;
+  background: rgba(220,252,231,0.76);
+  font-weight: 800;
+}
+.civilization-console {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.civilization-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) auto;
+  gap: 0.9rem;
+  align-items: end;
+}
+.civilization-form label {
+  display: grid;
+  gap: 0.45rem;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+.civilization-form textarea {
+  width: 100%;
+  min-height: 6rem;
+  resize: vertical;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: rgba(255,255,255,0.72);
+  color: var(--text-primary);
+  padding: 0.75rem;
+  outline: 0;
+}
+.civilization-form textarea:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.civilization-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+.civilization-actions .btn-primary,
+.civilization-actions .btn-secondary {
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.civilization-actions .btn-primary {
+  border: 0;
+}
+.civilization-error {
+  margin-top: 0.8rem;
+  color: #b91c1c;
+  font-weight: 700;
+}
+.civilization-results {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.civilization-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.civilization-strip div,
+.civilization-panel,
+.civilization-empty {
+  border: 1px solid var(--border);
+  border-radius: 0.875rem;
+  background: var(--bg-card);
+  box-shadow: var(--shadow-sm);
+}
+.civilization-strip div {
+  padding: 1rem;
+}
+.civilization-strip span {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+.civilization-strip strong {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--text-primary);
+  font-size: 1.45rem;
+  line-height: 1;
+}
+.civilization-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.civilization-panel {
+  min-width: 0;
+  padding: 1rem;
+}
+.civilization-panel.wide {
+  grid-column: 1 / -1;
+}
+.civilization-panel-title {
+  color: #5b21b6;
+  font-weight: 900;
+  margin-bottom: 0.8rem;
+}
+.phase-rail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+.phase-rail span {
+  border: 1px solid rgba(124,58,237,0.18);
+  border-radius: 999px;
+  background: rgba(237,233,254,0.72);
+  color: #5b21b6;
+  padding: 0.28rem 0.58rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+.civilization-panel p,
+.civilization-panel small {
+  display: block;
+  margin-top: 0.55rem;
+  color: var(--text-secondary);
+  overflow-wrap: anywhere;
+}
+.civilization-panel small {
+  font-size: 0.82rem;
+}
+.governance-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 0.75rem;
+}
+.governance-list div {
+  padding: 0.85rem;
+  border: 1px solid rgba(124,58,237,0.16);
+  border-radius: 0.75rem;
+  background: rgba(255,255,255,0.58);
+}
+.governance-list strong,
+.governance-list span {
+  display: block;
+}
+.governance-list strong {
+  color: #047857;
+  text-transform: capitalize;
+}
+.governance-list span {
+  margin-top: 0.15rem;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+.civilization-empty {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 860px) {
+  .civilization-hero,
+  .civilization-form,
+  .civilization-grid {
+    grid-template-columns: 1fr;
+  }
+  .civilization-guardrail {
+    justify-self: start;
+  }
+  .civilization-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .civilization-strip {
+    grid-template-columns: 1fr;
+  }
+}
 .detail-list dd {
   color: var(--text-primary);
   font-weight: 700;

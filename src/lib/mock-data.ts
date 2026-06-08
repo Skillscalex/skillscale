@@ -312,6 +312,48 @@ Free skill that condenses any text into structured bullets in seconds. Great for
 - **TLDR** — single paragraph executive summary
 - **Structured** — sections with headers`,
   },
+  {
+    id: "skill-011",
+    title: "Autonomous Skill Harvester",
+    description: "Governed continuous discovery, normalization, SkillSpector-compatible scanning, and simulated publication for AI agent skills.",
+    creator_id: "user-007",
+    creator: { id: "user-007", email: "grace@security.io", username: "sec_grace", avatar_url: null, platform_token_balance: 8900, wallet_address: "0x1b4d0e3f2a7c8b9e5d6a1f4e3c2b1a0d", created_at: "2024-01-01T00:00:00Z" },
+    gem_tier: "diamond",
+    price_usd: 0,
+    crypto_price_eth: null,
+    is_free: true,
+    is_minted: false,
+    nft_token_id: null,
+    plugin_json: { name: "autonomous-skill-harvester", version: "0.1.0", description: "Governed skill ingestion loop", author: "skillscale" },
+    category: "Security",
+    tags: ["agentic", "ingestion", "skillspector", "security", "governance"],
+    secure_score: 97,
+    model_recommendation: "claude-sonnet-4-6",
+    downloads: 4200,
+    created_at: "2026-06-08T00:00:00Z",
+    current_price: 0,
+    price_change_24h: 0,
+    volume_24h: 0,
+    rating: 4.8,
+    review_count: 41,
+    skills_readme: `# Autonomous Skill Harvester
+
+## Overview
+Continuously discovers public AI agent skills, normalizes metadata, applies a local SkillSpector-compatible scanner, and routes results through Agentic Civilization governance.
+
+## Safety Defaults
+- Dry-run and simulated by default
+- No scraped install commands are executed
+- Critical scanner findings are blocked before publication
+- Dynamic rendering is a fallback after registry, sitemap, and static HTML extraction
+
+## Usage
+\`\`\`bash
+npm run autonomous:skills
+\`\`\`
+
+The live fetch path requires explicit runtime flags and still preserves scanner and governance constraints.`,
+  },
 ];
 
 export const MOCK_STATS = {

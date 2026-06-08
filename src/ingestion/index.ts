@@ -1,6 +1,7 @@
 import { RateLimiter } from "./rateLimit";
 import { robotsAllowed } from "./robots";
 import { createIngestionStorage } from "./storage";
+import { applySkillSpectorScan } from "./security/skillspector";
 import type { IngestionStorage, SourceAdapter } from "./types";
 import { buildWithClaudeAdapter } from "./sources/buildwithclaude";
 import { claudePluginHubAdapter } from "./sources/claudePluginHub";
@@ -69,7 +70,8 @@ export async function runIngestion(options: { source?: string; dryRun?: boolean;
           for (const item of items) {
             const stored = await storage.saveRawItem(source.id, run.id, item);
             const normalized = await adapter.normalizeItem(item);
-            if (!options.dryRun) await storage.saveNormalizedComponent(run.id, stored, normalized);
+            const scanned = applySkillSpectorScan(normalized);
+            if (!options.dryRun) await storage.saveNormalizedComponent(run.id, stored, scanned);
             itemsExtracted++;
           }
           await storage.saveCheckpoint(source.id, { lastUrl: url, lastSuccessfulFetchAt: new Date().toISOString() });

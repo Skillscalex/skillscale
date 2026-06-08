@@ -34,6 +34,7 @@ export function Navbar({ currency, onCurrencyChange }: NavbarProps) {
           {[
             { href: "/marketplace", label: "Marketplace" },
             { href: "/studio", label: "Studio" },
+            { href: "/agentic-civilization", label: "Civilization" },
             { href: "/vault", label: "Vault" },
             { href: "/submit", label: "Submit Skill" },
           ].map((l) => (
@@ -124,6 +125,7 @@ export function Navbar({ currency, onCurrencyChange }: NavbarProps) {
           {[
             { href: "/marketplace", label: "Marketplace" },
             { href: "/studio", label: "Studio" },
+            { href: "/agentic-civilization", label: "Civilization" },
             { href: "/vault", label: "Vault" },
             { href: "/submit", label: "Submit Skill" },
             { href: "/profile/me", label: "Profile" },

@@ -1,0 +1,38 @@
+   309.6ms (setup:1113): 2026-06-14 03:27:38
+   309.7ms (setup:1114): /usr/local/py-utils/bin/pipx install uv
+   309.8ms (setup:1115): pipx version is 1.8.0
+   309.9ms (setup:1116): Default python interpreter is '/usr/local/python/3.12.1/bin/python3.12'
+   311.3ms (package_name_from_spec:381): Determined package name: uv
+   311.4ms (package_name_from_spec:382): Package name determined in 0.0s
+   311.8ms (create_venv:164): Creating virtual environment
+   318.8ms (run_subprocess:175): running /usr/local/python/3.12.1/bin/python3.12 -m venv --without-pip /workspaces/skillscale/.pipx/venvs/uv
+   444.8ms (run_subprocess:195): stdout:
+   445.0ms (run_subprocess:197): stderr:
+   445.0ms (run_subprocess:198): returncode: 0
+   445.8ms (run_subprocess:175): running <checking pip's availability>
+   479.6ms (run_subprocess:195): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x72b35a8abc20>, origin='/workspaces/skillscale/.pipx/shared/lib/python3.12/site-packages/pip/__init__.py', submodule_search_locations=['/workspaces/skillscale/.pipx/shared/lib/python3.12/site-packages/pip'])
+   479.7ms (run_subprocess:198): returncode: 0
+   480.2ms (run_subprocess:175): running /workspaces/skillscale/.pipx/venvs/uv/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+   521.8ms (run_subprocess:195): stdout: /workspaces/skillscale/.pipx/venvs/uv/lib/python3.12/site-packages
+   521.9ms (run_subprocess:198): returncode: 0
+   522.4ms (run_subprocess:175): running /workspaces/skillscale/.pipx/shared/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+   544.8ms (run_subprocess:195): stdout: /workspaces/skillscale/.pipx/shared/lib/python3.12/site-packages
+   544.9ms (run_subprocess:198): returncode: 0
+   545.6ms (run_subprocess:175): running /workspaces/skillscale/.pipx/venvs/uv/bin/python --version
+   552.4ms (run_subprocess:195): stdout: Python 3.12.1
+   552.5ms (run_subprocess:197): stderr:
+   552.5ms (run_subprocess:198): returncode: 0
+   552.8ms (_parsed_package_to_package_or_url:139): cleaned package spec: uv
+   552.8ms (install_package:247): Installing uv
+   553.1ms (run_subprocess:175): running /workspaces/skillscale/.pipx/venvs/uv/bin/python -m pip --no-input install uv
+  4559.8ms (run_subprocess:198): returncode: 0
+  4560.2ms (run_subprocess:175): running <fetch_info_in_venv commands>
+  4587.4ms (run_subprocess:195): stdout: {"sys_path": ["/usr/local/python/3.12.1/lib/python312.zip", "/usr/local/python/3.12.1/lib/python3.12", "/usr/local/python/3.12.1/lib/python3.12/lib-dynload", "/workspaces/skillscale/.pipx/venvs/uv/lib/python3.12/site-packages", "/workspaces/skillscale/.pipx/shared/lib/python3.12/site-packages"], "python_version": "3.12.1", "environment": {"implementation_name": "cpython", "implementation_version": "3.12.1", "os_name": "posix", "platform_machine": "x86_64", "platform_release": "6.8.0-1052-azure", "platform_system": "Linux", "platform_version": "#58~22.04.1-Ubuntu SMP Thu Mar 26 05:02:21 UTC 2026", "python_full_version": "3.12.1", "platform_python_implementation": "CPython", "python_version": "3.12", "sys_platform": "linux"}}
+  4587.6ms (run_subprocess:198): returncode: 0
+  4591.2ms (get_venv_metadata_for_package:351): get_venv_metadata_for_package: 31ms
+  4591.4ms (_parsed_package_to_package_or_url:139): cleaned package spec: uv
+  4600.4ms (warn_if_not_on_path:477): ⚠️  Note: '/workspaces/skillscale/.local/bin' is not on your PATH environment
+    variable. These apps will not be globally accessible until your PATH is
+    updated. Run `pipx ensurepath` to automatically add it, or manually modify
+    your PATH in your shell's config file (e.g. ~/.bashrc).
+  4600.6ms (cli:1192): pipx finished.

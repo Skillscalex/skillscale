@@ -66,6 +66,8 @@ async function fetchSkillsSearch(params) {
 }
 
 const PAGES_CATALOG_URL = 'data/skills-catalog.json';
+const OCCUPATION_COUNTS_URL = 'data/occupation-counts.json';
+const SKILLS_INDEX_URL = 'data/skills-index';
 const CATALOG_POLL_MS = 15000;
 
 async function fetchPagesCatalog() {
@@ -151,6 +153,95 @@ function usePagesSkillCatalog() {
   }, []);
 
   return state;
+}
+
+function useOccupationCounts() {
+  const [state, setState] = useState({ status:'loading', occupations:OCCUPATIONS, meta:null, lastLoadedAt:null, error:null });
+
+  useEffect(() => {
+    let alive = true;
+
+    async function loadCounts() {
+      try {
+        const resp = await fetch(`${OCCUPATION_COUNTS_URL}?t=${Date.now()}`, { cache:'no-store' });
+        if (!resp.ok) throw new Error(`Occupation counts HTTP ${resp.status}`);
+        const catalog = await resp.json();
+        const incoming = Array.isArray(catalog?.occupations) ? catalog.occupations : [];
+        const byId = new Map(incoming.map(occ => [String(occ.id), occ]));
+        const occupations = OCCUPATIONS.map(occ => {
+          const fresh = byId.get(occ.id);
+          return fresh ? {
+            ...occ,
+            label: String(fresh.label || occ.label),
+            count: String(fresh.displayCount || formatCompactCount(fresh.count) || occ.count),
+            rawCount: Number(fresh.count || occ.rawCount || 0),
+            sourceUrl: fresh.sourceUrl ? String(fresh.sourceUrl) : occ.sourceUrl,
+            localCount: Number(fresh.localCount || 0),
+            coveragePercent: Number(fresh.coveragePercent || 0),
+            mirrorStatus: fresh.mirrorStatus ? String(fresh.mirrorStatus) : 'sampled',
+          } : occ;
+        });
+        if (!alive) return;
+        setState({ status:'ready', occupations, meta:catalog, lastLoadedAt:new Date(), error:null });
+      } catch (error) {
+        if (!alive) return;
+        setState(prev => ({ ...prev, status:'error', error:error?.message || 'Occupation counts unavailable' }));
+      }
+    }
+
+    loadCounts();
+    return () => { alive = false; };
+  }, []);
+
+  return state;
+}
+
+function useOccupationShard(occupationId, page, pageSize) {
+  const [state, setState] = useState({ status:'idle', skills:[], manifest:null, rootManifest:null, shardIndex:0, shardSize:500, error:null });
+
+  useEffect(() => {
+    let alive = true;
+
+    async function loadShard() {
+      setState(prev => ({ ...prev, status:'loading', error:null }));
+      try {
+        const rootResp = await fetch(`${SKILLS_INDEX_URL}/manifest.json?t=${Date.now()}`, { cache:'no-store' });
+        const rootManifest = rootResp.ok ? await rootResp.json() : null;
+        const manifestResp = await fetch(`${SKILLS_INDEX_URL}/${occupationId}/manifest.json?t=${Date.now()}`, { cache:'no-store' });
+        if (!manifestResp.ok) throw new Error(`Shard manifest HTTP ${manifestResp.status}`);
+        const manifest = await manifestResp.json();
+        const shards = Array.isArray(manifest?.shards) ? manifest.shards : [];
+        const shardSize = Number(manifest?.shardSize || 500);
+        const shardIndex = Math.floor(((Math.max(1, page) - 1) * pageSize) / shardSize);
+        const shardPath = shards[shardIndex] || null;
+        if (!shardPath) {
+          if (alive) setState({ status:'ready', skills:[], manifest, rootManifest, shardIndex, shardSize, error:null });
+          return;
+        }
+        const shardResp = await fetch(`${SKILLS_INDEX_URL}/${shardPath}?t=${Date.now()}`, { cache:'no-store' });
+        if (!shardResp.ok) throw new Error(`Skill shard HTTP ${shardResp.status}`);
+        const shard = await shardResp.json();
+        const skills = Array.isArray(shard?.skills) ? shard.skills.map(normalizeCatalogSkill) : [];
+        if (alive) setState({ status:'ready', skills, manifest, rootManifest, shardIndex, shardSize, error:null });
+      } catch (error) {
+        if (alive) setState({ status:'error', skills:[], manifest:null, rootManifest:null, shardIndex:0, shardSize:500, error:error?.message || 'Skill shard unavailable' });
+      }
+    }
+
+    loadShard();
+    return () => { alive = false; };
+  }, [occupationId, page, pageSize]);
+
+  return state;
+}
+
+function formatCompactCount(value) {
+  const count = Number(value);
+  if (!Number.isFinite(count)) return '';
+  if (count >= 1000000) return `${(count / 1000000).toFixed(count >= 10000000 ? 0 : 1)}M`;
+  if (count >= 10000) return `${Math.round(count / 1000)}k`;
+  if (count >= 1000) return `${(count / 1000).toFixed(1)}k`;
+  return count.toLocaleString();
 }
 
 function formatCatalogTime(value) {
@@ -433,29 +524,29 @@ function TrendingRow({ onSelect, catalogSkills }) {
 
 /* ===== Occupation data ===== */
 const OCCUPATIONS = [
-  { id: '01', label: 'Computer & Mathematical',      count: '838k' },
-  { id: '02', label: 'Business & Financial Ops',     count: '131k' },
-  { id: '03', label: 'Arts, Design & Media',         count: '57k'  },
-  { id: '04', label: 'Office & Administrative',      count: '41k'  },
-  { id: '05', label: 'Educational & Library',        count: '17k'  },
-  { id: '06', label: 'Life, Physical & Social Sci',  count: '17k'  },
-  { id: '07', label: 'Management',                   count: '12k'  },
-  { id: '08', label: 'Legal',                        count: '9.7k' },
-  { id: '09', label: 'Sales & Related',              count: '6.5k' },
-  { id: '10', label: 'Architecture & Engineering',   count: '5.1k' },
-  { id: '11', label: 'Healthcare Practitioners',     count: '4.1k' },
-  { id: '12', label: 'Personal Care & Service',      count: '3.6k' },
-  { id: '13', label: 'Community & Social Service',   count: '2.7k' },
-  { id: '14', label: 'Military Specific',            count: '2.2k' },
-  { id: '15', label: 'Food Prep & Serving',          count: '1.2k' },
-  { id: '16', label: 'Transportation & Moving',      count: '978'  },
-  { id: '17', label: 'Healthcare Support',           count: '652'  },
-  { id: '18', label: 'Protective Service',           count: '557'  },
-  { id: '19', label: 'Construction & Extraction',    count: '391'  },
-  { id: '20', label: 'Farming, Fishing & Forestry',  count: '373'  },
-  { id: '21', label: 'Production',                   count: '255'  },
-  { id: '22', label: 'Installation & Repair',        count: '193'  },
-  { id: '23', label: 'Building & Grounds',           count: '119'  },
+  { id: '01', label: 'Computer and Mathematical', count: '1.2M', rawCount: 1199690 },
+  { id: '02', label: 'Business and Financial Operations', count: '181k', rawCount: 180711 },
+  { id: '03', label: 'Arts, Design, Entertainment, Sports, and Media', count: '79.6k', rawCount: 79595 },
+  { id: '04', label: 'Office and Administrative Support', count: '41.9k', rawCount: 41915 },
+  { id: '05', label: 'Legal', count: '23.4k', rawCount: 23361 },
+  { id: '06', label: 'Educational Instruction and Library', count: '19.3k', rawCount: 19305 },
+  { id: '07', label: 'Life, Physical, and Social Science', count: '19.0k', rawCount: 18983 },
+  { id: '08', label: 'Management', count: '12.0k', rawCount: 12044 },
+  { id: '09', label: 'Sales and Related', count: '6.8k', rawCount: 6801 },
+  { id: '10', label: 'Architecture and Engineering', count: '5.6k', rawCount: 5584 },
+  { id: '11', label: 'Healthcare Practitioners and Technical', count: '4.5k', rawCount: 4507 },
+  { id: '12', label: 'Personal Care and Service', count: '3.8k', rawCount: 3819 },
+  { id: '13', label: 'Community and Social Service', count: '2.7k', rawCount: 2650 },
+  { id: '14', label: 'Military Specific', count: '2.1k', rawCount: 2148 },
+  { id: '15', label: 'Food Preparation and Serving Related', count: '1.2k', rawCount: 1228 },
+  { id: '16', label: 'Transportation and Material Moving', count: '925', rawCount: 925 },
+  { id: '17', label: 'Healthcare Support', count: '610', rawCount: 610 },
+  { id: '18', label: 'Protective Service', count: '579', rawCount: 579 },
+  { id: '19', label: 'Construction and Extraction', count: '389', rawCount: 389 },
+  { id: '20', label: 'Farming, Fishing, and Forestry', count: '387', rawCount: 387 },
+  { id: '21', label: 'Production', count: '253', rawCount: 253 },
+  { id: '22', label: 'Installation, Maintenance, and Repair', count: '229', rawCount: 229 },
+  { id: '23', label: 'Building and Grounds Cleaning and Maintenance', count: '120', rawCount: 120 },
 ];
 
 /* Occupation → API query keyword mapping */
@@ -464,10 +555,10 @@ const OCC_QUERY = {
   '02': 'business finance project management',
   '03': 'design art media writing',
   '04': 'office administrative secretary',
-  '05': 'education teaching learning',
-  '06': 'science research data analysis',
-  '07': 'management leadership executive',
-  '08': 'legal law compliance',
+  '05': 'legal law compliance',
+  '06': 'education teaching learning',
+  '07': 'science research data analysis',
+  '08': 'management leadership executive',
   '09': 'sales marketing customer',
   '10': 'engineering architecture mechanical',
   '11': 'healthcare medical clinical',
@@ -883,22 +974,22 @@ const STATIC_SKILLS = [
   { id:'s037', name:'notion-sync',         author:'alex_m',       stars:623,  description:'Bi-directional sync between Claude context and Notion — read pages, create databases, update properties.', tags:['notion','productivity'], updatedAt:'1745280000', occupationId:'04' },
   { id:'s038', name:'calendar-agent',      author:'time_ai',      stars:512,  description:'Schedule meetings, find optimal times, send invites, and manage conflicts intelligently.', tags:['calendar','scheduling'], updatedAt:'1745280000', occupationId:'04' },
   { id:'s046', name:'claude-summarizer',   author:'mia_dev',      stars:512,  description:'Summarize long documents, codebases, meetings, and threads into structured actionable briefs.', tags:['summarization','productivity'], updatedAt:'1745280000', occupationId:'04' },
-  // 05 — Educational & Library
-  { id:'s021', name:'lesson-planner',      author:'edu_team',     stars:445,  description:'Create detailed lesson plans with learning objectives, activities, assessments, and differentiation strategies.', tags:['education','curriculum'], updatedAt:'1745280000', occupationId:'05' },
-  { id:'s022', name:'quiz-generator',      author:'learn_ai',     stars:378,  description:'Generate quizzes, flashcards, and practice problems from any document or textbook chapter.', tags:['education','assessment'], updatedAt:'1745280000', occupationId:'05' },
-  { id:'s047', name:'research-assistant',  author:'academic_ai',  stars:312,  description:'Synthesize academic literature, check citations, identify gaps, and draft literature reviews.', tags:['research','academic'], updatedAt:'1745280000', occupationId:'05' },
-  // 06 — Life, Physical & Social Sciences
-  { id:'s031', name:'data-analyzer',       author:'sci_team',     stars:556,  description:'Statistical analysis, hypothesis testing, correlation finding, and research paper generation from datasets.', tags:['data','statistics'], updatedAt:'1745280000', occupationId:'06' },
-  { id:'s032', name:'paper-reviewer',      author:'academic_ai',  stars:478,  description:'Peer-review scientific papers, check methodology, identify gaps, and suggest improvements.', tags:['research','review'], updatedAt:'1745280000', occupationId:'06' },
-  { id:'s048', name:'data-cleaner',        author:'dev_kai',      stars:445,  description:'Automated data validation, deduplication, type coercion, and outlier detection for any dataset.', tags:['data','cleaning'], updatedAt:'1745280000', occupationId:'06' },
-  // 07 — Management
-  { id:'s033', name:'meeting-minutes',     author:'productivity_ai', stars:789, description:'Turn meeting recordings or notes into structured minutes, action items, and decision logs instantly.', tags:['meetings','productivity'], updatedAt:'1745280000', occupationId:'07' },
-  { id:'s034', name:'okr-coach',           author:'mgmt_pro',     stars:534,  description:'Help set, track, and score OKRs. Generate weekly updates, identify blockers, and suggest pivots.', tags:['okr','management'], updatedAt:'1745280000', occupationId:'07' },
-  { id:'s049', name:'hiring-helper',       author:'hr_ai',        stars:312,  description:'Screen resumes, draft job descriptions, generate interview questions, and score candidate fit.', tags:['hiring','hr'], updatedAt:'1745280000', occupationId:'07' },
-  // 08 — Legal
-  { id:'s025', name:'case-researcher',     author:'legal_ai',     stars:489,  description:'Legal case research, precedent finding, statute analysis, and brief drafting assistance.', tags:['legal','research'], updatedAt:'1745280000', occupationId:'08' },
-  { id:'s026', name:'compliance-checker',  author:'reg_expert',   stars:398,  description:'Check documents against regulatory requirements (GDPR, HIPAA, SOC2) and flag compliance gaps.', tags:['compliance','legal'], updatedAt:'1745280000', occupationId:'08' },
-  { id:'s050', name:'contract-drafter',    author:'legal_ai',     stars:334,  description:'Draft contracts, NDAs, and SaaS agreements from plain-English descriptions with jurisdiction awareness.', tags:['contracts','drafting'], updatedAt:'1745280000', occupationId:'08' },
+  // 05 — Legal
+  { id:'s025', name:'case-researcher',     author:'legal_ai',     stars:489,  description:'Legal case research, precedent finding, statute analysis, and brief drafting assistance.', tags:['legal','research'], updatedAt:'1745280000', occupationId:'05' },
+  { id:'s026', name:'compliance-checker',  author:'reg_expert',   stars:398,  description:'Check documents against regulatory requirements (GDPR, HIPAA, SOC2) and flag compliance gaps.', tags:['compliance','legal'], updatedAt:'1745280000', occupationId:'05' },
+  { id:'s050', name:'contract-drafter',    author:'legal_ai',     stars:334,  description:'Draft contracts, NDAs, and SaaS agreements from plain-English descriptions with jurisdiction awareness.', tags:['contracts','drafting'], updatedAt:'1745280000', occupationId:'05' },
+  // 06 — Educational Instruction & Library
+  { id:'s021', name:'lesson-planner',      author:'edu_team',     stars:445,  description:'Create detailed lesson plans with learning objectives, activities, assessments, and differentiation strategies.', tags:['education','curriculum'], updatedAt:'1745280000', occupationId:'06' },
+  { id:'s022', name:'quiz-generator',      author:'learn_ai',     stars:378,  description:'Generate quizzes, flashcards, and practice problems from any document or textbook chapter.', tags:['education','assessment'], updatedAt:'1745280000', occupationId:'06' },
+  { id:'s047', name:'research-assistant',  author:'academic_ai',  stars:312,  description:'Synthesize academic literature, check citations, identify gaps, and draft literature reviews.', tags:['research','academic'], updatedAt:'1745280000', occupationId:'06' },
+  // 07 — Life, Physical & Social Sciences
+  { id:'s031', name:'data-analyzer',       author:'sci_team',     stars:556,  description:'Statistical analysis, hypothesis testing, correlation finding, and research paper generation from datasets.', tags:['data','statistics'], updatedAt:'1745280000', occupationId:'07' },
+  { id:'s032', name:'paper-reviewer',      author:'academic_ai',  stars:478,  description:'Peer-review scientific papers, check methodology, identify gaps, and suggest improvements.', tags:['research','review'], updatedAt:'1745280000', occupationId:'07' },
+  { id:'s048', name:'data-cleaner',        author:'dev_kai',      stars:445,  description:'Automated data validation, deduplication, type coercion, and outlier detection for any dataset.', tags:['data','cleaning'], updatedAt:'1745280000', occupationId:'07' },
+  // 08 — Management
+  { id:'s033', name:'meeting-minutes',     author:'productivity_ai', stars:789, description:'Turn meeting recordings or notes into structured minutes, action items, and decision logs instantly.', tags:['meetings','productivity'], updatedAt:'1745280000', occupationId:'08' },
+  { id:'s034', name:'okr-coach',           author:'mgmt_pro',     stars:534,  description:'Help set, track, and score OKRs. Generate weekly updates, identify blockers, and suggest pivots.', tags:['okr','management'], updatedAt:'1745280000', occupationId:'08' },
+  { id:'s049', name:'hiring-helper',       author:'hr_ai',        stars:312,  description:'Screen resumes, draft job descriptions, generate interview questions, and score candidate fit.', tags:['hiring','hr'], updatedAt:'1745280000', occupationId:'08' },
   // 09 — Sales & Related
   { id:'s027', name:'cold-email-agent',    author:'sales_pro',    stars:634,  description:'Write personalized cold emails that convert, with A/B variants and follow-up sequences.', tags:['sales','email'], updatedAt:'1745280000', occupationId:'09' },
   { id:'s028', name:'crm-assistant',       author:'biz_anna',     stars:512,  description:'Log calls, update CRM records, generate follow-up tasks, and draft proposals from meeting notes.', tags:['crm','sales'], updatedAt:'1745280000', occupationId:'09' },
@@ -956,55 +1047,92 @@ function getStaticSkills(occupationId, searchQ) {
 }
 
 /* ===== Skills Grid + generated catalog ===== */
-function SkillsPane({ occupation, searchQ, onSelect, catalogSkills = [], catalogState }) {
+function SkillsPane({ occupation, occupationStats, searchQ, onSelect, catalogSkills = [], catalogState }) {
   const [page, setPage] = useState(1);
   const LIMIT = 18;
   const state = catalogState || { status:'loading', skills:[], meta:null, lastLoadedAt:null, error:null };
-  const mergedSkills = useMemo(() => mergeSkills(catalogSkills, STATIC_SKILLS), [catalogSkills]);
+  const upstreamCount = Number(occupationStats?.rawCount || 0);
+  const localMirrorCount = Number.isFinite(Number(occupationStats?.localCount)) ? Number(occupationStats.localCount) : 0;
+  const requestedTotal = searchQ.trim() ? 0 : Math.max(localMirrorCount, 0);
+  const totalPages = Math.max(1, Math.ceil((requestedTotal || 1) / LIMIT));
+  const currentPage = searchQ.trim() ? page : Math.min(page, totalPages);
+  const shardState = useOccupationShard(occupation, currentPage, LIMIT);
+  const shardSkills = shardState?.skills || [];
+  const mergedSkills = useMemo(() => mergeSkills(shardSkills, catalogSkills, STATIC_SKILLS), [shardSkills, catalogSkills]);
   const filteredSkills = useMemo(() => filterCatalogSkills(mergedSkills, occupation, searchQ), [mergedSkills, occupation, searchQ]);
-  const total = filteredSkills.length;
-  const totalPages = Math.max(1, Math.ceil(total / LIMIT));
-  const currentPage = Math.min(page, totalPages);
-  const visibleSkills = filteredSkills.slice((currentPage - 1) * LIMIT, currentPage * LIMIT);
+  const localTotal = searchQ.trim() ? filteredSkills.length : (shardState?.manifest?.totalSkills ?? localMirrorCount ?? filteredSkills.length);
+  const pageStart = (currentPage - 1) * LIMIT;
+  const shardStart = (shardState?.shardIndex || 0) * (shardState?.shardSize || 500);
+  const shardOffset = Math.max(0, pageStart - shardStart);
+  const visibleSkills = searchQ.trim()
+    ? filteredSkills.slice((currentPage - 1) * LIMIT, currentPage * LIMIT)
+    : shardState?.manifest
+      ? shardSkills.slice(shardOffset, shardOffset + LIMIT)
+      : filteredSkills.slice((currentPage - 1) * LIMIT, currentPage * LIMIT);
+  const displayTotalPages = Math.max(1, Math.ceil((searchQ.trim() ? filteredSkills.length : localTotal || filteredSkills.length) / LIMIT));
   const scanner = state.meta?.scannerSummary;
   const catalogCount = state.meta?.totalSkills || catalogSkills.length;
+  const shardCount = shardState?.manifest?.totalSkills || shardSkills.length;
+  const projectedShardCount = Number(shardState?.manifest?.projectedShardCount || shardState?.manifest?.shardCount || 0);
+  const shardProgressLabel = projectedShardCount
+    ? `${Number(shardState?.manifest?.shardCount || 0).toLocaleString()} of ${projectedShardCount.toLocaleString()} projected shards`
+    : `${Number(shardState?.manifest?.shardCount || 0).toLocaleString()} shards`;
+  const nextMissingShard = Number(shardState?.manifest?.nextMissingShard || 0);
+  const missingShardLabel = nextMissingShard ? `next missing shard ${nextMissingShard.toLocaleString()}` : 'mirror queue current';
+  const rootMissingShards = Number(shardState?.rootManifest?.missingShardCount || 0);
+  const rootQueueLabel = rootMissingShards ? `${rootMissingShards.toLocaleString()} shards queued globally` : 'global queue current';
+  const coverage = Number(occupationStats?.coveragePercent || 0);
+  const mirrorStatus = occupationStats?.mirrorStatus || (upstreamCount > localTotal ? 'sampled' : 'partial');
+  const occupationTotalLabel = searchQ.trim()
+    ? `${filteredSkills.length.toLocaleString()} local search matches`
+    : upstreamCount
+      ? `${upstreamCount.toLocaleString()} indexed on SkillsMP · ${localMirrorCount.toLocaleString()} mirrored here · ${coverage}% coverage · ${mirrorStatus}`
+      : `${localTotal.toLocaleString()} loaded locally`;
 
-  useEffect(() => { setPage(1); }, [occupation, searchQ, mergedSkills.length]);
-
-  if (!visibleSkills.length) {
-    return (
-      <div style={{ textAlign:'center', padding:'48px 0' }}>
-        <p style={{ fontFamily:'JetBrains Mono', fontSize:'.85rem', color:'var(--text-2)', marginBottom:8 }}>
-          {searchQ ? `No results for "${searchQ}"` : 'No skills in library for this group yet.'}
-        </p>
-      </div>
-    );
-  }
+  useEffect(() => { setPage(1); }, [occupation, searchQ]);
 
   return (
     <div>
       <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:18, padding:'10px 16px', borderRadius:12, background:'rgba(26,122,74,0.06)', border:'1px solid rgba(26,122,74,0.16)', flexWrap:'wrap' }}>
         <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'#1A7A4A' }}>Agentic live catalog</span>
         <span style={{ fontFamily:'DM Sans', fontSize:'.75rem', color:'var(--text-2)' }}>
-          {state.status} · {catalogCount || mergedSkills.length} generated · {total.toLocaleString()} in view · refreshed {formatCatalogTime(state.lastLoadedAt)}
+          {occupationTotalLabel} · shard {shardState?.status || 'idle'} · {shardCount.toLocaleString()} in group shard · {shardProgressLabel} · {missingShardLabel} · {rootQueueLabel} · local catalog {state.status} · {catalogCount || mergedSkills.length} generated · refreshed {formatCatalogTime(state.lastLoadedAt)}
           {scanner ? ` · scanned ${scanner.scanned} · review ${scanner.review} · blocked ${scanner.block}` : ''}
         </span>
+        {!searchQ.trim() && occupationStats?.sourceUrl && (
+          <a href={occupationStats.sourceUrl} target="_blank" style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'#1A7A4A', textDecoration:'underline' }}>
+            Full SkillsMP group
+          </a>
+        )}
       </div>
-      <div className="grid-3">
-        {visibleSkills.map((s, i) => <SkillCard key={s.id} skill={s} index={i} onSelect={onSelect} />)}
-      </div>
+      {visibleSkills.length ? (
+        <div className="grid-3">
+          {visibleSkills.map((s, i) => <SkillCard key={s.id} skill={s} index={i} onSelect={onSelect} />)}
+        </div>
+      ) : (
+        <div style={{ textAlign:'center', padding:'48px 0', border:'1px solid var(--border)', borderRadius:12 }}>
+          <p style={{ fontFamily:'JetBrains Mono', fontSize:'.85rem', color:'var(--text-2)', marginBottom:8 }}>
+            {searchQ ? `No local mirror results for "${searchQ}"` : 'No locally mirrored cards for this group yet.'}
+          </p>
+          {!searchQ.trim() && occupationStats?.sourceUrl && (
+            <a href={occupationStats.sourceUrl} target="_blank" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--accent)', textDecoration:'underline' }}>
+              Open the full SkillsMP group
+            </a>
+          )}
+        </div>
+      )}
       {/* Pagination */}
-      {totalPages > 1 && (
+      {displayTotalPages > 1 && (
         <div style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, marginTop:40 }}>
           <button className="page-btn" disabled={currentPage<=1} onClick={() => setPage(p=>p-1)}>←</button>
-          {[...Array(Math.min(totalPages, 7))].map((_, i) => {
+          {[...Array(Math.min(displayTotalPages, 7))].map((_, i) => {
             const p = i + 1;
             return (
               <button key={p} className={`page-btn${currentPage===p?' active':''}`} onClick={() => setPage(p)}>{p}</button>
             );
           })}
-          {totalPages > 7 && <span style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)' }}>…</span>}
-          <button className="page-btn" disabled={currentPage>=totalPages} onClick={() => setPage(p=>p+1)}>→</button>
+          {displayTotalPages > 7 && <span style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)' }}>…</span>}
+          <button className="page-btn" disabled={currentPage>=displayTotalPages} onClick={() => setPage(p=>p+1)}>→</button>
         </div>
       )}
     </div>
@@ -1022,6 +1150,9 @@ function App() {
   const [searchQ, setSearchQ] = useState('');
   const [selectedSkill, setSelectedSkill] = useState(null);
   const catalogState = usePagesSkillCatalog();
+  const occupationCountsState = useOccupationCounts();
+  const occupations = occupationCountsState.occupations;
+  const activeOccupation = occupations.find(occ => occ.id === activeOcc.id) || activeOcc;
   const headerRef = useRef(null);
   const headerInView = useInView(headerRef, { once: true });
   const headerScanner = catalogState.meta?.scannerSummary;
@@ -1081,9 +1212,10 @@ function App() {
               Powered by <a href="https://skillsmp.com" target="_blank" style={{ color:'var(--accent)', fontFamily:'JetBrains Mono', fontSize:'.8rem' }}>skillsmp.com</a> — 23 occupation groups · 867 occupations
             </p>
             <p style={{ marginTop:8, fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)' }}>
-              Agentic live catalog: {catalogState.status} · {(catalogState.meta?.totalSkills || catalogState.skills.length || STATIC_SKILLS.length).toLocaleString()} skills · refreshed {formatCatalogTime(catalogState.lastLoadedAt)}
-              {headerScanner ? ` · scanned ${headerScanner.scanned} · review ${headerScanner.review} · blocked ${headerScanner.block}` : ''}
-            </p>
+                Agentic live catalog: {catalogState.status} · {(catalogState.meta?.totalSkills || catalogState.skills.length || STATIC_SKILLS.length).toLocaleString()} skills · refreshed {formatCatalogTime(catalogState.lastLoadedAt)}
+                {headerScanner ? ` · scanned ${headerScanner.scanned} · review ${headerScanner.review} · blocked ${headerScanner.block}` : ''}
+                {occupationCountsState.meta ? ` · SkillsMP ${occupationCountsState.meta.totalMajorGroups} groups · ${occupationCountsState.meta.totalOccupations} occupations · ${occupationCountsState.meta.classifiedPercent || 0}% classified` : ''}
+              </p>
           </div>
         </div>
 
@@ -1097,7 +1229,7 @@ function App() {
                 <p className="sidebar__label" style={{ fontFamily:'JetBrains Mono', fontSize:'.63rem', textTransform:'uppercase', letterSpacing:'.09em', color:'var(--text-2)', marginBottom:10, padding:'0 8px' }}>
                   Occupation Groups
                 </p>
-                {OCCUPATIONS.map(occ => (
+                {occupations.map(occ => (
                   <button
                     key={occ.id}
                     onClick={() => { setActiveOcc(occ); setSearchQ(''); }}
@@ -1125,17 +1257,28 @@ function App() {
               <div>
                 <div style={{ display:'flex', alignItems:'center', gap:12, marginBottom:28, flexWrap:'wrap' }}>
                   <h2 className="t-heading" style={{ fontSize:'1.3rem', color:'var(--text)' }}>
-                    {searchQ.trim() ? `"${searchQ}"` : activeOcc.label}
+                    {searchQ.trim() ? `"${searchQ}"` : activeOccupation.label}
                   </h2>
                   {!searchQ.trim() && (
                     <div className="lg" style={{ borderRadius:9999, padding:'4px 12px' }}>
-                      <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--text-2)' }}>Group #{activeOcc.id}</span>
+                      <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--text-2)' }}>Group #{activeOccupation.id}</span>
+                    </div>
+                  )}
+                  {!searchQ.trim() && activeOccupation.rawCount && (
+                    <div className="lg" style={{ borderRadius:9999, padding:'4px 12px' }}>
+                      <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--accent)' }}>{Number(activeOccupation.rawCount).toLocaleString()} indexed</span>
+                    </div>
+                  )}
+                  {!searchQ.trim() && Number.isFinite(Number(activeOccupation.localCount)) && (
+                    <div className="lg" style={{ borderRadius:9999, padding:'4px 12px' }}>
+                      <span style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', color:'var(--text-2)' }}>{Number(activeOccupation.localCount).toLocaleString()} mirrored</span>
                     </div>
                   )}
                 </div>
 
                 <SkillsPane
                   occupation={activeOcc.id}
+                  occupationStats={activeOccupation}
                   searchQ={searchQ}
                   onSelect={setSelectedSkill}
                   catalogSkills={catalogState.skills}

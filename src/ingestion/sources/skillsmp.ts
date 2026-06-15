@@ -7,6 +7,7 @@ export const skillsmpAdapter = () =>
     "website",
     [
       "https://skillsmp.com",
+      "https://skillsmp.com/occupations",
       "https://skillsmp.com/index.md",
       "https://skillsmp.com/llms.txt",
       "https://skillsmp.com/categories/backend",

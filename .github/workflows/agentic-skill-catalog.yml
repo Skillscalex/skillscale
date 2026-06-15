@@ -18,15 +18,19 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm run autonomous:skills:publish
+      - name: Ingest and publish catalog
+        run: npm run autonomous:skills:publish -- --ingest-live --allow-external-fetch --live
+        env:
+          SKILLS_SH_BEARER_TOKEN: ${{ secrets.SKILLS_SH_BEARER_TOKEN }}
+          VERCEL_OIDC_TOKEN: ${{ secrets.VERCEL_OIDC_TOKEN }}
       - name: Commit catalog updates
         run: |
-          if git diff --quiet docs/data/skills-catalog.json; then
+          if [ -z "$(git status --porcelain -- docs/data/skills-catalog.json docs/data/occupation-counts.json docs/data/skills-index)" ]; then
             echo "No catalog changes"
             exit 0
           fi
           git config user.name "skillscale-agent"
           git config user.email "actions@github.com"
-          git add docs/data/skills-catalog.json
+          git add docs/data/skills-catalog.json docs/data/occupation-counts.json docs/data/skills-index
           git commit -m "Update agentic skill catalog"
           git push

@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-06-15T08:49:17.432Z",
+  "occupationId": "02",
+  "skills": [
+    {
+      "id": "global-agents-aitmpl-docs-marketplace",
+      "name": "Global Agents",
+      "author": "AITmpl Docs",
+      "stars": 0,
+      "description": "Create globally accessible AI agents that can be executed from any directory on your system",
+      "tags": [],
+      "updatedAt": "1781508344",
+      "occupationId": "02",
+      "source": "aitmpl-docs-index",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "search-skillsmp-marketplace",
+      "name": "Search",
+      "author": "SkillsMP",
+      "stars": 0,
+      "description": "Advanced search with filters for marketplace.json, stars, and update time",
+      "tags": [],
+      "updatedAt": "1781508365",
+      "occupationId": "02",
+      "source": "skillsmp",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    }
+  ]
+}

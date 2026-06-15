@@ -1,5 +1,8 @@
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
+import path from "node:path";
 import { z, ZodError } from "zod";
+import { normalizeGenericRawItem, slugify } from "../normalize";
+import type { RawSourceItem } from "../types";
 import type { AutonomousSkillCandidate, AutonomousSkillLoopRun } from "./types";
 
 export type PagesSkillAuditStatus = "approved" | "needs_review" | "blocked";
@@ -48,24 +51,34 @@ const CacheComponentProvenanceSchema = z.object({
 const CacheComponentSchema = z.object({
   canonicalSlug: z.string().min(1),
   name: z.string().min(1),
-  description: z.string().min(1),
+  description: z.string().default("Governed skill catalog entry."),
+  longDescription: z.string().optional(),
   componentType: z.string().default("unknown"),
   categories: z.array(z.string()).default([]),
   tags: z.array(z.string()).default([]),
   authorName: z.string().optional(),
+  authorUrl: z.string().optional(),
   githubUrl: z.string().optional(),
+  packageUrl: z.string().optional(),
+  installCommand: z.string().optional(),
   installCount: z.number().optional(),
+  license: z.string().optional(),
   lastSeenAt: z.string().optional(),
   marketplaceName: z.string().optional(),
+  officialVerified: z.boolean().optional(),
   provenance: z.array(CacheComponentProvenanceSchema).optional(),
   riskFlags: z.array(z.string()).default([]),
+  securityNotes: z.string().optional(),
+  compatibility: z.array(z.string()).optional(),
+  sourceUrls: z.array(z.string()).optional(),
   sourceUpdatedAt: z.string().optional(),
   starCount: z.number().optional(),
   updatedAt: z.string().optional(),
 });
 
 const LocalStoreSchema = z.object({
-  components: z.array(CacheComponentSchema).optional(),
+  components: z.array(z.unknown()).optional(),
+  rawItems: z.array(z.unknown()).optional(),
 });
 
 export type CacheSkillComponent = z.infer<typeof CacheComponentSchema>;
@@ -121,7 +134,7 @@ export function buildPagesSkillCatalog(input: BuildPagesSkillCatalogInput): Page
 
 export async function readLocalStoreComponents(localStorePath: string): Promise<readonly CacheSkillComponent[]> {
   try {
-    return parseLocalStoreComponents(JSON.parse(await readFile(localStorePath, "utf8")));
+    return parseLocalStoreSkillComponents(JSON.parse(await readFile(localStorePath, "utf8")));
   } catch (error) {
     if (isExpectedCacheReadError(error)) return [];
     throw error;
@@ -129,7 +142,29 @@ export async function readLocalStoreComponents(localStorePath: string): Promise<
 }
 
 export function parseLocalStoreComponents(value: unknown): readonly CacheSkillComponent[] {
-  return LocalStoreSchema.parse(value).components ?? [];
+  return parseLocalStoreSkillComponents(value);
+}
+
+export function parseLocalStoreSkillComponents(value: unknown): readonly CacheSkillComponent[] {
+  const store = LocalStoreSchema.parse(value);
+  return dedupeComponents([
+    ...(store.components ?? []).flatMap(cacheComponentFromUnknown),
+    ...(store.rawItems ?? []).flatMap(rawItemToComponent),
+  ]);
+}
+
+export async function readSkillsmpShardComponents(cacheDir: string): Promise<readonly CacheSkillComponent[]> {
+  const skillsDir = path.join(cacheDir, "skills");
+  try {
+    const files = await listJsonFiles(skillsDir);
+    const skills = await Promise.all(
+      files.map(async (file) => parseSkillsmpShardSkill(JSON.parse(await readFile(file, "utf8"))))
+    );
+    return dedupeComponents(skills.filter((skill): skill is CacheSkillComponent => Boolean(skill)));
+  } catch (error) {
+    if (isExpectedCacheReadError(error)) return [];
+    throw error;
+  }
 }
 
 function componentToSkill(component: CacheSkillComponent): PagesSkill {
@@ -151,6 +186,101 @@ function componentToSkill(component: CacheSkillComponent): PagesSkill {
   };
 }
 
+function rawItemToComponent(value: unknown): CacheSkillComponent[] {
+  const raw = value as Partial<RawSourceItem> | null;
+  if (!raw || typeof raw !== "object") return [];
+  if (!raw.rawPayload || typeof raw.rawPayload !== "object") return [];
+  if (typeof raw.sourceName !== "string" || typeof raw.sourceUrl !== "string") return [];
+  try {
+    const normalized = normalizeGenericRawItem(raw as RawSourceItem, String((raw.rawPayload as Record<string, unknown>).marketplaceName ?? raw.sourceName));
+    return CacheComponentSchema.safeParse(normalized).success ? [normalized as CacheSkillComponent] : [];
+  } catch {
+    return [];
+  }
+}
+
+function cacheComponentFromUnknown(value: unknown): CacheSkillComponent[] {
+  const parsed = CacheComponentSchema.safeParse(value);
+  return parsed.success ? [parsed.data] : [];
+}
+
+function parseSkillsmpShardSkill(value: unknown): CacheSkillComponent | null {
+  const skill = value as Record<string, unknown> | null;
+  if (!skill || typeof skill !== "object") return null;
+  const id = stringValue(skill.id) ?? stringValue(skill.name);
+  const name = stringValue(skill.name) ?? id;
+  if (!id || !name) return null;
+  const categories = stringArray(skill.categories);
+  const tags = Array.from(new Set([...stringArray(skill.tags), ...categories, "skillsmp", "agent-skill"]));
+  return {
+    canonicalSlug: slugify(`skillsmp-${id}`),
+    name,
+    description: stringValue(skill.description) ?? "SkillsMP agent skill.",
+    longDescription: stringValue(skill.readme),
+    componentType: "skill",
+    categories,
+    tags,
+    authorName: stringValue(skill.author),
+    authorUrl: stringValue(skill.authorUrl),
+    githubUrl: stringValue(skill.githubUrl),
+    installCommand: stringValue(skill.installCommand),
+    marketplaceName: "SkillsMP",
+    officialVerified: false,
+    installCount: undefined,
+    starCount: numberValue(skill.stars),
+    license: undefined,
+    riskFlags: [],
+    compatibility: [],
+    sourceUrls: [stringValue(skill.skillsmpUrl), stringValue(skill.githubUrl)].filter((url): url is string => Boolean(url)),
+    sourceUpdatedAt: stringValue(skill.dateModified),
+    updatedAt: stringValue(skill.scrapedAt) ?? stringValue(skill.dateModified),
+    provenance: [
+      {
+        sourceName: "skillsmp",
+        sourceUrl: stringValue(skill.skillsmpUrl) ?? stringValue(skill.githubUrl) ?? "https://skillsmp.com",
+        extractionMethod: "api",
+        confidenceScore: 0.98,
+      },
+    ],
+  };
+}
+
+async function listJsonFiles(dir: string): Promise<string[]> {
+  const entries = await readdir(dir, { withFileTypes: true });
+  const nested = await Promise.all(
+    entries.map(async (entry) => {
+      const entryPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) return listJsonFiles(entryPath);
+      return entry.isFile() && entry.name.endsWith(".json") ? [entryPath] : [];
+    })
+  );
+  return nested.flat();
+}
+
+function dedupeComponents(components: readonly CacheSkillComponent[]): readonly CacheSkillComponent[] {
+  const bySlug = new Map<string, CacheSkillComponent>();
+  for (const component of components) {
+    const existing = bySlug.get(component.canonicalSlug);
+    if (!existing || (component.starCount ?? component.installCount ?? 0) > (existing.starCount ?? existing.installCount ?? 0)) {
+      bySlug.set(component.canonicalSlug, component);
+    }
+  }
+  return [...bySlug.values()];
+}
+
+function stringValue(value: unknown): string | undefined {
+  return typeof value === "string" && value.trim() ? value.trim() : undefined;
+}
+
+function stringArray(value: unknown): string[] {
+  return Array.isArray(value) ? value.map((item) => String(item).trim()).filter(Boolean) : [];
+}
+
+function numberValue(value: unknown): number | undefined {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : undefined;
+}
+
 function loopCandidateToSkill(candidate: AutonomousSkillCandidate): PagesSkill {
   const blocked = candidate.scan.recommendation === "block";
   return {
@@ -170,11 +300,21 @@ function loopCandidateToSkill(candidate: AutonomousSkillCandidate): PagesSkill {
 
 function dedupeSkills(skills: readonly PagesSkill[]): readonly PagesSkill[] {
   const byId = new Map<string, PagesSkill>();
+  const idByIdentity = new Map<string, string>();
   for (const skill of skills) {
-    const existing = byId.get(skill.id);
-    if (!existing || skill.secureScore > existing.secureScore) byId.set(skill.id, skill);
+    const identity = skillIdentity(skill);
+    const key = idByIdentity.get(identity) ?? skill.id;
+    const existing = byId.get(key);
+    if (!existing || skill.stars > existing.stars || skill.secureScore > existing.secureScore) byId.set(key, skill);
+    idByIdentity.set(identity, key);
   }
   return [...byId.values()].sort((left, right) => right.stars - left.stars || left.name.localeCompare(right.name));
+}
+
+function skillIdentity(skill: PagesSkill): string {
+  const name = skill.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  if (skill.githubUrl) return `${skill.source}:${skill.githubUrl.toLowerCase()}:${name}`;
+  return `${skill.source}:${name}`;
 }
 
 function scoreFromRiskFlags(flags: readonly string[]): number {

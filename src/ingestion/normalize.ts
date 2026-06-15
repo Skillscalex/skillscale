@@ -88,10 +88,14 @@ export function normalizeGenericRawItem(raw: RawSourceItem, marketplaceName?: st
     description,
     sourceUrl: raw.sourceUrl,
   });
-  const githubUrl = asString(payload.github_url ?? payload.githubUrl ?? payload.repo ?? payload.repository);
+  const githubUrl = asString(payload.github_url ?? payload.githubUrl ?? payload.installUrl ?? payload.repo ?? payload.repository);
   const installCommand = asString(payload.install_command ?? payload.installCommand ?? payload.command);
   const authorName = asString(payload.author_name ?? payload.author ?? payload.owner);
-  const slugBasis = githubUrl ?? installCommand ?? `${name}-${authorName ?? marketplaceName ?? raw.sourceName}-${componentType}`;
+  const slugBasis =
+    asString(payload.canonical_slug ?? payload.canonicalSlug ?? payload.id) ??
+    githubUrl ??
+    installCommand ??
+    `${name}-${authorName ?? marketplaceName ?? raw.sourceName}-${componentType}`;
 
   return {
     canonicalSlug: slugify(slugBasis),

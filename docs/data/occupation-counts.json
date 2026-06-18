@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T15:54:24.881Z",
+  "generatedAt": "2026-06-18T20:40:25.180Z",
   "source": "SkillsMP",
   "sourceUrl": "https://skillsmp.com/occupations",
   "totalMajorGroups": 23,
@@ -8,18 +8,18 @@
     {
       "id": "01",
       "label": "Computer and Mathematical",
-      "count": 1226952,
+      "count": 1213889,
       "displayCount": "1.2M",
       "sourceUrl": "https://skillsmp.com/occupations/15-0000",
-      "localCount": 474,
-      "coveragePercent": 0.0386,
+      "localCount": 471,
+      "coveragePercent": 0.0388,
       "mirrorStatus": "sampled"
     },
     {
       "id": "02",
       "label": "Business and Financial Operations",
-      "count": 184743,
-      "displayCount": "185k",
+      "count": 183112,
+      "displayCount": "183k",
       "sourceUrl": "https://skillsmp.com/occupations/13-0000",
       "localCount": 2,
       "coveragePercent": 0.0011,
@@ -28,8 +28,8 @@
     {
       "id": "03",
       "label": "Arts, Design, Entertainment, Sports, and Media",
-      "count": 81873,
-      "displayCount": "82k",
+      "count": 81421,
+      "displayCount": "81k",
       "sourceUrl": "https://skillsmp.com/occupations/27-0000",
       "localCount": 0,
       "coveragePercent": 0,
@@ -38,7 +38,7 @@
     {
       "id": "04",
       "label": "Office and Administrative Support",
-      "count": 41119,
+      "count": 40787,
       "displayCount": "41k",
       "sourceUrl": "https://skillsmp.com/occupations/43-0000",
       "localCount": 0,
@@ -48,7 +48,7 @@
     {
       "id": "05",
       "label": "Legal",
-      "count": 32415,
+      "count": 32241,
       "displayCount": "32k",
       "sourceUrl": "https://skillsmp.com/occupations/23-0000",
       "localCount": 0,
@@ -58,7 +58,7 @@
     {
       "id": "06",
       "label": "Life, Physical, and Social Science",
-      "count": 19896,
+      "count": 19630,
       "displayCount": "20k",
       "sourceUrl": "https://skillsmp.com/occupations/25-0000",
       "localCount": 0,
@@ -68,7 +68,7 @@
     {
       "id": "07",
       "label": "Educational Instruction and Library",
-      "count": 19286,
+      "count": 19223,
       "displayCount": "19k",
       "sourceUrl": "https://skillsmp.com/occupations/19-0000",
       "localCount": 0,
@@ -78,7 +78,7 @@
     {
       "id": "08",
       "label": "Management",
-      "count": 11860,
+      "count": 11784,
       "displayCount": "12k",
       "sourceUrl": "https://skillsmp.com/occupations/11-0000",
       "localCount": 0,
@@ -88,7 +88,7 @@
     {
       "id": "09",
       "label": "Sales and Related",
-      "count": 6729,
+      "count": 6707,
       "displayCount": "6.7k",
       "sourceUrl": "https://skillsmp.com/occupations/41-0000",
       "localCount": 0,
@@ -98,8 +98,8 @@
     {
       "id": "10",
       "label": "Architecture and Engineering",
-      "count": 5656,
-      "displayCount": "5.7k",
+      "count": 5644,
+      "displayCount": "5.6k",
       "sourceUrl": "https://skillsmp.com/occupations/17-0000",
       "localCount": 0,
       "coveragePercent": 0,
@@ -108,7 +108,7 @@
     {
       "id": "11",
       "label": "Healthcare Practitioners and Technical",
-      "count": 4548,
+      "count": 4535,
       "displayCount": "4.5k",
       "sourceUrl": "https://skillsmp.com/occupations/29-0000",
       "localCount": 0,
@@ -118,7 +118,7 @@
     {
       "id": "12",
       "label": "Personal Care and Service",
-      "count": 3784,
+      "count": 3772,
       "displayCount": "3.8k",
       "sourceUrl": "https://skillsmp.com/occupations/39-0000",
       "localCount": 0,
@@ -138,7 +138,7 @@
     {
       "id": "14",
       "label": "Military Specific",
-      "count": 2147,
+      "count": 2146,
       "displayCount": "2.1k",
       "sourceUrl": "https://skillsmp.com/occupations/55-0000",
       "localCount": 0,
@@ -148,7 +148,7 @@
     {
       "id": "15",
       "label": "Food Preparation and Serving Related",
-      "count": 1206,
+      "count": 1199,
       "displayCount": "1.2k",
       "sourceUrl": "https://skillsmp.com/occupations/35-0000",
       "localCount": 0,
@@ -218,8 +218,8 @@
     {
       "id": "22",
       "label": "Installation, Maintenance, and Repair",
-      "count": 235,
-      "displayCount": "235",
+      "count": 234,
+      "displayCount": "234",
       "sourceUrl": "https://skillsmp.com/occupations/49-0000",
       "localCount": 0,
       "coveragePercent": 0,

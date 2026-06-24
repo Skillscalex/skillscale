@@ -203,7 +203,7 @@ function ThemeToggle({theme,onToggle}){
 function Nav({theme,onToggle}){
   const [vc,setVc]=useState(getVaultCount);
   useEffect(()=>{const s=()=>setVc(getVaultCount());window.addEventListener('vault-updated',s);window.addEventListener('storage',s);return()=>{window.removeEventListener('vault-updated',s);window.removeEventListener('storage',s);};},[]);
-  const pages=[{href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},{href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'}];
+  const pages=[{href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},{href:'loops.html',label:'Loops'},{href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'}];
   return(
     <nav className="nav lg" style={{padding:'12px 24px',borderBottom:'1px solid var(--border)',borderRadius:0,flexShrink:0}}>
       <div className="nav-inner">

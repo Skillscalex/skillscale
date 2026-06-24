@@ -588,7 +588,7 @@ function ThemeToggle({ theme, onToggle }) {
 }
 
 function Nav({ theme, onToggle, currentPage }) {
-  const pages = [{href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},{href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'}];
+  const pages = [{href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},{href:'loops.html',label:'Loops'},{href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'}];
   const [vaultCount, setVaultCount] = React.useState(getVaultCount);
 
   React.useEffect(() => {
@@ -642,7 +642,7 @@ function Footer() {
       <div className="container footer-inner">
         <span style={{ fontFamily:'Archivo Black', fontSize:'.9rem', color:'var(--text)' }}>skill<span style={{ color:'var(--accent)' }}>scale</span></span>
         <div style={{ display:'flex', gap:24 }}>
-          {[['index.html','Home'],['skills.html','Skills'],['market.html','Market'],['vault.html','Vault'],['hubs.html','Hubs'],['community.html','Community'],['mcps.html','MCPs']].map(([h,l]) => (
+          {[['index.html','Home'],['skills.html','Skills'],['market.html','Market'],['loops.html','Loops'],['vault.html','Vault'],['hubs.html','Hubs'],['community.html','Community'],['mcps.html','MCPs']].map(([h,l]) => (
             <a key={h} href={h} style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text-2)' }}>{l}</a>
           ))}
         </div>

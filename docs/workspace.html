@@ -190,7 +190,7 @@ function ThemeToggle({theme,onToggle}){
 function Nav({theme,onToggle}){
   const [vc,setVc]=useState(getVaultCount);
   useEffect(()=>{const s=()=>setVc(getVaultCount());window.addEventListener('vault-updated',s);window.addEventListener('storage',s);return()=>{window.removeEventListener('vault-updated',s);window.removeEventListener('storage',s);};},[]);
-  const pages=[{href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},{href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'}];
+  const pages=[{href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},{href:'loops.html',label:'Loops'},{href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'}];
   return(
     <nav className="nav lg" style={{padding:'12px 24px',borderBottom:'1px solid var(--border)',borderRadius:0}}>
       <div className="nav-inner">
@@ -218,7 +218,7 @@ function Footer(){
       <div className="container footer-inner">
         <span style={{fontFamily:'Archivo Black',fontSize:'.9rem',color:'var(--text)'}}>skill<span style={{color:'var(--accent)'}}>scale</span></span>
         <div style={{display:'flex',gap:24,flexWrap:'wrap'}}>
-          {[['index.html','Home'],['skills.html','Skills'],['market.html','Market'],['vault.html','Vault'],['hubs.html','Hubs'],['studio.html','Studio'],['workspace.html','Workspace']].map(([h,l])=>(
+          {[['index.html','Home'],['skills.html','Skills'],['market.html','Market'],['loops.html','Loops'],['vault.html','Vault'],['hubs.html','Hubs'],['studio.html','Studio'],['workspace.html','Workspace']].map(([h,l])=>(
             <a key={h} href={h} style={{fontFamily:'JetBrains Mono',fontSize:'.72rem',color:'var(--text-2)'}}>{l}</a>
           ))}
         </div>

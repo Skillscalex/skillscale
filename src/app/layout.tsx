@@ -1,19 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import type { CSSProperties } from "react";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
-const geistMono = JetBrains_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "600"],
-});
 
 export const metadata: Metadata = {
   title: "Skillscale — AI Skills Marketplace",
@@ -41,7 +29,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${geistMono.variable} h-full`}>
+    <html
+      lang="en"
+      className="h-full"
+      style={{
+        "--font-inter": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        "--font-mono": "'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace",
+      } as CSSProperties}
+    >
       <body
         className="min-h-screen flex flex-col"
         style={{

@@ -197,22 +197,22 @@ function Nav({ theme, onToggle, currentPage }) {
     { href: 'mcps.html',      label: 'MCPs'      },
   ];
   return (
-    <nav className="nav" style={{ padding: '12px 24px' }}>
+    <nav className="nav lg" style={{ padding: '12px 24px', borderBottom: '1px solid var(--border)', borderRadius: 0 }}>
       <div className="nav-inner">
         {/* Logo */}
-        <a href="index.html" style={{ fontFamily: 'Archivo Black', fontSize: '1.05rem', color: 'rgba(255,255,255,0.95)', letterSpacing: '-.01em', flexShrink: 0 }}>
+        <a href="index.html" style={{ fontFamily: 'Archivo Black', fontSize: '1.05rem', color: 'var(--text)', letterSpacing: '-.01em', flexShrink: 0 }}>
           skill<span style={{ color: 'var(--accent)' }}>scale</span>
         </a>
 
         {/* Nav links pill */}
-        <div className="lg nav-links" style={{ display: 'flex', alignItems: 'center', padding: '6px 6px', borderRadius: 9999, gap: 2 }}>
+        <div className="nav-links" style={{ display: 'flex', alignItems: 'center', padding: '6px 6px', borderRadius: 9999, gap: 2 }}>
           {pages.map(p => (
             <a key={p.href} href={p.href}
               style={{
                 fontFamily: 'JetBrains Mono', fontSize: '.72rem', letterSpacing: '.04em',
                 padding: '6px 14px', borderRadius: 9999,
-                color: currentPage === p.href ? '#fff' : 'rgba(255,255,255,0.7)',
-                background: currentPage === p.href ? 'rgba(255,255,255,0.15)' : 'transparent',
+                color: currentPage === p.href ? 'var(--accent)' : 'var(--text-2)',
+                background: currentPage === p.href ? 'rgba(212,102,26,0.08)' : 'transparent',
                 transition: 'all 0.15s',
               }}
             >{p.label}</a>
@@ -221,27 +221,27 @@ function Nav({ theme, onToggle, currentPage }) {
 
         {/* Right side */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <a href="vault.html" className="btn-glass lg btn btn-sm"
-            style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color:'var(--accent)', padding: '7px 14px', borderRadius: 9999 }}>
+          <a href="vault.html"
+            style={{ display:'flex', alignItems:'center', gap:6, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color:'var(--text-2)', padding: '7px 14px', borderRadius: 9999, border:'1px solid var(--border)', transition:'all 0.15s', textDecoration:'none' }}>
             ✦ Vault
           </a>
-          <a href="hubs.html" className="btn-glass lg btn btn-sm"
-            style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--accent)', padding: '7px 14px', borderRadius: 9999 }}>
+          <a href="hubs.html"
+            style={{ display:'flex', alignItems:'center', gap:6, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)', padding: '7px 14px', borderRadius: 9999, border:'1px solid var(--border)', transition:'all 0.15s', textDecoration:'none' }}>
             ⬡ Hubs
           </a>
-          <a href="studio.html" className="btn-glass lg btn btn-sm"
-            style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--accent)', padding: '7px 14px', borderRadius: 9999 }}>
+          <a href="studio.html"
+            style={{ display:'flex', alignItems:'center', gap:6, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)', padding: '7px 14px', borderRadius: 9999, border:'1px solid var(--border)', transition:'all 0.15s', textDecoration:'none' }}>
             ⌬ Studio
           </a>
-          <a href="skills.html" className="btn-glass lg-s btn btn-sm"
-            style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--accent)', padding: '7px 16px', borderRadius: 9999 }}>
+          <a href="skills.html"
+            style={{ display:'flex', alignItems:'center', gap:8, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--accent)', background:'rgba(212,102,26,0.08)', border:'1px solid rgba(212,102,26,0.3)', padding: '7px 16px', borderRadius: 9999, transition:'all 0.15s', textDecoration:'none' }}>
             Browse Skills
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M7 17L17 7M7 7h10v10"/>
             </svg>
           </a>
-          <a href="auth.html" className="btn-glass lg btn btn-sm"
-            style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--accent)', padding: '7px 14px', borderRadius: 9999 }}>
+          <a href="auth.html" className="btn btn-sm lg"
+            style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)', padding: '7px 14px', borderRadius: 9999, border:'1px solid var(--border)' }}>
             Safety
           </a>
           <ThemeToggle theme={theme} onToggle={onToggle} />

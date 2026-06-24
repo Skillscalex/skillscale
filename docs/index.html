@@ -190,6 +190,9 @@ function ThemeToggle({ theme, onToggle }) {
    Nav
    ==================================================== */
 function Nav({ theme, onToggle, currentPage }) {
+  const isLight = theme === 'light';
+  const navText = isLight ? '#332B26' : '#D8CFC1';
+  const navMuted = isLight ? '#51483F' : '#AAA093';
   const pages = [
     { href: 'skills.html',    label: 'Skills'    },
     { href: 'market.html',    label: 'Market'    },
@@ -197,10 +200,15 @@ function Nav({ theme, onToggle, currentPage }) {
     { href: 'mcps.html',      label: 'MCPs'      },
   ];
   return (
-    <nav className="nav lg" style={{ padding: '12px 24px', borderBottom: '1px solid var(--border)', borderRadius: 0 }}>
+    <nav className="nav lg" style={{
+      padding: '12px 24px',
+      borderBottom: `1px solid ${isLight ? 'rgba(54,43,34,0.14)' : 'rgba(255,255,255,0.08)'}`,
+      borderRadius: 0,
+      background: isLight ? 'rgba(253,250,245,0.92)' : 'rgba(12,11,9,0.72)'
+    }}>
       <div className="nav-inner">
         {/* Logo */}
-        <a href="index.html" style={{ fontFamily: 'Archivo Black', fontSize: '1.05rem', color: 'var(--text)', letterSpacing: '-.01em', flexShrink: 0 }}>
+        <a href="index.html" style={{ fontFamily: 'Archivo Black', fontSize: '1.05rem', color: navText, letterSpacing: '-.01em', flexShrink: 0 }}>
           skill<span style={{ color: 'var(--accent)' }}>scale</span>
         </a>
 
@@ -211,7 +219,7 @@ function Nav({ theme, onToggle, currentPage }) {
               style={{
                 fontFamily: 'JetBrains Mono', fontSize: '.72rem', letterSpacing: '.04em',
                 padding: '6px 14px', borderRadius: 9999,
-                color: currentPage === p.href ? 'var(--accent)' : 'var(--text-2)',
+                color: currentPage === p.href ? 'var(--accent)' : navMuted,
                 background: currentPage === p.href ? 'rgba(212,102,26,0.08)' : 'transparent',
                 transition: 'all 0.15s',
               }}
@@ -222,15 +230,15 @@ function Nav({ theme, onToggle, currentPage }) {
         {/* Right side */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <a href="vault.html"
-            style={{ display:'flex', alignItems:'center', gap:6, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color:'var(--text-2)', padding: '7px 14px', borderRadius: 9999, border:'1px solid var(--border)', transition:'all 0.15s', textDecoration:'none' }}>
+            style={{ display:'flex', alignItems:'center', gap:6, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color:navMuted, padding: '7px 14px', borderRadius: 9999, border:`1px solid ${isLight ? 'rgba(54,43,34,0.18)' : 'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
             ✦ Vault
           </a>
           <a href="hubs.html"
-            style={{ display:'flex', alignItems:'center', gap:6, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)', padding: '7px 14px', borderRadius: 9999, border:'1px solid var(--border)', transition:'all 0.15s', textDecoration:'none' }}>
+            style={{ display:'flex', alignItems:'center', gap:6, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: navMuted, padding: '7px 14px', borderRadius: 9999, border:`1px solid ${isLight ? 'rgba(54,43,34,0.18)' : 'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
             ⬡ Hubs
           </a>
           <a href="studio.html"
-            style={{ display:'flex', alignItems:'center', gap:6, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)', padding: '7px 14px', borderRadius: 9999, border:'1px solid var(--border)', transition:'all 0.15s', textDecoration:'none' }}>
+            style={{ display:'flex', alignItems:'center', gap:6, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: navMuted, padding: '7px 14px', borderRadius: 9999, border:`1px solid ${isLight ? 'rgba(54,43,34,0.18)' : 'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
             ⌬ Studio
           </a>
           <a href="skills.html"
@@ -241,7 +249,7 @@ function Nav({ theme, onToggle, currentPage }) {
             </svg>
           </a>
           <a href="auth.html" className="btn btn-sm lg"
-            style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--text-2)', padding: '7px 14px', borderRadius: 9999, border:'1px solid var(--border)' }}>
+            style={{ fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: navMuted, padding: '7px 14px', borderRadius: 9999, border:`1px solid ${isLight ? 'rgba(54,43,34,0.18)' : 'var(--border)'}` }}>
             Safety
           </a>
           <ThemeToggle theme={theme} onToggle={onToggle} />
@@ -254,7 +262,10 @@ function Nav({ theme, onToggle, currentPage }) {
 /* ====================================================
    HeroSection
    ==================================================== */
-function HeroSection() {
+function HeroSection({ theme }) {
+  const isLight = theme === 'light';
+  const heroText = isLight ? '#181310' : '#F1E9D8';
+  const heroMuted = isLight ? 'rgba(32,25,20,0.78)' : 'rgba(255,255,255,0.78)';
   const VIDEO_SRC = 'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260418_080021_d598092b-c4c2-4e53-8e46-94cf9064cd50.mp4';
 
   const motionBase = { filter: 'blur(10px)', opacity: 0, y: 20 };
@@ -280,7 +291,7 @@ function HeroSection() {
         >
           <div className="badge lg">
             <span className="badge-chip">New</span>
-            <span style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'JetBrains Mono', fontSize: '.7rem', paddingRight: 6 }}>
+            <span style={{ color: isLight ? '#3D332C' : 'rgba(255,255,255,0.88)', fontFamily: 'JetBrains Mono', fontSize: '.7rem', paddingRight: 6 }}>
               Skills organized by 23 occupation groups
             </span>
           </div>
@@ -290,7 +301,7 @@ function HeroSection() {
         <BlurText
           text="Scale Your AI Stack"
           className="t-display"
-          style={{ fontSize: 'clamp(3.2rem,8.5vw,7.5rem)', color: 'var(--text-hero)', textAlign: 'center', maxWidth: 900, letterSpacing: '-.04em' }}
+          style={{ fontSize: 'clamp(3.2rem,8.5vw,7.5rem)', color: heroText, textAlign: 'center', maxWidth: 900, letterSpacing: '-.04em' }}
         />
 
         {/* Sub */}
@@ -298,7 +309,7 @@ function HeroSection() {
           initial={motionBase} animate={motionIn}
           transition={{ duration: 0.6, delay: 0.8, ease }}
           className="hero-sub-text"
-          style={{ marginTop: 20, maxWidth: 520, textAlign: 'center', color: 'var(--text)', fontFamily: 'DM Sans', fontSize: '1.05rem', fontWeight: 300, lineHeight: 1.55 }}
+          style={{ marginTop: 20, maxWidth: 520, textAlign: 'center', color: heroMuted, fontFamily: 'DM Sans', fontSize: '1.05rem', fontWeight: 400, lineHeight: 1.55 }}
         >
           Browse MCPs, agent skills, and Claude plugins — curated, scanned, and organized by occupation. This GitHub Pages catalog never asks for passwords, private keys, wallet signatures, or payment details.
         </motion.p>
@@ -310,12 +321,12 @@ function HeroSection() {
           style={{ marginTop: 28, display: 'flex', alignItems: 'center', gap: 20 }}
         >
           <a href="skills.html" className="lg-s lg"
-            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: 'JetBrains Mono', fontSize: '.8rem', padding: '11px 24px', borderRadius: 9999, color: 'var(--text)' }}>
+            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: 'JetBrains Mono', fontSize: '.8rem', padding: '11px 24px', borderRadius: 9999, color: heroText }}>
             Browse Skills
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
           </a>
           <a href="mcps.html"
-            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: 'JetBrains Mono', fontSize: '.8rem', color: 'var(--accent)' }}>
+            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: 'JetBrains Mono', fontSize: '.8rem', color: isLight ? '#A84308' : 'var(--accent)' }}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20"/></svg>
             Explore MCPs
           </a>
@@ -334,8 +345,8 @@ function HeroSection() {
           ].map(s => (
             <div key={s.label} className="stat-card lg" style={{ display: 'flex', flexDirection: 'column', gap: 10, minWidth: 160 }}>
               <span style={{ fontSize: '1.5rem' }}>{s.icon}</span>
-              <span className="t-display hero-stat-num" style={{ fontSize: '2.4rem', color: '#fff', lineHeight: 1 }}>{s.num}</span>
-              <span className="hero-stat-label" style={{ fontFamily: 'DM Sans', fontSize: '.8rem', color: 'rgba(255,255,255,0.6)', fontWeight: 300 }}>{s.label}</span>
+              <span className="t-display hero-stat-num" style={{ fontSize: '2.4rem', color: heroText, lineHeight: 1 }}>{s.num}</span>
+              <span className="hero-stat-label" style={{ fontFamily: 'DM Sans', fontSize: '.8rem', color: heroMuted, fontWeight: 400 }}>{s.label}</span>
             </div>
           ))}
         </motion.div>
@@ -717,7 +728,7 @@ function App() {
   return (
     <>
       <Nav theme={theme} onToggle={toggleTheme} currentPage="index.html" />
-      <HeroSection />
+      <HeroSection theme={theme} />
       <FeaturesSection />
       <HowSection />
       <TrendingSection />

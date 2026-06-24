@@ -191,8 +191,8 @@ function ThemeToggle({ theme, onToggle }) {
    ==================================================== */
 function Nav({ theme, onToggle, currentPage }) {
   const isLight = theme === 'light';
-  const navText = isLight ? '#332B26' : '#D8CFC1';
-  const navMuted = isLight ? '#51483F' : '#AAA093';
+  const navText = isLight ? '#111110' : '#D8CFC1';
+  const navMuted = isLight ? '#111110' : '#AAA093';
   const pages = [
     { href: 'skills.html',    label: 'Skills'    },
     { href: 'market.html',    label: 'Market'    },
@@ -209,7 +209,7 @@ function Nav({ theme, onToggle, currentPage }) {
       <div className="nav-inner">
         {/* Logo */}
         <a href="index.html" style={{ fontFamily: 'Archivo Black', fontSize: '1.05rem', color: navText, letterSpacing: '-.01em', flexShrink: 0 }}>
-          skill<span style={{ color: 'var(--accent)' }}>scale</span>
+          skill<span style={{ color: isLight ? navText : 'var(--accent)' }}>scale</span>
         </a>
 
         {/* Nav links pill */}
@@ -219,7 +219,7 @@ function Nav({ theme, onToggle, currentPage }) {
               style={{
                 fontFamily: 'JetBrains Mono', fontSize: '.72rem', letterSpacing: '.04em',
                 padding: '6px 14px', borderRadius: 9999,
-                color: currentPage === p.href ? 'var(--accent)' : navMuted,
+                color: currentPage === p.href && !isLight ? 'var(--accent)' : navMuted,
                 background: currentPage === p.href ? 'rgba(212,102,26,0.08)' : 'transparent',
                 transition: 'all 0.15s',
               }}
@@ -242,7 +242,7 @@ function Nav({ theme, onToggle, currentPage }) {
             ⌬ Studio
           </a>
           <a href="skills.html"
-            style={{ display:'flex', alignItems:'center', gap:8, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: 'var(--accent)', background:'rgba(212,102,26,0.08)', border:'1px solid rgba(212,102,26,0.3)', padding: '7px 16px', borderRadius: 9999, transition:'all 0.15s', textDecoration:'none' }}>
+            style={{ display:'flex', alignItems:'center', gap:8, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: isLight ? navText : 'var(--accent)', background:'rgba(212,102,26,0.08)', border:'1px solid rgba(212,102,26,0.3)', padding: '7px 16px', borderRadius: 9999, transition:'all 0.15s', textDecoration:'none' }}>
             Browse Skills
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M7 17L17 7M7 7h10v10"/>

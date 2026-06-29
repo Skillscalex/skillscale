@@ -141,7 +141,7 @@ export function PaymentModal({ skill, currency = "USD", onClose, onSuccess }: Pa
               onClick={() => setTab(t.id)}
               className={`flex-1 flex items-center justify-center gap-2 py-3 text-sm font-medium transition-colors ${
                 tab === t.id
-                  ? "text-[#f8f8ff] border-b-2 border-[#7c3aed]"
+                  ? "text-[#f8f8ff] border-b-2 border-[#177CB0]"
                   : "text-[#8b8ba7] hover:text-[#f8f8ff]"
               }`}
             >
@@ -204,14 +204,14 @@ export function PaymentModal({ skill, currency = "USD", onClose, onSuccess }: Pa
                   onClick={() => setSelectedMethod(method.id)}
                   className={`w-full flex items-center gap-3 p-3.5 rounded-xl border transition-all ${
                     selectedMethod === method.id
-                      ? "border-[#7c3aed] bg-[#7c3aed15]"
+                      ? "border-[#177CB0] bg-[#177CB015]"
                       : "border-[#1e1e2e] bg-[#0e0e16] hover:border-[#2e2e4e]"
                   }`}
                 >
                   <span className="text-2xl w-8 text-center">{method.icon}</span>
                   <span className="text-sm font-medium text-[#f8f8ff]">{method.label}</span>
                   {selectedMethod === method.id && (
-                    <span className="ml-auto w-4 h-4 rounded-full bg-[#7c3aed] flex items-center justify-center">
+                    <span className="ml-auto w-4 h-4 rounded-full bg-[#177CB0] flex items-center justify-center">
                       <span className="w-1.5 h-1.5 rounded-full bg-white" />
                     </span>
                   )}
@@ -228,7 +228,7 @@ export function PaymentModal({ skill, currency = "USD", onClose, onSuccess }: Pa
                   <Wallet size={12} />
                   Send to seller wallet
                 </div>
-                <div className="font-mono text-xs text-[#60efff] break-all">
+                <div className="font-mono text-xs text-[#00B0BA] break-all">
                   0x742d35Cc6634C0532925a3b8D4C9B5B2f41f8Dca
                 </div>
                 <button className="mt-2 flex items-center gap-1 text-xs text-[#8b8ba7] hover:text-[#f8f8ff] transition-colors">
@@ -244,22 +244,22 @@ export function PaymentModal({ skill, currency = "USD", onClose, onSuccess }: Pa
 
           {/* Platform Token */}
           {tab === "token" && (
-            <div className="p-4 rounded-xl border border-[#7c3aed30] bg-[#7c3aed0a]">
+            <div className="p-4 rounded-xl border border-[#177CB030] bg-[#177CB00a]">
               <div className="flex items-center gap-2 mb-2">
-                <Coins size={16} className="text-[#a78bfa]" />
-                <span className="text-sm font-semibold text-[#a78bfa]">Skillscale Tokens (SKL)</span>
+                <Coins size={16} className="text-[#4B5CC4]" />
+                <span className="text-sm font-semibold text-[#4B5CC4]">Skillscale Tokens (SKL)</span>
               </div>
               <div className="text-xs text-[#8b8ba7] space-y-1">
                 <div className="flex justify-between">
                   <span>Your balance</span>
-                  <span className="text-[#a78bfa] font-mono">0 SKL</span>
+                  <span className="text-[#4B5CC4] font-mono">0 SKL</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Required</span>
                   <span className="text-[#f8f8ff] font-mono">{tokenCost.toLocaleString()} SKL</span>
                 </div>
               </div>
-              <button className="mt-3 w-full text-xs py-2 rounded-lg bg-[#7c3aed20] border border-[#7c3aed40] text-[#a78bfa] hover:bg-[#7c3aed30] transition-colors">
+              <button className="mt-3 w-full text-xs py-2 rounded-lg bg-[#177CB020] border border-[#177CB040] text-[#4B5CC4] hover:bg-[#177CB030] transition-colors">
                 Buy more SKL tokens
               </button>
             </div>
@@ -269,7 +269,7 @@ export function PaymentModal({ skill, currency = "USD", onClose, onSuccess }: Pa
           <button
             onClick={tab === "fiat" ? handleFiatPurchase : tab === "crypto" ? handleCryptoPurchase : handleTokenPurchase}
             disabled={loading}
-            className="w-full py-3.5 rounded-xl bg-[#7c3aed] text-white font-semibold text-sm hover:bg-[#6d28d9] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+            className="w-full py-3.5 rounded-xl bg-[#177CB0] text-white font-semibold text-sm hover:bg-[#065279] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
           >
             {loading ? (
               <>
@@ -285,7 +285,7 @@ export function PaymentModal({ skill, currency = "USD", onClose, onSuccess }: Pa
 
           <p className="text-xs text-center text-[#8b8ba7]">
             By purchasing you agree to the{" "}
-            <a href="#" className="text-[#7c3aed] hover:underline">Terms of Service</a>
+            <a href="#" className="text-[#177CB0] hover:underline">Terms of Service</a>
           </p>
         </div>
       </div>

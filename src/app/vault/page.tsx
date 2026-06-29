@@ -68,7 +68,7 @@ export default function VaultPage() {
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-2">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#7c3aed] to-[#60efff] flex items-center justify-center">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#177CB0] to-[#00B0BA] flex items-center justify-center">
             <Vault size={20} className="text-white" />
           </div>
           <div>
@@ -80,9 +80,9 @@ export default function VaultPage() {
         {/* Stats */}
         <div className="mt-5 grid grid-cols-3 gap-3">
           {[
-            { label: "Dreamed Skills", value: savedItems.length, icon: Sparkles, color: "#7c3aed" },
+            { label: "Dreamed Skills", value: savedItems.length, icon: Sparkles, color: "#177CB0" },
             { label: "Owned Skills", value: ownedItems.length, icon: Lock, color: "#00d97e" },
-            { label: "Total in Vault", value: items.length, icon: Vault, color: "#60efff" },
+            { label: "Total in Vault", value: items.length, icon: Vault, color: "#00B0BA" },
           ].map(({ label, value, icon: Icon, color }) => (
             <div key={label} className="bg-[#12121a] border border-[#1e1e2e] rounded-xl p-4">
               <Icon size={16} style={{ color }} className="mb-1.5" />
@@ -101,7 +101,7 @@ export default function VaultPage() {
             onClick={() => setActiveTab(tab)}
             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors capitalize ${
               activeTab === tab
-                ? "bg-[#7c3aed] text-white"
+                ? "bg-[#177CB0] text-white"
                 : "text-[#8b8ba7] hover:text-[#f8f8ff]"
             }`}
           >
@@ -124,7 +124,7 @@ export default function VaultPage() {
           </p>
           <Link
             href="/marketplace"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#7c3aed] text-white text-sm font-medium hover:bg-[#6d28d9] transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#177CB0] text-white text-sm font-medium hover:bg-[#065279] transition-colors"
           >
             <Plus size={15} />
             Browse Marketplace
@@ -148,7 +148,7 @@ export default function VaultPage() {
                     <div>
                       <Link
                         href={`/skill/${skill.id}`}
-                        className="text-base font-semibold text-[#f8f8ff] hover:text-[#7c3aed] transition-colors"
+                        className="text-base font-semibold text-[#f8f8ff] hover:text-[#177CB0] transition-colors"
                       >
                         {skill.title}
                       </Link>
@@ -165,12 +165,12 @@ export default function VaultPage() {
                   {/* Meta row */}
                   <div className="flex items-center gap-3 mt-2 text-xs text-[#4a4a5a]">
                     <span className="flex items-center gap-1">
-                      {isOwned ? <Lock size={10} className="text-[#00d97e]" /> : <Sparkles size={10} className="text-[#7c3aed]" />}
+                      {isOwned ? <Lock size={10} className="text-[#00d97e]" /> : <Sparkles size={10} className="text-[#177CB0]" />}
                       {isOwned ? "Owned" : "Dreamed"} {new Date(savedAt).toLocaleDateString()}
                     </span>
                     <span>{skill.category}</span>
                     {skill.secure_score && (
-                      <span className="text-[#60efff]">SecureScore {skill.secure_score}</span>
+                      <span className="text-[#00B0BA]">SecureScore {skill.secure_score}</span>
                     )}
                   </div>
 
@@ -183,9 +183,9 @@ export default function VaultPage() {
                         onChange={(e) => setNoteText(e.target.value)}
                         onKeyDown={(e) => { if (e.key === "Enter") saveNote(skill.id); if (e.key === "Escape") setEditingNote(null); }}
                         placeholder="Add a private note…"
-                        className="flex-1 text-xs bg-[#0e0e16] border border-[#2e2e4e] rounded-lg px-3 py-1.5 text-[#f8f8ff] placeholder-[#4a4a5a] focus:border-[#7c3aed] focus:outline-none"
+                        className="flex-1 text-xs bg-[#0e0e16] border border-[#2e2e4e] rounded-lg px-3 py-1.5 text-[#f8f8ff] placeholder-[#4a4a5a] focus:border-[#177CB0] focus:outline-none"
                       />
-                      <button onClick={() => saveNote(skill.id)} className="text-xs px-3 py-1.5 bg-[#7c3aed] text-white rounded-lg hover:bg-[#6d28d9]">Save</button>
+                      <button onClick={() => saveNote(skill.id)} className="text-xs px-3 py-1.5 bg-[#177CB0] text-white rounded-lg hover:bg-[#065279]">Save</button>
                       <button onClick={() => setEditingNote(null)} className="text-xs px-3 py-1.5 text-[#8b8ba7] hover:text-[#f8f8ff] rounded-lg border border-[#1e1e2e]">Cancel</button>
                     </div>
                   ) : (
@@ -210,7 +210,7 @@ export default function VaultPage() {
                   {!isOwned && (
                     <Link
                       href="/submit"
-                      className="p-2 rounded-lg bg-[#1e1e2e] text-[#8b8ba7] hover:text-[#a78bfa] transition-colors"
+                      className="p-2 rounded-lg bg-[#1e1e2e] text-[#8b8ba7] hover:text-[#4B5CC4] transition-colors"
                       title="Publish to marketplace"
                     >
                       <Upload size={14} />
@@ -231,8 +231,8 @@ export default function VaultPage() {
       )}
 
       {/* Info banner */}
-      <div className="mt-8 p-4 rounded-xl bg-[#7c3aed10] border border-[#7c3aed30] flex items-start gap-3">
-        <Lock size={15} className="text-[#7c3aed] mt-0.5 shrink-0" />
+      <div className="mt-8 p-4 rounded-xl bg-[#177CB010] border border-[#177CB030] flex items-start gap-3">
+        <Lock size={15} className="text-[#177CB0] mt-0.5 shrink-0" />
         <div>
           <p className="text-sm font-medium text-[#f8f8ff] mb-0.5">Your vault is private</p>
           <p className="text-xs text-[#8b8ba7]">

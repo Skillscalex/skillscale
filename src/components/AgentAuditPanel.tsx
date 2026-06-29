@@ -45,10 +45,10 @@ function ScoreGauge({ score, label, color }: { score: number; label: string; col
 }
 
 function scoreColor(score: number): string {
-  if (score >= 90) return "#60efff";
+  if (score >= 90) return "#00B0BA";
   if (score >= 80) return "#00d97e";
   if (score >= 65) return "#e8e8f0";
-  if (score >= 50) return "#a78bfa";
+  if (score >= 50) return "#4B5CC4";
   return "#ff4d4d";
 }
 
@@ -65,7 +65,7 @@ export function AgentAuditPanel({
   return (
     <div className="rounded-xl border border-[#1e1e2e] bg-[#0e0e16] overflow-hidden">
       <div className="px-4 py-3 border-b border-[#1e1e2e] flex items-center gap-2">
-        <Shield size={16} className="text-[#60efff]" />
+        <Shield size={16} className="text-[#00B0BA]" />
         <span className="text-sm font-semibold text-[#f8f8ff]">Agent Security Audit</span>
         {loading && (
           <span className="ml-auto text-xs text-[#8b8ba7] animate-pulse">Running…</span>
@@ -79,7 +79,7 @@ export function AgentAuditPanel({
         <div className="p-6 text-center text-[#8b8ba7] text-sm">
           {loading ? (
             <div className="flex flex-col items-center gap-3">
-              <div className="w-8 h-8 rounded-full border-2 border-[#7c3aed] border-t-transparent animate-spin" />
+              <div className="w-8 h-8 rounded-full border-2 border-[#177CB0] border-t-transparent animate-spin" />
               <span>Running 3 agents in parallel…</span>
             </div>
           ) : (
@@ -114,8 +114,8 @@ export function AgentAuditPanel({
           {modelInfo && (
             <div className="mb-4 p-3 rounded-lg bg-[#12121a] border border-[#1e1e2e]">
               <div className="flex items-center gap-2 mb-1">
-                <Cpu size={13} className="text-[#60efff]" />
-                <span className="text-xs font-semibold text-[#60efff]">Recommended Model</span>
+                <Cpu size={13} className="text-[#00B0BA]" />
+                <span className="text-xs font-semibold text-[#00B0BA]">Recommended Model</span>
               </div>
               <div className="text-sm font-semibold text-[#f8f8ff]">{modelInfo.name}</div>
               <div className="text-xs text-[#8b8ba7] mt-0.5">{modelInfo.description}</div>
@@ -145,8 +145,8 @@ export function AgentAuditPanel({
                   className={cn(
                     "p-3 rounded-lg border text-xs",
                     issue.severity === "critical" && "bg-[#ff4d4d10] border-[#ff4d4d30] text-[#ff4d4d]",
-                    issue.severity === "high" && "bg-[#ff8c0010] border-[#ff8c0030] text-[#ff8c00]",
-                    issue.severity === "medium" && "bg-[#a78bfa10] border-[#a78bfa30] text-[#a78bfa]",
+                    issue.severity === "high" && "bg-[#0065A210] border-[#0065A230] text-[#0065A2]",
+                    issue.severity === "medium" && "bg-[#4B5CC410] border-[#4B5CC430] text-[#4B5CC4]",
                     issue.severity === "low" && "bg-[#8b8ba710] border-[#8b8ba730] text-[#8b8ba7]"
                   )}
                 >

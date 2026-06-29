@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-06-29T08:40:29.903Z",
+  "occupationId": "18",
+  "skills": [
+    {
+      "id": "market-18-001",
+      "name": "protective-service-incident-reports-planner",
+      "author": "skillscale-market",
+      "stars": 240,
+      "description": "Marketplace-ready protective service skill for incident reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "protective-service",
+        "incident-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-002",
+      "name": "security-threat-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 237,
+      "description": "Marketplace-ready security skill for threat summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "security",
+        "threat-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-003",
+      "name": "emergency-patrol-logs-reviewer",
+      "author": "skillscale-market",
+      "stars": 234,
+      "description": "Marketplace-ready emergency skill for patrol logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "emergency",
+        "patrol-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-004",
+      "name": "inspection-compliance-checks-summarizer",
+      "author": "skillscale-market",
+      "stars": 231,
+      "description": "Marketplace-ready inspection skill for compliance checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "inspection",
+        "compliance-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-005",
+      "name": "public-safety-training-scenarios-copilot",
+      "author": "skillscale-market",
+      "stars": 228,
+      "description": "Marketplace-ready public safety skill for training scenarios. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "public-safety",
+        "training-scenarios",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-006",
+      "name": "protective-service-incident-reports-auditor",
+      "author": "skillscale-market",
+      "stars": 225,
+      "description": "Marketplace-ready protective service skill for incident reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "protective-service",
+        "incident-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-007",
+      "name": "security-threat-summaries-generator",
+      "author": "skillscale-market",
+      "stars": 222,
+      "description": "Marketplace-ready security skill for threat summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "security",
+        "threat-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-008",
+      "name": "emergency-patrol-logs-tracker",
+      "author": "skillscale-market",
+      "stars": 219,
+      "description": "Marketplace-ready emergency skill for patrol logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "emergency",
+        "patrol-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-009",
+      "name": "inspection-compliance-checks-optimizer",
+      "author": "skillscale-market",
+      "stars": 216,
+      "description": "Marketplace-ready inspection skill for compliance checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "inspection",
+        "compliance-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-010",
+      "name": "public-safety-training-scenarios-reporter",
+      "author": "skillscale-market",
+      "stars": 213,
+      "description": "Marketplace-ready public safety skill for training scenarios. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "public-safety",
+        "training-scenarios",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-011",
+      "name": "protective-service-incident-reports-triage",
+      "author": "skillscale-market",
+      "stars": 210,
+      "description": "Marketplace-ready protective service skill for incident reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "protective-service",
+        "incident-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-012",
+      "name": "security-threat-summaries-playbook",
+      "author": "skillscale-market",
+      "stars": 207,
+      "description": "Marketplace-ready security skill for threat summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "security",
+        "threat-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-013",
+      "name": "emergency-patrol-logs-planner",
+      "author": "skillscale-market",
+      "stars": 204,
+      "description": "Marketplace-ready emergency skill for patrol logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "emergency",
+        "patrol-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-014",
+      "name": "inspection-compliance-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 201,
+      "description": "Marketplace-ready inspection skill for compliance checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "inspection",
+        "compliance-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-015",
+      "name": "public-safety-training-scenarios-reviewer",
+      "author": "skillscale-market",
+      "stars": 198,
+      "description": "Marketplace-ready public safety skill for training scenarios. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "public-safety",
+        "training-scenarios",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-016",
+      "name": "protective-service-incident-reports-summarizer",
+      "author": "skillscale-market",
+      "stars": 195,
+      "description": "Marketplace-ready protective service skill for incident reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "protective-service",
+        "incident-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-017",
+      "name": "security-threat-summaries-copilot",
+      "author": "skillscale-market",
+      "stars": 192,
+      "description": "Marketplace-ready security skill for threat summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "security",
+        "threat-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-018",
+      "name": "emergency-patrol-logs-auditor",
+      "author": "skillscale-market",
+      "stars": 189,
+      "description": "Marketplace-ready emergency skill for patrol logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "emergency",
+        "patrol-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-019",
+      "name": "inspection-compliance-checks-generator",
+      "author": "skillscale-market",
+      "stars": 186,
+      "description": "Marketplace-ready inspection skill for compliance checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "inspection",
+        "compliance-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-020",
+      "name": "public-safety-training-scenarios-tracker",
+      "author": "skillscale-market",
+      "stars": 183,
+      "description": "Marketplace-ready public safety skill for training scenarios. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "public-safety",
+        "training-scenarios",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-021",
+      "name": "protective-service-incident-reports-optimizer",
+      "author": "skillscale-market",
+      "stars": 180,
+      "description": "Marketplace-ready protective service skill for incident reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "protective-service",
+        "incident-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-022",
+      "name": "security-threat-summaries-reporter",
+      "author": "skillscale-market",
+      "stars": 177,
+      "description": "Marketplace-ready security skill for threat summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "security",
+        "threat-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-023",
+      "name": "emergency-patrol-logs-triage",
+      "author": "skillscale-market",
+      "stars": 174,
+      "description": "Marketplace-ready emergency skill for patrol logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "emergency",
+        "patrol-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-024",
+      "name": "inspection-compliance-checks-playbook",
+      "author": "skillscale-market",
+      "stars": 171,
+      "description": "Marketplace-ready inspection skill for compliance checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "inspection",
+        "compliance-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-025",
+      "name": "public-safety-training-scenarios-planner",
+      "author": "skillscale-market",
+      "stars": 168,
+      "description": "Marketplace-ready public safety skill for training scenarios. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "public-safety",
+        "training-scenarios",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-026",
+      "name": "protective-service-incident-reports-assistant",
+      "author": "skillscale-market",
+      "stars": 165,
+      "description": "Marketplace-ready protective service skill for incident reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "protective-service",
+        "incident-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-027",
+      "name": "security-threat-summaries-reviewer",
+      "author": "skillscale-market",
+      "stars": 162,
+      "description": "Marketplace-ready security skill for threat summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "security",
+        "threat-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-028",
+      "name": "emergency-patrol-logs-summarizer",
+      "author": "skillscale-market",
+      "stars": 159,
+      "description": "Marketplace-ready emergency skill for patrol logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "emergency",
+        "patrol-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-029",
+      "name": "inspection-compliance-checks-copilot",
+      "author": "skillscale-market",
+      "stars": 156,
+      "description": "Marketplace-ready inspection skill for compliance checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "inspection",
+        "compliance-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-030",
+      "name": "public-safety-training-scenarios-auditor",
+      "author": "skillscale-market",
+      "stars": 153,
+      "description": "Marketplace-ready public safety skill for training scenarios. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "public-safety",
+        "training-scenarios",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-031",
+      "name": "protective-service-incident-reports-generator",
+      "author": "skillscale-market",
+      "stars": 150,
+      "description": "Marketplace-ready protective service skill for incident reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "protective-service",
+        "incident-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-032",
+      "name": "security-threat-summaries-tracker",
+      "author": "skillscale-market",
+      "stars": 147,
+      "description": "Marketplace-ready security skill for threat summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "security",
+        "threat-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-033",
+      "name": "emergency-patrol-logs-optimizer",
+      "author": "skillscale-market",
+      "stars": 144,
+      "description": "Marketplace-ready emergency skill for patrol logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "emergency",
+        "patrol-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-034",
+      "name": "inspection-compliance-checks-reporter",
+      "author": "skillscale-market",
+      "stars": 141,
+      "description": "Marketplace-ready inspection skill for compliance checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "inspection",
+        "compliance-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-035",
+      "name": "public-safety-training-scenarios-triage",
+      "author": "skillscale-market",
+      "stars": 138,
+      "description": "Marketplace-ready public safety skill for training scenarios. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "public-safety",
+        "training-scenarios",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-036",
+      "name": "protective-service-incident-reports-playbook",
+      "author": "skillscale-market",
+      "stars": 135,
+      "description": "Marketplace-ready protective service skill for incident reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "protective-service",
+        "incident-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-037",
+      "name": "security-threat-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 132,
+      "description": "Marketplace-ready security skill for threat summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "security",
+        "threat-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-038",
+      "name": "emergency-patrol-logs-assistant",
+      "author": "skillscale-market",
+      "stars": 129,
+      "description": "Marketplace-ready emergency skill for patrol logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "emergency",
+        "patrol-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-039",
+      "name": "inspection-compliance-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 126,
+      "description": "Marketplace-ready inspection skill for compliance checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "inspection",
+        "compliance-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-040",
+      "name": "public-safety-training-scenarios-summarizer",
+      "author": "skillscale-market",
+      "stars": 123,
+      "description": "Marketplace-ready public safety skill for training scenarios. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "public-safety",
+        "training-scenarios",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-041",
+      "name": "protective-service-incident-reports-copilot",
+      "author": "skillscale-market",
+      "stars": 120,
+      "description": "Marketplace-ready protective service skill for incident reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "protective-service",
+        "incident-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-042",
+      "name": "security-threat-summaries-auditor",
+      "author": "skillscale-market",
+      "stars": 117,
+      "description": "Marketplace-ready security skill for threat summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "security",
+        "threat-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-043",
+      "name": "emergency-patrol-logs-generator",
+      "author": "skillscale-market",
+      "stars": 114,
+      "description": "Marketplace-ready emergency skill for patrol logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "emergency",
+        "patrol-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-044",
+      "name": "inspection-compliance-checks-tracker",
+      "author": "skillscale-market",
+      "stars": 111,
+      "description": "Marketplace-ready inspection skill for compliance checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "inspection",
+        "compliance-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-045",
+      "name": "public-safety-training-scenarios-optimizer",
+      "author": "skillscale-market",
+      "stars": 108,
+      "description": "Marketplace-ready public safety skill for training scenarios. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "public-safety",
+        "training-scenarios",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-046",
+      "name": "protective-service-incident-reports-reporter",
+      "author": "skillscale-market",
+      "stars": 105,
+      "description": "Marketplace-ready protective service skill for incident reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "protective-service",
+        "incident-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-047",
+      "name": "security-threat-summaries-triage",
+      "author": "skillscale-market",
+      "stars": 102,
+      "description": "Marketplace-ready security skill for threat summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "security",
+        "threat-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-18-048",
+      "name": "emergency-patrol-logs-playbook",
+      "author": "skillscale-market",
+      "stars": 99,
+      "description": "Marketplace-ready emergency skill for patrol logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for protective service teams.",
+      "tags": [
+        "emergency",
+        "patrol-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "18",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    }
+  ]
+}

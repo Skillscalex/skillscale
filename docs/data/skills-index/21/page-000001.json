@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-06-29T08:40:29.903Z",
+  "occupationId": "21",
+  "skills": [
+    {
+      "id": "market-21-001",
+      "name": "production-sop-writing-planner",
+      "author": "skillscale-market",
+      "stars": 240,
+      "description": "Marketplace-ready production skill for SOP writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "production",
+        "sop-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-002",
+      "name": "manufacturing-quality-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 237,
+      "description": "Marketplace-ready manufacturing skill for quality checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "manufacturing",
+        "quality-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-003",
+      "name": "quality-line-handoffs-reviewer",
+      "author": "skillscale-market",
+      "stars": 234,
+      "description": "Marketplace-ready quality skill for line handoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "quality",
+        "line-handoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-004",
+      "name": "plant-ops-root-cause-analysis-summarizer",
+      "author": "skillscale-market",
+      "stars": 231,
+      "description": "Marketplace-ready plant ops skill for root-cause analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "plant-ops",
+        "root-cause-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-005",
+      "name": "process-maintenance-prep-copilot",
+      "author": "skillscale-market",
+      "stars": 228,
+      "description": "Marketplace-ready process skill for maintenance prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "process",
+        "maintenance-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-006",
+      "name": "production-sop-writing-auditor",
+      "author": "skillscale-market",
+      "stars": 225,
+      "description": "Marketplace-ready production skill for SOP writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "production",
+        "sop-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-007",
+      "name": "manufacturing-quality-checks-generator",
+      "author": "skillscale-market",
+      "stars": 222,
+      "description": "Marketplace-ready manufacturing skill for quality checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "manufacturing",
+        "quality-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-008",
+      "name": "quality-line-handoffs-tracker",
+      "author": "skillscale-market",
+      "stars": 219,
+      "description": "Marketplace-ready quality skill for line handoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "quality",
+        "line-handoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-009",
+      "name": "plant-ops-root-cause-analysis-optimizer",
+      "author": "skillscale-market",
+      "stars": 216,
+      "description": "Marketplace-ready plant ops skill for root-cause analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "plant-ops",
+        "root-cause-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-010",
+      "name": "process-maintenance-prep-reporter",
+      "author": "skillscale-market",
+      "stars": 213,
+      "description": "Marketplace-ready process skill for maintenance prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "process",
+        "maintenance-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-011",
+      "name": "production-sop-writing-triage",
+      "author": "skillscale-market",
+      "stars": 210,
+      "description": "Marketplace-ready production skill for SOP writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "production",
+        "sop-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-012",
+      "name": "manufacturing-quality-checks-playbook",
+      "author": "skillscale-market",
+      "stars": 207,
+      "description": "Marketplace-ready manufacturing skill for quality checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "manufacturing",
+        "quality-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-013",
+      "name": "quality-line-handoffs-planner",
+      "author": "skillscale-market",
+      "stars": 204,
+      "description": "Marketplace-ready quality skill for line handoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "quality",
+        "line-handoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-014",
+      "name": "plant-ops-root-cause-analysis-assistant",
+      "author": "skillscale-market",
+      "stars": 201,
+      "description": "Marketplace-ready plant ops skill for root-cause analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "plant-ops",
+        "root-cause-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-015",
+      "name": "process-maintenance-prep-reviewer",
+      "author": "skillscale-market",
+      "stars": 198,
+      "description": "Marketplace-ready process skill for maintenance prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "process",
+        "maintenance-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-016",
+      "name": "production-sop-writing-summarizer",
+      "author": "skillscale-market",
+      "stars": 195,
+      "description": "Marketplace-ready production skill for SOP writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "production",
+        "sop-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-017",
+      "name": "manufacturing-quality-checks-copilot",
+      "author": "skillscale-market",
+      "stars": 192,
+      "description": "Marketplace-ready manufacturing skill for quality checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "manufacturing",
+        "quality-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-018",
+      "name": "quality-line-handoffs-auditor",
+      "author": "skillscale-market",
+      "stars": 189,
+      "description": "Marketplace-ready quality skill for line handoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "quality",
+        "line-handoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-019",
+      "name": "plant-ops-root-cause-analysis-generator",
+      "author": "skillscale-market",
+      "stars": 186,
+      "description": "Marketplace-ready plant ops skill for root-cause analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "plant-ops",
+        "root-cause-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-020",
+      "name": "process-maintenance-prep-tracker",
+      "author": "skillscale-market",
+      "stars": 183,
+      "description": "Marketplace-ready process skill for maintenance prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "process",
+        "maintenance-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-021",
+      "name": "production-sop-writing-optimizer",
+      "author": "skillscale-market",
+      "stars": 180,
+      "description": "Marketplace-ready production skill for SOP writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "production",
+        "sop-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-022",
+      "name": "manufacturing-quality-checks-reporter",
+      "author": "skillscale-market",
+      "stars": 177,
+      "description": "Marketplace-ready manufacturing skill for quality checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "manufacturing",
+        "quality-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-023",
+      "name": "quality-line-handoffs-triage",
+      "author": "skillscale-market",
+      "stars": 174,
+      "description": "Marketplace-ready quality skill for line handoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "quality",
+        "line-handoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-024",
+      "name": "plant-ops-root-cause-analysis-playbook",
+      "author": "skillscale-market",
+      "stars": 171,
+      "description": "Marketplace-ready plant ops skill for root-cause analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "plant-ops",
+        "root-cause-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-025",
+      "name": "process-maintenance-prep-planner",
+      "author": "skillscale-market",
+      "stars": 168,
+      "description": "Marketplace-ready process skill for maintenance prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "process",
+        "maintenance-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-026",
+      "name": "production-sop-writing-assistant",
+      "author": "skillscale-market",
+      "stars": 165,
+      "description": "Marketplace-ready production skill for SOP writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "production",
+        "sop-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-027",
+      "name": "manufacturing-quality-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 162,
+      "description": "Marketplace-ready manufacturing skill for quality checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "manufacturing",
+        "quality-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-028",
+      "name": "quality-line-handoffs-summarizer",
+      "author": "skillscale-market",
+      "stars": 159,
+      "description": "Marketplace-ready quality skill for line handoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "quality",
+        "line-handoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-029",
+      "name": "plant-ops-root-cause-analysis-copilot",
+      "author": "skillscale-market",
+      "stars": 156,
+      "description": "Marketplace-ready plant ops skill for root-cause analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "plant-ops",
+        "root-cause-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-030",
+      "name": "process-maintenance-prep-auditor",
+      "author": "skillscale-market",
+      "stars": 153,
+      "description": "Marketplace-ready process skill for maintenance prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "process",
+        "maintenance-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-031",
+      "name": "production-sop-writing-generator",
+      "author": "skillscale-market",
+      "stars": 150,
+      "description": "Marketplace-ready production skill for SOP writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "production",
+        "sop-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-032",
+      "name": "manufacturing-quality-checks-tracker",
+      "author": "skillscale-market",
+      "stars": 147,
+      "description": "Marketplace-ready manufacturing skill for quality checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "manufacturing",
+        "quality-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-033",
+      "name": "quality-line-handoffs-optimizer",
+      "author": "skillscale-market",
+      "stars": 144,
+      "description": "Marketplace-ready quality skill for line handoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "quality",
+        "line-handoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-034",
+      "name": "plant-ops-root-cause-analysis-reporter",
+      "author": "skillscale-market",
+      "stars": 141,
+      "description": "Marketplace-ready plant ops skill for root-cause analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "plant-ops",
+        "root-cause-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-035",
+      "name": "process-maintenance-prep-triage",
+      "author": "skillscale-market",
+      "stars": 138,
+      "description": "Marketplace-ready process skill for maintenance prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "process",
+        "maintenance-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-036",
+      "name": "production-sop-writing-playbook",
+      "author": "skillscale-market",
+      "stars": 135,
+      "description": "Marketplace-ready production skill for SOP writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "production",
+        "sop-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-037",
+      "name": "manufacturing-quality-checks-planner",
+      "author": "skillscale-market",
+      "stars": 132,
+      "description": "Marketplace-ready manufacturing skill for quality checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "manufacturing",
+        "quality-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-038",
+      "name": "quality-line-handoffs-assistant",
+      "author": "skillscale-market",
+      "stars": 129,
+      "description": "Marketplace-ready quality skill for line handoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "quality",
+        "line-handoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-039",
+      "name": "plant-ops-root-cause-analysis-reviewer",
+      "author": "skillscale-market",
+      "stars": 126,
+      "description": "Marketplace-ready plant ops skill for root-cause analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "plant-ops",
+        "root-cause-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-040",
+      "name": "process-maintenance-prep-summarizer",
+      "author": "skillscale-market",
+      "stars": 123,
+      "description": "Marketplace-ready process skill for maintenance prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "process",
+        "maintenance-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-041",
+      "name": "production-sop-writing-copilot",
+      "author": "skillscale-market",
+      "stars": 120,
+      "description": "Marketplace-ready production skill for SOP writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "production",
+        "sop-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-042",
+      "name": "manufacturing-quality-checks-auditor",
+      "author": "skillscale-market",
+      "stars": 117,
+      "description": "Marketplace-ready manufacturing skill for quality checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "manufacturing",
+        "quality-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-043",
+      "name": "quality-line-handoffs-generator",
+      "author": "skillscale-market",
+      "stars": 114,
+      "description": "Marketplace-ready quality skill for line handoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "quality",
+        "line-handoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-044",
+      "name": "plant-ops-root-cause-analysis-tracker",
+      "author": "skillscale-market",
+      "stars": 111,
+      "description": "Marketplace-ready plant ops skill for root-cause analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "plant-ops",
+        "root-cause-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-045",
+      "name": "process-maintenance-prep-optimizer",
+      "author": "skillscale-market",
+      "stars": 108,
+      "description": "Marketplace-ready process skill for maintenance prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "process",
+        "maintenance-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-046",
+      "name": "production-sop-writing-reporter",
+      "author": "skillscale-market",
+      "stars": 105,
+      "description": "Marketplace-ready production skill for SOP writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "production",
+        "sop-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-047",
+      "name": "manufacturing-quality-checks-triage",
+      "author": "skillscale-market",
+      "stars": 102,
+      "description": "Marketplace-ready manufacturing skill for quality checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "manufacturing",
+        "quality-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-21-048",
+      "name": "quality-line-handoffs-playbook",
+      "author": "skillscale-market",
+      "stars": 99,
+      "description": "Marketplace-ready quality skill for line handoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for production teams.",
+      "tags": [
+        "quality",
+        "line-handoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "21",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    }
+  ]
+}

@@ -24,7 +24,7 @@ const AGENTS = [
     capabilities: ["research", "writing", "analysis", "marketplace guidance"],
     style: "avataaars",
     seed: "aria-skill",
-    color: "#D4661A",
+    color: "#177CB0",
     description: "Your primary assistant. Warm, intuitive, and knows the Skillscale platform deeply.",
   },
   {
@@ -54,7 +54,7 @@ const AGENTS = [
     capabilities: ["research synthesis", "framework comparison", "trend analysis", "source citation"],
     style: "avataaars",
     seed: "nova-nb",
-    color: "#7B2FBE",
+    color: "#4B5CC4",
     description: "Research specialist. Structures findings clearly with sources, trends, and bottom-line summaries.",
   },
 
@@ -71,7 +71,7 @@ const AGENTS = [
     capabilities: ["philosophy", "deep reasoning", "AI alignment", "cross-domain synthesis"],
     style: "shapes",
     seed: "hermes-gold",
-    color: "#C5A028",
+    color: "#4B5CC4",
     description: "Open-source philosopher running on Hermes-3 Llama 70B. Tackles the hard questions with depth.",
   },
   {
@@ -103,7 +103,7 @@ const AGENTS = [
     capabilities: ["TypeScript", "Python", "Next.js", "code review", "debugging"],
     style: "fun-emoji",
     seed: "byte-zap",
-    color: "#FF8F00",
+    color: "#0065A2",
     description: "Production-grade code agent. TypeScript-first, knows the Skillscale stack cold.",
   },
   {

@@ -26,7 +26,7 @@ export default function SubmitPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
       {/* Header */}
       <div className="text-center mb-10">
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#7c3aed15] border border-[#7c3aed30] text-[#a78bfa] text-xs font-medium mb-4">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#177CB015] border border-[#177CB030] text-[#4B5CC4] text-xs font-medium mb-4">
           <Gem size={12} />
           List Your Skill
         </div>
@@ -43,12 +43,12 @@ export default function SubmitPage() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12 max-w-2xl mx-auto">
         {[
           {
-            icon: <Shield size={20} className="text-[#60efff]" />,
+            icon: <Shield size={20} className="text-[#00B0BA]" />,
             title: "AI Security Audit",
             desc: "3 agents check your skill before listing",
           },
           {
-            icon: <Gem size={20} className="text-[#a78bfa]" />,
+            icon: <Gem size={20} className="text-[#4B5CC4]" />,
             title: "Gem Tier Assigned",
             desc: "Diamond to Quartz based on score",
           },

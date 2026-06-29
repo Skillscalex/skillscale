@@ -21,11 +21,11 @@ export function Navbar({ currency, onCurrencyChange }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center gap-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0 mr-2">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#7c3aed] to-[#60efff] flex items-center justify-center">
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#177CB0] to-[#00B0BA] flex items-center justify-center">
             <Gem size={16} className="text-white" />
           </div>
           <span className="text-lg font-bold text-[#f8f8ff] hidden sm:block">
-            Skill<span className="text-[#7c3aed]">scale</span>
+            Skill<span className="text-[#177CB0]">scale</span>
           </span>
         </Link>
 
@@ -51,7 +51,7 @@ export function Navbar({ currency, onCurrencyChange }: NavbarProps) {
         {/* Search */}
         <div
           className={`flex-1 max-w-md hidden sm:flex items-center gap-2 px-3 py-2 rounded-xl border transition-all ${
-            searchFocused ? "border-[#7c3aed] bg-[#12121a]" : "border-[#1e1e2e] bg-[#12121a]"
+            searchFocused ? "border-[#177CB0] bg-[#12121a]" : "border-[#1e1e2e] bg-[#12121a]"
           }`}
         >
           <Search size={15} className="text-[#8b8ba7] shrink-0" />
@@ -69,7 +69,7 @@ export function Navbar({ currency, onCurrencyChange }: NavbarProps) {
 
           <Link
             href="/vault"
-            className="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[#1e1e2e] text-[#8b8ba7] hover:text-[#f8f8ff] text-sm font-medium border border-[#2e2e4e] hover:border-[#7c3aed] transition-colors"
+            className="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[#1e1e2e] text-[#8b8ba7] hover:text-[#f8f8ff] text-sm font-medium border border-[#2e2e4e] hover:border-[#177CB0] transition-colors"
           >
             <Vault size={15} />
             Vault
@@ -77,7 +77,7 @@ export function Navbar({ currency, onCurrencyChange }: NavbarProps) {
 
           <Link
             href="/submit"
-            className="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[#7c3aed] text-white text-sm font-medium hover:bg-[#6d28d9] transition-colors"
+            className="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[#177CB0] text-white text-sm font-medium hover:bg-[#065279] transition-colors"
           >
             <Plus size={15} />
             List Skill

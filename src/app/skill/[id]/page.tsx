@@ -74,7 +74,7 @@ export default function SkillDetailPage({ params }: { params: Promise<{ id: stri
       <div className="max-w-7xl mx-auto px-4 py-20 text-center">
         <p className="text-4xl mb-4">💎</p>
         <h2 className="text-2xl font-bold text-[#f8f8ff] mb-2">Skill Not Found</h2>
-        <Link href="/marketplace" className="text-[#7c3aed] hover:underline">
+        <Link href="/marketplace" className="text-[#177CB0] hover:underline">
           Back to marketplace
         </Link>
       </div>
@@ -113,7 +113,7 @@ export default function SkillDetailPage({ params }: { params: Promise<{ id: stri
                     </span>
                   )}
                   {skill.is_minted && (
-                    <span className="text-xs px-2 py-0.5 rounded bg-[#60efff15] text-[#60efff] border border-[#60efff30] font-medium">
+                    <span className="text-xs px-2 py-0.5 rounded bg-[#00B0BA15] text-[#00B0BA] border border-[#00B0BA30] font-medium">
                       NFT #{skill.nft_token_id}
                     </span>
                   )}
@@ -137,7 +137,7 @@ export default function SkillDetailPage({ params }: { params: Promise<{ id: stri
                   </span>
                   {skill.rating != null && (
                     <span className="flex items-center gap-1">
-                      <span className="text-[#ffd700]">★</span>
+                      <span className="text-[#00B0BA]">★</span>
                       <span className="font-semibold text-[#f8f8ff]">{skill.rating.toFixed(1)}</span>
                       <span className="text-xs text-[#4a4a5a]">({skill.review_count ?? 0})</span>
                     </span>
@@ -150,8 +150,8 @@ export default function SkillDetailPage({ params }: { params: Promise<{ id: stri
                   onClick={() => setDreamed(!dreamed)}
                   className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-medium border transition-all ${
                     dreamed
-                      ? "bg-[#7c3aed20] border-[#7c3aed] text-[#7c3aed]"
-                      : "bg-[#1e1e2e] border-[#2e2e4e] text-[#8b8ba7] hover:text-[#f8f8ff] hover:border-[#7c3aed]"
+                      ? "bg-[#177CB020] border-[#177CB0] text-[#177CB0]"
+                      : "bg-[#1e1e2e] border-[#2e2e4e] text-[#8b8ba7] hover:text-[#f8f8ff] hover:border-[#177CB0]"
                   }`}
                   title={dreamed ? "Saved to your Vault" : "Dream this skill — save to Vault"}
                 >
@@ -161,7 +161,7 @@ export default function SkillDetailPage({ params }: { params: Promise<{ id: stri
                 {dreamed && (
                   <Link
                     href="/vault"
-                    className="p-2 rounded-lg bg-[#1e1e2e] text-[#7c3aed] hover:bg-[#7c3aed20] transition-colors"
+                    className="p-2 rounded-lg bg-[#1e1e2e] text-[#177CB0] hover:bg-[#177CB020] transition-colors"
                     title="View in Vault"
                   >
                     <Vault size={16} />
@@ -211,7 +211,7 @@ export default function SkillDetailPage({ params }: { params: Promise<{ id: stri
                   View raw
                 </button>
               </div>
-              <pre className="p-5 text-xs font-mono text-[#a78bfa] overflow-x-auto leading-relaxed">
+              <pre className="p-5 text-xs font-mono text-[#4B5CC4] overflow-x-auto leading-relaxed">
                 {JSON.stringify(skill.plugin_json, null, 2)}
               </pre>
             </div>
@@ -221,12 +221,12 @@ export default function SkillDetailPage({ params }: { params: Promise<{ id: stri
           {modelInfo && (
             <div className="bg-[#12121a] border border-[#1e1e2e] rounded-2xl p-5">
               <h3 className="text-sm font-semibold text-[#f8f8ff] mb-3 flex items-center gap-2">
-                <span className="text-[#60efff]">🤖</span>
+                <span className="text-[#00B0BA]">🤖</span>
                 AI Model Recommendation
               </h3>
               <div className="flex items-start gap-4">
                 <div className="flex-1">
-                  <div className="text-base font-bold text-[#60efff]">{modelInfo.name}</div>
+                  <div className="text-base font-bold text-[#00B0BA]">{modelInfo.name}</div>
                   <div className="text-sm text-[#8b8ba7] mt-0.5">{modelInfo.description}</div>
                 </div>
               </div>
@@ -234,7 +234,7 @@ export default function SkillDetailPage({ params }: { params: Promise<{ id: stri
                 {modelInfo.strengths.map((s) => (
                   <span
                     key={s}
-                    className="text-xs px-2.5 py-1 rounded-full bg-[#60efff10] text-[#60efff] border border-[#60efff20]"
+                    className="text-xs px-2.5 py-1 rounded-full bg-[#00B0BA10] text-[#00B0BA] border border-[#00B0BA20]"
                   >
                     {s}
                   </span>
@@ -333,7 +333,7 @@ export default function SkillDetailPage({ params }: { params: Promise<{ id: stri
                     value={limitPrice}
                     onChange={(e) => setLimitPrice(e.target.value)}
                     placeholder={(skill.current_price ?? skill.price_usd).toFixed(2)}
-                    className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl pl-7 pr-4 py-2 text-sm text-[#f8f8ff] focus:border-[#7c3aed] focus:outline-none transition-colors"
+                    className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl pl-7 pr-4 py-2 text-sm text-[#f8f8ff] focus:border-[#177CB0] focus:outline-none transition-colors"
                   />
                 </div>
               </div>
@@ -346,7 +346,7 @@ export default function SkillDetailPage({ params }: { params: Promise<{ id: stri
                 min="1"
                 value={quantity}
                 onChange={(e) => setQuantity(e.target.value)}
-                className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl px-4 py-2 text-sm text-[#f8f8ff] focus:border-[#7c3aed] focus:outline-none transition-colors"
+                className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl px-4 py-2 text-sm text-[#f8f8ff] focus:border-[#177CB0] focus:outline-none transition-colors"
               />
             </div>
 
@@ -354,7 +354,7 @@ export default function SkillDetailPage({ params }: { params: Promise<{ id: stri
               onClick={() => setPaymentOpen(true)}
               className={`w-full py-3.5 rounded-xl font-semibold text-sm transition-colors ${
                 skill.is_free
-                  ? "bg-[#7c3aed] text-white hover:bg-[#6d28d9]"
+                  ? "bg-[#177CB0] text-white hover:bg-[#065279]"
                   : side === "buy"
                   ? "bg-[#00d97e] text-black hover:bg-[#00c070]"
                   : "bg-[#ff4d4d] text-white hover:bg-[#e03030]"

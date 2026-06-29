@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-06-29T08:40:29.903Z",
+  "occupationId": "23",
+  "skills": [
+    {
+      "id": "market-23-001",
+      "name": "facilities-inspection-reports-planner",
+      "author": "skillscale-market",
+      "stars": 240,
+      "description": "Marketplace-ready facilities skill for inspection reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "facilities",
+        "inspection-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-002",
+      "name": "grounds-cleaning-schedules-assistant",
+      "author": "skillscale-market",
+      "stars": 237,
+      "description": "Marketplace-ready grounds skill for cleaning schedules. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "grounds",
+        "cleaning-schedules",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-003",
+      "name": "cleaning-supply-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 234,
+      "description": "Marketplace-ready cleaning skill for supply checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "cleaning",
+        "supply-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-004",
+      "name": "janitorial-issue-triage-summarizer",
+      "author": "skillscale-market",
+      "stars": 231,
+      "description": "Marketplace-ready janitorial skill for issue triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "janitorial",
+        "issue-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-005",
+      "name": "building-maintenance-tenant-updates-copilot",
+      "author": "skillscale-market",
+      "stars": 228,
+      "description": "Marketplace-ready building maintenance skill for tenant updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "building-maintenance",
+        "tenant-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-006",
+      "name": "facilities-inspection-reports-auditor",
+      "author": "skillscale-market",
+      "stars": 225,
+      "description": "Marketplace-ready facilities skill for inspection reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "facilities",
+        "inspection-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-007",
+      "name": "grounds-cleaning-schedules-generator",
+      "author": "skillscale-market",
+      "stars": 222,
+      "description": "Marketplace-ready grounds skill for cleaning schedules. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "grounds",
+        "cleaning-schedules",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-008",
+      "name": "cleaning-supply-checks-tracker",
+      "author": "skillscale-market",
+      "stars": 219,
+      "description": "Marketplace-ready cleaning skill for supply checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "cleaning",
+        "supply-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-009",
+      "name": "janitorial-issue-triage-optimizer",
+      "author": "skillscale-market",
+      "stars": 216,
+      "description": "Marketplace-ready janitorial skill for issue triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "janitorial",
+        "issue-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-010",
+      "name": "building-maintenance-tenant-updates-reporter",
+      "author": "skillscale-market",
+      "stars": 213,
+      "description": "Marketplace-ready building maintenance skill for tenant updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "building-maintenance",
+        "tenant-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-011",
+      "name": "facilities-inspection-reports-triage",
+      "author": "skillscale-market",
+      "stars": 210,
+      "description": "Marketplace-ready facilities skill for inspection reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "facilities",
+        "inspection-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-012",
+      "name": "grounds-cleaning-schedules-playbook",
+      "author": "skillscale-market",
+      "stars": 207,
+      "description": "Marketplace-ready grounds skill for cleaning schedules. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "grounds",
+        "cleaning-schedules",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-013",
+      "name": "cleaning-supply-checks-planner",
+      "author": "skillscale-market",
+      "stars": 204,
+      "description": "Marketplace-ready cleaning skill for supply checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "cleaning",
+        "supply-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-014",
+      "name": "janitorial-issue-triage-assistant",
+      "author": "skillscale-market",
+      "stars": 201,
+      "description": "Marketplace-ready janitorial skill for issue triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "janitorial",
+        "issue-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-015",
+      "name": "building-maintenance-tenant-updates-reviewer",
+      "author": "skillscale-market",
+      "stars": 198,
+      "description": "Marketplace-ready building maintenance skill for tenant updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "building-maintenance",
+        "tenant-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-016",
+      "name": "facilities-inspection-reports-summarizer",
+      "author": "skillscale-market",
+      "stars": 195,
+      "description": "Marketplace-ready facilities skill for inspection reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "facilities",
+        "inspection-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-017",
+      "name": "grounds-cleaning-schedules-copilot",
+      "author": "skillscale-market",
+      "stars": 192,
+      "description": "Marketplace-ready grounds skill for cleaning schedules. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "grounds",
+        "cleaning-schedules",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-018",
+      "name": "cleaning-supply-checks-auditor",
+      "author": "skillscale-market",
+      "stars": 189,
+      "description": "Marketplace-ready cleaning skill for supply checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "cleaning",
+        "supply-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-019",
+      "name": "janitorial-issue-triage-generator",
+      "author": "skillscale-market",
+      "stars": 186,
+      "description": "Marketplace-ready janitorial skill for issue triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "janitorial",
+        "issue-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-020",
+      "name": "building-maintenance-tenant-updates-tracker",
+      "author": "skillscale-market",
+      "stars": 183,
+      "description": "Marketplace-ready building maintenance skill for tenant updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "building-maintenance",
+        "tenant-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-021",
+      "name": "facilities-inspection-reports-optimizer",
+      "author": "skillscale-market",
+      "stars": 180,
+      "description": "Marketplace-ready facilities skill for inspection reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "facilities",
+        "inspection-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-022",
+      "name": "grounds-cleaning-schedules-reporter",
+      "author": "skillscale-market",
+      "stars": 177,
+      "description": "Marketplace-ready grounds skill for cleaning schedules. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "grounds",
+        "cleaning-schedules",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-023",
+      "name": "cleaning-supply-checks-triage",
+      "author": "skillscale-market",
+      "stars": 174,
+      "description": "Marketplace-ready cleaning skill for supply checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "cleaning",
+        "supply-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-024",
+      "name": "janitorial-issue-triage-playbook",
+      "author": "skillscale-market",
+      "stars": 171,
+      "description": "Marketplace-ready janitorial skill for issue triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "janitorial",
+        "issue-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-025",
+      "name": "building-maintenance-tenant-updates-planner",
+      "author": "skillscale-market",
+      "stars": 168,
+      "description": "Marketplace-ready building maintenance skill for tenant updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "building-maintenance",
+        "tenant-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-026",
+      "name": "facilities-inspection-reports-assistant",
+      "author": "skillscale-market",
+      "stars": 165,
+      "description": "Marketplace-ready facilities skill for inspection reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "facilities",
+        "inspection-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-027",
+      "name": "grounds-cleaning-schedules-reviewer",
+      "author": "skillscale-market",
+      "stars": 162,
+      "description": "Marketplace-ready grounds skill for cleaning schedules. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "grounds",
+        "cleaning-schedules",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-028",
+      "name": "cleaning-supply-checks-summarizer",
+      "author": "skillscale-market",
+      "stars": 159,
+      "description": "Marketplace-ready cleaning skill for supply checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "cleaning",
+        "supply-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-029",
+      "name": "janitorial-issue-triage-copilot",
+      "author": "skillscale-market",
+      "stars": 156,
+      "description": "Marketplace-ready janitorial skill for issue triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "janitorial",
+        "issue-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-030",
+      "name": "building-maintenance-tenant-updates-auditor",
+      "author": "skillscale-market",
+      "stars": 153,
+      "description": "Marketplace-ready building maintenance skill for tenant updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "building-maintenance",
+        "tenant-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-031",
+      "name": "facilities-inspection-reports-generator",
+      "author": "skillscale-market",
+      "stars": 150,
+      "description": "Marketplace-ready facilities skill for inspection reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "facilities",
+        "inspection-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-032",
+      "name": "grounds-cleaning-schedules-tracker",
+      "author": "skillscale-market",
+      "stars": 147,
+      "description": "Marketplace-ready grounds skill for cleaning schedules. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "grounds",
+        "cleaning-schedules",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-033",
+      "name": "cleaning-supply-checks-optimizer",
+      "author": "skillscale-market",
+      "stars": 144,
+      "description": "Marketplace-ready cleaning skill for supply checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "cleaning",
+        "supply-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-034",
+      "name": "janitorial-issue-triage-reporter",
+      "author": "skillscale-market",
+      "stars": 141,
+      "description": "Marketplace-ready janitorial skill for issue triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "janitorial",
+        "issue-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-035",
+      "name": "building-maintenance-tenant-updates-triage",
+      "author": "skillscale-market",
+      "stars": 138,
+      "description": "Marketplace-ready building maintenance skill for tenant updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "building-maintenance",
+        "tenant-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-036",
+      "name": "facilities-inspection-reports-playbook",
+      "author": "skillscale-market",
+      "stars": 135,
+      "description": "Marketplace-ready facilities skill for inspection reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "facilities",
+        "inspection-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-037",
+      "name": "grounds-cleaning-schedules-planner",
+      "author": "skillscale-market",
+      "stars": 132,
+      "description": "Marketplace-ready grounds skill for cleaning schedules. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "grounds",
+        "cleaning-schedules",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-038",
+      "name": "cleaning-supply-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 129,
+      "description": "Marketplace-ready cleaning skill for supply checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "cleaning",
+        "supply-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-039",
+      "name": "janitorial-issue-triage-reviewer",
+      "author": "skillscale-market",
+      "stars": 126,
+      "description": "Marketplace-ready janitorial skill for issue triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "janitorial",
+        "issue-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-040",
+      "name": "building-maintenance-tenant-updates-summarizer",
+      "author": "skillscale-market",
+      "stars": 123,
+      "description": "Marketplace-ready building maintenance skill for tenant updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "building-maintenance",
+        "tenant-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-041",
+      "name": "facilities-inspection-reports-copilot",
+      "author": "skillscale-market",
+      "stars": 120,
+      "description": "Marketplace-ready facilities skill for inspection reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "facilities",
+        "inspection-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-042",
+      "name": "grounds-cleaning-schedules-auditor",
+      "author": "skillscale-market",
+      "stars": 117,
+      "description": "Marketplace-ready grounds skill for cleaning schedules. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "grounds",
+        "cleaning-schedules",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-043",
+      "name": "cleaning-supply-checks-generator",
+      "author": "skillscale-market",
+      "stars": 114,
+      "description": "Marketplace-ready cleaning skill for supply checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "cleaning",
+        "supply-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-044",
+      "name": "janitorial-issue-triage-tracker",
+      "author": "skillscale-market",
+      "stars": 111,
+      "description": "Marketplace-ready janitorial skill for issue triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "janitorial",
+        "issue-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-045",
+      "name": "building-maintenance-tenant-updates-optimizer",
+      "author": "skillscale-market",
+      "stars": 108,
+      "description": "Marketplace-ready building maintenance skill for tenant updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "building-maintenance",
+        "tenant-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-046",
+      "name": "facilities-inspection-reports-reporter",
+      "author": "skillscale-market",
+      "stars": 105,
+      "description": "Marketplace-ready facilities skill for inspection reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "facilities",
+        "inspection-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-047",
+      "name": "grounds-cleaning-schedules-triage",
+      "author": "skillscale-market",
+      "stars": 102,
+      "description": "Marketplace-ready grounds skill for cleaning schedules. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "grounds",
+        "cleaning-schedules",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-23-048",
+      "name": "cleaning-supply-checks-playbook",
+      "author": "skillscale-market",
+      "stars": 99,
+      "description": "Marketplace-ready cleaning skill for supply checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for building and grounds cleaning and maintenance teams.",
+      "tags": [
+        "cleaning",
+        "supply-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "23",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    }
+  ]
+}

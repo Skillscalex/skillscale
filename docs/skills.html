@@ -307,8 +307,8 @@ function getSkillSecureScore(skill) {
   return Math.min(99, Math.max(60, ((skill.name.charCodeAt(0) * 3 + skill.name.length * 7 + (skill.name.charCodeAt(skill.name.length-1) || 5) * 2) % 35) + 65));
 }
 const SCORE_TIER_CONFIG = {
-  diamond: { label:'Legendary', color:'#C09A2A', icon:'🌟' },
-  emerald: { label:'Epic',      color:'#7B2FBE', icon:'⚡' },
+  diamond: { label:'Legendary', color:'#00B0BA', icon:'🌟' },
+  emerald: { label:'Epic',      color:'#4B5CC4', icon:'⚡' },
   pearl:   { label:'Rare',      color:'#1565C0', icon:'💎' },
   quartz:  { label:'Standard',  color:'#2D6A4F', icon:'🌿' },
   coal:    { label:'Draft',     color:'#6A6460', icon:'⬜' },
@@ -529,8 +529,8 @@ const OCCUPATIONS = [
   { id: '03', label: 'Arts, Design, Entertainment, Sports, and Media', count: '79.6k', rawCount: 79595 },
   { id: '04', label: 'Office and Administrative Support', count: '41.9k', rawCount: 41915 },
   { id: '05', label: 'Legal', count: '23.4k', rawCount: 23361 },
-  { id: '06', label: 'Educational Instruction and Library', count: '19.3k', rawCount: 19305 },
-  { id: '07', label: 'Life, Physical, and Social Science', count: '19.0k', rawCount: 18983 },
+  { id: '06', label: 'Life, Physical, and Social Science', count: '20k', rawCount: 20062 },
+  { id: '07', label: 'Educational Instruction and Library', count: '19k', rawCount: 19286 },
   { id: '08', label: 'Management', count: '12.0k', rawCount: 12044 },
   { id: '09', label: 'Sales and Related', count: '6.8k', rawCount: 6801 },
   { id: '10', label: 'Architecture and Engineering', count: '5.6k', rawCount: 5584 },
@@ -542,8 +542,8 @@ const OCCUPATIONS = [
   { id: '16', label: 'Transportation and Material Moving', count: '925', rawCount: 925 },
   { id: '17', label: 'Healthcare Support', count: '610', rawCount: 610 },
   { id: '18', label: 'Protective Service', count: '579', rawCount: 579 },
-  { id: '19', label: 'Construction and Extraction', count: '389', rawCount: 389 },
-  { id: '20', label: 'Farming, Fishing, and Forestry', count: '387', rawCount: 387 },
+  { id: '19', label: 'Farming, Fishing, and Forestry', count: '395', rawCount: 395 },
+  { id: '20', label: 'Construction and Extraction', count: '394', rawCount: 394 },
   { id: '21', label: 'Production', count: '253', rawCount: 253 },
   { id: '22', label: 'Installation, Maintenance, and Repair', count: '229', rawCount: 229 },
   { id: '23', label: 'Building and Grounds Cleaning and Maintenance', count: '120', rawCount: 120 },
@@ -556,8 +556,8 @@ const OCC_QUERY = {
   '03': 'design art media writing',
   '04': 'office administrative secretary',
   '05': 'legal law compliance',
-  '06': 'education teaching learning',
-  '07': 'science research data analysis',
+  '06': 'science research data analysis',
+  '07': 'education teaching learning',
   '08': 'management leadership executive',
   '09': 'sales marketing customer',
   '10': 'engineering architecture mechanical',
@@ -569,8 +569,8 @@ const OCC_QUERY = {
   '16': 'transportation logistics driving',
   '17': 'healthcare support nursing',
   '18': 'protective service security police',
-  '19': 'construction building trades',
-  '20': 'farming agriculture forestry',
+  '19': 'farming agriculture forestry',
+  '20': 'construction building trades',
   '21': 'production manufacturing',
   '22': 'installation maintenance repair',
   '23': 'cleaning maintenance janitorial',
@@ -612,7 +612,7 @@ function Nav({ theme, onToggle, currentPage }) {
           ))}
         </div>
         <div style={{ display:'flex', alignItems:'center', gap:10 }}>
-          <a href="vault.html" style={{ position:'relative', display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color: currentPage==='vault.html'?'var(--accent)':'var(--text-2)', background: currentPage==='vault.html'?'rgba(212,102,26,0.08)':'transparent', border:`1px solid ${currentPage==='vault.html'?'rgba(212,102,26,0.3)':'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
+          <a href="vault.html" style={{ position:'relative', display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color: currentPage==='vault.html'?'var(--accent)':'var(--text-2)', background: currentPage==='vault.html'?'rgba(23,124,176,0.08)':'transparent', border:`1px solid ${currentPage==='vault.html'?'rgba(23,124,176,0.3)':'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
             ✦ Vault
             {vaultCount > 0 && (
               <span style={{ position:'absolute', top:-5, right:-5, minWidth:16, height:16, borderRadius:9999, background:'var(--accent)', color:'#fff', fontSize:'.55rem', fontWeight:700, display:'flex', alignItems:'center', justifyContent:'center', padding:'0 4px' }}>
@@ -620,10 +620,10 @@ function Nav({ theme, onToggle, currentPage }) {
               </span>
             )}
           </a>
-          <a href="hubs.html" style={{ display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color: currentPage==='hubs.html'?'var(--accent)':'var(--text-2)', background: currentPage==='hubs.html'?'rgba(212,102,26,0.08)':'transparent', border:`1px solid ${currentPage==='hubs.html'?'rgba(212,102,26,0.3)':'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
+          <a href="hubs.html" style={{ display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color: currentPage==='hubs.html'?'var(--accent)':'var(--text-2)', background: currentPage==='hubs.html'?'rgba(23,124,176,0.08)':'transparent', border:`1px solid ${currentPage==='hubs.html'?'rgba(23,124,176,0.3)':'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
             ⬡ Hubs
           </a>
-          <a href="studio.html" style={{ display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color: currentPage==='studio.html'?'var(--accent)':'var(--text-2)', background: currentPage==='studio.html'?'rgba(212,102,26,0.08)':'transparent', border:`1px solid ${currentPage==='studio.html'?'rgba(212,102,26,0.3)':'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
+          <a href="studio.html" style={{ display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color: currentPage==='studio.html'?'var(--accent)':'var(--text-2)', background: currentPage==='studio.html'?'rgba(23,124,176,0.08)':'transparent', border:`1px solid ${currentPage==='studio.html'?'rgba(23,124,176,0.3)':'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
             ⌬ Studio
           </a>
           <a href="auth.html" className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 16px', border:'1px solid var(--border)' }}>
@@ -766,7 +766,7 @@ function SkillDetailPanel({ skill, onClose }) {
           {/* Sticky top bar */}
           <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'16px 20px 0', flexShrink:0 }}>
             <button onClick={toggleDream}
-              style={{ display:'flex', alignItems:'center', gap:7, padding:'7px 14px', borderRadius:9999, border:`1px solid ${dreamed ? 'var(--accent)' : 'var(--border)'}`, background: dreamed ? 'rgba(212,102,26,0.09)' : 'transparent', color: dreamed ? 'var(--accent)' : 'var(--text-2)', fontFamily:'JetBrains Mono', fontSize:'.68rem', cursor:'pointer', transition:'all 0.18s' }}>
+              style={{ display:'flex', alignItems:'center', gap:7, padding:'7px 14px', borderRadius:9999, border:`1px solid ${dreamed ? 'var(--accent)' : 'var(--border)'}`, background: dreamed ? 'rgba(23,124,176,0.09)' : 'transparent', color: dreamed ? 'var(--accent)' : 'var(--text-2)', fontFamily:'JetBrains Mono', fontSize:'.68rem', cursor:'pointer', transition:'all 0.18s' }}>
               {dreamed ? '✦ Dreamed' : '✧ Dream'}
             </button>
             <button onClick={onClose} className="lg" style={{ width:34, height:34, borderRadius:'50%', border:'none', display:'flex', alignItems:'center', justifyContent:'center', fontSize:14, color:'var(--text-2)', cursor:'pointer' }}>✕</button>
@@ -1156,6 +1156,8 @@ function App() {
   const headerRef = useRef(null);
   const headerInView = useInView(headerRef, { once: true });
   const headerScanner = catalogState.meta?.scannerSummary;
+  const totalIndexedSkills = occupations.reduce((sum, occ) => sum + Number(occ.rawCount || occ.count || 0), 0);
+  const totalMirroredSkills = occupations.reduce((sum, occ) => sum + Number(occ.localCount || 0), 0);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -1209,10 +1211,10 @@ function App() {
 
             {/* Attribution */}
             <p style={{ marginTop:16, fontFamily:'DM Sans', fontSize:'.82rem', color:'var(--text-2)' }}>
-              Powered by <a href="https://skillsmp.com" target="_blank" style={{ color:'var(--accent)', fontFamily:'JetBrains Mono', fontSize:'.8rem' }}>skillsmp.com</a> — 23 occupation groups · 867 occupations
+              Powered by <a href="https://skillsmp.com" target="_blank" style={{ color:'var(--accent)', fontFamily:'JetBrains Mono', fontSize:'.8rem' }}>skillsmp.com</a> — 23 occupation groups · 867 occupations · {totalIndexedSkills.toLocaleString()} indexed skills
             </p>
             <p style={{ marginTop:8, fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)' }}>
-                Agentic live catalog: {catalogState.status} · {(catalogState.meta?.totalSkills || catalogState.skills.length || STATIC_SKILLS.length).toLocaleString()} skills · refreshed {formatCatalogTime(catalogState.lastLoadedAt)}
+                Agentic live catalog: {catalogState.status} · {totalMirroredSkills.toLocaleString()} marketplace cards · {(catalogState.meta?.totalSkills || catalogState.skills.length || STATIC_SKILLS.length).toLocaleString()} generated skills · refreshed {formatCatalogTime(catalogState.lastLoadedAt)}
                 {headerScanner ? ` · scanned ${headerScanner.scanned} · review ${headerScanner.review} · blocked ${headerScanner.block}` : ''}
                 {occupationCountsState.meta ? ` · SkillsMP ${occupationCountsState.meta.totalMajorGroups} groups · ${occupationCountsState.meta.totalOccupations} occupations · ${occupationCountsState.meta.classifiedPercent || 0}% classified` : ''}
               </p>

@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-06-29T08:40:29.903Z",
+  "occupationId": "04",
+  "skills": [
+    {
+      "id": "market-04-001",
+      "name": "office-inbox-triage-planner",
+      "author": "skillscale-market",
+      "stars": 256,
+      "description": "Marketplace-ready office skill for inbox triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "office",
+        "inbox-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-002",
+      "name": "admin-document-formatting-assistant",
+      "author": "skillscale-market",
+      "stars": 253,
+      "description": "Marketplace-ready admin skill for document formatting. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "admin",
+        "document-formatting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-003",
+      "name": "records-calendar-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 250,
+      "description": "Marketplace-ready records skill for calendar planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "records",
+        "calendar-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-004",
+      "name": "executive-assistant-travel-briefs-summarizer",
+      "author": "skillscale-market",
+      "stars": 247,
+      "description": "Marketplace-ready executive assistant skill for travel briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "executive-assistant",
+        "travel-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-005",
+      "name": "coordination-form-processing-copilot",
+      "author": "skillscale-market",
+      "stars": 244,
+      "description": "Marketplace-ready coordination skill for form processing. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "coordination",
+        "form-processing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-006",
+      "name": "office-inbox-triage-auditor",
+      "author": "skillscale-market",
+      "stars": 241,
+      "description": "Marketplace-ready office skill for inbox triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "office",
+        "inbox-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-007",
+      "name": "admin-document-formatting-generator",
+      "author": "skillscale-market",
+      "stars": 238,
+      "description": "Marketplace-ready admin skill for document formatting. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "admin",
+        "document-formatting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-008",
+      "name": "records-calendar-planning-tracker",
+      "author": "skillscale-market",
+      "stars": 235,
+      "description": "Marketplace-ready records skill for calendar planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "records",
+        "calendar-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-009",
+      "name": "executive-assistant-travel-briefs-optimizer",
+      "author": "skillscale-market",
+      "stars": 232,
+      "description": "Marketplace-ready executive assistant skill for travel briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "executive-assistant",
+        "travel-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-010",
+      "name": "coordination-form-processing-reporter",
+      "author": "skillscale-market",
+      "stars": 229,
+      "description": "Marketplace-ready coordination skill for form processing. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "coordination",
+        "form-processing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-011",
+      "name": "office-inbox-triage-triage",
+      "author": "skillscale-market",
+      "stars": 226,
+      "description": "Marketplace-ready office skill for inbox triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "office",
+        "inbox-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-012",
+      "name": "admin-document-formatting-playbook",
+      "author": "skillscale-market",
+      "stars": 223,
+      "description": "Marketplace-ready admin skill for document formatting. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "admin",
+        "document-formatting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-013",
+      "name": "records-calendar-planning-planner",
+      "author": "skillscale-market",
+      "stars": 220,
+      "description": "Marketplace-ready records skill for calendar planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "records",
+        "calendar-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-014",
+      "name": "executive-assistant-travel-briefs-assistant",
+      "author": "skillscale-market",
+      "stars": 217,
+      "description": "Marketplace-ready executive assistant skill for travel briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "executive-assistant",
+        "travel-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-015",
+      "name": "coordination-form-processing-reviewer",
+      "author": "skillscale-market",
+      "stars": 214,
+      "description": "Marketplace-ready coordination skill for form processing. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "coordination",
+        "form-processing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-016",
+      "name": "office-inbox-triage-summarizer",
+      "author": "skillscale-market",
+      "stars": 211,
+      "description": "Marketplace-ready office skill for inbox triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "office",
+        "inbox-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-017",
+      "name": "admin-document-formatting-copilot",
+      "author": "skillscale-market",
+      "stars": 208,
+      "description": "Marketplace-ready admin skill for document formatting. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "admin",
+        "document-formatting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-018",
+      "name": "records-calendar-planning-auditor",
+      "author": "skillscale-market",
+      "stars": 205,
+      "description": "Marketplace-ready records skill for calendar planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "records",
+        "calendar-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-019",
+      "name": "executive-assistant-travel-briefs-generator",
+      "author": "skillscale-market",
+      "stars": 202,
+      "description": "Marketplace-ready executive assistant skill for travel briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "executive-assistant",
+        "travel-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-020",
+      "name": "coordination-form-processing-tracker",
+      "author": "skillscale-market",
+      "stars": 199,
+      "description": "Marketplace-ready coordination skill for form processing. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "coordination",
+        "form-processing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-021",
+      "name": "office-inbox-triage-optimizer",
+      "author": "skillscale-market",
+      "stars": 196,
+      "description": "Marketplace-ready office skill for inbox triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "office",
+        "inbox-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-022",
+      "name": "admin-document-formatting-reporter",
+      "author": "skillscale-market",
+      "stars": 193,
+      "description": "Marketplace-ready admin skill for document formatting. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "admin",
+        "document-formatting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-023",
+      "name": "records-calendar-planning-triage",
+      "author": "skillscale-market",
+      "stars": 190,
+      "description": "Marketplace-ready records skill for calendar planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "records",
+        "calendar-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-024",
+      "name": "executive-assistant-travel-briefs-playbook",
+      "author": "skillscale-market",
+      "stars": 187,
+      "description": "Marketplace-ready executive assistant skill for travel briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "executive-assistant",
+        "travel-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-025",
+      "name": "coordination-form-processing-planner",
+      "author": "skillscale-market",
+      "stars": 184,
+      "description": "Marketplace-ready coordination skill for form processing. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "coordination",
+        "form-processing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-026",
+      "name": "office-inbox-triage-assistant",
+      "author": "skillscale-market",
+      "stars": 181,
+      "description": "Marketplace-ready office skill for inbox triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "office",
+        "inbox-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-027",
+      "name": "admin-document-formatting-reviewer",
+      "author": "skillscale-market",
+      "stars": 178,
+      "description": "Marketplace-ready admin skill for document formatting. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "admin",
+        "document-formatting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-028",
+      "name": "records-calendar-planning-summarizer",
+      "author": "skillscale-market",
+      "stars": 175,
+      "description": "Marketplace-ready records skill for calendar planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "records",
+        "calendar-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-029",
+      "name": "executive-assistant-travel-briefs-copilot",
+      "author": "skillscale-market",
+      "stars": 172,
+      "description": "Marketplace-ready executive assistant skill for travel briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "executive-assistant",
+        "travel-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-030",
+      "name": "coordination-form-processing-auditor",
+      "author": "skillscale-market",
+      "stars": 169,
+      "description": "Marketplace-ready coordination skill for form processing. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "coordination",
+        "form-processing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-031",
+      "name": "office-inbox-triage-generator",
+      "author": "skillscale-market",
+      "stars": 166,
+      "description": "Marketplace-ready office skill for inbox triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "office",
+        "inbox-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-032",
+      "name": "admin-document-formatting-tracker",
+      "author": "skillscale-market",
+      "stars": 163,
+      "description": "Marketplace-ready admin skill for document formatting. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "admin",
+        "document-formatting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-033",
+      "name": "records-calendar-planning-optimizer",
+      "author": "skillscale-market",
+      "stars": 160,
+      "description": "Marketplace-ready records skill for calendar planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "records",
+        "calendar-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-034",
+      "name": "executive-assistant-travel-briefs-reporter",
+      "author": "skillscale-market",
+      "stars": 157,
+      "description": "Marketplace-ready executive assistant skill for travel briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "executive-assistant",
+        "travel-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-035",
+      "name": "coordination-form-processing-triage",
+      "author": "skillscale-market",
+      "stars": 154,
+      "description": "Marketplace-ready coordination skill for form processing. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "coordination",
+        "form-processing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-036",
+      "name": "office-inbox-triage-playbook",
+      "author": "skillscale-market",
+      "stars": 151,
+      "description": "Marketplace-ready office skill for inbox triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "office",
+        "inbox-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-037",
+      "name": "admin-document-formatting-planner",
+      "author": "skillscale-market",
+      "stars": 148,
+      "description": "Marketplace-ready admin skill for document formatting. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "admin",
+        "document-formatting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-038",
+      "name": "records-calendar-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 145,
+      "description": "Marketplace-ready records skill for calendar planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "records",
+        "calendar-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-039",
+      "name": "executive-assistant-travel-briefs-reviewer",
+      "author": "skillscale-market",
+      "stars": 142,
+      "description": "Marketplace-ready executive assistant skill for travel briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "executive-assistant",
+        "travel-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-040",
+      "name": "coordination-form-processing-summarizer",
+      "author": "skillscale-market",
+      "stars": 139,
+      "description": "Marketplace-ready coordination skill for form processing. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "coordination",
+        "form-processing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-041",
+      "name": "office-inbox-triage-copilot",
+      "author": "skillscale-market",
+      "stars": 136,
+      "description": "Marketplace-ready office skill for inbox triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "office",
+        "inbox-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-042",
+      "name": "admin-document-formatting-auditor",
+      "author": "skillscale-market",
+      "stars": 133,
+      "description": "Marketplace-ready admin skill for document formatting. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "admin",
+        "document-formatting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-043",
+      "name": "records-calendar-planning-generator",
+      "author": "skillscale-market",
+      "stars": 130,
+      "description": "Marketplace-ready records skill for calendar planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "records",
+        "calendar-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-044",
+      "name": "executive-assistant-travel-briefs-tracker",
+      "author": "skillscale-market",
+      "stars": 127,
+      "description": "Marketplace-ready executive assistant skill for travel briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "executive-assistant",
+        "travel-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-045",
+      "name": "coordination-form-processing-optimizer",
+      "author": "skillscale-market",
+      "stars": 124,
+      "description": "Marketplace-ready coordination skill for form processing. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "coordination",
+        "form-processing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-046",
+      "name": "office-inbox-triage-reporter",
+      "author": "skillscale-market",
+      "stars": 121,
+      "description": "Marketplace-ready office skill for inbox triage. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "office",
+        "inbox-triage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-047",
+      "name": "admin-document-formatting-triage",
+      "author": "skillscale-market",
+      "stars": 118,
+      "description": "Marketplace-ready admin skill for document formatting. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "admin",
+        "document-formatting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-04-048",
+      "name": "records-calendar-planning-playbook",
+      "author": "skillscale-market",
+      "stars": 115,
+      "description": "Marketplace-ready records skill for calendar planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for office and administrative support teams.",
+      "tags": [
+        "records",
+        "calendar-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "04",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    }
+  ]
+}

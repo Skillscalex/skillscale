@@ -25,7 +25,7 @@
     .bubble-user{max-width:70%;background:var(--accent);border-radius:18px 4px 18px 18px;padding:10px 14px;align-self:flex-end;}
     .agent-item{display:flex;align-items:center;gap:10px;padding:9px 14px;cursor:pointer;transition:background 0.12s;border-bottom:1px solid rgba(0,0,0,0.03);}
     .agent-item:hover{background:var(--bg-1,rgba(0,0,0,0.04));}
-    .agent-item.active{background:rgba(212,102,26,0.08);border-left:2px solid var(--accent);}
+    .agent-item.active{background:rgba(23,124,176,0.08);border-left:2px solid var(--accent);}
     .xsearch-result{border:1px solid var(--border);border-radius:12px;padding:11px 13px;background:var(--bg);transition:border-color 0.15s;cursor:pointer;margin-bottom:8px;}
     .xsearch-result:hover{border-color:var(--accent);}
     .studio-tab{flex:1;padding:11px 4px;border:none;background:transparent;border-bottom:2px solid transparent;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;transition:all 0.15s;}
@@ -66,16 +66,16 @@ function getApiBaseCandidates() {
 /* ── Agent data ─────────────────────────────────────────────────── */
 const AGENT_GROUPS = [
   { id:'assistants', label:'AI Assistants', icon:'◈', agents:[
-    { id:'aria',   name:'Aria',   role:'Generalist',     modelLabel:'Claude Sonnet', status:'online', style:'avataaars', seed:'aria-skill',   color:'#D4661A' },
+    { id:'aria',   name:'Aria',   role:'Generalist',     modelLabel:'Claude Sonnet', status:'online', style:'avataaars', seed:'aria-skill',   color:'#177CB0' },
     { id:'rex',    name:'Rex',    role:'Analysis',       modelLabel:'Claude Sonnet', status:'online', style:'avataaars', seed:'rex-blue',     color:'#1565C0' },
-    { id:'nova',   name:'Nova',   role:'Research',       modelLabel:'Claude Haiku',  status:'online', style:'avataaars', seed:'nova-nb',      color:'#7B2FBE' },
+    { id:'nova',   name:'Nova',   role:'Research',       modelLabel:'Claude Haiku',  status:'online', style:'avataaars', seed:'nova-nb',      color:'#4B5CC4' },
   ]},
   { id:'hermes', label:'Hermes Agents', icon:'⚡', agents:[
-    { id:'hermes', name:'Hermes', role:'Philosopher',    modelLabel:'Hermes-3-Llama',status:'online', style:'shapes',    seed:'hermes-gold',  color:'#C5A028' },
+    { id:'hermes', name:'Hermes', role:'Philosopher',    modelLabel:'Hermes-3-Llama',status:'online', style:'shapes',    seed:'hermes-gold',  color:'#4B5CC4' },
     { id:'sauna',  name:'Sauna',  role:'Wellness Coach', modelLabel:'Claude Haiku',  status:'online', style:'shapes',    seed:'sauna-steam',  color:'#2E7D52' },
   ]},
   { id:'claude', label:'Claude Agents', icon:'🐾', agents:[
-    { id:'byte',   name:'Byte',   role:'Code',           modelLabel:'Claude Haiku',  status:'online', style:'fun-emoji', seed:'byte-zap',     color:'#FF8F00' },
+    { id:'byte',   name:'Byte',   role:'Code',           modelLabel:'Claude Haiku',  status:'online', style:'fun-emoji', seed:'byte-zap',     color:'#0065A2' },
     { id:'pip',    name:'Pip',    role:'Art & Design',   modelLabel:'Claude Haiku',  status:'online', style:'fun-emoji', seed:'pip-star',     color:'#E91E63' },
     { id:'mochi',  name:'Mochi',  role:'Writing',        modelLabel:'Claude Haiku',  status:'online', style:'fun-emoji', seed:'mochi-leaf',   color:'#2E7D32' },
   ]},
@@ -216,7 +216,7 @@ function Nav({theme,onToggle}){
             ✦ Vault{vc>0&&<span style={{position:'absolute',top:-5,right:-5,minWidth:16,height:16,borderRadius:9999,background:'var(--accent)',color:'#fff',fontSize:'.55rem',fontWeight:700,display:'flex',alignItems:'center',justifyContent:'center',padding:'0 4px'}}>{vc}</span>}
           </a>
           <a href="hubs.html" style={{display:'flex',alignItems:'center',gap:6,fontFamily:'JetBrains Mono',fontSize:'.72rem',padding:'7px 14px',borderRadius:9999,color:'var(--text-2)',border:'1px solid var(--border)',transition:'all 0.15s',textDecoration:'none'}}>⬡ Hubs</a>
-          <a href="studio.html" style={{display:'flex',alignItems:'center',gap:6,fontFamily:'JetBrains Mono',fontSize:'.72rem',padding:'7px 14px',borderRadius:9999,color:'var(--accent)',background:'rgba(212,102,26,0.08)',border:'1px solid rgba(212,102,26,0.3)',transition:'all 0.15s',textDecoration:'none'}}>⌬ Studio</a>
+          <a href="studio.html" style={{display:'flex',alignItems:'center',gap:6,fontFamily:'JetBrains Mono',fontSize:'.72rem',padding:'7px 14px',borderRadius:9999,color:'var(--accent)',background:'rgba(23,124,176,0.08)',border:'1px solid rgba(23,124,176,0.3)',transition:'all 0.15s',textDecoration:'none'}}>⌬ Studio</a>
           <a href="auth.html" className="btn btn-sm lg" style={{fontFamily:'JetBrains Mono',fontSize:'.72rem',padding:'7px 16px',border:'1px solid var(--border)'}}>Safety</a>
           <ThemeToggle theme={theme} onToggle={onToggle}/>
         </div>
@@ -277,7 +277,7 @@ function AgentSidebar({activeId,onSelect,searchQ,setSearchQ}){
                     <div style={{fontFamily:'DM Sans',fontSize:'.85rem',fontWeight:600,color:'var(--text)',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'}}>{agent.name}</div>
                     <div style={{display:'flex',alignItems:'center',gap:5}}>
                       <span style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--text-2)'}}>{agent.role}</span>
-                      <span style={{fontFamily:'JetBrains Mono',fontSize:'.5rem',color:'var(--accent)',background:'rgba(212,102,26,0.09)',padding:'1px 5px',borderRadius:4,whiteSpace:'nowrap'}}>{agent.modelLabel}</span>
+                      <span style={{fontFamily:'JetBrains Mono',fontSize:'.5rem',color:'var(--accent)',background:'rgba(23,124,176,0.09)',padding:'1px 5px',borderRadius:4,whiteSpace:'nowrap'}}>{agent.modelLabel}</span>
                     </div>
                   </div>
                 </div>
@@ -402,7 +402,7 @@ function ChatHeader({agent,onVoiceCall,onVideoCall}){
       <div style={{flex:1}}>
         <div style={{display:'flex',alignItems:'center',gap:8}}>
           <div style={{fontFamily:'DM Sans',fontSize:'.92rem',fontWeight:700,color:'var(--text)'}}>{agent.name}</div>
-          <span style={{fontFamily:'JetBrains Mono',fontSize:'.55rem',color:'var(--accent)',background:'rgba(212,102,26,0.09)',padding:'2px 6px',borderRadius:4}}>{agent.modelLabel}</span>
+          <span style={{fontFamily:'JetBrains Mono',fontSize:'.55rem',color:'var(--accent)',background:'rgba(23,124,176,0.09)',padding:'2px 6px',borderRadius:4}}>{agent.modelLabel}</span>
         </div>
         <div style={{display:'flex',alignItems:'center',gap:8}}>
           <StatusDot status={agent.status}/>
@@ -580,7 +580,7 @@ function XSearchPanel(){
         {loading&&[1,2,3].map(i=><div key={i} style={{height:68,borderRadius:12,background:'var(--bg-1,rgba(0,0,0,0.04))',marginBottom:8,animation:'shimmer 1.5s infinite'}}/>)}
         {searched&&!loading&&(
           <>
-            <div style={{padding:'11px 13px',borderRadius:12,background:'rgba(212,102,26,0.07)',border:'1px solid rgba(212,102,26,0.2)',marginBottom:12}}>
+            <div style={{padding:'11px 13px',borderRadius:12,background:'rgba(23,124,176,0.07)',border:'1px solid rgba(23,124,176,0.2)',marginBottom:12}}>
               <div style={{fontFamily:'JetBrains Mono',fontSize:'.58rem',color:'var(--accent)',textTransform:'uppercase',letterSpacing:'.07em',marginBottom:5}}>⚡ Grok Synthesis</div>
               <p style={{fontFamily:'DM Sans',fontSize:'.82rem',color:'var(--text)',lineHeight:1.62,margin:0}}>{synthesis}</p>
             </div>
@@ -639,7 +639,7 @@ function ImageGenPanel(){
           rows={3}/>
         <div style={{display:'flex',flexWrap:'wrap',gap:5}}>
           {STYLES.map(s=>(
-            <button key={s} onClick={()=>setStyle(s)} style={{padding:'4px 9px',borderRadius:9999,border:`1px solid ${style===s?'var(--accent)':'var(--border)'}`,background:style===s?'rgba(212,102,26,0.09)':'transparent',color:style===s?'var(--accent)':'var(--text-2)',fontFamily:'JetBrains Mono',fontSize:'.58rem',cursor:'pointer',transition:'all 0.12s'}}>{s}</button>
+            <button key={s} onClick={()=>setStyle(s)} style={{padding:'4px 9px',borderRadius:9999,border:`1px solid ${style===s?'var(--accent)':'var(--border)'}`,background:style===s?'rgba(23,124,176,0.09)':'transparent',color:style===s?'var(--accent)':'var(--text-2)',fontFamily:'JetBrains Mono',fontSize:'.58rem',cursor:'pointer',transition:'all 0.12s'}}>{s}</button>
           ))}
         </div>
         <button onClick={generate} disabled={!prompt.trim()||generating} style={{padding:'9px',borderRadius:9,border:'none',background:'var(--accent)',color:'#fff',fontFamily:'JetBrains Mono',fontSize:'.73rem',fontWeight:700,cursor:'pointer',opacity:(!prompt.trim()||generating)?0.5:1}}>
@@ -690,7 +690,7 @@ function VoicePanel(){
   const fmt=s=>`${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
   return(
     <div style={{display:'flex',flexDirection:'column',alignItems:'center',padding:'22px 14px',gap:18,overflowY:'auto',height:'100%',boxSizing:'border-box'}}>
-      <button onClick={toggle} style={{width:76,height:76,borderRadius:'50%',border:`3px solid ${rec?'#ef4444':'var(--accent)'}`,background:rec?'rgba(239,68,68,0.09)':'rgba(212,102,26,0.08)',display:'flex',alignItems:'center',justifyContent:'center',fontSize:26,cursor:'pointer',transition:'all 0.2s'}}>
+      <button onClick={toggle} style={{width:76,height:76,borderRadius:'50%',border:`3px solid ${rec?'#ef4444':'var(--accent)'}`,background:rec?'rgba(239,68,68,0.09)':'rgba(23,124,176,0.08)',display:'flex',alignItems:'center',justifyContent:'center',fontSize:26,cursor:'pointer',transition:'all 0.2s'}}>
         {rec?'⏹':'🎤'}
       </button>
       {rec&&(

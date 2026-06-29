@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hubs: Skillscale</title>
+  <title>Hubs:2 Skillscale</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -56,7 +56,7 @@ function getVaultCount() { const v = getVault(); return v.dreamed.length + v.own
 const HUBS = [
   {
     id:'h001', name:'Anthropic Official', slug:'anthropic', creator:'anthropic',
-    type:'official', coverColor:'#C05010', coverPattern:'hub-pat-radial',
+    type:'official', coverColor:'#177CB0', coverPattern:'hub-pat-radial',
     description:'Officially supported and security-audited skills from the Anthropic team. Production-ready, documentation-complete, and actively maintained with zero-day patches.',
     longDesc:'Every skill in this hub passes the full three-agent audit pipeline (SecurityAuditor, ModelMatcher, QualityChecker) before listing. All are MIT-licensed, documented with SKILL.md, and tested against Claude Opus 4.7 and Sonnet 4.6.',
     skillCount:24, followers:14200, verified:true,
@@ -83,7 +83,7 @@ const HUBS = [
   },
   {
     id:'h004', name:'Writing Arsenal', slug:'writing-arsenal', creator:'creative_jo',
-    type:'creator', coverColor:'#7B2FBE', coverPattern:'hub-pat-wave',
+    type:'creator', coverColor:'#4B5CC4', coverPattern:'hub-pat-wave',
     description:'Professional writing skills for marketers, content creators, and founders. Cold emails to brand voice to SEO copy — words that actually convert.',
     longDesc:'Built by @creative_jo, a freelance copywriter who\'s worked with 50+ startups. Each skill is tested on real campaigns before publishing. All prompts are brand-voice aware.',
     skillCount:12, followers:2780, verified:false,
@@ -110,7 +110,7 @@ const HUBS = [
   },
   {
     id:'h007', name:'Productivity Pack', slug:'productivity-pack', creator:'productivity_ai',
-    type:'community', coverColor:'#D4661A', coverPattern:'hub-pat-radial',
+    type:'community', coverColor:'#177CB0', coverPattern:'hub-pat-radial',
     description:'Daily workflow essentials — email, calendar, meetings, documents, and task management for any role. The starter kit every knowledge worker needs.',
     longDesc:'The most-followed community hub on Skillscale. Covers the tools that save at least 2 hours/day for most knowledge workers. All skills work offline with local context.',
     skillCount:14, followers:5670, verified:false,
@@ -277,8 +277,8 @@ const HUBS = [
 ];
 
 const TYPE_CONFIG = {
-  official:  { label:'Official',  color:'var(--accent)',    bg:'rgba(212,102,26,0.09)' },
-  creator:   { label:'Creator',   color:'#7B2FBE',          bg:'rgba(123,47,190,0.09)' },
+  official:  { label:'Official',  color:'var(--accent)',    bg:'rgba(23,124,176,0.09)' },
+  creator:   { label:'Creator',   color:'#4B5CC4',          bg:'rgba(123,47,190,0.09)' },
   themed:    { label:'Themed',    color:'#1565C0',          bg:'rgba(21,101,192,0.09)' },
   community: { label:'Community', color:'#2D6A4F',          bg:'rgba(45,106,79,0.09)'  },
 };
@@ -333,7 +333,7 @@ function Nav({ theme, onToggle }) {
               </span>
             )}
           </a>
-          <a href="hubs.html" style={{ display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color:'var(--accent)', background:'rgba(212,102,26,0.08)', border:'1px solid rgba(212,102,26,0.3)', transition:'all 0.15s', textDecoration:'none' }}>
+          <a href="hubs.html" style={{ display:'flex', alignItems:'center', gap:6, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', borderRadius:9999, color:'var(--accent)', background:'rgba(23,124,176,0.08)', border:'1px solid rgba(23,124,176,0.3)', transition:'all 0.15s', textDecoration:'none' }}>
             ⬡ Hubs
           </a>
           <a href="auth.html" className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 16px', border:'1px solid var(--border)' }}>
@@ -639,12 +639,12 @@ function HubDetailPanel({ hub, onClose }) {
               <div style={{ flex:1 }}>
                 <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:5 }}>
                   <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color:'var(--text-2)', textTransform:'uppercase', letterSpacing:'.05em' }}>Hub SecureScore</span>
-                  <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color: hub.avgScore>=90?'#C09A2A':hub.avgScore>=80?'#7B2FBE':hub.avgScore>=65?'#1565C0':'#2D6A4F' }}>
+                  <span style={{ fontFamily:'JetBrains Mono', fontSize:'.62rem', color: hub.avgScore>=90?'#00B0BA':hub.avgScore>=80?'#4B5CC4':hub.avgScore>=65?'#1565C0':'#2D6A4F' }}>
                     {hub.avgScore>=90?'🌟 Legendary':hub.avgScore>=80?'⚡ Epic':hub.avgScore>=65?'💎 Rare':'🌿 Standard'}
                   </span>
                 </div>
                 <div style={{ height:6, borderRadius:9999, background:'var(--border)', overflow:'hidden' }}>
-                  <div style={{ height:'100%', borderRadius:9999, width:`${hub.avgScore}%`, background:'linear-gradient(90deg,#C05010,#C09A2A)', transition:'width 0.7s ease' }} />
+                  <div style={{ height:'100%', borderRadius:9999, width:`${hub.avgScore}%`, background:'linear-gradient(90deg,#177CB0,#00B0BA)', transition:'width 0.7s ease' }} />
                 </div>
               </div>
             </div>
@@ -914,7 +914,7 @@ function App() {
               viewport={{ once:true }}
               transition={{ duration:0.5 }}
               className="lg"
-              style={{ marginTop:56, padding:'40px 36px', borderRadius:24, textAlign:'center', background:'linear-gradient(135deg,rgba(212,102,26,0.08) 0%,transparent 60%)' }}
+              style={{ marginTop:56, padding:'40px 36px', borderRadius:24, textAlign:'center', background:'linear-gradient(135deg,rgba(23,124,176,0.08) 0%,transparent 60%)' }}
             >
               <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', letterSpacing:'.08em', color:'var(--accent)', textTransform:'uppercase', display:'block', marginBottom:12 }}>
                 // Create a Hub

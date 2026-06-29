@@ -100,9 +100,9 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center border-2 transition-all ${
                   i < step
-                    ? "bg-[#7c3aed] border-[#7c3aed] text-white"
+                    ? "bg-[#177CB0] border-[#177CB0] text-white"
                     : i === step
-                    ? "bg-[#7c3aed20] border-[#7c3aed] text-[#7c3aed]"
+                    ? "bg-[#177CB020] border-[#177CB0] text-[#177CB0]"
                     : "bg-[#12121a] border-[#1e1e2e] text-[#8b8ba7]"
                 }`}
               >
@@ -111,7 +111,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
               <span className="text-xs text-[#8b8ba7] hidden sm:block">{s.label}</span>
             </div>
             {i < STEPS.length - 1 && (
-              <div className={`flex-1 h-px mx-2 ${i < step ? "bg-[#7c3aed]" : "bg-[#1e1e2e]"}`} />
+              <div className={`flex-1 h-px mx-2 ${i < step ? "bg-[#177CB0]" : "bg-[#1e1e2e]"}`} />
             )}
           </div>
         ))}
@@ -123,7 +123,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
           <div className="space-y-4">
             <h2 className="text-xl font-bold text-[#f8f8ff]">Upload Your Skill</h2>
             <p className="text-sm text-[#8b8ba7]">
-              Paste your <code className="text-[#a78bfa]">plugin.json</code> or fill in the form below.
+              Paste your <code className="text-[#4B5CC4]">plugin.json</code> or fill in the form below.
             </p>
             <div>
               <label className="block text-sm font-medium text-[#f8f8ff] mb-2">
@@ -134,7 +134,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
                 onChange={(e) => update({ pluginJsonStr: e.target.value })}
                 placeholder='{"name": "my-skill", "version": "1.0.0", ...}'
                 rows={8}
-                className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl px-4 py-3 text-sm font-mono text-[#f8f8ff] placeholder-[#4a4a5a] focus:border-[#7c3aed] focus:outline-none transition-colors resize-none"
+                className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl px-4 py-3 text-sm font-mono text-[#f8f8ff] placeholder-[#4a4a5a] focus:border-[#177CB0] focus:outline-none transition-colors resize-none"
               />
             </div>
             <div className="flex items-center gap-3 text-sm text-[#8b8ba7]">
@@ -142,7 +142,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
               <span>or drag & drop a .json file</span>
               <div className="flex-1 h-px bg-[#1e1e2e]" />
             </div>
-            <div className="border-2 border-dashed border-[#1e1e2e] rounded-xl p-8 text-center hover:border-[#7c3aed30] transition-colors cursor-pointer">
+            <div className="border-2 border-dashed border-[#1e1e2e] rounded-xl p-8 text-center hover:border-[#177CB030] transition-colors cursor-pointer">
               <Upload size={24} className="text-[#8b8ba7] mx-auto mb-2" />
               <span className="text-sm text-[#8b8ba7]">Drop plugin.json here</span>
             </div>
@@ -158,7 +158,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
                 value={data.title}
                 onChange={(e) => update({ title: e.target.value })}
                 placeholder="e.g. CodeReview Pro"
-                className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl px-4 py-2.5 text-sm text-[#f8f8ff] placeholder-[#4a4a5a] focus:border-[#7c3aed] focus:outline-none transition-colors"
+                className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl px-4 py-2.5 text-sm text-[#f8f8ff] placeholder-[#4a4a5a] focus:border-[#177CB0] focus:outline-none transition-colors"
               />
             </div>
             <div>
@@ -168,7 +168,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
                 onChange={(e) => update({ description: e.target.value })}
                 placeholder="Describe what your skill does and how it helps users…"
                 rows={4}
-                className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl px-4 py-2.5 text-sm text-[#f8f8ff] placeholder-[#4a4a5a] focus:border-[#7c3aed] focus:outline-none transition-colors resize-none"
+                className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl px-4 py-2.5 text-sm text-[#f8f8ff] placeholder-[#4a4a5a] focus:border-[#177CB0] focus:outline-none transition-colors resize-none"
               />
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -177,7 +177,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
                 <select
                   value={data.category}
                   onChange={(e) => update({ category: e.target.value })}
-                  className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl px-4 py-2.5 text-sm text-[#f8f8ff] focus:border-[#7c3aed] focus:outline-none transition-colors"
+                  className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl px-4 py-2.5 text-sm text-[#f8f8ff] focus:border-[#177CB0] focus:outline-none transition-colors"
                 >
                   {CATEGORIES.map((c) => (
                     <option key={c} value={c}>{c}</option>
@@ -190,7 +190,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
                   value={data.tags}
                   onChange={(e) => update({ tags: e.target.value })}
                   placeholder="tag1, tag2, tag3"
-                  className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl px-4 py-2.5 text-sm text-[#f8f8ff] placeholder-[#4a4a5a] focus:border-[#7c3aed] focus:outline-none transition-colors"
+                  className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl px-4 py-2.5 text-sm text-[#f8f8ff] placeholder-[#4a4a5a] focus:border-[#177CB0] focus:outline-none transition-colors"
                 />
               </div>
             </div>
@@ -208,7 +208,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
                 onClick={() => update({ gemTier: "auto" })}
                 className={`p-4 rounded-xl border text-left transition-all ${
                   data.gemTier === "auto"
-                    ? "border-[#7c3aed] bg-[#7c3aed15]"
+                    ? "border-[#177CB0] bg-[#177CB015]"
                     : "border-[#1e1e2e] bg-[#0e0e16] hover:border-[#2e2e4e]"
                 }`}
               >
@@ -230,7 +230,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
                     onClick={() => update({ gemTier: tier })}
                     className={`p-4 rounded-xl border text-left transition-all ${
                       data.gemTier === tier
-                        ? "border-[#7c3aed] bg-[#7c3aed15]"
+                        ? "border-[#177CB0] bg-[#177CB015]"
                         : "border-[#1e1e2e] bg-[#0e0e16] hover:border-[#2e2e4e]"
                     }`}
                   >
@@ -260,7 +260,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
                   onClick={() => update({ priceType: t })}
                   className={`p-4 rounded-xl border text-center transition-all capitalize ${
                     data.priceType === t
-                      ? "border-[#7c3aed] bg-[#7c3aed15] text-[#f8f8ff]"
+                      ? "border-[#177CB0] bg-[#177CB015] text-[#f8f8ff]"
                       : "border-[#1e1e2e] bg-[#0e0e16] text-[#8b8ba7] hover:border-[#2e2e4e]"
                   }`}
                 >
@@ -280,7 +280,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
                     step="0.01"
                     value={data.priceUsd}
                     onChange={(e) => update({ priceUsd: e.target.value })}
-                    className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl pl-8 pr-4 py-2.5 text-sm text-[#f8f8ff] focus:border-[#7c3aed] focus:outline-none transition-colors"
+                    className="w-full bg-[#0e0e16] border border-[#1e1e2e] rounded-xl pl-8 pr-4 py-2.5 text-sm text-[#f8f8ff] focus:border-[#177CB0] focus:outline-none transition-colors"
                   />
                 </div>
               </div>
@@ -290,7 +290,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
                 <div
                   onClick={() => update({ mintAsNft: !data.mintAsNft })}
                   className={`w-10 h-6 rounded-full transition-colors relative ${
-                    data.mintAsNft ? "bg-[#7c3aed]" : "bg-[#1e1e2e]"
+                    data.mintAsNft ? "bg-[#177CB0]" : "bg-[#1e1e2e]"
                   }`}
                 >
                   <div
@@ -328,7 +328,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
                 </div>
               ))}
             </div>
-            <div className="p-4 rounded-xl bg-[#7c3aed10] border border-[#7c3aed30] text-sm text-[#a78bfa]">
+            <div className="p-4 rounded-xl bg-[#177CB010] border border-[#177CB030] text-sm text-[#4B5CC4]">
               After publishing, 3 AI agents will audit your skill for security, quality, and model fit.
               Your gem tier will be assigned automatically if you chose auto.
             </div>
@@ -349,7 +349,7 @@ export function MintingWizard({ onComplete }: MintingWizardProps) {
           {step < STEPS.length - 1 ? (
             <button
               onClick={() => setStep(step + 1)}
-              className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-[#7c3aed] text-white text-sm font-medium hover:bg-[#6d28d9] transition-colors"
+              className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-[#177CB0] text-white text-sm font-medium hover:bg-[#065279] transition-colors"
             >
               Next
               <ChevronRight size={15} />

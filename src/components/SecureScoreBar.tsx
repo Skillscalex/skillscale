@@ -15,10 +15,10 @@ function getScoreLabel(score: number): string {
 }
 
 function getScoreColor(score: number): string {
-  if (score >= 90) return "#60efff";
+  if (score >= 90) return "#00B0BA";
   if (score >= 80) return "#00d97e";
   if (score >= 65) return "#e8e8f0";
-  if (score >= 50) return "#a78bfa";
+  if (score >= 50) return "#4B5CC4";
   return "#ff4d4d";
 }
 
@@ -26,8 +26,8 @@ export function SecureScoreBar({ score, label, showLabel = true }: SecureScoreBa
   const color = getScoreColor(score);
   const scoreLabel = label ?? getScoreLabel(score);
 
-  // gradient stops: red → orange → yellow → green → cyan
-  const gradient = `linear-gradient(90deg, #ff4d4d 0%, #ff8c00 25%, #ffd700 50%, #00d97e 75%, #60efff 100%)`;
+  // gradient stops: red -> blue -> teal -> green -> teal
+  const gradient = `linear-gradient(90deg, #ff4d4d 0%, #0065A2 25%, #00B0BA 50%, #00d97e 75%, #00B0BA 100%)`;
 
   return (
     <div className="w-full">

@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-06-29T08:40:29.903Z",
+  "occupationId": "03",
+  "skills": [
+    {
+      "id": "market-03-001",
+      "name": "creative-campaign-concepting-planner",
+      "author": "skillscale-market",
+      "stars": 272,
+      "description": "Marketplace-ready creative skill for campaign concepting. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "creative",
+        "campaign-concepting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-002",
+      "name": "media-shot-lists-assistant",
+      "author": "skillscale-market",
+      "stars": 269,
+      "description": "Marketplace-ready media skill for shot lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "media",
+        "shot-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-003",
+      "name": "brand-creative-briefs-reviewer",
+      "author": "skillscale-market",
+      "stars": 266,
+      "description": "Marketplace-ready brand skill for creative briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "brand",
+        "creative-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-004",
+      "name": "production-asset-qa-summarizer",
+      "author": "skillscale-market",
+      "stars": 263,
+      "description": "Marketplace-ready production skill for asset QA. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "production",
+        "asset-qa",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-005",
+      "name": "content-publishing-calendars-copilot",
+      "author": "skillscale-market",
+      "stars": 260,
+      "description": "Marketplace-ready content skill for publishing calendars. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "content",
+        "publishing-calendars",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-006",
+      "name": "creative-campaign-concepting-auditor",
+      "author": "skillscale-market",
+      "stars": 257,
+      "description": "Marketplace-ready creative skill for campaign concepting. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "creative",
+        "campaign-concepting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-007",
+      "name": "media-shot-lists-generator",
+      "author": "skillscale-market",
+      "stars": 254,
+      "description": "Marketplace-ready media skill for shot lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "media",
+        "shot-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-008",
+      "name": "brand-creative-briefs-tracker",
+      "author": "skillscale-market",
+      "stars": 251,
+      "description": "Marketplace-ready brand skill for creative briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "brand",
+        "creative-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-009",
+      "name": "production-asset-qa-optimizer",
+      "author": "skillscale-market",
+      "stars": 248,
+      "description": "Marketplace-ready production skill for asset QA. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "production",
+        "asset-qa",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-010",
+      "name": "content-publishing-calendars-reporter",
+      "author": "skillscale-market",
+      "stars": 245,
+      "description": "Marketplace-ready content skill for publishing calendars. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "content",
+        "publishing-calendars",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-011",
+      "name": "creative-campaign-concepting-triage",
+      "author": "skillscale-market",
+      "stars": 242,
+      "description": "Marketplace-ready creative skill for campaign concepting. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "creative",
+        "campaign-concepting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-012",
+      "name": "media-shot-lists-playbook",
+      "author": "skillscale-market",
+      "stars": 239,
+      "description": "Marketplace-ready media skill for shot lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "media",
+        "shot-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-013",
+      "name": "brand-creative-briefs-planner",
+      "author": "skillscale-market",
+      "stars": 236,
+      "description": "Marketplace-ready brand skill for creative briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "brand",
+        "creative-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-014",
+      "name": "production-asset-qa-assistant",
+      "author": "skillscale-market",
+      "stars": 233,
+      "description": "Marketplace-ready production skill for asset QA. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "production",
+        "asset-qa",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-015",
+      "name": "content-publishing-calendars-reviewer",
+      "author": "skillscale-market",
+      "stars": 230,
+      "description": "Marketplace-ready content skill for publishing calendars. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "content",
+        "publishing-calendars",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-016",
+      "name": "creative-campaign-concepting-summarizer",
+      "author": "skillscale-market",
+      "stars": 227,
+      "description": "Marketplace-ready creative skill for campaign concepting. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "creative",
+        "campaign-concepting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-017",
+      "name": "media-shot-lists-copilot",
+      "author": "skillscale-market",
+      "stars": 224,
+      "description": "Marketplace-ready media skill for shot lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "media",
+        "shot-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-018",
+      "name": "brand-creative-briefs-auditor",
+      "author": "skillscale-market",
+      "stars": 221,
+      "description": "Marketplace-ready brand skill for creative briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "brand",
+        "creative-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-019",
+      "name": "production-asset-qa-generator",
+      "author": "skillscale-market",
+      "stars": 218,
+      "description": "Marketplace-ready production skill for asset QA. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "production",
+        "asset-qa",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-020",
+      "name": "content-publishing-calendars-tracker",
+      "author": "skillscale-market",
+      "stars": 215,
+      "description": "Marketplace-ready content skill for publishing calendars. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "content",
+        "publishing-calendars",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-021",
+      "name": "creative-campaign-concepting-optimizer",
+      "author": "skillscale-market",
+      "stars": 212,
+      "description": "Marketplace-ready creative skill for campaign concepting. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "creative",
+        "campaign-concepting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-022",
+      "name": "media-shot-lists-reporter",
+      "author": "skillscale-market",
+      "stars": 209,
+      "description": "Marketplace-ready media skill for shot lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "media",
+        "shot-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-023",
+      "name": "brand-creative-briefs-triage",
+      "author": "skillscale-market",
+      "stars": 206,
+      "description": "Marketplace-ready brand skill for creative briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "brand",
+        "creative-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-024",
+      "name": "production-asset-qa-playbook",
+      "author": "skillscale-market",
+      "stars": 203,
+      "description": "Marketplace-ready production skill for asset QA. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "production",
+        "asset-qa",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-025",
+      "name": "content-publishing-calendars-planner",
+      "author": "skillscale-market",
+      "stars": 200,
+      "description": "Marketplace-ready content skill for publishing calendars. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "content",
+        "publishing-calendars",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-026",
+      "name": "creative-campaign-concepting-assistant",
+      "author": "skillscale-market",
+      "stars": 197,
+      "description": "Marketplace-ready creative skill for campaign concepting. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "creative",
+        "campaign-concepting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-027",
+      "name": "media-shot-lists-reviewer",
+      "author": "skillscale-market",
+      "stars": 194,
+      "description": "Marketplace-ready media skill for shot lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "media",
+        "shot-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-028",
+      "name": "brand-creative-briefs-summarizer",
+      "author": "skillscale-market",
+      "stars": 191,
+      "description": "Marketplace-ready brand skill for creative briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "brand",
+        "creative-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-029",
+      "name": "production-asset-qa-copilot",
+      "author": "skillscale-market",
+      "stars": 188,
+      "description": "Marketplace-ready production skill for asset QA. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "production",
+        "asset-qa",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-030",
+      "name": "content-publishing-calendars-auditor",
+      "author": "skillscale-market",
+      "stars": 185,
+      "description": "Marketplace-ready content skill for publishing calendars. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "content",
+        "publishing-calendars",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-031",
+      "name": "creative-campaign-concepting-generator",
+      "author": "skillscale-market",
+      "stars": 182,
+      "description": "Marketplace-ready creative skill for campaign concepting. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "creative",
+        "campaign-concepting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-032",
+      "name": "media-shot-lists-tracker",
+      "author": "skillscale-market",
+      "stars": 179,
+      "description": "Marketplace-ready media skill for shot lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "media",
+        "shot-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-033",
+      "name": "brand-creative-briefs-optimizer",
+      "author": "skillscale-market",
+      "stars": 176,
+      "description": "Marketplace-ready brand skill for creative briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "brand",
+        "creative-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-034",
+      "name": "production-asset-qa-reporter",
+      "author": "skillscale-market",
+      "stars": 173,
+      "description": "Marketplace-ready production skill for asset QA. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "production",
+        "asset-qa",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-035",
+      "name": "content-publishing-calendars-triage",
+      "author": "skillscale-market",
+      "stars": 170,
+      "description": "Marketplace-ready content skill for publishing calendars. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "content",
+        "publishing-calendars",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-036",
+      "name": "creative-campaign-concepting-playbook",
+      "author": "skillscale-market",
+      "stars": 167,
+      "description": "Marketplace-ready creative skill for campaign concepting. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "creative",
+        "campaign-concepting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-037",
+      "name": "media-shot-lists-planner",
+      "author": "skillscale-market",
+      "stars": 164,
+      "description": "Marketplace-ready media skill for shot lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "media",
+        "shot-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-038",
+      "name": "brand-creative-briefs-assistant",
+      "author": "skillscale-market",
+      "stars": 161,
+      "description": "Marketplace-ready brand skill for creative briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "brand",
+        "creative-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-039",
+      "name": "production-asset-qa-reviewer",
+      "author": "skillscale-market",
+      "stars": 158,
+      "description": "Marketplace-ready production skill for asset QA. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "production",
+        "asset-qa",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-040",
+      "name": "content-publishing-calendars-summarizer",
+      "author": "skillscale-market",
+      "stars": 155,
+      "description": "Marketplace-ready content skill for publishing calendars. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "content",
+        "publishing-calendars",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-041",
+      "name": "creative-campaign-concepting-copilot",
+      "author": "skillscale-market",
+      "stars": 152,
+      "description": "Marketplace-ready creative skill for campaign concepting. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "creative",
+        "campaign-concepting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-042",
+      "name": "media-shot-lists-auditor",
+      "author": "skillscale-market",
+      "stars": 149,
+      "description": "Marketplace-ready media skill for shot lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "media",
+        "shot-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-043",
+      "name": "brand-creative-briefs-generator",
+      "author": "skillscale-market",
+      "stars": 146,
+      "description": "Marketplace-ready brand skill for creative briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "brand",
+        "creative-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-044",
+      "name": "production-asset-qa-tracker",
+      "author": "skillscale-market",
+      "stars": 143,
+      "description": "Marketplace-ready production skill for asset QA. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "production",
+        "asset-qa",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-045",
+      "name": "content-publishing-calendars-optimizer",
+      "author": "skillscale-market",
+      "stars": 140,
+      "description": "Marketplace-ready content skill for publishing calendars. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "content",
+        "publishing-calendars",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-046",
+      "name": "creative-campaign-concepting-reporter",
+      "author": "skillscale-market",
+      "stars": 137,
+      "description": "Marketplace-ready creative skill for campaign concepting. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "creative",
+        "campaign-concepting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-047",
+      "name": "media-shot-lists-triage",
+      "author": "skillscale-market",
+      "stars": 134,
+      "description": "Marketplace-ready media skill for shot lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "media",
+        "shot-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-03-048",
+      "name": "brand-creative-briefs-playbook",
+      "author": "skillscale-market",
+      "stars": 131,
+      "description": "Marketplace-ready brand skill for creative briefs. Produces structured checklists, drafts, summaries, and handoff notes tuned for arts, design, entertainment, sports, and media teams.",
+      "tags": [
+        "brand",
+        "creative-briefs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "03",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    }
+  ]
+}

@@ -16,7 +16,7 @@
     *,*::before,*::after{transition-property:background-color,border-color,color;transition-duration:0.3s;}
     video,canvas,img,svg{transition:none!important;}
     .bucket-card{border:1px solid var(--border);border-radius:18px;padding:20px;background:var(--bg);cursor:pointer;transition:border-color 0.18s,box-shadow 0.18s;}
-    .bucket-card:hover{border-color:var(--accent);box-shadow:0 4px 24px rgba(212,102,26,0.1);}
+    .bucket-card:hover{border-color:var(--accent);box-shadow:0 4px 24px rgba(23,124,176,0.1);}
     .artifact-row{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--border);}
     .artifact-row:last-child{border-bottom:none;}
     @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
@@ -47,7 +47,7 @@ const BUCKETS = [
     tags:['Generated','SVG','PNG'],
   },
   {
-    id:'code', icon:'💻', label:'Code & Scripts', count:123, color:'#FF8F00', bg:'rgba(255,143,0,0.08)',
+    id:'code', icon:'💻', label:'Code & Scripts', count:123, color:'#0065A2', bg:'rgba(0,101,162,0.08)',
     desc:'Code files, scripts, functions, and implementation snippets from all agents.',
     recent:[
       { name:'anomaly-detector.py',    agent:'Byte',     time:'14 min ago', size:'4.2 KB'  },
@@ -67,7 +67,7 @@ const BUCKETS = [
     tags:['Synthesis','Citations','Live'],
   },
   {
-    id:'voice', icon:'🎤', label:'Voice Memos', count:34, color:'#7B2FBE', bg:'rgba(123,47,190,0.08)',
+    id:'voice', icon:'🎤', label:'Voice Memos', count:34, color:'#4B5CC4', bg:'rgba(123,47,190,0.08)',
     desc:'Recorded voice notes, agent voice messages, and transcription exports.',
     recent:[
       { name:'session-brief-0526.mp3',  agent:'You',   time:'32 min ago', size:'1.1 MB' },
@@ -117,7 +117,7 @@ const BUCKETS = [
     tags:['TXT','MD','Auto-save'],
   },
   {
-    id:'convos', icon:'💬', label:'Conversations', count:156, color:'#D4661A', bg:'rgba(212,102,26,0.08)',
+    id:'convos', icon:'💬', label:'Conversations', count:156, color:'#177CB0', bg:'rgba(23,124,176,0.08)',
     desc:'Full chat histories with all agents, searchable and exportable.',
     recent:[
       { name:'aria-session-0526.json',  agent:'Aria',       time:'Active',    size:'—' },
@@ -172,9 +172,9 @@ const TOTAL = BUCKETS.reduce((s,b)=>s+b.count,0);
 
 const ACTIVITY = [
   { text:'Pip generated "cyberpunk-cityscape.png"',         time:'9 min ago',   color:'#E91E63' },
-  { text:'Aria completed X-Search · "CrewAI" · 5 sources', time:'10 min ago',  color:'#D4661A' },
-  { text:'You sent voice memo to VaultGuard',               time:'32 min ago',  color:'#7B2FBE' },
-  { text:'Byte reviewed anomaly-detector.py',               time:'14 min ago',  color:'#FF8F00' },
+  { text:'Aria completed X-Search · "CrewAI" · 5 sources', time:'10 min ago',  color:'#177CB0' },
+  { text:'You sent voice memo to VaultGuard',               time:'32 min ago',  color:'#4B5CC4' },
+  { text:'Byte reviewed anomaly-detector.py',               time:'14 min ago',  color:'#0065A2' },
   { text:'QueryMind exported sales-forecast-q3.csv',        time:'1h ago',      color:'#1B5E20' },
   { text:'Nova clipped arxiv-2502.03144',                   time:'Yesterday',   color:'#006064' },
   { text:'DataBot-7 generated cohort-analysis-may.pdf',     time:'2 days ago',  color:'#0D6E8A' },
@@ -400,7 +400,7 @@ function App(){
                 <div style={{display:'flex',gap:6,marginBottom:28,flexWrap:'wrap'}}>
                   {FILTERS.map(f=>(
                     <button key={f.id} onClick={()=>setFilter(f.id)}
-                      style={{padding:'7px 16px',borderRadius:9999,border:`1px solid ${filter===f.id?'var(--accent)':'var(--border)'}`,background:filter===f.id?'rgba(212,102,26,0.09)':'transparent',color:filter===f.id?'var(--accent)':'var(--text-2)',fontFamily:'JetBrains Mono',fontSize:'.68rem',cursor:'pointer',transition:'all 0.14s'}}>
+                      style={{padding:'7px 16px',borderRadius:9999,border:`1px solid ${filter===f.id?'var(--accent)':'var(--border)'}`,background:filter===f.id?'rgba(23,124,176,0.09)':'transparent',color:filter===f.id?'var(--accent)':'var(--text-2)',fontFamily:'JetBrains Mono',fontSize:'.68rem',cursor:'pointer',transition:'all 0.14s'}}>
                       {f.label}
                     </button>
                   ))}

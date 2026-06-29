@@ -38,7 +38,7 @@ export function SkillCard({ skill, currency = "USD", compact = false }: SkillCar
                 </span>
               )}
               {skill.is_minted && (
-                <span className="text-xs px-1.5 py-0.5 rounded bg-[#60efff15] text-[#60efff] border border-[#60efff30] font-medium">
+                <span className="text-xs px-1.5 py-0.5 rounded bg-[#00B0BA15] text-[#00B0BA] border border-[#00B0BA30] font-medium">
                   NFT
                 </span>
               )}
@@ -107,7 +107,7 @@ export function SkillCard({ skill, currency = "USD", compact = false }: SkillCar
             )}
           </div>
           {skill.model_recommendation && (
-            <span className="text-[#60efff] opacity-70 truncate max-w-[100px]">
+            <span className="text-[#00B0BA] opacity-70 truncate max-w-[100px]">
               {skill.model_recommendation.split("-").slice(1, 3).join(" ")}
             </span>
           )}
@@ -122,10 +122,10 @@ export function SkillCard({ skill, currency = "USD", compact = false }: SkillCar
                 className="font-mono font-semibold"
                 style={{
                   color:
-                    skill.secure_score >= 90 ? "#60efff" :
+                    skill.secure_score >= 90 ? "#00B0BA" :
                     skill.secure_score >= 80 ? "#00d97e" :
                     skill.secure_score >= 65 ? "#e8e8f0" :
-                    skill.secure_score >= 50 ? "#a78bfa" : "#ff4d4d",
+                    skill.secure_score >= 50 ? "#4B5CC4" : "#ff4d4d",
                 }}
               >
                 {skill.secure_score}/100
@@ -137,10 +137,10 @@ export function SkillCard({ skill, currency = "USD", compact = false }: SkillCar
                 style={{
                   width: `${skill.secure_score}%`,
                   background:
-                    skill.secure_score >= 90 ? "#60efff" :
+                    skill.secure_score >= 90 ? "#00B0BA" :
                     skill.secure_score >= 80 ? "#00d97e" :
                     skill.secure_score >= 65 ? "#e8e8f0" :
-                    skill.secure_score >= 50 ? "#a78bfa" : "#ff4d4d",
+                    skill.secure_score >= 50 ? "#4B5CC4" : "#ff4d4d",
                 }}
               />
             </div>

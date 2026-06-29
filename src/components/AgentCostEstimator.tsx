@@ -175,7 +175,7 @@ export default function AgentCostEstimator() {
 
       {/* Warning */}
       {result.usageWarning && (
-        <div className="flex items-start gap-2 p-3 rounded-lg bg-amber-50 border border-amber-200 text-amber-800 text-xs mb-4">
+        <div className="flex items-start gap-2 p-3 rounded-lg bg-[#d6f4f7] border border-[#00B0BA40] text-[#065279] text-xs mb-4">
           <AlertCircle size={14} className="shrink-0 mt-0.5" />
           <span>{result.usageWarning}</span>
         </div>

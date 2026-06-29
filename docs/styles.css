@@ -13,8 +13,8 @@
   --text:          #111110;
   --text-2:        #4A4540;
   --text-hero:     #FFFFFF;
-  --accent:        #D4661A;
-  --accent-alt:    #C05010;
+  --accent:        #177CB0;
+  --accent-alt:    #177CB0;
   --border:        rgba(0,0,0,0.07);
   --hero-overlay:  rgba(15,12,8,0.50);
   --text-hero:     #F1E9D8;
@@ -32,7 +32,7 @@
   --text-2:        #9A8F7E;
   --text-hero:     #FFFFFF;
   --accent:        #E8886A;
-  --accent-alt:    #D4661A;
+  --accent-alt:    #177CB0;
   --border:        rgba(255,255,255,0.08);
   --hero-overlay:  rgba(0,0,0,0.18);
   /* glass */
@@ -357,7 +357,7 @@ button { cursor: pointer; font-family: inherit; }
   font-family: 'JetBrains Mono', monospace; font-size: .65rem;
   color: var(--text-2); transition: all 0.15s;
 }
-.reaction-btn:hover, .reaction-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(212,102,26,0.07); }
+.reaction-btn:hover, .reaction-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(23,124,176,0.07); }
 .comment-input {
   width: 100%; background: var(--bg-1); border: 1px solid var(--border);
   border-radius: 9999px; color: var(--text);
@@ -389,8 +389,8 @@ button { cursor: pointer; font-family: inherit; }
 
 /* ---------- Gem tier colour tokens ---------- */
 :root {
-  --gem-diamond: #C09A2A;  /* Legendary — gold     */
-  --gem-emerald: #7B2FBE;  /* Epic      — purple   */
+  --gem-diamond: #00B0BA;  /* Legendary — teal     */
+  --gem-emerald: #4B5CC4;  /* Epic      — indigo   */
   --gem-pearl:   #1565C0;  /* Rare      — sapphire */
   --gem-quartz:  #2D6A4F;  /* Standard  — forest   */
   --gem-coal:    #6A6460;  /* Draft     — warm gray */
@@ -407,7 +407,7 @@ button { cursor: pointer; font-family: inherit; }
 }
 .secure-score-fill {
   position: absolute; top: 0; left: 0; height: 100%; border-radius: 9999px;
-  background: linear-gradient(90deg, #C0392B 0%, #E67E22 30%, #27AE60 65%, #1E6091 100%);
+  background: linear-gradient(90deg, #C0392B 0%, #0065A2 30%, #00B0BA 65%, #1E6091 100%);
   background-size: 500px 100%;
   transition: width 0.75s cubic-bezier(.4,0,.2,1);
 }
@@ -440,13 +440,13 @@ button { cursor: pointer; font-family: inherit; }
   cursor: pointer; transition: all 0.15s ease; white-space: nowrap;
 }
 .dream-btn:hover { border-color: var(--accent); color: var(--accent); }
-.dream-btn.dreamed { background: rgba(212,102,26,0.09); border-color: var(--accent); color: var(--accent); }
+.dream-btn.dreamed { background: rgba(23,124,176,0.09); border-color: var(--accent); color: var(--accent); }
 
 /* ---------- Star ratings ---------- */
 .star-row { display: flex; align-items: center; gap: 2px; }
 .star { font-size: 14px; line-height: 1; cursor: pointer; transition: transform 0.1s; user-select: none; }
 .star:hover { transform: scale(1.15); }
-.star-filled { color: #D4661A; }
+.star-filled { color: #177CB0; }
 .star-empty  { color: var(--border); }
 
 /* ---------- Review cards ---------- */
@@ -514,7 +514,7 @@ button { cursor: pointer; font-family: inherit; }
 .info-banner {
   display: flex; align-items: flex-start; gap: 12px;
   padding: 14px 18px; border-radius: 14px;
-  background: rgba(212,102,26,0.07); border: 1px solid rgba(212,102,26,0.2);
+  background: rgba(23,124,176,0.07); border: 1px solid rgba(23,124,176,0.2);
 }
 
 /* ==========================================================
@@ -548,8 +548,8 @@ button { cursor: pointer; font-family: inherit; }
   display: inline-flex; align-items: center; gap: 3px;
   font-family: 'JetBrains Mono', monospace; font-size: .55rem; font-weight: 700; letter-spacing: .04em;
   padding: 2px 7px; border-radius: 9999px;
-  background: rgba(212,102,26,0.14); color: var(--accent);
-  border: 1px solid rgba(212,102,26,0.28);
+  background: rgba(23,124,176,0.14); color: var(--accent);
+  border: 1px solid rgba(23,124,176,0.28);
 }
 
 /* Hub type badge */
@@ -568,8 +568,8 @@ button { cursor: pointer; font-family: inherit; }
   border: 1px solid var(--border); background: transparent; color: var(--text-2);
   cursor: pointer; transition: all 0.15s ease; white-space: nowrap; flex-shrink: 0;
 }
-.hub-follow-btn:hover { border-color: var(--accent); color: var(--accent); background: rgba(212,102,26,0.06); }
-.hub-follow-btn.following { background: rgba(212,102,26,0.09); border-color: var(--accent); color: var(--accent); }
+.hub-follow-btn:hover { border-color: var(--accent); color: var(--accent); background: rgba(23,124,176,0.06); }
+.hub-follow-btn.following { background: rgba(23,124,176,0.09); border-color: var(--accent); color: var(--accent); }
 
 /* Skill chip (hub cards) */
 .skill-chip-sm {

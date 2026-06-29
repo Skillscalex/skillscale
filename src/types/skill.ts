@@ -137,10 +137,10 @@ export const GEM_TIER_CONFIG: Record<GemTier, {
   icon: string;
 }> = {
   coal:    { label: "Coal",    color: "#4a4a5a", bg: "#1a1a22", minScore: 0,  icon: "⬛" },
-  quartz:  { label: "Quartz",  color: "#a78bfa", bg: "#1e1829", minScore: 50, icon: "💜" },
+  quartz:  { label: "Quartz",  color: "#4B5CC4", bg: "#1e1829", minScore: 50, icon: "💜" },
   pearl:   { label: "Pearl",   color: "#e8e8f0", bg: "#1e1e28", minScore: 65, icon: "🤍" },
   emerald: { label: "Emerald", color: "#00d97e", bg: "#0d1f18", minScore: 80, icon: "💚" },
-  diamond: { label: "Diamond", color: "#60efff", bg: "#0d1e22", minScore: 90, icon: "💎" },
+  diamond: { label: "Diamond", color: "#00B0BA", bg: "#0d1e22", minScore: 90, icon: "💎" },
 };
 
 export function scoreToTier(score: number): GemTier {

@@ -62,7 +62,7 @@ export default function ProfilePage({ params }: { params: Promise<{ userId: stri
       <div className="bg-[#12121a] border border-[#1e1e2e] rounded-2xl p-6 mb-6">
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
           {/* Avatar */}
-          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#7c3aed] to-[#60efff] flex items-center justify-center text-3xl font-bold text-white shrink-0">
+          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#177CB0] to-[#00B0BA] flex items-center justify-center text-3xl font-bold text-white shrink-0">
             {user.username[0].toUpperCase()}
           </div>
 
@@ -115,7 +115,7 @@ export default function ProfilePage({ params }: { params: Promise<{ userId: stri
               <div className="text-xs text-[#8b8ba7]">Earnings</div>
             </div>
             <div>
-              <div className="text-xl font-mono font-bold text-[#a78bfa]">
+              <div className="text-xl font-mono font-bold text-[#4B5CC4]">
                 {formatNumber(createdSkills.reduce((s, k) => s + k.downloads, 0))}
               </div>
               <div className="text-xs text-[#8b8ba7]">Downloads</div>
@@ -126,7 +126,7 @@ export default function ProfilePage({ params }: { params: Promise<{ userId: stri
         {/* Token balance */}
         <div className="mt-5 pt-5 border-t border-[#1e1e2e] flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Coins size={18} className="text-[#a78bfa]" />
+            <Coins size={18} className="text-[#4B5CC4]" />
             <div>
               <div className="text-sm font-semibold text-[#f8f8ff]">
                 {user.platform_token_balance.toLocaleString()} SKL
@@ -134,7 +134,7 @@ export default function ProfilePage({ params }: { params: Promise<{ userId: stri
               <div className="text-xs text-[#8b8ba7]">Platform Tokens</div>
             </div>
           </div>
-          <button className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#7c3aed20] border border-[#7c3aed30] text-[#a78bfa] text-sm font-medium hover:bg-[#7c3aed30] transition-colors">
+          <button className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#177CB020] border border-[#177CB030] text-[#4B5CC4] text-sm font-medium hover:bg-[#177CB030] transition-colors">
             <Plus size={14} />
             Buy SKL
           </button>
@@ -148,13 +148,13 @@ export default function ProfilePage({ params }: { params: Promise<{ userId: stri
           <div>
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-bold text-[#f8f8ff] flex items-center gap-2">
-                <Gem size={16} className="text-[#a78bfa]" />
+                <Gem size={16} className="text-[#4B5CC4]" />
                 Created Skills
               </h2>
               {isMe && (
                 <Link
                   href="/submit"
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#7c3aed] text-white text-sm font-medium hover:bg-[#6d28d9] transition-colors"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#177CB0] text-white text-sm font-medium hover:bg-[#065279] transition-colors"
                 >
                   <Plus size={13} />
                   New
@@ -197,7 +197,7 @@ export default function ProfilePage({ params }: { params: Promise<{ userId: stri
         {/* Transaction history */}
         <div>
           <h2 className="text-lg font-bold text-[#f8f8ff] flex items-center gap-2 mb-4">
-            <TrendingUp size={16} className="text-[#60efff]" />
+            <TrendingUp size={16} className="text-[#00B0BA]" />
             Transaction History
           </h2>
           <div className="bg-[#12121a] border border-[#1e1e2e] rounded-2xl overflow-hidden">

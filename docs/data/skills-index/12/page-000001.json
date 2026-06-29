@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-06-29T08:40:29.903Z",
+  "occupationId": "12",
+  "skills": [
+    {
+      "id": "market-12-001",
+      "name": "personal-care-intake-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 241,
+      "description": "Marketplace-ready personal care skill for intake summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "personal-care",
+        "intake-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-002",
+      "name": "wellness-wellness-plans-assistant",
+      "author": "skillscale-market",
+      "stars": 238,
+      "description": "Marketplace-ready wellness skill for wellness plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "wellness",
+        "wellness-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-003",
+      "name": "client-service-appointment-follow-up-reviewer",
+      "author": "skillscale-market",
+      "stars": 235,
+      "description": "Marketplace-ready client service skill for appointment follow-up. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "client-service",
+        "appointment-follow-up",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-004",
+      "name": "fitness-service-scripts-summarizer",
+      "author": "skillscale-market",
+      "stars": 232,
+      "description": "Marketplace-ready fitness skill for service scripts. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "fitness",
+        "service-scripts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-005",
+      "name": "beauty-progress-notes-copilot",
+      "author": "skillscale-market",
+      "stars": 229,
+      "description": "Marketplace-ready beauty skill for progress notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "beauty",
+        "progress-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-006",
+      "name": "personal-care-intake-summaries-auditor",
+      "author": "skillscale-market",
+      "stars": 226,
+      "description": "Marketplace-ready personal care skill for intake summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "personal-care",
+        "intake-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-007",
+      "name": "wellness-wellness-plans-generator",
+      "author": "skillscale-market",
+      "stars": 223,
+      "description": "Marketplace-ready wellness skill for wellness plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "wellness",
+        "wellness-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-008",
+      "name": "client-service-appointment-follow-up-tracker",
+      "author": "skillscale-market",
+      "stars": 220,
+      "description": "Marketplace-ready client service skill for appointment follow-up. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "client-service",
+        "appointment-follow-up",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-009",
+      "name": "fitness-service-scripts-optimizer",
+      "author": "skillscale-market",
+      "stars": 217,
+      "description": "Marketplace-ready fitness skill for service scripts. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "fitness",
+        "service-scripts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-010",
+      "name": "beauty-progress-notes-reporter",
+      "author": "skillscale-market",
+      "stars": 214,
+      "description": "Marketplace-ready beauty skill for progress notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "beauty",
+        "progress-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-011",
+      "name": "personal-care-intake-summaries-triage",
+      "author": "skillscale-market",
+      "stars": 211,
+      "description": "Marketplace-ready personal care skill for intake summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "personal-care",
+        "intake-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-012",
+      "name": "wellness-wellness-plans-playbook",
+      "author": "skillscale-market",
+      "stars": 208,
+      "description": "Marketplace-ready wellness skill for wellness plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "wellness",
+        "wellness-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-013",
+      "name": "client-service-appointment-follow-up-planner",
+      "author": "skillscale-market",
+      "stars": 205,
+      "description": "Marketplace-ready client service skill for appointment follow-up. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "client-service",
+        "appointment-follow-up",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-014",
+      "name": "fitness-service-scripts-assistant",
+      "author": "skillscale-market",
+      "stars": 202,
+      "description": "Marketplace-ready fitness skill for service scripts. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "fitness",
+        "service-scripts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-015",
+      "name": "beauty-progress-notes-reviewer",
+      "author": "skillscale-market",
+      "stars": 199,
+      "description": "Marketplace-ready beauty skill for progress notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "beauty",
+        "progress-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-016",
+      "name": "personal-care-intake-summaries-summarizer",
+      "author": "skillscale-market",
+      "stars": 196,
+      "description": "Marketplace-ready personal care skill for intake summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "personal-care",
+        "intake-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-017",
+      "name": "wellness-wellness-plans-copilot",
+      "author": "skillscale-market",
+      "stars": 193,
+      "description": "Marketplace-ready wellness skill for wellness plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "wellness",
+        "wellness-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-018",
+      "name": "client-service-appointment-follow-up-auditor",
+      "author": "skillscale-market",
+      "stars": 190,
+      "description": "Marketplace-ready client service skill for appointment follow-up. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "client-service",
+        "appointment-follow-up",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-019",
+      "name": "fitness-service-scripts-generator",
+      "author": "skillscale-market",
+      "stars": 187,
+      "description": "Marketplace-ready fitness skill for service scripts. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "fitness",
+        "service-scripts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-020",
+      "name": "beauty-progress-notes-tracker",
+      "author": "skillscale-market",
+      "stars": 184,
+      "description": "Marketplace-ready beauty skill for progress notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "beauty",
+        "progress-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-021",
+      "name": "personal-care-intake-summaries-optimizer",
+      "author": "skillscale-market",
+      "stars": 181,
+      "description": "Marketplace-ready personal care skill for intake summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "personal-care",
+        "intake-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-022",
+      "name": "wellness-wellness-plans-reporter",
+      "author": "skillscale-market",
+      "stars": 178,
+      "description": "Marketplace-ready wellness skill for wellness plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "wellness",
+        "wellness-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-023",
+      "name": "client-service-appointment-follow-up-triage",
+      "author": "skillscale-market",
+      "stars": 175,
+      "description": "Marketplace-ready client service skill for appointment follow-up. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "client-service",
+        "appointment-follow-up",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-024",
+      "name": "fitness-service-scripts-playbook",
+      "author": "skillscale-market",
+      "stars": 172,
+      "description": "Marketplace-ready fitness skill for service scripts. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "fitness",
+        "service-scripts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-025",
+      "name": "beauty-progress-notes-planner",
+      "author": "skillscale-market",
+      "stars": 169,
+      "description": "Marketplace-ready beauty skill for progress notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "beauty",
+        "progress-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-026",
+      "name": "personal-care-intake-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 166,
+      "description": "Marketplace-ready personal care skill for intake summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "personal-care",
+        "intake-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-027",
+      "name": "wellness-wellness-plans-reviewer",
+      "author": "skillscale-market",
+      "stars": 163,
+      "description": "Marketplace-ready wellness skill for wellness plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "wellness",
+        "wellness-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-028",
+      "name": "client-service-appointment-follow-up-summarizer",
+      "author": "skillscale-market",
+      "stars": 160,
+      "description": "Marketplace-ready client service skill for appointment follow-up. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "client-service",
+        "appointment-follow-up",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-029",
+      "name": "fitness-service-scripts-copilot",
+      "author": "skillscale-market",
+      "stars": 157,
+      "description": "Marketplace-ready fitness skill for service scripts. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "fitness",
+        "service-scripts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-030",
+      "name": "beauty-progress-notes-auditor",
+      "author": "skillscale-market",
+      "stars": 154,
+      "description": "Marketplace-ready beauty skill for progress notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "beauty",
+        "progress-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-031",
+      "name": "personal-care-intake-summaries-generator",
+      "author": "skillscale-market",
+      "stars": 151,
+      "description": "Marketplace-ready personal care skill for intake summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "personal-care",
+        "intake-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-032",
+      "name": "wellness-wellness-plans-tracker",
+      "author": "skillscale-market",
+      "stars": 148,
+      "description": "Marketplace-ready wellness skill for wellness plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "wellness",
+        "wellness-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-033",
+      "name": "client-service-appointment-follow-up-optimizer",
+      "author": "skillscale-market",
+      "stars": 145,
+      "description": "Marketplace-ready client service skill for appointment follow-up. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "client-service",
+        "appointment-follow-up",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-034",
+      "name": "fitness-service-scripts-reporter",
+      "author": "skillscale-market",
+      "stars": 142,
+      "description": "Marketplace-ready fitness skill for service scripts. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "fitness",
+        "service-scripts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-035",
+      "name": "beauty-progress-notes-triage",
+      "author": "skillscale-market",
+      "stars": 139,
+      "description": "Marketplace-ready beauty skill for progress notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "beauty",
+        "progress-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-036",
+      "name": "personal-care-intake-summaries-playbook",
+      "author": "skillscale-market",
+      "stars": 136,
+      "description": "Marketplace-ready personal care skill for intake summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "personal-care",
+        "intake-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-037",
+      "name": "wellness-wellness-plans-planner",
+      "author": "skillscale-market",
+      "stars": 133,
+      "description": "Marketplace-ready wellness skill for wellness plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "wellness",
+        "wellness-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-038",
+      "name": "client-service-appointment-follow-up-assistant",
+      "author": "skillscale-market",
+      "stars": 130,
+      "description": "Marketplace-ready client service skill for appointment follow-up. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "client-service",
+        "appointment-follow-up",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-039",
+      "name": "fitness-service-scripts-reviewer",
+      "author": "skillscale-market",
+      "stars": 127,
+      "description": "Marketplace-ready fitness skill for service scripts. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "fitness",
+        "service-scripts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-040",
+      "name": "beauty-progress-notes-summarizer",
+      "author": "skillscale-market",
+      "stars": 124,
+      "description": "Marketplace-ready beauty skill for progress notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "beauty",
+        "progress-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-041",
+      "name": "personal-care-intake-summaries-copilot",
+      "author": "skillscale-market",
+      "stars": 121,
+      "description": "Marketplace-ready personal care skill for intake summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "personal-care",
+        "intake-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-042",
+      "name": "wellness-wellness-plans-auditor",
+      "author": "skillscale-market",
+      "stars": 118,
+      "description": "Marketplace-ready wellness skill for wellness plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "wellness",
+        "wellness-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-043",
+      "name": "client-service-appointment-follow-up-generator",
+      "author": "skillscale-market",
+      "stars": 115,
+      "description": "Marketplace-ready client service skill for appointment follow-up. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "client-service",
+        "appointment-follow-up",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-044",
+      "name": "fitness-service-scripts-tracker",
+      "author": "skillscale-market",
+      "stars": 112,
+      "description": "Marketplace-ready fitness skill for service scripts. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "fitness",
+        "service-scripts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-045",
+      "name": "beauty-progress-notes-optimizer",
+      "author": "skillscale-market",
+      "stars": 109,
+      "description": "Marketplace-ready beauty skill for progress notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "beauty",
+        "progress-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-046",
+      "name": "personal-care-intake-summaries-reporter",
+      "author": "skillscale-market",
+      "stars": 106,
+      "description": "Marketplace-ready personal care skill for intake summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "personal-care",
+        "intake-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-047",
+      "name": "wellness-wellness-plans-triage",
+      "author": "skillscale-market",
+      "stars": 103,
+      "description": "Marketplace-ready wellness skill for wellness plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "wellness",
+        "wellness-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-12-048",
+      "name": "client-service-appointment-follow-up-playbook",
+      "author": "skillscale-market",
+      "stars": 100,
+      "description": "Marketplace-ready client service skill for appointment follow-up. Produces structured checklists, drafts, summaries, and handoff notes tuned for personal care and service teams.",
+      "tags": [
+        "client-service",
+        "appointment-follow-up",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "12",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    }
+  ]
+}

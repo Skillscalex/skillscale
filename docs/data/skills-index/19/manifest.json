@@ -1,16 +1,12 @@
 {
   "occupationId": "19",
-  "totalSkills": 0,
+  "totalSkills": 48,
   "upstreamTotal": 395,
   "shardSize": 500,
-  "shardCount": 0,
+  "shardCount": 1,
   "projectedShardCount": 1,
-  "missingShardRanges": [
-    {
-      "start": 1,
-      "end": 1
-    }
-  ],
-  "nextMissingShard": 1,
-  "shards": []
+  "missingShardRanges": [],
+  "shards": [
+    "19/page-000001.json"
+  ]
 }

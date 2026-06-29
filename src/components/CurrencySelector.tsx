@@ -50,7 +50,7 @@ export function CurrencySelector({ value, onChange }: CurrencySelectorProps) {
                 onClick={() => { onChange(c.code as AllCurrencyCode); setOpen(false); }}
                 className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ${
                   value === c.code
-                    ? "bg-[#7c3aed20] text-[#f8f8ff]"
+                    ? "bg-[#177CB020] text-[#f8f8ff]"
                     : "text-[#8b8ba7] hover:bg-[#1e1e2e] hover:text-[#f8f8ff]"
                 }`}
               >
@@ -70,7 +70,7 @@ export function CurrencySelector({ value, onChange }: CurrencySelectorProps) {
                 onClick={() => { onChange(c.code as AllCurrencyCode); setOpen(false); }}
                 className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ${
                   value === c.code
-                    ? "bg-[#7c3aed20] text-[#f8f8ff]"
+                    ? "bg-[#177CB020] text-[#f8f8ff]"
                     : "text-[#8b8ba7] hover:bg-[#1e1e2e] hover:text-[#f8f8ff]"
                 }`}
               >

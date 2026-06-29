@@ -21,8 +21,8 @@ function StarDisplay({ rating, size = 16 }: { rating: number; size?: number }) {
           <Star
             key={star}
             size={size}
-            className={filled || half ? "text-[#ffd700]" : "text-[#2e2e4e]"}
-            fill={filled ? "#ffd700" : half ? "url(#half)" : "none"}
+            className={filled || half ? "text-[#00B0BA]" : "text-[#2e2e4e]"}
+            fill={filled ? "#00B0BA" : half ? "url(#half)" : "none"}
           />
         );
       })}
@@ -45,8 +45,8 @@ function StarPicker({ value, onChange }: { value: number; onChange: (v: number) 
         >
           <Star
             size={24}
-            className={(hover || value) >= star ? "text-[#ffd700]" : "text-[#2e2e4e]"}
-            fill={(hover || value) >= star ? "#ffd700" : "none"}
+            className={(hover || value) >= star ? "text-[#00B0BA]" : "text-[#2e2e4e]"}
+            fill={(hover || value) >= star ? "#00B0BA" : "none"}
           />
         </button>
       ))}
@@ -59,10 +59,10 @@ function RatingBar({ star, count, total }: { star: number; count: number; total:
   return (
     <div className="flex items-center gap-2 text-xs">
       <span className="text-[#8b8ba7] w-4 text-right">{star}</span>
-      <Star size={11} className="text-[#ffd700]" fill="#ffd700" />
+      <Star size={11} className="text-[#00B0BA]" fill="#00B0BA" />
       <div className="flex-1 h-1.5 rounded-full bg-[#1e1e2e] overflow-hidden">
         <div
-          className="h-full rounded-full bg-[#ffd700] transition-all duration-500"
+          className="h-full rounded-full bg-[#00B0BA] transition-all duration-500"
           style={{ width: `${pct}%` }}
         />
       </div>
@@ -131,7 +131,7 @@ export function ReviewSection({ skillId, rating = 0, reviewCount = 0, reviews = 
     <div className="bg-[#12121a] border border-[#1e1e2e] rounded-2xl overflow-hidden">
       <div className="px-5 py-4 border-b border-[#1e1e2e] flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <MessageSquare size={16} className="text-[#ffd700]" />
+          <MessageSquare size={16} className="text-[#00B0BA]" />
           <span className="text-sm font-semibold text-[#f8f8ff]">Reviews</span>
           <span className="text-xs text-[#8b8ba7]">({localReviews.length + reviewCount - reviews.length} total)</span>
         </div>
@@ -179,13 +179,13 @@ export function ReviewSection({ skillId, rating = 0, reviewCount = 0, reviews = 
               onChange={(e) => setComment(e.target.value)}
               placeholder="Share your experience with this skill (min 10 chars)…"
               rows={3}
-              className="mt-3 w-full bg-[#12121a] border border-[#1e1e2e] rounded-xl px-4 py-3 text-sm text-[#f8f8ff] placeholder-[#4a4a5a] focus:border-[#7c3aed] focus:outline-none transition-colors resize-none"
+              className="mt-3 w-full bg-[#12121a] border border-[#1e1e2e] rounded-xl px-4 py-3 text-sm text-[#f8f8ff] placeholder-[#4a4a5a] focus:border-[#177CB0] focus:outline-none transition-colors resize-none"
             />
             <div className="flex justify-end mt-2">
               <button
                 onClick={handleSubmit}
                 disabled={newRating === 0 || comment.trim().length < 10}
-                className="px-4 py-2 rounded-lg bg-[#7c3aed] text-white text-sm font-medium disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[#6d28d9] transition-colors"
+                className="px-4 py-2 rounded-lg bg-[#177CB0] text-white text-sm font-medium disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[#065279] transition-colors"
               >
                 Submit Review
               </button>
@@ -205,7 +205,7 @@ export function ReviewSection({ skillId, rating = 0, reviewCount = 0, reviews = 
           {visibleReviews.map((review) => (
             <div key={review.id} className="border-b border-[#1e1e2e] last:border-0 pb-4 last:pb-0">
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#7c3aed] to-[#60efff] flex items-center justify-center text-white text-xs font-bold shrink-0">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#177CB0] to-[#00B0BA] flex items-center justify-center text-white text-xs font-bold shrink-0">
                   {review.username[0].toUpperCase()}
                 </div>
                 <div className="flex-1 min-w-0">
@@ -220,7 +220,7 @@ export function ReviewSection({ skillId, rating = 0, reviewCount = 0, reviews = 
                   <button
                     onClick={() => toggleHelpful(review.id)}
                     className={`mt-2 flex items-center gap-1.5 text-xs transition-colors ${
-                      helpedIds.has(review.id) ? "text-[#7c3aed]" : "text-[#4a4a5a] hover:text-[#8b8ba7]"
+                      helpedIds.has(review.id) ? "text-[#177CB0]" : "text-[#4a4a5a] hover:text-[#8b8ba7]"
                     }`}
                   >
                     <ThumbsUp size={12} />

@@ -31,7 +31,7 @@ export default function HomePage() {
       {/* ── Hero ──────────────────────────────────────────────── */}
       <section
         className="relative overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #fffaf4 0%, #f1eefe 58%, #fff6ea 100%)" }}
+        style={{ background: "linear-gradient(135deg, #f4fafc 0%, #eaf6fb 58%, #d6f4f7 100%)" }}
       >
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold mb-6"

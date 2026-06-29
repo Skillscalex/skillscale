@@ -3,45 +3,45 @@
 @tailwind utilities;
 
 /* ═══════════════════════════════════════════
-   SKILLSCALE — Light Creamy Design System
+   SKILLSCALE — Blue Signal Design System
    Mobile-first, WCAG AA compliant
    ═══════════════════════════════════════════ */
 
 :root {
   /* Backgrounds */
-  --bg-base:    #fdf8f3;
-  --bg-surface: #fff9f4;
-  --bg-muted:   #f5ede4;
-  --bg-card:    #fffbf7;
+  --bg-base:    #f4fafc;
+  --bg-surface: #eaf6fb;
+  --bg-muted:   #ddeef5;
+  --bg-card:    #ffffff;
 
   /* Brand */
-  --accent:       #7c3aed;
-  --accent-hover: #6d28d9;
-  --accent-light: #ede9fe;
-  --accent-glow:  rgba(124,58,237,0.15);
+  --accent:       #177CB0;
+  --accent-hover: #065279;
+  --accent-light: #d6f4f7;
+  --accent-glow:  rgba(0,176,186,0.18);
 
   /* Text */
-  --text-primary:   #1a0a2e;
-  --text-secondary: #5b4068;
-  --text-muted:     #9b7fa8;
-  --text-inverse:   #fdf8f3;
+  --text-primary:   #06283a;
+  --text-secondary: #214c61;
+  --text-muted:     #5f7f91;
+  --text-inverse:   #f7fcfe;
 
   /* Borders */
-  --border:       #e8d5c4;
-  --border-focus: #7c3aed;
+  --border:       #b9d8e6;
+  --border-focus: #00B0BA;
 
   /* Gem tiers */
-  --gem-diamond: #60efff;
+  --gem-diamond: #00B0BA;
   --gem-emerald: #00d97e;
-  --gem-pearl:   #a78bfa;
-  --gem-quartz:  #c4b5fd;
-  --gem-coal:    #9b7fa8;
+  --gem-pearl:   #4B5CC4;
+  --gem-quartz:  #7d8aef;
+  --gem-coal:    #5f7f91;
 
   /* Shadows */
-  --shadow-sm:  0 1px 3px rgba(26,10,46,0.08);
-  --shadow-md:  0 4px 12px rgba(26,10,46,0.12);
-  --shadow-lg:  0 8px 32px rgba(26,10,46,0.16);
-  --shadow-gem: 0 0 20px rgba(124,58,237,0.25);
+  --shadow-sm:  0 1px 3px rgba(6,40,58,0.08);
+  --shadow-md:  0 4px 12px rgba(6,40,58,0.12);
+  --shadow-lg:  0 8px 32px rgba(6,40,58,0.16);
+  --shadow-gem: 0 0 20px rgba(0,176,186,0.24);
 
   /* Motion */
   --transition: 200ms ease;
@@ -85,10 +85,10 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
 
 /* ── Glass (light version) ──────────────── */
 .glass {
-  background: rgba(255,251,247,0.85);
+  background: rgba(255,255,255,0.86);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(232,213,196,0.6);
+  border: 1px solid rgba(185,216,230,0.68);
 }
 
 /* ── Buttons ────────────────────────────── */
@@ -114,7 +114,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   padding: 0.625rem 1.25rem;
   transition: background var(--transition);
 }
-.btn-secondary:hover { background: #ddd6fe; }
+.btn-secondary:hover { background: #bdeef3; }
 
 /* ── Gem effects (light-adapted) ────────── */
 .gem-diamond { filter: drop-shadow(0 0 8px var(--gem-diamond)); }
@@ -184,7 +184,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
 .mobile-menu {
   position: fixed;
   inset: 0;
-  background: rgba(26,10,46,0.5);
+  background: rgba(6,40,58,0.52);
   z-index: 40;
   backdrop-filter: blur(4px);
 }
@@ -220,16 +220,16 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   gap: 1.5rem;
   align-items: end;
   padding: clamp(1.25rem, 4vw, 2.75rem);
-  border: 1px solid rgba(232,213,196,0.78);
+  border: 1px solid rgba(185,216,230,0.78);
   border-radius: 1rem;
   background:
-    linear-gradient(135deg, rgba(255,250,244,0.96), rgba(241,238,254,0.9)),
+    linear-gradient(135deg, rgba(255,255,255,0.96), rgba(214,244,247,0.9)),
     var(--bg-surface);
   box-shadow: var(--shadow-sm);
 }
 .discovery-hero p {
   max-width: 760px;
-  color: #4b3159;
+  color: var(--text-secondary);
   font-size: clamp(1rem, 2vw, 1.16rem);
   margin-top: 0.85rem;
 }
@@ -238,7 +238,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   align-items: center;
   gap: 0.45rem;
   min-height: 2rem;
-  color: #5b21b6;
+  color: #0065A2;
   font-weight: 700;
   font-size: 0.9rem;
 }
@@ -247,7 +247,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   padding: 1rem;
   border-radius: 0.75rem;
   background: rgba(255,255,255,0.54);
-  border: 1px solid rgba(124,58,237,0.2);
+  border: 1px solid rgba(23,124,176,0.22);
 }
 .discovery-stats span {
   display: block;
@@ -326,7 +326,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   font-weight: 650;
 }
 .discovery-tabs button.active {
-  border-color: rgba(124,58,237,0.55);
+  border-color: rgba(0,176,186,0.58);
   background: var(--accent);
   color: var(--text-inverse);
 }
@@ -396,7 +396,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   background: var(--accent-light);
 }
 .component-type {
-  color: #5b21b6;
+  color: #0065A2;
   font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -426,10 +426,10 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   margin-top: 0.9rem;
 }
 .component-tags span {
-  border: 1px solid rgba(124,58,237,0.18);
+  border: 1px solid rgba(23,124,176,0.2);
   border-radius: 999px;
-  background: rgba(237,233,254,0.78);
-  color: #5b21b6;
+  background: rgba(214,244,247,0.8);
+  color: #0065A2;
   padding: 0.25rem 0.55rem;
   font-size: 0.75rem;
   font-weight: 700;
@@ -444,7 +444,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   position: absolute;
   inset: 0;
   width: 100%;
-  background: rgba(26,10,46,0.48);
+  background: rgba(6,40,58,0.48);
 }
 .detail-panel,
 .drawer-panel {
@@ -482,7 +482,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   padding: 0.85rem;
   border-radius: 0.75rem;
   color: #1a0a2e;
-  background: #f5ede4;
+  background: var(--bg-muted);
   border: 1px solid var(--border);
 }
 .detail-actions {
@@ -531,9 +531,9 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   gap: 1rem;
   align-items: end;
   padding: clamp(1.25rem, 4vw, 2.5rem);
-  border: 1px solid rgba(232,213,196,0.78);
+  border: 1px solid rgba(185,216,230,0.78);
   border-radius: 1rem;
-  background: linear-gradient(135deg, rgba(255,250,244,0.96), rgba(237,233,254,0.86));
+  background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(214,244,247,0.86));
   box-shadow: var(--shadow-sm);
 }
 .civilization-hero p {
@@ -551,7 +551,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
 }
 .civilization-kicker {
   min-height: 2rem;
-  color: #5b21b6;
+  color: #0065A2;
   font-weight: 800;
   font-size: 0.88rem;
 }
@@ -665,7 +665,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   grid-column: 1 / -1;
 }
 .civilization-panel-title {
-  color: #5b21b6;
+  color: #0065A2;
   font-weight: 900;
   margin-bottom: 0.8rem;
 }
@@ -675,10 +675,10 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   gap: 0.45rem;
 }
 .phase-rail span {
-  border: 1px solid rgba(124,58,237,0.18);
+  border: 1px solid rgba(23,124,176,0.2);
   border-radius: 999px;
-  background: rgba(237,233,254,0.72);
-  color: #5b21b6;
+  background: rgba(214,244,247,0.74);
+  color: #0065A2;
   padding: 0.28rem 0.58rem;
   font-size: 0.75rem;
   font-weight: 800;
@@ -700,7 +700,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
 }
 .governance-list div {
   padding: 0.85rem;
-  border: 1px solid rgba(124,58,237,0.16);
+  border: 1px solid rgba(23,124,176,0.18);
   border-radius: 0.75rem;
   background: rgba(255,255,255,0.58);
 }
@@ -751,7 +751,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   display: flex;
   gap: 0.65rem;
   color: #7f1d1d;
-  background: #fff1f1;
+  background: #fef2f2;
 }
 .provenance {
   margin-top: 1.25rem;
@@ -829,7 +829,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   padding: clamp(1.25rem, 4vw, 2.5rem);
   border: 1px solid var(--border);
   border-radius: 1rem;
-  background: linear-gradient(135deg, #fffbf7, #eef7f1);
+  background: linear-gradient(135deg, #ffffff, #d6f4f7);
 }
 .studio-header p {
   max-width: 720px;
@@ -842,7 +842,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: #245b42;
+  color: #0065A2;
   font-weight: 800;
 }
 .studio-status {
@@ -883,7 +883,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
 }
 .studio-agent.active {
   border-color: rgba(36,91,66,0.38);
-  background: #eef7f1;
+  background: #d6f4f7;
 }
 .studio-agent strong,
 .studio-agent small {
@@ -902,8 +902,8 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
   width: 2.35rem;
   height: 2.35rem;
   border-radius: 0.625rem;
-  color: #245b42;
-  background: #dff3e8;
+  color: #065279;
+  background: #c8eef2;
 }
 .studio-chat {
   min-height: min(44rem, calc(100dvh - 12rem));
@@ -942,7 +942,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
 }
 .studio-message.user {
   align-self: flex-end;
-  border-color: rgba(124,58,237,0.26);
+  border-color: rgba(0,176,186,0.32);
   background: var(--accent-light);
 }
 .studio-message span {
@@ -976,7 +976,7 @@ h3 { font-size: clamp(1.1rem,  3vw, 1.5rem); font-weight: 600; line-height: 1.3;
 .studio-composer button {
   min-height: 48px;
   border-radius: 0.75rem;
-  background: #245b42;
+  background: #065279;
   color: white;
   display: inline-flex;
   align-items: center;

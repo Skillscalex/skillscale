@@ -31,10 +31,139 @@
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/framer-motion@11.11.17/dist/framer-motion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <script type="text/babel">
 const { useState, useEffect, useRef } = React;
 const { motion, AnimatePresence } = window.Motion;
+
+/* ===== Static Supabase Auth ===== */
+const AUTH_CONFIG_URL = 'data/auth-config.json';
+let staticSupabaseClient = null;
+
+async function loadAuthConfig() {
+  if (window.SKILLSCALE_AUTH_CONFIG?.supabaseUrl && window.SKILLSCALE_AUTH_CONFIG?.supabaseAnonKey) {
+    return window.SKILLSCALE_AUTH_CONFIG;
+  }
+  try {
+    const resp = await fetch(`${AUTH_CONFIG_URL}?t=${Date.now()}`, { cache:'no-store' });
+    if (!resp.ok) return null;
+    const config = await resp.json();
+    return config?.supabaseUrl && config?.supabaseAnonKey ? config : null;
+  } catch {
+    return null;
+  }
+}
+
+function getAuthRedirectUrl() {
+  const url = new URL(window.location.href);
+  url.hash = '';
+  url.search = '';
+  return url.toString();
+}
+
+function getDisplayName(user) {
+  if (!user) return '';
+  return user.user_metadata?.full_name || user.user_metadata?.name || user.user_metadata?.user_name || user.email || 'Skillscale user';
+}
+
+function getInitials(name) {
+  return (name || 'S')
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map(part => part[0]?.toUpperCase())
+    .join('') || 'S';
+}
+
+function useStaticAuth() {
+  const [client, setClient] = useState(null);
+  const [configured, setConfigured] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    let alive = true;
+    let subscription = null;
+
+    async function init() {
+      const config = await loadAuthConfig();
+      if (!alive) return;
+      if (!config || !window.supabase?.createClient) {
+        setConfigured(false);
+        setLoading(false);
+        return;
+      }
+
+      staticSupabaseClient = staticSupabaseClient || window.supabase.createClient(config.supabaseUrl, config.supabaseAnonKey, {
+        auth: { detectSessionInUrl:true, persistSession:true, autoRefreshToken:true, flowType:'implicit' }
+      });
+      setClient(staticSupabaseClient);
+      setConfigured(true);
+
+      const { data, error: sessionError } = await staticSupabaseClient.auth.getSession();
+      if (!alive) return;
+      if (sessionError) setError(sessionError.message);
+      setUser(data.session?.user || null);
+
+      const listener = staticSupabaseClient.auth.onAuthStateChange((_event, session) => {
+        setUser(session?.user || null);
+        setError(null);
+        setLoading(false);
+      });
+      subscription = listener.data.subscription;
+      setLoading(false);
+    }
+
+    init();
+    return () => {
+      alive = false;
+      if (subscription) subscription.unsubscribe();
+    };
+  }, []);
+
+  async function signInWithOAuth(provider) {
+    setError(null);
+    if (!client) {
+      setError('Supabase Auth is not configured for this static page.');
+      return;
+    }
+    const { error: oauthError } = await client.auth.signInWithOAuth({
+      provider,
+      options: {
+        redirectTo: getAuthRedirectUrl(),
+        queryParams: provider === 'google' ? { prompt:'select_account' } : undefined,
+      }
+    });
+    if (oauthError) setError(oauthError.message);
+  }
+
+  async function signInWithEmail(email) {
+    setError(null);
+    if (!client) {
+      setError('Supabase Auth is not configured for this static page.');
+      return false;
+    }
+    const { error: emailError } = await client.auth.signInWithOtp({
+      email,
+      options: { emailRedirectTo: getAuthRedirectUrl() }
+    });
+    if (emailError) {
+      setError(emailError.message);
+      return false;
+    }
+    return true;
+  }
+
+  async function signOut() {
+    if (!client) return;
+    const { error: signOutError } = await client.auth.signOut();
+    if (signOutError) setError(signOutError.message);
+  }
+
+  return { configured, loading, user, error, signInWithOAuth, signInWithEmail, signOut, clearError:() => setError(null) };
+}
 
 /* ===== Vault storage ===== */
 const VAULT_KEY = 'skillscale_vault';
@@ -71,7 +200,108 @@ function ThemeToggle({ theme, onToggle }) {
 }
 
 /* ===== Nav ===== */
-function Nav({ theme, onToggle }) {
+function AuthMenu({ auth }) {
+  const [open, setOpen] = useState(false);
+  const [email, setEmail] = useState('');
+  const [emailSent, setEmailSent] = useState(false);
+  const [pending, setPending] = useState(null);
+  const name = getDisplayName(auth.user);
+
+  async function startOAuth(provider) {
+    setPending(provider);
+    await auth.signInWithOAuth(provider);
+    setPending(null);
+  }
+
+  async function submitEmail(event) {
+    event.preventDefault();
+    setPending('email');
+    const ok = await auth.signInWithEmail(email);
+    setEmailSent(ok);
+    setPending(null);
+  }
+
+  if (auth.loading) {
+    return (
+      <button className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 14px', border:'1px solid var(--border)' }}>
+        Signing in…
+      </button>
+    );
+  }
+
+  if (auth.user) {
+    return (
+      <div style={{ position:'relative' }}>
+        <button onClick={() => setOpen(v => !v)} className="btn btn-sm lg"
+          style={{ display:'flex', alignItems:'center', gap:8, fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'6px 12px', border:'1px solid rgba(23,124,176,0.35)' }}>
+          <span style={{ width:22, height:22, borderRadius:8, background:'var(--accent)', color:'#fff', display:'flex', alignItems:'center', justifyContent:'center', fontSize:'.58rem', fontWeight:700 }}>{getInitials(name)}</span>
+          <span style={{ maxWidth:110, overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{name}</span>
+        </button>
+        {open && (
+          <div className="lg" style={{ position:'absolute', right:0, top:'calc(100% + 8px)', width:260, borderRadius:16, padding:12, zIndex:80 }}>
+            <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:8 }}>
+              <span style={{ color:'#1A7A4A' }}>✓</span>
+              <span style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text)', fontWeight:700 }}>Signed in</span>
+            </div>
+            <p style={{ fontFamily:'DM Sans', fontSize:'.75rem', color:'var(--text-2)', margin:'0 0 10px', overflowWrap:'anywhere' }}>{auth.user.email}</p>
+            <button onClick={() => auth.signOut()} style={{ width:'100%', border:'1px solid var(--border)', background:'transparent', color:'var(--text)', borderRadius:10, minHeight:36, fontFamily:'JetBrains Mono', fontSize:'.68rem', cursor:'pointer' }}>
+              Sign out
+            </button>
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  return (
+    <>
+      <button onClick={() => setOpen(true)} className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 16px', border:'1px solid rgba(23,124,176,0.35)', color:'var(--accent)' }}>
+        Sign in
+      </button>
+      {open && (
+        <div style={{ position:'fixed', inset:0, zIndex:90, display:'flex', alignItems:'center', justifyContent:'center', padding:16 }}>
+          <button onClick={() => setOpen(false)} aria-label="Close sign in" style={{ position:'absolute', inset:0, background:'rgba(0,0,0,.48)', border:0, cursor:'pointer' }} />
+          <div className="lg" style={{ position:'relative', width:'min(100%,430px)', borderRadius:22, padding:24, boxShadow:'0 24px 80px rgba(0,0,0,.22)' }}>
+            <div style={{ display:'flex', justifyContent:'space-between', gap:16, alignItems:'start', marginBottom:18 }}>
+              <div>
+                <div style={{ fontFamily:'Archivo Black', fontSize:'1.25rem', color:'var(--text)' }}>Sign in to Vault</div>
+                <p style={{ fontFamily:'DM Sans', fontSize:'.86rem', color:'var(--text-2)', margin:'6px 0 0', lineHeight:1.5 }}>Use Google first, or continue with another enabled Supabase provider.</p>
+              </div>
+              <button onClick={() => setOpen(false)} style={{ border:0, background:'transparent', color:'var(--text-2)', cursor:'pointer', fontSize:18 }}>✕</button>
+            </div>
+            {!auth.configured && (
+              <div style={{ border:'1px solid rgba(0,101,162,.24)', background:'rgba(0,101,162,.08)', color:'var(--text-2)', borderRadius:14, padding:12, fontFamily:'DM Sans', fontSize:'.78rem', lineHeight:1.45, marginBottom:12 }}>
+                Static Supabase Auth is not configured yet. Add <code>docs/data/auth-config.json</code> with the public Supabase URL and anon key.
+              </div>
+            )}
+            <button disabled={!auth.configured || pending} onClick={() => startOAuth('google')}
+              style={{ width:'100%', minHeight:46, border:0, borderRadius:14, background:'var(--accent)', color:'#fff', fontFamily:'JetBrains Mono', fontSize:'.78rem', fontWeight:700, cursor:auth.configured?'pointer':'not-allowed', opacity:(!auth.configured || pending) ? .58 : 1, marginBottom:10 }}>
+              {pending === 'google' ? 'Opening Google…' : 'G  Continue with Google'}
+            </button>
+            <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10, marginBottom:14 }}>
+              <button disabled={!auth.configured || pending} onClick={() => startOAuth('github')}
+                style={{ minHeight:42, border:'1px solid var(--border)', borderRadius:13, background:'transparent', color:'var(--text)', fontFamily:'JetBrains Mono', fontSize:'.72rem', cursor:auth.configured?'pointer':'not-allowed', opacity:(!auth.configured || pending) ? .58 : 1 }}>GH GitHub</button>
+              <button disabled={!auth.configured || pending} onClick={() => startOAuth('discord')}
+                style={{ minHeight:42, border:'1px solid var(--border)', borderRadius:13, background:'transparent', color:'var(--text)', fontFamily:'JetBrains Mono', fontSize:'.72rem', cursor:auth.configured?'pointer':'not-allowed', opacity:(!auth.configured || pending) ? .58 : 1 }}>Discord</button>
+            </div>
+            <form onSubmit={submitEmail} style={{ display:'grid', gap:10 }}>
+              <input type="email" value={email} onChange={e => { setEmail(e.target.value); setEmailSent(false); }} placeholder="you@example.com"
+                style={{ minHeight:44, border:'1px solid var(--border)', borderRadius:13, background:'var(--bg)', color:'var(--text)', padding:'0 14px', fontFamily:'DM Sans', fontSize:'.86rem', outline:'none' }} />
+              <button disabled={!auth.configured || pending || !email} type="submit"
+                style={{ minHeight:42, border:'1px solid var(--border)', borderRadius:13, background:'transparent', color:'var(--text)', fontFamily:'JetBrains Mono', fontSize:'.72rem', cursor:auth.configured?'pointer':'not-allowed', opacity:(!auth.configured || pending || !email) ? .58 : 1 }}>
+                {pending === 'email' ? 'Sending…' : 'Send magic link'}
+              </button>
+            </form>
+            {emailSent && <p style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'#1A7A4A', margin:'12px 0 0' }}>✓ Check your inbox for the sign-in link.</p>}
+            {auth.error && <p style={{ fontFamily:'DM Sans', fontSize:'.78rem', color:'#B42318', margin:'12px 0 0' }}>{auth.error}</p>}
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
+function Nav({ theme, onToggle, auth }) {
   const vaultCount = getVault().dreamed.length + getVault().owned.length;
   const pages = [{href:'skills.html',label:'Skills'},{href:'market.html',label:'Market'},{href:'loops.html',label:'Loops'},{href:'community.html',label:'Community'},{href:'mcps.html',label:'MCPs'}];
   return (
@@ -105,6 +335,7 @@ function Nav({ theme, onToggle }) {
           <a href="auth.html" className="btn btn-sm lg" style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', padding:'7px 16px', border:'1px solid var(--border)' }}>
             Safety
           </a>
+          <AuthMenu auth={auth} />
           <ThemeToggle theme={theme} onToggle={onToggle} />
         </div>
       </div>
@@ -264,6 +495,7 @@ function App() {
   });
   const [tab, setTab] = useState('dreamed');
   const [vault, setVault] = useState(getVault);
+  const auth = useStaticAuth();
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -294,7 +526,7 @@ function App() {
 
   return (
     <>
-      <Nav theme={theme} onToggle={() => setTheme(t => t==='light'?'dark':'light')} />
+      <Nav theme={theme} onToggle={() => setTheme(t => t==='light'?'dark':'light')} auth={auth} />
 
       <main style={{ background:'var(--bg)', minHeight:'100vh' }}>
         {/* Header */}
@@ -310,10 +542,10 @@ function App() {
                 </h1>
               </div>
               <div className="lg" style={{ padding:'10px 18px', borderRadius:14, display:'flex', alignItems:'center', gap:10 }}>
-                <span style={{ fontSize:'1.1rem' }}>🔒</span>
+                <span style={{ fontSize:'1.1rem' }}>{auth.user ? '✓' : '🔒'}</span>
                 <div>
-                  <div style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', fontWeight:600, color:'var(--text)' }}>Private &amp; local</div>
-                  <div style={{ fontFamily:'DM Sans', fontSize:'.75rem', color:'var(--text-2)' }}>Only visible to you · stored on this device</div>
+                  <div style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', fontWeight:600, color:'var(--text)' }}>{auth.user ? 'Signed in' : 'Private & local'}</div>
+                  <div style={{ fontFamily:'DM Sans', fontSize:'.75rem', color:'var(--text-2)' }}>{auth.user ? `${getDisplayName(auth.user)} · stored on this device` : 'Sign in to connect your identity · stored on this device'}</div>
                 </div>
               </div>
             </div>

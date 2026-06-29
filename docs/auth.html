@@ -51,17 +51,17 @@
       </nav>
 
       <section class="trust-card">
-        <span class="trust-kicker">No credential collection on GitHub Pages</span>
+        <span class="trust-kicker">OAuth-only sign in on GitHub Pages</span>
         <h1 class="trust-title">Safety & Trust</h1>
         <p class="trust-lede">
-          This GitHub Pages site is a static public catalog for Skillscale. It does not ask for passwords,
-          phone numbers, one-time codes, wallet signatures, credit-card numbers, or private API keys.
+          This GitHub Pages site is a static public catalog for Skillscale. The Vault page can start Supabase OAuth
+          sign-in, but it does not collect passwords, phone numbers, wallet signatures, credit-card numbers, or private API keys.
         </p>
 
         <div class="trust-note">
           <strong>Important browser warning note</strong>
           If a browser labels this Pages URL as dangerous, treat that warning seriously while the site is reviewed.
-          The repository has been changed so the public Pages surface is informational and does not contain a login form.
+          The repository has been changed so the public Pages surface uses provider redirects instead of collecting credentials directly.
         </div>
 
         <div class="trust-grid">
@@ -81,6 +81,7 @@
 
         <ul class="trust-list">
           <li>Do not paste secrets, passwords, private tokens, or recovery phrases into any static GitHub Pages demo.</li>
+          <li>Only use the Vault sign-in buttons if the browser is on <code>https://skillscalex.github.io/skillscale/vault.html</code>.</li>
           <li>Do not run a scraped skill until its source, permissions, and security notes are reviewed.</li>
           <li>Report suspicious content through the repository security contact listed in <code>/.well-known/security.txt</code>.</li>
         </ul>

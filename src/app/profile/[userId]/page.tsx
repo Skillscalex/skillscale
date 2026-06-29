@@ -16,6 +16,7 @@ import { SkillCard } from "@/components/SkillCard";
 import { GemBadge } from "@/components/GemBadge";
 import { MOCK_SKILLS } from "@/lib/mock-data";
 import { useCurrency } from "@/components/Providers";
+import { useAuth } from "@/components/AuthProvider";
 import { formatCurrency, formatNumber, truncateAddress, relativeTime } from "@/lib/utils";
 
 const MOCK_USER = {
@@ -38,9 +39,18 @@ const MOCK_TRANSACTIONS = [
 export default function ProfilePage({ params }: { params: Promise<{ userId: string }> }) {
   const { userId } = use(params);
   const { currency } = useCurrency();
+  const { user: authUser } = useAuth();
 
   const isMe = userId === "me" || userId === MOCK_USER.id;
-  const user = MOCK_USER;
+  const user = isMe && authUser ? {
+    ...MOCK_USER,
+    id: authUser.id,
+    email: authUser.email ?? MOCK_USER.email,
+    username: authUser.user_metadata?.user_name || authUser.user_metadata?.name || authUser.email?.split("@")[0] || MOCK_USER.username,
+    avatar_url: authUser.user_metadata?.avatar_url || null,
+    wallet_address: null,
+    created_at: authUser.created_at ?? MOCK_USER.created_at,
+  } : MOCK_USER;
 
   const createdSkills = MOCK_SKILLS.filter((s) => s.creator_id === user.id);
   const ownedSkills = MOCK_SKILLS.filter((s) => s.gem_tier === "diamond").slice(0, 2);
@@ -62,9 +72,13 @@ export default function ProfilePage({ params }: { params: Promise<{ userId: stri
       <div className="bg-[#12121a] border border-[#1e1e2e] rounded-2xl p-6 mb-6">
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
           {/* Avatar */}
-          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#177CB0] to-[#00B0BA] flex items-center justify-center text-3xl font-bold text-white shrink-0">
-            {user.username[0].toUpperCase()}
-          </div>
+          {user.avatar_url ? (
+            <img src={user.avatar_url} alt="" className="w-20 h-20 rounded-2xl object-cover shrink-0" />
+          ) : (
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#177CB0] to-[#00B0BA] flex items-center justify-center text-3xl font-bold text-white shrink-0">
+              {user.username[0].toUpperCase()}
+            </div>
+          )}
 
           <div className="flex-1 min-w-0">
             <h1 className="text-2xl font-bold text-[#f8f8ff]">@{user.username}</h1>

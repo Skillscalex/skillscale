@@ -26,6 +26,15 @@
     input[type=range] { -webkit-appearance: none; appearance: none; height: 4px; border-radius: 2px; background: var(--border); outline: none; }
     input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%; background: var(--accent); cursor: pointer; }
     input[type=range]::-moz-range-thumb { width: 16px; height: 16px; border-radius: 50%; background: var(--accent); cursor: pointer; border: none; }
+    @media (max-width: 980px) {
+      .market-shell { grid-template-columns: 1fr !important; }
+      .market-shell > .lg { position: static !important; }
+    }
+    @media (max-width: 860px) {
+      .agent-access-grid { grid-template-columns: 1fr !important; }
+      .creation-expanded-grid { grid-template-columns: 1fr !important; }
+      .creation-expanded-grid > div:first-child { border-right: none !important; border-bottom: 1px solid var(--border); }
+    }
   </style>
 </head>
 <body>
@@ -50,12 +59,11 @@ function gemTier(stars) {
 }
 const TIER_CFG = {
   'Legendary': { color:'#00B0BA', icon:'🌟', glow:'rgba(0,176,186,0.28)' },
-  'Epic':      { color:'#4B5CC4', icon:'⚡', glow:'rgba(123,47,190,0.28)' },
-  'Rare':      { color:'#1565C0', icon:'💎', glow:'rgba(21,101,192,0.28)' },
-  'Standard':  { color:'#2D6A4F', icon:'🌿', glow:'rgba(45,106,79,0.20)' },
+  'Epic':      { color:'#4B5CC4', icon:'⚡', glow:'rgba(75,92,196,0.24)' },
+  'Rare':      { color:'#177CB0', icon:'💎', glow:'rgba(23,124,176,0.22)' },
+  'Standard':  { color:'#0065A2', icon:'🌿', glow:'rgba(0,101,162,0.18)' },
 };
-const GEM_COLORS = { Ruby:'#E11D48', Sapphire:'#3B82F6', Emerald:'#10B981', Diamond:'#A78BFA' };
-const GEM_ICONS  = { Ruby:'♦', Sapphire:'◆', Emerald:'◈', Diamond:'◇' };
+const GEM_ICONS  = { Legendary:'✦', Epic:'◆', Rare:'◇', Standard:'•' };
 
 /* ===== SecureScore gem tier (score-based, for sale cards) ===== */
 function scoreTier(score) {
@@ -119,28 +127,42 @@ function SecureScoreBarSm({ score }) {
   );
 }
 
-/* ===== Mock market data ===== */
+/* ===== Realtime-capable market data ===== */
+const MARKET_STATE_KEY = 'skillscale_market_state_v2';
+const MARKET_ORDERS_KEY = 'skillscale_market_orders_v2';
+const AGENT_IMPORTS_KEY = 'skillscale_agent_imports_v1';
+
 const MARKET_SKILLS = [
   { id:'code-review',        name:'code-review',        author:'anthropic',  stars:312, auditStatus:'approved',
-    yesPrice:0.71, volume:4820,  liquidity:12500, priceHistory:[0.55,0.58,0.62,0.67,0.70,0.69,0.71] },
+    category:'Engineering', outcome:'Hits 500 installs this month', yesPrice:0.71, volume:4820, volume24h:920, liquidity:12500, watchers:184, endTime:'2026-07-31T23:59:00Z', priceHistory:[0.55,0.58,0.62,0.67,0.70,0.69,0.71],
+    bids:[[0.70,38],[0.69,46],[0.67,58]], asks:[[0.72,30],[0.74,41],[0.77,55]] },
   { id:'software-developer', name:'software-developer', author:'anthropic',  stars:287, auditStatus:'approved',
-    yesPrice:0.65, volume:3610,  liquidity:9800,  priceHistory:[0.60,0.61,0.63,0.65,0.64,0.66,0.65] },
+    category:'Engineering', outcome:'Maintains top-10 ranking', yesPrice:0.65, volume:3610, volume24h:610, liquidity:9800, watchers:146, endTime:'2026-08-14T23:59:00Z', priceHistory:[0.60,0.61,0.63,0.65,0.64,0.66,0.65],
+    bids:[[0.64,34],[0.63,39],[0.61,52]], asks:[[0.66,28],[0.68,37],[0.70,49]] },
   { id:'frontend-design',    name:'frontend-design',    author:'garry',      stars:148, auditStatus:'approved',
-    yesPrice:0.82, volume:6240,  liquidity:15200, priceHistory:[0.70,0.73,0.75,0.79,0.80,0.81,0.82] },
+    category:'Design', outcome:'Reaches 250 paid saves', yesPrice:0.82, volume:6240, volume24h:1180, liquidity:15200, watchers:223, endTime:'2026-07-18T23:59:00Z', priceHistory:[0.70,0.73,0.75,0.79,0.80,0.81,0.82],
+    bids:[[0.81,42],[0.79,51],[0.76,67]], asks:[[0.83,32],[0.85,44],[0.88,60]] },
   { id:'data-analysis',      name:'data-analysis',      author:'mlteam',     stars:93,  auditStatus:'approved',
-    yesPrice:0.48, volume:1980,  liquidity:5400,  priceHistory:[0.52,0.51,0.49,0.47,0.48,0.48,0.48] },
+    category:'Analytics', outcome:'Gets 100 verified installs', yesPrice:0.48, volume:1980, volume24h:340, liquidity:5400, watchers:88, endTime:'2026-09-01T23:59:00Z', priceHistory:[0.52,0.51,0.49,0.47,0.48,0.48,0.48],
+    bids:[[0.47,22],[0.45,31],[0.43,45]], asks:[[0.50,25],[0.52,33],[0.55,44]] },
   { id:'pr-review-toolkit',  name:'pr-review-toolkit',  author:'opendev',    stars:76,  auditStatus:'approved',
-    yesPrice:0.59, volume:2450,  liquidity:7100,  priceHistory:[0.50,0.52,0.55,0.57,0.58,0.59,0.59] },
+    category:'Engineering', outcome:'Crosses 50 team installs', yesPrice:0.59, volume:2450, volume24h:410, liquidity:7100, watchers:103, endTime:'2026-08-02T23:59:00Z', priceHistory:[0.50,0.52,0.55,0.57,0.58,0.59,0.59],
+    bids:[[0.58,26],[0.56,34],[0.54,49]], asks:[[0.60,24],[0.62,30],[0.65,41]] },
   { id:'security-scanner',   name:'security-scanner',   author:'seclab',     stars:42,  auditStatus:'approved',
-    yesPrice:0.37, volume:890,   liquidity:2600,  priceHistory:[0.45,0.43,0.41,0.39,0.38,0.37,0.37] },
+    category:'Security', outcome:'Passes enterprise audit', yesPrice:0.37, volume:890, volume24h:190, liquidity:2600, watchers:72, endTime:'2026-07-24T23:59:00Z', priceHistory:[0.45,0.43,0.41,0.39,0.38,0.37,0.37],
+    bids:[[0.36,18],[0.34,29],[0.31,38]], asks:[[0.39,20],[0.41,27],[0.44,36]] },
   { id:'api-integrator',     name:'api-integrator',     author:'devcraft',   stars:28,  auditStatus:'needs_review',
-    yesPrice:0.55, volume:1120,  liquidity:3200,  priceHistory:[0.48,0.50,0.52,0.54,0.55,0.55,0.55] },
+    category:'Automation', outcome:'Completes audit review', yesPrice:0.55, volume:1120, volume24h:220, liquidity:3200, watchers:66, endTime:'2026-08-21T23:59:00Z', priceHistory:[0.48,0.50,0.52,0.54,0.55,0.55,0.55],
+    bids:[[0.54,19],[0.52,27],[0.49,35]], asks:[[0.57,18],[0.60,26],[0.63,33]] },
   { id:'doc-generator',      name:'doc-generator',      author:'writebot',   stars:17,  auditStatus:'approved',
-    yesPrice:0.41, volume:640,   liquidity:1900,  priceHistory:[0.38,0.39,0.40,0.41,0.41,0.42,0.41] },
+    category:'Content', outcome:'Gets 75 vault saves', yesPrice:0.41, volume:640, volume24h:140, liquidity:1900, watchers:48, endTime:'2026-09-12T23:59:00Z', priceHistory:[0.38,0.39,0.40,0.41,0.41,0.42,0.41],
+    bids:[[0.40,15],[0.38,24],[0.35,32]], asks:[[0.43,17],[0.45,23],[0.48,31]] },
   { id:'test-writer',        name:'test-writer',         author:'qatools',   stars:11,  auditStatus:'needs_review',
-    yesPrice:0.28, volume:320,   liquidity:800,   priceHistory:[0.35,0.33,0.31,0.29,0.28,0.28,0.28] },
+    category:'QA', outcome:'Passes maintainer review', yesPrice:0.28, volume:320, volume24h:75, liquidity:800, watchers:31, endTime:'2026-07-09T23:59:00Z', priceHistory:[0.35,0.33,0.31,0.29,0.28,0.28,0.28],
+    bids:[[0.27,10],[0.25,18],[0.22,26]], asks:[[0.30,11],[0.33,16],[0.36,22]] },
   { id:'refactor-helper',    name:'refactor-helper',    author:'cleancode',  stars:6,   auditStatus:'approved',
-    yesPrice:0.19, volume:180,   liquidity:500,   priceHistory:[0.25,0.23,0.21,0.20,0.19,0.19,0.19] },
+    category:'Engineering', outcome:'Gets 25 paid installs', yesPrice:0.19, volume:180, volume24h:42, liquidity:500, watchers:24, endTime:'2026-10-01T23:59:00Z', priceHistory:[0.25,0.23,0.21,0.20,0.19,0.19,0.19],
+    bids:[[0.18,8],[0.16,14],[0.13,19]], asks:[[0.21,9],[0.24,12],[0.28,18]] },
 ];
 
 const SALE_SKILLS = [
@@ -152,6 +174,104 @@ const SALE_SKILLS = [
   { id:'api-integrator',   name:'api-integrator',   author:'devcraft',  stars:28,  price:10,  auditStatus:'needs_review', secureScore:61 },
   { id:'doc-generator',    name:'doc-generator',    author:'writebot',  stars:17,  price:5,   auditStatus:'approved',     secureScore:74 },
 ];
+
+function readJsonStore(key, fallback) {
+  try { return JSON.parse(localStorage.getItem(key) || JSON.stringify(fallback)); }
+  catch { return fallback; }
+}
+function writeJsonStore(key, value) { localStorage.setItem(key, JSON.stringify(value)); }
+
+function enrichMarket(market) {
+  const bestBid = Math.max(...market.bids.map(([p]) => p));
+  const bestAsk = Math.min(...market.asks.map(([p]) => p));
+  const trend = market.priceHistory[market.priceHistory.length - 1] - market.priceHistory[0];
+  return { ...market, bestBid, bestAsk, spread: Math.max(bestAsk - bestBid, 0), trend };
+}
+
+function mergeStoredMarkets(seed) {
+  const stored = readJsonStore(MARKET_STATE_KEY, {});
+  return seed.map(m => enrichMarket({ ...m, ...(stored[m.id] || {}) }));
+}
+
+function saveMarketSnapshot(markets) {
+  const snapshot = {};
+  markets.forEach(m => {
+    snapshot[m.id] = {
+      yesPrice: m.yesPrice,
+      volume: m.volume,
+      volume24h: m.volume24h,
+      liquidity: m.liquidity,
+      watchers: m.watchers,
+      priceHistory: m.priceHistory,
+      bids: m.bids,
+      asks: m.asks,
+    };
+  });
+  writeJsonStore(MARKET_STATE_KEY, snapshot);
+}
+
+function sortMarkets(markets, mode) {
+  const copy = [...markets];
+  const byEnding = m => new Date(m.endTime).getTime();
+  const sorters = {
+    Hot: (a,b) => (b.volume24h + b.watchers * 8 + Math.abs(b.trend) * 1000) - (a.volume24h + a.watchers * 8 + Math.abs(a.trend) * 1000),
+    Liquidity: (a,b) => b.liquidity - a.liquidity,
+    Volume: (a,b) => b.volume - a.volume,
+    New: (a,b) => byEnding(b) - byEnding(a),
+    Ending: (a,b) => byEnding(a) - byEnding(b),
+    Competitive: (a,b) => a.spread - b.spread,
+  };
+  return copy.sort(sorters[mode] || sorters.Hot);
+}
+
+function useRealtimeMarket() {
+  const [markets, setMarkets] = useState(() => mergeStoredMarkets(MARKET_SKILLS));
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setMarkets(prev => {
+        const next = prev.map((m, i) => {
+          const wave = Math.sin(Date.now() / 12000 + i) * 0.006;
+          const drift = (m.volume24h / Math.max(m.liquidity, 1)) * 0.004;
+          const price = Math.min(0.96, Math.max(0.04, +(m.yesPrice + wave + drift - 0.002).toFixed(3)));
+          const bidBase = Math.max(0.01, +(price - m.spread / 2).toFixed(2));
+          const askBase = Math.min(0.99, +(price + m.spread / 2).toFixed(2));
+          const bids = [[bidBase, m.bids[0][1]], [Math.max(0.01, bidBase - 0.02), m.bids[1][1]], [Math.max(0.01, bidBase - 0.05), m.bids[2][1]]];
+          const asks = [[askBase, m.asks[0][1]], [Math.min(0.99, askBase + 0.02), m.asks[1][1]], [Math.min(0.99, askBase + 0.05), m.asks[2][1]]];
+          return enrichMarket({
+            ...m,
+            yesPrice: price,
+            volume: Math.round(m.volume + Math.max(1, m.volume24h / 260)),
+            volume24h: Math.max(1, Math.round(m.volume24h + wave * 120)),
+            liquidity: Math.max(100, Math.round(m.liquidity + Math.abs(wave) * 900)),
+            priceHistory: [...m.priceHistory.slice(-10), price],
+            bids,
+            asks,
+          });
+        });
+        saveMarketSnapshot(next);
+        return next;
+      });
+    }, 6500);
+    return () => clearInterval(timer);
+  }, []);
+
+  return [markets, setMarkets];
+}
+
+function storeOrder(order) {
+  const orders = readJsonStore(MARKET_ORDERS_KEY, []);
+  const next = [{ id:`ord_${Date.now()}`, createdAt:new Date().toISOString(), ...order }, ...orders].slice(0, 50);
+  writeJsonStore(MARKET_ORDERS_KEY, next);
+  return next;
+}
+
+function storeAgentImport(record) {
+  const imports = readJsonStore(AGENT_IMPORTS_KEY, []);
+  const next = [{ id:`imp_${Date.now()}`, createdAt:new Date().toISOString(), ...record }, ...imports].slice(0, 25);
+  writeJsonStore(AGENT_IMPORTS_KEY, next);
+  return next;
+}
 
 /* ===== Shared: ThemeToggle ===== */
 function ThemeToggle({ theme, onToggle }) {
@@ -266,13 +386,13 @@ function SparklineSvg({ data, width=200, height=36 }) {
 }
 
 /* ===== Trading Card ===== */
-function TradingCard({ market, index, onBuy }) {
+function TradingCard({ market, index, selected, onSelect, onBuy }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-5%' });
   const tier = gemTier(market.stars);
-  const tierColor = GEM_COLORS[tier];
+  const tierColor = TIER_CFG[tier]?.color || 'var(--accent)';
   const yPct = Math.round(market.yesPrice * 100);
-  const nPct = 100 - yPct;
+  const trendUp = market.trend >= 0;
 
   return (
     <motion.div
@@ -280,7 +400,8 @@ function TradingCard({ market, index, onBuy }) {
       initial={{ opacity:0, y:20 }} animate={inView ? { opacity:1, y:0 } : {}}
       transition={{ duration:0.4, delay: Math.min(index * 0.06, 0.4), ease:'easeOut' }}
       className="trading-card lg"
-      style={{ borderRadius:20, padding:20, display:'flex', flexDirection:'column', gap:12 }}
+      onClick={() => onSelect(market.id)}
+      style={{ borderRadius:16, padding:18, display:'flex', flexDirection:'column', gap:12, cursor:'pointer', border:selected ? '1px solid var(--accent)' : '1px solid var(--border)' }}
     >
       {/* Header */}
       <div style={{ display:'flex', alignItems:'flex-start', gap:12 }}>
@@ -288,6 +409,7 @@ function TradingCard({ market, index, onBuy }) {
           alt="" style={{ width:36, height:36, borderRadius:9, flexShrink:0, background:'var(--bg-1)' }} />
         <div style={{ flex:1, minWidth:0 }}>
           <span style={{ fontFamily:'JetBrains Mono', fontWeight:700, fontSize:'.82rem', color:'var(--text)', display:'block', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>/{market.name}</span>
+          <span style={{ fontFamily:'DM Sans', fontSize:'.68rem', color:'var(--text-2)', display:'block', marginTop:3, lineHeight:1.25 }}>{market.outcome}</span>
           <div style={{ display:'flex', gap:5, marginTop:5, flexWrap:'wrap' }}>
             <span className="gem-badge" style={{ background: tierColor + '22', color: tierColor }}>{GEM_ICONS[tier]} {tier}</span>
             {market.auditStatus === 'approved' && (
@@ -300,17 +422,32 @@ function TradingCard({ market, index, onBuy }) {
       {/* Sparkline */}
       <SparklineSvg data={market.priceHistory} />
 
+      <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:8 }}>
+        <div>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.55rem', color:'var(--text-2)', textTransform:'uppercase' }}>Last</span>
+          <strong style={{ display:'block', fontFamily:'Archivo Black', fontSize:'1.05rem', color:'var(--text)' }}>{yPct}¢</strong>
+        </div>
+        <div>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.55rem', color:'var(--text-2)', textTransform:'uppercase' }}>Spread</span>
+          <strong style={{ display:'block', fontFamily:'JetBrains Mono', fontSize:'.8rem', color:'var(--text)' }}>{Math.round(market.spread * 100)}¢</strong>
+        </div>
+        <div>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.55rem', color:'var(--text-2)', textTransform:'uppercase' }}>Trend</span>
+          <strong style={{ display:'block', fontFamily:'JetBrains Mono', fontSize:'.8rem', color:trendUp ? '#10B981' : '#EF4444' }}>{trendUp ? '+' : ''}{Math.round(market.trend * 100)}¢</strong>
+        </div>
+      </div>
+
       {/* Buy buttons */}
       <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:8 }}>
         <button className="btn btn-sm"
-          onClick={() => onBuy(market, 'YES')}
+          onClick={(e) => { e.stopPropagation(); onBuy(market, 'YES'); }}
           style={{ background:'#10B98118', color:'#10B981', borderRadius:10, fontFamily:'JetBrains Mono', fontSize:'.72rem', fontWeight:700, padding:'8px 0', border:'1px solid #10B98130' }}>
-          YES {yPct}¢
+          Bid {Math.round(market.bestBid * 100)}¢
         </button>
         <button className="btn btn-sm"
-          onClick={() => onBuy(market, 'NO')}
-          style={{ background:'#EF444418', color:'#EF4444', borderRadius:10, fontFamily:'JetBrains Mono', fontSize:'.72rem', fontWeight:700, padding:'8px 0', border:'1px solid #EF444430' }}>
-          NO {nPct}¢
+          onClick={(e) => { e.stopPropagation(); onBuy(market, 'ASK'); }}
+          style={{ background:'rgba(0,101,162,0.12)', color:'#0065A2', borderRadius:10, fontFamily:'JetBrains Mono', fontSize:'.72rem', fontWeight:700, padding:'8px 0', border:'1px solid rgba(0,101,162,0.24)' }}>
+          Ask {Math.round(market.bestAsk * 100)}¢
         </button>
       </div>
 
@@ -323,12 +460,84 @@ function TradingCard({ market, index, onBuy }) {
   );
 }
 
+function OrderBookPanel({ market, onOrder }) {
+  const [side, setSide] = useState('bid');
+  const [quantity, setQuantity] = useState(10);
+  const [limit, setLimit] = useState(() => Math.round((market?.bestBid || 0.5) * 100));
+
+  useEffect(() => {
+    if (market) setLimit(Math.round((side === 'bid' ? market.bestBid : market.bestAsk) * 100));
+  }, [market?.id, side]);
+
+  if (!market) return null;
+  const cost = ((quantity * limit) / 100).toFixed(2);
+
+  return (
+    <div className="lg" style={{ borderRadius:16, padding:18, position:'sticky', top:96 }}>
+      <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12, marginBottom:14 }}>
+        <div style={{ minWidth:0 }}>
+          <h3 style={{ fontFamily:'Archivo Black', fontSize:'1rem', color:'var(--text)', marginBottom:2, overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>/{market.name}</h3>
+          <p style={{ fontFamily:'DM Sans', fontSize:'.76rem', color:'var(--text-2)', lineHeight:1.35 }}>{market.outcome}</p>
+        </div>
+        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--accent)', flexShrink:0 }}>live</span>
+      </div>
+
+      <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:8, marginBottom:14 }}>
+        <button onClick={() => setSide('bid')} className="btn btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', background:side==='bid'?'#10B98118':'transparent', color:side==='bid'?'#10B981':'var(--text-2)', border:'1px solid var(--border)', borderRadius:10 }}>Place Bid</button>
+        <button onClick={() => setSide('ask')} className="btn btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', background:side==='ask'?'rgba(0,101,162,0.12)':'transparent', color:side==='ask'?'#0065A2':'var(--text-2)', border:'1px solid var(--border)', borderRadius:10 }}>List Ask</button>
+      </div>
+
+      <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10, marginBottom:14 }}>
+        <label style={{ display:'block' }}>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)', textTransform:'uppercase' }}>Limit</span>
+          <input type="number" min="1" max="99" value={limit} onChange={e => setLimit(Math.min(99, Math.max(1, +e.target.value || 1)))}
+            style={{ width:'100%', marginTop:5, padding:'9px 10px', borderRadius:8, border:'1px solid var(--border)', background:'var(--bg)', color:'var(--text)', fontFamily:'JetBrains Mono', fontSize:'.78rem' }} />
+        </label>
+        <label style={{ display:'block' }}>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)', textTransform:'uppercase' }}>Qty</span>
+          <input type="number" min="1" max="999" value={quantity} onChange={e => setQuantity(Math.min(999, Math.max(1, +e.target.value || 1)))}
+            style={{ width:'100%', marginTop:5, padding:'9px 10px', borderRadius:8, border:'1px solid var(--border)', background:'var(--bg)', color:'var(--text)', fontFamily:'JetBrains Mono', fontSize:'.78rem' }} />
+        </label>
+      </div>
+
+      <div style={{ display:'flex', justifyContent:'space-between', padding:'10px 0', borderTop:'1px solid var(--border)', borderBottom:'1px solid var(--border)', marginBottom:14 }}>
+        <span style={{ fontFamily:'JetBrains Mono', fontSize:'.66rem', color:'var(--text-2)' }}>Escrow estimate</span>
+        <strong style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text)' }}>${cost}</strong>
+      </div>
+
+      <button className="btn btn-primary" style={{ width:'100%', fontFamily:'JetBrains Mono', fontSize:'.74rem', marginBottom:16 }}
+        onClick={() => onOrder({ marketId:market.id, marketName:market.name, side, limit:limit / 100, quantity })}>
+        {side === 'bid' ? 'Submit Bid' : 'Submit Ask'}
+      </button>
+
+      <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12 }}>
+        <OrderRows title="Bids" rows={market.bids} tone="#10B981" />
+        <OrderRows title="Asks" rows={market.asks} tone="#0065A2" />
+      </div>
+    </div>
+  );
+}
+
+function OrderRows({ title, rows, tone }) {
+  return (
+    <div>
+      <div style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--text-2)', textTransform:'uppercase', marginBottom:8 }}>{title}</div>
+      {rows.map(([price, qty], i) => (
+        <div key={`${price}-${qty}-${i}`} style={{ display:'flex', justifyContent:'space-between', gap:8, padding:'5px 0', borderBottom:'1px solid var(--border)' }}>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.67rem', color:tone }}>{Math.round(price * 100)}¢</span>
+          <span style={{ fontFamily:'JetBrains Mono', fontSize:'.67rem', color:'var(--text-2)' }}>{qty}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 /* ===== Sale Card ===== */
 function SaleCard({ skill, index, onBuy }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-5%' });
   const tier = gemTier(skill.stars);
-  const tierColor = GEM_COLORS[tier];
+  const tierColor = TIER_CFG[tier]?.color || 'var(--accent)';
   const [dreamed, setDreamed] = React.useState(() => isDreamed(skill.id));
 
   function toggleDream(e) {
@@ -393,6 +602,10 @@ function SkillCreationBar({ onToast }) {
   const [skillMd, setSkillMd] = useState(TEMPLATE_SKILL_MD);
   const [price, setPrice] = useState(0);
   const [mintNft, setMintNft] = useState(false);
+  const [accessSource, setAccessSource] = useState('Claude.ai');
+  const [accessUrl, setAccessUrl] = useState('');
+  const [accessScope, setAccessScope] = useState('Read selected conversations and artifacts only');
+  const [agentMode, setAgentMode] = useState('Scout');
   const promptRef = useRef(null);
   const chatEndRef = useRef(null);
 
@@ -447,6 +660,34 @@ function SkillCreationBar({ onToast }) {
     setPrompt('');
   }
 
+  function handleAgentAccess() {
+    const sourceName = accessSource || 'Agent workspace';
+    const sourceHint = accessUrl.trim() || 'manual-access-record';
+    const record = {
+      source: sourceName,
+      sourceHint,
+      scope: accessScope,
+      mode: agentMode,
+      status: 'validated_locally',
+      permissions: ['read:selected_conversations', 'read:artifacts', 'write:none'],
+    };
+    storeAgentImport(record);
+    setExpanded(true);
+    const generated = generateSkillFromMessages([
+      `${sourceName} agent access setup`,
+      `Source: ${sourceHint}`,
+      `Scope: ${accessScope}`,
+      `Mode: ${agentMode}`,
+      prompt || 'Create a reusable Skillscale skill from this authorized workspace context.',
+    ]);
+    setMessages(prev => [...prev,
+      { role:'user', content:`Agent access granted for ${sourceName}. Scope: ${accessScope}.` },
+      { role:'assistant', content: generated }
+    ]);
+    setSkillMd(generated);
+    onToast(`Agent access staged from ${sourceName}. No secret stored in the browser.`);
+  }
+
   return (
     <div style={{ marginBottom: 64 }}>
       <motion.div
@@ -485,7 +726,7 @@ function SkillCreationBar({ onToast }) {
               style={{ overflow:'hidden' }}
             >
               {/* Two-column layout */}
-              <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', minHeight:340 }}>
+              <div className="creation-expanded-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', minHeight:340 }}>
                 {/* Left: chat */}
                 <div style={{ borderRight:'1px solid var(--border)', display:'flex', flexDirection:'column', maxHeight:400 }}>
                   <div style={{ flex:1, overflowY:'auto', padding:'16px 18px', display:'flex', flexDirection:'column', gap:10 }}>
@@ -518,12 +759,61 @@ function SkillCreationBar({ onToast }) {
                 </div>
               </div>
 
+              {/* Agent access row */}
+              <div style={{ padding:'16px 20px', borderTop:'1px solid var(--border)', borderBottom:'1px solid var(--border)' }}>
+                <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12, marginBottom:12, flexWrap:'wrap' }}>
+                  <div>
+                    <div style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text)', fontWeight:700 }}>Agent access setup</div>
+                    <div style={{ fontFamily:'DM Sans', fontSize:'.74rem', color:'var(--text-2)' }}>Scoped source access, provenance capture, local validation, then optional Supabase publish.</div>
+                  </div>
+                  <span style={{ fontFamily:'JetBrains Mono', fontSize:'.6rem', color:'var(--accent)', textTransform:'uppercase', letterSpacing:'.07em' }}>read-only by default</span>
+                </div>
+                <div className="agent-access-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1.4fr 1fr 1fr auto', gap:10, alignItems:'end' }}>
+                  <label style={{ display:'block' }}>
+                    <span style={{ fontFamily:'JetBrains Mono', fontSize:'.58rem', color:'var(--text-2)', textTransform:'uppercase' }}>Source</span>
+                    <select value={accessSource} onChange={e => setAccessSource(e.target.value)}
+                      style={{ width:'100%', marginTop:5, padding:'9px 10px', borderRadius:8, border:'1px solid var(--border)', background:'var(--bg)', color:'var(--text)', fontFamily:'JetBrains Mono', fontSize:'.72rem' }}>
+                      <option>Claude.ai</option>
+                      <option>ChatGPT</option>
+                      <option>Nessie-style agent access</option>
+                      <option>Manual workspace</option>
+                    </select>
+                  </label>
+                  <label style={{ display:'block' }}>
+                    <span style={{ fontFamily:'JetBrains Mono', fontSize:'.58rem', color:'var(--text-2)', textTransform:'uppercase' }}>Source URL / reference</span>
+                    <input value={accessUrl} onChange={e => setAccessUrl(e.target.value)} placeholder="https://... or workspace id"
+                      style={{ width:'100%', marginTop:5, padding:'9px 10px', borderRadius:8, border:'1px solid var(--border)', background:'var(--bg)', color:'var(--text)', fontFamily:'JetBrains Mono', fontSize:'.72rem' }} />
+                  </label>
+                  <label style={{ display:'block' }}>
+                    <span style={{ fontFamily:'JetBrains Mono', fontSize:'.58rem', color:'var(--text-2)', textTransform:'uppercase' }}>Scope</span>
+                    <select value={accessScope} onChange={e => setAccessScope(e.target.value)}
+                      style={{ width:'100%', marginTop:5, padding:'9px 10px', borderRadius:8, border:'1px solid var(--border)', background:'var(--bg)', color:'var(--text)', fontFamily:'JetBrains Mono', fontSize:'.72rem' }}>
+                      <option>Read selected conversations and artifacts only</option>
+                      <option>Read project knowledge base only</option>
+                      <option>Read exported files only</option>
+                      <option>Manual description only</option>
+                    </select>
+                  </label>
+                  <label style={{ display:'block' }}>
+                    <span style={{ fontFamily:'JetBrains Mono', fontSize:'.58rem', color:'var(--text-2)', textTransform:'uppercase' }}>Reasoning</span>
+                    <select value={agentMode} onChange={e => setAgentMode(e.target.value)}
+                      style={{ width:'100%', marginTop:5, padding:'9px 10px', borderRadius:8, border:'1px solid var(--border)', background:'var(--bg)', color:'var(--text)', fontFamily:'JetBrains Mono', fontSize:'.72rem' }}>
+                      <option>Scout</option>
+                      <option>Audit</option>
+                      <option>Convert</option>
+                      <option>Price</option>
+                    </select>
+                  </label>
+                  <button className="btn btn-primary btn-sm" style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', whiteSpace:'nowrap' }} onClick={handleAgentAccess}>Stage access</button>
+                </div>
+              </div>
+
               {/* Import row */}
-              <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:12, padding:'16px 20px', borderTop:'1px solid var(--border)', borderBottom:'1px solid var(--border)' }}>
+              <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:12, padding:'16px 20px', borderBottom:'1px solid var(--border)' }}>
                 <label style={{ cursor:'pointer' }}>
                   <input type="file" accept=".zip" style={{ display:'none' }} onChange={e => handleFileImport(e, 'Claude.ai')} />
                   <div className="lg" style={{ borderRadius:12, padding:'12px 14px', display:'flex', alignItems:'center', gap:10, cursor:'pointer' }}>
-                    <span style={{ fontSize:20 }}>🟣</span>
+                    <span style={{ fontSize:20, color:'#4B5CC4' }}>●</span>
                     <div>
                       <div style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', fontWeight:600, color:'var(--text)' }}>Import from Claude.ai</div>
                       <div style={{ fontFamily:'DM Sans', fontSize:'.72rem', color:'var(--text-2)' }}>Upload .zip export</div>
@@ -534,7 +824,7 @@ function SkillCreationBar({ onToast }) {
                 <label style={{ cursor:'pointer' }}>
                   <input type="file" accept=".zip" style={{ display:'none' }} onChange={e => handleFileImport(e, 'ChatGPT')} />
                   <div className="lg" style={{ borderRadius:12, padding:'12px 14px', display:'flex', alignItems:'center', gap:10, cursor:'pointer' }}>
-                    <span style={{ fontSize:20 }}>🟢</span>
+                    <span style={{ fontSize:20, color:'#00B0BA' }}>●</span>
                     <div>
                       <div style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', fontWeight:600, color:'var(--text)' }}>Import from ChatGPT</div>
                       <div style={{ fontFamily:'DM Sans', fontSize:'.72rem', color:'var(--text-2)' }}>Upload .zip export</div>
@@ -543,11 +833,11 @@ function SkillCreationBar({ onToast }) {
                 </label>
 
                 <div className="lg" style={{ borderRadius:12, padding:'12px 14px', display:'flex', alignItems:'center', gap:10, cursor:'pointer' }}
-                  onClick={() => onToast('Coming soon: link your X and Telegram for attribution')}>
-                  <span style={{ fontSize:20 }}>🔗</span>
+                  onClick={handleAgentAccess}>
+                  <span style={{ fontSize:20, color:'#177CB0' }}>↔</span>
                   <div>
-                    <div style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', fontWeight:600, color:'var(--text)' }}>Connect X / Telegram</div>
-                    <div style={{ fontFamily:'DM Sans', fontSize:'.72rem', color:'var(--text-2)' }}>Link for attribution</div>
+                    <div style={{ fontFamily:'JetBrains Mono', fontSize:'.7rem', fontWeight:600, color:'var(--text)' }}>Agent Access</div>
+                    <div style={{ fontFamily:'DM Sans', fontSize:'.72rem', color:'var(--text-2)' }}>Scoped import record</div>
                   </div>
                 </div>
               </div>
@@ -562,7 +852,7 @@ function SkillCreationBar({ onToast }) {
                   No API keys requested
                 </span>
                 <span style={{ fontFamily:'DM Sans', fontSize:'.75rem', color:'var(--text-2)', marginLeft:4 }}>
-                  Marketplace publishing is simulated on GitHub Pages.
+                  GitHub Pages stores locally; Supabase schema enables realtime durable publishing.
                 </span>
               </div>
 
@@ -626,9 +916,11 @@ function App() {
     if (s) return s;
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   });
-  const [marketFilter, setMarketFilter] = useState('All');
+  const [marketFilter, setMarketFilter] = useState('Hot');
+  const [selectedMarketId, setSelectedMarketId] = useState('frontend-design');
   const [toast, setToast] = useState('');
   const [toastVisible, setToastVisible] = useState(false);
+  const [markets, setMarkets] = useRealtimeMarket();
   const headerRef = useRef(null);
   const headerInView = useInView(headerRef, { once: true });
 
@@ -644,18 +936,31 @@ function App() {
   }
 
   function handleBuy(item, side) {
-    showToast(`WalletConnect + Polygon trading coming in Phase 3 — ${side ? `Buying ${side} on` : 'Buying'} /${item.name}`);
+    setSelectedMarketId(item.id);
+    storeOrder({ marketId:item.id, marketName:item.name, side:side === 'ASK' ? 'ask' : 'bid', limit: side === 'ASK' ? item.bestAsk : item.bestBid, quantity:10, source:'quick-action' });
+    showToast(`${side === 'ASK' ? 'Ask' : 'Bid'} staged for /${item.name}. Connect Supabase to sync live orders.`);
   }
 
-  const filterFns = {
-    'All': () => true,
-    'Ruby': m => gemTier(m.stars) === 'Ruby',
-    'Sapphire': m => gemTier(m.stars) === 'Sapphire',
-    'Emerald': m => gemTier(m.stars) === 'Emerald',
-    'Diamond': m => gemTier(m.stars) === 'Diamond',
-    'Audited Only': m => m.auditStatus === 'approved',
-  };
-  const filteredMarkets = MARKET_SKILLS.filter(filterFns[marketFilter] || (() => true));
+  function handleOrder(order) {
+    const orders = storeOrder({ ...order, source:'order-book' });
+    setMarkets(prev => prev.map(m => {
+      if (m.id !== order.marketId) return m;
+      const row = [order.limit, order.quantity];
+      const nextRows = order.side === 'bid'
+        ? { bids: [row, ...m.bids].sort((a,b) => b[0] - a[0]).slice(0, 3) }
+        : { asks: [row, ...m.asks].sort((a,b) => a[0] - b[0]).slice(0, 3) };
+      return enrichMarket({ ...m, ...nextRows, watchers:m.watchers + 1 });
+    }));
+    showToast(`Order staged for /${order.marketName}. ${orders.length} recent local orders saved.`);
+  }
+
+  const filteredMarkets = sortMarkets(markets, marketFilter);
+  const selectedMarket = filteredMarkets.find(m => m.id === selectedMarketId) || filteredMarkets[0];
+  const totals = filteredMarkets.reduce((acc, m) => ({
+    volume: acc.volume + m.volume,
+    liquidity: acc.liquidity + m.liquidity,
+    volume24h: acc.volume24h + m.volume24h,
+  }), { volume:0, liquidity:0, volume24h:0 });
 
   return (
     <>
@@ -695,10 +1000,10 @@ function App() {
               style={{ display:'flex', gap:24, flexWrap:'wrap' }}
             >
               {[
-                { label:'Active markets', value:'247', icon:'📈' },
-                { label:'Total skills listed', value:'1,842', icon:'🛠' },
-                { label:'AI-audited', value:'893', icon:'🔐' },
-                { label:'Diamond skills', value:'34', icon:'◇' },
+                { label:'Active markets', value:markets.length.toLocaleString(), icon:'↗' },
+                { label:'24h volume', value:`$${totals.volume24h.toLocaleString()}`, icon:'↔' },
+                { label:'Liquidity', value:`$${totals.liquidity.toLocaleString()}`, icon:'◎' },
+                { label:'Orders staged', value:readJsonStore(MARKET_ORDERS_KEY, []).length.toLocaleString(), icon:'≋' },
               ].map(stat => (
                 <div key={stat.label} className="lg" style={{ display:'flex', alignItems:'center', gap:12, padding:'10px 18px', borderRadius:12 }}>
                   <span style={{ fontSize:'1.1rem' }}>{stat.icon}</span>
@@ -720,7 +1025,7 @@ function App() {
               <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:28, flexWrap:'wrap', gap:12 }}>
                 <h2 style={{ fontFamily:'Archivo Black', fontSize:'1.3rem', color:'var(--text)' }}>Create a skill</h2>
                 <span style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'var(--text-2)' }}>
-                  Import from Claude.ai · ChatGPT · or describe from scratch
+                  Import from Claude.ai · ChatGPT · agent access · or describe from scratch
                 </span>
               </div>
               <SkillCreationBar onToast={showToast} />
@@ -732,22 +1037,22 @@ function App() {
                 <div>
                   <h2 style={{ fontFamily:'Archivo Black', fontSize:'1.3rem', color:'var(--text)', marginBottom:4 }}>Skill Markets</h2>
                   <p style={{ fontFamily:'DM Sans', fontSize:'.82rem', color:'var(--text-2)' }}>
-                    Predict which skills will hit star milestones. Real trading on Polygon — coming Phase 3.
+                    Dynamic skill pricing with bid/ask depth, liquidity signals, local staged orders, and a Supabase realtime upgrade path.
                   </p>
                 </div>
                 <button
-                  onClick={() => showToast('WalletConnect + Polygon integration coming in Phase 3')}
+                  onClick={() => showToast('WalletConnect can sit after Supabase order settlement; local order flow is ready now.')}
                   className="btn lg btn-sm"
                   style={{ fontFamily:'JetBrains Mono', fontSize:'.72rem', color:'var(--text)', gap:8 }}
                 >
-                  <span style={{ width:8, height:8, borderRadius:'50%', background:'#F59E0B', display:'inline-block', boxShadow:'0 0 6px #F59E0B88' }} />
+                  <span style={{ width:8, height:8, borderRadius:'50%', background:'#00B0BA', display:'inline-block', boxShadow:'0 0 6px rgba(0,176,186,0.45)' }} />
                   Connect Wallet
                 </button>
               </div>
 
               {/* Filter row */}
               <div style={{ display:'flex', gap:7, flexWrap:'wrap', marginBottom:24 }}>
-                {['All','Ruby','Sapphire','Emerald','Diamond','Audited Only'].map(f => (
+                {['Hot','Liquidity','Volume','New','Ending','Competitive'].map(f => (
                   <button key={f} className="tag"
                     onClick={() => setMarketFilter(f)}
                     style={{
@@ -755,19 +1060,18 @@ function App() {
                       color: marketFilter===f ? 'var(--accent)' : 'var(--text-2)',
                       background: marketFilter===f ? 'transparent' : 'transparent',
                     }}>
-                    {f === 'Ruby' && <span style={{ color: GEM_COLORS.Ruby, marginRight:4 }}>♦</span>}
-                    {f === 'Sapphire' && <span style={{ color: GEM_COLORS.Sapphire, marginRight:4 }}>◆</span>}
-                    {f === 'Emerald' && <span style={{ color: GEM_COLORS.Emerald, marginRight:4 }}>◈</span>}
-                    {f === 'Diamond' && <span style={{ color: GEM_COLORS.Diamond, marginRight:4 }}>◇</span>}
                     {f}
                   </button>
                 ))}
               </div>
 
-              <div className="grid-4" style={{ gap:16 }}>
-                {filteredMarkets.map((m, i) => (
-                  <TradingCard key={m.id} market={m} index={i} onBuy={handleBuy} />
-                ))}
+              <div style={{ display:'grid', gridTemplateColumns:'minmax(0,1fr) 320px', gap:18, alignItems:'start' }} className="market-shell">
+                <div className="grid-3" style={{ gap:16 }}>
+                  {filteredMarkets.map((m, i) => (
+                    <TradingCard key={m.id} market={m} index={i} selected={selectedMarket?.id === m.id} onSelect={setSelectedMarketId} onBuy={handleBuy} />
+                  ))}
+                </div>
+                <OrderBookPanel market={selectedMarket} onOrder={handleOrder} />
               </div>
               {filteredMarkets.length === 0 && (
                 <p style={{ fontFamily:'JetBrains Mono', fontSize:'.8rem', color:'var(--text-2)', textAlign:'center', padding:'40px 0' }}>No markets match this filter.</p>

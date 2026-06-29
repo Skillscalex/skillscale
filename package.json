@@ -15,6 +15,7 @@
     "autonomous:skills": "jiti src/ingestion/autonomous/cli.ts",
     "autonomous:skills:publish": "jiti src/ingestion/autonomous/publishPagesCatalog.ts",
     "autonomous:skills:queue": "jiti src/ingestion/autonomous/mirrorQueueCli.ts",
+    "skillsmp:mirror:import": "node scripts/import-skillsmp-mirror.mjs",
     "agents:dev": "jiti src/agents/server.ts",
     "test:agentic-civilization": "jiti src/lib/agentic-civilization/__tests__/simulator.test.ts",
     "test:autonomous-skills": "jiti src/ingestion/autonomous/__tests__/autonomousSkillLoop.test.ts",

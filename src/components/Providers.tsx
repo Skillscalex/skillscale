@@ -4,6 +4,7 @@ import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Navbar } from "./Navbar";
 import { CurrencySelector } from "./CurrencySelector";
+import { AuthProvider } from "./AuthProvider";
 
 type AllCurrencyCode = "USD" | "EUR" | "GBP" | "CAD" | "AUD" | "JPY" | "SGD" | "ETH" | "SOL" | "SKL";
 
@@ -25,11 +26,13 @@ export function Providers({ children }: { children: React.ReactNode }) {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <CurrencyContext.Provider value={{ currency, setCurrency }}>
-        <Navbar currency={currency} onCurrencyChange={setCurrency} />
-        <main className="flex-1">{children}</main>
-        <CurrencyBar currency={currency} onChange={setCurrency} />
-      </CurrencyContext.Provider>
+      <AuthProvider>
+        <CurrencyContext.Provider value={{ currency, setCurrency }}>
+          <Navbar currency={currency} onCurrencyChange={setCurrency} />
+          <main className="flex-1">{children}</main>
+          <CurrencyBar currency={currency} onChange={setCurrency} />
+        </CurrencyContext.Provider>
+      </AuthProvider>
     </QueryClientProvider>
   );
 }

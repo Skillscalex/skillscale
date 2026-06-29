@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { searchSkillsmpMirror } from "@/lib/skillsmp-mirror";
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
@@ -73,8 +74,24 @@ export async function GET(req: NextRequest) {
   const limit = Math.min(Math.max(Number(req.nextUrl.searchParams.get("limit") ?? 18), 1), 50);
   const page = Math.max(Number(req.nextUrl.searchParams.get("page") ?? 1), 1);
   const sortBy = req.nextUrl.searchParams.get("sortBy") ?? "stars";
+  const occupationId = req.nextUrl.searchParams.get("occupationId") ?? undefined;
 
   try {
+    const mirror = await searchSkillsmpMirror({ q, occupationId, limit, page, sortBy });
+    if (mirror && mirror.skills.length) {
+      return NextResponse.json(
+        {
+          success: true,
+          data: {
+            skills: mirror.skills,
+            pagination: { page, limit, total: mirror.total },
+          },
+          source: "supabase-mirror",
+        },
+        { headers: CORS_HEADERS }
+      );
+    }
+
     const upstreamUrl = new URL("https://skillsmp.com/api/v1/skills/search");
     upstreamUrl.searchParams.set("q", q);
     upstreamUrl.searchParams.set("limit", String(limit));

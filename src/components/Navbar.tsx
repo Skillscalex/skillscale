@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Search, Bell, User, Plus, Menu, X, Gem, Vault } from "lucide-react";
+import { Search, Bell, Plus, Menu, X, Gem, Vault } from "lucide-react";
 import { CurrencySelector } from "./CurrencySelector";
+import { AuthMenu } from "./AuthMenu";
 
 type AllCurrencyCode = "USD" | "EUR" | "GBP" | "CAD" | "AUD" | "JPY" | "SGD" | "ETH" | "SOL" | "SKL";
 
@@ -87,12 +88,7 @@ export function Navbar({ currency, onCurrencyChange }: NavbarProps) {
             <Bell size={18} />
           </button>
 
-          <Link
-            href="/profile/me"
-            className="p-2 rounded-lg hover:bg-[#1e1e2e] text-[#8b8ba7] hover:text-[#f8f8ff] transition-colors"
-          >
-            <User size={18} />
-          </Link>
+          <AuthMenu />
 
           <button
             className="md:hidden p-2 rounded-lg hover:bg-[#1e1e2e] text-[#8b8ba7] hover:text-[#f8f8ff] transition-colors"

@@ -67,8 +67,94 @@ async function fetchSkillsSearch(params) {
 
 const PAGES_CATALOG_URL = 'data/skills-catalog.json';
 const OCCUPATION_COUNTS_URL = 'data/occupation-counts.json';
+const AUTH_CONFIG_URL = 'data/auth-config.json';
 const SKILLS_INDEX_URL = 'data/skills-index';
 const CATALOG_POLL_MS = 15000;
+let mirrorConfigPromise = null;
+
+async function loadMirrorConfig() {
+  if (window.SKILLSCALE_DATA_CONFIG?.supabaseUrl && window.SKILLSCALE_DATA_CONFIG?.supabaseAnonKey) {
+    return window.SKILLSCALE_DATA_CONFIG;
+  }
+  if (window.SKILLSCALE_AUTH_CONFIG?.supabaseUrl && window.SKILLSCALE_AUTH_CONFIG?.supabaseAnonKey) {
+    return window.SKILLSCALE_AUTH_CONFIG;
+  }
+  mirrorConfigPromise = mirrorConfigPromise || fetch(`${AUTH_CONFIG_URL}?t=${Date.now()}`, { cache:'no-store' })
+    .then(resp => resp.ok ? resp.json() : null)
+    .then(config => config?.supabaseUrl && config?.supabaseAnonKey ? config : null)
+    .catch(() => null);
+  return mirrorConfigPromise;
+}
+
+function supabaseRestHeaders(config, count = false) {
+  return {
+    apikey: config.supabaseAnonKey,
+    Authorization: `Bearer ${config.supabaseAnonKey}`,
+    ...(count ? { Prefer:'count=exact' } : {}),
+  };
+}
+
+async function fetchSupabaseMirrorCounts() {
+  const config = await loadMirrorConfig();
+  if (!config) return null;
+  const url = new URL(`${config.supabaseUrl.replace(/\/$/, '')}/rest/v1/public_skillsmp_occupation_counts`);
+  url.searchParams.set('select', 'id,label,indexed_count,mirrored_count,source_url,coverage_percent,mirror_status,last_mirrored_at');
+  url.searchParams.set('order', 'id.asc');
+  const resp = await fetch(url, { headers:supabaseRestHeaders(config), cache:'no-store' });
+  if (!resp.ok) throw new Error(`Supabase counts HTTP ${resp.status}`);
+  const rows = await resp.json();
+  if (!Array.isArray(rows) || !rows.length) return null;
+  return {
+    generatedAt: new Date().toISOString(),
+    source: 'Supabase SkillsMP mirror',
+    occupations: rows.map(row => ({
+      id: String(row.id),
+      label: String(row.label),
+      count: Number(row.indexed_count || 0),
+      displayCount: formatCompactCount(row.indexed_count),
+      rawCount: Number(row.indexed_count || 0),
+      sourceUrl: row.source_url ? String(row.source_url) : undefined,
+      localCount: Number(row.mirrored_count || 0),
+      coveragePercent: Number(row.coverage_percent || 0),
+      mirrorStatus: String(row.mirror_status || 'queued'),
+    })),
+  };
+}
+
+async function fetchSupabaseMirrorSkills(occupationId, page, pageSize) {
+  const config = await loadMirrorConfig();
+  if (!config) return null;
+  const offset = (Math.max(1, page) - 1) * pageSize;
+  const url = new URL(`${config.supabaseUrl.replace(/\/$/, '')}/rest/v1/public_skillsmp_skills`);
+  url.searchParams.set('select', 'id,name,author,stars,description,tags,categories,source_updated_at,last_seen_at,primary_occupation_id,github_url,skillsmp_url');
+  url.searchParams.set('primary_occupation_id', `eq.${occupationId}`);
+  url.searchParams.set('order', 'stars.desc.nullslast');
+  url.searchParams.set('limit', String(pageSize));
+  url.searchParams.set('offset', String(offset));
+  const resp = await fetch(url, { headers:supabaseRestHeaders(config, true), cache:'no-store' });
+  if (!resp.ok) throw new Error(`Supabase skills HTTP ${resp.status}`);
+  const total = Number(resp.headers.get('content-range')?.split('/')?.[1] || 0);
+  const rows = await resp.json();
+  if (!Array.isArray(rows)) return null;
+  return {
+    total,
+    skills: rows.map(row => normalizeCatalogSkill({
+      id: row.id,
+      name: row.name,
+      author: row.author,
+      stars: row.stars,
+      description: row.description,
+      tags: Array.isArray(row.tags) ? row.tags : [],
+      updatedAt: row.source_updated_at || row.last_seen_at || Math.floor(Date.now() / 1000),
+      occupationId: row.primary_occupation_id,
+      githubUrl: row.github_url,
+      skillsmpUrl: row.skillsmp_url,
+      source: 'skillsmp-mirror',
+      secureScore: Number(row.stars || 0) >= 25 ? 90 : 84,
+      auditStatus: 'approved',
+    })),
+  };
+}
 
 async function fetchPagesCatalog() {
   const resp = await fetch(`${PAGES_CATALOG_URL}?t=${Date.now()}`, { cache:'no-store' });
@@ -163,9 +249,11 @@ function useOccupationCounts() {
 
     async function loadCounts() {
       try {
-        const resp = await fetch(`${OCCUPATION_COUNTS_URL}?t=${Date.now()}`, { cache:'no-store' });
-        if (!resp.ok) throw new Error(`Occupation counts HTTP ${resp.status}`);
-        const catalog = await resp.json();
+        const catalog = await fetchSupabaseMirrorCounts() ?? await (async () => {
+          const resp = await fetch(`${OCCUPATION_COUNTS_URL}?t=${Date.now()}`, { cache:'no-store' });
+          if (!resp.ok) throw new Error(`Occupation counts HTTP ${resp.status}`);
+          return resp.json();
+        })();
         const incoming = Array.isArray(catalog?.occupations) ? catalog.occupations : [];
         const byId = new Map(incoming.map(occ => [String(occ.id), occ]));
         const occupations = OCCUPATIONS.map(occ => {
@@ -205,6 +293,20 @@ function useOccupationShard(occupationId, page, pageSize) {
     async function loadShard() {
       setState(prev => ({ ...prev, status:'loading', error:null }));
       try {
+        const mirrorPage = await fetchSupabaseMirrorSkills(occupationId, page, pageSize);
+        if (mirrorPage) {
+          const manifest = {
+            occupationId,
+            totalSkills: mirrorPage.total,
+            shardSize: pageSize,
+            shardCount: Math.max(1, Math.ceil((mirrorPage.total || mirrorPage.skills.length) / pageSize)),
+            projectedShardCount: Math.max(1, Math.ceil((mirrorPage.total || mirrorPage.skills.length) / pageSize)),
+            missingShardRanges: [],
+            shards: [],
+          };
+          if (alive) setState({ status:'ready', skills:mirrorPage.skills, manifest, rootManifest:null, shardIndex:page - 1, shardSize:pageSize, error:null });
+          return;
+        }
         const rootResp = await fetch(`${SKILLS_INDEX_URL}/manifest.json?t=${Date.now()}`, { cache:'no-store' });
         const rootManifest = rootResp.ok ? await rootResp.json() : null;
         const manifestResp = await fetch(`${SKILLS_INDEX_URL}/${occupationId}/manifest.json?t=${Date.now()}`, { cache:'no-store' });

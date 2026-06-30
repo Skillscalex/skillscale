@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T20:17:06.502Z",
+  "generatedAt": "2026-06-30T04:35:17.983Z",
   "shardSize": 500,
-  "totalSkills": 481,
+  "totalSkills": 486,
   "upstreamTotal": 1713936,
   "projectedShardCount": 3439,
   "missingShardCount": 3437,
@@ -263,7 +263,7 @@
   "groups": [
     {
       "occupationId": "01",
-      "totalSkills": 478,
+      "totalSkills": 483,
       "upstreamTotal": 1280729,
       "shardSize": 500,
       "shardCount": 1,

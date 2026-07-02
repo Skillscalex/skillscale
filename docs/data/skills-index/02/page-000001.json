@@ -1,20 +1,7 @@
 {
-  "generatedAt": "2026-07-02T04:32:12.997Z",
+  "generatedAt": "2026-07-02T09:33:19.977Z",
   "occupationId": "02",
   "skills": [
-    {
-      "id": "claudepluginhub-claude-plugin-hub-marketplace",
-      "name": "ClaudePluginHub",
-      "author": "claude-plugin-hub",
-      "stars": 0,
-      "description": "Community-driven marketplace for Claude Code plugins with auto-discovery, trust signals, and themed marketplaces.",
-      "tags": [],
-      "updatedAt": "1782966676",
-      "occupationId": "02",
-      "source": "claude-plugin-hub",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
     {
       "id": "global-agents-aitmpl-docs-marketplace",
       "name": "Global Agents",
@@ -22,7 +9,7 @@
       "stars": 0,
       "description": "Create globally accessible AI agents that can be executed from any directory on your system",
       "tags": [],
-      "updatedAt": "1782966687",
+      "updatedAt": "1782984754",
       "occupationId": "02",
       "source": "aitmpl-docs-index",
       "secureScore": 91,
@@ -35,7 +22,7 @@
       "stars": 0,
       "description": "Advanced search with filters for marketplace.json, stars, and update time",
       "tags": [],
-      "updatedAt": "1782966705",
+      "updatedAt": "1782984772",
       "occupationId": "02",
       "source": "skillsmp",
       "secureScore": 91,

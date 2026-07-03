@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T19:52:41.179Z",
+  "generatedAt": "2026-07-03T04:09:35.823Z",
   "occupationId": "02",
   "skills": [
     {
@@ -9,7 +9,7 @@
       "stars": 0,
       "description": "Create globally accessible AI agents that can be executed from any directory on your system",
       "tags": [],
-      "updatedAt": "1783021916",
+      "updatedAt": "1783051728",
       "occupationId": "02",
       "source": "aitmpl-docs-index",
       "secureScore": 91,
@@ -22,9 +22,23 @@
       "stars": 0,
       "description": "Advanced search with filters for marketplace.json, stars, and update time",
       "tags": [],
-      "updatedAt": "1783021934",
+      "updatedAt": "1783051748",
       "occupationId": "02",
       "source": "skillsmp",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "github-com-cesarandreslopez-sidekick-for-claude-max",
+      "name": "Sidekick for Max",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [César Andrés López](https://github.com/cesarandreslopez) - A VS Code extension and standalone terminal dashboard that adds visibility and AI conveniences on top of your Claude Max subscription — inline completions, code transforms, AI commit messages, plus deep session observability (token-burn, a 13-week quota heatmap, multi-account management, cross-session search, and asset extraction). Mature and well-maintained (CI, published to the marketplace and npm, extensive docs).",
+      "tags": [],
+      "updatedAt": "1783051722",
+      "occupationId": "02",
+      "githubUrl": "https://github.com/cesarandreslopez/sidekick-for-claude-max",
+      "source": "awesome-claude-code",
       "secureScore": 91,
       "auditStatus": "approved"
     }

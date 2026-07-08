@@ -1,7 +1,46 @@
 {
-  "generatedAt": "2026-07-08T14:42:01.396Z",
+  "generatedAt": "2026-07-08T19:56:34.661Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-udecode-plate-agents-skills-grill-me",
+      "name": "grill-me",
+      "author": "udecode",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from udecode/plate. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plate",
+        "agents",
+        "grill"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/udecode/plate/agents-skills-grill-me",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-yipng05-max-skills-grounded-coding",
+      "name": "grounded-coding",
+      "author": "yipng05-max",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from yipng05-max/-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "grounded",
+        "coding"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/yipng05-max/-skills/grounded-coding",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-affaan-m-ecc-skills-growth-log",
       "name": "growth-log",
@@ -9793,47 +9832,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/mongodb/agent-skills/skills-mongodb-connection",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-mongodb-agent-skills-skills-mongodb-mcp-setup",
-      "name": "mongodb-mcp-setup",
-      "author": "mongodb",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from mongodb/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "mongodb",
-        "mcp",
-        "setup"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/mongodb/agent-skills/skills-mongodb-mcp-setup",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-mongodb-agent-skills-skills-mongodb-natural-language-querying",
-      "name": "mongodb-natural-language-querying",
-      "author": "mongodb",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from mongodb/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "mongodb",
-        "natural",
-        "language",
-        "querying"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/mongodb/agent-skills/skills-mongodb-natural-language-querying",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

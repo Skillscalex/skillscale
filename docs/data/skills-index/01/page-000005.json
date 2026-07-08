@@ -1,7 +1,48 @@
 {
-  "generatedAt": "2026-07-08T14:42:01.396Z",
+  "generatedAt": "2026-07-08T19:56:34.661Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-mattpocock-skills-skills-engineering-ask-matt",
+      "name": "engineering-ask-matt",
+      "author": "mattpocock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mattpocock/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engineering",
+        "ask",
+        "matt"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/mattpocock/skills/skills-engineering-ask-matt",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-ffsshhttiikk-opencode-agents-skills-engineering-civil-engineering",
+      "name": "engineering-civil-engineering",
+      "author": "ffsshhttiikk",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ffsshhttiikk/opencode-agents-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "opencode",
+        "agents",
+        "engineering",
+        "civil"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/ffsshhttiikk/opencode-agents-skills/engineering-civil-engineering",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-alirezarezvani-claude-skills-engineering-claude-coach-skills-claude-coach",
       "name": "engineering-claude-coach-skills-claude-coach",
@@ -10107,45 +10148,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/chatfire-ai/huobao-drama/skills-grid-prompt-generator",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-udecode-plate-agents-skills-grill-me",
-      "name": "grill-me",
-      "author": "udecode",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from udecode/plate. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "plate",
-        "agents",
-        "grill"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/udecode/plate/agents-skills-grill-me",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-yipng05-max-skills-grounded-coding",
-      "name": "grounded-coding",
-      "author": "yipng05-max",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from yipng05-max/-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "grounded",
-        "coding"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/yipng05-max/-skills/grounded-coding",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,48 @@
 {
-  "generatedAt": "2026-07-08T14:42:01.396Z",
+  "generatedAt": "2026-07-08T19:56:34.661Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-thedaviddias-front-end-checklist-skills-animation-performance",
+      "name": "animation-performance",
+      "author": "thedaviddias",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from thedaviddias/front-end-checklist. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "front",
+        "end",
+        "checklist",
+        "animation",
+        "performance"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/thedaviddias/front-end-checklist/skills-animation-performance",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-phaserjs-phaser-skills-animations",
+      "name": "animations",
+      "author": "phaserjs",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from phaserjs/phaser. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "phaser",
+        "animations"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/phaserjs/phaser/skills-animations",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-nailuogg-anki-mcp-server-skills-anki",
       "name": "anki",
@@ -9679,46 +9720,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/llama-farm/llamafarm/claude-skills-electron-skills",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-fastled-fastled-claude-skills-embedded-debug",
-      "name": "claude-skills-embedded-debug",
-      "author": "fastled",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from fastled/fastled. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "fastled",
-        "embedded",
-        "debug"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/fastled/fastled/claude-skills-embedded-debug",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-metabase-metabase-claude-skills-emotion-migrate",
-      "name": "claude-skills-emotion-migrate",
-      "author": "metabase",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from metabase/metabase. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "metabase",
-        "emotion",
-        "migrate"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/metabase/metabase/claude-skills-emotion-migrate",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

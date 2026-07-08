@@ -1,7 +1,44 @@
 {
-  "generatedAt": "2026-07-08T14:42:01.396Z",
+  "generatedAt": "2026-07-08T19:56:34.661Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-wordpress-agent-skills-skills-wp-interactivity-api",
+      "name": "wp-interactivity-api",
+      "author": "wordpress",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "interactivity",
+        "api"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-interactivity-api",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wordpress-agent-skills-skills-wp-performance",
+      "name": "wp-performance",
+      "author": "wordpress",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "performance"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-performance",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-elvismdev-claude-wordpress-skills-skills-wp-performance-review",
       "name": "wp-performance-review",

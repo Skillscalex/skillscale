@@ -1,7 +1,52 @@
 {
-  "generatedAt": "2026-07-08T14:42:01.396Z",
+  "generatedAt": "2026-07-08T19:56:34.661Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-wix-react-native-navigation-cursor-skills-ios26-navigation",
+      "name": "cursor-skills-ios26-navigation",
+      "author": "wix",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wix/react-native-navigation. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "react",
+        "native",
+        "navigation",
+        "cursor",
+        "ios26"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wix/react-native-navigation/cursor-skills-ios26-navigation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-programmeranthony-expert-coding-harness-cursor-skills-llm-wiki-interview",
+      "name": "cursor-skills-llm-wiki-interview",
+      "author": "programmeranthony",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from programmeranthony/expert-coding-harness. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "expert",
+        "coding",
+        "harness",
+        "cursor",
+        "llm",
+        "wiki"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/programmeranthony/expert-coding-harness/cursor-skills-llm-wiki-interview",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-affaan-m-ecc-cursor-skills-mcp-server-patterns",
       "name": "cursor-skills-mcp-server-patterns",
@@ -10176,47 +10221,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/engineering-agenthub-skills-eval",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-mattpocock-skills-skills-engineering-ask-matt",
-      "name": "engineering-ask-matt",
-      "author": "mattpocock",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from mattpocock/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "engineering",
-        "ask",
-        "matt"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/mattpocock/skills/skills-engineering-ask-matt",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-ffsshhttiikk-opencode-agents-skills-engineering-civil-engineering",
-      "name": "engineering-civil-engineering",
-      "author": "ffsshhttiikk",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from ffsshhttiikk/opencode-agents-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "opencode",
-        "agents",
-        "engineering",
-        "civil"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/ffsshhttiikk/opencode-agents-skills/engineering-civil-engineering",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

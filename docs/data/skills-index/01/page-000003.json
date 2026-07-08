@@ -1,7 +1,47 @@
 {
-  "generatedAt": "2026-07-08T14:42:01.396Z",
+  "generatedAt": "2026-07-08T19:56:34.661Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-fastled-fastled-claude-skills-embedded-debug",
+      "name": "claude-skills-embedded-debug",
+      "author": "fastled",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from fastled/fastled. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "fastled",
+        "embedded",
+        "debug"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/fastled/fastled/claude-skills-embedded-debug",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-metabase-metabase-claude-skills-emotion-migrate",
+      "name": "claude-skills-emotion-migrate",
+      "author": "metabase",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from metabase/metabase. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "metabase",
+        "emotion",
+        "migrate"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/metabase/metabase/claude-skills-emotion-migrate",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-vamseeachanta-digitalmodel-claude-skills-engineering-cad-agents-cad-engineering-specialist",
       "name": "claude-skills-engineering-cad-agents-cad-engineering-specialist",
@@ -9954,51 +9994,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/pbakaus/impeccable/cursor-skills-impeccable",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wix-react-native-navigation-cursor-skills-ios26-navigation",
-      "name": "cursor-skills-ios26-navigation",
-      "author": "wix",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wix/react-native-navigation. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "react",
-        "native",
-        "navigation",
-        "cursor",
-        "ios26"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wix/react-native-navigation/cursor-skills-ios26-navigation",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-programmeranthony-expert-coding-harness-cursor-skills-llm-wiki-interview",
-      "name": "cursor-skills-llm-wiki-interview",
-      "author": "programmeranthony",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from programmeranthony/expert-coding-harness. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "expert",
-        "coding",
-        "harness",
-        "cursor",
-        "llm",
-        "wiki"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/programmeranthony/expert-coding-harness/cursor-skills-llm-wiki-interview",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

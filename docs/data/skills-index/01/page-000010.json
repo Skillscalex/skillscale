@@ -1,7 +1,48 @@
 {
-  "generatedAt": "2026-07-08T14:42:01.396Z",
+  "generatedAt": "2026-07-08T19:56:34.661Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-itgoyo-hermes-skills-specialized-specialized-civil-engineer",
+      "name": "specialized-specialized-civil-engineer",
+      "author": "itgoyo",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from itgoyo/hermes-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "specialized",
+        "civil",
+        "engineer"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/itgoyo/hermes-skills/specialized-specialized-civil-engineer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-brave-brave-search-skills-skills-spellcheck",
+      "name": "spellcheck",
+      "author": "brave",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from brave/brave-search-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "brave",
+        "search",
+        "spellcheck"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/brave/brave-search-skills/skills-spellcheck",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-aklofas-kicad-happy-skills-spice",
       "name": "spice",
@@ -9989,43 +10030,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-block-themes",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wordpress-agent-skills-skills-wp-interactivity-api",
-      "name": "wp-interactivity-api",
-      "author": "wordpress",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "interactivity",
-        "api"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-interactivity-api",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wordpress-agent-skills-skills-wp-performance",
-      "name": "wp-performance",
-      "author": "wordpress",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "performance"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-performance",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

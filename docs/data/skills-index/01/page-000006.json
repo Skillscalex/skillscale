@@ -1,7 +1,276 @@
 {
-  "generatedAt": "2026-07-08T09:57:11.035Z",
+  "generatedAt": "2026-07-08T14:42:01.396Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-growth-log",
+      "name": "growth-log",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "growth",
+        "log"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-growth-log",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-greensock-gsap-skills-skills-gsap-core",
+      "name": "gsap-core",
+      "author": "greensock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gsap",
+        "core"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-core",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-greensock-gsap-skills-skills-gsap-frameworks",
+      "name": "gsap-frameworks",
+      "author": "greensock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gsap",
+        "frameworks"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-frameworks",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-greensock-gsap-skills-skills-gsap-performance",
+      "name": "gsap-performance",
+      "author": "greensock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gsap",
+        "performance"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-performance",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-greensock-gsap-skills-skills-gsap-plugins",
+      "name": "gsap-plugins",
+      "author": "greensock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gsap",
+        "plugins"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-plugins",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-greensock-gsap-skills-skills-gsap-react",
+      "name": "gsap-react",
+      "author": "greensock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gsap",
+        "react"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-react",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-greensock-gsap-skills-skills-gsap-scrolltrigger",
+      "name": "gsap-scrolltrigger",
+      "author": "greensock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gsap",
+        "scrolltrigger"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-scrolltrigger",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-greensock-gsap-skills-skills-gsap-timeline",
+      "name": "gsap-timeline",
+      "author": "greensock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gsap",
+        "timeline"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-timeline",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-greensock-gsap-skills-skills-gsap-utils",
+      "name": "gsap-utils",
+      "author": "greensock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gsap",
+        "utils"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-utils",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-open-gsd-gsd-core-skills-gsd-sketch",
+      "name": "gsd-sketch",
+      "author": "open-gsd",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from open-gsd/gsd-core. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gsd",
+        "core",
+        "sketch"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/open-gsd/gsd-core/skills-gsd-sketch",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "github-com-garrytan-gstack",
+      "name": "gstack",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [Garry Tan](https://github.com/garrytan) - Garry Tan's (Y Combinator) Claude Code setup and \"open source software factory\" for managing the development lifecycle end-to-end. Includes a set of agents and in-depth skills/tools along with workflows for advancing a product from ideation to production.",
+      "tags": [],
+      "updatedAt": "1783500266",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/garrytan/gstack",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "skillsmp-garrytan-gstack-gstack-upgrade",
+      "name": "gstack-upgrade",
+      "author": "garrytan",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from garrytan/gstack. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gstack",
+        "upgrade"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/garrytan/gstack/gstack-upgrade",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-github-awesome-copilot-skills-gtm-0-to-1-launch",
+      "name": "gtm-0-to-1-launch",
+      "author": "github",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "copilot",
+        "gtm",
+        "launch"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-gtm-0-to-1-launch",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-github-awesome-copilot-skills-gtm-enterprise-account-planning",
+      "name": "gtm-enterprise-account-planning",
+      "author": "github",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "copilot",
+        "gtm",
+        "enterprise",
+        "account",
+        "planning"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-gtm-enterprise-account-planning",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-github-awesome-copilot-skills-gtm-operating-cadence",
       "name": "gtm-operating-cadence",
@@ -9565,276 +9834,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/mongodb/agent-skills/skills-mongodb-natural-language-querying",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-mongodb-agent-skills-skills-mongodb-query-optimizer",
-      "name": "mongodb-query-optimizer",
-      "author": "mongodb",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from mongodb/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "mongodb",
-        "query",
-        "optimizer"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/mongodb/agent-skills/skills-mongodb-query-optimizer",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-mongodb-agent-skills-skills-mongodb-search-and-ai",
-      "name": "mongodb-search-and-ai",
-      "author": "mongodb",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from mongodb/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "mongodb",
-        "search",
-        "and"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/mongodb/agent-skills/skills-mongodb-search-and-ai",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-dingtalk-real-ai-dingtalk-workspace-cli-skills-mono",
-      "name": "mono",
-      "author": "dingtalk-real-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from dingtalk-real-ai/dingtalk-workspace-cli. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "dingtalk",
-        "workspace",
-        "cli",
-        "mono"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/dingtalk-real-ai/dingtalk-workspace-cli/skills-mono",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-loro-dev-loro-skills-moonbit",
-      "name": "moonbit",
-      "author": "loro-dev",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from loro-dev/loro. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "loro",
-        "moonbit"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/loro-dev/loro/skills-moonbit",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-affaan-m-ecc-skills-motion-advanced",
-      "name": "motion-advanced",
-      "author": "affaan-m",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "ecc",
-        "motion",
-        "advanced"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-motion-advanced",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-affaan-m-ecc-skills-motion-foundations",
-      "name": "motion-foundations",
-      "author": "affaan-m",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "ecc",
-        "motion",
-        "foundations"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-motion-foundations",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-heygen-com-hyperframes-skills-motion-graphics",
-      "name": "motion-graphics",
-      "author": "heygen-com",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from heygen-com/hyperframes. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "hyperframes",
-        "motion",
-        "graphics"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/heygen-com/hyperframes/skills-motion-graphics",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "github-com-iart-ai-motion-skills",
-      "name": "motion-skills",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [iart.ai](https://github.com/iart-ai) - An open-source collection of ~50 motion-graphics, animation, and video skills across 14 installable packs — kinetic typography, data-driven charts, explainers, TikTok/Reels, web/WebGL animation, and Manim math animation — that teach an agent how a professional would build each piece. Every visual skill ships a deliver-and-verify loop (render a frame → screenshot → check) plus a small verify toolkit, so the agent inspects its own output instead of guessing at timing and framing.",
-      "tags": [],
-      "updatedAt": "1783500265",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/iart-ai/motion-skills",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-omer-metin-skills-for-antigravity-skills-motor-control",
-      "name": "motor-control",
-      "author": "omer-metin",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from omer-metin/skills-for-antigravity. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "for",
-        "antigravity",
-        "motor",
-        "control"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/omer-metin/skills-for-antigravity/skills-motor-control",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-jxxghp-moviepilot-skills-moviepilot-cli",
-      "name": "moviepilot-cli",
-      "author": "jxxghp",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from jxxghp/moviepilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "moviepilot",
-        "cli"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/jxxghp/moviepilot/skills-moviepilot-cli",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-terminalskills-skills-skills-ms-access",
-      "name": "ms-access",
-      "author": "terminalskills",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from terminalskills/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "access"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/terminalskills/skills/skills-ms-access",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "github-com-disler-claude-code-hooks-multi-agent-observability",
-      "name": "Multi-Agent Observability",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [disler](https://github.com/disler) - A real-time dashboard that captures Claude Code hook events across concurrent agents — tracing every tool call, task handoff, and lifecycle event through a Bun/SQLite/WebSocket/Vue stack, with session tracking and live filtering.",
-      "tags": [],
-      "updatedAt": "1783500267",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/disler/claude-code-hooks-multi-agent-observability",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-dingtalk-real-ai-dingtalk-workspace-cli-skills-multi-dingtalk-aitable",
-      "name": "multi-dingtalk-aitable",
-      "author": "dingtalk-real-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from dingtalk-real-ai/dingtalk-workspace-cli. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "dingtalk",
-        "workspace",
-        "cli",
-        "multi",
-        "aitable"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/dingtalk-real-ai/dingtalk-workspace-cli/skills-multi-dingtalk-aitable",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-dingtalk-real-ai-dingtalk-workspace-cli-skills-multi-dingtalk-chat",
-      "name": "multi-dingtalk-chat",
-      "author": "dingtalk-real-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from dingtalk-real-ai/dingtalk-workspace-cli. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "dingtalk",
-        "workspace",
-        "cli",
-        "multi",
-        "chat"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/dingtalk-real-ai/dingtalk-workspace-cli/skills-multi-dingtalk-chat",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,296 @@
 {
-  "generatedAt": "2026-07-08T09:57:11.035Z",
+  "generatedAt": "2026-07-08T14:42:01.396Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-aklofas-kicad-happy-skills-spice",
+      "name": "spice",
+      "author": "aklofas",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from aklofas/kicad-happy. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "kicad",
+        "happy",
+        "spice"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/aklofas/kicad-happy/skills-spice",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-composiohq-awesome-codex-skills-spreadsheet-formula-helper",
+      "name": "spreadsheet-formula-helper",
+      "author": "composiohq",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from composiohq/awesome-codex-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "codex",
+        "spreadsheet",
+        "formula",
+        "helper"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/composiohq/awesome-codex-skills/spreadsheet-formula-helper",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alibaba-spring-ai-alibaba-spring-ai-alibaba-agent-framework-src-test-resources-skills-pdf-extractor",
+      "name": "spring-ai-alibaba-agent-framework-src-test-resources-skills-pdf-extractor",
+      "author": "alibaba",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alibaba/spring-ai-alibaba. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "spring",
+        "alibaba",
+        "framework",
+        "src"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alibaba/spring-ai-alibaba/spring-ai-alibaba-agent-framework-src-test-resources-skills-pdf-extractor",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alibaba-spring-ai-alibaba-spring-ai-alibaba-agent-framework-src-test-resources-skills-product-selection",
+      "name": "spring-ai-alibaba-agent-framework-src-test-resources-skills-product-selection",
+      "author": "alibaba",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alibaba/spring-ai-alibaba. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "spring",
+        "alibaba",
+        "framework",
+        "src"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alibaba/spring-ai-alibaba/spring-ai-alibaba-agent-framework-src-test-resources-skills-product-selection",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alibaba-spring-ai-alibaba-spring-ai-alibaba-graph-core-src-test-resources-skills-sample-skill",
+      "name": "spring-ai-alibaba-graph-core-src-test-resources-skills-sample",
+      "author": "alibaba",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alibaba/spring-ai-alibaba. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "spring",
+        "alibaba",
+        "graph",
+        "core"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alibaba/spring-ai-alibaba/spring-ai-alibaba-graph-core-src-test-resources-skills-sample-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-eugenp-tutorials-spring-ai-modules-spring-ai-agent-skills-openai-skills-article-summarizer",
+      "name": "spring-ai-modules-spring-ai-agent-skills-openai-skills-article-summarizer",
+      "author": "eugenp",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from eugenp/tutorials. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "tutorials",
+        "spring",
+        "modules",
+        "openai"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/eugenp/tutorials/spring-ai-modules-spring-ai-agent-skills-openai-skills-article-summarizer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-jeffallan-claude-skills-skills-spring-boot-engineer",
+      "name": "spring-boot-engineer",
+      "author": "jeffallan",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from jeffallan/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "spring",
+        "boot",
+        "engineer"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/jeffallan/claude-skills/skills-spring-boot-engineer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-github-awesome-copilot-skills-spring-boot-testing",
+      "name": "spring-boot-testing",
+      "author": "github",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "copilot",
+        "spring",
+        "boot",
+        "testing"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-spring-boot-testing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-springboot-patterns",
+      "name": "springboot-patterns",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "springboot",
+        "patterns"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-springboot-patterns",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-springboot-tdd",
+      "name": "springboot-tdd",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "springboot",
+        "tdd"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-springboot-tdd",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-springboot-verification",
+      "name": "springboot-verification",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "springboot",
+        "verification"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-springboot-verification",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-exekiel179-spss-mcp-skills-spss-analyst",
+      "name": "spss-analyst",
+      "author": "exekiel179",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from exekiel179/spss-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "spss",
+        "mcp",
+        "analyst"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/exekiel179/spss-mcp/skills-spss-analyst",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-github-awesome-copilot-skills-sql-code-review",
+      "name": "sql-code-review",
+      "author": "github",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "copilot",
+        "sql",
+        "code",
+        "review"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-sql-code-review",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mizchi-skills-sql-lint",
+      "name": "sql-lint",
+      "author": "mizchi",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mizchi/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "sql",
+        "lint"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/mizchi/skills/sql-lint",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-github-awesome-copilot-skills-sql-optimization",
       "name": "sql-optimization",
@@ -9737,273 +10026,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-performance",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-elvismdev-claude-wordpress-skills-skills-wp-performance-review",
-      "name": "wp-performance-review",
-      "author": "elvismdev",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from elvismdev/claude-wordpress-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "wordpress",
-        "performance",
-        "review"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/elvismdev/claude-wordpress-skills/skills-wp-performance-review",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wordpress-agent-skills-skills-wp-phpstan",
-      "name": "wp-phpstan",
-      "author": "wordpress",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "phpstan"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-phpstan",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wordpress-agent-skills-skills-wp-playground",
-      "name": "wp-playground",
-      "author": "wordpress",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "playground"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-playground",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wordpress-agent-skills-skills-wp-plugin-development",
-      "name": "wp-plugin-development",
-      "author": "wordpress",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "plugin",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-plugin-development",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wordpress-agent-skills-skills-wp-project-triage",
-      "name": "wp-project-triage",
-      "author": "wordpress",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "project",
-        "triage"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-project-triage",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wordpress-agent-skills-skills-wp-rest-api",
-      "name": "wp-rest-api",
-      "author": "wordpress",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "rest",
-        "api"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-rest-api",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wordpress-agent-skills-skills-wp-wpcli-and-ops",
-      "name": "wp-wpcli-and-ops",
-      "author": "wordpress",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "wpcli",
-        "and",
-        "ops"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-wpcli-and-ops",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wordpress-agent-skills-skills-wpds",
-      "name": "wpds",
-      "author": "wordpress",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "wpds"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wpds",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-bwkyd-wps-skills-skills-wps-cn-calendar",
-      "name": "wps-cn-calendar",
-      "author": "bwkyd",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from bwkyd/wps-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "wps",
-        "calendar"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/bwkyd/wps-skills/skills-wps-cn-calendar",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-bwkyd-wps-skills-skills-wps-courseware",
-      "name": "wps-courseware",
-      "author": "bwkyd",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from bwkyd/wps-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "wps",
-        "courseware"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/bwkyd/wps-skills/skills-wps-courseware",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-lc2panda-wps-skills-skills-wps-excel",
-      "name": "wps-excel",
-      "author": "lc2panda",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from lc2panda/wps-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "wps",
-        "excel"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/lc2panda/wps-skills/skills-wps-excel",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-lc2panda-wps-skills-skills-wps-office",
-      "name": "wps-office",
-      "author": "lc2panda",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from lc2panda/wps-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "wps",
-        "office"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/lc2panda/wps-skills/skills-wps-office",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-helloeveryboby-butler-skills-wps-office-expert",
-      "name": "wps-office-expert",
-      "author": "helloeveryboby",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from helloeveryboby/butler. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "butler",
-        "wps",
-        "office",
-        "expert"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/helloeveryboby/butler/skills-wps-office-expert",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-bwkyd-wps-skills-skills-wps-resume-cn",
-      "name": "wps-resume-cn",
-      "author": "bwkyd",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from bwkyd/wps-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "wps",
-        "resume"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/bwkyd/wps-skills/skills-wps-resume-cn",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

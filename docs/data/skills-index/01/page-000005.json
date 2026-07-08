@@ -1,7 +1,293 @@
 {
-  "generatedAt": "2026-07-08T09:57:11.035Z",
+  "generatedAt": "2026-07-08T14:42:01.396Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-alirezarezvani-claude-skills-engineering-claude-coach-skills-claude-coach",
+      "name": "engineering-claude-coach-skills-claude-coach",
+      "author": "alirezarezvani",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alirezarezvani/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engineering",
+        "coach"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/engineering-claude-coach-skills-claude-coach",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mattpocock-skills-skills-engineering-diagnosing-bugs",
+      "name": "engineering-diagnosing-bugs",
+      "author": "mattpocock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mattpocock/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engineering",
+        "diagnosing",
+        "bugs"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/mattpocock/skills/skills-engineering-diagnosing-bugs",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mattpocock-skills-skills-engineering-domain-modeling",
+      "name": "engineering-domain-modeling",
+      "author": "mattpocock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mattpocock/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engineering",
+        "domain",
+        "modeling"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/mattpocock/skills/skills-engineering-domain-modeling",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alirezarezvani-claude-skills-engineering-grill-me-skills-grill-me",
+      "name": "engineering-grill-me-skills-grill-me",
+      "author": "alirezarezvani",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alirezarezvani/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engineering",
+        "grill"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/engineering-grill-me-skills-grill-me",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mattpocock-skills-skills-engineering-grill-with-docs",
+      "name": "engineering-grill-with-docs",
+      "author": "mattpocock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mattpocock/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engineering",
+        "grill",
+        "with",
+        "docs"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/mattpocock/skills/skills-engineering-grill-with-docs",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alirezarezvani-claude-skills-engineering-grill-with-docs-skills-grill-with-docs",
+      "name": "engineering-grill-with-docs-skills-grill-with-docs",
+      "author": "alirezarezvani",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alirezarezvani/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engineering",
+        "grill",
+        "with",
+        "docs"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/engineering-grill-with-docs-skills-grill-with-docs",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mattpocock-skills-skills-engineering-improve-codebase-architecture",
+      "name": "engineering-improve-codebase-architecture",
+      "author": "mattpocock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mattpocock/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engineering",
+        "improve",
+        "codebase",
+        "architecture"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/mattpocock/skills/skills-engineering-improve-codebase-architecture",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alirezarezvani-claude-skills-engineering-karpathy-coder-skills-karpathy-coder",
+      "name": "engineering-karpathy-coder-skills-karpathy-coder",
+      "author": "alirezarezvani",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alirezarezvani/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engineering",
+        "karpathy",
+        "coder"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/engineering-karpathy-coder-skills-karpathy-coder",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alirezarezvani-claude-skills-engineering-llm-wiki-skills-llm-wiki",
+      "name": "engineering-llm-wiki-skills-llm-wiki",
+      "author": "alirezarezvani",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alirezarezvani/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engineering",
+        "llm",
+        "wiki"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/engineering-llm-wiki-skills-llm-wiki",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mattpocock-skills-skills-engineering-prototype",
+      "name": "engineering-prototype",
+      "author": "mattpocock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mattpocock/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engineering",
+        "prototype"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/mattpocock/skills/skills-engineering-prototype",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-thananon-9arm-skills-skills-engineering-scrutinize",
+      "name": "engineering-scrutinize",
+      "author": "thananon",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from thananon/9arm-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "9arm",
+        "engineering",
+        "scrutinize"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/thananon/9arm-skills/skills-engineering-scrutinize",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mattpocock-skills-skills-engineering-setup-matt-pocock-skills",
+      "name": "engineering-setup-matt-pocock-skills",
+      "author": "mattpocock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mattpocock/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engineering",
+        "setup",
+        "matt",
+        "pocock"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/mattpocock/skills/skills-engineering-setup-matt-pocock-skills",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-anthropics-knowledge-work-plugins-engineering-skills-architecture",
+      "name": "engineering-skills-architecture",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "knowledge",
+        "work",
+        "plugins",
+        "engineering",
+        "architecture"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/engineering-skills-architecture",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-anthropics-knowledge-work-plugins-engineering-skills-code-review",
+      "name": "engineering-skills-code-review",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "knowledge",
+        "work",
+        "plugins",
+        "engineering",
+        "code",
+        "review"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/engineering-skills-code-review",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-anthropics-knowledge-work-plugins-engineering-skills-documentation",
       "name": "engineering-skills-documentation",
@@ -9860,275 +10146,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/yipng05-max/-skills/grounded-coding",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-affaan-m-ecc-skills-growth-log",
-      "name": "growth-log",
-      "author": "affaan-m",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "ecc",
-        "growth",
-        "log"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-growth-log",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-greensock-gsap-skills-skills-gsap-core",
-      "name": "gsap-core",
-      "author": "greensock",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gsap",
-        "core"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-core",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-greensock-gsap-skills-skills-gsap-frameworks",
-      "name": "gsap-frameworks",
-      "author": "greensock",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gsap",
-        "frameworks"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-frameworks",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-greensock-gsap-skills-skills-gsap-performance",
-      "name": "gsap-performance",
-      "author": "greensock",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gsap",
-        "performance"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-performance",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-greensock-gsap-skills-skills-gsap-plugins",
-      "name": "gsap-plugins",
-      "author": "greensock",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gsap",
-        "plugins"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-plugins",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-greensock-gsap-skills-skills-gsap-react",
-      "name": "gsap-react",
-      "author": "greensock",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gsap",
-        "react"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-react",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-greensock-gsap-skills-skills-gsap-scrolltrigger",
-      "name": "gsap-scrolltrigger",
-      "author": "greensock",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gsap",
-        "scrolltrigger"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-scrolltrigger",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-greensock-gsap-skills-skills-gsap-timeline",
-      "name": "gsap-timeline",
-      "author": "greensock",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gsap",
-        "timeline"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-timeline",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-greensock-gsap-skills-skills-gsap-utils",
-      "name": "gsap-utils",
-      "author": "greensock",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from greensock/gsap-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gsap",
-        "utils"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/greensock/gsap-skills/skills-gsap-utils",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-open-gsd-gsd-core-skills-gsd-sketch",
-      "name": "gsd-sketch",
-      "author": "open-gsd",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from open-gsd/gsd-core. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gsd",
-        "core",
-        "sketch"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/open-gsd/gsd-core/skills-gsd-sketch",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "github-com-garrytan-gstack",
-      "name": "gstack",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [Garry Tan](https://github.com/garrytan) - Garry Tan's (Y Combinator) Claude Code setup and \"open source software factory\" for managing the development lifecycle end-to-end. Includes a set of agents and in-depth skills/tools along with workflows for advancing a product from ideation to production.",
-      "tags": [],
-      "updatedAt": "1783500266",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/garrytan/gstack",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-garrytan-gstack-gstack-upgrade",
-      "name": "gstack-upgrade",
-      "author": "garrytan",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from garrytan/gstack. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gstack",
-        "upgrade"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/garrytan/gstack/gstack-upgrade",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-github-awesome-copilot-skills-gtm-0-to-1-launch",
-      "name": "gtm-0-to-1-launch",
-      "author": "github",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "awesome",
-        "copilot",
-        "gtm",
-        "launch"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-gtm-0-to-1-launch",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-github-awesome-copilot-skills-gtm-enterprise-account-planning",
-      "name": "gtm-enterprise-account-planning",
-      "author": "github",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "awesome",
-        "copilot",
-        "gtm",
-        "enterprise",
-        "account",
-        "planning"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-gtm-enterprise-account-planning",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

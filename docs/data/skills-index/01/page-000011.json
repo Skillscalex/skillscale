@@ -1,7 +1,274 @@
 {
-  "generatedAt": "2026-07-08T09:57:11.035Z",
+  "generatedAt": "2026-07-08T14:42:01.396Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-elvismdev-claude-wordpress-skills-skills-wp-performance-review",
+      "name": "wp-performance-review",
+      "author": "elvismdev",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from elvismdev/claude-wordpress-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "wordpress",
+        "performance",
+        "review"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/elvismdev/claude-wordpress-skills/skills-wp-performance-review",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wordpress-agent-skills-skills-wp-phpstan",
+      "name": "wp-phpstan",
+      "author": "wordpress",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "phpstan"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-phpstan",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wordpress-agent-skills-skills-wp-playground",
+      "name": "wp-playground",
+      "author": "wordpress",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "playground"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-playground",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wordpress-agent-skills-skills-wp-plugin-development",
+      "name": "wp-plugin-development",
+      "author": "wordpress",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugin",
+        "development"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-plugin-development",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wordpress-agent-skills-skills-wp-project-triage",
+      "name": "wp-project-triage",
+      "author": "wordpress",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "project",
+        "triage"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-project-triage",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wordpress-agent-skills-skills-wp-rest-api",
+      "name": "wp-rest-api",
+      "author": "wordpress",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "rest",
+        "api"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-rest-api",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wordpress-agent-skills-skills-wp-wpcli-and-ops",
+      "name": "wp-wpcli-and-ops",
+      "author": "wordpress",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "wpcli",
+        "and",
+        "ops"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-wpcli-and-ops",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wordpress-agent-skills-skills-wpds",
+      "name": "wpds",
+      "author": "wordpress",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "wpds"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wpds",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bwkyd-wps-skills-skills-wps-cn-calendar",
+      "name": "wps-cn-calendar",
+      "author": "bwkyd",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bwkyd/wps-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "wps",
+        "calendar"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/bwkyd/wps-skills/skills-wps-cn-calendar",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bwkyd-wps-skills-skills-wps-courseware",
+      "name": "wps-courseware",
+      "author": "bwkyd",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bwkyd/wps-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "wps",
+        "courseware"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/bwkyd/wps-skills/skills-wps-courseware",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-lc2panda-wps-skills-skills-wps-excel",
+      "name": "wps-excel",
+      "author": "lc2panda",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lc2panda/wps-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "wps",
+        "excel"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/lc2panda/wps-skills/skills-wps-excel",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-lc2panda-wps-skills-skills-wps-office",
+      "name": "wps-office",
+      "author": "lc2panda",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lc2panda/wps-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "wps",
+        "office"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/lc2panda/wps-skills/skills-wps-office",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-helloeveryboby-butler-skills-wps-office-expert",
+      "name": "wps-office-expert",
+      "author": "helloeveryboby",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from helloeveryboby/butler. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "butler",
+        "wps",
+        "office",
+        "expert"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/helloeveryboby/butler/skills-wps-office-expert",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bwkyd-wps-skills-skills-wps-resume-cn",
+      "name": "wps-resume-cn",
+      "author": "bwkyd",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bwkyd/wps-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "wps",
+        "resume"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/bwkyd/wps-skills/skills-wps-resume-cn",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-bwkyd-wps-skills-skills-wps-thesis",
       "name": "wps-thesis",

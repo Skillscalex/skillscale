@@ -121,13 +121,18 @@ async function fetchSupabaseMirrorCounts() {
   };
 }
 
-async function fetchSupabaseMirrorSkills(occupationId, page, pageSize) {
+async function fetchSupabaseMirrorSkills(occupationId, page, pageSize, searchQ = '') {
   const config = await loadMirrorConfig();
   if (!config) return null;
   const offset = (Math.max(1, page) - 1) * pageSize;
   const url = new URL(`${config.supabaseUrl.replace(/\/$/, '')}/rest/v1/public_skillsmp_skills`);
   url.searchParams.set('select', 'id,name,author,stars,description,tags,categories,source_updated_at,last_seen_at,primary_occupation_id,github_url,skillsmp_url');
-  url.searchParams.set('primary_occupation_id', `eq.${occupationId}`);
+  if (searchQ.trim()) {
+    const q = searchQ.trim().replace(/[,%]/g, ' ');
+    url.searchParams.set('or', `(name.ilike.*${q}*,description.ilike.*${q}*,author.ilike.*${q}*)`);
+  } else {
+    url.searchParams.set('primary_occupation_id', `eq.${occupationId}`);
+  }
   url.searchParams.set('order', 'stars.desc.nullslast');
   url.searchParams.set('limit', String(pageSize));
   url.searchParams.set('offset', String(offset));
@@ -177,6 +182,7 @@ function normalizeCatalogSkill(skill) {
     updatedAt,
     occupationId: String(skill?.occupationId || '01'),
     githubUrl: skill?.githubUrl ? String(skill.githubUrl) : undefined,
+    skillsmpUrl: skill?.skillsmpUrl ? String(skill.skillsmpUrl) : undefined,
     source: skill?.source ? String(skill.source) : 'skillscale',
     secureScore: Number.isFinite(Number(skill?.secureScore)) ? Number(skill.secureScore) : 91,
     auditStatus: skill?.auditStatus || 'approved',
@@ -284,7 +290,7 @@ function useOccupationCounts() {
   return state;
 }
 
-function useOccupationShard(occupationId, page, pageSize) {
+function useOccupationShard(occupationId, page, pageSize, searchQ = '') {
   const [state, setState] = useState({ status:'idle', skills:[], manifest:null, rootManifest:null, shardIndex:0, shardSize:500, error:null });
 
   useEffect(() => {
@@ -293,7 +299,7 @@ function useOccupationShard(occupationId, page, pageSize) {
     async function loadShard() {
       setState(prev => ({ ...prev, status:'loading', error:null }));
       try {
-        const mirrorPage = await fetchSupabaseMirrorSkills(occupationId, page, pageSize);
+        const mirrorPage = await fetchSupabaseMirrorSkills(occupationId, page, pageSize, searchQ);
         if (mirrorPage) {
           const manifest = {
             occupationId,
@@ -332,7 +338,7 @@ function useOccupationShard(occupationId, page, pageSize) {
 
     loadShard();
     return () => { alive = false; };
-  }, [occupationId, page, pageSize]);
+  }, [occupationId, page, pageSize, searchQ]);
 
   return state;
 }
@@ -1155,20 +1161,24 @@ function SkillsPane({ occupation, occupationStats, searchQ, onSelect, catalogSki
   const state = catalogState || { status:'loading', skills:[], meta:null, lastLoadedAt:null, error:null };
   const upstreamCount = Number(occupationStats?.rawCount || 0);
   const localMirrorCount = Number.isFinite(Number(occupationStats?.localCount)) ? Number(occupationStats.localCount) : 0;
-  const requestedTotal = searchQ.trim() ? 0 : Math.max(localMirrorCount, 0);
+  const requestedTotal = Math.max(localMirrorCount, 0);
   const totalPages = Math.max(1, Math.ceil((requestedTotal || 1) / LIMIT));
   const currentPage = searchQ.trim() ? page : Math.min(page, totalPages);
-  const shardState = useOccupationShard(occupation, currentPage, LIMIT);
+  const shardState = useOccupationShard(occupation, currentPage, LIMIT, searchQ);
   const shardSkills = shardState?.skills || [];
   const mergedSkills = useMemo(() => mergeSkills(shardSkills, catalogSkills, STATIC_SKILLS), [shardSkills, catalogSkills]);
   const filteredSkills = useMemo(() => filterCatalogSkills(mergedSkills, occupation, searchQ), [mergedSkills, occupation, searchQ]);
-  const localTotal = searchQ.trim() ? filteredSkills.length : (shardState?.manifest?.totalSkills ?? localMirrorCount ?? filteredSkills.length);
+  const localTotal = searchQ.trim()
+    ? (shardState?.manifest?.totalSkills ?? filteredSkills.length)
+    : (shardState?.manifest?.totalSkills ?? localMirrorCount ?? filteredSkills.length);
   const pageStart = (currentPage - 1) * LIMIT;
   const shardStart = (shardState?.shardIndex || 0) * (shardState?.shardSize || 500);
   const shardOffset = Math.max(0, pageStart - shardStart);
-  const visibleSkills = searchQ.trim()
-    ? filteredSkills.slice((currentPage - 1) * LIMIT, currentPage * LIMIT)
-    : shardState?.manifest
+  const visibleSkills = searchQ.trim() && shardState?.manifest
+    ? shardSkills
+    : searchQ.trim()
+      ? filteredSkills.slice((currentPage - 1) * LIMIT, currentPage * LIMIT)
+      : shardState?.manifest
       ? shardSkills.slice(shardOffset, shardOffset + LIMIT)
       : filteredSkills.slice((currentPage - 1) * LIMIT, currentPage * LIMIT);
   const displayTotalPages = Math.max(1, Math.ceil((searchQ.trim() ? filteredSkills.length : localTotal || filteredSkills.length) / LIMIT));

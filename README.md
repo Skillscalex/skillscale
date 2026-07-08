@@ -1,185 +1,163 @@
-# Skillscale — AI Skills Marketplace
+# Skillscale
 
-1
-The marketplace for Claude Code plugins. Discover, buy, sell, and mint AI skills — tiered by gems, audited by AI agents, with Polymarket-style live trading.
+Skillscale is an AI skills marketplace, catalog, and agent workspace. The repo contains a Next.js app, a static GitHub Pages export in `docs/`, Supabase schemas for auth and permanent storage, ingestion tooling for mirrored skill catalogs, and a lightweight WebSocket agent server for Studio.
+
+## Current Product Surfaces
+
+| Surface | Path | Purpose |
+|---|---|---|
+| Home | `/` and `docs/index.html` | Brand entry point for Skillscale |
+| Skills | `/marketplace`, `/skill/[id]`, `docs/skills.html` | Browse audited skills by occupation, inspect cards, read `SKILL.md`, and save skills |
+| Market | `docs/market.html` | Marketplace-style skill discovery and publishing flow |
+| Vault | `/vault`, `docs/vault.html` | Private dreamed/owned skill storage with local fallback and Supabase sync |
+| Studio | `/studio`, `docs/studio.html` | Agent workspace for chat, streaming responses, and live agent handoff |
+| Hubs, Loops, MCPs, Community | `docs/*.html` | Static ecosystem pages for workflows, integrations, and community context |
+| Auth/Safety | `docs/auth.html`, `docs/auth-setup.md` | Supabase login setup and safety notes |
+
+The GitHub Pages version is designed to work without a server. When public Supabase config is present, it upgrades to authenticated Vault sync and full SkillsMP mirror reads. Without config, it falls back to committed JSON shards and browser `localStorage`.
 
 ## Stack
 
-- **Next.js 15** (App Router, TypeScript)
-- **Tailwind CSS** — dark Polymarket × App Store design system
-- **Supabase** — Postgres, Auth, Realtime (live order book)
-- **Stripe** — fiat payments (card, PayPal, multi-currency)
-- **wagmi + viem** — crypto wallet payments
-- **Anthropic Claude API** — AI agent audit pipeline
+- Next.js 16 App Router, React 19, TypeScript
+- Static GitHub Pages files in `docs/` using React UMD and Babel for portable pages
+- Supabase Auth, Postgres, Row Level Security, and REST views
+- Stripe routes for checkout and webhook handling
+- Anthropic SDK for audit and Studio chat paths
+- `ws` WebSocket agent server in `src/agents/server.ts`
+- Ingestion and autonomous catalog tooling under `src/ingestion/`
 
-## Gem Tiers
+## Data Architecture
 
-| Tier | Score | Status |
+Skillscale uses three data layers:
+
+| Layer | Files/Tables | Notes |
 |---|---|---|
-| 💎 Diamond | 90–100 | Top quality |
-| 💚 Emerald | 80–89 | High quality |
-| 🤍 Pearl | 65–79 | Standard |
-| 💜 Quartz | 50–64 | Basic |
-| ⬛ Coal | 0–49 | Not listed |
+| Static fallback | `docs/data/skills-catalog.json`, `docs/data/skills-index/**`, `docs/data/occupation-counts.json` | Small committed mirror samples for GitHub Pages reliability |
+| Supabase full mirror | `skillsmp_occupation_groups`, `skillsmp_mirror_skills`, public views | Permanent paginated storage for all mirrored SkillsMP records |
+| User-private Vault | `vault_items` | Per-user dreamed/owned skills protected by RLS |
 
-## Agent Team
+Run these migrations in Supabase:
 
-Three AI agents audit every skill on submission:
+```sql
+supabase/001_initial.sql
+supabase/002_component_ingestion.sql
+supabase/003_skillsmp_full_mirror.sql
+supabase/004_skill_market_realtime.sql
+supabase/005_vault_storage.sql
+```
 
-- **SecurityAuditor** (`claude-opus-4-7`) — security scanning, 40% weight
-- **ModelMatcher** (`claude-sonnet-4-6`) — model recommendation, 30% weight
-- **QualityChecker** (`claude-haiku-4-5`) — documentation quality, 30% weight
+For GitHub Pages auth and mirror reads, create `docs/data/auth-config.json` from `docs/data/auth-config.example.json`:
 
-See [AGENTS.md](./AGENTS.md) for full rubrics and pipeline docs.
+```json
+{
+  "supabaseUrl": "https://your-project-ref.supabase.co",
+  "supabaseAnonKey": "your-public-anon-key"
+}
+```
 
-## Setup
+The anon key is public by design. Security comes from Supabase RLS policies and service-role-only import scripts.
+
+## SkillsMP Mirror
+
+`docs/skills.html` reads full mirrored data from Supabase when configured:
+
+- `public_skillsmp_occupation_counts` powers occupation labels, upstream totals, mirrored counts, coverage, and status.
+- `public_skillsmp_skills` powers paginated cards and global search.
+- Static shards remain a sample fallback and should not be treated as the full 1.6M+ catalog.
+
+Import an approved SkillsMP export/API dump:
 
 ```bash
-cp .env.local.example .env.local
-# Fill in Supabase, Stripe, Anthropic keys
+NEXT_PUBLIC_SUPABASE_URL=... \
+SUPABASE_SERVICE_ROLE_KEY=... \
+node scripts/import-skillsmp-mirror.mjs --input=skillsmp-export.jsonl --batch=1000
+```
 
+Rebuild committed fallback data:
+
+```bash
+npm run autonomous:skills:publish
+```
+
+## Auth And Vault
+
+The static Vault supports:
+
+- Google OAuth
+- GitHub OAuth
+- Discord OAuth
+- Email magic links
+- Email/password sign in and sign up
+- Local-only fallback when Supabase is not configured
+- Authenticated cloud sync to `vault_items`
+
+Required Supabase setup:
+
+- Enable desired providers in Supabase Auth.
+- Add `https://skillscalex.github.io/skillscale/vault.html` to allowed redirect URLs.
+- Run `supabase/005_vault_storage.sql`.
+- Commit or inject the public `docs/data/auth-config.json` for GitHub Pages.
+
+## Studio And Agents
+
+Studio has two implementations:
+
+- Next.js `/studio`: React 19 app that calls `/api/studio/agents` and streams `/api/studio/chat`.
+- Static `docs/studio.html`: portable GitHub Pages Studio surface.
+
+The persistent agent server lives in `src/agents/server.ts` and exposes:
+
+- WebSocket: `ws://localhost:3001`
+- Health: `GET /health`
+- Agents: VideoAgent, ContentAgent, ResearchAgent, SkillCoachAgent
+
+Run locally:
+
+```bash
+npm run agents:dev
+```
+
+See `src/agents/README.md` for the deployment plan.
+
+## Development
+
+```bash
 npm install
 npm run dev
+npm run lint
+npm run build
 ```
 
-Run Supabase migrations from `supabase/001_initial.sql` in your Supabase project SQL editor.
+Useful scripts:
 
-## Routes
-
-| Route | Description |
+| Script | Purpose |
 |---|---|
-| `/` | Home — featured, trending, free skills |
-| `/marketplace` | Browse all skills with filters |
-| `/skill/[id]` | Skill detail — trading panel, order book, audit |
-| `/submit` | 5-step minting wizard |
-| `/profile/[userId]` | Portfolio, transactions, token balance |
-| `/api/skills` | CRUD skills |
-| `/api/audit` | AI agent audit pipeline |
-| `/api/stripe/checkout` | Stripe checkout sessions |
-| `/api/tokens` | Platform SKL token transfers |
+| `npm run dev` | Start Next.js |
+| `npm run build` | Build the app |
+| `npm run lint` / `npm run typecheck` | TypeScript check |
+| `npm run agents:dev` | Start the WebSocket agent server |
+| `npm run ingest:all` | Run ingestion CLI |
+| `npm run autonomous:skills` | Run autonomous skill loop |
+| `npm run autonomous:skills:publish` | Publish GitHub Pages skill JSON |
+| `npm run skillsmp:mirror:import` | Import SkillsMP mirror into Supabase |
 
-## Claude Plugin
+## Key Directories
 
-This project is registered as a Claude Code plugin in `.claude-plugin/plugin.json`.
+| Directory | Purpose |
+|---|---|
+| `src/app` | Next.js pages and API routes |
+| `src/components` | Shared app components |
+| `src/agents` | Persistent WebSocket agent server |
+| `src/ingestion` | Source ingestion, normalization, autonomous catalog publishing |
+| `src/lib` | Supabase, Stripe, Anthropic, SkillsMP mirror, utilities |
+| `docs` | GitHub Pages static site |
+| `docs/data` | Static auth example and generated catalog fallback data |
+| `supabase` | SQL migrations |
+| `scripts` | Import and seed scripts |
 
----
+## Deployment Notes
 
-## Studio Page — Vision & Design Spec
-
-The Studio page (`/studio`) is the command center for interacting with live AI agents. It should feel like a real AI production studio — not just a chat interface.
-
-### Required Features
-
-**1. Live Agent Chatbox**
-- Full-width chat panel (60% width on desktop, full-width on mobile)
-- Real-time streaming token display — text appears word-by-word as the agent responds
-- Agent routing: prefix messages with `@video`, `@research`, `@coach`, or `@content` to target a specific agent
-- Message history with timestamps, copy buttons, and per-message agent attribution
-- Markdown rendering in responses (code blocks, tables, bullet lists)
-- File attachment support (PDFs, images) for SkillCoachAgent
-
-**2. Agent Status Panel (right sidebar)**
-- Live status dot per agent: green (online), yellow (busy/processing), red (offline/error)
-- Current job queue depth per agent
-- Response latency metrics (p50, p95)
-- Token usage counter for the current session
-- One-click "restart agent" button
-
-**3. Video Generation Panel**
-- Topic input (large, prominent — the primary CTA)
-- Voice selector: Nova / Echo / Fable / Onyx / Shimmer (with 5s audio previews)
-- Duration picker: 30s / 60s / 90s / 3min
-- Style: Educational / Motivational / Storytelling / Listicle
-- Background music: Upbeat / Ambient / Cinematic / None
-- Subtitles toggle
-- Resolution: 1080p landscape / 9:16 portrait (TikTok/Reels)
-- Real-time progress bar with stage labels: Researching → Scripting → Voiceover → Visuals → Assembling → Uploading
-- Embedded `<video>` preview player once the job completes
-- Download button + copy CDN share link
-
-**4. Real-Time Job Queue**
-- Global panel showing all in-flight jobs with progress bars
-- Estimated time remaining per job
-- Cancel button per job
-- Job history: last 10 completed jobs with output links
-
-### Layout Wireframe
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  STUDIO                           [New Job]  [Settings]     │
-├─────────────────────────────────┬───────────────────────────┤
-│                                 │  AGENTS                   │
-│  CHAT                           │  ● VideoAgent    [busy]   │
-│                                 │  ● ContentAgent  [online] │
-│  @video Generate a 60s video    │  ● ResearchAgent [online] │
-│  about learning TypeScript      │  ● SkillCoach    [online] │
-│                                 ├───────────────────────────┤
-│  VideoAgent: Researching...     │  ACTIVE JOBS              │
-│  VideoAgent: Writing script...  │  ┌─────────────────────┐  │
-│  [████████░░] 78%               │  │ TypeScript video    │  │
-│  Stage: Assembling video        │  │ [██████████] 78%    │  │
-│                                 │  │ ~45s remaining      │  │
-│  [message input...]         [→] │  └─────────────────────┘  │
-└─────────────────────────────────┴───────────────────────────┘
-```
-
-### Current Critique — What's Missing
-
-There is currently no `/studio` route in the project. The nearest analog is the `/vault` page — a static skill storage list with zero agent interaction. Key gaps:
-
-1. **No live agent connection** — The entire UI runs on client-side mock data. No WebSocket layer exists.
-2. **No streaming UI** — Nothing in the frontend renders incremental token output. Would need `useAgentSocket` hook + streaming state.
-3. **No video pipeline** — No ffmpeg integration, no ElevenLabs TTS, no Pexels API, no progress tracking.
-4. **Theme mismatch** — Vault/marketplace use dark `#0e0e16` backgrounds; the rest of the app uses light cream (`--bg-base: #fdf8f3`). Studio must use the cream theme.
-5. **No agent health awareness** — No polling, no status indicators, no job queues anywhere in the frontend.
-6. **Nav missing Studio link** — No `/studio` route in `src/app/layout.tsx` navigation.
-
-### Files to Create
-
-| File | Purpose |
-|------|---------|
-| `src/app/studio/page.tsx` | Studio layout — chatbox + video panel + status bar |
-| `src/hooks/useAgentSocket.ts` | WebSocket hook with auto-reconnect + streaming state |
-| `src/components/studio/AgentChatbox.tsx` | Streaming chat with markdown rendering |
-| `src/components/studio/VideoPanel.tsx` | Video generation form + real-time progress |
-| `src/components/studio/AgentStatusBar.tsx` | Live status indicators with health polling |
-
----
-
-## Real Agents Architecture
-
-See [`src/agents/README.md`](./src/agents/README.md) for the full deployment and integration guide.
-
-### Overview
-
-```
-Browser (Studio page)
-  │
-  │  WSS (WebSocket Secure)
-  ▼
-Agent Server (DigitalOcean / Railway / Render)
-  ├── VideoAgent      → ElevenLabs TTS + ffmpeg + Pexels + Cloudflare R2
-  ├── ContentAgent    → Claude claude-sonnet-4-6 streaming
-  ├── ResearchAgent   → Tavily search + Puppeteer scraping + synthesis
-  └── SkillCoachAgent → Claude + Supabase session memory
-```
-
-### Integration Map
-
-| Surface | Agent | Action |
-|---------|-------|--------|
-| Marketplace skill card | ContentAgent | Auto-generate skill description on submit |
-| Skill detail page | ResearchAgent | "Research this topic" button → live context |
-| Profile page | SkillCoachAgent | "Start coaching session" → opens Studio tab |
-| Submit wizard (step 3) | VideoAgent | Auto-generate demo video for new skill |
-| Vault | ContentAgent | Draft a blog post promoting a vaulted skill |
-
-### API Routes (Next.js)
-
-| Route | Method | Description |
-|-------|--------|-------------|
-| `/api/agents/status` | GET | Ping all agents, return health map |
-| `/api/agents/job` | POST | Queue a new agent job, returns `{ jobId }` |
-| `/api/agents/job/[id]` | GET | Poll job status (non-WebSocket fallback) |
-| `/api/agents/history` | GET | Last 50 completed jobs for current user |
+- GitHub Pages serves `docs/`.
+- Next.js can deploy to Vercel or another Node host.
+- Supabase stores auth, private vault rows, mirrored SkillsMP records, market tables, and realtime data.
+- Agent server should run as a long-lived process on DigitalOcean, Railway, or Render.

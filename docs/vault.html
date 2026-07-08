@@ -156,13 +156,45 @@ function useStaticAuth() {
     return true;
   }
 
+  async function signInWithPassword(email, password) {
+    setError(null);
+    if (!client) {
+      setError('Supabase Auth is not configured for this static page.');
+      return false;
+    }
+    const { error: passwordError } = await client.auth.signInWithPassword({ email, password });
+    if (passwordError) {
+      setError(passwordError.message);
+      return false;
+    }
+    return true;
+  }
+
+  async function signUpWithPassword(email, password) {
+    setError(null);
+    if (!client) {
+      setError('Supabase Auth is not configured for this static page.');
+      return false;
+    }
+    const { error: signUpError } = await client.auth.signUp({
+      email,
+      password,
+      options: { emailRedirectTo: getAuthRedirectUrl() }
+    });
+    if (signUpError) {
+      setError(signUpError.message);
+      return false;
+    }
+    return true;
+  }
+
   async function signOut() {
     if (!client) return;
     const { error: signOutError } = await client.auth.signOut();
     if (signOutError) setError(signOutError.message);
   }
 
-  return { configured, loading, user, error, signInWithOAuth, signInWithEmail, signOut, clearError:() => setError(null) };
+  return { client, configured, loading, user, error, signInWithOAuth, signInWithEmail, signInWithPassword, signUpWithPassword, signOut, clearError:() => setError(null) };
 }
 
 /* ===== Vault storage ===== */
@@ -172,6 +204,89 @@ function getVault() {
   catch { return { dreamed:[], owned:[] }; }
 }
 function saveVault(v) { localStorage.setItem(VAULT_KEY, JSON.stringify(v)); }
+
+function vaultItemToRow(userId, collection, item) {
+  return {
+    user_id: userId,
+    item_id: String(item.id),
+    collection,
+    name: item.name || item.id,
+    author: item.author || null,
+    score: Number.isFinite(Number(item.score)) ? Number(item.score) : null,
+    tier: item.tier || null,
+    note: item.note || '',
+    saved_at: item.savedAt || new Date().toISOString(),
+    payload: item,
+  };
+}
+
+function rowToVaultItem(row) {
+  const payload = row.payload && typeof row.payload === 'object' ? row.payload : {};
+  return {
+    ...payload,
+    id: row.item_id,
+    name: row.name || payload.name || row.item_id,
+    author: row.author || payload.author || '',
+    score: row.score ?? payload.score,
+    tier: row.tier || payload.tier,
+    note: row.note || '',
+    savedAt: row.saved_at || payload.savedAt || new Date().toISOString(),
+  };
+}
+
+function mergeVaults(localVault, remoteRows) {
+  const next = {
+    dreamed: [...(localVault.dreamed || [])],
+    owned: [...(localVault.owned || [])],
+  };
+  for (const row of remoteRows || []) {
+    const collection = row.collection === 'owned' ? 'owned' : 'dreamed';
+    const item = rowToVaultItem(row);
+    const index = next[collection].findIndex(existing => existing.id === item.id);
+    if (index >= 0) next[collection][index] = { ...next[collection][index], ...item };
+    else next[collection].push(item);
+  }
+  return next;
+}
+
+async function syncVaultWithSupabase(client, user) {
+  if (!client || !user?.id) return getVault();
+  const localVault = getVault();
+  const localRows = [
+    ...(localVault.dreamed || []).map(item => vaultItemToRow(user.id, 'dreamed', item)),
+    ...(localVault.owned || []).map(item => vaultItemToRow(user.id, 'owned', item)),
+  ];
+  if (localRows.length) {
+    const { error: upsertError } = await client.from('vault_items').upsert(localRows, { onConflict:'user_id,item_id,collection' });
+    if (upsertError) throw upsertError;
+  }
+  const { data, error } = await client
+    .from('vault_items')
+    .select('item_id,collection,name,author,score,tier,note,saved_at,payload')
+    .eq('user_id', user.id)
+    .order('saved_at', { ascending:false });
+  if (error) throw error;
+  const merged = mergeVaults(localVault, data || []);
+  saveVault(merged);
+  return merged;
+}
+
+async function persistVaultItem(client, user, collection, item) {
+  if (!client || !user?.id) return;
+  const { error } = await client.from('vault_items').upsert(vaultItemToRow(user.id, collection, item), { onConflict:'user_id,item_id,collection' });
+  if (error) throw error;
+}
+
+async function deleteVaultItem(client, user, collection, id) {
+  if (!client || !user?.id) return;
+  const { error } = await client
+    .from('vault_items')
+    .delete()
+    .eq('user_id', user.id)
+    .eq('collection', collection)
+    .eq('item_id', id);
+  if (error) throw error;
+}
 
 /* ===== SecureScore tier ===== */
 const SCORE_TIER_CONFIG = {
@@ -203,6 +318,8 @@ function ThemeToggle({ theme, onToggle }) {
 function AuthMenu({ auth }) {
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [passwordMode, setPasswordMode] = useState('sign-in');
   const [emailSent, setEmailSent] = useState(false);
   const [pending, setPending] = useState(null);
   const name = getDisplayName(auth.user);
@@ -218,6 +335,16 @@ function AuthMenu({ auth }) {
     setPending('email');
     const ok = await auth.signInWithEmail(email);
     setEmailSent(ok);
+    setPending(null);
+  }
+
+  async function submitPassword(event) {
+    event.preventDefault();
+    setPending('password');
+    const ok = passwordMode === 'sign-up'
+      ? await auth.signUpWithPassword(email, password)
+      : await auth.signInWithPassword(email, password);
+    if (ok) setOpen(false);
     setPending(null);
   }
 
@@ -291,6 +418,20 @@ function AuthMenu({ auth }) {
                 style={{ minHeight:42, border:'1px solid var(--border)', borderRadius:13, background:'transparent', color:'var(--text)', fontFamily:'JetBrains Mono', fontSize:'.72rem', cursor:auth.configured?'pointer':'not-allowed', opacity:(!auth.configured || pending || !email) ? .58 : 1 }}>
                 {pending === 'email' ? 'Sending…' : 'Send magic link'}
               </button>
+            </form>
+            <form onSubmit={submitPassword} style={{ display:'grid', gap:10, marginTop:10 }}>
+              <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password"
+                style={{ minHeight:44, border:'1px solid var(--border)', borderRadius:13, background:'var(--bg)', color:'var(--text)', padding:'0 14px', fontFamily:'DM Sans', fontSize:'.86rem', outline:'none' }} />
+              <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
+                <button disabled={!auth.configured || pending || !email || password.length < 6} type="submit" onClick={() => setPasswordMode('sign-in')}
+                  style={{ minHeight:42, border:'1px solid var(--border)', borderRadius:13, background:'transparent', color:'var(--text)', fontFamily:'JetBrains Mono', fontSize:'.72rem', cursor:auth.configured?'pointer':'not-allowed', opacity:(!auth.configured || pending || !email || password.length < 6) ? .58 : 1 }}>
+                  {pending === 'password' && passwordMode === 'sign-in' ? 'Signing in…' : 'Email password'}
+                </button>
+                <button disabled={!auth.configured || pending || !email || password.length < 6} type="submit" onClick={() => setPasswordMode('sign-up')}
+                  style={{ minHeight:42, border:'1px solid var(--border)', borderRadius:13, background:'transparent', color:'var(--text)', fontFamily:'JetBrains Mono', fontSize:'.72rem', cursor:auth.configured?'pointer':'not-allowed', opacity:(!auth.configured || pending || !email || password.length < 6) ? .58 : 1 }}>
+                  {pending === 'password' && passwordMode === 'sign-up' ? 'Creating…' : 'Create account'}
+                </button>
+              </div>
             </form>
             {emailSent && <p style={{ fontFamily:'JetBrains Mono', fontSize:'.68rem', color:'#1A7A4A', margin:'12px 0 0' }}>✓ Check your inbox for the sign-in link.</p>}
             {auth.error && <p style={{ fontFamily:'DM Sans', fontSize:'.78rem', color:'#B42318', margin:'12px 0 0' }}>{auth.error}</p>}
@@ -495,6 +636,7 @@ function App() {
   });
   const [tab, setTab] = useState('dreamed');
   const [vault, setVault] = useState(getVault);
+  const [cloudStatus, setCloudStatus] = useState('local');
   const auth = useStaticAuth();
 
   useEffect(() => {
@@ -502,23 +644,55 @@ function App() {
     localStorage.setItem('sk-theme', theme);
   }, [theme]);
 
+  useEffect(() => {
+    let alive = true;
+    if (!auth.client || !auth.user) {
+      setCloudStatus('local');
+      return;
+    }
+    setCloudStatus('syncing');
+    syncVaultWithSupabase(auth.client, auth.user)
+      .then(nextVault => {
+        if (!alive) return;
+        setVault(nextVault);
+        setCloudStatus('cloud');
+      })
+      .catch(() => {
+        if (alive) setCloudStatus('error');
+      });
+    return () => { alive = false; };
+  }, [auth.client, auth.user?.id]);
+
   function refresh() { setVault(getVault()); }
 
-  function removeItem(id) {
+  async function removeItem(id) {
     const v = getVault();
-    if (tab === 'dreamed') v.dreamed = v.dreamed.filter(s => s.id !== id);
+    const collection = tab === 'dreamed' ? 'dreamed' : 'owned';
+    if (collection === 'dreamed') v.dreamed = v.dreamed.filter(s => s.id !== id);
     else v.owned = v.owned.filter(s => s.id !== id);
     saveVault(v);
     refresh();
+    try {
+      await deleteVaultItem(auth.client, auth.user, collection, id);
+      if (auth.user) setCloudStatus('cloud');
+    } catch {
+      if (auth.user) setCloudStatus('error');
+    }
   }
 
-  function updateNote(id, note) {
+  async function updateNote(id, note) {
     const v = getVault();
     const arr = tab === 'dreamed' ? v.dreamed : v.owned;
     const item = arr.find(s => s.id === id);
     if (item) item.note = note;
     saveVault(v);
     refresh();
+    try {
+      if (item) await persistVaultItem(auth.client, auth.user, tab === 'dreamed' ? 'dreamed' : 'owned', item);
+      if (auth.user) setCloudStatus('cloud');
+    } catch {
+      if (auth.user) setCloudStatus('error');
+    }
   }
 
   const items = tab === 'dreamed' ? vault.dreamed : vault.owned;
@@ -545,7 +719,7 @@ function App() {
                 <span style={{ fontSize:'1.1rem' }}>{auth.user ? '✓' : '🔒'}</span>
                 <div>
                   <div style={{ fontFamily:'JetBrains Mono', fontSize:'.65rem', fontWeight:600, color:'var(--text)' }}>{auth.user ? 'Signed in' : 'Private & local'}</div>
-                  <div style={{ fontFamily:'DM Sans', fontSize:'.75rem', color:'var(--text-2)' }}>{auth.user ? `${getDisplayName(auth.user)} · stored on this device` : 'Sign in to connect your identity · stored on this device'}</div>
+                  <div style={{ fontFamily:'DM Sans', fontSize:'.75rem', color:'var(--text-2)' }}>{auth.user ? `${getDisplayName(auth.user)} · ${cloudStatus === 'cloud' ? 'synced to Supabase' : cloudStatus === 'syncing' ? 'syncing vault' : cloudStatus === 'error' ? 'local fallback active' : 'stored on this device'}` : 'Sign in to sync privately with Supabase · stored on this device'}</div>
                 </div>
               </div>
             </div>

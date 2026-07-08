@@ -1,295 +1,276 @@
-# Skillscale Agent Team
+# Skillscale Agents
 
-## Agent Roster
+This file documents the agent systems used by Skillscale: the audit/orchestration agents in the Next.js app, the live Studio agents behind the WebSocket server, and the autonomous catalog agents that keep the static and Supabase-backed skill catalog current.
+
+## Agent Surfaces
+
+| Surface | Implementation | Trigger |
+|---|---|---|
+| Skill audit | `src/lib/anthropic.ts`, `src/app/api/audit/route.ts` | Skill submission or API audit request |
+| Studio chat | `src/app/studio/page.tsx`, `src/app/api/studio/**` | User messages in Studio |
+| Live WebSocket agents | `src/agents/server.ts` | `ws://localhost:3001` or production WSS |
+| Autonomous catalog | `src/ingestion/autonomous/**` | Ingestion scripts and GitHub workflows |
+| Static Pages catalog | `docs/skills.html`, `docs/data/**` | GitHub Pages browsing and fallback data |
+
+## Audit Agent Roster
+
+Every submitted skill can be scored by a weighted audit pipeline.
 
 | Agent | Model | Weight | Role |
-|-------|-------|--------|------|
-| Orchestrator | claude-opus-4-5 | — | Plans, delegates, reflects |
-| Researcher | claude-sonnet-4-5 | 0.15 | WebSearch, trend analysis |
-| Designer | claude-sonnet-4-5 | 0.15 | UI/UX critique, Figma specs |
-| Engineer | claude-sonnet-4-5 | 0.20 | Architecture, TypeScript |
-| Coder | claude-haiku-4-5 | 0.20 | File writes, refactors |
-| Debugger | claude-sonnet-4-5 | 0.15 | Lint, test, error trace |
-| Validator | claude-sonnet-4-5 | 0.10 | QA, a11y, perf audit |
-| Reflector | claude-opus-4-5 | 0.05 | Critique, iterate signal |
+|---|---|---:|---|
+| SecurityAuditor | `claude-opus-4-7` | 0.40 | Security scanning, unsafe behavior, dependency and prompt-risk review |
+| ModelMatcher | `claude-sonnet-4-6` | 0.30 | Recommends compatible model/runtime surfaces |
+| QualityChecker | `claude-haiku-4-5` | 0.30 | Documentation, examples, installability, maintainability |
 
-## Evolutionary Loop (infinite, autonomous)
-search_and_learn → brainstorm → design → critique → engineer →
-code → debug → validate → reflect → search_and_learn → iterate → repeat
+Gem tiers are derived from the final SecureScore:
 
-## Adding a new agent
-1. Define agent in this file with model, weight, output schema, system prompt
-2. Implement runner in `src/lib/anthropic.ts` following existing pattern
-3. Add to `runFullAudit` `Promise.all` array
-4. Update weighted score formula
-5. Update table above
+| Tier | Score | Meaning |
+|---|---:|---|
+| Diamond / Legendary | 90-100 | Excellent |
+| Emerald / Epic | 80-89 | Strong |
+| Pearl / Rare | 65-79 | Acceptable |
+| Quartz / Standard | 50-64 | Needs improvement |
+| Coal / Draft | 0-49 | Not marketplace-ready |
 
----
+## Autonomous Catalog Loop
 
-*Agents are implemented in `src/lib/anthropic.ts`. Pipeline is triggered via `src/app/api/audit/route.ts`.*
-*AgentOS cost estimator lives at `src/components/AgentCostEstimator.tsx`.*
+The catalog loop discovers, normalizes, audits, deduplicates, publishes, and reflects on skill entries.
 
----
+```text
+search_and_learn
+  -> normalize
+  -> dedupe
+  -> security_scan
+  -> score
+  -> publish_static_catalog
+  -> mirror_to_supabase
+  -> validate
+  -> reflect
+  -> iterate
+```
 
-## Real Running Agents — Live Architecture
+Relevant files:
 
-These agents run as persistent long-lived processes (not serverless), connected to the Skillscale Studio chatbox via WebSocket. They respond to user input in real-time, stream tokens, and carry actual capabilities beyond text generation.
+| File | Purpose |
+|---|---|
+| `src/ingestion/autonomous/loop.ts` | Main autonomous skill loop |
+| `src/ingestion/autonomous/pagesCatalog.ts` | Builds GitHub Pages catalog data |
+| `src/ingestion/autonomous/skillShards.ts` | Publishes paginated static shards |
+| `src/ingestion/autonomous/occupationCounts.ts` | Builds occupation totals and coverage |
+| `src/ingestion/autonomous/mirrorQueue.ts` | Tracks missing mirror shards |
+| `src/ingestion/security/skillspector.ts` | SkillSpector-compatible security checks |
 
-### Live Agent Roster
+## Live Studio Agent Roster
+
+These agents are long-lived processes connected to Studio through WebSocket. The current `src/agents/server.ts` is a reachable health/streaming scaffold that emits progress and token events; provider-specific production capabilities are enabled by environment keys and future agent modules.
 
 | Agent | Transport | Runtime | Capabilities |
-|-------|-----------|---------|-------------|
-| VideoAgent | WebSocket | DigitalOcean Droplet / Railway | Script gen, ElevenLabs TTS, ffmpeg assembly, R2 upload |
-| ContentAgent | WebSocket | Railway / Render | Blog posts, social copy, email campaigns, SEO content |
-| ResearchAgent | WebSocket | Render | Tavily web search, URL scraping, source synthesis |
-| SkillCoachAgent | WebSocket | Railway | Personalized coaching, skill gap analysis, learning plans |
+|---|---|---|---|
+| VideoAgent | WebSocket | DigitalOcean / Railway / Render | Script generation, staged video progress, future TTS/ffmpeg/R2 assembly |
+| ContentAgent | WebSocket | Railway / Render | Blog posts, social copy, emails, skill descriptions |
+| ResearchAgent | WebSocket | Render | Web research, source synthesis, market and demand analysis |
+| SkillCoachAgent | WebSocket | Railway | Skill gap analysis, learning plans, coaching sessions |
 
----
+## VideoAgent
 
-### VideoAgent
+VideoAgent is designed for faceless short-form or YouTube-style videos from a single topic.
 
-Inspired by MoneyPrinterTurbo — generates faceless YouTube/TikTok videos from a single topic string.
+Pipeline:
 
-**Pipeline:**
-```
-topic input
-  → ResearchAgent (gather facts, hooks, angles)
-  → script generation (claude-sonnet-4-6, structured JSON: scenes[])
-  → voiceover synthesis (ElevenLabs TTS, multiple voice options)
-  → background music selection (royalty-free library, mood-matched)
-  → image/clip search (Pexels API / Stable Diffusion XL for AI visuals)
-  → subtitle generation (Whisper transcription + SRT timing)
-  → ffmpeg assembly (overlay audio, subtitles, B-roll clips)
-  → upload to Cloudflare R2 → CDN URL returned
-  → progress events streamed via WebSocket throughout
+```text
+topic
+  -> ResearchAgent facts/hooks
+  -> structured script scenes
+  -> ElevenLabs voiceover
+  -> Pexels or generated visuals
+  -> subtitle timing
+  -> ffmpeg assembly
+  -> Cloudflare R2 upload
+  -> CDN URL
 ```
 
-**Input schema:**
+Input:
+
 ```typescript
 type VideoJobInput = {
-  topic: string;           // "How to learn TypeScript in 30 days"
-  duration: 30 | 60 | 90 | 180;  // seconds
+  topic: string;
+  duration: 30 | 60 | 90 | 180;
   voice: "nova" | "echo" | "fable" | "onyx" | "shimmer";
   style: "educational" | "motivational" | "storytelling" | "listicle";
   music: "upbeat" | "ambient" | "cinematic" | "none";
   subtitles: boolean;
-  resolution: "1080p" | "720p" | "9:16";  // 9:16 for TikTok/Reels
+  resolution: "1080p" | "720p" | "9:16";
 };
 ```
 
-**Output events (streamed over WebSocket):**
+Progress event:
+
 ```typescript
 type VideoProgressEvent = {
   jobId: string;
   stage: "researching" | "scripting" | "tts" | "visuals" | "assembly" | "uploading" | "done";
-  progress: number;  // 0–100
+  progress: number;
   message: string;
-  url?: string;      // populated when stage === "done"
+  url?: string;
 };
 ```
 
-**System prompt:**
-```
+System prompt:
+
+```text
 You are VideoAgent, a professional faceless video content creator.
 Given a topic, produce a complete video script as structured JSON.
-Each scene has: duration (seconds), narration (text for TTS),
-b_roll_query (image search terms), overlay_text (optional caption).
+Each scene has: duration, narration, b_roll_query, and optional overlay_text.
 Make content engaging, educational, and optimized for retention.
-Never hallucinate facts — flag uncertain claims with [VERIFY].
+Never hallucinate facts; mark uncertain claims with [VERIFY].
 ```
 
-**Model:** `claude-sonnet-4-6`
+## ContentAgent
 
----
+ContentAgent generates written assets for the marketplace and Studio.
 
-### ContentAgent
+Input:
 
-Generates long-form and short-form written content on demand.
-
-**Capabilities:**
-- Blog posts (1000–4000 words, SEO-optimised, markdown output)
-- Social media threads (Twitter/X, LinkedIn, formatted)
-- Email campaigns (subject lines + body, A/B variants)
-- Video scripts (YouTube descriptions, hooks, CTAs)
-- Skill descriptions for the marketplace (auto-populated on submit)
-
-**Input:**
 ```typescript
 type ContentJobInput = {
   type: "blog" | "thread" | "email" | "script" | "skill_description";
   topic: string;
   tone: "professional" | "casual" | "technical" | "persuasive";
   length: "short" | "medium" | "long";
-  keywords?: string[];   // for SEO targeting
-  audience?: string;     // "junior devs", "CTOs", "indie hackers"
+  keywords?: string[];
+  audience?: string;
 };
 ```
 
-**Model:** `claude-sonnet-4-6` (balanced quality/cost for volume)
+## ResearchAgent
 
----
+ResearchAgent supports current-source synthesis and demand analysis.
 
-### ResearchAgent
+Input:
 
-Real-time web research with source citation and synthesis.
-
-**Capabilities:**
-- Tavily API search (real-time web index, not training data)
-- URL scraping + content extraction (Puppeteer)
-- Multi-source synthesis with citation tracking
-- Trend detection (GitHub trending, HN, Product Hunt APIs)
-- Competitor analysis and market research
-- Skill demand analysis (job board scraping)
-
-**Input:**
 ```typescript
 type ResearchJobInput = {
   query: string;
-  depth: "quick" | "thorough" | "deep";  // 1 / 3 / 7 sources
+  depth: "quick" | "thorough" | "deep";
   format: "bullets" | "report" | "json";
   focus?: "news" | "academic" | "market" | "technical";
 };
 ```
 
-**Output:** Structured report with `sources[]`, `summary`, `key_findings[]`, `confidence_score`
+Output shape:
 
-**Model:** `claude-haiku-4-5` for initial scraping + extraction; `claude-sonnet-4-6` for final synthesis
+```typescript
+type ResearchReport = {
+  sources: Array<{ title: string; url: string; publishedAt?: string }>;
+  summary: string;
+  key_findings: string[];
+  confidence_score: number;
+};
+```
 
----
+## SkillCoachAgent
 
-### SkillCoachAgent
+SkillCoachAgent provides role-based learning plans and coaching sessions.
 
-Personalized AI skill coach — assesses gaps, builds learning plans, tracks progress.
+Input:
 
-**Capabilities:**
-- Skill gap assessment (compare current vs target role)
-- Personalized weekly learning plan generation
-- Resource curation (courses, docs, projects, mentors)
-- Progress tracking and milestone celebration
-- Mock interview / quiz sessions
-- Recommends relevant marketplace skills to purchase
-
-**Input:**
 ```typescript
 type CoachingSession = {
   userId: string;
   currentSkills: string[];
   targetRole: string;
-  timeline: string;                  // "3 months", "1 year"
+  timeline: string;
   learningStyle: "visual" | "hands-on" | "reading" | "mixed";
   availableHoursPerWeek: number;
-  message: string;                   // free-form chat turn
+  message: string;
 };
 ```
 
-**Model:** `claude-sonnet-4-6`; conversation history persisted per `userId` in Supabase `coach_sessions` table
+Conversation history should be persisted in Supabase when production coaching storage is enabled.
 
----
+## WebSocket Protocol
 
-## Deployment Architecture
-
-### Option A: DigitalOcean Droplet (Recommended for Production)
-
-```
-┌─────────────────────────────────────────────┐
-│  DigitalOcean Droplet  ($12/mo, 2 GB RAM)   │
-│                                             │
-│  ┌─────────────────────────────────────┐   │
-│  │  Node.js WebSocket Server           │   │
-│  │  ws://0.0.0.0:3001                  │   │
-│  │                                     │   │
-│  │  VideoAgent   ContentAgent          │   │
-│  │  ResearchAgent  SkillCoachAgent     │   │
-│  └─────────────────────────────────────┘   │
-│                                             │
-│  Nginx (SSL termination → proxy :3001)      │
-└─────────────────────────────────────────────┘
-           ↕ WSS (secure WebSocket)
-┌─────────────────────────────┐
-│  Vercel (Next.js frontend)  │
-│  src/app/studio/page.tsx    │
-└─────────────────────────────┘
-```
-
-**Quick setup:**
-```bash
-# Ubuntu 22.04 LTS droplet
-apt update && apt install -y nodejs npm nginx certbot ffmpeg
-
-# Install deps + PM2
-cd /app && npm install
-npm install -g pm2
-pm2 start src/agents/server.ts --name skillscale-agents --interpreter ts-node
-pm2 save && pm2 startup
-
-# Nginx WebSocket proxy + Let's Encrypt SSL
-certbot --nginx -d agents.skillscale.ai
-```
-
-### Option B: Railway (MVP — deploy in minutes)
-
-```json
-{
-  "deploy": {
-    "startCommand": "npx ts-node src/agents/server.ts",
-    "healthcheckPath": "/health",
-    "restartPolicyType": "ON_FAILURE"
-  }
-}
-```
-
-Railway auto-provisions HTTPS, persistent sockets, and horizontal scaling. Cost: ~$5–20/mo.
-
-### Option C: Render (Free tier available)
-
-- New Web Service → start command: `npx ts-node src/agents/server.ts`
-- Enable "Background Worker" to prevent sleep on free tier
-- Upgrade to Starter ($7/mo) for always-on production use
-
----
-
-## WebSocket Message Protocol
+Client to server:
 
 ```typescript
-// Client → Server
 type ClientMessage = {
   type: "auth" | "job" | "cancel";
   agent?: "video" | "content" | "research" | "coach";
   payload?: VideoJobInput | ContentJobInput | ResearchJobInput | CoachingSession;
-  jobId?: string;   // client-generated UUID
-  token?: string;   // Supabase JWT (for auth messages)
+  jobId?: string;
+  token?: string;
 };
+```
 
-// Server → Client (streamed)
+Server to client:
+
+```typescript
 type ServerMessage = {
   type: "token" | "progress" | "result" | "error";
   jobId: string;
-  content?: string;         // for "token" — append to current message
+  content?: string;
   progress?: { percent: number; stage: string; message: string };
-  result?: unknown;         // final output (video URL, blog post, report)
+  result?: unknown;
   error?: string;
 };
 ```
 
-**Connection:** `wss://agents.skillscale.ai` (prod) | `ws://localhost:3001` (dev)  
-**Health check:** `GET /health` → `{ status: "ok", agents: { video, content, research, coach } }`
+Connections:
 
----
+- Production: `wss://agents.skillscale.ai`
+- Development: `ws://localhost:3001`
+- Health: `GET /health`
 
-## Agent Server Environment Variables
+## Deployment Architecture
+
+Recommended production layout:
+
+```text
+Browser / GitHub Pages / Next.js
+  -> Supabase Auth and Postgres
+  -> Next.js API routes for app-backed actions
+  -> WSS agent server for Studio live jobs
+```
+
+Agent server options:
+
+| Option | Use |
+|---|---|
+| DigitalOcean Droplet | Production control, ffmpeg support, predictable cost |
+| Railway | Fast MVP deployment with persistent sockets |
+| Render | Simple Web Service deployment |
+
+Required environment variables:
 
 ```bash
-ANTHROPIC_API_KEY=          # Claude API (all agents)
-ELEVENLABS_API_KEY=         # TTS voiceovers (VideoAgent)
-TAVILY_API_KEY=             # Web search (ResearchAgent)
-PEXELS_API_KEY=             # Stock footage (VideoAgent)
-CLOUDFLARE_R2_ACCOUNT_ID=   # Video storage
+ANTHROPIC_API_KEY=
+ELEVENLABS_API_KEY=
+TAVILY_API_KEY=
+PEXELS_API_KEY=
+CLOUDFLARE_R2_ACCOUNT_ID=
 CLOUDFLARE_R2_ACCESS_KEY=
 CLOUDFLARE_R2_SECRET_KEY=
 CLOUDFLARE_R2_BUCKET=skillscale-videos
-SUPABASE_SERVICE_ROLE_KEY=  # Session memory (SkillCoachAgent)
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
 WS_PORT=3001
 NODE_ENV=production
 ```
 
-See [`src/agents/README.md`](src/agents/README.md) for full deployment walkthrough.
+## Adding A New Agent
+
+1. Define the agent contract in this file.
+2. Add or update the runner in `src/lib/anthropic.ts` or `src/agents/`.
+3. Wire API or WebSocket routing.
+4. Add scoring or progress events if the agent contributes to audits or jobs.
+5. Update weighted formulas, status displays, and docs.
+6. Add tests for the new routing and failure behavior.
+
+## Storage And Security Rules
+
+- Public mirrored skill rows are readable through Supabase views.
+- Mirror writes must use `SUPABASE_SERVICE_ROLE_KEY`.
+- Vault rows live in `vault_items` and are protected by `auth.uid() = user_id`.
+- Static GitHub Pages auth uses only the public Supabase URL and anon key.
+- Never commit service role keys or provider secrets.

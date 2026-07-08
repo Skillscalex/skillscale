@@ -18,6 +18,7 @@ export type PagesSkill = {
   readonly updatedAt: string;
   readonly occupationId: string;
   readonly githubUrl?: string;
+  readonly skillsmpUrl?: string;
   readonly source: string;
   readonly secureScore: number;
   readonly auditStatus: PagesSkillAuditStatus;

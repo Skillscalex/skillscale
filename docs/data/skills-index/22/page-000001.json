@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "generatedAt": "2026-07-08T09:57:11.035Z",
   "occupationId": "22",
   "skills": [
     {
@@ -865,6 +865,308 @@
       "source": "skillscale-market-seed",
       "secureScore": 95,
       "auditStatus": "approved"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-1-ddc-toolkit-cad-converters-dwg-to-excel",
+      "name": "1-ddc-toolkit-cad-converters-dwg-to-excel",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "toolkit",
+        "cad"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/1-ddc-toolkit-cad-converters-dwg-to-excel",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-2-ddc-book-2-4-pdf-cad-to-data-cad-to-data",
+      "name": "2-ddc-book-2-4-pdf-cad-to-data-cad-to-data",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "book",
+        "pdf"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/2-ddc-book-2-4-pdf-cad-to-data-cad-to-data",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-2-ddc-book-2-4-pdf-cad-to-data-drawing-analyzer",
+      "name": "2-ddc-book-2-4-pdf-cad-to-data-drawing-analyzer",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "book",
+        "pdf"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/2-ddc-book-2-4-pdf-cad-to-data-drawing-analyzer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-agent-harness-construction",
+      "name": "agent-harness-construction",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "harness",
+        "construction"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-agent-harness-construction",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-xiaoluolyg-god-agentsociety-custom-skills-computer-repair",
+      "name": "agentsociety-custom-skills-computer-repair",
+      "author": "xiaoluolyg",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from xiaoluolyg/god. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "god",
+        "agentsociety",
+        "custom",
+        "computer",
+        "repair"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/xiaoluolyg/god/agentsociety-custom-skills-computer-repair",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-timjrobinson-claude-code-construction-manager-claude-skills-budget-check",
+      "name": "claude-skills-budget-check",
+      "author": "timjrobinson",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from timjrobinson/claude-code-construction-manager. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "construction",
+        "manager",
+        "budget",
+        "check"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/timjrobinson/claude-code-construction-manager/claude-skills-budget-check",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-haibarakiku-awesome-skills-skills-construction-construction-manager",
+      "name": "construction-construction-manager",
+      "author": "haibarakiku",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from haibarakiku/awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "construction",
+        "manager"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/haibarakiku/awesome-skills/skills-construction-construction-manager",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-haibarakiku-awesome-skills-skills-construction-electrical-engineer",
+      "name": "construction-electrical-engineer",
+      "author": "haibarakiku",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from haibarakiku/awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "construction",
+        "electrical",
+        "engineer"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/haibarakiku/awesome-skills/skills-construction-electrical-engineer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-haibarakiku-awesome-skills-skills-construction-worker-carpenter",
+      "name": "construction-worker-carpenter",
+      "author": "haibarakiku",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from haibarakiku/awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "construction",
+        "worker",
+        "carpenter"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/haibarakiku/awesome-skills/skills-construction-worker-carpenter",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-haibarakiku-awesome-skills-skills-construction-worker-electrician",
+      "name": "construction-worker-electrician",
+      "author": "haibarakiku",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from haibarakiku/awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "construction",
+        "worker",
+        "electrician"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/haibarakiku/awesome-skills/skills-construction-worker-electrician",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-haibarakiku-awesome-skills-skills-construction-worker-plumber",
+      "name": "construction-worker-plumber",
+      "author": "haibarakiku",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from haibarakiku/awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "construction",
+        "worker",
+        "plumber"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/haibarakiku/awesome-skills/skills-construction-worker-plumber",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-docs-zh-cn-skills-agent-harness-construction",
+      "name": "docs-zh-cn-skills-agent-harness-construction",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "harness",
+        "construction"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-zh-cn-skills-agent-harness-construction",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-benchflow-ai-skillsbench-tasks-ada-bathroom-plan-repair-environment-skills-ada-plan-view-accessibility",
+      "name": "tasks-ada-bathroom-plan-repair-environment-skills-ada-plan-view-accessibility",
+      "author": "benchflow-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from benchflow-ai/skillsbench. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "skillsbench",
+        "tasks",
+        "ada",
+        "bathroom",
+        "plan"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/benchflow-ai/skillsbench/tasks-ada-bathroom-plan-repair-environment-skills-ada-plan-view-accessibility",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-benchflow-ai-skillsbench-tasks-ada-bathroom-plan-repair-environment-skills-architectural-dxf-extraction",
+      "name": "tasks-ada-bathroom-plan-repair-environment-skills-architectural-dxf-extraction",
+      "author": "benchflow-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from benchflow-ai/skillsbench. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "skillsbench",
+        "tasks",
+        "ada",
+        "bathroom",
+        "plan"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/benchflow-ai/skillsbench/tasks-ada-bathroom-plan-repair-environment-skills-architectural-dxf-extraction",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
     }
   ]
 }

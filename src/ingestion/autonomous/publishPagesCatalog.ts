@@ -5,6 +5,7 @@ import { addLocalCoverage, buildOccupationCountsCatalog } from "./occupationCoun
 import { runAutonomousSkillLoop } from "./loop";
 import { buildPagesSkillCatalog, readLocalStoreComponents, readSkillsmpShardComponents, type PagesSkill } from "./pagesCatalog";
 import { publishSkillShards } from "./skillShards";
+import { fetchSkillsmpSitemapSkills } from "./skillsmpSitemaps";
 
 const outputPath = path.join(process.cwd(), "docs", "data", "skills-catalog.json");
 const occupationCountsPath = path.join(process.cwd(), "docs", "data", "occupation-counts.json");
@@ -30,7 +31,8 @@ const cacheComponents = [
   ...(await readSkillsmpShardComponents(skillsmpCachePath)),
 ];
 const existingSkills = await readExistingPagesSkills(outputPath);
-const catalog = buildPagesSkillCatalog({ run, cacheComponents, existingSkills });
+const sitemapSkills = await fetchSkillsmpSitemapSkills({ allowExternalFetch });
+const catalog = buildPagesSkillCatalog({ run, cacheComponents, existingSkills: [...existingSkills, ...sitemapSkills] });
 const occupationCounts = addLocalCoverage(await buildOccupationCountsCatalog({
   allowExternalFetch,
   fallbackPath: occupationCountsPath,
@@ -48,6 +50,7 @@ await writeFile(outputPath, `${JSON.stringify(catalog, null, 2)}\n`, "utf8");
 await writeFile(occupationCountsPath, `${JSON.stringify(occupationCounts, null, 2)}\n`, "utf8");
 
 console.log(`Published ${catalog.skills.length} skills to ${path.relative(process.cwd(), outputPath)}`);
+if (sitemapSkills.length) console.log(`Mirrored ${sitemapSkills.length} SkillsMP sitemap skills`);
 console.log(`Published ${occupationCounts.occupations.length} occupation groups to ${path.relative(process.cwd(), occupationCountsPath)}`);
 console.log(`Published ${skillsIndex.groups.length} skill shard groups to ${path.relative(process.cwd(), skillsIndexPath)}`);
 

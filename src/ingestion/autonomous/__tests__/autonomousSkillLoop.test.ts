@@ -4,6 +4,7 @@ import { addLocalCoverage, parseSkillsmpOccupationCounts } from "../occupationCo
 import { buildPagesSkillCatalog } from "../pagesCatalog";
 import { planMirrorShardJobs, summarizeMirrorQueue } from "../mirrorQueue";
 import { publishSkillShards } from "../skillShards";
+import { parseSkillsmpSitemapSkills } from "../skillsmpSitemaps";
 import { applySkillSpectorScan, scanSkillText } from "../../security/skillspector";
 import type { NormalizedComponent } from "../../types";
 import { mkdtemp, readFile, rm } from "node:fs/promises";
@@ -117,6 +118,22 @@ await test("SkillsMP occupation counts parser extracts major SOC group totals", 
   assert.equal(catalog.occupations[0].count, 1_199_690);
   assert.equal(catalog.occupations[0].displayCount, "1.2M");
   assert.equal(catalog.occupations[0].sourceUrl, "https://skillsmp.com/occupations/15-0000");
+});
+
+await test("SkillsMP sitemap parser mirrors public creator skill URLs", () => {
+  const skills = parseSkillsmpSitemapSkills([`
+    <urlset>
+      <url><loc>https://skillsmp.com/creators/anthropics/skills/skills-frontend-design</loc></url>
+      <url><loc>https://skillsmp.com/creators/anthropics/skills/skills-frontend-design</loc></url>
+      <url><loc>https://skillsmp.com/creators/microsoft/azure-skills/skills-azure-compute</loc></url>
+    </urlset>
+  `], "2026-07-08T00:00:00.000Z");
+
+  assert.equal(skills.length, 2);
+  assert.ok(skills.some((skill) => skill.source === "skillsmp-sitemap"));
+  assert.ok(skills.some((skill) => skill.skillsmpUrl === "https://skillsmp.com/creators/anthropics/skills/skills-frontend-design"));
+  assert.equal(skills.find((skill) => skill.name === "frontend-design")?.occupationId, "03");
+  assert.equal(skills.find((skill) => skill.name === "azure-compute")?.occupationId, "01");
 });
 
 await test("occupation counts catalog records local mirror coverage", () => {

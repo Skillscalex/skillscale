@@ -1,19 +1,28 @@
 {
   "occupationId": "01",
-  "totalSkills": 639,
+  "totalSkills": 5053,
   "upstreamTotal": 1199690,
   "shardSize": 500,
-  "shardCount": 2,
+  "shardCount": 11,
   "projectedShardCount": 2400,
   "missingShardRanges": [
     {
-      "start": 3,
+      "start": 12,
       "end": 2400
     }
   ],
-  "nextMissingShard": 3,
+  "nextMissingShard": 12,
   "shards": [
     "01/page-000001.json",
-    "01/page-000002.json"
+    "01/page-000002.json",
+    "01/page-000003.json",
+    "01/page-000004.json",
+    "01/page-000005.json",
+    "01/page-000006.json",
+    "01/page-000007.json",
+    "01/page-000008.json",
+    "01/page-000009.json",
+    "01/page-000010.json",
+    "01/page-000011.json"
   ]
 }

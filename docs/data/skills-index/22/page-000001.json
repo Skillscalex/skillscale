@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "occupationId": "22",
+  "skills": [
+    {
+      "id": "market-22-001",
+      "name": "installation-work-orders-planner",
+      "author": "skillscale-market",
+      "stars": 253,
+      "description": "Marketplace-ready installation skill for work orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "installation",
+        "work-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-002",
+      "name": "maintenance-work-orders-planner",
+      "author": "skillscale-market",
+      "stars": 250,
+      "description": "Marketplace-ready maintenance skill for work orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "maintenance",
+        "work-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-003",
+      "name": "repair-work-orders-planner",
+      "author": "skillscale-market",
+      "stars": 247,
+      "description": "Marketplace-ready repair skill for work orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "repair",
+        "work-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-004",
+      "name": "field-service-work-orders-planner",
+      "author": "skillscale-market",
+      "stars": 244,
+      "description": "Marketplace-ready field service skill for work orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "field-service",
+        "work-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-005",
+      "name": "installation-diagnostic-flows-planner",
+      "author": "skillscale-market",
+      "stars": 241,
+      "description": "Marketplace-ready installation skill for diagnostic flows. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "installation",
+        "diagnostic-flows",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-006",
+      "name": "maintenance-diagnostic-flows-planner",
+      "author": "skillscale-market",
+      "stars": 238,
+      "description": "Marketplace-ready maintenance skill for diagnostic flows. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "maintenance",
+        "diagnostic-flows",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-007",
+      "name": "repair-diagnostic-flows-planner",
+      "author": "skillscale-market",
+      "stars": 235,
+      "description": "Marketplace-ready repair skill for diagnostic flows. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "repair",
+        "diagnostic-flows",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-22-008",
+      "name": "field-service-diagnostic-flows-planner",
+      "author": "skillscale-market",
+      "stars": 232,
+      "description": "Marketplace-ready field service skill for diagnostic flows. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "field-service",
+        "diagnostic-flows",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-22-009",
+      "name": "installation-parts-lists-planner",
+      "author": "skillscale-market",
+      "stars": 229,
+      "description": "Marketplace-ready installation skill for parts lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "installation",
+        "parts-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-22-010",
+      "name": "maintenance-parts-lists-planner",
+      "author": "skillscale-market",
+      "stars": 226,
+      "description": "Marketplace-ready maintenance skill for parts lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "maintenance",
+        "parts-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-011",
+      "name": "repair-parts-lists-planner",
+      "author": "skillscale-market",
+      "stars": 223,
+      "description": "Marketplace-ready repair skill for parts lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "repair",
+        "parts-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-012",
+      "name": "field-service-parts-lists-planner",
+      "author": "skillscale-market",
+      "stars": 220,
+      "description": "Marketplace-ready field service skill for parts lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "field-service",
+        "parts-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-013",
+      "name": "installation-service-notes-planner",
+      "author": "skillscale-market",
+      "stars": 217,
+      "description": "Marketplace-ready installation skill for service notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "installation",
+        "service-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-014",
+      "name": "maintenance-service-notes-planner",
+      "author": "skillscale-market",
+      "stars": 214,
+      "description": "Marketplace-ready maintenance skill for service notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "maintenance",
+        "service-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-015",
+      "name": "repair-service-notes-planner",
+      "author": "skillscale-market",
+      "stars": 211,
+      "description": "Marketplace-ready repair skill for service notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "repair",
+        "service-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-016",
+      "name": "field-service-service-notes-planner",
+      "author": "skillscale-market",
+      "stars": 208,
+      "description": "Marketplace-ready field service skill for service notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "field-service",
+        "service-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-017",
+      "name": "installation-work-orders-assistant",
+      "author": "skillscale-market",
+      "stars": 205,
+      "description": "Marketplace-ready installation skill for work orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "installation",
+        "work-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-018",
+      "name": "maintenance-work-orders-assistant",
+      "author": "skillscale-market",
+      "stars": 202,
+      "description": "Marketplace-ready maintenance skill for work orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "maintenance",
+        "work-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-019",
+      "name": "repair-work-orders-assistant",
+      "author": "skillscale-market",
+      "stars": 199,
+      "description": "Marketplace-ready repair skill for work orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "repair",
+        "work-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-020",
+      "name": "field-service-work-orders-assistant",
+      "author": "skillscale-market",
+      "stars": 196,
+      "description": "Marketplace-ready field service skill for work orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "field-service",
+        "work-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-021",
+      "name": "installation-diagnostic-flows-assistant",
+      "author": "skillscale-market",
+      "stars": 193,
+      "description": "Marketplace-ready installation skill for diagnostic flows. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "installation",
+        "diagnostic-flows",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-22-022",
+      "name": "maintenance-diagnostic-flows-assistant",
+      "author": "skillscale-market",
+      "stars": 190,
+      "description": "Marketplace-ready maintenance skill for diagnostic flows. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "maintenance",
+        "diagnostic-flows",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-22-023",
+      "name": "repair-diagnostic-flows-assistant",
+      "author": "skillscale-market",
+      "stars": 187,
+      "description": "Marketplace-ready repair skill for diagnostic flows. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "repair",
+        "diagnostic-flows",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-22-024",
+      "name": "field-service-diagnostic-flows-assistant",
+      "author": "skillscale-market",
+      "stars": 184,
+      "description": "Marketplace-ready field service skill for diagnostic flows. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "field-service",
+        "diagnostic-flows",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-025",
+      "name": "installation-parts-lists-assistant",
+      "author": "skillscale-market",
+      "stars": 181,
+      "description": "Marketplace-ready installation skill for parts lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "installation",
+        "parts-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-026",
+      "name": "maintenance-parts-lists-assistant",
+      "author": "skillscale-market",
+      "stars": 178,
+      "description": "Marketplace-ready maintenance skill for parts lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "maintenance",
+        "parts-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-027",
+      "name": "repair-parts-lists-assistant",
+      "author": "skillscale-market",
+      "stars": 175,
+      "description": "Marketplace-ready repair skill for parts lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "repair",
+        "parts-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-028",
+      "name": "field-service-parts-lists-assistant",
+      "author": "skillscale-market",
+      "stars": 172,
+      "description": "Marketplace-ready field service skill for parts lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "field-service",
+        "parts-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-029",
+      "name": "installation-service-notes-assistant",
+      "author": "skillscale-market",
+      "stars": 169,
+      "description": "Marketplace-ready installation skill for service notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "installation",
+        "service-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-030",
+      "name": "maintenance-service-notes-assistant",
+      "author": "skillscale-market",
+      "stars": 166,
+      "description": "Marketplace-ready maintenance skill for service notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "maintenance",
+        "service-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-031",
+      "name": "repair-service-notes-assistant",
+      "author": "skillscale-market",
+      "stars": 163,
+      "description": "Marketplace-ready repair skill for service notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "repair",
+        "service-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-032",
+      "name": "field-service-service-notes-assistant",
+      "author": "skillscale-market",
+      "stars": 160,
+      "description": "Marketplace-ready field service skill for service notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "field-service",
+        "service-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-033",
+      "name": "installation-work-orders-reviewer",
+      "author": "skillscale-market",
+      "stars": 157,
+      "description": "Marketplace-ready installation skill for work orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "installation",
+        "work-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-034",
+      "name": "maintenance-work-orders-reviewer",
+      "author": "skillscale-market",
+      "stars": 154,
+      "description": "Marketplace-ready maintenance skill for work orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "maintenance",
+        "work-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-035",
+      "name": "repair-work-orders-reviewer",
+      "author": "skillscale-market",
+      "stars": 151,
+      "description": "Marketplace-ready repair skill for work orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "repair",
+        "work-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-22-036",
+      "name": "field-service-work-orders-reviewer",
+      "author": "skillscale-market",
+      "stars": 148,
+      "description": "Marketplace-ready field service skill for work orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "field-service",
+        "work-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-22-037",
+      "name": "installation-diagnostic-flows-reviewer",
+      "author": "skillscale-market",
+      "stars": 145,
+      "description": "Marketplace-ready installation skill for diagnostic flows. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "installation",
+        "diagnostic-flows",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-22-038",
+      "name": "maintenance-diagnostic-flows-reviewer",
+      "author": "skillscale-market",
+      "stars": 142,
+      "description": "Marketplace-ready maintenance skill for diagnostic flows. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "maintenance",
+        "diagnostic-flows",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-039",
+      "name": "repair-diagnostic-flows-reviewer",
+      "author": "skillscale-market",
+      "stars": 139,
+      "description": "Marketplace-ready repair skill for diagnostic flows. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "repair",
+        "diagnostic-flows",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-040",
+      "name": "field-service-diagnostic-flows-reviewer",
+      "author": "skillscale-market",
+      "stars": 136,
+      "description": "Marketplace-ready field service skill for diagnostic flows. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "field-service",
+        "diagnostic-flows",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-041",
+      "name": "installation-parts-lists-reviewer",
+      "author": "skillscale-market",
+      "stars": 133,
+      "description": "Marketplace-ready installation skill for parts lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "installation",
+        "parts-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-042",
+      "name": "maintenance-parts-lists-reviewer",
+      "author": "skillscale-market",
+      "stars": 130,
+      "description": "Marketplace-ready maintenance skill for parts lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "maintenance",
+        "parts-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-043",
+      "name": "repair-parts-lists-reviewer",
+      "author": "skillscale-market",
+      "stars": 127,
+      "description": "Marketplace-ready repair skill for parts lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "repair",
+        "parts-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-044",
+      "name": "field-service-parts-lists-reviewer",
+      "author": "skillscale-market",
+      "stars": 124,
+      "description": "Marketplace-ready field service skill for parts lists. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "field-service",
+        "parts-lists",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-045",
+      "name": "installation-service-notes-reviewer",
+      "author": "skillscale-market",
+      "stars": 121,
+      "description": "Marketplace-ready installation skill for service notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "installation",
+        "service-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-046",
+      "name": "maintenance-service-notes-reviewer",
+      "author": "skillscale-market",
+      "stars": 118,
+      "description": "Marketplace-ready maintenance skill for service notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "maintenance",
+        "service-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-047",
+      "name": "repair-service-notes-reviewer",
+      "author": "skillscale-market",
+      "stars": 115,
+      "description": "Marketplace-ready repair skill for service notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "repair",
+        "service-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-22-048",
+      "name": "field-service-service-notes-reviewer",
+      "author": "skillscale-market",
+      "stars": 112,
+      "description": "Marketplace-ready field service skill for service notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for installation, maintenance, and repair teams.",
+      "tags": [
+        "field-service",
+        "service-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "22",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    }
+  ]
+}

@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "occupationId": "08",
+  "skills": [
+    {
+      "id": "market-08-001",
+      "name": "management-okr-planning-planner",
+      "author": "skillscale-market",
+      "stars": 267,
+      "description": "Marketplace-ready management skill for OKR planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "management",
+        "okr-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-002",
+      "name": "leadership-okr-planning-planner",
+      "author": "skillscale-market",
+      "stars": 264,
+      "description": "Marketplace-ready leadership skill for OKR planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "leadership",
+        "okr-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-003",
+      "name": "program-okr-planning-planner",
+      "author": "skillscale-market",
+      "stars": 261,
+      "description": "Marketplace-ready program skill for OKR planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "program",
+        "okr-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-004",
+      "name": "people-ops-okr-planning-planner",
+      "author": "skillscale-market",
+      "stars": 258,
+      "description": "Marketplace-ready people ops skill for OKR planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "people-ops",
+        "okr-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-005",
+      "name": "management-status-reports-planner",
+      "author": "skillscale-market",
+      "stars": 255,
+      "description": "Marketplace-ready management skill for status reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "management",
+        "status-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-006",
+      "name": "leadership-status-reports-planner",
+      "author": "skillscale-market",
+      "stars": 252,
+      "description": "Marketplace-ready leadership skill for status reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "leadership",
+        "status-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-007",
+      "name": "program-status-reports-planner",
+      "author": "skillscale-market",
+      "stars": 249,
+      "description": "Marketplace-ready program skill for status reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "program",
+        "status-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-08-008",
+      "name": "people-ops-status-reports-planner",
+      "author": "skillscale-market",
+      "stars": 246,
+      "description": "Marketplace-ready people ops skill for status reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "people-ops",
+        "status-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-08-009",
+      "name": "management-decision-logs-planner",
+      "author": "skillscale-market",
+      "stars": 243,
+      "description": "Marketplace-ready management skill for decision logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "management",
+        "decision-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-08-010",
+      "name": "leadership-decision-logs-planner",
+      "author": "skillscale-market",
+      "stars": 240,
+      "description": "Marketplace-ready leadership skill for decision logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "leadership",
+        "decision-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-011",
+      "name": "program-decision-logs-planner",
+      "author": "skillscale-market",
+      "stars": 237,
+      "description": "Marketplace-ready program skill for decision logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "program",
+        "decision-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-012",
+      "name": "people-ops-decision-logs-planner",
+      "author": "skillscale-market",
+      "stars": 234,
+      "description": "Marketplace-ready people ops skill for decision logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "people-ops",
+        "decision-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-013",
+      "name": "management-hiring-scorecards-planner",
+      "author": "skillscale-market",
+      "stars": 231,
+      "description": "Marketplace-ready management skill for hiring scorecards. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "management",
+        "hiring-scorecards",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-014",
+      "name": "leadership-hiring-scorecards-planner",
+      "author": "skillscale-market",
+      "stars": 228,
+      "description": "Marketplace-ready leadership skill for hiring scorecards. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "leadership",
+        "hiring-scorecards",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-015",
+      "name": "program-hiring-scorecards-planner",
+      "author": "skillscale-market",
+      "stars": 225,
+      "description": "Marketplace-ready program skill for hiring scorecards. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "program",
+        "hiring-scorecards",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-016",
+      "name": "people-ops-hiring-scorecards-planner",
+      "author": "skillscale-market",
+      "stars": 222,
+      "description": "Marketplace-ready people ops skill for hiring scorecards. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "people-ops",
+        "hiring-scorecards",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-017",
+      "name": "management-okr-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 219,
+      "description": "Marketplace-ready management skill for OKR planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "management",
+        "okr-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-018",
+      "name": "leadership-okr-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 216,
+      "description": "Marketplace-ready leadership skill for OKR planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "leadership",
+        "okr-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-019",
+      "name": "program-okr-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 213,
+      "description": "Marketplace-ready program skill for OKR planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "program",
+        "okr-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-020",
+      "name": "people-ops-okr-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 210,
+      "description": "Marketplace-ready people ops skill for OKR planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "people-ops",
+        "okr-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-021",
+      "name": "management-status-reports-assistant",
+      "author": "skillscale-market",
+      "stars": 207,
+      "description": "Marketplace-ready management skill for status reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "management",
+        "status-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-08-022",
+      "name": "leadership-status-reports-assistant",
+      "author": "skillscale-market",
+      "stars": 204,
+      "description": "Marketplace-ready leadership skill for status reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "leadership",
+        "status-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-08-023",
+      "name": "program-status-reports-assistant",
+      "author": "skillscale-market",
+      "stars": 201,
+      "description": "Marketplace-ready program skill for status reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "program",
+        "status-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-08-024",
+      "name": "people-ops-status-reports-assistant",
+      "author": "skillscale-market",
+      "stars": 198,
+      "description": "Marketplace-ready people ops skill for status reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "people-ops",
+        "status-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-025",
+      "name": "management-decision-logs-assistant",
+      "author": "skillscale-market",
+      "stars": 195,
+      "description": "Marketplace-ready management skill for decision logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "management",
+        "decision-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-026",
+      "name": "leadership-decision-logs-assistant",
+      "author": "skillscale-market",
+      "stars": 192,
+      "description": "Marketplace-ready leadership skill for decision logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "leadership",
+        "decision-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-027",
+      "name": "program-decision-logs-assistant",
+      "author": "skillscale-market",
+      "stars": 189,
+      "description": "Marketplace-ready program skill for decision logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "program",
+        "decision-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-028",
+      "name": "people-ops-decision-logs-assistant",
+      "author": "skillscale-market",
+      "stars": 186,
+      "description": "Marketplace-ready people ops skill for decision logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "people-ops",
+        "decision-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-029",
+      "name": "management-hiring-scorecards-assistant",
+      "author": "skillscale-market",
+      "stars": 183,
+      "description": "Marketplace-ready management skill for hiring scorecards. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "management",
+        "hiring-scorecards",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-030",
+      "name": "leadership-hiring-scorecards-assistant",
+      "author": "skillscale-market",
+      "stars": 180,
+      "description": "Marketplace-ready leadership skill for hiring scorecards. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "leadership",
+        "hiring-scorecards",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-031",
+      "name": "program-hiring-scorecards-assistant",
+      "author": "skillscale-market",
+      "stars": 177,
+      "description": "Marketplace-ready program skill for hiring scorecards. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "program",
+        "hiring-scorecards",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-032",
+      "name": "people-ops-hiring-scorecards-assistant",
+      "author": "skillscale-market",
+      "stars": 174,
+      "description": "Marketplace-ready people ops skill for hiring scorecards. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "people-ops",
+        "hiring-scorecards",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-033",
+      "name": "management-okr-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 171,
+      "description": "Marketplace-ready management skill for OKR planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "management",
+        "okr-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-034",
+      "name": "leadership-okr-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 168,
+      "description": "Marketplace-ready leadership skill for OKR planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "leadership",
+        "okr-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-035",
+      "name": "program-okr-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 165,
+      "description": "Marketplace-ready program skill for OKR planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "program",
+        "okr-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-08-036",
+      "name": "people-ops-okr-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 162,
+      "description": "Marketplace-ready people ops skill for OKR planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "people-ops",
+        "okr-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-08-037",
+      "name": "management-status-reports-reviewer",
+      "author": "skillscale-market",
+      "stars": 159,
+      "description": "Marketplace-ready management skill for status reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "management",
+        "status-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-08-038",
+      "name": "leadership-status-reports-reviewer",
+      "author": "skillscale-market",
+      "stars": 156,
+      "description": "Marketplace-ready leadership skill for status reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "leadership",
+        "status-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-039",
+      "name": "program-status-reports-reviewer",
+      "author": "skillscale-market",
+      "stars": 153,
+      "description": "Marketplace-ready program skill for status reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "program",
+        "status-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-040",
+      "name": "people-ops-status-reports-reviewer",
+      "author": "skillscale-market",
+      "stars": 150,
+      "description": "Marketplace-ready people ops skill for status reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "people-ops",
+        "status-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-041",
+      "name": "management-decision-logs-reviewer",
+      "author": "skillscale-market",
+      "stars": 147,
+      "description": "Marketplace-ready management skill for decision logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "management",
+        "decision-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-042",
+      "name": "leadership-decision-logs-reviewer",
+      "author": "skillscale-market",
+      "stars": 144,
+      "description": "Marketplace-ready leadership skill for decision logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "leadership",
+        "decision-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-043",
+      "name": "program-decision-logs-reviewer",
+      "author": "skillscale-market",
+      "stars": 141,
+      "description": "Marketplace-ready program skill for decision logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "program",
+        "decision-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-044",
+      "name": "people-ops-decision-logs-reviewer",
+      "author": "skillscale-market",
+      "stars": 138,
+      "description": "Marketplace-ready people ops skill for decision logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "people-ops",
+        "decision-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-045",
+      "name": "management-hiring-scorecards-reviewer",
+      "author": "skillscale-market",
+      "stars": 135,
+      "description": "Marketplace-ready management skill for hiring scorecards. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "management",
+        "hiring-scorecards",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-046",
+      "name": "leadership-hiring-scorecards-reviewer",
+      "author": "skillscale-market",
+      "stars": 132,
+      "description": "Marketplace-ready leadership skill for hiring scorecards. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "leadership",
+        "hiring-scorecards",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-047",
+      "name": "program-hiring-scorecards-reviewer",
+      "author": "skillscale-market",
+      "stars": 129,
+      "description": "Marketplace-ready program skill for hiring scorecards. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "program",
+        "hiring-scorecards",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-08-048",
+      "name": "people-ops-hiring-scorecards-reviewer",
+      "author": "skillscale-market",
+      "stars": 126,
+      "description": "Marketplace-ready people ops skill for hiring scorecards. Produces structured checklists, drafts, summaries, and handoff notes tuned for management teams.",
+      "tags": [
+        "people-ops",
+        "hiring-scorecards",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "08",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    }
+  ]
+}

@@ -167,6 +167,12 @@ async function fetchPagesCatalog() {
   return await resp.json();
 }
 
+async function fetchSkillsIndexManifest() {
+  const resp = await fetch(`${SKILLS_INDEX_URL}/manifest.json?t=${Date.now()}`, { cache:'no-store' });
+  if (!resp.ok) return null;
+  return await resp.json();
+}
+
 function normalizeCatalogSkill(skill) {
   const name = String(skill?.name || skill?.id || 'unnamed-skill').trim();
   const id = String(skill?.id || name).trim();
@@ -260,20 +266,38 @@ function useOccupationCounts() {
           if (!resp.ok) throw new Error(`Occupation counts HTTP ${resp.status}`);
           return resp.json();
         })();
+        const staticManifest = await fetchSkillsIndexManifest().catch(() => null);
+        const staticGroups = new Map(
+          (Array.isArray(staticManifest?.groups) ? staticManifest.groups : [])
+            .map(group => [String(group.occupationId), group])
+        );
         const incoming = Array.isArray(catalog?.occupations) ? catalog.occupations : [];
         const byId = new Map(incoming.map(occ => [String(occ.id), occ]));
         const occupations = OCCUPATIONS.map(occ => {
           const fresh = byId.get(occ.id);
+          const staticGroup = staticGroups.get(occ.id);
+          const staticLocalCount = Number(staticGroup?.totalSkills || 0);
           return fresh ? {
             ...occ,
             label: String(fresh.label || occ.label),
             count: String(fresh.displayCount || formatCompactCount(fresh.count) || occ.count),
             rawCount: Number(fresh.count || occ.rawCount || 0),
             sourceUrl: fresh.sourceUrl ? String(fresh.sourceUrl) : occ.sourceUrl,
-            localCount: Number(fresh.localCount || 0),
-            coveragePercent: Number(fresh.coveragePercent || 0),
-            mirrorStatus: fresh.mirrorStatus ? String(fresh.mirrorStatus) : 'sampled',
-          } : occ;
+            localCount: Math.max(Number(fresh.localCount || 0), staticLocalCount),
+            coveragePercent: Number(fresh.count || occ.rawCount || 0) > 0
+              ? Number(((Math.max(Number(fresh.localCount || 0), staticLocalCount) / Number(fresh.count || occ.rawCount || 0)) * 100).toFixed(4))
+              : Number(fresh.coveragePercent || 0),
+            mirrorStatus: Math.max(Number(fresh.localCount || 0), staticLocalCount) >= Number(fresh.count || occ.rawCount || 0)
+              ? 'complete'
+              : Math.max(Number(fresh.localCount || 0), staticLocalCount) > 0
+                ? (Number(fresh.coveragePercent || 0) >= 1 ? 'partial' : 'sampled')
+                : (fresh.mirrorStatus ? String(fresh.mirrorStatus) : 'queued'),
+          } : {
+            ...occ,
+            localCount: staticLocalCount,
+            coveragePercent: occ.rawCount > 0 ? Number(((staticLocalCount / occ.rawCount) * 100).toFixed(4)) : 0,
+            mirrorStatus: staticLocalCount > 0 ? 'sampled' : 'queued',
+          };
         });
         if (!alive) return;
         setState({ status:'ready', occupations, meta:catalog, lastLoadedAt:new Date(), error:null });
@@ -300,7 +324,7 @@ function useOccupationShard(occupationId, page, pageSize, searchQ = '') {
       setState(prev => ({ ...prev, status:'loading', error:null }));
       try {
         const mirrorPage = await fetchSupabaseMirrorSkills(occupationId, page, pageSize, searchQ);
-        if (mirrorPage) {
+        if (mirrorPage && (mirrorPage.total > 0 || mirrorPage.skills.length > 0)) {
           const manifest = {
             occupationId,
             totalSkills: mirrorPage.total,

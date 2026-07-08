@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "occupationId": "20",
+  "skills": [
+    {
+      "id": "market-20-001",
+      "name": "construction-rfi-drafts-planner",
+      "author": "skillscale-market",
+      "stars": 255,
+      "description": "Marketplace-ready construction skill for RFI drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "construction",
+        "rfi-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-002",
+      "name": "trades-rfi-drafts-planner",
+      "author": "skillscale-market",
+      "stars": 252,
+      "description": "Marketplace-ready trades skill for RFI drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "trades",
+        "rfi-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-003",
+      "name": "site-ops-rfi-drafts-planner",
+      "author": "skillscale-market",
+      "stars": 249,
+      "description": "Marketplace-ready site ops skill for RFI drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "site-ops",
+        "rfi-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-004",
+      "name": "estimation-rfi-drafts-planner",
+      "author": "skillscale-market",
+      "stars": 246,
+      "description": "Marketplace-ready estimation skill for RFI drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "estimation",
+        "rfi-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-005",
+      "name": "construction-material-takeoffs-planner",
+      "author": "skillscale-market",
+      "stars": 243,
+      "description": "Marketplace-ready construction skill for material takeoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "construction",
+        "material-takeoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-006",
+      "name": "trades-material-takeoffs-planner",
+      "author": "skillscale-market",
+      "stars": 240,
+      "description": "Marketplace-ready trades skill for material takeoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "trades",
+        "material-takeoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-007",
+      "name": "site-ops-material-takeoffs-planner",
+      "author": "skillscale-market",
+      "stars": 237,
+      "description": "Marketplace-ready site ops skill for material takeoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "site-ops",
+        "material-takeoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-008",
+      "name": "estimation-material-takeoffs-planner",
+      "author": "skillscale-market",
+      "stars": 234,
+      "description": "Marketplace-ready estimation skill for material takeoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "estimation",
+        "material-takeoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-009",
+      "name": "construction-change-orders-planner",
+      "author": "skillscale-market",
+      "stars": 231,
+      "description": "Marketplace-ready construction skill for change orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "construction",
+        "change-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-20-010",
+      "name": "trades-change-orders-planner",
+      "author": "skillscale-market",
+      "stars": 228,
+      "description": "Marketplace-ready trades skill for change orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "trades",
+        "change-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-20-011",
+      "name": "site-ops-change-orders-planner",
+      "author": "skillscale-market",
+      "stars": 225,
+      "description": "Marketplace-ready site ops skill for change orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "site-ops",
+        "change-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-20-012",
+      "name": "estimation-change-orders-planner",
+      "author": "skillscale-market",
+      "stars": 222,
+      "description": "Marketplace-ready estimation skill for change orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "estimation",
+        "change-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-013",
+      "name": "construction-safety-talks-planner",
+      "author": "skillscale-market",
+      "stars": 219,
+      "description": "Marketplace-ready construction skill for safety talks. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "construction",
+        "safety-talks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-014",
+      "name": "trades-safety-talks-planner",
+      "author": "skillscale-market",
+      "stars": 216,
+      "description": "Marketplace-ready trades skill for safety talks. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "trades",
+        "safety-talks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-015",
+      "name": "site-ops-safety-talks-planner",
+      "author": "skillscale-market",
+      "stars": 213,
+      "description": "Marketplace-ready site ops skill for safety talks. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "site-ops",
+        "safety-talks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-016",
+      "name": "estimation-safety-talks-planner",
+      "author": "skillscale-market",
+      "stars": 210,
+      "description": "Marketplace-ready estimation skill for safety talks. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "estimation",
+        "safety-talks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-017",
+      "name": "construction-rfi-drafts-assistant",
+      "author": "skillscale-market",
+      "stars": 207,
+      "description": "Marketplace-ready construction skill for RFI drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "construction",
+        "rfi-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-018",
+      "name": "trades-rfi-drafts-assistant",
+      "author": "skillscale-market",
+      "stars": 204,
+      "description": "Marketplace-ready trades skill for RFI drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "trades",
+        "rfi-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-019",
+      "name": "site-ops-rfi-drafts-assistant",
+      "author": "skillscale-market",
+      "stars": 201,
+      "description": "Marketplace-ready site ops skill for RFI drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "site-ops",
+        "rfi-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-020",
+      "name": "estimation-rfi-drafts-assistant",
+      "author": "skillscale-market",
+      "stars": 198,
+      "description": "Marketplace-ready estimation skill for RFI drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "estimation",
+        "rfi-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-021",
+      "name": "construction-material-takeoffs-assistant",
+      "author": "skillscale-market",
+      "stars": 195,
+      "description": "Marketplace-ready construction skill for material takeoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "construction",
+        "material-takeoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-022",
+      "name": "trades-material-takeoffs-assistant",
+      "author": "skillscale-market",
+      "stars": 192,
+      "description": "Marketplace-ready trades skill for material takeoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "trades",
+        "material-takeoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-023",
+      "name": "site-ops-material-takeoffs-assistant",
+      "author": "skillscale-market",
+      "stars": 189,
+      "description": "Marketplace-ready site ops skill for material takeoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "site-ops",
+        "material-takeoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-20-024",
+      "name": "estimation-material-takeoffs-assistant",
+      "author": "skillscale-market",
+      "stars": 186,
+      "description": "Marketplace-ready estimation skill for material takeoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "estimation",
+        "material-takeoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-20-025",
+      "name": "construction-change-orders-assistant",
+      "author": "skillscale-market",
+      "stars": 183,
+      "description": "Marketplace-ready construction skill for change orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "construction",
+        "change-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-20-026",
+      "name": "trades-change-orders-assistant",
+      "author": "skillscale-market",
+      "stars": 180,
+      "description": "Marketplace-ready trades skill for change orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "trades",
+        "change-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-027",
+      "name": "site-ops-change-orders-assistant",
+      "author": "skillscale-market",
+      "stars": 177,
+      "description": "Marketplace-ready site ops skill for change orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "site-ops",
+        "change-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-028",
+      "name": "estimation-change-orders-assistant",
+      "author": "skillscale-market",
+      "stars": 174,
+      "description": "Marketplace-ready estimation skill for change orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "estimation",
+        "change-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-029",
+      "name": "construction-safety-talks-assistant",
+      "author": "skillscale-market",
+      "stars": 171,
+      "description": "Marketplace-ready construction skill for safety talks. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "construction",
+        "safety-talks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-030",
+      "name": "trades-safety-talks-assistant",
+      "author": "skillscale-market",
+      "stars": 168,
+      "description": "Marketplace-ready trades skill for safety talks. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "trades",
+        "safety-talks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-031",
+      "name": "site-ops-safety-talks-assistant",
+      "author": "skillscale-market",
+      "stars": 165,
+      "description": "Marketplace-ready site ops skill for safety talks. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "site-ops",
+        "safety-talks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-032",
+      "name": "estimation-safety-talks-assistant",
+      "author": "skillscale-market",
+      "stars": 162,
+      "description": "Marketplace-ready estimation skill for safety talks. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "estimation",
+        "safety-talks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-033",
+      "name": "construction-rfi-drafts-reviewer",
+      "author": "skillscale-market",
+      "stars": 159,
+      "description": "Marketplace-ready construction skill for RFI drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "construction",
+        "rfi-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-034",
+      "name": "trades-rfi-drafts-reviewer",
+      "author": "skillscale-market",
+      "stars": 156,
+      "description": "Marketplace-ready trades skill for RFI drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "trades",
+        "rfi-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-035",
+      "name": "site-ops-rfi-drafts-reviewer",
+      "author": "skillscale-market",
+      "stars": 153,
+      "description": "Marketplace-ready site ops skill for RFI drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "site-ops",
+        "rfi-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-036",
+      "name": "estimation-rfi-drafts-reviewer",
+      "author": "skillscale-market",
+      "stars": 150,
+      "description": "Marketplace-ready estimation skill for RFI drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "estimation",
+        "rfi-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-037",
+      "name": "construction-material-takeoffs-reviewer",
+      "author": "skillscale-market",
+      "stars": 147,
+      "description": "Marketplace-ready construction skill for material takeoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "construction",
+        "material-takeoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-20-038",
+      "name": "trades-material-takeoffs-reviewer",
+      "author": "skillscale-market",
+      "stars": 144,
+      "description": "Marketplace-ready trades skill for material takeoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "trades",
+        "material-takeoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-20-039",
+      "name": "site-ops-material-takeoffs-reviewer",
+      "author": "skillscale-market",
+      "stars": 141,
+      "description": "Marketplace-ready site ops skill for material takeoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "site-ops",
+        "material-takeoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-20-040",
+      "name": "estimation-material-takeoffs-reviewer",
+      "author": "skillscale-market",
+      "stars": 138,
+      "description": "Marketplace-ready estimation skill for material takeoffs. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "estimation",
+        "material-takeoffs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-041",
+      "name": "construction-change-orders-reviewer",
+      "author": "skillscale-market",
+      "stars": 135,
+      "description": "Marketplace-ready construction skill for change orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "construction",
+        "change-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-042",
+      "name": "trades-change-orders-reviewer",
+      "author": "skillscale-market",
+      "stars": 132,
+      "description": "Marketplace-ready trades skill for change orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "trades",
+        "change-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-043",
+      "name": "site-ops-change-orders-reviewer",
+      "author": "skillscale-market",
+      "stars": 129,
+      "description": "Marketplace-ready site ops skill for change orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "site-ops",
+        "change-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-044",
+      "name": "estimation-change-orders-reviewer",
+      "author": "skillscale-market",
+      "stars": 126,
+      "description": "Marketplace-ready estimation skill for change orders. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "estimation",
+        "change-orders",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-045",
+      "name": "construction-safety-talks-reviewer",
+      "author": "skillscale-market",
+      "stars": 123,
+      "description": "Marketplace-ready construction skill for safety talks. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "construction",
+        "safety-talks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-046",
+      "name": "trades-safety-talks-reviewer",
+      "author": "skillscale-market",
+      "stars": 120,
+      "description": "Marketplace-ready trades skill for safety talks. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "trades",
+        "safety-talks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-047",
+      "name": "site-ops-safety-talks-reviewer",
+      "author": "skillscale-market",
+      "stars": 117,
+      "description": "Marketplace-ready site ops skill for safety talks. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "site-ops",
+        "safety-talks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-20-048",
+      "name": "estimation-safety-talks-reviewer",
+      "author": "skillscale-market",
+      "stars": 114,
+      "description": "Marketplace-ready estimation skill for safety talks. Produces structured checklists, drafts, summaries, and handoff notes tuned for construction and extraction teams.",
+      "tags": [
+        "estimation",
+        "safety-talks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "20",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    }
+  ]
+}

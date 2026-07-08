@@ -1,7 +1,871 @@
 {
-  "generatedAt": "2026-07-08T08:45:18.344Z",
+  "generatedAt": "2026-07-08T09:34:05.364Z",
   "occupationId": "02",
   "skills": [
+    {
+      "id": "market-02-001",
+      "name": "finance-forecast-modeling-planner",
+      "author": "skillscale-market",
+      "stars": 273,
+      "description": "Marketplace-ready finance skill for forecast modeling. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "finance",
+        "forecast-modeling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-02-002",
+      "name": "operations-forecast-modeling-planner",
+      "author": "skillscale-market",
+      "stars": 270,
+      "description": "Marketplace-ready operations skill for forecast modeling. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "operations",
+        "forecast-modeling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-003",
+      "name": "strategy-forecast-modeling-planner",
+      "author": "skillscale-market",
+      "stars": 267,
+      "description": "Marketplace-ready strategy skill for forecast modeling. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "strategy",
+        "forecast-modeling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-004",
+      "name": "procurement-forecast-modeling-planner",
+      "author": "skillscale-market",
+      "stars": 264,
+      "description": "Marketplace-ready procurement skill for forecast modeling. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "procurement",
+        "forecast-modeling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-005",
+      "name": "finance-variance-analysis-planner",
+      "author": "skillscale-market",
+      "stars": 261,
+      "description": "Marketplace-ready finance skill for variance analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "finance",
+        "variance-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-006",
+      "name": "operations-variance-analysis-planner",
+      "author": "skillscale-market",
+      "stars": 258,
+      "description": "Marketplace-ready operations skill for variance analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "operations",
+        "variance-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-007",
+      "name": "strategy-variance-analysis-planner",
+      "author": "skillscale-market",
+      "stars": 255,
+      "description": "Marketplace-ready strategy skill for variance analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "strategy",
+        "variance-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-008",
+      "name": "procurement-variance-analysis-planner",
+      "author": "skillscale-market",
+      "stars": 252,
+      "description": "Marketplace-ready procurement skill for variance analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "procurement",
+        "variance-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-009",
+      "name": "finance-board-reporting-planner",
+      "author": "skillscale-market",
+      "stars": 249,
+      "description": "Marketplace-ready finance skill for board reporting. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "finance",
+        "board-reporting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-010",
+      "name": "operations-board-reporting-planner",
+      "author": "skillscale-market",
+      "stars": 246,
+      "description": "Marketplace-ready operations skill for board reporting. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "operations",
+        "board-reporting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-011",
+      "name": "strategy-board-reporting-planner",
+      "author": "skillscale-market",
+      "stars": 243,
+      "description": "Marketplace-ready strategy skill for board reporting. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "strategy",
+        "board-reporting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-012",
+      "name": "procurement-board-reporting-planner",
+      "author": "skillscale-market",
+      "stars": 240,
+      "description": "Marketplace-ready procurement skill for board reporting. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "procurement",
+        "board-reporting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-013",
+      "name": "finance-budget-planning-planner",
+      "author": "skillscale-market",
+      "stars": 237,
+      "description": "Marketplace-ready finance skill for budget planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "finance",
+        "budget-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-02-014",
+      "name": "operations-budget-planning-planner",
+      "author": "skillscale-market",
+      "stars": 234,
+      "description": "Marketplace-ready operations skill for budget planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "operations",
+        "budget-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-02-015",
+      "name": "strategy-budget-planning-planner",
+      "author": "skillscale-market",
+      "stars": 231,
+      "description": "Marketplace-ready strategy skill for budget planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "strategy",
+        "budget-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-02-016",
+      "name": "procurement-budget-planning-planner",
+      "author": "skillscale-market",
+      "stars": 228,
+      "description": "Marketplace-ready procurement skill for budget planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "procurement",
+        "budget-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-017",
+      "name": "finance-forecast-modeling-assistant",
+      "author": "skillscale-market",
+      "stars": 225,
+      "description": "Marketplace-ready finance skill for forecast modeling. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "finance",
+        "forecast-modeling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-018",
+      "name": "operations-forecast-modeling-assistant",
+      "author": "skillscale-market",
+      "stars": 222,
+      "description": "Marketplace-ready operations skill for forecast modeling. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "operations",
+        "forecast-modeling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-019",
+      "name": "strategy-forecast-modeling-assistant",
+      "author": "skillscale-market",
+      "stars": 219,
+      "description": "Marketplace-ready strategy skill for forecast modeling. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "strategy",
+        "forecast-modeling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-020",
+      "name": "procurement-forecast-modeling-assistant",
+      "author": "skillscale-market",
+      "stars": 216,
+      "description": "Marketplace-ready procurement skill for forecast modeling. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "procurement",
+        "forecast-modeling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-021",
+      "name": "finance-variance-analysis-assistant",
+      "author": "skillscale-market",
+      "stars": 213,
+      "description": "Marketplace-ready finance skill for variance analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "finance",
+        "variance-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-022",
+      "name": "operations-variance-analysis-assistant",
+      "author": "skillscale-market",
+      "stars": 210,
+      "description": "Marketplace-ready operations skill for variance analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "operations",
+        "variance-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-023",
+      "name": "strategy-variance-analysis-assistant",
+      "author": "skillscale-market",
+      "stars": 207,
+      "description": "Marketplace-ready strategy skill for variance analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "strategy",
+        "variance-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-024",
+      "name": "procurement-variance-analysis-assistant",
+      "author": "skillscale-market",
+      "stars": 204,
+      "description": "Marketplace-ready procurement skill for variance analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "procurement",
+        "variance-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-025",
+      "name": "finance-board-reporting-assistant",
+      "author": "skillscale-market",
+      "stars": 201,
+      "description": "Marketplace-ready finance skill for board reporting. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "finance",
+        "board-reporting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-026",
+      "name": "operations-board-reporting-assistant",
+      "author": "skillscale-market",
+      "stars": 198,
+      "description": "Marketplace-ready operations skill for board reporting. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "operations",
+        "board-reporting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-027",
+      "name": "strategy-board-reporting-assistant",
+      "author": "skillscale-market",
+      "stars": 195,
+      "description": "Marketplace-ready strategy skill for board reporting. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "strategy",
+        "board-reporting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-02-028",
+      "name": "procurement-board-reporting-assistant",
+      "author": "skillscale-market",
+      "stars": 192,
+      "description": "Marketplace-ready procurement skill for board reporting. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "procurement",
+        "board-reporting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-02-029",
+      "name": "finance-budget-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 189,
+      "description": "Marketplace-ready finance skill for budget planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "finance",
+        "budget-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-02-030",
+      "name": "operations-budget-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 186,
+      "description": "Marketplace-ready operations skill for budget planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "operations",
+        "budget-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-031",
+      "name": "strategy-budget-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 183,
+      "description": "Marketplace-ready strategy skill for budget planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "strategy",
+        "budget-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-032",
+      "name": "procurement-budget-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 180,
+      "description": "Marketplace-ready procurement skill for budget planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "procurement",
+        "budget-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-033",
+      "name": "finance-forecast-modeling-reviewer",
+      "author": "skillscale-market",
+      "stars": 177,
+      "description": "Marketplace-ready finance skill for forecast modeling. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "finance",
+        "forecast-modeling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-034",
+      "name": "operations-forecast-modeling-reviewer",
+      "author": "skillscale-market",
+      "stars": 174,
+      "description": "Marketplace-ready operations skill for forecast modeling. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "operations",
+        "forecast-modeling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-035",
+      "name": "strategy-forecast-modeling-reviewer",
+      "author": "skillscale-market",
+      "stars": 171,
+      "description": "Marketplace-ready strategy skill for forecast modeling. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "strategy",
+        "forecast-modeling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-036",
+      "name": "procurement-forecast-modeling-reviewer",
+      "author": "skillscale-market",
+      "stars": 168,
+      "description": "Marketplace-ready procurement skill for forecast modeling. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "procurement",
+        "forecast-modeling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-037",
+      "name": "finance-variance-analysis-reviewer",
+      "author": "skillscale-market",
+      "stars": 165,
+      "description": "Marketplace-ready finance skill for variance analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "finance",
+        "variance-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-038",
+      "name": "operations-variance-analysis-reviewer",
+      "author": "skillscale-market",
+      "stars": 162,
+      "description": "Marketplace-ready operations skill for variance analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "operations",
+        "variance-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-039",
+      "name": "strategy-variance-analysis-reviewer",
+      "author": "skillscale-market",
+      "stars": 159,
+      "description": "Marketplace-ready strategy skill for variance analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "strategy",
+        "variance-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-040",
+      "name": "procurement-variance-analysis-reviewer",
+      "author": "skillscale-market",
+      "stars": 156,
+      "description": "Marketplace-ready procurement skill for variance analysis. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "procurement",
+        "variance-analysis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-041",
+      "name": "finance-board-reporting-reviewer",
+      "author": "skillscale-market",
+      "stars": 153,
+      "description": "Marketplace-ready finance skill for board reporting. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "finance",
+        "board-reporting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-02-042",
+      "name": "operations-board-reporting-reviewer",
+      "author": "skillscale-market",
+      "stars": 150,
+      "description": "Marketplace-ready operations skill for board reporting. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "operations",
+        "board-reporting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-02-043",
+      "name": "strategy-board-reporting-reviewer",
+      "author": "skillscale-market",
+      "stars": 147,
+      "description": "Marketplace-ready strategy skill for board reporting. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "strategy",
+        "board-reporting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-02-044",
+      "name": "procurement-board-reporting-reviewer",
+      "author": "skillscale-market",
+      "stars": 144,
+      "description": "Marketplace-ready procurement skill for board reporting. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "procurement",
+        "board-reporting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-045",
+      "name": "finance-budget-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 141,
+      "description": "Marketplace-ready finance skill for budget planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "finance",
+        "budget-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-046",
+      "name": "operations-budget-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 138,
+      "description": "Marketplace-ready operations skill for budget planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "operations",
+        "budget-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-047",
+      "name": "strategy-budget-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 135,
+      "description": "Marketplace-ready strategy skill for budget planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "strategy",
+        "budget-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-02-048",
+      "name": "procurement-budget-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 132,
+      "description": "Marketplace-ready procurement skill for budget planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for business and financial operations teams.",
+      "tags": [
+        "procurement",
+        "budget-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "02",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
     {
       "id": "global-agents-aitmpl-docs-marketplace",
       "name": "Global Agents",
@@ -9,7 +873,7 @@
       "stars": 0,
       "description": "Create globally accessible AI agents that can be executed from any directory on your system",
       "tags": [],
-      "updatedAt": "1783500271",
+      "updatedAt": "1781508344",
       "occupationId": "02",
       "source": "aitmpl-docs-index",
       "secureScore": 91,
@@ -22,7 +886,7 @@
       "stars": 0,
       "description": "Advanced search with filters for marketplace.json, stars, and update time",
       "tags": [],
-      "updatedAt": "1783500291",
+      "updatedAt": "1781508365",
       "occupationId": "02",
       "source": "skillsmp",
       "secureScore": 91,

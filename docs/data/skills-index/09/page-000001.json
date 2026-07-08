@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "occupationId": "09",
+  "skills": [
+    {
+      "id": "market-09-001",
+      "name": "sales-lead-research-planner",
+      "author": "skillscale-market",
+      "stars": 266,
+      "description": "Marketplace-ready sales skill for lead research. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "sales",
+        "lead-research",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-002",
+      "name": "customer-lead-research-planner",
+      "author": "skillscale-market",
+      "stars": 263,
+      "description": "Marketplace-ready customer skill for lead research. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "customer",
+        "lead-research",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-003",
+      "name": "account-lead-research-planner",
+      "author": "skillscale-market",
+      "stars": 260,
+      "description": "Marketplace-ready account skill for lead research. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "account",
+        "lead-research",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-004",
+      "name": "retail-lead-research-planner",
+      "author": "skillscale-market",
+      "stars": 257,
+      "description": "Marketplace-ready retail skill for lead research. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "retail",
+        "lead-research",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-005",
+      "name": "sales-proposal-writing-planner",
+      "author": "skillscale-market",
+      "stars": 254,
+      "description": "Marketplace-ready sales skill for proposal writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "sales",
+        "proposal-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-006",
+      "name": "customer-proposal-writing-planner",
+      "author": "skillscale-market",
+      "stars": 251,
+      "description": "Marketplace-ready customer skill for proposal writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "customer",
+        "proposal-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-09-007",
+      "name": "account-proposal-writing-planner",
+      "author": "skillscale-market",
+      "stars": 248,
+      "description": "Marketplace-ready account skill for proposal writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "account",
+        "proposal-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-09-008",
+      "name": "retail-proposal-writing-planner",
+      "author": "skillscale-market",
+      "stars": 245,
+      "description": "Marketplace-ready retail skill for proposal writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "retail",
+        "proposal-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-09-009",
+      "name": "sales-call-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 242,
+      "description": "Marketplace-ready sales skill for call summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "sales",
+        "call-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-010",
+      "name": "customer-call-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 239,
+      "description": "Marketplace-ready customer skill for call summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "customer",
+        "call-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-011",
+      "name": "account-call-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 236,
+      "description": "Marketplace-ready account skill for call summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "account",
+        "call-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-012",
+      "name": "retail-call-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 233,
+      "description": "Marketplace-ready retail skill for call summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "retail",
+        "call-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-013",
+      "name": "sales-crm-updates-planner",
+      "author": "skillscale-market",
+      "stars": 230,
+      "description": "Marketplace-ready sales skill for CRM updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "sales",
+        "crm-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-014",
+      "name": "customer-crm-updates-planner",
+      "author": "skillscale-market",
+      "stars": 227,
+      "description": "Marketplace-ready customer skill for CRM updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "customer",
+        "crm-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-015",
+      "name": "account-crm-updates-planner",
+      "author": "skillscale-market",
+      "stars": 224,
+      "description": "Marketplace-ready account skill for CRM updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "account",
+        "crm-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-016",
+      "name": "retail-crm-updates-planner",
+      "author": "skillscale-market",
+      "stars": 221,
+      "description": "Marketplace-ready retail skill for CRM updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "retail",
+        "crm-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-017",
+      "name": "sales-lead-research-assistant",
+      "author": "skillscale-market",
+      "stars": 218,
+      "description": "Marketplace-ready sales skill for lead research. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "sales",
+        "lead-research",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-018",
+      "name": "customer-lead-research-assistant",
+      "author": "skillscale-market",
+      "stars": 215,
+      "description": "Marketplace-ready customer skill for lead research. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "customer",
+        "lead-research",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-019",
+      "name": "account-lead-research-assistant",
+      "author": "skillscale-market",
+      "stars": 212,
+      "description": "Marketplace-ready account skill for lead research. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "account",
+        "lead-research",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-020",
+      "name": "retail-lead-research-assistant",
+      "author": "skillscale-market",
+      "stars": 209,
+      "description": "Marketplace-ready retail skill for lead research. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "retail",
+        "lead-research",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-09-021",
+      "name": "sales-proposal-writing-assistant",
+      "author": "skillscale-market",
+      "stars": 206,
+      "description": "Marketplace-ready sales skill for proposal writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "sales",
+        "proposal-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-09-022",
+      "name": "customer-proposal-writing-assistant",
+      "author": "skillscale-market",
+      "stars": 203,
+      "description": "Marketplace-ready customer skill for proposal writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "customer",
+        "proposal-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-09-023",
+      "name": "account-proposal-writing-assistant",
+      "author": "skillscale-market",
+      "stars": 200,
+      "description": "Marketplace-ready account skill for proposal writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "account",
+        "proposal-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-024",
+      "name": "retail-proposal-writing-assistant",
+      "author": "skillscale-market",
+      "stars": 197,
+      "description": "Marketplace-ready retail skill for proposal writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "retail",
+        "proposal-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-025",
+      "name": "sales-call-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 194,
+      "description": "Marketplace-ready sales skill for call summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "sales",
+        "call-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-026",
+      "name": "customer-call-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 191,
+      "description": "Marketplace-ready customer skill for call summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "customer",
+        "call-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-027",
+      "name": "account-call-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 188,
+      "description": "Marketplace-ready account skill for call summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "account",
+        "call-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-028",
+      "name": "retail-call-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 185,
+      "description": "Marketplace-ready retail skill for call summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "retail",
+        "call-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-029",
+      "name": "sales-crm-updates-assistant",
+      "author": "skillscale-market",
+      "stars": 182,
+      "description": "Marketplace-ready sales skill for CRM updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "sales",
+        "crm-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-030",
+      "name": "customer-crm-updates-assistant",
+      "author": "skillscale-market",
+      "stars": 179,
+      "description": "Marketplace-ready customer skill for CRM updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "customer",
+        "crm-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-031",
+      "name": "account-crm-updates-assistant",
+      "author": "skillscale-market",
+      "stars": 176,
+      "description": "Marketplace-ready account skill for CRM updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "account",
+        "crm-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-032",
+      "name": "retail-crm-updates-assistant",
+      "author": "skillscale-market",
+      "stars": 173,
+      "description": "Marketplace-ready retail skill for CRM updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "retail",
+        "crm-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-033",
+      "name": "sales-lead-research-reviewer",
+      "author": "skillscale-market",
+      "stars": 170,
+      "description": "Marketplace-ready sales skill for lead research. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "sales",
+        "lead-research",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-034",
+      "name": "customer-lead-research-reviewer",
+      "author": "skillscale-market",
+      "stars": 167,
+      "description": "Marketplace-ready customer skill for lead research. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "customer",
+        "lead-research",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-09-035",
+      "name": "account-lead-research-reviewer",
+      "author": "skillscale-market",
+      "stars": 164,
+      "description": "Marketplace-ready account skill for lead research. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "account",
+        "lead-research",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-09-036",
+      "name": "retail-lead-research-reviewer",
+      "author": "skillscale-market",
+      "stars": 161,
+      "description": "Marketplace-ready retail skill for lead research. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "retail",
+        "lead-research",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-09-037",
+      "name": "sales-proposal-writing-reviewer",
+      "author": "skillscale-market",
+      "stars": 158,
+      "description": "Marketplace-ready sales skill for proposal writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "sales",
+        "proposal-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-038",
+      "name": "customer-proposal-writing-reviewer",
+      "author": "skillscale-market",
+      "stars": 155,
+      "description": "Marketplace-ready customer skill for proposal writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "customer",
+        "proposal-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-039",
+      "name": "account-proposal-writing-reviewer",
+      "author": "skillscale-market",
+      "stars": 152,
+      "description": "Marketplace-ready account skill for proposal writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "account",
+        "proposal-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-040",
+      "name": "retail-proposal-writing-reviewer",
+      "author": "skillscale-market",
+      "stars": 149,
+      "description": "Marketplace-ready retail skill for proposal writing. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "retail",
+        "proposal-writing",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-041",
+      "name": "sales-call-summaries-reviewer",
+      "author": "skillscale-market",
+      "stars": 146,
+      "description": "Marketplace-ready sales skill for call summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "sales",
+        "call-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-042",
+      "name": "customer-call-summaries-reviewer",
+      "author": "skillscale-market",
+      "stars": 143,
+      "description": "Marketplace-ready customer skill for call summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "customer",
+        "call-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-043",
+      "name": "account-call-summaries-reviewer",
+      "author": "skillscale-market",
+      "stars": 140,
+      "description": "Marketplace-ready account skill for call summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "account",
+        "call-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-044",
+      "name": "retail-call-summaries-reviewer",
+      "author": "skillscale-market",
+      "stars": 137,
+      "description": "Marketplace-ready retail skill for call summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "retail",
+        "call-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-045",
+      "name": "sales-crm-updates-reviewer",
+      "author": "skillscale-market",
+      "stars": 134,
+      "description": "Marketplace-ready sales skill for CRM updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "sales",
+        "crm-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-046",
+      "name": "customer-crm-updates-reviewer",
+      "author": "skillscale-market",
+      "stars": 131,
+      "description": "Marketplace-ready customer skill for CRM updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "customer",
+        "crm-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-047",
+      "name": "account-crm-updates-reviewer",
+      "author": "skillscale-market",
+      "stars": 128,
+      "description": "Marketplace-ready account skill for CRM updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "account",
+        "crm-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-09-048",
+      "name": "retail-crm-updates-reviewer",
+      "author": "skillscale-market",
+      "stars": 125,
+      "description": "Marketplace-ready retail skill for CRM updates. Produces structured checklists, drafts, summaries, and handoff notes tuned for sales and related teams.",
+      "tags": [
+        "retail",
+        "crm-updates",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "09",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    }
+  ]
+}

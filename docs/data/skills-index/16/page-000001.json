@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "occupationId": "16",
+  "skills": [
+    {
+      "id": "market-16-001",
+      "name": "transportation-route-planning-planner",
+      "author": "skillscale-market",
+      "stars": 259,
+      "description": "Marketplace-ready transportation skill for route planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "transportation",
+        "route-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-16-002",
+      "name": "logistics-route-planning-planner",
+      "author": "skillscale-market",
+      "stars": 256,
+      "description": "Marketplace-ready logistics skill for route planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "logistics",
+        "route-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-003",
+      "name": "dispatch-route-planning-planner",
+      "author": "skillscale-market",
+      "stars": 253,
+      "description": "Marketplace-ready dispatch skill for route planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "dispatch",
+        "route-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-004",
+      "name": "warehouse-route-planning-planner",
+      "author": "skillscale-market",
+      "stars": 250,
+      "description": "Marketplace-ready warehouse skill for route planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "warehouse",
+        "route-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-005",
+      "name": "transportation-freight-quotes-planner",
+      "author": "skillscale-market",
+      "stars": 247,
+      "description": "Marketplace-ready transportation skill for freight quotes. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "transportation",
+        "freight-quotes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-006",
+      "name": "logistics-freight-quotes-planner",
+      "author": "skillscale-market",
+      "stars": 244,
+      "description": "Marketplace-ready logistics skill for freight quotes. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "logistics",
+        "freight-quotes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-007",
+      "name": "dispatch-freight-quotes-planner",
+      "author": "skillscale-market",
+      "stars": 241,
+      "description": "Marketplace-ready dispatch skill for freight quotes. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "dispatch",
+        "freight-quotes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-008",
+      "name": "warehouse-freight-quotes-planner",
+      "author": "skillscale-market",
+      "stars": 238,
+      "description": "Marketplace-ready warehouse skill for freight quotes. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "warehouse",
+        "freight-quotes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-009",
+      "name": "transportation-load-matching-planner",
+      "author": "skillscale-market",
+      "stars": 235,
+      "description": "Marketplace-ready transportation skill for load matching. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "transportation",
+        "load-matching",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-010",
+      "name": "logistics-load-matching-planner",
+      "author": "skillscale-market",
+      "stars": 232,
+      "description": "Marketplace-ready logistics skill for load matching. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "logistics",
+        "load-matching",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-011",
+      "name": "dispatch-load-matching-planner",
+      "author": "skillscale-market",
+      "stars": 229,
+      "description": "Marketplace-ready dispatch skill for load matching. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "dispatch",
+        "load-matching",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-012",
+      "name": "warehouse-load-matching-planner",
+      "author": "skillscale-market",
+      "stars": 226,
+      "description": "Marketplace-ready warehouse skill for load matching. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "warehouse",
+        "load-matching",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-013",
+      "name": "transportation-delivery-exceptions-planner",
+      "author": "skillscale-market",
+      "stars": 223,
+      "description": "Marketplace-ready transportation skill for delivery exceptions. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "transportation",
+        "delivery-exceptions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-16-014",
+      "name": "logistics-delivery-exceptions-planner",
+      "author": "skillscale-market",
+      "stars": 220,
+      "description": "Marketplace-ready logistics skill for delivery exceptions. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "logistics",
+        "delivery-exceptions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-16-015",
+      "name": "dispatch-delivery-exceptions-planner",
+      "author": "skillscale-market",
+      "stars": 217,
+      "description": "Marketplace-ready dispatch skill for delivery exceptions. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "dispatch",
+        "delivery-exceptions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-16-016",
+      "name": "warehouse-delivery-exceptions-planner",
+      "author": "skillscale-market",
+      "stars": 214,
+      "description": "Marketplace-ready warehouse skill for delivery exceptions. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "warehouse",
+        "delivery-exceptions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-017",
+      "name": "transportation-route-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 211,
+      "description": "Marketplace-ready transportation skill for route planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "transportation",
+        "route-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-018",
+      "name": "logistics-route-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 208,
+      "description": "Marketplace-ready logistics skill for route planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "logistics",
+        "route-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-019",
+      "name": "dispatch-route-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 205,
+      "description": "Marketplace-ready dispatch skill for route planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "dispatch",
+        "route-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-020",
+      "name": "warehouse-route-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 202,
+      "description": "Marketplace-ready warehouse skill for route planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "warehouse",
+        "route-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-021",
+      "name": "transportation-freight-quotes-assistant",
+      "author": "skillscale-market",
+      "stars": 199,
+      "description": "Marketplace-ready transportation skill for freight quotes. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "transportation",
+        "freight-quotes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-022",
+      "name": "logistics-freight-quotes-assistant",
+      "author": "skillscale-market",
+      "stars": 196,
+      "description": "Marketplace-ready logistics skill for freight quotes. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "logistics",
+        "freight-quotes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-023",
+      "name": "dispatch-freight-quotes-assistant",
+      "author": "skillscale-market",
+      "stars": 193,
+      "description": "Marketplace-ready dispatch skill for freight quotes. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "dispatch",
+        "freight-quotes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-024",
+      "name": "warehouse-freight-quotes-assistant",
+      "author": "skillscale-market",
+      "stars": 190,
+      "description": "Marketplace-ready warehouse skill for freight quotes. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "warehouse",
+        "freight-quotes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-025",
+      "name": "transportation-load-matching-assistant",
+      "author": "skillscale-market",
+      "stars": 187,
+      "description": "Marketplace-ready transportation skill for load matching. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "transportation",
+        "load-matching",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-026",
+      "name": "logistics-load-matching-assistant",
+      "author": "skillscale-market",
+      "stars": 184,
+      "description": "Marketplace-ready logistics skill for load matching. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "logistics",
+        "load-matching",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-027",
+      "name": "dispatch-load-matching-assistant",
+      "author": "skillscale-market",
+      "stars": 181,
+      "description": "Marketplace-ready dispatch skill for load matching. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "dispatch",
+        "load-matching",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-16-028",
+      "name": "warehouse-load-matching-assistant",
+      "author": "skillscale-market",
+      "stars": 178,
+      "description": "Marketplace-ready warehouse skill for load matching. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "warehouse",
+        "load-matching",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-16-029",
+      "name": "transportation-delivery-exceptions-assistant",
+      "author": "skillscale-market",
+      "stars": 175,
+      "description": "Marketplace-ready transportation skill for delivery exceptions. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "transportation",
+        "delivery-exceptions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-16-030",
+      "name": "logistics-delivery-exceptions-assistant",
+      "author": "skillscale-market",
+      "stars": 172,
+      "description": "Marketplace-ready logistics skill for delivery exceptions. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "logistics",
+        "delivery-exceptions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-031",
+      "name": "dispatch-delivery-exceptions-assistant",
+      "author": "skillscale-market",
+      "stars": 169,
+      "description": "Marketplace-ready dispatch skill for delivery exceptions. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "dispatch",
+        "delivery-exceptions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-032",
+      "name": "warehouse-delivery-exceptions-assistant",
+      "author": "skillscale-market",
+      "stars": 166,
+      "description": "Marketplace-ready warehouse skill for delivery exceptions. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "warehouse",
+        "delivery-exceptions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-033",
+      "name": "transportation-route-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 163,
+      "description": "Marketplace-ready transportation skill for route planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "transportation",
+        "route-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-034",
+      "name": "logistics-route-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 160,
+      "description": "Marketplace-ready logistics skill for route planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "logistics",
+        "route-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-035",
+      "name": "dispatch-route-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 157,
+      "description": "Marketplace-ready dispatch skill for route planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "dispatch",
+        "route-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-036",
+      "name": "warehouse-route-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 154,
+      "description": "Marketplace-ready warehouse skill for route planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "warehouse",
+        "route-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-037",
+      "name": "transportation-freight-quotes-reviewer",
+      "author": "skillscale-market",
+      "stars": 151,
+      "description": "Marketplace-ready transportation skill for freight quotes. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "transportation",
+        "freight-quotes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-038",
+      "name": "logistics-freight-quotes-reviewer",
+      "author": "skillscale-market",
+      "stars": 148,
+      "description": "Marketplace-ready logistics skill for freight quotes. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "logistics",
+        "freight-quotes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-039",
+      "name": "dispatch-freight-quotes-reviewer",
+      "author": "skillscale-market",
+      "stars": 145,
+      "description": "Marketplace-ready dispatch skill for freight quotes. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "dispatch",
+        "freight-quotes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-040",
+      "name": "warehouse-freight-quotes-reviewer",
+      "author": "skillscale-market",
+      "stars": 142,
+      "description": "Marketplace-ready warehouse skill for freight quotes. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "warehouse",
+        "freight-quotes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-041",
+      "name": "transportation-load-matching-reviewer",
+      "author": "skillscale-market",
+      "stars": 139,
+      "description": "Marketplace-ready transportation skill for load matching. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "transportation",
+        "load-matching",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-16-042",
+      "name": "logistics-load-matching-reviewer",
+      "author": "skillscale-market",
+      "stars": 136,
+      "description": "Marketplace-ready logistics skill for load matching. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "logistics",
+        "load-matching",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-16-043",
+      "name": "dispatch-load-matching-reviewer",
+      "author": "skillscale-market",
+      "stars": 133,
+      "description": "Marketplace-ready dispatch skill for load matching. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "dispatch",
+        "load-matching",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-16-044",
+      "name": "warehouse-load-matching-reviewer",
+      "author": "skillscale-market",
+      "stars": 130,
+      "description": "Marketplace-ready warehouse skill for load matching. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "warehouse",
+        "load-matching",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-045",
+      "name": "transportation-delivery-exceptions-reviewer",
+      "author": "skillscale-market",
+      "stars": 127,
+      "description": "Marketplace-ready transportation skill for delivery exceptions. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "transportation",
+        "delivery-exceptions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-046",
+      "name": "logistics-delivery-exceptions-reviewer",
+      "author": "skillscale-market",
+      "stars": 124,
+      "description": "Marketplace-ready logistics skill for delivery exceptions. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "logistics",
+        "delivery-exceptions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-047",
+      "name": "dispatch-delivery-exceptions-reviewer",
+      "author": "skillscale-market",
+      "stars": 121,
+      "description": "Marketplace-ready dispatch skill for delivery exceptions. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "dispatch",
+        "delivery-exceptions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-16-048",
+      "name": "warehouse-delivery-exceptions-reviewer",
+      "author": "skillscale-market",
+      "stars": 118,
+      "description": "Marketplace-ready warehouse skill for delivery exceptions. Produces structured checklists, drafts, summaries, and handoff notes tuned for transportation and material moving teams.",
+      "tags": [
+        "warehouse",
+        "delivery-exceptions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "16",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    }
+  ]
+}

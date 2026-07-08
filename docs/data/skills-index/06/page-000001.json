@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "occupationId": "06",
+  "skills": [
+    {
+      "id": "market-06-001",
+      "name": "science-literature-synthesis-planner",
+      "author": "skillscale-market",
+      "stars": 269,
+      "description": "Marketplace-ready science skill for literature synthesis. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "science",
+        "literature-synthesis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-002",
+      "name": "lab-literature-synthesis-planner",
+      "author": "skillscale-market",
+      "stars": 266,
+      "description": "Marketplace-ready lab skill for literature synthesis. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "lab",
+        "literature-synthesis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-003",
+      "name": "research-literature-synthesis-planner",
+      "author": "skillscale-market",
+      "stars": 263,
+      "description": "Marketplace-ready research skill for literature synthesis. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "research",
+        "literature-synthesis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-004",
+      "name": "field-study-literature-synthesis-planner",
+      "author": "skillscale-market",
+      "stars": 260,
+      "description": "Marketplace-ready field study skill for literature synthesis. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "field-study",
+        "literature-synthesis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-005",
+      "name": "science-method-review-planner",
+      "author": "skillscale-market",
+      "stars": 257,
+      "description": "Marketplace-ready science skill for method review. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "science",
+        "method-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-006",
+      "name": "lab-method-review-planner",
+      "author": "skillscale-market",
+      "stars": 254,
+      "description": "Marketplace-ready lab skill for method review. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "lab",
+        "method-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-007",
+      "name": "research-method-review-planner",
+      "author": "skillscale-market",
+      "stars": 251,
+      "description": "Marketplace-ready research skill for method review. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "research",
+        "method-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-008",
+      "name": "field-study-method-review-planner",
+      "author": "skillscale-market",
+      "stars": 248,
+      "description": "Marketplace-ready field study skill for method review. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "field-study",
+        "method-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-009",
+      "name": "science-data-cleaning-planner",
+      "author": "skillscale-market",
+      "stars": 245,
+      "description": "Marketplace-ready science skill for data cleaning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "science",
+        "data-cleaning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-06-010",
+      "name": "lab-data-cleaning-planner",
+      "author": "skillscale-market",
+      "stars": 242,
+      "description": "Marketplace-ready lab skill for data cleaning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "lab",
+        "data-cleaning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-06-011",
+      "name": "research-data-cleaning-planner",
+      "author": "skillscale-market",
+      "stars": 239,
+      "description": "Marketplace-ready research skill for data cleaning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "research",
+        "data-cleaning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-06-012",
+      "name": "field-study-data-cleaning-planner",
+      "author": "skillscale-market",
+      "stars": 236,
+      "description": "Marketplace-ready field study skill for data cleaning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "field-study",
+        "data-cleaning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-013",
+      "name": "science-experiment-planning-planner",
+      "author": "skillscale-market",
+      "stars": 233,
+      "description": "Marketplace-ready science skill for experiment planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "science",
+        "experiment-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-014",
+      "name": "lab-experiment-planning-planner",
+      "author": "skillscale-market",
+      "stars": 230,
+      "description": "Marketplace-ready lab skill for experiment planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "lab",
+        "experiment-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-015",
+      "name": "research-experiment-planning-planner",
+      "author": "skillscale-market",
+      "stars": 227,
+      "description": "Marketplace-ready research skill for experiment planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "research",
+        "experiment-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-016",
+      "name": "field-study-experiment-planning-planner",
+      "author": "skillscale-market",
+      "stars": 224,
+      "description": "Marketplace-ready field study skill for experiment planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "field-study",
+        "experiment-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-017",
+      "name": "science-literature-synthesis-assistant",
+      "author": "skillscale-market",
+      "stars": 221,
+      "description": "Marketplace-ready science skill for literature synthesis. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "science",
+        "literature-synthesis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-018",
+      "name": "lab-literature-synthesis-assistant",
+      "author": "skillscale-market",
+      "stars": 218,
+      "description": "Marketplace-ready lab skill for literature synthesis. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "lab",
+        "literature-synthesis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-019",
+      "name": "research-literature-synthesis-assistant",
+      "author": "skillscale-market",
+      "stars": 215,
+      "description": "Marketplace-ready research skill for literature synthesis. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "research",
+        "literature-synthesis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-020",
+      "name": "field-study-literature-synthesis-assistant",
+      "author": "skillscale-market",
+      "stars": 212,
+      "description": "Marketplace-ready field study skill for literature synthesis. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "field-study",
+        "literature-synthesis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-021",
+      "name": "science-method-review-assistant",
+      "author": "skillscale-market",
+      "stars": 209,
+      "description": "Marketplace-ready science skill for method review. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "science",
+        "method-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-022",
+      "name": "lab-method-review-assistant",
+      "author": "skillscale-market",
+      "stars": 206,
+      "description": "Marketplace-ready lab skill for method review. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "lab",
+        "method-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-023",
+      "name": "research-method-review-assistant",
+      "author": "skillscale-market",
+      "stars": 203,
+      "description": "Marketplace-ready research skill for method review. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "research",
+        "method-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-06-024",
+      "name": "field-study-method-review-assistant",
+      "author": "skillscale-market",
+      "stars": 200,
+      "description": "Marketplace-ready field study skill for method review. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "field-study",
+        "method-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-06-025",
+      "name": "science-data-cleaning-assistant",
+      "author": "skillscale-market",
+      "stars": 197,
+      "description": "Marketplace-ready science skill for data cleaning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "science",
+        "data-cleaning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-06-026",
+      "name": "lab-data-cleaning-assistant",
+      "author": "skillscale-market",
+      "stars": 194,
+      "description": "Marketplace-ready lab skill for data cleaning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "lab",
+        "data-cleaning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-027",
+      "name": "research-data-cleaning-assistant",
+      "author": "skillscale-market",
+      "stars": 191,
+      "description": "Marketplace-ready research skill for data cleaning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "research",
+        "data-cleaning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-028",
+      "name": "field-study-data-cleaning-assistant",
+      "author": "skillscale-market",
+      "stars": 188,
+      "description": "Marketplace-ready field study skill for data cleaning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "field-study",
+        "data-cleaning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-029",
+      "name": "science-experiment-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 185,
+      "description": "Marketplace-ready science skill for experiment planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "science",
+        "experiment-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-030",
+      "name": "lab-experiment-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 182,
+      "description": "Marketplace-ready lab skill for experiment planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "lab",
+        "experiment-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-031",
+      "name": "research-experiment-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 179,
+      "description": "Marketplace-ready research skill for experiment planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "research",
+        "experiment-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-032",
+      "name": "field-study-experiment-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 176,
+      "description": "Marketplace-ready field study skill for experiment planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "field-study",
+        "experiment-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-033",
+      "name": "science-literature-synthesis-reviewer",
+      "author": "skillscale-market",
+      "stars": 173,
+      "description": "Marketplace-ready science skill for literature synthesis. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "science",
+        "literature-synthesis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-034",
+      "name": "lab-literature-synthesis-reviewer",
+      "author": "skillscale-market",
+      "stars": 170,
+      "description": "Marketplace-ready lab skill for literature synthesis. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "lab",
+        "literature-synthesis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-035",
+      "name": "research-literature-synthesis-reviewer",
+      "author": "skillscale-market",
+      "stars": 167,
+      "description": "Marketplace-ready research skill for literature synthesis. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "research",
+        "literature-synthesis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-036",
+      "name": "field-study-literature-synthesis-reviewer",
+      "author": "skillscale-market",
+      "stars": 164,
+      "description": "Marketplace-ready field study skill for literature synthesis. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "field-study",
+        "literature-synthesis",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-037",
+      "name": "science-method-review-reviewer",
+      "author": "skillscale-market",
+      "stars": 161,
+      "description": "Marketplace-ready science skill for method review. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "science",
+        "method-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-06-038",
+      "name": "lab-method-review-reviewer",
+      "author": "skillscale-market",
+      "stars": 158,
+      "description": "Marketplace-ready lab skill for method review. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "lab",
+        "method-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-06-039",
+      "name": "research-method-review-reviewer",
+      "author": "skillscale-market",
+      "stars": 155,
+      "description": "Marketplace-ready research skill for method review. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "research",
+        "method-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-06-040",
+      "name": "field-study-method-review-reviewer",
+      "author": "skillscale-market",
+      "stars": 152,
+      "description": "Marketplace-ready field study skill for method review. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "field-study",
+        "method-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-041",
+      "name": "science-data-cleaning-reviewer",
+      "author": "skillscale-market",
+      "stars": 149,
+      "description": "Marketplace-ready science skill for data cleaning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "science",
+        "data-cleaning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-042",
+      "name": "lab-data-cleaning-reviewer",
+      "author": "skillscale-market",
+      "stars": 146,
+      "description": "Marketplace-ready lab skill for data cleaning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "lab",
+        "data-cleaning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-043",
+      "name": "research-data-cleaning-reviewer",
+      "author": "skillscale-market",
+      "stars": 143,
+      "description": "Marketplace-ready research skill for data cleaning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "research",
+        "data-cleaning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-044",
+      "name": "field-study-data-cleaning-reviewer",
+      "author": "skillscale-market",
+      "stars": 140,
+      "description": "Marketplace-ready field study skill for data cleaning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "field-study",
+        "data-cleaning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-045",
+      "name": "science-experiment-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 137,
+      "description": "Marketplace-ready science skill for experiment planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "science",
+        "experiment-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-046",
+      "name": "lab-experiment-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 134,
+      "description": "Marketplace-ready lab skill for experiment planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "lab",
+        "experiment-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-047",
+      "name": "research-experiment-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 131,
+      "description": "Marketplace-ready research skill for experiment planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "research",
+        "experiment-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-06-048",
+      "name": "field-study-experiment-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 128,
+      "description": "Marketplace-ready field study skill for experiment planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for life, physical, and social science teams.",
+      "tags": [
+        "field-study",
+        "experiment-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "06",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    }
+  ]
+}

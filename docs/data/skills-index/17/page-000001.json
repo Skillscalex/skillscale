@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "occupationId": "17",
+  "skills": [
+    {
+      "id": "market-17-001",
+      "name": "healthcare-support-appointment-scheduling-planner",
+      "author": "skillscale-market",
+      "stars": 258,
+      "description": "Marketplace-ready healthcare support skill for appointment scheduling. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "healthcare-support",
+        "appointment-scheduling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-002",
+      "name": "clinic-ops-appointment-scheduling-planner",
+      "author": "skillscale-market",
+      "stars": 255,
+      "description": "Marketplace-ready clinic ops skill for appointment scheduling. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "clinic-ops",
+        "appointment-scheduling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-003",
+      "name": "patient-access-appointment-scheduling-planner",
+      "author": "skillscale-market",
+      "stars": 252,
+      "description": "Marketplace-ready patient access skill for appointment scheduling. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "patient-access",
+        "appointment-scheduling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-004",
+      "name": "care-aide-appointment-scheduling-planner",
+      "author": "skillscale-market",
+      "stars": 249,
+      "description": "Marketplace-ready care aide skill for appointment scheduling. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "care-aide",
+        "appointment-scheduling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-005",
+      "name": "healthcare-support-intake-prep-planner",
+      "author": "skillscale-market",
+      "stars": 246,
+      "description": "Marketplace-ready healthcare support skill for intake prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "healthcare-support",
+        "intake-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-006",
+      "name": "clinic-ops-intake-prep-planner",
+      "author": "skillscale-market",
+      "stars": 243,
+      "description": "Marketplace-ready clinic ops skill for intake prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "clinic-ops",
+        "intake-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-007",
+      "name": "patient-access-intake-prep-planner",
+      "author": "skillscale-market",
+      "stars": 240,
+      "description": "Marketplace-ready patient access skill for intake prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "patient-access",
+        "intake-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-008",
+      "name": "care-aide-intake-prep-planner",
+      "author": "skillscale-market",
+      "stars": 237,
+      "description": "Marketplace-ready care aide skill for intake prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "care-aide",
+        "intake-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-009",
+      "name": "healthcare-support-shift-coverage-planner",
+      "author": "skillscale-market",
+      "stars": 234,
+      "description": "Marketplace-ready healthcare support skill for shift coverage. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "healthcare-support",
+        "shift-coverage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-010",
+      "name": "clinic-ops-shift-coverage-planner",
+      "author": "skillscale-market",
+      "stars": 231,
+      "description": "Marketplace-ready clinic ops skill for shift coverage. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "clinic-ops",
+        "shift-coverage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-011",
+      "name": "patient-access-shift-coverage-planner",
+      "author": "skillscale-market",
+      "stars": 228,
+      "description": "Marketplace-ready patient access skill for shift coverage. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "patient-access",
+        "shift-coverage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-012",
+      "name": "care-aide-shift-coverage-planner",
+      "author": "skillscale-market",
+      "stars": 225,
+      "description": "Marketplace-ready care aide skill for shift coverage. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "care-aide",
+        "shift-coverage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-17-013",
+      "name": "healthcare-support-discharge-instructions-planner",
+      "author": "skillscale-market",
+      "stars": 222,
+      "description": "Marketplace-ready healthcare support skill for discharge instructions. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "healthcare-support",
+        "discharge-instructions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-17-014",
+      "name": "clinic-ops-discharge-instructions-planner",
+      "author": "skillscale-market",
+      "stars": 219,
+      "description": "Marketplace-ready clinic ops skill for discharge instructions. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "clinic-ops",
+        "discharge-instructions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-17-015",
+      "name": "patient-access-discharge-instructions-planner",
+      "author": "skillscale-market",
+      "stars": 216,
+      "description": "Marketplace-ready patient access skill for discharge instructions. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "patient-access",
+        "discharge-instructions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-016",
+      "name": "care-aide-discharge-instructions-planner",
+      "author": "skillscale-market",
+      "stars": 213,
+      "description": "Marketplace-ready care aide skill for discharge instructions. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "care-aide",
+        "discharge-instructions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-017",
+      "name": "healthcare-support-appointment-scheduling-assistant",
+      "author": "skillscale-market",
+      "stars": 210,
+      "description": "Marketplace-ready healthcare support skill for appointment scheduling. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "healthcare-support",
+        "appointment-scheduling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-018",
+      "name": "clinic-ops-appointment-scheduling-assistant",
+      "author": "skillscale-market",
+      "stars": 207,
+      "description": "Marketplace-ready clinic ops skill for appointment scheduling. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "clinic-ops",
+        "appointment-scheduling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-019",
+      "name": "patient-access-appointment-scheduling-assistant",
+      "author": "skillscale-market",
+      "stars": 204,
+      "description": "Marketplace-ready patient access skill for appointment scheduling. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "patient-access",
+        "appointment-scheduling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-020",
+      "name": "care-aide-appointment-scheduling-assistant",
+      "author": "skillscale-market",
+      "stars": 201,
+      "description": "Marketplace-ready care aide skill for appointment scheduling. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "care-aide",
+        "appointment-scheduling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-021",
+      "name": "healthcare-support-intake-prep-assistant",
+      "author": "skillscale-market",
+      "stars": 198,
+      "description": "Marketplace-ready healthcare support skill for intake prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "healthcare-support",
+        "intake-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-022",
+      "name": "clinic-ops-intake-prep-assistant",
+      "author": "skillscale-market",
+      "stars": 195,
+      "description": "Marketplace-ready clinic ops skill for intake prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "clinic-ops",
+        "intake-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-023",
+      "name": "patient-access-intake-prep-assistant",
+      "author": "skillscale-market",
+      "stars": 192,
+      "description": "Marketplace-ready patient access skill for intake prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "patient-access",
+        "intake-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-024",
+      "name": "care-aide-intake-prep-assistant",
+      "author": "skillscale-market",
+      "stars": 189,
+      "description": "Marketplace-ready care aide skill for intake prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "care-aide",
+        "intake-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-025",
+      "name": "healthcare-support-shift-coverage-assistant",
+      "author": "skillscale-market",
+      "stars": 186,
+      "description": "Marketplace-ready healthcare support skill for shift coverage. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "healthcare-support",
+        "shift-coverage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-026",
+      "name": "clinic-ops-shift-coverage-assistant",
+      "author": "skillscale-market",
+      "stars": 183,
+      "description": "Marketplace-ready clinic ops skill for shift coverage. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "clinic-ops",
+        "shift-coverage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-17-027",
+      "name": "patient-access-shift-coverage-assistant",
+      "author": "skillscale-market",
+      "stars": 180,
+      "description": "Marketplace-ready patient access skill for shift coverage. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "patient-access",
+        "shift-coverage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-17-028",
+      "name": "care-aide-shift-coverage-assistant",
+      "author": "skillscale-market",
+      "stars": 177,
+      "description": "Marketplace-ready care aide skill for shift coverage. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "care-aide",
+        "shift-coverage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-17-029",
+      "name": "healthcare-support-discharge-instructions-assistant",
+      "author": "skillscale-market",
+      "stars": 174,
+      "description": "Marketplace-ready healthcare support skill for discharge instructions. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "healthcare-support",
+        "discharge-instructions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-030",
+      "name": "clinic-ops-discharge-instructions-assistant",
+      "author": "skillscale-market",
+      "stars": 171,
+      "description": "Marketplace-ready clinic ops skill for discharge instructions. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "clinic-ops",
+        "discharge-instructions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-031",
+      "name": "patient-access-discharge-instructions-assistant",
+      "author": "skillscale-market",
+      "stars": 168,
+      "description": "Marketplace-ready patient access skill for discharge instructions. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "patient-access",
+        "discharge-instructions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-032",
+      "name": "care-aide-discharge-instructions-assistant",
+      "author": "skillscale-market",
+      "stars": 165,
+      "description": "Marketplace-ready care aide skill for discharge instructions. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "care-aide",
+        "discharge-instructions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-033",
+      "name": "healthcare-support-appointment-scheduling-reviewer",
+      "author": "skillscale-market",
+      "stars": 162,
+      "description": "Marketplace-ready healthcare support skill for appointment scheduling. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "healthcare-support",
+        "appointment-scheduling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-034",
+      "name": "clinic-ops-appointment-scheduling-reviewer",
+      "author": "skillscale-market",
+      "stars": 159,
+      "description": "Marketplace-ready clinic ops skill for appointment scheduling. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "clinic-ops",
+        "appointment-scheduling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-035",
+      "name": "patient-access-appointment-scheduling-reviewer",
+      "author": "skillscale-market",
+      "stars": 156,
+      "description": "Marketplace-ready patient access skill for appointment scheduling. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "patient-access",
+        "appointment-scheduling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-036",
+      "name": "care-aide-appointment-scheduling-reviewer",
+      "author": "skillscale-market",
+      "stars": 153,
+      "description": "Marketplace-ready care aide skill for appointment scheduling. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "care-aide",
+        "appointment-scheduling",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-037",
+      "name": "healthcare-support-intake-prep-reviewer",
+      "author": "skillscale-market",
+      "stars": 150,
+      "description": "Marketplace-ready healthcare support skill for intake prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "healthcare-support",
+        "intake-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-038",
+      "name": "clinic-ops-intake-prep-reviewer",
+      "author": "skillscale-market",
+      "stars": 147,
+      "description": "Marketplace-ready clinic ops skill for intake prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "clinic-ops",
+        "intake-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-039",
+      "name": "patient-access-intake-prep-reviewer",
+      "author": "skillscale-market",
+      "stars": 144,
+      "description": "Marketplace-ready patient access skill for intake prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "patient-access",
+        "intake-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-040",
+      "name": "care-aide-intake-prep-reviewer",
+      "author": "skillscale-market",
+      "stars": 141,
+      "description": "Marketplace-ready care aide skill for intake prep. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "care-aide",
+        "intake-prep",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-17-041",
+      "name": "healthcare-support-shift-coverage-reviewer",
+      "author": "skillscale-market",
+      "stars": 138,
+      "description": "Marketplace-ready healthcare support skill for shift coverage. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "healthcare-support",
+        "shift-coverage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-17-042",
+      "name": "clinic-ops-shift-coverage-reviewer",
+      "author": "skillscale-market",
+      "stars": 135,
+      "description": "Marketplace-ready clinic ops skill for shift coverage. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "clinic-ops",
+        "shift-coverage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-17-043",
+      "name": "patient-access-shift-coverage-reviewer",
+      "author": "skillscale-market",
+      "stars": 132,
+      "description": "Marketplace-ready patient access skill for shift coverage. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "patient-access",
+        "shift-coverage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-044",
+      "name": "care-aide-shift-coverage-reviewer",
+      "author": "skillscale-market",
+      "stars": 129,
+      "description": "Marketplace-ready care aide skill for shift coverage. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "care-aide",
+        "shift-coverage",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-045",
+      "name": "healthcare-support-discharge-instructions-reviewer",
+      "author": "skillscale-market",
+      "stars": 126,
+      "description": "Marketplace-ready healthcare support skill for discharge instructions. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "healthcare-support",
+        "discharge-instructions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-046",
+      "name": "clinic-ops-discharge-instructions-reviewer",
+      "author": "skillscale-market",
+      "stars": 123,
+      "description": "Marketplace-ready clinic ops skill for discharge instructions. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "clinic-ops",
+        "discharge-instructions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-047",
+      "name": "patient-access-discharge-instructions-reviewer",
+      "author": "skillscale-market",
+      "stars": 120,
+      "description": "Marketplace-ready patient access skill for discharge instructions. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "patient-access",
+        "discharge-instructions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-17-048",
+      "name": "care-aide-discharge-instructions-reviewer",
+      "author": "skillscale-market",
+      "stars": 117,
+      "description": "Marketplace-ready care aide skill for discharge instructions. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare support teams.",
+      "tags": [
+        "care-aide",
+        "discharge-instructions",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "17",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    }
+  ]
+}

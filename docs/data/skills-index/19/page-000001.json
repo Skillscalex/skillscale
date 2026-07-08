@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "occupationId": "19",
+  "skills": [
+    {
+      "id": "market-19-001",
+      "name": "farming-crop-plans-planner",
+      "author": "skillscale-market",
+      "stars": 256,
+      "description": "Marketplace-ready farming skill for crop plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "farming",
+        "crop-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-002",
+      "name": "forestry-crop-plans-planner",
+      "author": "skillscale-market",
+      "stars": 253,
+      "description": "Marketplace-ready forestry skill for crop plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "forestry",
+        "crop-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-003",
+      "name": "fishery-crop-plans-planner",
+      "author": "skillscale-market",
+      "stars": 250,
+      "description": "Marketplace-ready fishery skill for crop plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "fishery",
+        "crop-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-004",
+      "name": "agronomy-crop-plans-planner",
+      "author": "skillscale-market",
+      "stars": 247,
+      "description": "Marketplace-ready agronomy skill for crop plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "agronomy",
+        "crop-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-005",
+      "name": "farming-harvest-forecasts-planner",
+      "author": "skillscale-market",
+      "stars": 244,
+      "description": "Marketplace-ready farming skill for harvest forecasts. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "farming",
+        "harvest-forecasts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-006",
+      "name": "forestry-harvest-forecasts-planner",
+      "author": "skillscale-market",
+      "stars": 241,
+      "description": "Marketplace-ready forestry skill for harvest forecasts. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "forestry",
+        "harvest-forecasts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-007",
+      "name": "fishery-harvest-forecasts-planner",
+      "author": "skillscale-market",
+      "stars": 238,
+      "description": "Marketplace-ready fishery skill for harvest forecasts. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "fishery",
+        "harvest-forecasts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-008",
+      "name": "agronomy-harvest-forecasts-planner",
+      "author": "skillscale-market",
+      "stars": 235,
+      "description": "Marketplace-ready agronomy skill for harvest forecasts. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "agronomy",
+        "harvest-forecasts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-009",
+      "name": "farming-soil-notes-planner",
+      "author": "skillscale-market",
+      "stars": 232,
+      "description": "Marketplace-ready farming skill for soil notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "farming",
+        "soil-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-010",
+      "name": "forestry-soil-notes-planner",
+      "author": "skillscale-market",
+      "stars": 229,
+      "description": "Marketplace-ready forestry skill for soil notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "forestry",
+        "soil-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-19-011",
+      "name": "fishery-soil-notes-planner",
+      "author": "skillscale-market",
+      "stars": 226,
+      "description": "Marketplace-ready fishery skill for soil notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "fishery",
+        "soil-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-19-012",
+      "name": "agronomy-soil-notes-planner",
+      "author": "skillscale-market",
+      "stars": 223,
+      "description": "Marketplace-ready agronomy skill for soil notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "agronomy",
+        "soil-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-19-013",
+      "name": "farming-equipment-logs-planner",
+      "author": "skillscale-market",
+      "stars": 220,
+      "description": "Marketplace-ready farming skill for equipment logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "farming",
+        "equipment-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-014",
+      "name": "forestry-equipment-logs-planner",
+      "author": "skillscale-market",
+      "stars": 217,
+      "description": "Marketplace-ready forestry skill for equipment logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "forestry",
+        "equipment-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-015",
+      "name": "fishery-equipment-logs-planner",
+      "author": "skillscale-market",
+      "stars": 214,
+      "description": "Marketplace-ready fishery skill for equipment logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "fishery",
+        "equipment-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-016",
+      "name": "agronomy-equipment-logs-planner",
+      "author": "skillscale-market",
+      "stars": 211,
+      "description": "Marketplace-ready agronomy skill for equipment logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "agronomy",
+        "equipment-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-017",
+      "name": "farming-crop-plans-assistant",
+      "author": "skillscale-market",
+      "stars": 208,
+      "description": "Marketplace-ready farming skill for crop plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "farming",
+        "crop-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-018",
+      "name": "forestry-crop-plans-assistant",
+      "author": "skillscale-market",
+      "stars": 205,
+      "description": "Marketplace-ready forestry skill for crop plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "forestry",
+        "crop-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-019",
+      "name": "fishery-crop-plans-assistant",
+      "author": "skillscale-market",
+      "stars": 202,
+      "description": "Marketplace-ready fishery skill for crop plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "fishery",
+        "crop-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-020",
+      "name": "agronomy-crop-plans-assistant",
+      "author": "skillscale-market",
+      "stars": 199,
+      "description": "Marketplace-ready agronomy skill for crop plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "agronomy",
+        "crop-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-021",
+      "name": "farming-harvest-forecasts-assistant",
+      "author": "skillscale-market",
+      "stars": 196,
+      "description": "Marketplace-ready farming skill for harvest forecasts. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "farming",
+        "harvest-forecasts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-022",
+      "name": "forestry-harvest-forecasts-assistant",
+      "author": "skillscale-market",
+      "stars": 193,
+      "description": "Marketplace-ready forestry skill for harvest forecasts. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "forestry",
+        "harvest-forecasts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-023",
+      "name": "fishery-harvest-forecasts-assistant",
+      "author": "skillscale-market",
+      "stars": 190,
+      "description": "Marketplace-ready fishery skill for harvest forecasts. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "fishery",
+        "harvest-forecasts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-024",
+      "name": "agronomy-harvest-forecasts-assistant",
+      "author": "skillscale-market",
+      "stars": 187,
+      "description": "Marketplace-ready agronomy skill for harvest forecasts. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "agronomy",
+        "harvest-forecasts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-19-025",
+      "name": "farming-soil-notes-assistant",
+      "author": "skillscale-market",
+      "stars": 184,
+      "description": "Marketplace-ready farming skill for soil notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "farming",
+        "soil-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-19-026",
+      "name": "forestry-soil-notes-assistant",
+      "author": "skillscale-market",
+      "stars": 181,
+      "description": "Marketplace-ready forestry skill for soil notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "forestry",
+        "soil-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-19-027",
+      "name": "fishery-soil-notes-assistant",
+      "author": "skillscale-market",
+      "stars": 178,
+      "description": "Marketplace-ready fishery skill for soil notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "fishery",
+        "soil-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-028",
+      "name": "agronomy-soil-notes-assistant",
+      "author": "skillscale-market",
+      "stars": 175,
+      "description": "Marketplace-ready agronomy skill for soil notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "agronomy",
+        "soil-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-029",
+      "name": "farming-equipment-logs-assistant",
+      "author": "skillscale-market",
+      "stars": 172,
+      "description": "Marketplace-ready farming skill for equipment logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "farming",
+        "equipment-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-030",
+      "name": "forestry-equipment-logs-assistant",
+      "author": "skillscale-market",
+      "stars": 169,
+      "description": "Marketplace-ready forestry skill for equipment logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "forestry",
+        "equipment-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-031",
+      "name": "fishery-equipment-logs-assistant",
+      "author": "skillscale-market",
+      "stars": 166,
+      "description": "Marketplace-ready fishery skill for equipment logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "fishery",
+        "equipment-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-032",
+      "name": "agronomy-equipment-logs-assistant",
+      "author": "skillscale-market",
+      "stars": 163,
+      "description": "Marketplace-ready agronomy skill for equipment logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "agronomy",
+        "equipment-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-033",
+      "name": "farming-crop-plans-reviewer",
+      "author": "skillscale-market",
+      "stars": 160,
+      "description": "Marketplace-ready farming skill for crop plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "farming",
+        "crop-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-034",
+      "name": "forestry-crop-plans-reviewer",
+      "author": "skillscale-market",
+      "stars": 157,
+      "description": "Marketplace-ready forestry skill for crop plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "forestry",
+        "crop-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-035",
+      "name": "fishery-crop-plans-reviewer",
+      "author": "skillscale-market",
+      "stars": 154,
+      "description": "Marketplace-ready fishery skill for crop plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "fishery",
+        "crop-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-036",
+      "name": "agronomy-crop-plans-reviewer",
+      "author": "skillscale-market",
+      "stars": 151,
+      "description": "Marketplace-ready agronomy skill for crop plans. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "agronomy",
+        "crop-plans",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-037",
+      "name": "farming-harvest-forecasts-reviewer",
+      "author": "skillscale-market",
+      "stars": 148,
+      "description": "Marketplace-ready farming skill for harvest forecasts. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "farming",
+        "harvest-forecasts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-038",
+      "name": "forestry-harvest-forecasts-reviewer",
+      "author": "skillscale-market",
+      "stars": 145,
+      "description": "Marketplace-ready forestry skill for harvest forecasts. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "forestry",
+        "harvest-forecasts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-19-039",
+      "name": "fishery-harvest-forecasts-reviewer",
+      "author": "skillscale-market",
+      "stars": 142,
+      "description": "Marketplace-ready fishery skill for harvest forecasts. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "fishery",
+        "harvest-forecasts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-19-040",
+      "name": "agronomy-harvest-forecasts-reviewer",
+      "author": "skillscale-market",
+      "stars": 139,
+      "description": "Marketplace-ready agronomy skill for harvest forecasts. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "agronomy",
+        "harvest-forecasts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-19-041",
+      "name": "farming-soil-notes-reviewer",
+      "author": "skillscale-market",
+      "stars": 136,
+      "description": "Marketplace-ready farming skill for soil notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "farming",
+        "soil-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-042",
+      "name": "forestry-soil-notes-reviewer",
+      "author": "skillscale-market",
+      "stars": 133,
+      "description": "Marketplace-ready forestry skill for soil notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "forestry",
+        "soil-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-043",
+      "name": "fishery-soil-notes-reviewer",
+      "author": "skillscale-market",
+      "stars": 130,
+      "description": "Marketplace-ready fishery skill for soil notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "fishery",
+        "soil-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-044",
+      "name": "agronomy-soil-notes-reviewer",
+      "author": "skillscale-market",
+      "stars": 127,
+      "description": "Marketplace-ready agronomy skill for soil notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "agronomy",
+        "soil-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-045",
+      "name": "farming-equipment-logs-reviewer",
+      "author": "skillscale-market",
+      "stars": 124,
+      "description": "Marketplace-ready farming skill for equipment logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "farming",
+        "equipment-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-046",
+      "name": "forestry-equipment-logs-reviewer",
+      "author": "skillscale-market",
+      "stars": 121,
+      "description": "Marketplace-ready forestry skill for equipment logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "forestry",
+        "equipment-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-047",
+      "name": "fishery-equipment-logs-reviewer",
+      "author": "skillscale-market",
+      "stars": 118,
+      "description": "Marketplace-ready fishery skill for equipment logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "fishery",
+        "equipment-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-19-048",
+      "name": "agronomy-equipment-logs-reviewer",
+      "author": "skillscale-market",
+      "stars": 115,
+      "description": "Marketplace-ready agronomy skill for equipment logs. Produces structured checklists, drafts, summaries, and handoff notes tuned for farming, fishing, and forestry teams.",
+      "tags": [
+        "agronomy",
+        "equipment-logs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "19",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    }
+  ]
+}

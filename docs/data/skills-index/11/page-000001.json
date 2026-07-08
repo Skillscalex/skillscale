@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "occupationId": "11",
+  "skills": [
+    {
+      "id": "market-11-001",
+      "name": "clinical-soap-notes-planner",
+      "author": "skillscale-market",
+      "stars": 264,
+      "description": "Marketplace-ready clinical skill for SOAP notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "clinical",
+        "soap-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-002",
+      "name": "medical-soap-notes-planner",
+      "author": "skillscale-market",
+      "stars": 261,
+      "description": "Marketplace-ready medical skill for SOAP notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "medical",
+        "soap-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-003",
+      "name": "nursing-soap-notes-planner",
+      "author": "skillscale-market",
+      "stars": 258,
+      "description": "Marketplace-ready nursing skill for SOAP notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "nursing",
+        "soap-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-004",
+      "name": "pharmacy-soap-notes-planner",
+      "author": "skillscale-market",
+      "stars": 255,
+      "description": "Marketplace-ready pharmacy skill for SOAP notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "pharmacy",
+        "soap-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-11-005",
+      "name": "clinical-patient-education-planner",
+      "author": "skillscale-market",
+      "stars": 252,
+      "description": "Marketplace-ready clinical skill for patient education. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "clinical",
+        "patient-education",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-11-006",
+      "name": "medical-patient-education-planner",
+      "author": "skillscale-market",
+      "stars": 249,
+      "description": "Marketplace-ready medical skill for patient education. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "medical",
+        "patient-education",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-11-007",
+      "name": "nursing-patient-education-planner",
+      "author": "skillscale-market",
+      "stars": 246,
+      "description": "Marketplace-ready nursing skill for patient education. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "nursing",
+        "patient-education",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-008",
+      "name": "pharmacy-patient-education-planner",
+      "author": "skillscale-market",
+      "stars": 243,
+      "description": "Marketplace-ready pharmacy skill for patient education. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "pharmacy",
+        "patient-education",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-009",
+      "name": "clinical-coding-support-planner",
+      "author": "skillscale-market",
+      "stars": 240,
+      "description": "Marketplace-ready clinical skill for coding support. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "clinical",
+        "coding-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-010",
+      "name": "medical-coding-support-planner",
+      "author": "skillscale-market",
+      "stars": 237,
+      "description": "Marketplace-ready medical skill for coding support. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "medical",
+        "coding-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-011",
+      "name": "nursing-coding-support-planner",
+      "author": "skillscale-market",
+      "stars": 234,
+      "description": "Marketplace-ready nursing skill for coding support. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "nursing",
+        "coding-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-012",
+      "name": "pharmacy-coding-support-planner",
+      "author": "skillscale-market",
+      "stars": 231,
+      "description": "Marketplace-ready pharmacy skill for coding support. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "pharmacy",
+        "coding-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-013",
+      "name": "clinical-chart-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 228,
+      "description": "Marketplace-ready clinical skill for chart summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "clinical",
+        "chart-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-014",
+      "name": "medical-chart-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 225,
+      "description": "Marketplace-ready medical skill for chart summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "medical",
+        "chart-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-015",
+      "name": "nursing-chart-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 222,
+      "description": "Marketplace-ready nursing skill for chart summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "nursing",
+        "chart-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-016",
+      "name": "pharmacy-chart-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 219,
+      "description": "Marketplace-ready pharmacy skill for chart summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "pharmacy",
+        "chart-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-017",
+      "name": "clinical-soap-notes-assistant",
+      "author": "skillscale-market",
+      "stars": 216,
+      "description": "Marketplace-ready clinical skill for SOAP notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "clinical",
+        "soap-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-018",
+      "name": "medical-soap-notes-assistant",
+      "author": "skillscale-market",
+      "stars": 213,
+      "description": "Marketplace-ready medical skill for SOAP notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "medical",
+        "soap-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-11-019",
+      "name": "nursing-soap-notes-assistant",
+      "author": "skillscale-market",
+      "stars": 210,
+      "description": "Marketplace-ready nursing skill for SOAP notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "nursing",
+        "soap-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-11-020",
+      "name": "pharmacy-soap-notes-assistant",
+      "author": "skillscale-market",
+      "stars": 207,
+      "description": "Marketplace-ready pharmacy skill for SOAP notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "pharmacy",
+        "soap-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-11-021",
+      "name": "clinical-patient-education-assistant",
+      "author": "skillscale-market",
+      "stars": 204,
+      "description": "Marketplace-ready clinical skill for patient education. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "clinical",
+        "patient-education",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-022",
+      "name": "medical-patient-education-assistant",
+      "author": "skillscale-market",
+      "stars": 201,
+      "description": "Marketplace-ready medical skill for patient education. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "medical",
+        "patient-education",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-023",
+      "name": "nursing-patient-education-assistant",
+      "author": "skillscale-market",
+      "stars": 198,
+      "description": "Marketplace-ready nursing skill for patient education. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "nursing",
+        "patient-education",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-024",
+      "name": "pharmacy-patient-education-assistant",
+      "author": "skillscale-market",
+      "stars": 195,
+      "description": "Marketplace-ready pharmacy skill for patient education. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "pharmacy",
+        "patient-education",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-025",
+      "name": "clinical-coding-support-assistant",
+      "author": "skillscale-market",
+      "stars": 192,
+      "description": "Marketplace-ready clinical skill for coding support. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "clinical",
+        "coding-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-026",
+      "name": "medical-coding-support-assistant",
+      "author": "skillscale-market",
+      "stars": 189,
+      "description": "Marketplace-ready medical skill for coding support. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "medical",
+        "coding-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-027",
+      "name": "nursing-coding-support-assistant",
+      "author": "skillscale-market",
+      "stars": 186,
+      "description": "Marketplace-ready nursing skill for coding support. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "nursing",
+        "coding-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-028",
+      "name": "pharmacy-coding-support-assistant",
+      "author": "skillscale-market",
+      "stars": 183,
+      "description": "Marketplace-ready pharmacy skill for coding support. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "pharmacy",
+        "coding-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-029",
+      "name": "clinical-chart-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 180,
+      "description": "Marketplace-ready clinical skill for chart summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "clinical",
+        "chart-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-030",
+      "name": "medical-chart-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 177,
+      "description": "Marketplace-ready medical skill for chart summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "medical",
+        "chart-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-031",
+      "name": "nursing-chart-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 174,
+      "description": "Marketplace-ready nursing skill for chart summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "nursing",
+        "chart-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-032",
+      "name": "pharmacy-chart-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 171,
+      "description": "Marketplace-ready pharmacy skill for chart summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "pharmacy",
+        "chart-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-11-033",
+      "name": "clinical-soap-notes-reviewer",
+      "author": "skillscale-market",
+      "stars": 168,
+      "description": "Marketplace-ready clinical skill for SOAP notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "clinical",
+        "soap-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-11-034",
+      "name": "medical-soap-notes-reviewer",
+      "author": "skillscale-market",
+      "stars": 165,
+      "description": "Marketplace-ready medical skill for SOAP notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "medical",
+        "soap-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-11-035",
+      "name": "nursing-soap-notes-reviewer",
+      "author": "skillscale-market",
+      "stars": 162,
+      "description": "Marketplace-ready nursing skill for SOAP notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "nursing",
+        "soap-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-036",
+      "name": "pharmacy-soap-notes-reviewer",
+      "author": "skillscale-market",
+      "stars": 159,
+      "description": "Marketplace-ready pharmacy skill for SOAP notes. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "pharmacy",
+        "soap-notes",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-037",
+      "name": "clinical-patient-education-reviewer",
+      "author": "skillscale-market",
+      "stars": 156,
+      "description": "Marketplace-ready clinical skill for patient education. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "clinical",
+        "patient-education",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-038",
+      "name": "medical-patient-education-reviewer",
+      "author": "skillscale-market",
+      "stars": 153,
+      "description": "Marketplace-ready medical skill for patient education. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "medical",
+        "patient-education",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-039",
+      "name": "nursing-patient-education-reviewer",
+      "author": "skillscale-market",
+      "stars": 150,
+      "description": "Marketplace-ready nursing skill for patient education. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "nursing",
+        "patient-education",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-040",
+      "name": "pharmacy-patient-education-reviewer",
+      "author": "skillscale-market",
+      "stars": 147,
+      "description": "Marketplace-ready pharmacy skill for patient education. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "pharmacy",
+        "patient-education",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-041",
+      "name": "clinical-coding-support-reviewer",
+      "author": "skillscale-market",
+      "stars": 144,
+      "description": "Marketplace-ready clinical skill for coding support. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "clinical",
+        "coding-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-042",
+      "name": "medical-coding-support-reviewer",
+      "author": "skillscale-market",
+      "stars": 141,
+      "description": "Marketplace-ready medical skill for coding support. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "medical",
+        "coding-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-043",
+      "name": "nursing-coding-support-reviewer",
+      "author": "skillscale-market",
+      "stars": 138,
+      "description": "Marketplace-ready nursing skill for coding support. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "nursing",
+        "coding-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-044",
+      "name": "pharmacy-coding-support-reviewer",
+      "author": "skillscale-market",
+      "stars": 135,
+      "description": "Marketplace-ready pharmacy skill for coding support. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "pharmacy",
+        "coding-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-045",
+      "name": "clinical-chart-summaries-reviewer",
+      "author": "skillscale-market",
+      "stars": 132,
+      "description": "Marketplace-ready clinical skill for chart summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "clinical",
+        "chart-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-11-046",
+      "name": "medical-chart-summaries-reviewer",
+      "author": "skillscale-market",
+      "stars": 129,
+      "description": "Marketplace-ready medical skill for chart summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "medical",
+        "chart-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-11-047",
+      "name": "nursing-chart-summaries-reviewer",
+      "author": "skillscale-market",
+      "stars": 126,
+      "description": "Marketplace-ready nursing skill for chart summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "nursing",
+        "chart-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-11-048",
+      "name": "pharmacy-chart-summaries-reviewer",
+      "author": "skillscale-market",
+      "stars": 123,
+      "description": "Marketplace-ready pharmacy skill for chart summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for healthcare practitioners and technical teams.",
+      "tags": [
+        "pharmacy",
+        "chart-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "11",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    }
+  ]
+}

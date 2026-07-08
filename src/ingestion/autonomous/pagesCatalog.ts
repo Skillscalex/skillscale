@@ -3,6 +3,7 @@ import path from "node:path";
 import { z, ZodError } from "zod";
 import { normalizeGenericRawItem, slugify } from "../normalize";
 import type { RawSourceItem } from "../types";
+import { buildMarketSeedSkills } from "./marketSeeds";
 import type { AutonomousSkillCandidate, AutonomousSkillLoopRun } from "./types";
 
 export type PagesSkillAuditStatus = "approved" | "needs_review" | "blocked";
@@ -37,6 +38,7 @@ export type PagesSkillCatalog = {
 export type BuildPagesSkillCatalogInput = {
   readonly run: AutonomousSkillLoopRun;
   readonly cacheComponents: readonly CacheSkillComponent[];
+  readonly existingSkills?: readonly PagesSkill[];
   readonly generatedAt?: string;
 };
 
@@ -117,7 +119,8 @@ const CREATED_SKILLS = [
 export function buildPagesSkillCatalog(input: BuildPagesSkillCatalogInput): PagesSkillCatalog {
   const cacheSkills = input.cacheComponents.map(componentToSkill);
   const loopSkills = input.run.candidates.map(loopCandidateToSkill);
-  const skills = dedupeSkills([...CREATED_SKILLS, ...cacheSkills, ...loopSkills]);
+  const marketSeedSkills = buildMarketSeedSkills();
+  const skills = dedupeSkills([...CREATED_SKILLS, ...marketSeedSkills, ...(input.existingSkills ?? []), ...cacheSkills, ...loopSkills]);
 
   return {
     generatedAt: input.generatedAt ?? new Date().toISOString(),

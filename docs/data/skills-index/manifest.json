@@ -1,261 +1,206 @@
 {
-  "generatedAt": "2026-07-08T08:45:18.344Z",
+  "generatedAt": "2026-07-08T09:34:05.364Z",
   "shardSize": 500,
-  "totalSkills": 642,
-  "upstreamTotal": 1603202,
-  "projectedShardCount": 3219,
-  "missingShardCount": 3216,
+  "totalSkills": 1698,
+  "upstreamTotal": 1605833,
+  "projectedShardCount": 3224,
+  "missingShardCount": 3200,
   "mirrorQueue": [
     {
       "occupationId": "01",
       "nextMissingShard": 3,
-      "missingShardCount": 2414,
+      "missingShardCount": 2398,
       "missingShardRanges": [
         {
           "start": 3,
-          "end": 2416
+          "end": 2400
         }
       ]
     },
     {
       "occupationId": "02",
       "nextMissingShard": 2,
-      "missingShardCount": 367,
+      "missingShardCount": 361,
       "missingShardRanges": [
         {
           "start": 2,
-          "end": 368
+          "end": 362
         }
       ]
     },
     {
       "occupationId": "03",
-      "nextMissingShard": 1,
-      "missingShardCount": 156,
+      "nextMissingShard": 2,
+      "missingShardCount": 159,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 156
+          "start": 2,
+          "end": 160
         }
       ]
     },
     {
       "occupationId": "04",
-      "nextMissingShard": 1,
-      "missingShardCount": 75,
+      "nextMissingShard": 2,
+      "missingShardCount": 83,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 75
+          "start": 2,
+          "end": 84
         }
       ]
     },
     {
       "occupationId": "05",
-      "nextMissingShard": 1,
-      "missingShardCount": 45,
+      "nextMissingShard": 2,
+      "missingShardCount": 46,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 45
+          "start": 2,
+          "end": 47
         }
       ]
     },
     {
       "occupationId": "06",
-      "nextMissingShard": 1,
-      "missingShardCount": 42,
+      "nextMissingShard": 2,
+      "missingShardCount": 38,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 42
+          "start": 2,
+          "end": 39
         }
       ]
     },
     {
       "occupationId": "07",
-      "nextMissingShard": 1,
-      "missingShardCount": 33,
+      "nextMissingShard": 2,
+      "missingShardCount": 37,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 33
+          "start": 2,
+          "end": 38
         }
       ]
     },
     {
       "occupationId": "08",
-      "nextMissingShard": 1,
-      "missingShardCount": 19,
+      "nextMissingShard": 2,
+      "missingShardCount": 24,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 19
+          "start": 2,
+          "end": 25
         }
       ]
     },
     {
       "occupationId": "09",
-      "nextMissingShard": 1,
+      "nextMissingShard": 2,
       "missingShardCount": 13,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 13
+          "start": 2,
+          "end": 14
         }
       ]
     },
     {
       "occupationId": "10",
-      "nextMissingShard": 1,
-      "missingShardCount": 13,
+      "nextMissingShard": 2,
+      "missingShardCount": 11,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 13
+          "start": 2,
+          "end": 12
         }
       ]
     },
     {
       "occupationId": "11",
-      "nextMissingShard": 1,
+      "nextMissingShard": 2,
       "missingShardCount": 9,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 9
+          "start": 2,
+          "end": 10
         }
       ]
     },
     {
       "occupationId": "12",
-      "nextMissingShard": 1,
-      "missingShardCount": 8,
+      "nextMissingShard": 2,
+      "missingShardCount": 7,
       "missingShardRanges": [
         {
-          "start": 1,
+          "start": 2,
           "end": 8
         }
       ]
     },
     {
       "occupationId": "13",
-      "nextMissingShard": 1,
+      "nextMissingShard": 2,
       "missingShardCount": 5,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 5
+          "start": 2,
+          "end": 6
         }
       ]
     },
     {
       "occupationId": "14",
-      "nextMissingShard": 1,
-      "missingShardCount": 5,
+      "nextMissingShard": 2,
+      "missingShardCount": 4,
       "missingShardRanges": [
         {
-          "start": 1,
+          "start": 2,
           "end": 5
         }
       ]
     },
     {
       "occupationId": "15",
-      "nextMissingShard": 1,
-      "missingShardCount": 3,
+      "nextMissingShard": 2,
+      "missingShardCount": 2,
       "missingShardRanges": [
         {
-          "start": 1,
+          "start": 2,
           "end": 3
         }
       ]
     },
     {
       "occupationId": "16",
-      "nextMissingShard": 1,
-      "missingShardCount": 2,
+      "nextMissingShard": 2,
+      "missingShardCount": 1,
       "missingShardRanges": [
         {
-          "start": 1,
+          "start": 2,
           "end": 2
         }
       ]
     },
     {
       "occupationId": "17",
-      "nextMissingShard": 1,
+      "nextMissingShard": 2,
       "missingShardCount": 1,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 1
+          "start": 2,
+          "end": 2
         }
       ]
     },
     {
       "occupationId": "18",
-      "nextMissingShard": 1,
+      "nextMissingShard": 2,
       "missingShardCount": 1,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 1
-        }
-      ]
-    },
-    {
-      "occupationId": "19",
-      "nextMissingShard": 1,
-      "missingShardCount": 1,
-      "missingShardRanges": [
-        {
-          "start": 1,
-          "end": 1
-        }
-      ]
-    },
-    {
-      "occupationId": "20",
-      "nextMissingShard": 1,
-      "missingShardCount": 1,
-      "missingShardRanges": [
-        {
-          "start": 1,
-          "end": 1
-        }
-      ]
-    },
-    {
-      "occupationId": "21",
-      "nextMissingShard": 1,
-      "missingShardCount": 1,
-      "missingShardRanges": [
-        {
-          "start": 1,
-          "end": 1
-        }
-      ]
-    },
-    {
-      "occupationId": "22",
-      "nextMissingShard": 1,
-      "missingShardCount": 1,
-      "missingShardRanges": [
-        {
-          "start": 1,
-          "end": 1
-        }
-      ]
-    },
-    {
-      "occupationId": "23",
-      "nextMissingShard": 1,
-      "missingShardCount": 1,
-      "missingShardRanges": [
-        {
-          "start": 1,
-          "end": 1
+          "start": 2,
+          "end": 2
         }
       ]
     }
@@ -264,14 +209,14 @@
     {
       "occupationId": "01",
       "totalSkills": 639,
-      "upstreamTotal": 1207651,
+      "upstreamTotal": 1199690,
       "shardSize": 500,
       "shardCount": 2,
-      "projectedShardCount": 2416,
+      "projectedShardCount": 2400,
       "missingShardRanges": [
         {
           "start": 3,
-          "end": 2416
+          "end": 2400
         }
       ],
       "nextMissingShard": 3,
@@ -282,15 +227,15 @@
     },
     {
       "occupationId": "02",
-      "totalSkills": 3,
-      "upstreamTotal": 183927,
+      "totalSkills": 51,
+      "upstreamTotal": 180711,
       "shardSize": 500,
       "shardCount": 1,
-      "projectedShardCount": 368,
+      "projectedShardCount": 362,
       "missingShardRanges": [
         {
           "start": 2,
-          "end": 368
+          "end": 362
         }
       ],
       "nextMissingShard": 2,
@@ -300,339 +245,351 @@
     },
     {
       "occupationId": "03",
-      "totalSkills": 0,
-      "upstreamTotal": 77816,
+      "totalSkills": 48,
+      "upstreamTotal": 79595,
       "shardSize": 500,
-      "shardCount": 0,
-      "projectedShardCount": 156,
+      "shardCount": 1,
+      "projectedShardCount": 160,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 156
+          "start": 2,
+          "end": 160
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "03/page-000001.json"
+      ]
     },
     {
       "occupationId": "04",
-      "totalSkills": 0,
-      "upstreamTotal": 37459,
+      "totalSkills": 48,
+      "upstreamTotal": 41915,
       "shardSize": 500,
-      "shardCount": 0,
-      "projectedShardCount": 75,
+      "shardCount": 1,
+      "projectedShardCount": 84,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 75
+          "start": 2,
+          "end": 84
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "04/page-000001.json"
+      ]
     },
     {
       "occupationId": "05",
-      "totalSkills": 0,
-      "upstreamTotal": 22064,
+      "totalSkills": 48,
+      "upstreamTotal": 23361,
       "shardSize": 500,
-      "shardCount": 0,
-      "projectedShardCount": 45,
+      "shardCount": 1,
+      "projectedShardCount": 47,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 45
+          "start": 2,
+          "end": 47
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "05/page-000001.json"
+      ]
     },
     {
       "occupationId": "06",
-      "totalSkills": 0,
-      "upstreamTotal": 20725,
+      "totalSkills": 48,
+      "upstreamTotal": 19305,
       "shardSize": 500,
-      "shardCount": 0,
-      "projectedShardCount": 42,
+      "shardCount": 1,
+      "projectedShardCount": 39,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 42
+          "start": 2,
+          "end": 39
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "06/page-000001.json"
+      ]
     },
     {
       "occupationId": "07",
-      "totalSkills": 0,
-      "upstreamTotal": 16255,
+      "totalSkills": 48,
+      "upstreamTotal": 18983,
       "shardSize": 500,
-      "shardCount": 0,
-      "projectedShardCount": 33,
+      "shardCount": 1,
+      "projectedShardCount": 38,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 33
+          "start": 2,
+          "end": 38
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "07/page-000001.json"
+      ]
     },
     {
       "occupationId": "08",
-      "totalSkills": 0,
-      "upstreamTotal": 9143,
+      "totalSkills": 48,
+      "upstreamTotal": 12044,
       "shardSize": 500,
-      "shardCount": 0,
-      "projectedShardCount": 19,
+      "shardCount": 1,
+      "projectedShardCount": 25,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 19
+          "start": 2,
+          "end": 25
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "08/page-000001.json"
+      ]
     },
     {
       "occupationId": "09",
-      "totalSkills": 0,
-      "upstreamTotal": 6023,
+      "totalSkills": 48,
+      "upstreamTotal": 6801,
       "shardSize": 500,
-      "shardCount": 0,
-      "projectedShardCount": 13,
+      "shardCount": 1,
+      "projectedShardCount": 14,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 13
+          "start": 2,
+          "end": 14
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "09/page-000001.json"
+      ]
     },
     {
       "occupationId": "10",
-      "totalSkills": 0,
-      "upstreamTotal": 6006,
+      "totalSkills": 48,
+      "upstreamTotal": 5584,
       "shardSize": 500,
-      "shardCount": 0,
-      "projectedShardCount": 13,
+      "shardCount": 1,
+      "projectedShardCount": 12,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 13
+          "start": 2,
+          "end": 12
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "10/page-000001.json"
+      ]
     },
     {
       "occupationId": "11",
-      "totalSkills": 0,
-      "upstreamTotal": 4260,
+      "totalSkills": 48,
+      "upstreamTotal": 4507,
       "shardSize": 500,
-      "shardCount": 0,
-      "projectedShardCount": 9,
+      "shardCount": 1,
+      "projectedShardCount": 10,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 9
+          "start": 2,
+          "end": 10
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "11/page-000001.json"
+      ]
     },
     {
       "occupationId": "12",
-      "totalSkills": 0,
-      "upstreamTotal": 3621,
+      "totalSkills": 48,
+      "upstreamTotal": 3819,
       "shardSize": 500,
-      "shardCount": 0,
+      "shardCount": 1,
       "projectedShardCount": 8,
       "missingShardRanges": [
         {
-          "start": 1,
+          "start": 2,
           "end": 8
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "12/page-000001.json"
+      ]
     },
     {
       "occupationId": "13",
-      "totalSkills": 0,
-      "upstreamTotal": 2216,
+      "totalSkills": 48,
+      "upstreamTotal": 2650,
       "shardSize": 500,
-      "shardCount": 0,
-      "projectedShardCount": 5,
+      "shardCount": 1,
+      "projectedShardCount": 6,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 5
+          "start": 2,
+          "end": 6
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "13/page-000001.json"
+      ]
     },
     {
       "occupationId": "14",
-      "totalSkills": 0,
-      "upstreamTotal": 2063,
+      "totalSkills": 48,
+      "upstreamTotal": 2148,
       "shardSize": 500,
-      "shardCount": 0,
+      "shardCount": 1,
       "projectedShardCount": 5,
       "missingShardRanges": [
         {
-          "start": 1,
+          "start": 2,
           "end": 5
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "14/page-000001.json"
+      ]
     },
     {
       "occupationId": "15",
-      "totalSkills": 0,
-      "upstreamTotal": 1088,
+      "totalSkills": 48,
+      "upstreamTotal": 1228,
       "shardSize": 500,
-      "shardCount": 0,
+      "shardCount": 1,
       "projectedShardCount": 3,
       "missingShardRanges": [
         {
-          "start": 1,
+          "start": 2,
           "end": 3
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "15/page-000001.json"
+      ]
     },
     {
       "occupationId": "16",
-      "totalSkills": 0,
-      "upstreamTotal": 786,
+      "totalSkills": 48,
+      "upstreamTotal": 925,
       "shardSize": 500,
-      "shardCount": 0,
+      "shardCount": 1,
       "projectedShardCount": 2,
       "missingShardRanges": [
         {
-          "start": 1,
+          "start": 2,
           "end": 2
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "16/page-000001.json"
+      ]
     },
     {
       "occupationId": "17",
-      "totalSkills": 0,
-      "upstreamTotal": 443,
+      "totalSkills": 48,
+      "upstreamTotal": 610,
       "shardSize": 500,
-      "shardCount": 0,
-      "projectedShardCount": 1,
+      "shardCount": 1,
+      "projectedShardCount": 2,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 1
+          "start": 2,
+          "end": 2
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "17/page-000001.json"
+      ]
     },
     {
       "occupationId": "18",
-      "totalSkills": 0,
-      "upstreamTotal": 382,
+      "totalSkills": 48,
+      "upstreamTotal": 579,
       "shardSize": 500,
-      "shardCount": 0,
-      "projectedShardCount": 1,
+      "shardCount": 1,
+      "projectedShardCount": 2,
       "missingShardRanges": [
         {
-          "start": 1,
-          "end": 1
+          "start": 2,
+          "end": 2
         }
       ],
-      "nextMissingShard": 1,
-      "shards": []
+      "nextMissingShard": 2,
+      "shards": [
+        "18/page-000001.json"
+      ]
     },
     {
       "occupationId": "19",
-      "totalSkills": 0,
-      "upstreamTotal": 375,
+      "totalSkills": 48,
+      "upstreamTotal": 389,
       "shardSize": 500,
-      "shardCount": 0,
+      "shardCount": 1,
       "projectedShardCount": 1,
-      "missingShardRanges": [
-        {
-          "start": 1,
-          "end": 1
-        }
-      ],
-      "nextMissingShard": 1,
-      "shards": []
+      "missingShardRanges": [],
+      "shards": [
+        "19/page-000001.json"
+      ]
     },
     {
       "occupationId": "20",
-      "totalSkills": 0,
-      "upstreamTotal": 312,
+      "totalSkills": 48,
+      "upstreamTotal": 387,
       "shardSize": 500,
-      "shardCount": 0,
+      "shardCount": 1,
       "projectedShardCount": 1,
-      "missingShardRanges": [
-        {
-          "start": 1,
-          "end": 1
-        }
-      ],
-      "nextMissingShard": 1,
-      "shards": []
+      "missingShardRanges": [],
+      "shards": [
+        "20/page-000001.json"
+      ]
     },
     {
       "occupationId": "21",
-      "totalSkills": 0,
-      "upstreamTotal": 278,
+      "totalSkills": 48,
+      "upstreamTotal": 253,
       "shardSize": 500,
-      "shardCount": 0,
+      "shardCount": 1,
       "projectedShardCount": 1,
-      "missingShardRanges": [
-        {
-          "start": 1,
-          "end": 1
-        }
-      ],
-      "nextMissingShard": 1,
-      "shards": []
+      "missingShardRanges": [],
+      "shards": [
+        "21/page-000001.json"
+      ]
     },
     {
       "occupationId": "22",
-      "totalSkills": 0,
-      "upstreamTotal": 209,
+      "totalSkills": 48,
+      "upstreamTotal": 229,
       "shardSize": 500,
-      "shardCount": 0,
+      "shardCount": 1,
       "projectedShardCount": 1,
-      "missingShardRanges": [
-        {
-          "start": 1,
-          "end": 1
-        }
-      ],
-      "nextMissingShard": 1,
-      "shards": []
+      "missingShardRanges": [],
+      "shards": [
+        "22/page-000001.json"
+      ]
     },
     {
       "occupationId": "23",
-      "totalSkills": 0,
-      "upstreamTotal": 100,
+      "totalSkills": 48,
+      "upstreamTotal": 120,
       "shardSize": 500,
-      "shardCount": 0,
+      "shardCount": 1,
       "projectedShardCount": 1,
-      "missingShardRanges": [
-        {
-          "start": 1,
-          "end": 1
-        }
-      ],
-      "nextMissingShard": 1,
-      "shards": []
+      "missingShardRanges": [],
+      "shards": [
+        "23/page-000001.json"
+      ]
     }
   ]
 }

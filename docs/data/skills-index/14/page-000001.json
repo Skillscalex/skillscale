@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "occupationId": "14",
+  "skills": [
+    {
+      "id": "market-14-001",
+      "name": "military-briefing-packs-planner",
+      "author": "skillscale-market",
+      "stars": 261,
+      "description": "Marketplace-ready military skill for briefing packs. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "military",
+        "briefing-packs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-14-002",
+      "name": "defense-briefing-packs-planner",
+      "author": "skillscale-market",
+      "stars": 258,
+      "description": "Marketplace-ready defense skill for briefing packs. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "defense",
+        "briefing-packs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-14-003",
+      "name": "readiness-briefing-packs-planner",
+      "author": "skillscale-market",
+      "stars": 255,
+      "description": "Marketplace-ready readiness skill for briefing packs. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "readiness",
+        "briefing-packs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-14-004",
+      "name": "logistics-briefing-packs-planner",
+      "author": "skillscale-market",
+      "stars": 252,
+      "description": "Marketplace-ready logistics skill for briefing packs. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "logistics",
+        "briefing-packs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-005",
+      "name": "military-after-action-reports-planner",
+      "author": "skillscale-market",
+      "stars": 249,
+      "description": "Marketplace-ready military skill for after-action reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "military",
+        "after-action-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-006",
+      "name": "defense-after-action-reports-planner",
+      "author": "skillscale-market",
+      "stars": 246,
+      "description": "Marketplace-ready defense skill for after-action reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "defense",
+        "after-action-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-007",
+      "name": "readiness-after-action-reports-planner",
+      "author": "skillscale-market",
+      "stars": 243,
+      "description": "Marketplace-ready readiness skill for after-action reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "readiness",
+        "after-action-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-008",
+      "name": "logistics-after-action-reports-planner",
+      "author": "skillscale-market",
+      "stars": 240,
+      "description": "Marketplace-ready logistics skill for after-action reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "logistics",
+        "after-action-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-009",
+      "name": "military-readiness-checks-planner",
+      "author": "skillscale-market",
+      "stars": 237,
+      "description": "Marketplace-ready military skill for readiness checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "military",
+        "readiness-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-010",
+      "name": "defense-readiness-checks-planner",
+      "author": "skillscale-market",
+      "stars": 234,
+      "description": "Marketplace-ready defense skill for readiness checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "defense",
+        "readiness-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-011",
+      "name": "readiness-readiness-checks-planner",
+      "author": "skillscale-market",
+      "stars": 231,
+      "description": "Marketplace-ready readiness skill for readiness checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "readiness",
+        "readiness-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-012",
+      "name": "logistics-readiness-checks-planner",
+      "author": "skillscale-market",
+      "stars": 228,
+      "description": "Marketplace-ready logistics skill for readiness checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "logistics",
+        "readiness-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-013",
+      "name": "military-sitrep-drafts-planner",
+      "author": "skillscale-market",
+      "stars": 225,
+      "description": "Marketplace-ready military skill for SITREP drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "military",
+        "sitrep-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-014",
+      "name": "defense-sitrep-drafts-planner",
+      "author": "skillscale-market",
+      "stars": 222,
+      "description": "Marketplace-ready defense skill for SITREP drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "defense",
+        "sitrep-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-015",
+      "name": "readiness-sitrep-drafts-planner",
+      "author": "skillscale-market",
+      "stars": 219,
+      "description": "Marketplace-ready readiness skill for SITREP drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "readiness",
+        "sitrep-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-14-016",
+      "name": "logistics-sitrep-drafts-planner",
+      "author": "skillscale-market",
+      "stars": 216,
+      "description": "Marketplace-ready logistics skill for SITREP drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "logistics",
+        "sitrep-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-14-017",
+      "name": "military-briefing-packs-assistant",
+      "author": "skillscale-market",
+      "stars": 213,
+      "description": "Marketplace-ready military skill for briefing packs. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "military",
+        "briefing-packs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-14-018",
+      "name": "defense-briefing-packs-assistant",
+      "author": "skillscale-market",
+      "stars": 210,
+      "description": "Marketplace-ready defense skill for briefing packs. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "defense",
+        "briefing-packs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-019",
+      "name": "readiness-briefing-packs-assistant",
+      "author": "skillscale-market",
+      "stars": 207,
+      "description": "Marketplace-ready readiness skill for briefing packs. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "readiness",
+        "briefing-packs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-020",
+      "name": "logistics-briefing-packs-assistant",
+      "author": "skillscale-market",
+      "stars": 204,
+      "description": "Marketplace-ready logistics skill for briefing packs. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "logistics",
+        "briefing-packs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-021",
+      "name": "military-after-action-reports-assistant",
+      "author": "skillscale-market",
+      "stars": 201,
+      "description": "Marketplace-ready military skill for after-action reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "military",
+        "after-action-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-022",
+      "name": "defense-after-action-reports-assistant",
+      "author": "skillscale-market",
+      "stars": 198,
+      "description": "Marketplace-ready defense skill for after-action reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "defense",
+        "after-action-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-023",
+      "name": "readiness-after-action-reports-assistant",
+      "author": "skillscale-market",
+      "stars": 195,
+      "description": "Marketplace-ready readiness skill for after-action reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "readiness",
+        "after-action-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-024",
+      "name": "logistics-after-action-reports-assistant",
+      "author": "skillscale-market",
+      "stars": 192,
+      "description": "Marketplace-ready logistics skill for after-action reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "logistics",
+        "after-action-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-025",
+      "name": "military-readiness-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 189,
+      "description": "Marketplace-ready military skill for readiness checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "military",
+        "readiness-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-026",
+      "name": "defense-readiness-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 186,
+      "description": "Marketplace-ready defense skill for readiness checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "defense",
+        "readiness-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-027",
+      "name": "readiness-readiness-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 183,
+      "description": "Marketplace-ready readiness skill for readiness checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "readiness",
+        "readiness-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-028",
+      "name": "logistics-readiness-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 180,
+      "description": "Marketplace-ready logistics skill for readiness checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "logistics",
+        "readiness-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-029",
+      "name": "military-sitrep-drafts-assistant",
+      "author": "skillscale-market",
+      "stars": 177,
+      "description": "Marketplace-ready military skill for SITREP drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "military",
+        "sitrep-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-14-030",
+      "name": "defense-sitrep-drafts-assistant",
+      "author": "skillscale-market",
+      "stars": 174,
+      "description": "Marketplace-ready defense skill for SITREP drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "defense",
+        "sitrep-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-14-031",
+      "name": "readiness-sitrep-drafts-assistant",
+      "author": "skillscale-market",
+      "stars": 171,
+      "description": "Marketplace-ready readiness skill for SITREP drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "readiness",
+        "sitrep-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-14-032",
+      "name": "logistics-sitrep-drafts-assistant",
+      "author": "skillscale-market",
+      "stars": 168,
+      "description": "Marketplace-ready logistics skill for SITREP drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "logistics",
+        "sitrep-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-033",
+      "name": "military-briefing-packs-reviewer",
+      "author": "skillscale-market",
+      "stars": 165,
+      "description": "Marketplace-ready military skill for briefing packs. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "military",
+        "briefing-packs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-034",
+      "name": "defense-briefing-packs-reviewer",
+      "author": "skillscale-market",
+      "stars": 162,
+      "description": "Marketplace-ready defense skill for briefing packs. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "defense",
+        "briefing-packs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-035",
+      "name": "readiness-briefing-packs-reviewer",
+      "author": "skillscale-market",
+      "stars": 159,
+      "description": "Marketplace-ready readiness skill for briefing packs. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "readiness",
+        "briefing-packs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-036",
+      "name": "logistics-briefing-packs-reviewer",
+      "author": "skillscale-market",
+      "stars": 156,
+      "description": "Marketplace-ready logistics skill for briefing packs. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "logistics",
+        "briefing-packs",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-037",
+      "name": "military-after-action-reports-reviewer",
+      "author": "skillscale-market",
+      "stars": 153,
+      "description": "Marketplace-ready military skill for after-action reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "military",
+        "after-action-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-038",
+      "name": "defense-after-action-reports-reviewer",
+      "author": "skillscale-market",
+      "stars": 150,
+      "description": "Marketplace-ready defense skill for after-action reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "defense",
+        "after-action-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-039",
+      "name": "readiness-after-action-reports-reviewer",
+      "author": "skillscale-market",
+      "stars": 147,
+      "description": "Marketplace-ready readiness skill for after-action reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "readiness",
+        "after-action-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-040",
+      "name": "logistics-after-action-reports-reviewer",
+      "author": "skillscale-market",
+      "stars": 144,
+      "description": "Marketplace-ready logistics skill for after-action reports. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "logistics",
+        "after-action-reports",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-041",
+      "name": "military-readiness-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 141,
+      "description": "Marketplace-ready military skill for readiness checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "military",
+        "readiness-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-042",
+      "name": "defense-readiness-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 138,
+      "description": "Marketplace-ready defense skill for readiness checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "defense",
+        "readiness-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-043",
+      "name": "readiness-readiness-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 135,
+      "description": "Marketplace-ready readiness skill for readiness checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "readiness",
+        "readiness-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-14-044",
+      "name": "logistics-readiness-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 132,
+      "description": "Marketplace-ready logistics skill for readiness checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "logistics",
+        "readiness-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-14-045",
+      "name": "military-sitrep-drafts-reviewer",
+      "author": "skillscale-market",
+      "stars": 129,
+      "description": "Marketplace-ready military skill for SITREP drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "military",
+        "sitrep-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-14-046",
+      "name": "defense-sitrep-drafts-reviewer",
+      "author": "skillscale-market",
+      "stars": 126,
+      "description": "Marketplace-ready defense skill for SITREP drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "defense",
+        "sitrep-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-047",
+      "name": "readiness-sitrep-drafts-reviewer",
+      "author": "skillscale-market",
+      "stars": 123,
+      "description": "Marketplace-ready readiness skill for SITREP drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "readiness",
+        "sitrep-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-14-048",
+      "name": "logistics-sitrep-drafts-reviewer",
+      "author": "skillscale-market",
+      "stars": 120,
+      "description": "Marketplace-ready logistics skill for SITREP drafts. Produces structured checklists, drafts, summaries, and handoff notes tuned for military specific teams.",
+      "tags": [
+        "logistics",
+        "sitrep-drafts",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "14",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    }
+  ]
+}

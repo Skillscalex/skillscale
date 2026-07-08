@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "occupationId": "10",
+  "skills": [
+    {
+      "id": "market-10-001",
+      "name": "architecture-requirements-capture-planner",
+      "author": "skillscale-market",
+      "stars": 265,
+      "description": "Marketplace-ready architecture skill for requirements capture. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "architecture",
+        "requirements-capture",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-002",
+      "name": "engineering-requirements-capture-planner",
+      "author": "skillscale-market",
+      "stars": 262,
+      "description": "Marketplace-ready engineering skill for requirements capture. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "engineering",
+        "requirements-capture",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-003",
+      "name": "mechanical-requirements-capture-planner",
+      "author": "skillscale-market",
+      "stars": 259,
+      "description": "Marketplace-ready mechanical skill for requirements capture. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "mechanical",
+        "requirements-capture",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-004",
+      "name": "civil-requirements-capture-planner",
+      "author": "skillscale-market",
+      "stars": 256,
+      "description": "Marketplace-ready civil skill for requirements capture. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "civil",
+        "requirements-capture",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-005",
+      "name": "architecture-design-review-planner",
+      "author": "skillscale-market",
+      "stars": 253,
+      "description": "Marketplace-ready architecture skill for design review. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "architecture",
+        "design-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-10-006",
+      "name": "engineering-design-review-planner",
+      "author": "skillscale-market",
+      "stars": 250,
+      "description": "Marketplace-ready engineering skill for design review. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "engineering",
+        "design-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-10-007",
+      "name": "mechanical-design-review-planner",
+      "author": "skillscale-market",
+      "stars": 247,
+      "description": "Marketplace-ready mechanical skill for design review. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "mechanical",
+        "design-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-10-008",
+      "name": "civil-design-review-planner",
+      "author": "skillscale-market",
+      "stars": 244,
+      "description": "Marketplace-ready civil skill for design review. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "civil",
+        "design-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-009",
+      "name": "architecture-bom-drafting-planner",
+      "author": "skillscale-market",
+      "stars": 241,
+      "description": "Marketplace-ready architecture skill for BOM drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "architecture",
+        "bom-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-010",
+      "name": "engineering-bom-drafting-planner",
+      "author": "skillscale-market",
+      "stars": 238,
+      "description": "Marketplace-ready engineering skill for BOM drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "engineering",
+        "bom-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-011",
+      "name": "mechanical-bom-drafting-planner",
+      "author": "skillscale-market",
+      "stars": 235,
+      "description": "Marketplace-ready mechanical skill for BOM drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "mechanical",
+        "bom-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-012",
+      "name": "civil-bom-drafting-planner",
+      "author": "skillscale-market",
+      "stars": 232,
+      "description": "Marketplace-ready civil skill for BOM drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "civil",
+        "bom-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-013",
+      "name": "architecture-spec-checks-planner",
+      "author": "skillscale-market",
+      "stars": 229,
+      "description": "Marketplace-ready architecture skill for spec checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "architecture",
+        "spec-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-014",
+      "name": "engineering-spec-checks-planner",
+      "author": "skillscale-market",
+      "stars": 226,
+      "description": "Marketplace-ready engineering skill for spec checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "engineering",
+        "spec-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-015",
+      "name": "mechanical-spec-checks-planner",
+      "author": "skillscale-market",
+      "stars": 223,
+      "description": "Marketplace-ready mechanical skill for spec checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "mechanical",
+        "spec-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-016",
+      "name": "civil-spec-checks-planner",
+      "author": "skillscale-market",
+      "stars": 220,
+      "description": "Marketplace-ready civil skill for spec checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "civil",
+        "spec-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-017",
+      "name": "architecture-requirements-capture-assistant",
+      "author": "skillscale-market",
+      "stars": 217,
+      "description": "Marketplace-ready architecture skill for requirements capture. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "architecture",
+        "requirements-capture",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-018",
+      "name": "engineering-requirements-capture-assistant",
+      "author": "skillscale-market",
+      "stars": 214,
+      "description": "Marketplace-ready engineering skill for requirements capture. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "engineering",
+        "requirements-capture",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-019",
+      "name": "mechanical-requirements-capture-assistant",
+      "author": "skillscale-market",
+      "stars": 211,
+      "description": "Marketplace-ready mechanical skill for requirements capture. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "mechanical",
+        "requirements-capture",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-10-020",
+      "name": "civil-requirements-capture-assistant",
+      "author": "skillscale-market",
+      "stars": 208,
+      "description": "Marketplace-ready civil skill for requirements capture. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "civil",
+        "requirements-capture",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-10-021",
+      "name": "architecture-design-review-assistant",
+      "author": "skillscale-market",
+      "stars": 205,
+      "description": "Marketplace-ready architecture skill for design review. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "architecture",
+        "design-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-10-022",
+      "name": "engineering-design-review-assistant",
+      "author": "skillscale-market",
+      "stars": 202,
+      "description": "Marketplace-ready engineering skill for design review. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "engineering",
+        "design-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-023",
+      "name": "mechanical-design-review-assistant",
+      "author": "skillscale-market",
+      "stars": 199,
+      "description": "Marketplace-ready mechanical skill for design review. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "mechanical",
+        "design-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-024",
+      "name": "civil-design-review-assistant",
+      "author": "skillscale-market",
+      "stars": 196,
+      "description": "Marketplace-ready civil skill for design review. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "civil",
+        "design-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-025",
+      "name": "architecture-bom-drafting-assistant",
+      "author": "skillscale-market",
+      "stars": 193,
+      "description": "Marketplace-ready architecture skill for BOM drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "architecture",
+        "bom-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-026",
+      "name": "engineering-bom-drafting-assistant",
+      "author": "skillscale-market",
+      "stars": 190,
+      "description": "Marketplace-ready engineering skill for BOM drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "engineering",
+        "bom-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-027",
+      "name": "mechanical-bom-drafting-assistant",
+      "author": "skillscale-market",
+      "stars": 187,
+      "description": "Marketplace-ready mechanical skill for BOM drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "mechanical",
+        "bom-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-028",
+      "name": "civil-bom-drafting-assistant",
+      "author": "skillscale-market",
+      "stars": 184,
+      "description": "Marketplace-ready civil skill for BOM drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "civil",
+        "bom-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-029",
+      "name": "architecture-spec-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 181,
+      "description": "Marketplace-ready architecture skill for spec checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "architecture",
+        "spec-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-030",
+      "name": "engineering-spec-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 178,
+      "description": "Marketplace-ready engineering skill for spec checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "engineering",
+        "spec-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-031",
+      "name": "mechanical-spec-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 175,
+      "description": "Marketplace-ready mechanical skill for spec checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "mechanical",
+        "spec-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-032",
+      "name": "civil-spec-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 172,
+      "description": "Marketplace-ready civil skill for spec checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "civil",
+        "spec-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-033",
+      "name": "architecture-requirements-capture-reviewer",
+      "author": "skillscale-market",
+      "stars": 169,
+      "description": "Marketplace-ready architecture skill for requirements capture. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "architecture",
+        "requirements-capture",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-10-034",
+      "name": "engineering-requirements-capture-reviewer",
+      "author": "skillscale-market",
+      "stars": 166,
+      "description": "Marketplace-ready engineering skill for requirements capture. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "engineering",
+        "requirements-capture",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-10-035",
+      "name": "mechanical-requirements-capture-reviewer",
+      "author": "skillscale-market",
+      "stars": 163,
+      "description": "Marketplace-ready mechanical skill for requirements capture. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "mechanical",
+        "requirements-capture",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-10-036",
+      "name": "civil-requirements-capture-reviewer",
+      "author": "skillscale-market",
+      "stars": 160,
+      "description": "Marketplace-ready civil skill for requirements capture. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "civil",
+        "requirements-capture",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-037",
+      "name": "architecture-design-review-reviewer",
+      "author": "skillscale-market",
+      "stars": 157,
+      "description": "Marketplace-ready architecture skill for design review. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "architecture",
+        "design-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-038",
+      "name": "engineering-design-review-reviewer",
+      "author": "skillscale-market",
+      "stars": 154,
+      "description": "Marketplace-ready engineering skill for design review. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "engineering",
+        "design-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-039",
+      "name": "mechanical-design-review-reviewer",
+      "author": "skillscale-market",
+      "stars": 151,
+      "description": "Marketplace-ready mechanical skill for design review. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "mechanical",
+        "design-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-040",
+      "name": "civil-design-review-reviewer",
+      "author": "skillscale-market",
+      "stars": 148,
+      "description": "Marketplace-ready civil skill for design review. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "civil",
+        "design-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-041",
+      "name": "architecture-bom-drafting-reviewer",
+      "author": "skillscale-market",
+      "stars": 145,
+      "description": "Marketplace-ready architecture skill for BOM drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "architecture",
+        "bom-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-042",
+      "name": "engineering-bom-drafting-reviewer",
+      "author": "skillscale-market",
+      "stars": 142,
+      "description": "Marketplace-ready engineering skill for BOM drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "engineering",
+        "bom-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-043",
+      "name": "mechanical-bom-drafting-reviewer",
+      "author": "skillscale-market",
+      "stars": 139,
+      "description": "Marketplace-ready mechanical skill for BOM drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "mechanical",
+        "bom-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-044",
+      "name": "civil-bom-drafting-reviewer",
+      "author": "skillscale-market",
+      "stars": 136,
+      "description": "Marketplace-ready civil skill for BOM drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "civil",
+        "bom-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-045",
+      "name": "architecture-spec-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 133,
+      "description": "Marketplace-ready architecture skill for spec checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "architecture",
+        "spec-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-046",
+      "name": "engineering-spec-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 130,
+      "description": "Marketplace-ready engineering skill for spec checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "engineering",
+        "spec-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-10-047",
+      "name": "mechanical-spec-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 127,
+      "description": "Marketplace-ready mechanical skill for spec checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "mechanical",
+        "spec-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-10-048",
+      "name": "civil-spec-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 124,
+      "description": "Marketplace-ready civil skill for spec checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for architecture and engineering teams.",
+      "tags": [
+        "civil",
+        "spec-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "10",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    }
+  ]
+}

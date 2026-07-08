@@ -87,6 +87,14 @@ await test("pages catalog includes created skills, cache skills, and governed lo
   assert.ok(catalog.skills.some((skill) => skill.id === "agentic-civilization-loop"));
   assert.ok(catalog.skills.some((skill) => skill.id === "autonomous-skill-harvester"));
   assert.ok(catalog.skills.some((skill) => skill.id === "cache-research-agent"));
+  assert.ok(catalog.skills.some((skill) => skill.occupationId === "03" && skill.source === "skillscale-market-seed"));
+  for (let id = 3; id <= 23; id += 1) {
+    const occupationId = String(id).padStart(2, "0");
+    assert.ok(
+      catalog.skills.filter((skill) => skill.occupationId === occupationId && skill.source === "skillscale-market-seed").length >= 48,
+      `expected market seed skills for occupation group ${occupationId}`
+    );
+  }
 });
 
 await test("SkillsMP occupation counts parser extracts major SOC group totals", () => {

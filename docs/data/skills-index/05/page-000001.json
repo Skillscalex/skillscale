@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "occupationId": "05",
+  "skills": [
+    {
+      "id": "market-05-001",
+      "name": "legal-clause-review-planner",
+      "author": "skillscale-market",
+      "stars": 270,
+      "description": "Marketplace-ready legal skill for clause review. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "legal",
+        "clause-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-002",
+      "name": "contract-clause-review-planner",
+      "author": "skillscale-market",
+      "stars": 267,
+      "description": "Marketplace-ready contract skill for clause review. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "contract",
+        "clause-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-003",
+      "name": "compliance-clause-review-planner",
+      "author": "skillscale-market",
+      "stars": 264,
+      "description": "Marketplace-ready compliance skill for clause review. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "compliance",
+        "clause-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-004",
+      "name": "paralegal-clause-review-planner",
+      "author": "skillscale-market",
+      "stars": 261,
+      "description": "Marketplace-ready paralegal skill for clause review. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "paralegal",
+        "clause-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-005",
+      "name": "legal-matter-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 258,
+      "description": "Marketplace-ready legal skill for matter summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "legal",
+        "matter-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-006",
+      "name": "contract-matter-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 255,
+      "description": "Marketplace-ready contract skill for matter summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "contract",
+        "matter-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-007",
+      "name": "compliance-matter-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 252,
+      "description": "Marketplace-ready compliance skill for matter summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "compliance",
+        "matter-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-008",
+      "name": "paralegal-matter-summaries-planner",
+      "author": "skillscale-market",
+      "stars": 249,
+      "description": "Marketplace-ready paralegal skill for matter summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "paralegal",
+        "matter-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-009",
+      "name": "legal-brief-drafting-planner",
+      "author": "skillscale-market",
+      "stars": 246,
+      "description": "Marketplace-ready legal skill for brief drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "legal",
+        "brief-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-010",
+      "name": "contract-brief-drafting-planner",
+      "author": "skillscale-market",
+      "stars": 243,
+      "description": "Marketplace-ready contract skill for brief drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "contract",
+        "brief-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-05-011",
+      "name": "compliance-brief-drafting-planner",
+      "author": "skillscale-market",
+      "stars": 240,
+      "description": "Marketplace-ready compliance skill for brief drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "compliance",
+        "brief-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-05-012",
+      "name": "paralegal-brief-drafting-planner",
+      "author": "skillscale-market",
+      "stars": 237,
+      "description": "Marketplace-ready paralegal skill for brief drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "paralegal",
+        "brief-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-05-013",
+      "name": "legal-regulatory-checks-planner",
+      "author": "skillscale-market",
+      "stars": 234,
+      "description": "Marketplace-ready legal skill for regulatory checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "legal",
+        "regulatory-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-014",
+      "name": "contract-regulatory-checks-planner",
+      "author": "skillscale-market",
+      "stars": 231,
+      "description": "Marketplace-ready contract skill for regulatory checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "contract",
+        "regulatory-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-015",
+      "name": "compliance-regulatory-checks-planner",
+      "author": "skillscale-market",
+      "stars": 228,
+      "description": "Marketplace-ready compliance skill for regulatory checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "compliance",
+        "regulatory-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-016",
+      "name": "paralegal-regulatory-checks-planner",
+      "author": "skillscale-market",
+      "stars": 225,
+      "description": "Marketplace-ready paralegal skill for regulatory checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "paralegal",
+        "regulatory-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-017",
+      "name": "legal-clause-review-assistant",
+      "author": "skillscale-market",
+      "stars": 222,
+      "description": "Marketplace-ready legal skill for clause review. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "legal",
+        "clause-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-018",
+      "name": "contract-clause-review-assistant",
+      "author": "skillscale-market",
+      "stars": 219,
+      "description": "Marketplace-ready contract skill for clause review. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "contract",
+        "clause-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-019",
+      "name": "compliance-clause-review-assistant",
+      "author": "skillscale-market",
+      "stars": 216,
+      "description": "Marketplace-ready compliance skill for clause review. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "compliance",
+        "clause-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-020",
+      "name": "paralegal-clause-review-assistant",
+      "author": "skillscale-market",
+      "stars": 213,
+      "description": "Marketplace-ready paralegal skill for clause review. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "paralegal",
+        "clause-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-021",
+      "name": "legal-matter-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 210,
+      "description": "Marketplace-ready legal skill for matter summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "legal",
+        "matter-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-022",
+      "name": "contract-matter-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 207,
+      "description": "Marketplace-ready contract skill for matter summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "contract",
+        "matter-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-023",
+      "name": "compliance-matter-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 204,
+      "description": "Marketplace-ready compliance skill for matter summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "compliance",
+        "matter-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-024",
+      "name": "paralegal-matter-summaries-assistant",
+      "author": "skillscale-market",
+      "stars": 201,
+      "description": "Marketplace-ready paralegal skill for matter summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "paralegal",
+        "matter-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-05-025",
+      "name": "legal-brief-drafting-assistant",
+      "author": "skillscale-market",
+      "stars": 198,
+      "description": "Marketplace-ready legal skill for brief drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "legal",
+        "brief-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-05-026",
+      "name": "contract-brief-drafting-assistant",
+      "author": "skillscale-market",
+      "stars": 195,
+      "description": "Marketplace-ready contract skill for brief drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "contract",
+        "brief-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-05-027",
+      "name": "compliance-brief-drafting-assistant",
+      "author": "skillscale-market",
+      "stars": 192,
+      "description": "Marketplace-ready compliance skill for brief drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "compliance",
+        "brief-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-028",
+      "name": "paralegal-brief-drafting-assistant",
+      "author": "skillscale-market",
+      "stars": 189,
+      "description": "Marketplace-ready paralegal skill for brief drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "paralegal",
+        "brief-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-029",
+      "name": "legal-regulatory-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 186,
+      "description": "Marketplace-ready legal skill for regulatory checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "legal",
+        "regulatory-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-030",
+      "name": "contract-regulatory-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 183,
+      "description": "Marketplace-ready contract skill for regulatory checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "contract",
+        "regulatory-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-031",
+      "name": "compliance-regulatory-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 180,
+      "description": "Marketplace-ready compliance skill for regulatory checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "compliance",
+        "regulatory-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-032",
+      "name": "paralegal-regulatory-checks-assistant",
+      "author": "skillscale-market",
+      "stars": 177,
+      "description": "Marketplace-ready paralegal skill for regulatory checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "paralegal",
+        "regulatory-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-033",
+      "name": "legal-clause-review-reviewer",
+      "author": "skillscale-market",
+      "stars": 174,
+      "description": "Marketplace-ready legal skill for clause review. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "legal",
+        "clause-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-034",
+      "name": "contract-clause-review-reviewer",
+      "author": "skillscale-market",
+      "stars": 171,
+      "description": "Marketplace-ready contract skill for clause review. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "contract",
+        "clause-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-035",
+      "name": "compliance-clause-review-reviewer",
+      "author": "skillscale-market",
+      "stars": 168,
+      "description": "Marketplace-ready compliance skill for clause review. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "compliance",
+        "clause-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-036",
+      "name": "paralegal-clause-review-reviewer",
+      "author": "skillscale-market",
+      "stars": 165,
+      "description": "Marketplace-ready paralegal skill for clause review. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "paralegal",
+        "clause-review",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-037",
+      "name": "legal-matter-summaries-reviewer",
+      "author": "skillscale-market",
+      "stars": 162,
+      "description": "Marketplace-ready legal skill for matter summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "legal",
+        "matter-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-038",
+      "name": "contract-matter-summaries-reviewer",
+      "author": "skillscale-market",
+      "stars": 159,
+      "description": "Marketplace-ready contract skill for matter summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "contract",
+        "matter-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-05-039",
+      "name": "compliance-matter-summaries-reviewer",
+      "author": "skillscale-market",
+      "stars": 156,
+      "description": "Marketplace-ready compliance skill for matter summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "compliance",
+        "matter-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-05-040",
+      "name": "paralegal-matter-summaries-reviewer",
+      "author": "skillscale-market",
+      "stars": 153,
+      "description": "Marketplace-ready paralegal skill for matter summaries. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "paralegal",
+        "matter-summaries",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-05-041",
+      "name": "legal-brief-drafting-reviewer",
+      "author": "skillscale-market",
+      "stars": 150,
+      "description": "Marketplace-ready legal skill for brief drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "legal",
+        "brief-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-042",
+      "name": "contract-brief-drafting-reviewer",
+      "author": "skillscale-market",
+      "stars": 147,
+      "description": "Marketplace-ready contract skill for brief drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "contract",
+        "brief-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-043",
+      "name": "compliance-brief-drafting-reviewer",
+      "author": "skillscale-market",
+      "stars": 144,
+      "description": "Marketplace-ready compliance skill for brief drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "compliance",
+        "brief-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-044",
+      "name": "paralegal-brief-drafting-reviewer",
+      "author": "skillscale-market",
+      "stars": 141,
+      "description": "Marketplace-ready paralegal skill for brief drafting. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "paralegal",
+        "brief-drafting",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-045",
+      "name": "legal-regulatory-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 138,
+      "description": "Marketplace-ready legal skill for regulatory checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "legal",
+        "regulatory-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-046",
+      "name": "contract-regulatory-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 135,
+      "description": "Marketplace-ready contract skill for regulatory checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "contract",
+        "regulatory-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-047",
+      "name": "compliance-regulatory-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 132,
+      "description": "Marketplace-ready compliance skill for regulatory checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "compliance",
+        "regulatory-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-05-048",
+      "name": "paralegal-regulatory-checks-reviewer",
+      "author": "skillscale-market",
+      "stars": 129,
+      "description": "Marketplace-ready paralegal skill for regulatory checks. Produces structured checklists, drafts, summaries, and handoff notes tuned for legal teams.",
+      "tags": [
+        "paralegal",
+        "regulatory-checks",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "05",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    }
+  ]
+}

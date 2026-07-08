@@ -1,0 +1,870 @@
+{
+  "generatedAt": "2026-07-08T09:34:05.364Z",
+  "occupationId": "07",
+  "skills": [
+    {
+      "id": "market-07-001",
+      "name": "teaching-lesson-planning-planner",
+      "author": "skillscale-market",
+      "stars": 268,
+      "description": "Marketplace-ready teaching skill for lesson planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "teaching",
+        "lesson-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-002",
+      "name": "curriculum-lesson-planning-planner",
+      "author": "skillscale-market",
+      "stars": 265,
+      "description": "Marketplace-ready curriculum skill for lesson planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "curriculum",
+        "lesson-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-003",
+      "name": "library-lesson-planning-planner",
+      "author": "skillscale-market",
+      "stars": 262,
+      "description": "Marketplace-ready library skill for lesson planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "library",
+        "lesson-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-004",
+      "name": "student-support-lesson-planning-planner",
+      "author": "skillscale-market",
+      "stars": 259,
+      "description": "Marketplace-ready student support skill for lesson planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "student-support",
+        "lesson-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-005",
+      "name": "teaching-rubric-creation-planner",
+      "author": "skillscale-market",
+      "stars": 256,
+      "description": "Marketplace-ready teaching skill for rubric creation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "teaching",
+        "rubric-creation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-006",
+      "name": "curriculum-rubric-creation-planner",
+      "author": "skillscale-market",
+      "stars": 253,
+      "description": "Marketplace-ready curriculum skill for rubric creation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "curriculum",
+        "rubric-creation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-007",
+      "name": "library-rubric-creation-planner",
+      "author": "skillscale-market",
+      "stars": 250,
+      "description": "Marketplace-ready library skill for rubric creation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "library",
+        "rubric-creation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-008",
+      "name": "student-support-rubric-creation-planner",
+      "author": "skillscale-market",
+      "stars": 247,
+      "description": "Marketplace-ready student support skill for rubric creation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "student-support",
+        "rubric-creation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-07-009",
+      "name": "teaching-quiz-generation-planner",
+      "author": "skillscale-market",
+      "stars": 244,
+      "description": "Marketplace-ready teaching skill for quiz generation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "teaching",
+        "quiz-generation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-07-010",
+      "name": "curriculum-quiz-generation-planner",
+      "author": "skillscale-market",
+      "stars": 241,
+      "description": "Marketplace-ready curriculum skill for quiz generation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "curriculum",
+        "quiz-generation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-07-011",
+      "name": "library-quiz-generation-planner",
+      "author": "skillscale-market",
+      "stars": 238,
+      "description": "Marketplace-ready library skill for quiz generation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "library",
+        "quiz-generation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-012",
+      "name": "student-support-quiz-generation-planner",
+      "author": "skillscale-market",
+      "stars": 235,
+      "description": "Marketplace-ready student support skill for quiz generation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "student-support",
+        "quiz-generation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-013",
+      "name": "teaching-iep-support-planner",
+      "author": "skillscale-market",
+      "stars": 232,
+      "description": "Marketplace-ready teaching skill for IEP support. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "teaching",
+        "iep-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-014",
+      "name": "curriculum-iep-support-planner",
+      "author": "skillscale-market",
+      "stars": 229,
+      "description": "Marketplace-ready curriculum skill for IEP support. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "curriculum",
+        "iep-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-015",
+      "name": "library-iep-support-planner",
+      "author": "skillscale-market",
+      "stars": 226,
+      "description": "Marketplace-ready library skill for IEP support. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "library",
+        "iep-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-016",
+      "name": "student-support-iep-support-planner",
+      "author": "skillscale-market",
+      "stars": 223,
+      "description": "Marketplace-ready student support skill for IEP support. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "student-support",
+        "iep-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-017",
+      "name": "teaching-lesson-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 220,
+      "description": "Marketplace-ready teaching skill for lesson planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "teaching",
+        "lesson-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-018",
+      "name": "curriculum-lesson-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 217,
+      "description": "Marketplace-ready curriculum skill for lesson planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "curriculum",
+        "lesson-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-019",
+      "name": "library-lesson-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 214,
+      "description": "Marketplace-ready library skill for lesson planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "library",
+        "lesson-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-020",
+      "name": "student-support-lesson-planning-assistant",
+      "author": "skillscale-market",
+      "stars": 211,
+      "description": "Marketplace-ready student support skill for lesson planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "student-support",
+        "lesson-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-021",
+      "name": "teaching-rubric-creation-assistant",
+      "author": "skillscale-market",
+      "stars": 208,
+      "description": "Marketplace-ready teaching skill for rubric creation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "teaching",
+        "rubric-creation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-022",
+      "name": "curriculum-rubric-creation-assistant",
+      "author": "skillscale-market",
+      "stars": 205,
+      "description": "Marketplace-ready curriculum skill for rubric creation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "curriculum",
+        "rubric-creation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-07-023",
+      "name": "library-rubric-creation-assistant",
+      "author": "skillscale-market",
+      "stars": 202,
+      "description": "Marketplace-ready library skill for rubric creation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "library",
+        "rubric-creation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-07-024",
+      "name": "student-support-rubric-creation-assistant",
+      "author": "skillscale-market",
+      "stars": 199,
+      "description": "Marketplace-ready student support skill for rubric creation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "student-support",
+        "rubric-creation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-07-025",
+      "name": "teaching-quiz-generation-assistant",
+      "author": "skillscale-market",
+      "stars": 196,
+      "description": "Marketplace-ready teaching skill for quiz generation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "teaching",
+        "quiz-generation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-026",
+      "name": "curriculum-quiz-generation-assistant",
+      "author": "skillscale-market",
+      "stars": 193,
+      "description": "Marketplace-ready curriculum skill for quiz generation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "curriculum",
+        "quiz-generation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-027",
+      "name": "library-quiz-generation-assistant",
+      "author": "skillscale-market",
+      "stars": 190,
+      "description": "Marketplace-ready library skill for quiz generation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "library",
+        "quiz-generation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-028",
+      "name": "student-support-quiz-generation-assistant",
+      "author": "skillscale-market",
+      "stars": 187,
+      "description": "Marketplace-ready student support skill for quiz generation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "student-support",
+        "quiz-generation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-029",
+      "name": "teaching-iep-support-assistant",
+      "author": "skillscale-market",
+      "stars": 184,
+      "description": "Marketplace-ready teaching skill for IEP support. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "teaching",
+        "iep-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-030",
+      "name": "curriculum-iep-support-assistant",
+      "author": "skillscale-market",
+      "stars": 181,
+      "description": "Marketplace-ready curriculum skill for IEP support. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "curriculum",
+        "iep-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-031",
+      "name": "library-iep-support-assistant",
+      "author": "skillscale-market",
+      "stars": 178,
+      "description": "Marketplace-ready library skill for IEP support. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "library",
+        "iep-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-032",
+      "name": "student-support-iep-support-assistant",
+      "author": "skillscale-market",
+      "stars": 175,
+      "description": "Marketplace-ready student support skill for IEP support. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "student-support",
+        "iep-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-033",
+      "name": "teaching-lesson-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 172,
+      "description": "Marketplace-ready teaching skill for lesson planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "teaching",
+        "lesson-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-034",
+      "name": "curriculum-lesson-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 169,
+      "description": "Marketplace-ready curriculum skill for lesson planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "curriculum",
+        "lesson-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-035",
+      "name": "library-lesson-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 166,
+      "description": "Marketplace-ready library skill for lesson planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "library",
+        "lesson-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 95,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-036",
+      "name": "student-support-lesson-planning-reviewer",
+      "author": "skillscale-market",
+      "stars": 163,
+      "description": "Marketplace-ready student support skill for lesson planning. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "student-support",
+        "lesson-planning",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 82,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-07-037",
+      "name": "teaching-rubric-creation-reviewer",
+      "author": "skillscale-market",
+      "stars": 160,
+      "description": "Marketplace-ready teaching skill for rubric creation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "teaching",
+        "rubric-creation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 83,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-07-038",
+      "name": "curriculum-rubric-creation-reviewer",
+      "author": "skillscale-market",
+      "stars": 157,
+      "description": "Marketplace-ready curriculum skill for rubric creation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "curriculum",
+        "rubric-creation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "market-07-039",
+      "name": "library-rubric-creation-reviewer",
+      "author": "skillscale-market",
+      "stars": 154,
+      "description": "Marketplace-ready library skill for rubric creation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "library",
+        "rubric-creation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 85,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-040",
+      "name": "student-support-rubric-creation-reviewer",
+      "author": "skillscale-market",
+      "stars": 151,
+      "description": "Marketplace-ready student support skill for rubric creation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "student-support",
+        "rubric-creation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 86,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-041",
+      "name": "teaching-quiz-generation-reviewer",
+      "author": "skillscale-market",
+      "stars": 148,
+      "description": "Marketplace-ready teaching skill for quiz generation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "teaching",
+        "quiz-generation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 87,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-042",
+      "name": "curriculum-quiz-generation-reviewer",
+      "author": "skillscale-market",
+      "stars": 145,
+      "description": "Marketplace-ready curriculum skill for quiz generation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "curriculum",
+        "quiz-generation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 88,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-043",
+      "name": "library-quiz-generation-reviewer",
+      "author": "skillscale-market",
+      "stars": 142,
+      "description": "Marketplace-ready library skill for quiz generation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "library",
+        "quiz-generation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 89,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-044",
+      "name": "student-support-quiz-generation-reviewer",
+      "author": "skillscale-market",
+      "stars": 139,
+      "description": "Marketplace-ready student support skill for quiz generation. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "student-support",
+        "quiz-generation",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 90,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-045",
+      "name": "teaching-iep-support-reviewer",
+      "author": "skillscale-market",
+      "stars": 136,
+      "description": "Marketplace-ready teaching skill for IEP support. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "teaching",
+        "iep-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-046",
+      "name": "curriculum-iep-support-reviewer",
+      "author": "skillscale-market",
+      "stars": 133,
+      "description": "Marketplace-ready curriculum skill for IEP support. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "curriculum",
+        "iep-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 92,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-047",
+      "name": "library-iep-support-reviewer",
+      "author": "skillscale-market",
+      "stars": 130,
+      "description": "Marketplace-ready library skill for IEP support. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "library",
+        "iep-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 93,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "market-07-048",
+      "name": "student-support-iep-support-reviewer",
+      "author": "skillscale-market",
+      "stars": 127,
+      "description": "Marketplace-ready student support skill for IEP support. Produces structured checklists, drafts, summaries, and handoff notes tuned for educational instruction and library teams.",
+      "tags": [
+        "student-support",
+        "iep-support",
+        "workflow",
+        "marketplace"
+      ],
+      "updatedAt": "1782691200",
+      "occupationId": "07",
+      "source": "skillscale-market-seed",
+      "secureScore": 94,
+      "auditStatus": "approved"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T04:14:49.950Z",
+  "generatedAt": "2026-07-09T10:03:52.143Z",
   "occupationId": "18",
   "skills": [
     {
@@ -1259,6 +1259,24 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-gaoqiongxie-skills-ai-cybersecurity-skills",
+      "name": "cybersecurity-skills",
+      "author": "gaoqiongxie",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from gaoqiongxie/skills-ai. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cybersecurity"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/gaoqiongxie/skills-ai/cybersecurity-skills",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-affaan-m-ecc-skills-defi-amm-security",
       "name": "defi-amm-security",
       "author": "affaan-m",
@@ -1484,6 +1502,27 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-security-review",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-docs-ko-kr-skills-security-review",
+      "name": "docs-ko-kr-skills-security-review",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "security",
+        "review"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ko-kr-skills-security-review",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1717,6 +1756,29 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-zh-tw-skills-security-review",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-revfactory-harness-100-en-28-security-audit-claude-skills-cve-analysis",
+      "name": "en-28-security-audit-claude-skills-cve-analysis",
+      "author": "revfactory",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from revfactory/harness-100. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "harness",
+        "100",
+        "security",
+        "audit",
+        "cve",
+        "analysis"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/revfactory/harness-100/en-28-security-audit-claude-skills-cve-analysis",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2382,6 +2444,29 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-blacklanternsecurity-red-run-skills-privesc-windows-kernel-exploits",
+      "name": "privesc-windows-kernel-exploits",
+      "author": "blacklanternsecurity",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from blacklanternsecurity/red-run. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "red",
+        "run",
+        "privesc",
+        "windows",
+        "kernel",
+        "exploits"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/blacklanternsecurity/red-run/skills-privesc-windows-kernel-exploits",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-swaylq-master-skill-prototypes-cybersecurity-red-team-master-output",
       "name": "prototypes-cybersecurity-red-team-master-output",
       "author": "swaylq",
@@ -2674,6 +2759,27 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-springboot-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-incidentfox-incidentfox-sre-agent-claude-skills-database-mysql",
+      "name": "sre-agent-claude-skills-database-mysql",
+      "author": "incidentfox",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from incidentfox/incidentfox. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "incidentfox",
+        "sre",
+        "database",
+        "mysql"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/incidentfox/incidentfox/sre-agent-claude-skills-database-mysql",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,60 @@
 {
-  "generatedAt": "2026-07-08T19:56:34.661Z",
+  "generatedAt": "2026-07-09T04:14:49.950Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-greptileai-skills-greploop",
+      "name": "greploop",
+      "author": "greptileai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from greptileai/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "greploop"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/greptileai/skills/greploop",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "greptile-claude-unknown",
+      "name": "Greptile",
+      "author": "Claude",
+      "stars": 0,
+      "description": "AI-powered codebase search. Query repositories in natural language to find code, understand dependencies, and explore architecture.",
+      "tags": [],
+      "updatedAt": "1781508332",
+      "occupationId": "01",
+      "source": "claude-official-plugins",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "skillsmp-chatfire-ai-huobao-drama-skills-grid-prompt-generator",
+      "name": "grid-prompt-generator",
+      "author": "chatfire-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from chatfire-ai/huobao-drama. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "huobao",
+        "drama",
+        "grid",
+        "prompt",
+        "generator"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/chatfire-ai/huobao-drama/skills-grid-prompt-generator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-udecode-plate-agents-skills-grill-me",
       "name": "grill-me",
@@ -9781,57 +9834,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-molecular-dynamics",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-k-dense-ai-scientific-agent-skills-skills-molfeat",
-      "name": "molfeat",
-      "author": "k-dense-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from k-dense-ai/scientific-agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "scientific",
-        "molfeat"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-molfeat",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "mongodb-claude-mcp-server",
-      "name": "mongodb",
-      "author": "Claude",
-      "stars": 0,
-      "description": "Official Claude plugin for MongoDB (MCP Server + Skills). Connect to databases, explore data, manage collections, opt...",
-      "tags": [],
-      "updatedAt": "1781508335",
-      "occupationId": "01",
-      "source": "claude-official-plugins",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-mongodb-agent-skills-skills-mongodb-connection",
-      "name": "mongodb-connection",
-      "author": "mongodb",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from mongodb/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "mongodb",
-        "connection"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/mongodb/agent-skills/skills-mongodb-connection",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

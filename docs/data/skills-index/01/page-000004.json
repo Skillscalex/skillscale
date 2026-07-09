@@ -1,7 +1,69 @@
 {
-  "generatedAt": "2026-07-08T19:56:34.661Z",
+  "generatedAt": "2026-07-09T04:14:49.950Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-alephantai-aiephant-ai-agent-gateway-cursor-skills-gated-module-implementation",
+      "name": "cursor-skills-gated-module-implementation",
+      "author": "alephantai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alephantai/aiephant-ai-agent-gateway. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "aiephant",
+        "gateway",
+        "cursor",
+        "gated",
+        "module",
+        "implementation"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alephantai/aiephant-ai-agent-gateway/cursor-skills-gated-module-implementation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-heymrun-heym-cursor-skills-heym-documentation",
+      "name": "cursor-skills-heym-documentation",
+      "author": "heymrun",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from heymrun/heym. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "heym",
+        "cursor",
+        "documentation"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/heymrun/heym/cursor-skills-heym-documentation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-pbakaus-impeccable-cursor-skills-impeccable",
+      "name": "cursor-skills-impeccable",
+      "author": "pbakaus",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from pbakaus/impeccable. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "impeccable",
+        "cursor"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/pbakaus/impeccable/cursor-skills-impeccable",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-wix-react-native-navigation-cursor-skills-ios26-navigation",
       "name": "cursor-skills-ios26-navigation",
@@ -10161,66 +10223,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/omer-metin/skills-for-antigravity/skills-energy-systems",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-lrwei91-qa-engine-skills-axure-parser",
-      "name": "engine-skills-axure-parser",
-      "author": "lrwei91",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from lrwei91/qa. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "engine",
-        "axure",
-        "parser"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/lrwei91/qa/engine-skills-axure-parser",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-lrwei91-qa-engine-skills-testcase-i18n",
-      "name": "engine-skills-testcase-i18n",
-      "author": "lrwei91",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from lrwei91/qa. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "engine",
-        "testcase",
-        "i18n"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/lrwei91/qa/engine-skills-testcase-i18n",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-alirezarezvani-claude-skills-engineering-agenthub-skills-eval",
-      "name": "engineering-agenthub-skills-eval",
-      "author": "alirezarezvani",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from alirezarezvani/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "engineering",
-        "agenthub",
-        "eval"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/engineering-agenthub-skills-eval",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

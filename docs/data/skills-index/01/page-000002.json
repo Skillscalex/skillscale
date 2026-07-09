@@ -1,7 +1,67 @@
 {
-  "generatedAt": "2026-07-08T19:56:34.661Z",
+  "generatedAt": "2026-07-09T04:14:49.950Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-jegly-box-android-src-app-src-main-assets-skills-translator",
+      "name": "android-src-app-src-main-assets-skills-translator",
+      "author": "jegly",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from jegly/box. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "box",
+        "android",
+        "src",
+        "app"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/jegly/box/android-src-app-src-main-assets-skills-translator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-angular-developer",
+      "name": "angular-developer",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "angular",
+        "developer"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-angular-developer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-analogjs-angular-skills-skills-angular-routing",
+      "name": "angular-routing",
+      "author": "analogjs",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from analogjs/angular-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "angular",
+        "routing"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/analogjs/angular-skills/skills-angular-routing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-thedaviddias-front-end-checklist-skills-animation-performance",
       "name": "animation-performance",
@@ -9661,65 +9721,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/electron/electron/claude-skills-electron-chromium-upgrade",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-whiteminds-liveautorecord-claude-skills-electron-debug-electron-debug",
-      "name": "claude-skills-electron-debug-electron-debug",
-      "author": "whiteminds",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from whiteminds/liveautorecord. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "liveautorecord",
-        "electron",
-        "debug"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/whiteminds/liveautorecord/claude-skills-electron-debug-electron-debug",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-electron-electron-claude-skills-electron-node-upgrade",
-      "name": "claude-skills-electron-node-upgrade",
-      "author": "electron",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from electron/electron. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "electron",
-        "node",
-        "upgrade"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/electron/electron/claude-skills-electron-node-upgrade",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-llama-farm-llamafarm-claude-skills-electron-skills",
-      "name": "claude-skills-electron-skills",
-      "author": "llama-farm",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from llama-farm/llamafarm. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "llamafarm",
-        "electron"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/llama-farm/llamafarm/claude-skills-electron-skills",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

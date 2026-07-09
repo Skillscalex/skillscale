@@ -1,7 +1,64 @@
 {
-  "generatedAt": "2026-07-08T19:56:34.661Z",
+  "generatedAt": "2026-07-09T04:14:49.950Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-wordpress-agent-skills-skills-wp-abilities-api",
+      "name": "wp-abilities-api",
+      "author": "wordpress",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "abilities",
+        "api"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-abilities-api",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wordpress-agent-skills-skills-wp-block-development",
+      "name": "wp-block-development",
+      "author": "wordpress",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "block",
+        "development"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-block-development",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wordpress-agent-skills-skills-wp-block-themes",
+      "name": "wp-block-themes",
+      "author": "wordpress",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "block",
+        "themes"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-block-themes",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-wordpress-agent-skills-skills-wp-interactivity-api",
       "name": "wp-interactivity-api",

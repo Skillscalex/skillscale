@@ -1,7 +1,67 @@
 {
-  "generatedAt": "2026-07-08T19:56:34.661Z",
+  "generatedAt": "2026-07-09T04:14:49.950Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-addyosmani-agent-skills-skills-spec-driven-development",
+      "name": "spec-driven-development",
+      "author": "addyosmani",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from addyosmani/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "spec",
+        "driven",
+        "development"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/addyosmani/agent-skills/skills-spec-driven-development",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-lambdatest-agent-skills-specflow-skill",
+      "name": "specflow",
+      "author": "lambdatest",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lambdatest/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "specflow"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/lambdatest/agent-skills/specflow-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-itgoyo-hermes-skills-specialized-gaokao-college-advisor",
+      "name": "specialized-gaokao-college-advisor",
+      "author": "itgoyo",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from itgoyo/hermes-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "specialized",
+        "gaokao",
+        "college",
+        "advisor"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/itgoyo/hermes-skills/specialized-gaokao-college-advisor",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-itgoyo-hermes-skills-specialized-specialized-civil-engineer",
       "name": "specialized-specialized-civil-engineer",
@@ -9973,63 +10033,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/agenticaiplan/agenticaiskills/skills-worldcup2026-parallel-universe",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wordpress-agent-skills-skills-wp-abilities-api",
-      "name": "wp-abilities-api",
-      "author": "wordpress",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "abilities",
-        "api"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-abilities-api",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wordpress-agent-skills-skills-wp-block-development",
-      "name": "wp-block-development",
-      "author": "wordpress",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "block",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-block-development",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wordpress-agent-skills-skills-wp-block-themes",
-      "name": "wp-block-themes",
-      "author": "wordpress",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wordpress/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "block",
-        "themes"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wordpress/agent-skills/skills-wp-block-themes",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

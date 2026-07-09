@@ -1,7 +1,66 @@
 {
-  "generatedAt": "2026-07-08T19:56:34.661Z",
+  "generatedAt": "2026-07-09T04:14:49.950Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-whiteminds-liveautorecord-claude-skills-electron-debug-electron-debug",
+      "name": "claude-skills-electron-debug-electron-debug",
+      "author": "whiteminds",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from whiteminds/liveautorecord. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "liveautorecord",
+        "electron",
+        "debug"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/whiteminds/liveautorecord/claude-skills-electron-debug-electron-debug",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-electron-electron-claude-skills-electron-node-upgrade",
+      "name": "claude-skills-electron-node-upgrade",
+      "author": "electron",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from electron/electron. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "electron",
+        "node",
+        "upgrade"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/electron/electron/claude-skills-electron-node-upgrade",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-llama-farm-llamafarm-claude-skills-electron-skills",
+      "name": "claude-skills-electron-skills",
+      "author": "llama-farm",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from llama-farm/llamafarm. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "llamafarm",
+        "electron"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/llama-farm/llamafarm/claude-skills-electron-skills",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-fastled-fastled-claude-skills-embedded-debug",
       "name": "claude-skills-embedded-debug",
@@ -9932,68 +9991,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/davidatjfs-cyber/agents-service-v2/cursor-skills-foodposterpro",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-alephantai-aiephant-ai-agent-gateway-cursor-skills-gated-module-implementation",
-      "name": "cursor-skills-gated-module-implementation",
-      "author": "alephantai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from alephantai/aiephant-ai-agent-gateway. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "aiephant",
-        "gateway",
-        "cursor",
-        "gated",
-        "module",
-        "implementation"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/alephantai/aiephant-ai-agent-gateway/cursor-skills-gated-module-implementation",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-heymrun-heym-cursor-skills-heym-documentation",
-      "name": "cursor-skills-heym-documentation",
-      "author": "heymrun",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from heymrun/heym. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "heym",
-        "cursor",
-        "documentation"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/heymrun/heym/cursor-skills-heym-documentation",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-pbakaus-impeccable-cursor-skills-impeccable",
-      "name": "cursor-skills-impeccable",
-      "author": "pbakaus",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from pbakaus/impeccable. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "impeccable",
-        "cursor"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/pbakaus/impeccable/cursor-skills-impeccable",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

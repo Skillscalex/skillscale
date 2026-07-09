@@ -1,7 +1,67 @@
 {
-  "generatedAt": "2026-07-08T19:56:34.661Z",
+  "generatedAt": "2026-07-09T04:14:49.950Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-lrwei91-qa-engine-skills-axure-parser",
+      "name": "engine-skills-axure-parser",
+      "author": "lrwei91",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lrwei91/qa. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engine",
+        "axure",
+        "parser"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/lrwei91/qa/engine-skills-axure-parser",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-lrwei91-qa-engine-skills-testcase-i18n",
+      "name": "engine-skills-testcase-i18n",
+      "author": "lrwei91",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lrwei91/qa. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engine",
+        "testcase",
+        "i18n"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/lrwei91/qa/engine-skills-testcase-i18n",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alirezarezvani-claude-skills-engineering-agenthub-skills-eval",
+      "name": "engineering-agenthub-skills-eval",
+      "author": "alirezarezvani",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alirezarezvani/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "engineering",
+        "agenthub",
+        "eval"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/engineering-agenthub-skills-eval",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-mattpocock-skills-skills-engineering-ask-matt",
       "name": "engineering-ask-matt",
@@ -10095,59 +10155,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/apollographql/skills/skills-graphql-schema",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-greptileai-skills-greploop",
-      "name": "greploop",
-      "author": "greptileai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from greptileai/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "greploop"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/greptileai/skills/greploop",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "greptile-claude-unknown",
-      "name": "Greptile",
-      "author": "Claude",
-      "stars": 0,
-      "description": "AI-powered codebase search. Query repositories in natural language to find code, understand dependencies, and explore architecture.",
-      "tags": [],
-      "updatedAt": "1781508332",
-      "occupationId": "01",
-      "source": "claude-official-plugins",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-chatfire-ai-huobao-drama-skills-grid-prompt-generator",
-      "name": "grid-prompt-generator",
-      "author": "chatfire-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from chatfire-ai/huobao-drama. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "huobao",
-        "drama",
-        "grid",
-        "prompt",
-        "generator"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/chatfire-ai/huobao-drama/skills-grid-prompt-generator",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

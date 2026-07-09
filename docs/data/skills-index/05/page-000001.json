@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T10:03:52.143Z",
+  "generatedAt": "2026-07-09T15:34:46.512Z",
   "occupationId": "05",
   "skills": [
     {
@@ -1159,6 +1159,24 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-openclaw-acpx-skills-acpx",
+      "name": "acpx",
+      "author": "openclaw",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from openclaw/acpx. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "acpx"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/openclaw/acpx/skills-acpx",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-zh-xx-legal-assistant-skills-ad-compliance-review",
       "name": "ad-compliance-review",
       "author": "zh-xx",
@@ -1302,6 +1320,28 @@
       "updatedAt": "1783504629",
       "occupationId": "05",
       "skillsmpUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-adwords",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dicklesworthstone-agent-flywheel-clawdbot-skills-and-integrations-skills-agent-fungibility",
+      "name": "agent-fungibility",
+      "author": "dicklesworthstone",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dicklesworthstone/agent_flywheel_clawdbot_skills_and_integrations. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "flywheel",
+        "clawdbot",
+        "and",
+        "integrations",
+        "fungibility"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/dicklesworthstone/agent_flywheel_clawdbot_skills_and_integrations/skills-agent-fungibility",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1728,6 +1768,25 @@
       "updatedAt": "1783504629",
       "occupationId": "05",
       "skillsmpUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-ai-travel",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-agentlyhq-aixyz-skills-aixyz-on-openclaw",
+      "name": "aixyz-on-openclaw",
+      "author": "agentlyhq",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from agentlyhq/aixyz. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "aixyz",
+        "openclaw"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/agentlyhq/aixyz/skills-aixyz-on-openclaw",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2673,6 +2732,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-curiositech-some-claude-skills-claude-skills-2026-legal-research-agent",
+      "name": "claude-skills-2026-legal-research-agent",
+      "author": "curiositech",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from curiositech/some_claude_skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "some",
+        "2026",
+        "legal",
+        "research"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/curiositech/some_claude_skills/claude-skills-2026-legal-research-agent",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-aiming-lab-autoresearchclaw-claude-skills-chemistry-rdkit",
       "name": "claude-skills-chemistry-rdkit",
       "author": "aiming-lab",
@@ -2949,6 +3029,29 @@
       "updatedAt": "1783504629",
       "occupationId": "05",
       "skillsmpUrl": "https://skillsmp.com/creators/openclaw/openclaw/skills-clawhub",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-openclaw-plugin-inspector-agents-skills-clawhub-batch-analysis",
+      "name": "clawhub-batch-analysis",
+      "author": "openclaw",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from openclaw/plugin-inspector. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugin",
+        "inspector",
+        "agents",
+        "clawhub",
+        "batch",
+        "analysis"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/openclaw/plugin-inspector/agents-skills-clawhub-batch-analysis",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -3330,6 +3433,25 @@
       "updatedAt": "1783504629",
       "occupationId": "05",
       "skillsmpUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-construction-law",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-joelhooks-joelclaw-skills-contacts",
+      "name": "contacts",
+      "author": "joelhooks",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from joelhooks/joelclaw. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "joelclaw",
+        "contacts"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/joelhooks/joelclaw/skills-contacts",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -4431,6 +4553,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-open-gitagent-opengap-examples-jason-my-claw-is-the-law-deebee-4567b4-skills-packet-factory",
+      "name": "examples-jason-my-claw-is-the-law-deebee-4567b4-skills-packet-factory",
+      "author": "open-gitagent",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from open-gitagent/opengap. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "opengap",
+        "examples",
+        "jason",
+        "claw",
+        "the"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/open-gitagent/opengap/examples-jason-my-claw-is-the-law-deebee-4567b4-skills-packet-factory",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-sundial-org-awesome-openclaw-skills-skills-excel-weekly-dashboard",
       "name": "excel-weekly-dashboard",
       "author": "sundial-org",
@@ -4805,6 +4949,27 @@
       "updatedAt": "1783504629",
       "occupationId": "05",
       "skillsmpUrl": "https://skillsmp.com/creators/bytepioneer-ai/openclaw-china/extensions-wecom-skills-wecom-doc",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-openclaw-openclaw-extensions-whatsapp-skills-wacli",
+      "name": "extensions-whatsapp-skills-wacli",
+      "author": "openclaw",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from openclaw/openclaw. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "openclaw",
+        "extensions",
+        "whatsapp",
+        "wacli"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/openclaw/openclaw/extensions-whatsapp-skills-wacli",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -7663,6 +7828,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-a0x-co-a0x-plugin-skills-openclaw-a0x-agents",
+      "name": "openclaw-a0x-agents",
+      "author": "a0x-co",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from a0x-co/a0x-plugin. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "a0x",
+        "plugin",
+        "openclaw",
+        "agents"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/a0x-co/a0x-plugin/skills-openclaw-a0x-agents",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-openclaw-openclaw-agents-skills-openclaw-changelog-update",
       "name": "openclaw-changelog-update",
       "author": "openclaw",
@@ -7985,6 +8171,46 @@
       "updatedAt": "1783504629",
       "occupationId": "05",
       "skillsmpUrl": "https://skillsmp.com/creators/ryjoxtechnologies/octopoda-os/openclaw-skill-octopoda-memory",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-6551team-opennews-mcp-openclaw-skill-opennews",
+      "name": "openclaw-skill-opennews",
+      "author": "6551team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from 6551team/opennews-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "opennews",
+        "mcp",
+        "openclaw"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/6551team/opennews-mcp/openclaw-skill-opennews",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-6551team-opentwitter-mcp-openclaw-skill-opentwitter",
+      "name": "openclaw-skill-opentwitter",
+      "author": "6551team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from 6551team/opentwitter-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "opentwitter",
+        "mcp",
+        "openclaw"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/6551team/opentwitter-mcp/openclaw-skill-opentwitter",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -8813,6 +9039,48 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-circlefin-skills-plugins-circle-skills-agent-wallet-policy",
+      "name": "plugins-circle-skills-agent-wallet-policy",
+      "author": "circlefin",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from circlefin/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "circle",
+        "wallet",
+        "policy"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/circlefin/skills/plugins-circle-skills-agent-wallet-policy",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-circlefin-skills-plugins-circle-skills-use-smart-contract-platform",
+      "name": "plugins-circle-skills-use-smart-contract-platform",
+      "author": "circlefin",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from circlefin/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "circle",
+        "use",
+        "smart"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/circlefin/skills/plugins-circle-skills-use-smart-contract-platform",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-freema-openclaw-mcp-plugins-claude-openclaw-skills-openclaw-management",
       "name": "plugins-claude-openclaw-skills-openclaw-management",
       "author": "freema",
@@ -8879,6 +9147,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-amekala-ads-mcp-plugins-openclaw",
+      "name": "plugins-openclaw",
+      "author": "amekala",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from amekala/ads-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ads",
+        "mcp",
+        "plugins",
+        "openclaw"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/amekala/ads-mcp/plugins-openclaw",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-wshobson-agents-plugins-payment-processing-skills-pci-compliance",
       "name": "plugins-payment-processing-skills-pci-compliance",
       "author": "wshobson",
@@ -8896,6 +9185,27 @@
       "updatedAt": "1783504629",
       "occupationId": "05",
       "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-payment-processing-skills-pci-compliance",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-trailofbits-skills-plugins-spec-to-code-compliance-skills-spec-to-code-compliance",
+      "name": "plugins-spec-to-code-compliance-skills-spec-to-code-compliance",
+      "author": "trailofbits",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from trailofbits/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "spec",
+        "code",
+        "compliance"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/trailofbits/skills/plugins-spec-to-code-compliance-skills-spec-to-code-compliance",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -9548,6 +9858,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-openclaw-clawpatch-agents-skills-release-clawpatch",
+      "name": "release-clawpatch",
+      "author": "openclaw",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from openclaw/clawpatch. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "clawpatch",
+        "agents",
+        "release"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "05",
+      "skillsmpUrl": "https://skillsmp.com/creators/openclaw/clawpatch/agents-skills-release-clawpatch",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-openclaw-openclaw-agents-skills-release-openclaw-announcement",
       "name": "release-openclaw-announcement",
       "author": "openclaw",
@@ -9981,335 +10311,6 @@
       "updatedAt": "1783504629",
       "occupationId": "05",
       "skillsmpUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-sharpening",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-openclaw-openclaw-skills-sherpa-onnx-tts",
-      "name": "sherpa-onnx-tts",
-      "author": "openclaw",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from openclaw/openclaw. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "sherpa",
-        "onnx",
-        "tts"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/openclaw/openclaw/skills-sherpa-onnx-tts",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-leoyeai-openclaw-master-skills-skills-shop-culture",
-      "name": "shop-culture",
-      "author": "leoyeai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from leoyeai/openclaw-master-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "master",
-        "shop",
-        "culture"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-shop-culture",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-leoyeai-openclaw-master-skills-skills-skill-finder-cn",
-      "name": "skill-finder-cn",
-      "author": "leoyeai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from leoyeai/openclaw-master-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "master",
-        "finder"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-skill-finder-cn",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-openclaw-openclaw-agents-skills-slacrawl",
-      "name": "slacrawl",
-      "author": "openclaw",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from openclaw/openclaw. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "agents",
-        "slacrawl"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-slacrawl",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-leoyeai-openclaw-master-skills-skills-smart-learner",
-      "name": "smart-learner",
-      "author": "leoyeai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from leoyeai/openclaw-master-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "master",
-        "smart",
-        "learner"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-smart-learner",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-leoyeai-openclaw-master-skills-skills-social-coach",
-      "name": "social-coach",
-      "author": "leoyeai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from leoyeai/openclaw-master-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "master",
-        "social",
-        "coach"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-social-coach",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-openclaw-openclaw-skills-songsee",
-      "name": "songsee",
-      "author": "openclaw",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from openclaw/openclaw. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "songsee"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/openclaw/openclaw/skills-songsee",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-openclaw-openclaw-skills-sonoscli",
-      "name": "sonoscli",
-      "author": "openclaw",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from openclaw/openclaw. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "sonoscli"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/openclaw/openclaw/skills-sonoscli",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-openclaw-openclaw-skills-spike",
-      "name": "spike",
-      "author": "openclaw",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from openclaw/openclaw. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "spike"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/openclaw/openclaw/skills-spike",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-leoyeai-openclaw-master-skills-skills-sports-betting",
-      "name": "sports-betting",
-      "author": "leoyeai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from leoyeai/openclaw-master-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "master",
-        "sports",
-        "betting"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-sports-betting",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-openclaw-openclaw-skills-spotify-player",
-      "name": "spotify-player",
-      "author": "openclaw",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from openclaw/openclaw. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "spotify",
-        "player"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/openclaw/openclaw/skills-spotify-player",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-leoyeai-openclaw-master-skills-skills-sql-query-generator",
-      "name": "sql-query-generator",
-      "author": "leoyeai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from leoyeai/openclaw-master-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "master",
-        "sql",
-        "query",
-        "generator"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-sql-query-generator",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-zouyangxiaohao111-javaclawbot-src-main-resources-skills-agency-agents-engineering-embedded-firmware-engineer",
-      "name": "src-main-resources-skills-agency-agents-engineering-embedded-firmware-engineer",
-      "author": "zouyangxiaohao111",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from zouyangxiaohao111/javaclawbot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "javaclawbot",
-        "src",
-        "main",
-        "resources",
-        "agency"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/zouyangxiaohao111/javaclawbot/src-main-resources-skills-agency-agents-engineering-embedded-firmware-engineer",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-zouyangxiaohao111-javaclawbot-src-main-resources-skills-agency-agents-engineering-wechat-mini-program-developer",
-      "name": "src-main-resources-skills-agency-agents-engineering-wechat-mini-program-developer",
-      "author": "zouyangxiaohao111",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from zouyangxiaohao111/javaclawbot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "javaclawbot",
-        "src",
-        "main",
-        "resources",
-        "agency"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/zouyangxiaohao111/javaclawbot/src-main-resources-skills-agency-agents-engineering-wechat-mini-program-developer",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-beita6969-scienceclaw-skills-statistics",
-      "name": "statistics",
-      "author": "beita6969",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from beita6969/scienceclaw. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "scienceclaw",
-        "statistics"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/beita6969/scienceclaw/skills-statistics",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-leoyeai-openclaw-master-skills-skills-steam-gaming-companion",
-      "name": "steam-gaming-companion",
-      "author": "leoyeai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from leoyeai/openclaw-master-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "master",
-        "steam",
-        "gaming",
-        "companion"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "05",
-      "skillsmpUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-steam-gaming-companion",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

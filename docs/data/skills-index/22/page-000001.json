@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T10:03:52.143Z",
+  "generatedAt": "2026-07-09T15:34:46.512Z",
   "occupationId": "22",
   "skills": [
     {
@@ -1143,6 +1143,28 @@
       "updatedAt": "1783504629",
       "occupationId": "22",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-zh-cn-skills-agent-harness-construction",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wshobson-agents-plugins-security-scanning-skills-attack-tree-construction",
+      "name": "plugins-security-scanning-skills-attack-tree-construction",
+      "author": "wshobson",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wshobson/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "plugins",
+        "security",
+        "scanning",
+        "attack"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-security-scanning-skills-attack-tree-construction",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

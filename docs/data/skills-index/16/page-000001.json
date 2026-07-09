@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T10:03:52.143Z",
+  "generatedAt": "2026-07-09T15:34:46.512Z",
   "occupationId": "16",
   "skills": [
     {
@@ -1258,6 +1258,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-expo-skills-plugins-expo-skills-expo-api-routes",
+      "name": "plugins-expo-skills-expo-api-routes",
+      "author": "expo",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from expo/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "expo",
+        "api"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/expo/skills/plugins-expo-skills-expo-api-routes",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-wshobson-agents-plugins-frontend-mobile-development-skills-nextjs-app-router-patterns",
       "name": "plugins-frontend-mobile-development-skills-nextjs-app-router-patterns",
       "author": "wshobson",
@@ -1295,6 +1315,65 @@
       "updatedAt": "1783504629",
       "occupationId": "16",
       "skillsmpUrl": "https://skillsmp.com/creators/remix-run/react-router/agents-skills-react-router",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-deckardger-tanstack-agent-skills-skills-tanstack-router",
+      "name": "tanstack-router",
+      "author": "deckardger",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from deckardger/tanstack-agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "tanstack",
+        "router"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/deckardger/tanstack-agent-skills/skills-tanstack-router",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-openrouterteam-agent-skills-skills-typescript-sdk",
+      "name": "typescript-sdk",
+      "author": "openrouterteam",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from openrouterteam/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "typescript",
+        "sdk"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/openrouterteam/agent-skills/skills-typescript-sdk",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-antfu-skills-skills-vue-router-best-practices",
+      "name": "vue-router-best-practices",
+      "author": "antfu",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from antfu/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "vue",
+        "router",
+        "best",
+        "practices"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/antfu/skills/skills-vue-router-best-practices",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

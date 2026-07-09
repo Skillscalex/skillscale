@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T10:03:52.143Z",
+  "generatedAt": "2026-07-09T15:34:46.512Z",
   "occupationId": "18",
   "skills": [
     {
@@ -1073,6 +1073,48 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-code-audit-php-php-framework-audit",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-waynesutton-convexskills-skills-convex-security-audit",
+      "name": "convex-security-audit",
+      "author": "waynesutton",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from waynesutton/convexskills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "convexskills",
+        "convex",
+        "security",
+        "audit"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/waynesutton/convexskills/skills-convex-security-audit",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-waynesutton-convexskills-skills-convex-security-check",
+      "name": "convex-security-check",
+      "author": "waynesutton",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from waynesutton/convexskills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "convexskills",
+        "convex",
+        "security",
+        "check"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/waynesutton/convexskills/skills-convex-security-check",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2253,6 +2295,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-security-and-hardening",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-security-and-hardening",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "security"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-security-and-hardening",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-security-auditor",
       "name": "plugins-antigravity-awesome-skills-claude-skills-security-auditor",
       "author": "sickn33",
@@ -2401,6 +2464,129 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-ghostsecurity-skills-plugins-ghost-skills-proxy",
+      "name": "plugins-ghost-skills-proxy",
+      "author": "ghostsecurity",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ghostsecurity/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "ghost",
+        "proxy"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/ghostsecurity/skills/plugins-ghost-skills-proxy",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-ghostsecurity-skills-plugins-ghost-skills-repo-context",
+      "name": "plugins-ghost-skills-repo-context",
+      "author": "ghostsecurity",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ghostsecurity/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "ghost",
+        "repo",
+        "context"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/ghostsecurity/skills/plugins-ghost-skills-repo-context",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-ghostsecurity-skills-plugins-ghost-skills-report",
+      "name": "plugins-ghost-skills-report",
+      "author": "ghostsecurity",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ghostsecurity/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "ghost",
+        "report"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/ghostsecurity/skills/plugins-ghost-skills-report",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-ghostsecurity-skills-plugins-ghost-skills-scan-deps",
+      "name": "plugins-ghost-skills-scan-deps",
+      "author": "ghostsecurity",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ghostsecurity/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "ghost",
+        "scan",
+        "deps"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/ghostsecurity/skills/plugins-ghost-skills-scan-deps",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-ghostsecurity-skills-plugins-ghost-skills-validate",
+      "name": "plugins-ghost-skills-validate",
+      "author": "ghostsecurity",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ghostsecurity/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "ghost",
+        "validate"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/ghostsecurity/skills/plugins-ghost-skills-validate",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wshobson-agents-plugins-protect-mcp-skills-protect-mcp-setup",
+      "name": "plugins-protect-mcp-skills-protect-mcp-setup",
+      "author": "wshobson",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wshobson/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "plugins",
+        "protect",
+        "mcp"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-protect-mcp-skills-protect-mcp-setup",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-ruvnet-ruflo-plugins-ruflo-security-audit-skills-security-scan",
       "name": "plugins-ruflo-security-audit-skills-security-scan",
       "author": "ruvnet",
@@ -2417,6 +2603,28 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/ruvnet/ruflo/plugins-ruflo-security-audit-skills-security-scan",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wshobson-agents-plugins-security-scanning-skills-sast-configuration",
+      "name": "plugins-security-scanning-skills-sast-configuration",
+      "author": "wshobson",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wshobson/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "plugins",
+        "security",
+        "scanning",
+        "sast"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-security-scanning-skills-sast-configuration",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2635,6 +2843,26 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-security-bounty-hunter",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-elastic-agent-skills-skills-security-case-management",
+      "name": "security-case-management",
+      "author": "elastic",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from elastic/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "security",
+        "case",
+        "management"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/elastic/agent-skills/skills-security-case-management",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

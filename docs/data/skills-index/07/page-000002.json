@@ -1,7 +1,740 @@
 {
-  "generatedAt": "2026-07-09T10:03:52.143Z",
+  "generatedAt": "2026-07-09T15:34:46.512Z",
   "occupationId": "07",
   "skills": [
+    {
+      "id": "skillsmp-nousresearch-hermes-agent-skills-productivity-google-workspace",
+      "name": "productivity-google-workspace",
+      "author": "nousresearch",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nousresearch/hermes-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "productivity",
+        "google",
+        "workspace"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-productivity-google-workspace",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-nousresearch-hermes-agent-skills-productivity-maps",
+      "name": "productivity-maps",
+      "author": "nousresearch",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nousresearch/hermes-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "productivity",
+        "maps"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-productivity-maps",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-nousresearch-hermes-agent-skills-productivity-nano-pdf",
+      "name": "productivity-nano-pdf",
+      "author": "nousresearch",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nousresearch/hermes-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "productivity",
+        "nano",
+        "pdf"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-productivity-nano-pdf",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-nousresearch-hermes-agent-skills-productivity-notion",
+      "name": "productivity-notion",
+      "author": "nousresearch",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nousresearch/hermes-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "productivity",
+        "notion"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-productivity-notion",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-nousresearch-hermes-agent-skills-productivity-powerpoint",
+      "name": "productivity-powerpoint",
+      "author": "nousresearch",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nousresearch/hermes-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "productivity",
+        "powerpoint"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-productivity-powerpoint",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mattpocock-skills-skills-productivity-teach",
+      "name": "productivity-teach",
+      "author": "mattpocock",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mattpocock/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "productivity",
+        "teach"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/mattpocock/skills/skills-productivity-teach",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-nousresearch-hermes-agent-skills-productivity-teams-meeting-pipeline",
+      "name": "productivity-teams-meeting-pipeline",
+      "author": "nousresearch",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nousresearch/hermes-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "productivity",
+        "teams",
+        "meeting",
+        "pipeline"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-productivity-teams-meeting-pipeline",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bcefghj-learn-nanobot-projects-04-multi-platform-bot-skills-daily-report",
+      "name": "projects-04-multi-platform-bot-skills-daily-report",
+      "author": "bcefghj",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bcefghj/learn-nanobot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "learn",
+        "nanobot",
+        "projects",
+        "multi",
+        "platform",
+        "bot"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/bcefghj/learn-nanobot/projects-04-multi-platform-bot-skills-daily-report",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-zasfe-labs-prompt-skills-new-hwpx-master",
+      "name": "prompt-skills-new-hwpx-master",
+      "author": "zasfe",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zasfe/labs. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "labs",
+        "prompt",
+        "new",
+        "hwpx",
+        "master"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/zasfe/labs/prompt-skills-new-hwpx-master",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bytedance-deer-flow-skills-public-academic-paper-review",
+      "name": "public-academic-paper-review",
+      "author": "bytedance",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bytedance/deer-flow. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "deer",
+        "flow",
+        "public",
+        "academic",
+        "paper",
+        "review"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/bytedance/deer-flow/skills-public-academic-paper-review",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bytedance-deer-flow-skills-public-deep-research",
+      "name": "public-deep-research",
+      "author": "bytedance",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bytedance/deer-flow. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "deer",
+        "flow",
+        "public",
+        "deep",
+        "research"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/bytedance/deer-flow/skills-public-deep-research",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bytedance-deer-flow-skills-public-github-deep-research",
+      "name": "public-github-deep-research",
+      "author": "bytedance",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bytedance/deer-flow. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "deer",
+        "flow",
+        "public",
+        "github",
+        "deep",
+        "research"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/bytedance/deer-flow/skills-public-github-deep-research",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-stophobia-deerflow2-0-enhanced-skills-public-paper-research",
+      "name": "public-paper-research",
+      "author": "stophobia",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from stophobia/deerflow2.0-enhanced. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "deerflow2",
+        "enhanced",
+        "public",
+        "paper",
+        "research"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/stophobia/deerflow2.0-enhanced/skills-public-paper-research",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-demerzels-lab-elsamultiskillagent-public-skills-fletcherfrimpong-cyber-security-engineer",
+      "name": "public-skills-fletcherfrimpong-cyber-security-engineer",
+      "author": "demerzels-lab",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from demerzels-lab/elsamultiskillagent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "elsamultiskillagent",
+        "public",
+        "fletcherfrimpong",
+        "cyber",
+        "security"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/demerzels-lab/elsamultiskillagent/public-skills-fletcherfrimpong-cyber-security-engineer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-demerzels-lab-elsamultiskillagent-public-skills-zhanghaonan777-seedance2-skill",
+      "name": "public-skills-zhanghaonan777-seedance2",
+      "author": "demerzels-lab",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from demerzels-lab/elsamultiskillagent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "elsamultiskillagent",
+        "public",
+        "zhanghaonan777",
+        "seedance2"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/demerzels-lab/elsamultiskillagent/public-skills-zhanghaonan777-seedance2-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-aeternalabshq-pullmd-skill-pullmd-skills-pullmd",
+      "name": "pullmd-skills-pullmd",
+      "author": "aeternalabshq",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from aeternalabshq/pullmd. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "pullmd"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/aeternalabshq/pullmd/skill-pullmd-skills-pullmd",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-thedaviddias-front-end-checklist-skills-pwa-installability",
+      "name": "pwa-installability",
+      "author": "thedaviddias",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from thedaviddias/front-end-checklist. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "front",
+        "end",
+        "checklist",
+        "pwa",
+        "installability"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/thedaviddias/front-end-checklist/skills-pwa-installability",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-k-dense-ai-scientific-agent-skills-skills-pylabrobot",
+      "name": "pylabrobot",
+      "author": "k-dense-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from k-dense-ai/scientific-agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "scientific",
+        "pylabrobot"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-pylabrobot",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-strands-agents-samples-python-01-learn-15-skills-skills-technical-troubleshooting",
+      "name": "python-01-learn-15-skills-skills-technical-troubleshooting",
+      "author": "strands-agents",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from strands-agents/samples. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "samples",
+        "python",
+        "learn",
+        "technical",
+        "troubleshooting"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/strands-agents/samples/python-01-learn-15-skills-skills-technical-troubleshooting",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-onvoyage-ai-gtm-engineer-skills-reddit-opportunity-research",
+      "name": "reddit-opportunity-research",
+      "author": "onvoyage-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from onvoyage-ai/gtm-engineer-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gtm",
+        "engineer",
+        "reddit",
+        "opportunity",
+        "research"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/onvoyage-ai/gtm-engineer-skills/reddit-opportunity-research",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-yzhao062-agent-config-reference-skills-paper-to-beamer",
+      "name": "reference-skills-paper-to-beamer",
+      "author": "yzhao062",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from yzhao062/agent-config. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "config",
+        "reference",
+        "paper",
+        "beamer"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/yzhao062/agent-config/reference-skills-paper-to-beamer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-paperclipai-paperclip-agents-skills-release-changelog-discord-message",
+      "name": "release-changelog-discord-message",
+      "author": "paperclipai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from paperclipai/paperclip. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "paperclip",
+        "agents",
+        "release",
+        "changelog",
+        "discord"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/paperclipai/paperclip/agents-skills-release-changelog-discord-message",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-deathrashed-agents-repos-dkyazzentwatwa-chatgpt-skills-scientific-paper-figure-generator",
+      "name": "repos-dkyazzentwatwa-chatgpt-skills-scientific-paper-figure-generator",
+      "author": "deathrashed",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from deathrashed/.agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "repos",
+        "dkyazzentwatwa",
+        "chatgpt",
+        "scientific"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/deathrashed/.agents/repos-dkyazzentwatwa-chatgpt-skills-scientific-paper-figure-generator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-anthropics-claude-agent-sdk-demos-research-agent-claude-skills-executive-briefing",
+      "name": "research-agent-claude-skills-executive-briefing",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/claude-agent-sdk-demos. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "sdk",
+        "demos",
+        "research",
+        "executive",
+        "briefing"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/claude-agent-sdk-demos/research-agent-claude-skills-executive-briefing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-anthropics-claude-agent-sdk-demos-research-agent-claude-skills-pdf",
+      "name": "research-agent-claude-skills-pdf",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/claude-agent-sdk-demos. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "sdk",
+        "demos",
+        "research",
+        "pdf"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/claude-agent-sdk-demos/research-agent-claude-skills-pdf",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-nousresearch-hermes-agent-skills-research-blogwatcher",
+      "name": "research-blogwatcher",
+      "author": "nousresearch",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nousresearch/hermes-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "research",
+        "blogwatcher"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-research-blogwatcher",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-andrehuang-research-companion-skills-research-companion",
+      "name": "research-companion",
+      "author": "andrehuang",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from andrehuang/research-companion. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "research",
+        "companion"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/andrehuang/research-companion/skills-research-companion",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-aaron-he-zhu-seo-geo-claude-skills-research-competitor-analysis",
+      "name": "research-competitor-analysis",
+      "author": "aaron-he-zhu",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from aaron-he-zhu/seo-geo-claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "seo",
+        "geo",
+        "research",
+        "competitor",
+        "analysis"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/aaron-he-zhu/seo-geo-claude-skills/research-competitor-analysis",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-chtc66-academic-skills-research-gap-finder",
+      "name": "research-gap-finder",
+      "author": "chtc66",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from chtc66/academic-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "academic",
+        "research",
+        "gap",
+        "finder"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/chtc66/academic-skills/research-gap-finder",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-k-dense-ai-scientific-agent-skills-skills-research-grants",
+      "name": "research-grants",
+      "author": "k-dense-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from k-dense-ai/scientific-agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "scientific",
+        "research",
+        "grants"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-research-grants",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alirezarezvani-claude-skills-research-grants-skills-grants",
+      "name": "research-grants-skills-grants",
+      "author": "alirezarezvani",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alirezarezvani/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "research",
+        "grants"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/research-grants-skills-grants",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-huangwb8-chineseresearchlatex-skills-research-idea",
+      "name": "research-idea",
+      "author": "huangwb8",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from huangwb8/chineseresearchlatex. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "chineseresearchlatex",
+        "research",
+        "idea"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/huangwb8/chineseresearchlatex/skills-research-idea",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-galaxy-dawn-claude-scholar-skills-research-ideation",
+      "name": "research-ideation",
+      "author": "galaxy-dawn",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from galaxy-dawn/claude-scholar. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "scholar",
+        "research",
+        "ideation"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/galaxy-dawn/claude-scholar/skills-research-ideation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-huangwb8-chineseresearchlatex-skills-research-literature-review",
+      "name": "research-literature-review",
+      "author": "huangwb8",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from huangwb8/chineseresearchlatex. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "chineseresearchlatex",
+        "research",
+        "literature",
+        "review"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/huangwb8/chineseresearchlatex/skills-research-literature-review",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alirezarezvani-claude-skills-research-litreview-skills-litreview",
+      "name": "research-litreview-skills-litreview",
+      "author": "alirezarezvani",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alirezarezvani/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "research",
+        "litreview"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/research-litreview-skills-litreview",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-nousresearch-hermes-agent-skills-research-llm-wiki",
       "name": "research-llm-wiki",
@@ -316,6 +1049,26 @@
       "updatedAt": "1783504629",
       "occupationId": "07",
       "skillsmpUrl": "https://skillsmp.com/creators/etalab-ia/skills/skills-rgaa",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dreamiurg-claude-mountaineering-skills-skills-route-researcher",
+      "name": "route-researcher",
+      "author": "dreamiurg",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dreamiurg/claude-mountaineering-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "mountaineering",
+        "route",
+        "researcher"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/dreamiurg/claude-mountaineering-skills/skills-route-researcher",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -730,6 +1483,27 @@
       "updatedAt": "1783504629",
       "occupationId": "07",
       "skillsmpUrl": "https://skillsmp.com/creators/ivanglz95/ai-tools-sync/shared-skills-argi-consultor-impositivo-contable-laboral",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-softaworks-agent-toolkit-skills-ship-learn-next",
+      "name": "ship-learn-next",
+      "author": "softaworks",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from softaworks/agent-toolkit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "toolkit",
+        "ship",
+        "learn",
+        "next"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/softaworks/agent-toolkit/skills-ship-learn-next",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1258,6 +2032,25 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-2fastlabs-agent-squad-swift",
+      "name": "swift",
+      "author": "2fastlabs",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from 2fastlabs/agent-squad. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "squad",
+        "swift"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/2fastlabs/agent-squad/swift",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-romainsimon-paperasse-syndic",
       "name": "syndic",
       "author": "romainsimon",
@@ -1493,6 +2286,66 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-bmad-labs-skills-skills-typescript-clean-code",
+      "name": "typescript-clean-code",
+      "author": "bmad-labs",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bmad-labs/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "typescript",
+        "clean",
+        "code"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/bmad-labs/skills/skills-typescript-clean-code",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bmad-labs-skills-skills-typescript-e2e-testing",
+      "name": "typescript-e2e-testing",
+      "author": "bmad-labs",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bmad-labs/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "typescript",
+        "e2e",
+        "testing"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/bmad-labs/skills/skills-typescript-e2e-testing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bmad-labs-skills-skills-typescript-unit-testing",
+      "name": "typescript-unit-testing",
+      "author": "bmad-labs",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bmad-labs/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "typescript",
+        "unit",
+        "testing"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/bmad-labs/skills/skills-typescript-unit-testing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-clockworklabs-spacetimedb-skills-unity",
       "name": "unity",
       "author": "clockworklabs",
@@ -1594,6 +2447,25 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-elevenlabs-skills-voice-isolator",
+      "name": "voice-isolator",
+      "author": "elevenlabs",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from elevenlabs/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "voice",
+        "isolator"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/elevenlabs/skills/voice-isolator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-mgdaaslab-wharttest-wharttest-skills-api-automation-skill",
       "name": "wharttest-skills-api-automation",
       "author": "mgdaaslab",
@@ -1628,6 +2500,26 @@
       "updatedAt": "1783504629",
       "occupationId": "07",
       "skillsmpUrl": "https://skillsmp.com/creators/mgdaaslab/wharttest/wharttest-skills-playwright-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-ar9av-obsidian-wiki-skills-wiki-research",
+      "name": "wiki-research",
+      "author": "ar9av",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ar9av/obsidian-wiki. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "obsidian",
+        "wiki",
+        "research"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/ar9av/obsidian-wiki/skills-wiki-research",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

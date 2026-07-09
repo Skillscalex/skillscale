@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T10:03:52.143Z",
+  "generatedAt": "2026-07-09T15:34:46.512Z",
   "occupationId": "11",
   "skills": [
     {
@@ -1137,6 +1137,29 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-scientific-clinical-reports",
+      "name": "cli-tool-components-skills-scientific-clinical-reports",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "scientific"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "11",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-scientific-clinical-reports",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-k-dense-ai-scientific-agent-skills-skills-clinical-decision-support",
       "name": "clinical-decision-support",
       "author": "k-dense-ai",
@@ -1329,6 +1352,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-agentara-skills-skills-health-super-daddy",
+      "name": "health-super-daddy",
+      "author": "agentara",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from agentara/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "health",
+        "super",
+        "daddy"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "11",
+      "skillsmpUrl": "https://skillsmp.com/creators/agentara/skills/skills-health-super-daddy",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-affaan-m-ecc-skills-healthcare-cdss-patterns",
       "name": "healthcare-cdss-patterns",
       "author": "affaan-m",
@@ -1366,6 +1409,26 @@
       "updatedAt": "1783504629",
       "occupationId": "11",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-healthcare-emr-patterns",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dpearson2699-swift-ios-skills-skills-healthkit",
+      "name": "healthkit",
+      "author": "dpearson2699",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dpearson2699/swift-ios-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "swift",
+        "ios",
+        "healthkit"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "11",
+      "skillsmpUrl": "https://skillsmp.com/creators/dpearson2699/swift-ios-skills/skills-healthkit",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,70 @@
 {
-  "generatedAt": "2026-07-10T04:15:55.378Z",
+  "generatedAt": "2026-07-10T09:54:37.776Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-ajoao-totvs-claude-setup-plugins-cnab-protheus-skills-cnab-protheus",
+      "name": "plugins-cnab-protheus-skills-cnab-protheus",
+      "author": "ajoao-totvs",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ajoao-totvs/claude-setup. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "setup",
+        "plugins",
+        "cnab",
+        "protheus"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/ajoao-totvs/claude-setup/plugins-cnab-protheus-skills-cnab-protheus",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-openhands-extensions-plugins-cobol-modernization-skills-cobol-modernization",
+      "name": "plugins-cobol-modernization-skills-cobol-modernization",
+      "author": "openhands",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from openhands/extensions. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "extensions",
+        "plugins",
+        "cobol",
+        "modernization"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/openhands/extensions/plugins-cobol-modernization-skills-cobol-modernization",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-caozhangni-codex-plugin-discovery-plugins-codex-plugin-discovery-skills-codex-plugin-discovery",
+      "name": "plugins-codex-plugin-discovery-skills-codex-plugin-discovery",
+      "author": "caozhangni",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from caozhangni/codex-plugin-discovery. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "codex",
+        "plugin",
+        "discovery",
+        "plugins"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/caozhangni/codex-plugin-discovery/plugins-codex-plugin-discovery-skills-codex-plugin-discovery",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-openai-codex-plugin-cc-plugins-codex-skills-codex-cli-runtime",
       "name": "plugins-codex-skills-codex-cli-runtime",
@@ -10224,69 +10287,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/promptfoo/promptfoo/agents-skills-redteam-plugin-development",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-softaworks-agent-toolkit-skills-reducing-entropy",
-      "name": "reducing-entropy",
-      "author": "softaworks",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from softaworks/agent-toolkit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "toolkit",
-        "reducing",
-        "entropy"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/softaworks/agent-toolkit/skills-reducing-entropy",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-agentscope-ai-openjudge-skills-ref-hallucination-arena",
-      "name": "ref-hallucination-arena",
-      "author": "agentscope-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from agentscope-ai/openjudge. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openjudge",
-        "ref",
-        "hallucination",
-        "arena"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/agentscope-ai/openjudge/skills-ref-hallucination-arena",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-dart-lang-native-agents-skills-refactor-dart-dot-shorthands",
-      "name": "refactor-dart-dot-shorthands",
-      "author": "dart-lang",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from dart-lang/native. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "native",
-        "agents",
-        "refactor",
-        "dart",
-        "dot"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/dart-lang/native/agents-skills-refactor-dart-dot-shorthands",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

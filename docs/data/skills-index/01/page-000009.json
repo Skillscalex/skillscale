@@ -1,7 +1,73 @@
 {
-  "generatedAt": "2026-07-10T04:15:55.378Z",
+  "generatedAt": "2026-07-10T09:54:37.776Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-month-end-closer-skills-roll-forward",
+      "name": "plugins-agent-plugins-month-end-closer-skills-roll-forward",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "financial",
+        "services",
+        "plugins",
+        "month",
+        "end"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-month-end-closer-skills-roll-forward",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-month-end-closer-skills-variance-commentary",
+      "name": "plugins-agent-plugins-month-end-closer-skills-variance-commentary",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "financial",
+        "services",
+        "plugins",
+        "month",
+        "end"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-month-end-closer-skills-variance-commentary",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wshobson-agents-plugins-agent-teams-skills-task-coordination-strategies",
+      "name": "plugins-agent-teams-skills-task-coordination-strategies",
+      "author": "wshobson",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wshobson/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "plugins",
+        "teams",
+        "task",
+        "coordination"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-agent-teams-skills-task-coordination-strategies",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-trailofbits-skills-plugins-agentic-actions-auditor-skills-agentic-actions-auditor",
       "name": "plugins-agentic-actions-auditor-skills-agentic-actions-auditor",
@@ -10412,69 +10478,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/jezweb/claude-skills/plugins-cloudflare-skills-tanstack-start",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-ajoao-totvs-claude-setup-plugins-cnab-protheus-skills-cnab-protheus",
-      "name": "plugins-cnab-protheus-skills-cnab-protheus",
-      "author": "ajoao-totvs",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from ajoao-totvs/claude-setup. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "setup",
-        "plugins",
-        "cnab",
-        "protheus"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/ajoao-totvs/claude-setup/plugins-cnab-protheus-skills-cnab-protheus",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-openhands-extensions-plugins-cobol-modernization-skills-cobol-modernization",
-      "name": "plugins-cobol-modernization-skills-cobol-modernization",
-      "author": "openhands",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from openhands/extensions. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "extensions",
-        "plugins",
-        "cobol",
-        "modernization"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/openhands/extensions/plugins-cobol-modernization-skills-cobol-modernization",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-caozhangni-codex-plugin-discovery-plugins-codex-plugin-discovery-skills-codex-plugin-discovery",
-      "name": "plugins-codex-plugin-discovery-skills-codex-plugin-discovery",
-      "author": "caozhangni",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from caozhangni/codex-plugin-discovery. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "codex",
-        "plugin",
-        "discovery",
-        "plugins"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/caozhangni/codex-plugin-discovery/plugins-codex-plugin-discovery-skills-codex-plugin-discovery",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

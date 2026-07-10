@@ -1,7 +1,69 @@
 {
-  "generatedAt": "2026-07-10T04:15:55.378Z",
+  "generatedAt": "2026-07-10T09:54:37.776Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-metabase-agent-skills-skills-metabase-full-app-to-modular-embedding-upgrade",
+      "name": "metabase-full-app-to-modular-embedding-upgrade",
+      "author": "metabase",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from metabase/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "metabase",
+        "full",
+        "app",
+        "modular"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/metabase/agent-skills/skills-metabase-full-app-to-modular-embedding-upgrade",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-metabase-agent-skills-skills-metabase-modular-embedding-to-modular-embedding-sdk-upgrade",
+      "name": "metabase-modular-embedding-to-modular-embedding-sdk-upgrade",
+      "author": "metabase",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from metabase/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "metabase",
+        "modular",
+        "embedding"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/metabase/agent-skills/skills-metabase-modular-embedding-to-modular-embedding-sdk-upgrade",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-metabase-agent-skills-skills-metabase-modular-embedding-version-upgrade",
+      "name": "metabase-modular-embedding-version-upgrade",
+      "author": "metabase",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from metabase/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "metabase",
+        "modular",
+        "embedding",
+        "version"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/metabase/agent-skills/skills-metabase-modular-embedding-version-upgrade",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-metabase-agent-skills-skills-metabase-static-embedding-to-guest-embedding-upgrade",
       "name": "metabase-static-embedding-to-guest-embedding-upgrade",
@@ -9933,72 +9995,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-month-end-closer-skills-accrual-schedule",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-month-end-closer-skills-roll-forward",
-      "name": "plugins-agent-plugins-month-end-closer-skills-roll-forward",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "financial",
-        "services",
-        "plugins",
-        "month",
-        "end"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-month-end-closer-skills-roll-forward",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-month-end-closer-skills-variance-commentary",
-      "name": "plugins-agent-plugins-month-end-closer-skills-variance-commentary",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "financial",
-        "services",
-        "plugins",
-        "month",
-        "end"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-month-end-closer-skills-variance-commentary",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wshobson-agents-plugins-agent-teams-skills-task-coordination-strategies",
-      "name": "plugins-agent-teams-skills-task-coordination-strategies",
-      "author": "wshobson",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wshobson/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "agents",
-        "plugins",
-        "teams",
-        "task",
-        "coordination"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-agent-teams-skills-task-coordination-strategies",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

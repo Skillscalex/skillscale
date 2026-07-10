@@ -1,7 +1,66 @@
 {
-  "generatedAt": "2026-07-10T04:15:55.378Z",
+  "generatedAt": "2026-07-10T09:54:37.776Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-browser-use-browser-use-skills-x402",
+      "name": "x402",
+      "author": "browser-use",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from browser-use/browser-use. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "browser",
+        "use",
+        "x402"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/browser-use/browser-use/skills-x402",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-xcrawl-api-xcrawl-skills-skills-xcrawl",
+      "name": "xcrawl",
+      "author": "xcrawl-api",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from xcrawl-api/xcrawl-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "xcrawl"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/xcrawl-api/xcrawl-skills/skills-xcrawl",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-redfox-data-redfox-community-skills-xiaohongshu-crawler",
+      "name": "xiaohongshu-crawler",
+      "author": "redfox-data",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from redfox-data/redfox-community. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "redfox",
+        "community",
+        "xiaohongshu",
+        "crawler"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/redfox-data/redfox-community/skills-xiaohongshu-crawler",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-okooo5km-skills4u-skills-xiaohongshu-expert",
       "name": "xiaohongshu-expert",

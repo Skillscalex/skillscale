@@ -1,7 +1,70 @@
 {
-  "generatedAt": "2026-07-10T04:15:55.378Z",
+  "generatedAt": "2026-07-10T09:54:37.776Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-softaworks-agent-toolkit-skills-reducing-entropy",
+      "name": "reducing-entropy",
+      "author": "softaworks",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from softaworks/agent-toolkit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "toolkit",
+        "reducing",
+        "entropy"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/softaworks/agent-toolkit/skills-reducing-entropy",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-agentscope-ai-openjudge-skills-ref-hallucination-arena",
+      "name": "ref-hallucination-arena",
+      "author": "agentscope-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from agentscope-ai/openjudge. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "openjudge",
+        "ref",
+        "hallucination",
+        "arena"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/agentscope-ai/openjudge/skills-ref-hallucination-arena",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dart-lang-native-agents-skills-refactor-dart-dot-shorthands",
+      "name": "refactor-dart-dot-shorthands",
+      "author": "dart-lang",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dart-lang/native. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "native",
+        "agents",
+        "refactor",
+        "dart",
+        "dot"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/dart-lang/native/agents-skills-refactor-dart-dot-shorthands",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-github-awesome-copilot-skills-refactor-plan",
       "name": "refactor-plan",
@@ -9868,67 +9931,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/worldwonderer/oh-story-claudecode/skills-story-long-write",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-worldwonderer-oh-story-claudecode-skills-story-review",
-      "name": "story-review",
-      "author": "worldwonderer",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from worldwonderer/oh-story-claudecode. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "story",
-        "claudecode",
-        "review"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/worldwonderer/oh-story-claudecode/skills-story-review",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-worldwonderer-oh-story-claudecode-skills-story-setup",
-      "name": "story-setup",
-      "author": "worldwonderer",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from worldwonderer/oh-story-claudecode. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "story",
-        "claudecode",
-        "setup"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/worldwonderer/oh-story-claudecode/skills-story-setup",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-worldwonderer-oh-story-claudecode-skills-story-short-analyze",
-      "name": "story-short-analyze",
-      "author": "worldwonderer",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from worldwonderer/oh-story-claudecode. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "story",
-        "claudecode",
-        "short",
-        "analyze"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/worldwonderer/oh-story-claudecode/skills-story-short-analyze",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

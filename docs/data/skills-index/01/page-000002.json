@@ -1,7 +1,66 @@
 {
-  "generatedAt": "2026-07-10T04:15:55.378Z",
+  "generatedAt": "2026-07-10T09:54:37.776Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-allinherog-star-ai-skills-skills-ai-humanizer-zh",
+      "name": "ai-humanizer-zh",
+      "author": "allinherog-star",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from allinherog-star/ai-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "humanizer"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/allinherog-star/ai-skills/skills-ai-humanizer-zh",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-laravel-boost-ai-laravel-skill-laravel-best-practices",
+      "name": "ai-laravel-skill-laravel-best-practices",
+      "author": "laravel",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from laravel/boost. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "boost",
+        "laravel",
+        "best",
+        "practices"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/laravel/boost/ai-laravel-skill-laravel-best-practices",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-haibarakiku-awesome-skills-skills-ai-ml-prompt-engineer",
+      "name": "ai-ml-prompt-engineer",
+      "author": "haibarakiku",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from haibarakiku/awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "prompt",
+        "engineer"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/haibarakiku/awesome-skills/skills-ai-ml-prompt-engineer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-affaan-m-ecc-skills-ai-regression-testing",
       "name": "ai-regression-testing",
@@ -9778,69 +9837,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/everyinc/compound-engineering-plugin/skills-ce-code-review",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-everyinc-compound-engineering-plugin-skills-ce-commit",
-      "name": "ce-commit",
-      "author": "everyinc",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from everyinc/compound-engineering-plugin. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "compound",
-        "engineering",
-        "plugin",
-        "commit"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/everyinc/compound-engineering-plugin/skills-ce-commit",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-everyinc-compound-engineering-plugin-skills-ce-commit-push-pr",
-      "name": "ce-commit-push-pr",
-      "author": "everyinc",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from everyinc/compound-engineering-plugin. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "compound",
-        "engineering",
-        "plugin",
-        "commit",
-        "push"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/everyinc/compound-engineering-plugin/skills-ce-commit-push-pr",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-everyinc-compound-engineering-plugin-skills-ce-compound",
-      "name": "ce-compound",
-      "author": "everyinc",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from everyinc/compound-engineering-plugin. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "compound",
-        "engineering",
-        "plugin"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/everyinc/compound-engineering-plugin/skills-ce-compound",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,65 @@
 {
-  "generatedAt": "2026-07-10T04:15:55.378Z",
+  "generatedAt": "2026-07-10T09:54:37.776Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-higgsfield-ai-skills-higgsfield-generate",
+      "name": "higgsfield-generate",
+      "author": "higgsfield-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from higgsfield-ai/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "higgsfield",
+        "generate"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/higgsfield-ai/skills/higgsfield-generate",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-higgsfield-ai-skills-higgsfield-product-photoshoot",
+      "name": "higgsfield-product-photoshoot",
+      "author": "higgsfield-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from higgsfield-ai/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "higgsfield",
+        "product",
+        "photoshoot"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/higgsfield-ai/skills/higgsfield-product-photoshoot",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-higgsfield-ai-skills-higgsfield-soul-id",
+      "name": "higgsfield-soul-id",
+      "author": "higgsfield-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from higgsfield-ai/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "higgsfield",
+        "soul"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/higgsfield-ai/skills/higgsfield-soul-id",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-vectorize-io-hindsight-skills-hindsight-docs",
       "name": "hindsight-docs",
@@ -9826,68 +9884,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/metabase/agent-skills/skills-metabase-embedding-sso-implementation",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-metabase-agent-skills-skills-metabase-full-app-to-modular-embedding-upgrade",
-      "name": "metabase-full-app-to-modular-embedding-upgrade",
-      "author": "metabase",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from metabase/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "metabase",
-        "full",
-        "app",
-        "modular"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/metabase/agent-skills/skills-metabase-full-app-to-modular-embedding-upgrade",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-metabase-agent-skills-skills-metabase-modular-embedding-to-modular-embedding-sdk-upgrade",
-      "name": "metabase-modular-embedding-to-modular-embedding-sdk-upgrade",
-      "author": "metabase",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from metabase/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "metabase",
-        "modular",
-        "embedding"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/metabase/agent-skills/skills-metabase-modular-embedding-to-modular-embedding-sdk-upgrade",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-metabase-agent-skills-skills-metabase-modular-embedding-version-upgrade",
-      "name": "metabase-modular-embedding-version-upgrade",
-      "author": "metabase",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from metabase/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "metabase",
-        "modular",
-        "embedding",
-        "version"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/metabase/agent-skills/skills-metabase-modular-embedding-version-upgrade",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

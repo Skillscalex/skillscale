@@ -1,7 +1,66 @@
 {
-  "generatedAt": "2026-07-10T04:15:55.378Z",
+  "generatedAt": "2026-07-10T09:54:37.776Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-alchaincyf-nuwa-skill-examples-zhangxuefeng-perspective",
+      "name": "examples-zhangxuefeng-perspective",
+      "author": "alchaincyf",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alchaincyf/nuwa-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "nuwa",
+        "examples",
+        "zhangxuefeng",
+        "perspective"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alchaincyf/nuwa-skill/examples-zhangxuefeng-perspective",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-skills-examprep-ai",
+      "name": "examprep-ai",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "examprep"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/skills-examprep-ai",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-agents365-ai-excalidraw-skill-skills-excalidraw-skill",
+      "name": "excalidraw",
+      "author": "agents365-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from agents365-ai/excalidraw-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "excalidraw"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/agents365-ai/excalidraw-skill/skills-excalidraw-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-axtonliu-axton-obsidian-visual-skills-excalidraw-diagram",
       "name": "excalidraw-diagram",
@@ -10016,64 +10075,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/huggingface/skills/skills-hf-cli",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-higgsfield-ai-skills-higgsfield-generate",
-      "name": "higgsfield-generate",
-      "author": "higgsfield-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from higgsfield-ai/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "higgsfield",
-        "generate"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/higgsfield-ai/skills/higgsfield-generate",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-higgsfield-ai-skills-higgsfield-product-photoshoot",
-      "name": "higgsfield-product-photoshoot",
-      "author": "higgsfield-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from higgsfield-ai/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "higgsfield",
-        "product",
-        "photoshoot"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/higgsfield-ai/skills/higgsfield-product-photoshoot",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-higgsfield-ai-skills-higgsfield-soul-id",
-      "name": "higgsfield-soul-id",
-      "author": "higgsfield-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from higgsfield-ai/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "higgsfield",
-        "soul"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/higgsfield-ai/skills/higgsfield-soul-id",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

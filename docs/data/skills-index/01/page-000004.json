@@ -1,7 +1,68 @@
 {
-  "generatedAt": "2026-07-10T04:15:55.378Z",
+  "generatedAt": "2026-07-10T09:54:37.776Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-google-skills-skills-cloud-agent-platform-skill-registry",
+      "name": "cloud-agent-platform-skill-registry",
+      "author": "google",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cloud",
+        "platform",
+        "registry"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-skill-registry",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-google-skills-skills-cloud-agent-platform-tuning",
+      "name": "cloud-agent-platform-tuning",
+      "author": "google",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cloud",
+        "platform",
+        "tuning"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-tuning",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-google-skills-skills-cloud-agent-platform-tuning-management",
+      "name": "cloud-agent-platform-tuning-management",
+      "author": "google",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cloud",
+        "platform",
+        "tuning",
+        "management"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-tuning-management",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-google-skills-skills-cloud-bigquery-basics",
       "name": "cloud-bigquery-basics",
@@ -10024,60 +10085,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/khalilbenaz/claude-skills-collection/dev-skills-azure-devops-pipeline-advisor",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-xstongxue-best-skills-skills-dev-workflow",
-      "name": "dev-workflow",
-      "author": "xstongxue",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from xstongxue/best-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "best",
-        "dev",
-        "workflow"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/xstongxue/best-skills/skills-dev-workflow",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "developer-portal-skillsmp-unknown",
-      "name": "Developer Portal",
-      "author": "SkillsMP",
-      "stars": 0,
-      "description": "— API docs, quickstart, and sandbox",
-      "tags": [],
-      "updatedAt": "1781508361",
-      "occupationId": "01",
-      "source": "skillsmp",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-composiohq-awesome-claude-skills-developer-growth-analysis",
-      "name": "developer-growth-analysis",
-      "author": "composiohq",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from composiohq/awesome-claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "awesome",
-        "developer",
-        "growth",
-        "analysis"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/composiohq/awesome-claude-skills/developer-growth-analysis",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,52 @@
 {
-  "generatedAt": "2026-07-10T15:02:03.685Z",
+  "generatedAt": "2026-07-10T19:52:25.093Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-wenyuchiou-awesome-agentic-ai-zh-examples-stage-5-tool-calling-tutor",
+      "name": "examples-stage-5-tool-calling-tutor",
+      "author": "wenyuchiou",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wenyuchiou/awesome-agentic-ai-zh. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "agentic",
+        "examples",
+        "stage",
+        "tool",
+        "calling"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wenyuchiou/awesome-agentic-ai-zh/examples-stage-5-tool-calling-tutor",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alchaincyf-nuwa-skill-examples-steve-jobs-perspective",
+      "name": "examples-steve-jobs-perspective",
+      "author": "alchaincyf",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alchaincyf/nuwa-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "nuwa",
+        "examples",
+        "steve",
+        "jobs",
+        "perspective"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alchaincyf/nuwa-skill/examples-steve-jobs-perspective",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-alchaincyf-nuwa-skill-examples-sun-yuchen-perspective",
       "name": "examples-sun-yuchen-perspective",
@@ -10046,46 +10091,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/natebjones-projects/ob1/skills-heavy-file-ingestion-variants-codex",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-hellowind777-helloagents-skills-hello-arch",
-      "name": "hello-arch",
-      "author": "hellowind777",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from hellowind777/helloagents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "helloagents",
-        "hello",
-        "arch"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/hellowind777/helloagents/skills-hello-arch",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-fathah-hermes-desktop-agents-skills-hermes-agent",
-      "name": "hermes-agent",
-      "author": "fathah",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from fathah/hermes-desktop. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "hermes",
-        "desktop",
-        "agents"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/fathah/hermes-desktop/agents-skills-hermes-agent",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

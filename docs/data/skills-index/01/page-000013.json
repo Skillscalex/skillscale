@@ -1,7 +1,45 @@
 {
-  "generatedAt": "2026-07-10T15:02:03.685Z",
+  "generatedAt": "2026-07-10T19:52:25.093Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-cloudai-x-x-algo-skills-x-algo-engagement",
+      "name": "x-algo-engagement",
+      "author": "cloudai-x",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cloudai-x/x-algo-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "algo",
+        "engagement"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/cloudai-x/x-algo-skills/x-algo-engagement",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-cloudai-x-x-algo-skills-x-algo-filters",
+      "name": "x-algo-filters",
+      "author": "cloudai-x",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cloudai-x/x-algo-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "algo",
+        "filters"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/cloudai-x/x-algo-skills/x-algo-filters",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-cloudai-x-x-algo-skills-x-algo-ml",
       "name": "x-algo-ml",

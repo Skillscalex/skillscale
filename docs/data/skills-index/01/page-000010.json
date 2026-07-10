@@ -1,7 +1,49 @@
 {
-  "generatedAt": "2026-07-10T15:02:03.685Z",
+  "generatedAt": "2026-07-10T19:52:25.093Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-f-prompts-chat-plugins-claude-prompts-chat-skills-prompt-lookup",
+      "name": "plugins-claude-prompts-chat-skills-prompt-lookup",
+      "author": "f",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from f/prompts.chat. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "prompts",
+        "chat",
+        "plugins",
+        "prompt"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/f/prompts.chat/plugins-claude-prompts-chat-skills-prompt-lookup",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-f-prompts-chat-plugins-claude-prompts-chat-skills-skill-lookup",
+      "name": "plugins-claude-prompts-chat-skills-skill-lookup",
+      "author": "f",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from f/prompts.chat. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "prompts",
+        "chat",
+        "plugins",
+        "lookup"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/f/prompts.chat/plugins-claude-prompts-chat-skills-skill-lookup",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-fvhreimert-claude-session-handoff-plugins-claude-session-handoff-skills-claude-session-handoff",
       "name": "plugins-claude-session-handoff-skills-claude-session-handoff",
@@ -10244,47 +10286,6 @@
       "updatedAt": "1783591431",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/googleworkspace/cli/skills-recipe-create-classroom-course",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-coleam00-custom-agent-with-skills-skills-recipe-finder",
-      "name": "recipe-finder",
-      "author": "coleam00",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from coleam00/custom-agent-with-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "custom",
-        "with",
-        "recipe",
-        "finder"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/coleam00/custom-agent-with-skills/skills-recipe-finder",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-kayba-ai-recursive-improve-recursive-improve-data",
-      "name": "recursive-improve-data",
-      "author": "kayba-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from kayba-ai/recursive-improve. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "recursive",
-        "improve",
-        "data"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/kayba-ai/recursive-improve/recursive-improve-data",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

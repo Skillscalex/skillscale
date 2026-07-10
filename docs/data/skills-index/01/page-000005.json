@@ -1,7 +1,46 @@
 {
-  "generatedAt": "2026-07-10T15:02:03.685Z",
+  "generatedAt": "2026-07-10T19:52:25.093Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-sharpai-deepcamera-skills-detection-yolo-detection-2026-openvino",
+      "name": "detection-yolo-detection-2026-openvino",
+      "author": "sharpai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sharpai/deepcamera. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "deepcamera",
+        "detection",
+        "yolo",
+        "2026"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/sharpai/deepcamera/skills-detection-yolo-detection-2026-openvino",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-lambdatest-agent-skills-detox-skill",
+      "name": "detox",
+      "author": "lambdatest",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lambdatest/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "detox"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/lambdatest/agent-skills/detox-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "github-com-sawyerhood-dev-browser",
       "name": "Dev Browser",
@@ -10231,51 +10270,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/google/adk-go/examples-skills-skills-grocery-prices",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wenyuchiou-awesome-agentic-ai-zh-examples-stage-5-tool-calling-tutor",
-      "name": "examples-stage-5-tool-calling-tutor",
-      "author": "wenyuchiou",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wenyuchiou/awesome-agentic-ai-zh. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "awesome",
-        "agentic",
-        "examples",
-        "stage",
-        "tool",
-        "calling"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wenyuchiou/awesome-agentic-ai-zh/examples-stage-5-tool-calling-tutor",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-alchaincyf-nuwa-skill-examples-steve-jobs-perspective",
-      "name": "examples-steve-jobs-perspective",
-      "author": "alchaincyf",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from alchaincyf/nuwa-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "nuwa",
-        "examples",
-        "steve",
-        "jobs",
-        "perspective"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/alchaincyf/nuwa-skill/examples-steve-jobs-perspective",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

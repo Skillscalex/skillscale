@@ -1,7 +1,47 @@
 {
-  "generatedAt": "2026-07-10T15:02:03.685Z",
+  "generatedAt": "2026-07-10T19:52:25.093Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-hellowind777-helloagents-skills-hello-arch",
+      "name": "hello-arch",
+      "author": "hellowind777",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from hellowind777/helloagents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "helloagents",
+        "hello",
+        "arch"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/hellowind777/helloagents/skills-hello-arch",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-fathah-hermes-desktop-agents-skills-hermes-agent",
+      "name": "hermes-agent",
+      "author": "fathah",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from fathah/hermes-desktop. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "desktop",
+        "agents"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/fathah/hermes-desktop/agents-skills-hermes-agent",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-ar9av-obsidian-wiki-skills-hermes-history-ingest",
       "name": "hermes-history-ingest",
@@ -9841,47 +9881,6 @@
       "updatedAt": "1783591431",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/meshy-dev/meshy-3d-agent/skills-meshy-3d-printing",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-affaan-m-ecc-skills-messages-ops",
-      "name": "messages-ops",
-      "author": "affaan-m",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "ecc",
-        "messages",
-        "ops"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-messages-ops",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-nowork-studio-notfair-meta-ads-audit",
-      "name": "meta-ads-audit",
-      "author": "nowork-studio",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from nowork-studio/notfair. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "notfair",
-        "meta",
-        "ads",
-        "audit"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/nowork-studio/notfair/meta-ads-audit",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

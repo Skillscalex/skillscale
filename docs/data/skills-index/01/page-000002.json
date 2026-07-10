@@ -1,7 +1,48 @@
 {
-  "generatedAt": "2026-07-10T15:02:03.685Z",
+  "generatedAt": "2026-07-10T19:52:25.093Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-diegosouzapw-awesome-omni-skill-skills-ai-agents-assistant",
+      "name": "ai-agents-assistant",
+      "author": "diegosouzapw",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from diegosouzapw/awesome-omni-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "omni",
+        "agents",
+        "assistant"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/diegosouzapw/awesome-omni-skill/skills-ai-agents-assistant",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bitwisecook-tcl-lsp-ai-claude-skills-tcl-validate",
+      "name": "ai-claude-skills-tcl-validate",
+      "author": "bitwisecook",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bitwisecook/tcl-lsp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "tcl",
+        "lsp",
+        "validate"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/bitwisecook/tcl-lsp/ai-claude-skills-tcl-validate",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-zhaochengbo-zhaoming-embedded-ai-coding-skill",
       "name": "ai-coding",
@@ -9818,34 +9859,6 @@
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
-    },
-    {
-      "id": "github-com-tjboudreaux-cc-thinking-skills",
-      "name": "cc-thinking-skills",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [tjboudreaux](https://github.com/tjboudreaux) - A collection of installable thinking-framework skills with a meta-router, notable for publishing a replication-gated evaluation instead of unsupported quality claims.",
-      "tags": [],
-      "updatedAt": "1783500264",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/tjboudreaux/cc-thinking-skills",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "github-com-zihenghe04-ccdash",
-      "name": "CCDash",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [zihenghe04](https://github.com/zihenghe04) - Open-source unified usage dashboard for Claude — track tokens, quota, costs across Claude Code, claude.ai &amp; API in one panel. 开源 Claude 全平台用量监控面板，聚合 Claude Code / claude.ai / API 数据，适用于 Pro/Max 订阅用户与开发者。https://dyp23yngrtumg.ok.kimi.link",
-      "tags": [],
-      "updatedAt": "1783500266",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/zihenghe04/CCDash",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
     }
   ]
 }

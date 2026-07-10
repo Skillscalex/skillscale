@@ -1,7 +1,49 @@
 {
-  "generatedAt": "2026-07-10T15:02:03.685Z",
+  "generatedAt": "2026-07-10T19:52:25.093Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-biwakonbu-cc-plugins-plugins-agent-browser-spec-skills-agent-browser-knowledge",
+      "name": "plugins-agent-browser-spec-skills-agent-browser-knowledge",
+      "author": "biwakonbu",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from biwakonbu/cc-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "browser",
+        "spec"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/biwakonbu/cc-plugins/plugins-agent-browser-spec-skills-agent-browser-knowledge",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-earnings-reviewer-skills-xlsx-author",
+      "name": "plugins-agent-plugins-earnings-reviewer-skills-xlsx-author",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "financial",
+        "services",
+        "plugins",
+        "earnings",
+        "reviewer"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-earnings-reviewer-skills-xlsx-author",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-gl-reconciler-skills-break-trace",
       "name": "plugins-agent-plugins-gl-reconciler-skills-break-trace",
@@ -10441,48 +10483,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/anthropics/claude-code/plugins-claude-opus-4-5-migration-skills-claude-opus-4-5-migration",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-f-prompts-chat-plugins-claude-prompts-chat-skills-prompt-lookup",
-      "name": "plugins-claude-prompts-chat-skills-prompt-lookup",
-      "author": "f",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from f/prompts.chat. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "prompts",
-        "chat",
-        "plugins",
-        "prompt"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/f/prompts.chat/plugins-claude-prompts-chat-skills-prompt-lookup",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-f-prompts-chat-plugins-claude-prompts-chat-skills-skill-lookup",
-      "name": "plugins-claude-prompts-chat-skills-skill-lookup",
-      "author": "f",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from f/prompts.chat. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "prompts",
-        "chat",
-        "plugins",
-        "lookup"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/f/prompts.chat/plugins-claude-prompts-chat-skills-skill-lookup",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

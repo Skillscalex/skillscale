@@ -1,7 +1,48 @@
 {
-  "generatedAt": "2026-07-10T15:02:03.685Z",
+  "generatedAt": "2026-07-10T19:52:25.093Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-messages-ops",
+      "name": "messages-ops",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "messages",
+        "ops"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-messages-ops",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-nowork-studio-notfair-meta-ads-audit",
+      "name": "meta-ads-audit",
+      "author": "nowork-studio",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nowork-studio/notfair. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "notfair",
+        "meta",
+        "ads",
+        "audit"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/nowork-studio/notfair/meta-ads-audit",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-nowork-studio-notfair-meta-ads-manage",
       "name": "meta-ads-manage",
@@ -9944,48 +9985,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-project-management-skills-handover-admin",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-biwakonbu-cc-plugins-plugins-agent-browser-spec-skills-agent-browser-knowledge",
-      "name": "plugins-agent-browser-spec-skills-agent-browser-knowledge",
-      "author": "biwakonbu",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from biwakonbu/cc-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "plugins",
-        "browser",
-        "spec"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/biwakonbu/cc-plugins/plugins-agent-browser-spec-skills-agent-browser-knowledge",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-earnings-reviewer-skills-xlsx-author",
-      "name": "plugins-agent-plugins-earnings-reviewer-skills-xlsx-author",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "financial",
-        "services",
-        "plugins",
-        "earnings",
-        "reviewer"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-earnings-reviewer-skills-xlsx-author",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

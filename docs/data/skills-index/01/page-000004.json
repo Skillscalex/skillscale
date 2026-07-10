@@ -1,7 +1,111 @@
 {
-  "generatedAt": "2026-07-10T09:54:37.776Z",
+  "generatedAt": "2026-07-10T15:02:03.685Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-google-skills-skills-cloud-agent-platform-inference",
+      "name": "cloud-agent-platform-inference",
+      "author": "google",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cloud",
+        "platform",
+        "inference"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-inference",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-google-skills-skills-cloud-agent-platform-migrate-from-ai-studio",
+      "name": "cloud-agent-platform-migrate-from-ai-studio",
+      "author": "google",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cloud",
+        "platform",
+        "migrate",
+        "from"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-migrate-from-ai-studio",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-google-skills-skills-cloud-agent-platform-model-registry",
+      "name": "cloud-agent-platform-model-registry",
+      "author": "google",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cloud",
+        "platform",
+        "model",
+        "registry"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-model-registry",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-google-skills-skills-cloud-agent-platform-prompt-management",
+      "name": "cloud-agent-platform-prompt-management",
+      "author": "google",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cloud",
+        "platform",
+        "prompt",
+        "management"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-prompt-management",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-google-skills-skills-cloud-agent-platform-rag-engine-management",
+      "name": "cloud-agent-platform-rag-engine-management",
+      "author": "google",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cloud",
+        "platform",
+        "rag",
+        "engine"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-rag-engine-management",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-google-skills-skills-cloud-agent-platform-skill-registry",
       "name": "cloud-agent-platform-skill-registry",
@@ -9989,102 +10093,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/lambdatest/agent-skills/detox-skill",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "github-com-sawyerhood-dev-browser",
-      "name": "Dev Browser",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [Sawyer Hood](https://github.com/SawyerHood) - A browser-automation plugin/skill that lets Claude Code drive a browser to test and verify its own work — full Playwright API plus pixel- and DOM-level computer-use toolsets, connecting to your running Chrome or a fresh Chromium. Notably secure and fast: scripts execute inside a QuickJS WASM sandbox with no host filesystem or network access, and a published benchmark shows it beating Playwright MCP on time, cost, and turns.",
-      "tags": [],
-      "updatedAt": "1783500265",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/SawyerHood/dev-browser",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-sawyerhood-dev-browser-skills-dev-browser",
-      "name": "dev-browser",
-      "author": "sawyerhood",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from sawyerhood/dev-browser. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "dev",
-        "browser"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/sawyerhood/dev-browser/skills-dev-browser",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-angular-angular-skills-dev-skills-angular-developer",
-      "name": "dev-skills-angular-developer",
-      "author": "angular",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from angular/angular. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "angular",
-        "dev",
-        "developer"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/angular/angular/skills-dev-skills-angular-developer",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-angular-angular-skills-dev-skills-angular-new-app",
-      "name": "dev-skills-angular-new-app",
-      "author": "angular",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from angular/angular. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "angular",
-        "dev",
-        "new",
-        "app"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/angular/angular/skills-dev-skills-angular-new-app",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-khalilbenaz-claude-skills-collection-dev-skills-azure-devops-pipeline-advisor",
-      "name": "dev-skills-azure-devops-pipeline-advisor",
-      "author": "khalilbenaz",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from khalilbenaz/claude-skills-collection. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "collection",
-        "dev",
-        "azure",
-        "devops",
-        "pipeline"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/khalilbenaz/claude-skills-collection/dev-skills-azure-devops-pipeline-advisor",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

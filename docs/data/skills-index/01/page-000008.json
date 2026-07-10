@@ -1,7 +1,108 @@
 {
-  "generatedAt": "2026-07-10T09:54:37.776Z",
+  "generatedAt": "2026-07-10T15:02:03.685Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-nowork-studio-notfair-meta-ads-manage",
+      "name": "meta-ads-manage",
+      "author": "nowork-studio",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nowork-studio/notfair. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "notfair",
+        "meta",
+        "ads",
+        "manage"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/nowork-studio/notfair/meta-ads-manage",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-obra-clank-skills-meta-installing-skills",
+      "name": "meta-installing-skills",
+      "author": "obra",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from obra/clank. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "clank",
+        "meta",
+        "installing"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/obra/clank/skills-meta-installing-skills",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sonicbotman-soloflow-skills-meta-soloflow",
+      "name": "meta-soloflow",
+      "author": "sonicbotman",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sonicbotman/soloflow. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "soloflow",
+        "meta"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/sonicbotman/soloflow/skills-meta-soloflow",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-metabase-agent-skills-skills-metabase-database-metadata",
+      "name": "metabase-database-metadata",
+      "author": "metabase",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from metabase/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "metabase",
+        "database",
+        "metadata"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/metabase/agent-skills/skills-metabase-database-metadata",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-metabase-agent-skills-skills-metabase-embedding-sso-implementation",
+      "name": "metabase-embedding-sso-implementation",
+      "author": "metabase",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from metabase/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "metabase",
+        "embedding",
+        "sso",
+        "implementation"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/metabase/agent-skills/skills-metabase-embedding-sso-implementation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-metabase-agent-skills-skills-metabase-full-app-to-modular-embedding-upgrade",
       "name": "metabase-full-app-to-modular-embedding-upgrade",
@@ -9885,116 +9986,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-earnings-reviewer-skills-xlsx-author",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-gl-reconciler-skills-break-trace",
-      "name": "plugins-agent-plugins-gl-reconciler-skills-break-trace",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "financial",
-        "services",
-        "plugins",
-        "reconciler",
-        "break"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-gl-reconciler-skills-break-trace",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-gl-reconciler-skills-gl-recon",
-      "name": "plugins-agent-plugins-gl-reconciler-skills-gl-recon",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "financial",
-        "services",
-        "plugins",
-        "reconciler",
-        "recon"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-gl-reconciler-skills-gl-recon",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-kyc-screener-skills-kyc-doc-parse",
-      "name": "plugins-agent-plugins-kyc-screener-skills-kyc-doc-parse",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "financial",
-        "services",
-        "plugins",
-        "kyc",
-        "screener"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-kyc-screener-skills-kyc-doc-parse",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-kyc-screener-skills-kyc-rules",
-      "name": "plugins-agent-plugins-kyc-screener-skills-kyc-rules",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "financial",
-        "services",
-        "plugins",
-        "kyc",
-        "screener"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-kyc-screener-skills-kyc-rules",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-month-end-closer-skills-accrual-schedule",
-      "name": "plugins-agent-plugins-month-end-closer-skills-accrual-schedule",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "financial",
-        "services",
-        "plugins",
-        "month",
-        "end"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-month-end-closer-skills-accrual-schedule",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

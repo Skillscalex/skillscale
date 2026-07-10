@@ -1,7 +1,104 @@
 {
-  "generatedAt": "2026-07-10T09:54:37.776Z",
+  "generatedAt": "2026-07-10T15:02:03.685Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-zhaochengbo-zhaoming-embedded-ai-coding-skill",
+      "name": "ai-coding",
+      "author": "zhaochengbo",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zhaochengbo/zhaoming-embedded. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "zhaoming",
+        "embedded",
+        "coding"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/zhaochengbo/zhaoming-embedded/ai-coding-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wanikua-danghuangshang-skills-ai-court-skill",
+      "name": "ai-court",
+      "author": "wanikua",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wanikua/danghuangshang. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "danghuangshang",
+        "court"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wanikua/danghuangshang/skills-ai-court-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-allinherog-star-ai-skills-skills-ai-customer-support",
+      "name": "ai-customer-support",
+      "author": "allinherog-star",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from allinherog-star/ai-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "customer",
+        "support"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/allinherog-star/ai-skills/skills-ai-customer-support",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-allinherog-star-ai-skills-skills-ai-ecommerce-search",
+      "name": "ai-ecommerce-search",
+      "author": "allinherog-star",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from allinherog-star/ai-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecommerce",
+        "search"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/allinherog-star/ai-skills/skills-ai-ecommerce-search",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-ai-first-engineering",
+      "name": "ai-first-engineering",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "first",
+        "engineering"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-ai-first-engineering",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-allinherog-star-ai-skills-skills-ai-humanizer-zh",
       "name": "ai-humanizer-zh",
@@ -9749,97 +9846,6 @@
       "source": "awesome-claude-code",
       "secureScore": 91,
       "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-automazeio-ccpm-skill-ccpm",
-      "name": "ccpm",
-      "author": "automazeio",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from automazeio/ccpm. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "ccpm"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/automazeio/ccpm/skill-ccpm",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "github-com-educlopez-ccvitals",
-      "name": "ccvitals",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [educlopez](https://github.com/educlopez) - The prettiest statusline for Claude Code — pure bash, never blocks your prompt. Usage quota, context window, git status &amp; more.",
-      "tags": [],
-      "updatedAt": "1783500266",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/educlopez/ccvitals",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-teninq-cdisc-skills-skills-cdisc",
-      "name": "cdisc",
-      "author": "teninq",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from teninq/cdisc-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cdisc"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/teninq/cdisc-skills/skills-cdisc",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-warterbili-perimeterx-re-skill-cdp",
-      "name": "cdp",
-      "author": "warterbili",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from warterbili/perimeterx_re. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "perimeterx",
-        "cdp"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/warterbili/perimeterx_re/skill-cdp",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-everyinc-compound-engineering-plugin-skills-ce-code-review",
-      "name": "ce-code-review",
-      "author": "everyinc",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from everyinc/compound-engineering-plugin. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "compound",
-        "engineering",
-        "plugin",
-        "code",
-        "review"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/everyinc/compound-engineering-plugin/skills-ce-code-review",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
     }
   ]
 }

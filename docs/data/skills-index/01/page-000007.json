@@ -1,7 +1,106 @@
 {
-  "generatedAt": "2026-07-10T09:54:37.776Z",
+  "generatedAt": "2026-07-10T15:02:03.685Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-ar9av-obsidian-wiki-skills-hermes-history-ingest",
+      "name": "hermes-history-ingest",
+      "author": "ar9av",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ar9av/obsidian-wiki. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "obsidian",
+        "wiki",
+        "hermes",
+        "history",
+        "ingest"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/ar9av/obsidian-wiki/skills-hermes-history-ingest",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-hermes-imports",
+      "name": "hermes-imports",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "hermes",
+        "imports"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-hermes-imports",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-chujianyun-skills-skills-hermes-ops",
+      "name": "hermes-ops",
+      "author": "chujianyun",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from chujianyun/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "ops"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/chujianyun/skills/skills-hermes-ops",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-hexagonal-architecture",
+      "name": "hexagonal-architecture",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "hexagonal",
+        "architecture"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-hexagonal-architecture",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-huggingface-skills-skills-hf-cli",
+      "name": "hf-cli",
+      "author": "huggingface",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from huggingface/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cli"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/huggingface/skills/skills-hf-cli",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-higgsfield-ai-skills-higgsfield-generate",
       "name": "higgsfield-generate",
@@ -9783,107 +9882,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/nowork-studio/notfair/meta-ads-audit",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-nowork-studio-notfair-meta-ads-manage",
-      "name": "meta-ads-manage",
-      "author": "nowork-studio",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from nowork-studio/notfair. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "notfair",
-        "meta",
-        "ads",
-        "manage"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/nowork-studio/notfair/meta-ads-manage",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-obra-clank-skills-meta-installing-skills",
-      "name": "meta-installing-skills",
-      "author": "obra",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from obra/clank. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "clank",
-        "meta",
-        "installing"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/obra/clank/skills-meta-installing-skills",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-sonicbotman-soloflow-skills-meta-soloflow",
-      "name": "meta-soloflow",
-      "author": "sonicbotman",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from sonicbotman/soloflow. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "soloflow",
-        "meta"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/sonicbotman/soloflow/skills-meta-soloflow",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-metabase-agent-skills-skills-metabase-database-metadata",
-      "name": "metabase-database-metadata",
-      "author": "metabase",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from metabase/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "metabase",
-        "database",
-        "metadata"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/metabase/agent-skills/skills-metabase-database-metadata",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-metabase-agent-skills-skills-metabase-embedding-sso-implementation",
-      "name": "metabase-embedding-sso-implementation",
-      "author": "metabase",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from metabase/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "metabase",
-        "embedding",
-        "sso",
-        "implementation"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/metabase/agent-skills/skills-metabase-embedding-sso-implementation",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

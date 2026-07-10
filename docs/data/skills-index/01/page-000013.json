@@ -1,7 +1,101 @@
 {
-  "generatedAt": "2026-07-10T09:54:37.776Z",
+  "generatedAt": "2026-07-10T15:02:03.685Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-cloudai-x-x-algo-skills-x-algo-ml",
+      "name": "x-algo-ml",
+      "author": "cloudai-x",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cloudai-x/x-algo-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "algo"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/cloudai-x/x-algo-skills/x-algo-ml",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-cloudai-x-x-algo-skills-x-algo-pipeline",
+      "name": "x-algo-pipeline",
+      "author": "cloudai-x",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cloudai-x/x-algo-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "algo",
+        "pipeline"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/cloudai-x/x-algo-skills/x-algo-pipeline",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-cloudai-x-x-algo-skills-x-algo-scoring",
+      "name": "x-algo-scoring",
+      "author": "cloudai-x",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cloudai-x/x-algo-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "algo",
+        "scoring"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/cloudai-x/x-algo-skills/x-algo-scoring",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-agents-skills-x-api",
+      "name": "x-api",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "agents",
+        "api"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/agents-skills-x-api",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-xpzouying-x-mcp-x-mcp",
+      "name": "x-mcp",
+      "author": "xpzouying",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from xpzouying/x-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "mcp"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/xpzouying/x-mcp/x-mcp",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-browser-use-browser-use-skills-x402",
       "name": "x402",

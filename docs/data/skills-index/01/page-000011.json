@@ -1,7 +1,114 @@
 {
-  "generatedAt": "2026-07-10T09:54:37.776Z",
+  "generatedAt": "2026-07-10T15:02:03.685Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-misonl-ling-agents-skills-red-team-tactics",
+      "name": "red-team-tactics",
+      "author": "misonl",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from misonl/ling. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ling",
+        "agents",
+        "red",
+        "team",
+        "tactics"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/misonl/ling/agents-skills-red-team-tactics",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-nativ3ai-hermes-agent-camel-skills-red-teaming-godmode",
+      "name": "red-teaming-godmode",
+      "author": "nativ3ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nativ3ai/hermes-agent-camel. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "camel",
+        "red",
+        "teaming",
+        "godmode"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/nativ3ai/hermes-agent-camel/skills-red-teaming-godmode",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-ykdojo-claude-code-tips-skills-reddit-fetch",
+      "name": "reddit-fetch",
+      "author": "ykdojo",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ykdojo/claude-code-tips. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "tips",
+        "reddit",
+        "fetch"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/ykdojo/claude-code-tips/skills-reddit-fetch",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-redis-patterns",
+      "name": "redis-patterns",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "redis",
+        "patterns"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-redis-patterns",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-promptfoo-promptfoo-agents-skills-redteam-plugin-development",
+      "name": "redteam-plugin-development",
+      "author": "promptfoo",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from promptfoo/promptfoo. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "promptfoo",
+        "agents",
+        "redteam",
+        "plugin",
+        "development"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/promptfoo/promptfoo/agents-skills-redteam-plugin-development",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-softaworks-agent-toolkit-skills-reducing-entropy",
       "name": "reducing-entropy",
@@ -9828,109 +9935,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/worldwonderer/oh-story-claudecode/skills-story-cover",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-worldwonderer-oh-story-claudecode-skills-story-deslop",
-      "name": "story-deslop",
-      "author": "worldwonderer",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from worldwonderer/oh-story-claudecode. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "story",
-        "claudecode",
-        "deslop"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/worldwonderer/oh-story-claudecode/skills-story-deslop",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-worldwonderer-oh-story-claudecode-skills-story-import",
-      "name": "story-import",
-      "author": "worldwonderer",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from worldwonderer/oh-story-claudecode. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "story",
-        "claudecode",
-        "import"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/worldwonderer/oh-story-claudecode/skills-story-import",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-worldwonderer-oh-story-claudecode-skills-story-long-analyze",
-      "name": "story-long-analyze",
-      "author": "worldwonderer",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from worldwonderer/oh-story-claudecode. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "story",
-        "claudecode",
-        "long",
-        "analyze"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/worldwonderer/oh-story-claudecode/skills-story-long-analyze",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-worldwonderer-oh-story-claudecode-skills-story-long-scan",
-      "name": "story-long-scan",
-      "author": "worldwonderer",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from worldwonderer/oh-story-claudecode. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "story",
-        "claudecode",
-        "long",
-        "scan"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/worldwonderer/oh-story-claudecode/skills-story-long-scan",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-worldwonderer-oh-story-claudecode-skills-story-long-write",
-      "name": "story-long-write",
-      "author": "worldwonderer",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from worldwonderer/oh-story-claudecode. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "story",
-        "claudecode",
-        "long",
-        "write"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/worldwonderer/oh-story-claudecode/skills-story-long-write",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

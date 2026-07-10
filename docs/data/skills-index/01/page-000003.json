@@ -1,7 +1,98 @@
 {
-  "generatedAt": "2026-07-10T09:54:37.776Z",
+  "generatedAt": "2026-07-10T15:02:03.685Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-automazeio-ccpm-skill-ccpm",
+      "name": "ccpm",
+      "author": "automazeio",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from automazeio/ccpm. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ccpm"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/automazeio/ccpm/skill-ccpm",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "github-com-educlopez-ccvitals",
+      "name": "ccvitals",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [educlopez](https://github.com/educlopez) - The prettiest statusline for Claude Code — pure bash, never blocks your prompt. Usage quota, context window, git status &amp; more.",
+      "tags": [],
+      "updatedAt": "1783500266",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/educlopez/ccvitals",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "skillsmp-teninq-cdisc-skills-skills-cdisc",
+      "name": "cdisc",
+      "author": "teninq",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from teninq/cdisc-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cdisc"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/teninq/cdisc-skills/skills-cdisc",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-warterbili-perimeterx-re-skill-cdp",
+      "name": "cdp",
+      "author": "warterbili",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from warterbili/perimeterx_re. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "perimeterx",
+        "cdp"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/warterbili/perimeterx_re/skill-cdp",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-everyinc-compound-engineering-plugin-skills-ce-code-review",
+      "name": "ce-code-review",
+      "author": "everyinc",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from everyinc/compound-engineering-plugin. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "compound",
+        "engineering",
+        "plugin",
+        "code",
+        "review"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/everyinc/compound-engineering-plugin/skills-ce-code-review",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-everyinc-compound-engineering-plugin-skills-ce-commit",
       "name": "ce-commit",
@@ -9828,110 +9919,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-eval-flywheel",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-google-skills-skills-cloud-agent-platform-inference",
-      "name": "cloud-agent-platform-inference",
-      "author": "google",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cloud",
-        "platform",
-        "inference"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-inference",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-google-skills-skills-cloud-agent-platform-migrate-from-ai-studio",
-      "name": "cloud-agent-platform-migrate-from-ai-studio",
-      "author": "google",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cloud",
-        "platform",
-        "migrate",
-        "from"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-migrate-from-ai-studio",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-google-skills-skills-cloud-agent-platform-model-registry",
-      "name": "cloud-agent-platform-model-registry",
-      "author": "google",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cloud",
-        "platform",
-        "model",
-        "registry"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-model-registry",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-google-skills-skills-cloud-agent-platform-prompt-management",
-      "name": "cloud-agent-platform-prompt-management",
-      "author": "google",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cloud",
-        "platform",
-        "prompt",
-        "management"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-prompt-management",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-google-skills-skills-cloud-agent-platform-rag-engine-management",
-      "name": "cloud-agent-platform-rag-engine-management",
-      "author": "google",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cloud",
-        "platform",
-        "rag",
-        "engine"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-rag-engine-management",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

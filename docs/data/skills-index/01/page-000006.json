@@ -1,7 +1,117 @@
 {
-  "generatedAt": "2026-07-10T09:54:37.776Z",
+  "generatedAt": "2026-07-10T15:02:03.685Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-alchaincyf-nuwa-skill-examples-sun-yuchen-perspective",
+      "name": "examples-sun-yuchen-perspective",
+      "author": "alchaincyf",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alchaincyf/nuwa-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "nuwa",
+        "examples",
+        "sun",
+        "yuchen",
+        "perspective"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alchaincyf/nuwa-skill/examples-sun-yuchen-perspective",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-camel-ai-camel-examples-toolkits-skill-toolkit-example-camel-skills-data-analyzer",
+      "name": "examples-toolkits-skill-toolkit-example-camel-skills-data-analyzer",
+      "author": "camel-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from camel-ai/camel. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "camel",
+        "examples",
+        "toolkits",
+        "toolkit",
+        "example"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/camel-ai/camel/examples-toolkits-skill-toolkit-example-camel-skills-data-analyzer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-openai-openai-agents-python-examples-tools-skills-csv-workbench",
+      "name": "examples-tools-skills-csv-workbench",
+      "author": "openai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from openai/openai-agents-python. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "openai",
+        "agents",
+        "python",
+        "examples",
+        "tools",
+        "csv"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/openai/openai-agents-python/examples-tools-skills-csv-workbench",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alchaincyf-nuwa-skill-examples-trump-perspective",
+      "name": "examples-trump-perspective",
+      "author": "alchaincyf",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alchaincyf/nuwa-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "nuwa",
+        "examples",
+        "trump",
+        "perspective"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alchaincyf/nuwa-skill/examples-trump-perspective",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alchaincyf-nuwa-skill-examples-zhang-yiming-perspective",
+      "name": "examples-zhang-yiming-perspective",
+      "author": "alchaincyf",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alchaincyf/nuwa-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "nuwa",
+        "examples",
+        "zhang",
+        "yiming",
+        "perspective"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alchaincyf/nuwa-skill/examples-zhang-yiming-perspective",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-alchaincyf-nuwa-skill-examples-zhangxuefeng-perspective",
       "name": "examples-zhangxuefeng-perspective",
@@ -9976,105 +10086,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/fathah/hermes-desktop/agents-skills-hermes-agent",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-ar9av-obsidian-wiki-skills-hermes-history-ingest",
-      "name": "hermes-history-ingest",
-      "author": "ar9av",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from ar9av/obsidian-wiki. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "obsidian",
-        "wiki",
-        "hermes",
-        "history",
-        "ingest"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/ar9av/obsidian-wiki/skills-hermes-history-ingest",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-affaan-m-ecc-skills-hermes-imports",
-      "name": "hermes-imports",
-      "author": "affaan-m",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "ecc",
-        "hermes",
-        "imports"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-hermes-imports",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-chujianyun-skills-skills-hermes-ops",
-      "name": "hermes-ops",
-      "author": "chujianyun",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from chujianyun/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "hermes",
-        "ops"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/chujianyun/skills/skills-hermes-ops",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-affaan-m-ecc-skills-hexagonal-architecture",
-      "name": "hexagonal-architecture",
-      "author": "affaan-m",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "ecc",
-        "hexagonal",
-        "architecture"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-hexagonal-architecture",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-huggingface-skills-skills-hf-cli",
-      "name": "hf-cli",
-      "author": "huggingface",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from huggingface/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cli"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/huggingface/skills/skills-hf-cli",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

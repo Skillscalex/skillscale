@@ -1,7 +1,112 @@
 {
-  "generatedAt": "2026-07-10T09:54:37.776Z",
+  "generatedAt": "2026-07-10T15:02:03.685Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-fvhreimert-claude-session-handoff-plugins-claude-session-handoff-skills-claude-session-handoff",
+      "name": "plugins-claude-session-handoff-skills-claude-session-handoff",
+      "author": "fvhreimert",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from fvhreimert/claude-session-handoff. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "session",
+        "handoff",
+        "plugins"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/fvhreimert/claude-session-handoff/plugins-claude-session-handoff-skills-claude-session-handoff",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wonderwhy-er-desktopcommandermcp-plugins-claude-skills-knowledge-base",
+      "name": "plugins-claude-skills-knowledge-base",
+      "author": "wonderwhy-er",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wonderwhy-er/desktopcommandermcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "desktopcommandermcp",
+        "plugins",
+        "knowledge",
+        "base"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wonderwhy-er/desktopcommandermcp/plugins-claude-skills-knowledge-base",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wshobson-agents-plugins-cloud-infrastructure-skills-terraform-module-library",
+      "name": "plugins-cloud-infrastructure-skills-terraform-module-library",
+      "author": "wshobson",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wshobson/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "plugins",
+        "cloud",
+        "infrastructure",
+        "terraform"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-cloud-infrastructure-skills-terraform-module-library",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-openai-plugins-plugins-cloudflare-skills-sandbox-sdk",
+      "name": "plugins-cloudflare-skills-sandbox-sdk",
+      "author": "openai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from openai/plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "cloudflare",
+        "sandbox",
+        "sdk"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/openai/plugins/plugins-cloudflare-skills-sandbox-sdk",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-jezweb-claude-skills-plugins-cloudflare-skills-tanstack-start",
+      "name": "plugins-cloudflare-skills-tanstack-start",
+      "author": "jezweb",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from jezweb/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "cloudflare",
+        "tanstack",
+        "start"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/jezweb/claude-skills/plugins-cloudflare-skills-tanstack-start",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-ajoao-totvs-claude-setup-plugins-cnab-protheus-skills-cnab-protheus",
       "name": "plugins-cnab-protheus-skills-cnab-protheus",
@@ -10180,113 +10285,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/kayba-ai/recursive-improve/recursive-improve-data",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-misonl-ling-agents-skills-red-team-tactics",
-      "name": "red-team-tactics",
-      "author": "misonl",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from misonl/ling. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "ling",
-        "agents",
-        "red",
-        "team",
-        "tactics"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/misonl/ling/agents-skills-red-team-tactics",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-nativ3ai-hermes-agent-camel-skills-red-teaming-godmode",
-      "name": "red-teaming-godmode",
-      "author": "nativ3ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from nativ3ai/hermes-agent-camel. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "hermes",
-        "camel",
-        "red",
-        "teaming",
-        "godmode"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/nativ3ai/hermes-agent-camel/skills-red-teaming-godmode",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-ykdojo-claude-code-tips-skills-reddit-fetch",
-      "name": "reddit-fetch",
-      "author": "ykdojo",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from ykdojo/claude-code-tips. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "tips",
-        "reddit",
-        "fetch"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/ykdojo/claude-code-tips/skills-reddit-fetch",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-affaan-m-ecc-skills-redis-patterns",
-      "name": "redis-patterns",
-      "author": "affaan-m",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "ecc",
-        "redis",
-        "patterns"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-redis-patterns",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-promptfoo-promptfoo-agents-skills-redteam-plugin-development",
-      "name": "redteam-plugin-development",
-      "author": "promptfoo",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from promptfoo/promptfoo. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "promptfoo",
-        "agents",
-        "redteam",
-        "plugin",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/promptfoo/promptfoo/agents-skills-redteam-plugin-development",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

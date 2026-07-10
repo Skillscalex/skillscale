@@ -1,7 +1,103 @@
 {
-  "generatedAt": "2026-07-10T09:54:37.776Z",
+  "generatedAt": "2026-07-10T15:02:03.685Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "github-com-sawyerhood-dev-browser",
+      "name": "Dev Browser",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [Sawyer Hood](https://github.com/SawyerHood) - A browser-automation plugin/skill that lets Claude Code drive a browser to test and verify its own work — full Playwright API plus pixel- and DOM-level computer-use toolsets, connecting to your running Chrome or a fresh Chromium. Notably secure and fast: scripts execute inside a QuickJS WASM sandbox with no host filesystem or network access, and a published benchmark shows it beating Playwright MCP on time, cost, and turns.",
+      "tags": [],
+      "updatedAt": "1783500265",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/SawyerHood/dev-browser",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "skillsmp-sawyerhood-dev-browser-skills-dev-browser",
+      "name": "dev-browser",
+      "author": "sawyerhood",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sawyerhood/dev-browser. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "dev",
+        "browser"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/sawyerhood/dev-browser/skills-dev-browser",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-angular-angular-skills-dev-skills-angular-developer",
+      "name": "dev-skills-angular-developer",
+      "author": "angular",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from angular/angular. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "angular",
+        "dev",
+        "developer"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/angular/angular/skills-dev-skills-angular-developer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-angular-angular-skills-dev-skills-angular-new-app",
+      "name": "dev-skills-angular-new-app",
+      "author": "angular",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from angular/angular. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "angular",
+        "dev",
+        "new",
+        "app"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/angular/angular/skills-dev-skills-angular-new-app",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-khalilbenaz-claude-skills-collection-dev-skills-azure-devops-pipeline-advisor",
+      "name": "dev-skills-azure-devops-pipeline-advisor",
+      "author": "khalilbenaz",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from khalilbenaz/claude-skills-collection. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "collection",
+        "dev",
+        "azure",
+        "devops",
+        "pipeline"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/khalilbenaz/claude-skills-collection/dev-skills-azure-devops-pipeline-advisor",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-xstongxue-best-skills-skills-dev-workflow",
       "name": "dev-workflow",
@@ -10180,116 +10276,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/alchaincyf/nuwa-skill/examples-steve-jobs-perspective",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-alchaincyf-nuwa-skill-examples-sun-yuchen-perspective",
-      "name": "examples-sun-yuchen-perspective",
-      "author": "alchaincyf",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from alchaincyf/nuwa-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "nuwa",
-        "examples",
-        "sun",
-        "yuchen",
-        "perspective"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/alchaincyf/nuwa-skill/examples-sun-yuchen-perspective",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-camel-ai-camel-examples-toolkits-skill-toolkit-example-camel-skills-data-analyzer",
-      "name": "examples-toolkits-skill-toolkit-example-camel-skills-data-analyzer",
-      "author": "camel-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from camel-ai/camel. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "camel",
-        "examples",
-        "toolkits",
-        "toolkit",
-        "example"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/camel-ai/camel/examples-toolkits-skill-toolkit-example-camel-skills-data-analyzer",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-openai-openai-agents-python-examples-tools-skills-csv-workbench",
-      "name": "examples-tools-skills-csv-workbench",
-      "author": "openai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from openai/openai-agents-python. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openai",
-        "agents",
-        "python",
-        "examples",
-        "tools",
-        "csv"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/openai/openai-agents-python/examples-tools-skills-csv-workbench",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-alchaincyf-nuwa-skill-examples-trump-perspective",
-      "name": "examples-trump-perspective",
-      "author": "alchaincyf",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from alchaincyf/nuwa-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "nuwa",
-        "examples",
-        "trump",
-        "perspective"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/alchaincyf/nuwa-skill/examples-trump-perspective",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-alchaincyf-nuwa-skill-examples-zhang-yiming-perspective",
-      "name": "examples-zhang-yiming-perspective",
-      "author": "alchaincyf",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from alchaincyf/nuwa-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "nuwa",
-        "examples",
-        "zhang",
-        "yiming",
-        "perspective"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/alchaincyf/nuwa-skill/examples-zhang-yiming-perspective",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,117 @@
 {
-  "generatedAt": "2026-07-10T09:54:37.776Z",
+  "generatedAt": "2026-07-10T15:02:03.685Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-gl-reconciler-skills-break-trace",
+      "name": "plugins-agent-plugins-gl-reconciler-skills-break-trace",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "financial",
+        "services",
+        "plugins",
+        "reconciler",
+        "break"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-gl-reconciler-skills-break-trace",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-gl-reconciler-skills-gl-recon",
+      "name": "plugins-agent-plugins-gl-reconciler-skills-gl-recon",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "financial",
+        "services",
+        "plugins",
+        "reconciler",
+        "recon"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-gl-reconciler-skills-gl-recon",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-kyc-screener-skills-kyc-doc-parse",
+      "name": "plugins-agent-plugins-kyc-screener-skills-kyc-doc-parse",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "financial",
+        "services",
+        "plugins",
+        "kyc",
+        "screener"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-kyc-screener-skills-kyc-doc-parse",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-kyc-screener-skills-kyc-rules",
+      "name": "plugins-agent-plugins-kyc-screener-skills-kyc-rules",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "financial",
+        "services",
+        "plugins",
+        "kyc",
+        "screener"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-kyc-screener-skills-kyc-rules",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-month-end-closer-skills-accrual-schedule",
+      "name": "plugins-agent-plugins-month-end-closer-skills-accrual-schedule",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "financial",
+        "services",
+        "plugins",
+        "month",
+        "end"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-month-end-closer-skills-accrual-schedule",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-month-end-closer-skills-roll-forward",
       "name": "plugins-agent-plugins-month-end-closer-skills-roll-forward",
@@ -10373,111 +10483,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/f/prompts.chat/plugins-claude-prompts-chat-skills-skill-lookup",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-fvhreimert-claude-session-handoff-plugins-claude-session-handoff-skills-claude-session-handoff",
-      "name": "plugins-claude-session-handoff-skills-claude-session-handoff",
-      "author": "fvhreimert",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from fvhreimert/claude-session-handoff. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "session",
-        "handoff",
-        "plugins"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/fvhreimert/claude-session-handoff/plugins-claude-session-handoff-skills-claude-session-handoff",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wonderwhy-er-desktopcommandermcp-plugins-claude-skills-knowledge-base",
-      "name": "plugins-claude-skills-knowledge-base",
-      "author": "wonderwhy-er",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wonderwhy-er/desktopcommandermcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "desktopcommandermcp",
-        "plugins",
-        "knowledge",
-        "base"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wonderwhy-er/desktopcommandermcp/plugins-claude-skills-knowledge-base",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wshobson-agents-plugins-cloud-infrastructure-skills-terraform-module-library",
-      "name": "plugins-cloud-infrastructure-skills-terraform-module-library",
-      "author": "wshobson",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wshobson/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "agents",
-        "plugins",
-        "cloud",
-        "infrastructure",
-        "terraform"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-cloud-infrastructure-skills-terraform-module-library",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-openai-plugins-plugins-cloudflare-skills-sandbox-sdk",
-      "name": "plugins-cloudflare-skills-sandbox-sdk",
-      "author": "openai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from openai/plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "plugins",
-        "cloudflare",
-        "sandbox",
-        "sdk"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/openai/plugins/plugins-cloudflare-skills-sandbox-sdk",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-jezweb-claude-skills-plugins-cloudflare-skills-tanstack-start",
-      "name": "plugins-cloudflare-skills-tanstack-start",
-      "author": "jezweb",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from jezweb/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "plugins",
-        "cloudflare",
-        "tanstack",
-        "start"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/jezweb/claude-skills/plugins-cloudflare-skills-tanstack-start",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

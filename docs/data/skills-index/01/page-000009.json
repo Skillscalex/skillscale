@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-11T13:55:15.998Z",
+  "generatedAt": "2026-07-11T19:32:49.555Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-adobe-skills-plugins-aem-edge-delivery-services-skills-scrape-webpage",
+      "name": "plugins-aem-edge-delivery-services-skills-scrape-webpage",
+      "author": "adobe",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "aem",
+        "edge",
+        "delivery"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-edge-delivery-services-skills-scrape-webpage",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-adobe-skills-plugins-aem-edge-delivery-services-skills-slicc-handoff",
       "name": "plugins-aem-edge-delivery-services-skills-slicc-handoff",
@@ -10465,27 +10486,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/joaoh82/rustunnel/plugins-claude-code-skills-rustunnel",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-microsoft-skillopt-plugins-claude-code-skills-skillopt-sleep",
-      "name": "plugins-claude-code-skills-skillopt-sleep",
-      "author": "microsoft",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from microsoft/skillopt. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "skillopt",
-        "plugins",
-        "code",
-        "sleep"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skillopt/plugins-claude-code-skills-skillopt-sleep",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

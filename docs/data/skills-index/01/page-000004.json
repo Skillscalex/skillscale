@@ -1,7 +1,30 @@
 {
-  "generatedAt": "2026-07-11T13:55:15.998Z",
+  "generatedAt": "2026-07-11T19:32:49.555Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-lintendo-axhub-make-client-agents-skills-prototype-annotation",
+      "name": "client-agents-skills-prototype-annotation",
+      "author": "lintendo",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lintendo/axhub-make. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "axhub",
+        "make",
+        "client",
+        "agents",
+        "prototype",
+        "annotation"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/lintendo/axhub-make/client-agents-skills-prototype-annotation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "agent-cline",
       "name": "cline",
@@ -10081,26 +10104,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-depmap",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-easysoft-zentao-skills-skills-deprecated-zentao-api",
-      "name": "deprecated-zentao-api",
-      "author": "easysoft",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from easysoft/zentao-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "zentao",
-        "deprecated",
-        "api"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/easysoft/zentao-skills/skills-deprecated-zentao-api",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

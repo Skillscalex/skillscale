@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-11T13:55:15.998Z",
+  "generatedAt": "2026-07-11T19:32:49.555Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-microsoft-skillopt-plugins-claude-code-skills-skillopt-sleep",
+      "name": "plugins-claude-code-skills-skillopt-sleep",
+      "author": "microsoft",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from microsoft/skillopt. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "skillopt",
+        "plugins",
+        "code",
+        "sleep"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skillopt/plugins-claude-code-skills-skillopt-sleep",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-docfork-docfork-plugins-claude-docfork-skills-docfork-docs",
       "name": "plugins-claude-docfork-skills-docfork-docs",
@@ -10264,26 +10285,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/dpearson2699/swift-ios-skills/skills-realitykit",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-andreev-danila-skills-skills-reanimated-skia-performance",
-      "name": "reanimated-skia-performance",
-      "author": "andreev-danila",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from andreev-danila/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "reanimated",
-        "skia",
-        "performance"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/andreev-danila/skills/skills-reanimated-skia-performance",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

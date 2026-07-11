@@ -1,7 +1,25 @@
 {
-  "generatedAt": "2026-07-11T13:55:15.998Z",
+  "generatedAt": "2026-07-11T19:32:49.555Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-agoraio-skills-skills-agora",
+      "name": "agora",
+      "author": "agoraio",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from agoraio/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agora"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/agoraio/skills/skills-agora",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-haibarakiku-awesome-skills-skills-agriculture-agronomist",
       "name": "agriculture-agronomist",
@@ -9846,25 +9864,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-caveman-compress",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-juliusbrussee-caveman-skills-caveman-help",
-      "name": "caveman-help",
-      "author": "juliusbrussee",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from juliusbrussee/caveman. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "caveman",
-        "help"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-caveman-help",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

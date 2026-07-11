@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-11T13:55:15.998Z",
+  "generatedAt": "2026-07-11T19:32:49.555Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-ruvnet-ruflo-agents-skills-memory-management",
+      "name": "memory-management",
+      "author": "ruvnet",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ruvnet/ruflo. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ruflo",
+        "agents",
+        "memory",
+        "management"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/ruvnet/ruflo/agents-skills-memory-management",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-neoli00-memx-skills-memx",
       "name": "memx",
@@ -9951,27 +9972,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-edge-delivery-services-skills-preview-import",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-adobe-skills-plugins-aem-edge-delivery-services-skills-scrape-webpage",
-      "name": "plugins-aem-edge-delivery-services-skills-scrape-webpage",
-      "author": "adobe",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "plugins",
-        "aem",
-        "edge",
-        "delivery"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-edge-delivery-services-skills-scrape-webpage",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

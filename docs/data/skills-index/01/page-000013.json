@@ -1,7 +1,69 @@
 {
-  "generatedAt": "2026-07-11T08:15:52.622Z",
+  "generatedAt": "2026-07-11T13:55:15.998Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-cloudflare-skills-skills-wrangler",
+      "name": "wrangler",
+      "author": "cloudflare",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cloudflare/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "wrangler"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/cloudflare/skills/skills-wrangler",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-programmeranthony-anything-extract-agents-skills-write-a-prd",
+      "name": "write-a-prd",
+      "author": "programmeranthony",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from programmeranthony/anything-extract. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anything",
+        "extract",
+        "agents",
+        "write",
+        "prd"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/programmeranthony/anything-extract/agents-skills-write-a-prd",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-quadient-migration-stack-agents-skills-write-parser",
+      "name": "write-parser",
+      "author": "quadient",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from quadient/migration-stack. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "migration",
+        "stack",
+        "agents",
+        "write",
+        "parser"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/quadient/migration-stack/agents-skills-write-parser",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "writing-a-good-claude-md-github-awesome-unknown",
       "name": "Writing a Good CLAUDE.md",

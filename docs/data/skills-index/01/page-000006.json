@@ -1,7 +1,73 @@
 {
-  "generatedAt": "2026-07-11T08:15:52.622Z",
+  "generatedAt": "2026-07-11T13:55:15.998Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-tibsfox-gsd-skill-creator-examples-skills-engineering-structural-analysis",
+      "name": "examples-skills-engineering-structural-analysis",
+      "author": "tibsfox",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from tibsfox/gsd-skill-creator. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gsd",
+        "creator",
+        "examples",
+        "engineering",
+        "structural",
+        "analysis"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/tibsfox/gsd-skill-creator/examples-skills-engineering-structural-analysis",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-tibsfox-gsd-skill-creator-examples-skills-engineering-systems-engineering",
+      "name": "examples-skills-engineering-systems-engineering",
+      "author": "tibsfox",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from tibsfox/gsd-skill-creator. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gsd",
+        "creator",
+        "examples",
+        "engineering",
+        "systems"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/tibsfox/gsd-skill-creator/examples-skills-engineering-systems-engineering",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-langchain-ai-deepagentsjs-examples-skills-file-organizer",
+      "name": "examples-skills-file-organizer",
+      "author": "langchain-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from langchain-ai/deepagentsjs. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "deepagentsjs",
+        "examples",
+        "file",
+        "organizer"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/langchain-ai/deepagentsjs/examples-skills-file-organizer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-tibsfox-gsd-skill-creator-examples-skills-home-economics-nutrition-and-meal-planning",
       "name": "examples-skills-home-economics-nutrition-and-meal-planning",
@@ -10041,67 +10107,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/majiayu000/spellbook/skills-harmonyos-app",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-revfactory-harness-skills-harness",
-      "name": "harness",
-      "author": "revfactory",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from revfactory/harness. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "harness"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/revfactory/harness/skills-harness",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-muratcankoylan-agent-skills-for-context-engineering-skills-harness-engineering",
-      "name": "harness-engineering",
-      "author": "muratcankoylan",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from muratcankoylan/agent-skills-for-context-engineering. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "for",
-        "context",
-        "engineering",
-        "harness"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/muratcankoylan/agent-skills-for-context-engineering/skills-harness-engineering",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-cgallic-kai-cmo-harness-harness-skills-kai-topical-map",
-      "name": "harness-skills-kai-topical-map",
-      "author": "cgallic",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from cgallic/kai-cmo-harness. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "kai",
-        "cmo",
-        "harness",
-        "topical",
-        "map"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/cgallic/kai-cmo-harness/harness-skills-kai-topical-map",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

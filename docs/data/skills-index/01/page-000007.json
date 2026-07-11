@@ -1,7 +1,68 @@
 {
-  "generatedAt": "2026-07-11T08:15:52.622Z",
+  "generatedAt": "2026-07-11T13:55:15.998Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-revfactory-harness-skills-harness",
+      "name": "harness",
+      "author": "revfactory",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from revfactory/harness. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "harness"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/revfactory/harness/skills-harness",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-muratcankoylan-agent-skills-for-context-engineering-skills-harness-engineering",
+      "name": "harness-engineering",
+      "author": "muratcankoylan",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from muratcankoylan/agent-skills-for-context-engineering. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "for",
+        "context",
+        "engineering",
+        "harness"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/muratcankoylan/agent-skills-for-context-engineering/skills-harness-engineering",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-cgallic-kai-cmo-harness-harness-skills-kai-topical-map",
+      "name": "harness-skills-kai-topical-map",
+      "author": "cgallic",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cgallic/kai-cmo-harness. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "kai",
+        "cmo",
+        "harness",
+        "topical",
+        "map"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/cgallic/kai-cmo-harness/harness-skills-kai-topical-map",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-aannoo-hcom-skills-hcom-agent-messaging",
       "name": "hcom-agent-messaging",
@@ -9822,63 +9883,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/ruvnet/ruflo/agents-skills-memory-management",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-neoli00-memx-skills-memx",
-      "name": "memx",
-      "author": "neoli00",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from neoli00/memx. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "memx"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/neoli00/memx/skills-memx",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-github-awesome-copilot-skills-mentoring-juniors",
-      "name": "mentoring-juniors",
-      "author": "github",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "awesome",
-        "copilot",
-        "mentoring",
-        "juniors"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-mentoring-juniors",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-ansanabria-skills-skills-mercadopago",
-      "name": "mercadopago",
-      "author": "ansanabria",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from ansanabria/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "mercadopago"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/ansanabria/skills/skills-mercadopago",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

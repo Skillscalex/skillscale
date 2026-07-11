@@ -1,7 +1,69 @@
 {
-  "generatedAt": "2026-07-11T08:15:52.622Z",
+  "generatedAt": "2026-07-11T13:55:15.998Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-ruvnet-ruflo-agents-skills-reasoningbank-intelligence",
+      "name": "reasoningbank-intelligence",
+      "author": "ruvnet",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ruvnet/ruflo. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ruflo",
+        "agents",
+        "reasoningbank",
+        "intelligence"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/ruvnet/ruflo/agents-skills-reasoningbank-intelligence",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-hkuds-cli-anything-reasonix-skill",
+      "name": "reasonix",
+      "author": "hkuds",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from hkuds/cli-anything. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cli",
+        "anything",
+        "reasonix"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/hkuds/cli-anything/reasonix-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-zesion21-reasonix-project-template-reasonix-skills-frontend",
+      "name": "reasonix-skills-frontend",
+      "author": "zesion21",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zesion21/reasonix-project-template. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "reasonix",
+        "project",
+        "template",
+        "frontend"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/zesion21/reasonix-project-template/reasonix-skills-frontend",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-obra-superpowers-skills-receiving-code-review",
       "name": "receiving-code-review",
@@ -9878,68 +9940,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/netease-youdao/lobsterai/skills-stock-announcements",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-yourdaylight-stock-datasource-skills-stock-data-assistant",
-      "name": "stock-data-assistant",
-      "author": "yourdaylight",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from yourdaylight/stock_datasource. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "stock",
-        "datasource",
-        "data",
-        "assistant"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/yourdaylight/stock_datasource/skills-stock-data-assistant",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-netease-youdao-lobsterai-skills-stock-explorer",
-      "name": "stock-explorer",
-      "author": "netease-youdao",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from netease-youdao/lobsterai. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "lobsterai",
-        "stock",
-        "explorer"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/netease-youdao/lobsterai/skills-stock-explorer",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-chengzuopeng-stock-sdk-mcp-skills-stock-screener",
-      "name": "stock-screener",
-      "author": "chengzuopeng",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from chengzuopeng/stock-sdk-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "stock",
-        "sdk",
-        "mcp",
-        "screener"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/chengzuopeng/stock-sdk-mcp/skills-stock-screener",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

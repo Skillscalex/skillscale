@@ -1,7 +1,58 @@
 {
-  "generatedAt": "2026-07-11T08:15:52.622Z",
+  "generatedAt": "2026-07-11T13:55:15.998Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-addyosmani-agent-skills-skills-deprecation-and-migration",
+      "name": "deprecation-and-migration",
+      "author": "addyosmani",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from addyosmani/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "deprecation",
+        "and",
+        "migration"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/addyosmani/agent-skills/skills-deprecation-and-migration",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "topic-design",
+      "name": "design",
+      "author": "topic",
+      "stars": 0,
+      "description": "skills.sh leaderboard skill from topic.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783503155",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/topic",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "desktop-commander-claude-mcp-server",
+      "name": "desktop-commander",
+      "author": "Claude",
+      "stars": 0,
+      "description": "MCP server for terminal commands, process management, and file operations across text, code, PDF, DOCX, Excel, images...",
+      "tags": [],
+      "updatedAt": "1781508337",
+      "occupationId": "01",
+      "source": "claude-official-plugins",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "skillsmp-54laowang-hermes-agent-desktop-pet",
       "name": "desktop-pet",
@@ -10201,72 +10252,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/langchain-ai/deepagentsjs/examples-skills-arxiv-search",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-tibsfox-gsd-skill-creator-examples-skills-engineering-structural-analysis",
-      "name": "examples-skills-engineering-structural-analysis",
-      "author": "tibsfox",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from tibsfox/gsd-skill-creator. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gsd",
-        "creator",
-        "examples",
-        "engineering",
-        "structural",
-        "analysis"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/tibsfox/gsd-skill-creator/examples-skills-engineering-structural-analysis",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-tibsfox-gsd-skill-creator-examples-skills-engineering-systems-engineering",
-      "name": "examples-skills-engineering-systems-engineering",
-      "author": "tibsfox",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from tibsfox/gsd-skill-creator. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gsd",
-        "creator",
-        "examples",
-        "engineering",
-        "systems"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/tibsfox/gsd-skill-creator/examples-skills-engineering-systems-engineering",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-langchain-ai-deepagentsjs-examples-skills-file-organizer",
-      "name": "examples-skills-file-organizer",
-      "author": "langchain-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from langchain-ai/deepagentsjs. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "deepagentsjs",
-        "examples",
-        "file",
-        "organizer"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/langchain-ai/deepagentsjs/examples-skills-file-organizer",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,69 @@
 {
-  "generatedAt": "2026-07-11T08:15:52.622Z",
+  "generatedAt": "2026-07-11T13:55:15.998Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-docfork-docfork-plugins-claude-docfork-skills-docfork-docs",
+      "name": "plugins-claude-docfork-skills-docfork-docs",
+      "author": "docfork",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from docfork/docfork. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "docfork",
+        "plugins",
+        "docs"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/docfork/docfork/plugins-claude-docfork-skills-docfork-docs",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mozilla-firefox-devtools-mcp-plugins-claude-firefox-devtools-skills-browser-automation",
+      "name": "plugins-claude-firefox-devtools-skills-browser-automation",
+      "author": "mozilla",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mozilla/firefox-devtools-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "firefox",
+        "devtools",
+        "mcp",
+        "plugins",
+        "browser"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/mozilla/firefox-devtools-mcp/plugins-claude-firefox-devtools-skills-browser-automation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-trailofbits-skills-plugins-claude-in-chrome-troubleshooting-skills-chrome-mcp-troubleshooting",
+      "name": "plugins-claude-in-chrome-troubleshooting-skills-chrome-mcp-troubleshooting",
+      "author": "trailofbits",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from trailofbits/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "chrome",
+        "troubleshooting"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/trailofbits/skills/plugins-claude-in-chrome-troubleshooting-skills-chrome-mcp-troubleshooting",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-anthropics-claude-plugins-official-plugins-claude-md-management-skills-claude-md-improver",
       "name": "plugins-claude-md-management-skills-claude-md-improver",
@@ -10222,68 +10284,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/andreev-danila/skills/skills-reanimated-skia-performance",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-ruvnet-ruflo-agents-skills-reasoningbank-intelligence",
-      "name": "reasoningbank-intelligence",
-      "author": "ruvnet",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from ruvnet/ruflo. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "ruflo",
-        "agents",
-        "reasoningbank",
-        "intelligence"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/ruvnet/ruflo/agents-skills-reasoningbank-intelligence",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-hkuds-cli-anything-reasonix-skill",
-      "name": "reasonix",
-      "author": "hkuds",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from hkuds/cli-anything. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cli",
-        "anything",
-        "reasonix"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/hkuds/cli-anything/reasonix-skill",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-zesion21-reasonix-project-template-reasonix-skills-frontend",
-      "name": "reasonix-skills-frontend",
-      "author": "zesion21",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from zesion21/reasonix-project-template. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "reasonix",
-        "project",
-        "template",
-        "frontend"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/zesion21/reasonix-project-template/reasonix-skills-frontend",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

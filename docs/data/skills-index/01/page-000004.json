@@ -1,7 +1,64 @@
 {
-  "generatedAt": "2026-07-11T08:15:52.622Z",
+  "generatedAt": "2026-07-11T13:55:15.998Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "agent-cline",
+      "name": "cline",
+      "author": "agent",
+      "stars": 0,
+      "description": "skills.sh leaderboard skill from agent.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783503155",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/agent",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "skillsmp-xixihhhh-clipforge-skills-clipforge",
+      "name": "clipforge",
+      "author": "xixihhhh",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from xixihhhh/clipforge. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "clipforge"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/xixihhhh/clipforge/skills-clipforge",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-yournextstore-yournextstore-agents-skills-clone-website",
+      "name": "clone-website",
+      "author": "yournextstore",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from yournextstore/yournextstore. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "yournextstore",
+        "agents",
+        "clone",
+        "website"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/yournextstore/yournextstore/agents-skills-clone-website",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-browser-use-browser-use-skills-cloud",
       "name": "cloud",
@@ -10047,57 +10104,6 @@
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-addyosmani-agent-skills-skills-deprecation-and-migration",
-      "name": "deprecation-and-migration",
-      "author": "addyosmani",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from addyosmani/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "deprecation",
-        "and",
-        "migration"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/addyosmani/agent-skills/skills-deprecation-and-migration",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "topic-design",
-      "name": "design",
-      "author": "topic",
-      "stars": 0,
-      "description": "skills.sh leaderboard skill from topic.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783503155",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/topic",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "desktop-commander-claude-mcp-server",
-      "name": "desktop-commander",
-      "author": "Claude",
-      "stars": 0,
-      "description": "MCP server for terminal commands, process management, and file operations across text, code, PDF, DOCX, Excel, images...",
-      "tags": [],
-      "updatedAt": "1781508337",
-      "occupationId": "01",
-      "source": "claude-official-plugins",
-      "secureScore": 91,
-      "auditStatus": "approved"
     }
   ]
 }

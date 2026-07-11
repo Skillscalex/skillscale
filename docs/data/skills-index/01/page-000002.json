@@ -1,7 +1,55 @@
 {
-  "generatedAt": "2026-07-11T08:15:52.622Z",
+  "generatedAt": "2026-07-11T13:55:15.998Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-haibarakiku-awesome-skills-skills-agriculture-agronomist",
+      "name": "agriculture-agronomist",
+      "author": "haibarakiku",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from haibarakiku/awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "agriculture",
+        "agronomist"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/haibarakiku/awesome-skills/skills-agriculture-agronomist",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "github-com-wenyuchiou-ai-research-skills",
+      "name": "AI Research Skills",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [Wenyu Chiou](https://github.com/WenyuChiou) - A catalog of 15 Claude Code skills mapped to 8 research-workflow stages (literature → gap analysis → design → drafting → reviewer response), where each stage emits an explicit YAML/Markdown deliverable the next stage consumes. Thoughtfully designed around anti-hallucination — schemas force \"gap\" status on unsupported claims, and downstream skills refuse malformed, overconfident handoffs.",
+      "tags": [],
+      "updatedAt": "1783500264",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/WenyuChiou/ai-research-skills",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "github-com-devinosolutions-ai-agent-notifier",
+      "name": "ai-agent-notifier",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [Amin Dhouib (Devino Solutions)](https://github.com/DevinoSolutions) - A zero-dependency, cross-platform notifier that fires a desktop toast and a free phone push (via ntfy) the moment Claude Code (or Codex/Cursor/Gemini) finishes a task or needs input, wired up by a one-command setup. The standout among notifiers is its testing rigor — CI drives the *real* agent CLIs end to end and asserts real ntfy round-trips and real OS toast delivery, no mocks.",
+      "tags": [],
+      "updatedAt": "1783500264",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/DevinoSolutions/ai-agent-notifier",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "skillsmp-luokai0-ai-agent-skills-by-luo-kai-ai-agent-skills-14-chemistry-and-biology-by-luo-kai-medicinal-chemistry-expert",
       "name": "ai-agent-skills-14-chemistry-and-biology-by-luo-kai-medicinal-chemistry-expert",
@@ -9817,62 +9865,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-caveman-help",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-juliusbrussee-caveman-skills-caveman-review",
-      "name": "caveman-review",
-      "author": "juliusbrussee",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from juliusbrussee/caveman. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "caveman",
-        "review"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-caveman-review",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-juliusbrussee-caveman-skills-caveman-stats",
-      "name": "caveman-stats",
-      "author": "juliusbrussee",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from juliusbrussee/caveman. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "caveman",
-        "stats"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-caveman-stats",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-terminalskills-skills-skills-cc-connect",
-      "name": "cc-connect",
-      "author": "terminalskills",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from terminalskills/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "connect"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/terminalskills/skills/skills-cc-connect",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

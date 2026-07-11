@@ -1,7 +1,70 @@
 {
-  "generatedAt": "2026-07-11T08:15:52.622Z",
+  "generatedAt": "2026-07-11T13:55:15.998Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-adobe-skills-plugins-aem-edge-delivery-services-skills-slicc-handoff",
+      "name": "plugins-aem-edge-delivery-services-skills-slicc-handoff",
+      "author": "adobe",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "aem",
+        "edge",
+        "delivery"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-edge-delivery-services-skills-slicc-handoff",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-adobe-skills-plugins-aem-edge-delivery-services-skills-testing-blocks",
+      "name": "plugins-aem-edge-delivery-services-skills-testing-blocks",
+      "author": "adobe",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "aem",
+        "edge",
+        "delivery"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-edge-delivery-services-skills-testing-blocks",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-adobe-skills-plugins-aem-edge-delivery-services-skills-ue-component-model",
+      "name": "plugins-aem-edge-delivery-services-skills-ue-component-model",
+      "author": "adobe",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "aem",
+        "edge",
+        "delivery"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-edge-delivery-services-skills-ue-component-model",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-adobe-skills-plugins-aem-project-management-skills-auth",
       "name": "plugins-aem-project-management-skills-auth",
@@ -10423,68 +10486,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skillopt/plugins-claude-code-skills-skillopt-sleep",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-docfork-docfork-plugins-claude-docfork-skills-docfork-docs",
-      "name": "plugins-claude-docfork-skills-docfork-docs",
-      "author": "docfork",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from docfork/docfork. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "docfork",
-        "plugins",
-        "docs"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/docfork/docfork/plugins-claude-docfork-skills-docfork-docs",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-mozilla-firefox-devtools-mcp-plugins-claude-firefox-devtools-skills-browser-automation",
-      "name": "plugins-claude-firefox-devtools-skills-browser-automation",
-      "author": "mozilla",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from mozilla/firefox-devtools-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "firefox",
-        "devtools",
-        "mcp",
-        "plugins",
-        "browser"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/mozilla/firefox-devtools-mcp/plugins-claude-firefox-devtools-skills-browser-automation",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-trailofbits-skills-plugins-claude-in-chrome-troubleshooting-skills-chrome-mcp-troubleshooting",
-      "name": "plugins-claude-in-chrome-troubleshooting-skills-chrome-mcp-troubleshooting",
-      "author": "trailofbits",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from trailofbits/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "plugins",
-        "chrome",
-        "troubleshooting"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/trailofbits/skills/plugins-claude-in-chrome-troubleshooting-skills-chrome-mcp-troubleshooting",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

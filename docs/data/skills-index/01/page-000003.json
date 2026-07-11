@@ -1,7 +1,63 @@
 {
-  "generatedAt": "2026-07-11T08:15:52.622Z",
+  "generatedAt": "2026-07-11T13:55:15.998Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-juliusbrussee-caveman-skills-caveman-review",
+      "name": "caveman-review",
+      "author": "juliusbrussee",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from juliusbrussee/caveman. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "caveman",
+        "review"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-caveman-review",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-juliusbrussee-caveman-skills-caveman-stats",
+      "name": "caveman-stats",
+      "author": "juliusbrussee",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from juliusbrussee/caveman. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "caveman",
+        "stats"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-caveman-stats",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-terminalskills-skills-skills-cc-connect",
+      "name": "cc-connect",
+      "author": "terminalskills",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from terminalskills/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "connect"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/terminalskills/skills/skills-cc-connect",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "github-com-ventuss-ovo-cc-costline",
       "name": "cc-costline",
@@ -9834,63 +9890,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/lintendo/axhub-make/client-agents-skills-prototype-annotation",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "agent-cline",
-      "name": "cline",
-      "author": "agent",
-      "stars": 0,
-      "description": "skills.sh leaderboard skill from agent.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783503155",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/agent",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-xixihhhh-clipforge-skills-clipforge",
-      "name": "clipforge",
-      "author": "xixihhhh",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from xixihhhh/clipforge. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "clipforge"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/xixihhhh/clipforge/skills-clipforge",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-yournextstore-yournextstore-agents-skills-clone-website",
-      "name": "clone-website",
-      "author": "yournextstore",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from yournextstore/yournextstore. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "yournextstore",
-        "agents",
-        "clone",
-        "website"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/yournextstore/yournextstore/agents-skills-clone-website",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,40 @@
 {
-  "generatedAt": "2026-07-11T03:43:38.662Z",
+  "generatedAt": "2026-07-11T08:15:52.622Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "writing-a-good-claude-md-github-awesome-unknown",
+      "name": "Writing a Good CLAUDE.md",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [HumanLayer](https://www.humanlayer.dev) - An essay on CLAUDE.md craft: instruction-budget reasoning, progressive disclosure, and the test of whether Claude would err without a given line.",
+      "tags": [],
+      "updatedAt": "1783500263",
+      "occupationId": "01",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "skillsmp-wechat-miniprogram-ai-mode-skills-wxa-skills-generate",
+      "name": "wxa-skills-generate",
+      "author": "wechat-miniprogram",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wechat-miniprogram/ai-mode-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "mode",
+        "wxa",
+        "generate"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wechat-miniprogram/ai-mode-skills/wxa-skills-generate",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-lovstudio-skills-skills-wxmp-cracker",
       "name": "wxmp-cracker",

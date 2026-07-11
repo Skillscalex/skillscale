@@ -1,7 +1,44 @@
 {
-  "generatedAt": "2026-07-11T03:43:38.662Z",
+  "generatedAt": "2026-07-11T08:15:52.622Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-chujianyun-skills-skills-mermaid",
+      "name": "mermaid",
+      "author": "chujianyun",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from chujianyun/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "mermaid"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/chujianyun/skills/skills-mermaid",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-veelenga-claude-mermaid-skills-mermaid-diagrams",
+      "name": "mermaid-diagrams",
+      "author": "veelenga",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from veelenga/claude-mermaid. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "mermaid",
+        "diagrams"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/veelenga/claude-mermaid/skills-mermaid-diagrams",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-meshy-dev-meshy-3d-agent-skills-meshy-3d-printing",
       "name": "meshy-3d-printing",
@@ -9941,48 +9978,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-edge-delivery-services-skills-ue-component-model",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-adobe-skills-plugins-aem-project-management-skills-auth",
-      "name": "plugins-aem-project-management-skills-auth",
-      "author": "adobe",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "plugins",
-        "aem",
-        "project",
-        "management"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-project-management-skills-auth",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-adobe-skills-plugins-aem-project-management-skills-handover",
-      "name": "plugins-aem-project-management-skills-handover",
-      "author": "adobe",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "plugins",
-        "aem",
-        "project",
-        "management"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-project-management-skills-handover",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,50 @@
 {
-  "generatedAt": "2026-07-11T03:43:38.662Z",
+  "generatedAt": "2026-07-11T08:15:52.622Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-luokai0-ai-agent-skills-by-luo-kai-ai-agent-skills-14-chemistry-and-biology-by-luo-kai-medicinal-chemistry-expert",
+      "name": "ai-agent-skills-14-chemistry-and-biology-by-luo-kai-medicinal-chemistry-expert",
+      "author": "luokai0",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from luokai0/ai-agent-skills-by-luo-kai. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "luo",
+        "kai",
+        "chemistry",
+        "and",
+        "biology"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/luokai0/ai-agent-skills-by-luo-kai/ai-agent-skills-14-chemistry-and-biology-by-luo-kai-medicinal-chemistry-expert",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-luokai0-ai-agent-skills-by-luo-kai-ai-agent-skills-16-engineering-by-luo-kai-process-simulation-expert",
+      "name": "ai-agent-skills-16-engineering-by-luo-kai-process-simulation-expert",
+      "author": "luokai0",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from luokai0/ai-agent-skills-by-luo-kai. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "luo",
+        "kai",
+        "engineering",
+        "process"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/luokai0/ai-agent-skills-by-luo-kai/ai-agent-skills-16-engineering-by-luo-kai-process-simulation-expert",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-luokai0-ai-agent-skills-by-luo-kai-ai-agent-skills-17-emerging-tech-by-luo-kai-nuclear-energy-expert",
       "name": "ai-agent-skills-17-emerging-tech-by-luo-kai-nuclear-energy-expert",
@@ -9833,34 +9876,6 @@
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
-    },
-    {
-      "id": "github-com-ventuss-ovo-cc-costline",
-      "name": "cc-costline",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [Ventuss-OvO](https://github.com/Ventuss-OvO) - Enhanced statusline for Claude Code — see your 7d/30d spend at a glance",
-      "tags": [],
-      "updatedAt": "1783500266",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/Ventuss-OvO/cc-costline",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "github-com-labzink-cc-probeline",
-      "name": "cc-probeline",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [labzink](https://github.com/labzink) - See where it leaks, stop paying for it — a live Claude Code status line that prices every turn, your subagents, cache rebuilds, plus limits, context and git.",
-      "tags": [],
-      "updatedAt": "1783500266",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/labzink/cc-probeline",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
     }
   ]
 }

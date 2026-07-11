@@ -1,7 +1,51 @@
 {
-  "generatedAt": "2026-07-11T03:43:38.662Z",
+  "generatedAt": "2026-07-11T08:15:52.622Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-tibsfox-gsd-skill-creator-examples-skills-home-economics-nutrition-and-meal-planning",
+      "name": "examples-skills-home-economics-nutrition-and-meal-planning",
+      "author": "tibsfox",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from tibsfox/gsd-skill-creator. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gsd",
+        "creator",
+        "examples",
+        "home",
+        "economics",
+        "nutrition"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/tibsfox/gsd-skill-creator/examples-skills-home-economics-nutrition-and-meal-planning",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-tencent-weknora-examples-skills-pdf-processing",
+      "name": "examples-skills-pdf-processing",
+      "author": "tencent",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from tencent/weknora. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "weknora",
+        "examples",
+        "pdf",
+        "processing"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/tencent/weknora/examples-skills-pdf-processing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-google-adk-go-examples-skills-skills-grocery-prices",
       "name": "examples-skills-skills-grocery-prices",
@@ -10061,38 +10105,6 @@
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-aannoo-hcom-skills-hcom-agent-messaging",
-      "name": "hcom-agent-messaging",
-      "author": "aannoo",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from aannoo/hcom. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "hcom",
-        "messaging"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/aannoo/hcom/skills-hcom-agent-messaging",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "health-check-aitmpl-docs-unknown",
-      "name": "Health Check",
-      "author": "AITmpl Docs",
-      "stars": 0,
-      "description": "Comprehensive system validation tool for Claude Code setup, configuration, and project structure",
-      "tags": [],
-      "updatedAt": "1781508344",
-      "occupationId": "01",
-      "source": "aitmpl-docs-index",
-      "secureScore": 91,
-      "auditStatus": "approved"
     }
   ]
 }

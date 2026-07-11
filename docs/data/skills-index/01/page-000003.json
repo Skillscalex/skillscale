@@ -1,7 +1,35 @@
 {
-  "generatedAt": "2026-07-11T03:43:38.662Z",
+  "generatedAt": "2026-07-11T08:15:52.622Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "github-com-ventuss-ovo-cc-costline",
+      "name": "cc-costline",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [Ventuss-OvO](https://github.com/Ventuss-OvO) - Enhanced statusline for Claude Code — see your 7d/30d spend at a glance",
+      "tags": [],
+      "updatedAt": "1783500266",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/Ventuss-OvO/cc-costline",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "github-com-labzink-cc-probeline",
+      "name": "cc-probeline",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [labzink](https://github.com/labzink) - See where it leaks, stop paying for it — a live Claude Code status line that prices every turn, your subagents, cache rebuilds, plus limits, context and git.",
+      "tags": [],
+      "updatedAt": "1783500266",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/labzink/cc-probeline",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "skillsmp-kenryu42-cc-safety-net-skills-cc-safety-net",
       "name": "cc-safety-net",
@@ -9863,47 +9891,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/yournextstore/yournextstore/agents-skills-clone-website",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-browser-use-browser-use-skills-cloud",
-      "name": "cloud",
-      "author": "browser-use",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from browser-use/browser-use. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "browser",
-        "use",
-        "cloud"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/browser-use/browser-use/skills-cloud",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-google-skills-skills-cloud-agent-platform-alert-configuration",
-      "name": "cloud-agent-platform-alert-configuration",
-      "author": "google",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cloud",
-        "platform",
-        "alert",
-        "configuration"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-alert-configuration",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,48 @@
 {
-  "generatedAt": "2026-07-11T03:43:38.662Z",
+  "generatedAt": "2026-07-11T08:15:52.622Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-obra-superpowers-skills-receiving-code-review",
+      "name": "receiving-code-review",
+      "author": "obra",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from obra/superpowers. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "superpowers",
+        "receiving",
+        "code",
+        "review"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/obra/superpowers/skills-receiving-code-review",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-travisjneuman-claude-skills-recipe-card-creator",
+      "name": "recipe-card-creator",
+      "author": "travisjneuman",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from travisjneuman/.claude. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "recipe",
+        "card",
+        "creator"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/travisjneuman/.claude/skills-recipe-card-creator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-googleworkspace-cli-skills-recipe-create-classroom-course",
       "name": "recipe-create-classroom-course",
@@ -9899,46 +9940,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/chengzuopeng/stock-sdk-mcp/skills-stock-screener",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-agentbay-ai-agentbay-skills-stock-watcher",
-      "name": "stock-watcher",
-      "author": "agentbay-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from agentbay-ai/agentbay-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "agentbay",
-        "stock",
-        "watcher"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/agentbay-ai/agentbay-skills/stock-watcher",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-kkkkhazix-khazix-skills-storage-analyzer",
-      "name": "storage-analyzer",
-      "author": "kkkkhazix",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from kkkkhazix/khazix-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "khazix",
-        "storage",
-        "analyzer"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/kkkkhazix/khazix-skills/storage-analyzer",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

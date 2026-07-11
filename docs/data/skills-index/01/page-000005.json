@@ -1,7 +1,48 @@
 {
-  "generatedAt": "2026-07-11T03:43:38.662Z",
+  "generatedAt": "2026-07-11T08:15:52.622Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-54laowang-hermes-agent-desktop-pet",
+      "name": "desktop-pet",
+      "author": "54laowang",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from 54laowang/hermes-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "desktop",
+        "pet"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/54laowang/hermes-agent/desktop-pet",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sharpai-deepcamera-skills-detection-yolo-detection-2026",
+      "name": "detection-yolo-detection-2026",
+      "author": "sharpai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sharpai/deepcamera. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "deepcamera",
+        "detection",
+        "yolo",
+        "2026"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/sharpai/deepcamera/skills-detection-yolo-detection-2026",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-sharpai-deepcamera-skills-detection-yolo-detection-2026-coral-tpu-win-wsl",
       "name": "detection-yolo-detection-2026-coral-tpu-win-wsl",
@@ -10226,50 +10267,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/langchain-ai/deepagentsjs/examples-skills-file-organizer",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-tibsfox-gsd-skill-creator-examples-skills-home-economics-nutrition-and-meal-planning",
-      "name": "examples-skills-home-economics-nutrition-and-meal-planning",
-      "author": "tibsfox",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from tibsfox/gsd-skill-creator. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gsd",
-        "creator",
-        "examples",
-        "home",
-        "economics",
-        "nutrition"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/tibsfox/gsd-skill-creator/examples-skills-home-economics-nutrition-and-meal-planning",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-tencent-weknora-examples-skills-pdf-processing",
-      "name": "examples-skills-pdf-processing",
-      "author": "tencent",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from tencent/weknora. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "weknora",
-        "examples",
-        "pdf",
-        "processing"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/tencent/weknora/examples-skills-pdf-processing",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

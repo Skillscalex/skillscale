@@ -1,7 +1,39 @@
 {
-  "generatedAt": "2026-07-11T03:43:38.662Z",
+  "generatedAt": "2026-07-11T08:15:52.622Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-aannoo-hcom-skills-hcom-agent-messaging",
+      "name": "hcom-agent-messaging",
+      "author": "aannoo",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from aannoo/hcom. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hcom",
+        "messaging"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/aannoo/hcom/skills-hcom-agent-messaging",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "health-check-aitmpl-docs-unknown",
+      "name": "Health Check",
+      "author": "AITmpl Docs",
+      "stars": 0,
+      "description": "Comprehensive system validation tool for Claude Code setup, configuration, and project structure",
+      "tags": [],
+      "updatedAt": "1781508344",
+      "occupationId": "01",
+      "source": "aitmpl-docs-index",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "skillsmp-natebjones-projects-ob1-skills-heavy-file-ingestion-variants-codex",
       "name": "heavy-file-ingestion-variants-codex",
@@ -9847,43 +9879,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/ansanabria/skills/skills-mercadopago",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-chujianyun-skills-skills-mermaid",
-      "name": "mermaid",
-      "author": "chujianyun",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from chujianyun/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "mermaid"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/chujianyun/skills/skills-mermaid",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-veelenga-claude-mermaid-skills-mermaid-diagrams",
-      "name": "mermaid-diagrams",
-      "author": "veelenga",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from veelenga/claude-mermaid. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "mermaid",
-        "diagrams"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/veelenga/claude-mermaid/skills-mermaid-diagrams",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

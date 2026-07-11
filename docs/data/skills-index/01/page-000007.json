@@ -1,7 +1,29 @@
 {
-  "generatedAt": "2026-07-10T19:52:25.093Z",
+  "generatedAt": "2026-07-11T03:43:38.662Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-natebjones-projects-ob1-skills-heavy-file-ingestion-variants-codex",
+      "name": "heavy-file-ingestion-variants-codex",
+      "author": "natebjones-projects",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from natebjones-projects/ob1. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ob1",
+        "heavy",
+        "file",
+        "ingestion",
+        "variants"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/natebjones-projects/ob1/skills-heavy-file-ingestion-variants-codex",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-hellowind777-helloagents-skills-hello-arch",
       "name": "hello-arch",
@@ -9862,25 +9884,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/veelenga/claude-mermaid/skills-mermaid-diagrams",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-meshy-dev-meshy-3d-agent-skills-meshy-3d-printing",
-      "name": "meshy-3d-printing",
-      "author": "meshy-dev",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from meshy-dev/meshy-3d-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "meshy",
-        "printing"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/meshy-dev/meshy-3d-agent/skills-meshy-3d-printing",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

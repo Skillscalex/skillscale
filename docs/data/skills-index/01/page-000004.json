@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-10T19:52:25.093Z",
+  "generatedAt": "2026-07-11T03:43:38.662Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-google-skills-skills-cloud-agent-platform-deploy",
+      "name": "cloud-agent-platform-deploy",
+      "author": "google",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cloud",
+        "platform",
+        "deploy"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-deploy",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-google-skills-skills-cloud-agent-platform-endpoint-management",
       "name": "cloud-agent-platform-endpoint-management",
@@ -10075,27 +10095,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/sharpai/deepcamera/skills-detection-yolo-detection-2026",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-sharpai-deepcamera-skills-detection-yolo-detection-2026-coral-tpu-win-wsl",
-      "name": "detection-yolo-detection-2026-coral-tpu-win-wsl",
-      "author": "sharpai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from sharpai/deepcamera. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "deepcamera",
-        "detection",
-        "yolo",
-        "2026"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/sharpai/deepcamera/skills-detection-yolo-detection-2026-coral-tpu-win-wsl",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

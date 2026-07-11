@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-10T19:52:25.093Z",
+  "generatedAt": "2026-07-11T03:43:38.662Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-google-adk-go-examples-skills-skills-grocery-prices",
+      "name": "examples-skills-skills-grocery-prices",
+      "author": "google",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from google/adk-go. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "adk",
+        "examples",
+        "grocery",
+        "prices"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/google/adk-go/examples-skills-skills-grocery-prices",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-wenyuchiou-awesome-agentic-ai-zh-examples-stage-5-tool-calling-tutor",
       "name": "examples-stage-5-tool-calling-tutor",
@@ -10072,28 +10093,6 @@
       "source": "aitmpl-docs-index",
       "secureScore": 91,
       "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-natebjones-projects-ob1-skills-heavy-file-ingestion-variants-codex",
-      "name": "heavy-file-ingestion-variants-codex",
-      "author": "natebjones-projects",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from natebjones-projects/ob1. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "ob1",
-        "heavy",
-        "file",
-        "ingestion",
-        "variants"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/natebjones-projects/ob1/skills-heavy-file-ingestion-variants-codex",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
     }
   ]
 }

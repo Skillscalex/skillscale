@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-10T19:52:25.093Z",
+  "generatedAt": "2026-07-11T03:43:38.662Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-kenryu42-cc-safety-net-skills-cc-safety-net",
+      "name": "cc-safety-net",
+      "author": "kenryu42",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from kenryu42/cc-safety-net. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "safety",
+        "net"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/kenryu42/cc-safety-net/skills-cc-safety-net",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "github-com-tjboudreaux-cc-thinking-skills",
       "name": "cc-thinking-skills",
@@ -9885,26 +9904,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-alert-configuration",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-google-skills-skills-cloud-agent-platform-deploy",
-      "name": "cloud-agent-platform-deploy",
-      "author": "google",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from google/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cloud",
-        "platform",
-        "deploy"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/google/skills/skills-cloud-agent-platform-deploy",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

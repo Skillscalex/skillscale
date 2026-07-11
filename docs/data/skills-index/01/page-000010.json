@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-10T19:52:25.093Z",
+  "generatedAt": "2026-07-11T03:43:38.662Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-anthropics-claude-code-plugins-claude-opus-4-5-migration-skills-claude-opus-4-5-migration",
+      "name": "plugins-claude-opus-4-5-migration-skills-claude-opus-4-5-migration",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/claude-code. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "plugins",
+        "opus",
+        "migration"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/claude-code/plugins-claude-opus-4-5-migration-skills-claude-opus-4-5-migration",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-f-prompts-chat-plugins-claude-prompts-chat-skills-prompt-lookup",
       "name": "plugins-claude-prompts-chat-skills-prompt-lookup",
@@ -10264,28 +10285,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/travisjneuman/.claude/skills-recipe-card-creator",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-googleworkspace-cli-skills-recipe-create-classroom-course",
-      "name": "recipe-create-classroom-course",
-      "author": "googleworkspace",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from googleworkspace/cli. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cli",
-        "recipe",
-        "create",
-        "classroom",
-        "course"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/googleworkspace/cli/skills-recipe-create-classroom-course",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-10T19:52:25.093Z",
+  "generatedAt": "2026-07-11T03:43:38.662Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-luokai0-ai-agent-skills-by-luo-kai-ai-agent-skills-17-emerging-tech-by-luo-kai-nuclear-energy-expert",
+      "name": "ai-agent-skills-17-emerging-tech-by-luo-kai-nuclear-energy-expert",
+      "author": "luokai0",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from luokai0/ai-agent-skills-by-luo-kai. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "luo",
+        "kai",
+        "emerging",
+        "tech"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/luokai0/ai-agent-skills-by-luo-kai/ai-agent-skills-17-emerging-tech-by-luo-kai-nuclear-energy-expert",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-diegosouzapw-awesome-omni-skill-skills-ai-agents-assistant",
       "name": "ai-agents-assistant",
@@ -9840,25 +9861,6 @@
       "source": "awesome-claude-code",
       "secureScore": 91,
       "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-kenryu42-cc-safety-net-skills-cc-safety-net",
-      "name": "cc-safety-net",
-      "author": "kenryu42",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from kenryu42/cc-safety-net. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "safety",
-        "net"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/kenryu42/cc-safety-net/skills-cc-safety-net",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
     }
   ]
 }

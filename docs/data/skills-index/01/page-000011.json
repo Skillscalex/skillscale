@@ -1,7 +1,29 @@
 {
-  "generatedAt": "2026-07-10T19:52:25.093Z",
+  "generatedAt": "2026-07-11T03:43:38.662Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-googleworkspace-cli-skills-recipe-create-classroom-course",
+      "name": "recipe-create-classroom-course",
+      "author": "googleworkspace",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from googleworkspace/cli. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cli",
+        "recipe",
+        "create",
+        "classroom",
+        "course"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/googleworkspace/cli/skills-recipe-create-classroom-course",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-coleam00-custom-agent-with-skills-skills-recipe-finder",
       "name": "recipe-finder",
@@ -9917,26 +9939,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/kkkkhazix/khazix-skills/storage-analyzer",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-dpearson2699-swift-ios-skills-skills-storekit",
-      "name": "storekit",
-      "author": "dpearson2699",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from dpearson2699/swift-ios-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "swift",
-        "ios",
-        "storekit"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/dpearson2699/swift-ios-skills/skills-storekit",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

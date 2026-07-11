@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-10T19:52:25.093Z",
+  "generatedAt": "2026-07-11T03:43:38.662Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-meshy-dev-meshy-3d-agent-skills-meshy-3d-printing",
+      "name": "meshy-3d-printing",
+      "author": "meshy-dev",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from meshy-dev/meshy-3d-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "meshy",
+        "printing"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/meshy-dev/meshy-3d-agent/skills-meshy-3d-printing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-affaan-m-ecc-skills-messages-ops",
       "name": "messages-ops",
@@ -9964,27 +9983,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-project-management-skills-handover",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-adobe-skills-plugins-aem-project-management-skills-handover-admin",
-      "name": "plugins-aem-project-management-skills-handover-admin",
-      "author": "adobe",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "plugins",
-        "aem",
-        "project",
-        "management"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-project-management-skills-handover-admin",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-10T19:52:25.093Z",
+  "generatedAt": "2026-07-11T03:43:38.662Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-adobe-skills-plugins-aem-project-management-skills-handover-admin",
+      "name": "plugins-aem-project-management-skills-handover-admin",
+      "author": "adobe",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "aem",
+        "project",
+        "management"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-project-management-skills-handover-admin",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-biwakonbu-cc-plugins-plugins-agent-browser-spec-skills-agent-browser-knowledge",
       "name": "plugins-agent-browser-spec-skills-agent-browser-knowledge",
@@ -10462,27 +10483,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/avids2/memorix/plugins-claude-memorix",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-claude-code-plugins-claude-opus-4-5-migration-skills-claude-opus-4-5-migration",
-      "name": "plugins-claude-opus-4-5-migration-skills-claude-opus-4-5-migration",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/claude-code. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "plugins",
-        "opus",
-        "migration"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/claude-code/plugins-claude-opus-4-5-migration-skills-claude-opus-4-5-migration",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-10T19:52:25.093Z",
+  "generatedAt": "2026-07-11T03:43:38.662Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-dpearson2699-swift-ios-skills-skills-storekit",
+      "name": "storekit",
+      "author": "dpearson2699",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dpearson2699/swift-ios-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "swift",
+        "ios",
+        "storekit"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/dpearson2699/swift-ios-skills/skills-storekit",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-worldwonderer-oh-story-claudecode-skills-story",
       "name": "story",
@@ -9916,25 +9936,6 @@
       "updatedAt": "1783591431",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/wechat-miniprogram/ai-mode-skills/wxa-skills-generate",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-lovstudio-skills-skills-wxmp-cracker",
-      "name": "wxmp-cracker",
-      "author": "lovstudio",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from lovstudio/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "wxmp",
-        "cracker"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/lovstudio/skills/skills-wxmp-cracker",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

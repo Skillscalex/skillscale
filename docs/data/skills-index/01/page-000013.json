@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-11T19:32:49.555Z",
+  "generatedAt": "2026-07-12T03:58:22.797Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-lc2panda-wps-skills-skills-wps-word",
+      "name": "wps-word",
+      "author": "lc2panda",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lc2panda/wps-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "wps",
+        "word"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/lc2panda/wps-skills/skills-wps-word",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-wpsnote-wpsnote-skills-skills-wpsnote-beautifier",
       "name": "wpsnote-beautifier",

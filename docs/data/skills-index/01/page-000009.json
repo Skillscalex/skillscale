@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-11T19:32:49.555Z",
+  "generatedAt": "2026-07-12T03:58:22.797Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-adobe-skills-plugins-aem-edge-delivery-services-skills-preview-import",
+      "name": "plugins-aem-edge-delivery-services-skills-preview-import",
+      "author": "adobe",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "aem",
+        "edge",
+        "delivery"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-edge-delivery-services-skills-preview-import",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-adobe-skills-plugins-aem-edge-delivery-services-skills-scrape-webpage",
       "name": "plugins-aem-edge-delivery-services-skills-scrape-webpage",
@@ -10466,26 +10487,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/jgraph/drawio-mcp/plugins-claude-code-skills-drawio",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-joaoh82-rustunnel-plugins-claude-code-skills-rustunnel",
-      "name": "plugins-claude-code-skills-rustunnel",
-      "author": "joaoh82",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from joaoh82/rustunnel. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "rustunnel",
-        "plugins",
-        "code"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/joaoh82/rustunnel/plugins-claude-code-skills-rustunnel",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-11T19:32:49.555Z",
+  "generatedAt": "2026-07-12T03:58:22.797Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-juliusbrussee-caveman-skills-caveman-compress",
+      "name": "caveman-compress",
+      "author": "juliusbrussee",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from juliusbrussee/caveman. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "caveman",
+        "compress"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-caveman-compress",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-juliusbrussee-caveman-skills-caveman-help",
       "name": "caveman-help",
@@ -9866,26 +9885,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/clickhouse/agent-skills/skills-clickhousectl-cloud-deploy",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-clickhouse-agent-skills-skills-clickhousectl-local-dev",
-      "name": "clickhousectl-local-dev",
-      "author": "clickhouse",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from clickhouse/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "clickhousectl",
-        "local",
-        "dev"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/clickhouse/agent-skills/skills-clickhousectl-local-dev",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

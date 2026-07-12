@@ -1,7 +1,21 @@
 {
-  "generatedAt": "2026-07-11T19:32:49.555Z",
+  "generatedAt": "2026-07-12T03:58:22.797Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "github-com-agent-sh-agnix",
+      "name": "agnix",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [agent-sh](https://github.com/agent-sh) - The linter and LSP for AI coding assistants — validates CLAUDE.md, AGENTS.md, SKILL.md, hooks, and MCP config, with autofixes and IDE plugins.",
+      "tags": [],
+      "updatedAt": "1783500267",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/agent-sh/agnix",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "skillsmp-agoraio-skills-skills-agora",
       "name": "agora",
@@ -9845,25 +9859,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-caveman-commit",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-juliusbrussee-caveman-skills-caveman-compress",
-      "name": "caveman-compress",
-      "author": "juliusbrussee",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from juliusbrussee/caveman. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "caveman",
-        "compress"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-caveman-compress",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

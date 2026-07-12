@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-11T19:32:49.555Z",
+  "generatedAt": "2026-07-12T03:58:22.797Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-linhay-harmony-next-skills-harmony-next",
+      "name": "harmony-next",
+      "author": "linhay",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from linhay/harmony-next.skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "harmony",
+        "next"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/linhay/harmony-next.skills/harmony-next",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-majiayu000-spellbook-skills-harmonyos-app",
       "name": "harmonyos-app",
@@ -9861,27 +9880,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/memgraph/memgraph/skills-memgraph-storage-reviewer",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-ar9av-obsidian-wiki-skills-memory-bridge",
-      "name": "memory-bridge",
-      "author": "ar9av",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from ar9av/obsidian-wiki. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "obsidian",
-        "wiki",
-        "memory",
-        "bridge"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/ar9av/obsidian-wiki/skills-memory-bridge",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

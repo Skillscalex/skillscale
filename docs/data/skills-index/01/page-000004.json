@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-11T19:32:49.555Z",
+  "generatedAt": "2026-07-12T03:58:22.797Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-clickhouse-agent-skills-skills-clickhousectl-local-dev",
+      "name": "clickhousectl-local-dev",
+      "author": "clickhouse",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from clickhouse/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "clickhousectl",
+        "local",
+        "dev"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/clickhouse/agent-skills/skills-clickhousectl-local-dev",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-lintendo-axhub-make-client-agents-skills-prototype-annotation",
       "name": "client-agents-skills-prototype-annotation",
@@ -10085,25 +10105,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-deployment-patterns",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-k-dense-ai-scientific-agent-skills-skills-depmap",
-      "name": "depmap",
-      "author": "k-dense-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from k-dense-ai/scientific-agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "scientific",
-        "depmap"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-depmap",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

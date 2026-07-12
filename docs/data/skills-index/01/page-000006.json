@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-11T19:32:49.555Z",
+  "generatedAt": "2026-07-12T03:58:22.797Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-trpc-group-trpc-agent-go-examples-skillfind-skills-skill-find",
+      "name": "examples-skillfind-skills-skill-find",
+      "author": "trpc-group",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from trpc-group/trpc-agent-go. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "trpc",
+        "examples",
+        "skillfind",
+        "find"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/trpc-group/trpc-agent-go/examples-skillfind-skills-skill-find",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-langchain-ai-deepagentsjs-examples-skills-arxiv-search",
       "name": "examples-skills-arxiv-search",
@@ -10089,25 +10110,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/web-infra-dev/midscene-skills/skills-harmony-automation",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-linhay-harmony-next-skills-harmony-next",
-      "name": "harmony-next",
-      "author": "linhay",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from linhay/harmony-next.skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "harmony",
-        "next"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/linhay/harmony-next.skills/harmony-next",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

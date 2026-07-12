@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-11T19:32:49.555Z",
+  "generatedAt": "2026-07-12T03:58:22.797Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-joaoh82-rustunnel-plugins-claude-code-skills-rustunnel",
+      "name": "plugins-claude-code-skills-rustunnel",
+      "author": "joaoh82",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from joaoh82/rustunnel. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "rustunnel",
+        "plugins",
+        "code"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/joaoh82/rustunnel/plugins-claude-code-skills-rustunnel",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-microsoft-skillopt-plugins-claude-code-skills-skillopt-sleep",
       "name": "plugins-claude-code-skills-skillopt-sleep",
@@ -10265,26 +10285,6 @@
       "updatedAt": "1783591431",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/nomadamas/k-skill/real-estate-search",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-dpearson2699-swift-ios-skills-skills-realitykit",
-      "name": "realitykit",
-      "author": "dpearson2699",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from dpearson2699/swift-ios-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "swift",
-        "ios",
-        "realitykit"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/dpearson2699/swift-ios-skills/skills-realitykit",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

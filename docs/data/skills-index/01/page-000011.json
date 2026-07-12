@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-11T19:32:49.555Z",
+  "generatedAt": "2026-07-12T03:58:22.797Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-dpearson2699-swift-ios-skills-skills-realitykit",
+      "name": "realitykit",
+      "author": "dpearson2699",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dpearson2699/swift-ios-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "swift",
+        "ios",
+        "realitykit"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/dpearson2699/swift-ios-skills/skills-realitykit",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-andreev-danila-skills-skills-reanimated-skia-performance",
       "name": "reanimated-skia-performance",
@@ -9920,26 +9940,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/chengzuopeng/stock-sdk-mcp/skills-stock-analyst",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-netease-youdao-lobsterai-skills-stock-analyzer",
-      "name": "stock-analyzer",
-      "author": "netease-youdao",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from netease-youdao/lobsterai. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "lobsterai",
-        "stock",
-        "analyzer"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/netease-youdao/lobsterai/skills-stock-analyzer",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

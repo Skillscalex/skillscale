@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-12T13:57:07.848Z",
+  "generatedAt": "2026-07-12T19:32:09.868Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-jgraph-drawio-mcp-plugins-claude-code-skills-drawio",
+      "name": "plugins-claude-code-skills-drawio",
+      "author": "jgraph",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from jgraph/drawio-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "drawio",
+        "mcp",
+        "plugins",
+        "code"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/jgraph/drawio-mcp/plugins-claude-code-skills-drawio",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-joaoh82-rustunnel-plugins-claude-code-skills-rustunnel",
       "name": "plugins-claude-code-skills-rustunnel",
@@ -10265,26 +10286,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-readme-blueprint-generator",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-nomadamas-k-skill-real-estate-search",
-      "name": "real-estate-search",
-      "author": "nomadamas",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from nomadamas/k-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "real",
-        "estate",
-        "search"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/nomadamas/k-skill/real-estate-search",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

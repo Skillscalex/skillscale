@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-12T13:57:07.848Z",
+  "generatedAt": "2026-07-12T19:32:09.868Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-trpc-group-trpc-agent-go-examples-skill-skills-ocr",
+      "name": "examples-skill-skills-ocr",
+      "author": "trpc-group",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from trpc-group/trpc-agent-go. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "trpc",
+        "examples",
+        "ocr"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/trpc-group/trpc-agent-go/examples-skill-skills-ocr",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-trpc-group-trpc-agent-go-examples-skillfind-skills-skill-find",
       "name": "examples-skillfind-skills-skill-find",
@@ -10090,26 +10110,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/leokemp223/nextboard/skills-hardware-solution",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-web-infra-dev-midscene-skills-skills-harmony-automation",
-      "name": "harmony-automation",
-      "author": "web-infra-dev",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from web-infra-dev/midscene-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "midscene",
-        "harmony",
-        "automation"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/web-infra-dev/midscene-skills/skills-harmony-automation",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

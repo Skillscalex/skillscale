@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-12T13:57:07.848Z",
+  "generatedAt": "2026-07-12T19:32:09.868Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-bwkyd-wps-skills-skills-wps-thesis",
+      "name": "wps-thesis",
+      "author": "bwkyd",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bwkyd/wps-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "wps",
+        "thesis"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/bwkyd/wps-skills/skills-wps-thesis",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-lc2panda-wps-skills-skills-wps-word",
       "name": "wps-word",

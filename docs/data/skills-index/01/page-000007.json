@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-12T13:57:07.848Z",
+  "generatedAt": "2026-07-12T19:32:09.868Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-web-infra-dev-midscene-skills-skills-harmony-automation",
+      "name": "harmony-automation",
+      "author": "web-infra-dev",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from web-infra-dev/midscene-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "midscene",
+        "harmony",
+        "automation"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/web-infra-dev/midscene-skills/skills-harmony-automation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-linhay-harmony-next-skills-harmony-next",
       "name": "harmony-next",
@@ -9860,26 +9880,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/softaworks/agent-toolkit/skills-meme-factory",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-memgraph-memgraph-skills-memgraph-storage-reviewer",
-      "name": "memgraph-storage-reviewer",
-      "author": "memgraph",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from memgraph/memgraph. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "memgraph",
-        "storage",
-        "reviewer"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/memgraph/memgraph/skills-memgraph-storage-reviewer",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

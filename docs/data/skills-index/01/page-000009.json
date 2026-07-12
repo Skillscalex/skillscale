@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-12T13:57:07.848Z",
+  "generatedAt": "2026-07-12T19:32:09.868Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-adobe-skills-plugins-aem-edge-delivery-services-skills-page-import",
+      "name": "plugins-aem-edge-delivery-services-skills-page-import",
+      "author": "adobe",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "aem",
+        "edge",
+        "delivery"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-edge-delivery-services-skills-page-import",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-adobe-skills-plugins-aem-edge-delivery-services-skills-preview-import",
       "name": "plugins-aem-edge-delivery-services-skills-preview-import",
@@ -10466,27 +10487,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/anthropics/claude-plugins-official/plugins-claude-code-setup-skills-claude-automation-recommender",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-jgraph-drawio-mcp-plugins-claude-code-skills-drawio",
-      "name": "plugins-claude-code-skills-drawio",
-      "author": "jgraph",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from jgraph/drawio-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "drawio",
-        "mcp",
-        "plugins",
-        "code"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/jgraph/drawio-mcp/plugins-claude-code-skills-drawio",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

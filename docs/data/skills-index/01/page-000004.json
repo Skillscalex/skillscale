@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-12T13:57:07.848Z",
+  "generatedAt": "2026-07-12T19:32:09.868Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-clickhouse-agent-skills-skills-clickhousectl-cloud-deploy",
+      "name": "clickhousectl-cloud-deploy",
+      "author": "clickhouse",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from clickhouse/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "clickhousectl",
+        "cloud",
+        "deploy"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/clickhouse/agent-skills/skills-clickhousectl-cloud-deploy",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-clickhouse-agent-skills-skills-clickhousectl-local-dev",
       "name": "clickhousectl-local-dev",
@@ -10088,26 +10108,6 @@
       "source": "claude-official-plugins",
       "secureScore": 91,
       "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-affaan-m-ecc-skills-deployment-patterns",
-      "name": "deployment-patterns",
-      "author": "affaan-m",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "ecc",
-        "deployment",
-        "patterns"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-deployment-patterns",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
     }
   ]
 }

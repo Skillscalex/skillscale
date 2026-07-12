@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-12T13:57:07.848Z",
+  "generatedAt": "2026-07-12T19:32:09.868Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-nomadamas-k-skill-real-estate-search",
+      "name": "real-estate-search",
+      "author": "nomadamas",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nomadamas/k-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "real",
+        "estate",
+        "search"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/nomadamas/k-skill/real-estate-search",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-dpearson2699-swift-ios-skills-skills-realitykit",
       "name": "realitykit",
@@ -9919,27 +9939,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/anbeime/skill/skills-stock-analysis-stock-analysis",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-chengzuopeng-stock-sdk-mcp-skills-stock-analyst",
-      "name": "stock-analyst",
-      "author": "chengzuopeng",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from chengzuopeng/stock-sdk-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "stock",
-        "sdk",
-        "mcp",
-        "analyst"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/chengzuopeng/stock-sdk-mcp/skills-stock-analyst",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

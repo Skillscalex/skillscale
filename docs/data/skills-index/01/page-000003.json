@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T13:57:07.848Z",
+  "generatedAt": "2026-07-12T19:32:09.868Z",
   "occupationId": "01",
   "skills": [
     {
@@ -1747,6 +1747,20 @@
       "updatedAt": "1783500266",
       "occupationId": "01",
       "githubUrl": "https://github.com/lukaszraczylo/claude-mnemonic",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "github-com-shengyanlin-claude-overlay",
+      "name": "Claude Overlay",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [shengyanlin](https://github.com/shengyanlin) - A frameless, always-on-top floating chat window for Claude Code on Windows. It captures every monitor and lets Claude read the screen to answer questions in context, and drives the user's existing claude CLI login through the Agent SDK, with image paste, model switching, live streaming, and a context-usage statusline.",
+      "tags": [],
+      "updatedAt": "1783884676",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/shengyanlin/claude-overlay",
       "source": "awesome-claude-code",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -9865,26 +9879,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-clickhouse-io",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-clickhouse-agent-skills-skills-clickhousectl-cloud-deploy",
-      "name": "clickhousectl-cloud-deploy",
-      "author": "clickhouse",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from clickhouse/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "clickhousectl",
-        "cloud",
-        "deploy"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/clickhouse/agent-skills/skills-clickhousectl-cloud-deploy",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-12T13:57:07.848Z",
+  "generatedAt": "2026-07-12T19:32:09.868Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-deployment-patterns",
+      "name": "deployment-patterns",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "deployment",
+        "patterns"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-deployment-patterns",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-k-dense-ai-scientific-agent-skills-skills-depmap",
       "name": "depmap",
@@ -10229,26 +10249,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/inclusionai/aworld/examples-skill-agent-skills-xhs-scraper",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-trpc-group-trpc-agent-go-examples-skill-skills-ocr",
-      "name": "examples-skill-skills-ocr",
-      "author": "trpc-group",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from trpc-group/trpc-agent-go. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "trpc",
-        "examples",
-        "ocr"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/trpc-group/trpc-agent-go/examples-skill-skills-ocr",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

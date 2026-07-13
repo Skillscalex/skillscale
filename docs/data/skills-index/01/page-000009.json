@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-12T19:32:09.868Z",
+  "generatedAt": "2026-07-13T04:00:49.977Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-adobe-skills-plugins-aem-edge-delivery-services-skills-page-decomposition",
+      "name": "plugins-aem-edge-delivery-services-skills-page-decomposition",
+      "author": "adobe",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "aem",
+        "edge",
+        "delivery"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-edge-delivery-services-skills-page-decomposition",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-adobe-skills-plugins-aem-edge-delivery-services-skills-page-import",
       "name": "plugins-aem-edge-delivery-services-skills-page-import",
@@ -10465,28 +10486,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/libukai/awesome-agent-skills/plugins-claude-code-setting-skills-mcp-config",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-claude-plugins-official-plugins-claude-code-setup-skills-claude-automation-recommender",
-      "name": "plugins-claude-code-setup-skills-claude-automation-recommender",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/claude-plugins-official. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "plugins",
-        "official",
-        "code",
-        "setup",
-        "automation"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/claude-plugins-official/plugins-claude-code-setup-skills-claude-automation-recommender",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

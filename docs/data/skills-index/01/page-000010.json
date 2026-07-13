@@ -1,7 +1,29 @@
 {
-  "generatedAt": "2026-07-12T19:32:09.868Z",
+  "generatedAt": "2026-07-13T04:00:49.977Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-anthropics-claude-plugins-official-plugins-claude-code-setup-skills-claude-automation-recommender",
+      "name": "plugins-claude-code-setup-skills-claude-automation-recommender",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/claude-plugins-official. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "official",
+        "code",
+        "setup",
+        "automation"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/claude-plugins-official/plugins-claude-code-setup-skills-claude-automation-recommender",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-jgraph-drawio-mcp-plugins-claude-code-skills-drawio",
       "name": "plugins-claude-code-skills-drawio",
@@ -10264,28 +10286,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/study8677/readme.skill/skills-readme-skill",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-github-awesome-copilot-skills-readme-blueprint-generator",
-      "name": "readme-blueprint-generator",
-      "author": "github",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "awesome",
-        "copilot",
-        "readme",
-        "blueprint",
-        "generator"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-readme-blueprint-generator",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

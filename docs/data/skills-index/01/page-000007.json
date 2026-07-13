@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-12T19:32:09.868Z",
+  "generatedAt": "2026-07-13T04:00:49.977Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-leokemp223-nextboard-skills-hardware-solution",
+      "name": "hardware-solution",
+      "author": "leokemp223",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from leokemp223/nextboard. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "nextboard",
+        "hardware",
+        "solution"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/leokemp223/nextboard/skills-hardware-solution",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-web-infra-dev-midscene-skills-skills-harmony-automation",
       "name": "harmony-automation",
@@ -9860,26 +9880,6 @@
       "updatedAt": "1783591431",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/meitu/meitu-skills/skills-meitu-beauty",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-softaworks-agent-toolkit-skills-meme-factory",
-      "name": "meme-factory",
-      "author": "softaworks",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from softaworks/agent-toolkit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "toolkit",
-        "meme",
-        "factory"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/softaworks/agent-toolkit/skills-meme-factory",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

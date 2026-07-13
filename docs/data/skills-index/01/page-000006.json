@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-12T19:32:09.868Z",
+  "generatedAt": "2026-07-13T04:00:49.977Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-inclusionai-aworld-examples-skill-agent-skills-xhs-scraper",
+      "name": "examples-skill-agent-skills-xhs-scraper",
+      "author": "inclusionai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from inclusionai/aworld. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "aworld",
+        "examples",
+        "xhs",
+        "scraper"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/inclusionai/aworld/examples-skill-agent-skills-xhs-scraper",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-trpc-group-trpc-agent-go-examples-skill-skills-ocr",
       "name": "examples-skill-skills-ocr",
@@ -10090,26 +10111,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/agentspace-so/runcomfy-agent-skills/happyhorse-1-0",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-leokemp223-nextboard-skills-hardware-solution",
-      "name": "hardware-solution",
-      "author": "leokemp223",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from leokemp223/nextboard. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "nextboard",
-        "hardware",
-        "solution"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/leokemp223/nextboard/skills-hardware-solution",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

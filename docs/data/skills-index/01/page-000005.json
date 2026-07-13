@@ -1,7 +1,20 @@
 {
-  "generatedAt": "2026-07-12T19:32:09.868Z",
+  "generatedAt": "2026-07-13T04:00:49.977Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "deploy-on-aws-claude-unknown",
+      "name": "Deploy on AWS",
+      "author": "Claude",
+      "stars": 0,
+      "description": "Deploy applications to AWS with architecture recommendations, cost estimates, and IaC deployment.",
+      "tags": [],
+      "updatedAt": "1781508334",
+      "occupationId": "01",
+      "source": "claude-official-plugins",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "skillsmp-affaan-m-ecc-skills-deployment-patterns",
       "name": "deployment-patterns",
@@ -10228,27 +10241,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/inclusionai/aworld/examples-skill-agent-skills-xhs-publisher",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-inclusionai-aworld-examples-skill-agent-skills-xhs-scraper",
-      "name": "examples-skill-agent-skills-xhs-scraper",
-      "author": "inclusionai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from inclusionai/aworld. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "aworld",
-        "examples",
-        "xhs",
-        "scraper"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/inclusionai/aworld/examples-skill-agent-skills-xhs-scraper",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

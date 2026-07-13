@@ -1,7 +1,21 @@
 {
-  "generatedAt": "2026-07-12T19:32:09.868Z",
+  "generatedAt": "2026-07-13T04:00:49.977Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "github-com-mishanefedov-agentwatch",
+      "name": "AgentWatch",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [mishanefedov](https://github.com/mishanefedov) - Local-only observability for AI agents on your machine. One timeline across coding and non-coding agents.",
+      "tags": [],
+      "updatedAt": "1783500266",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/mishanefedov/agentwatch",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "github-com-agent-sh-agnix",
       "name": "agnix",
@@ -9840,25 +9854,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-caveman",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-juliusbrussee-caveman-skills-caveman-commit",
-      "name": "caveman-commit",
-      "author": "juliusbrussee",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from juliusbrussee/caveman. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "caveman",
-        "commit"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-caveman-commit",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

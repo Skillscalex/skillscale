@@ -1,7 +1,29 @@
 {
-  "generatedAt": "2026-07-12T19:32:09.868Z",
+  "generatedAt": "2026-07-13T04:00:49.977Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-github-awesome-copilot-skills-readme-blueprint-generator",
+      "name": "readme-blueprint-generator",
+      "author": "github",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "copilot",
+        "readme",
+        "blueprint",
+        "generator"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-readme-blueprint-generator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-nomadamas-k-skill-real-estate-search",
       "name": "real-estate-search",
@@ -9920,25 +9942,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/claude-office-skills/skills/stock-analysis",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anbeime-skill-skills-stock-analysis-stock-analysis",
-      "name": "stock-analysis-stock-analysis",
-      "author": "anbeime",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anbeime/skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "stock",
-        "analysis"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/anbeime/skill/skills-stock-analysis-stock-analysis",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

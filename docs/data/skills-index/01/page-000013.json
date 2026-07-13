@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-12T19:32:09.868Z",
+  "generatedAt": "2026-07-13T04:00:49.977Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-bwkyd-wps-skills-skills-wps-resume-cn",
+      "name": "wps-resume-cn",
+      "author": "bwkyd",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bwkyd/wps-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "wps",
+        "resume"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/bwkyd/wps-skills/skills-wps-resume-cn",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-bwkyd-wps-skills-skills-wps-thesis",
       "name": "wps-thesis",

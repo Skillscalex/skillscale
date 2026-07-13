@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-12T19:32:09.868Z",
+  "generatedAt": "2026-07-13T04:00:49.977Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-softaworks-agent-toolkit-skills-meme-factory",
+      "name": "meme-factory",
+      "author": "softaworks",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from softaworks/agent-toolkit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "toolkit",
+        "meme",
+        "factory"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/softaworks/agent-toolkit/skills-meme-factory",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-memgraph-memgraph-skills-memgraph-storage-reviewer",
       "name": "memgraph-storage-reviewer",
@@ -9950,27 +9970,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-edge-delivery-services-skills-identify-page-structure",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-adobe-skills-plugins-aem-edge-delivery-services-skills-page-decomposition",
-      "name": "plugins-aem-edge-delivery-services-skills-page-decomposition",
-      "author": "adobe",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "plugins",
-        "aem",
-        "edge",
-        "delivery"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-edge-delivery-services-skills-page-decomposition",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

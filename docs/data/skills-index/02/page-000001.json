@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T09:48:26.564Z",
+  "generatedAt": "2026-07-13T15:12:14.392Z",
   "occupationId": "02",
   "skills": [
     {
@@ -2070,6 +2070,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-anysiteio-agent-skills-skills-anysite-market-research",
+      "name": "anysite-market-research",
+      "author": "anysiteio",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anysiteio/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anysite",
+        "market",
+        "research"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/anysiteio/agent-skills/skills-anysite-market-research",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-eronred-aso-skills-skills-app-marketing-context",
       "name": "app-marketing-context",
       "author": "eronred",
@@ -2368,6 +2388,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-rmyndharis-antigravity-skills-skills-business-analyst",
+      "name": "business-analyst",
+      "author": "rmyndharis",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from rmyndharis/antigravity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "business",
+        "analyst"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/rmyndharis/antigravity-skills/skills-business-analyst",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-nasrulhazim-agent-skills-skills-business-card",
       "name": "business-card",
       "author": "nasrulhazim",
@@ -2449,6 +2489,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-sandeeprdy1729-skill-galaxy-skills-business-dolibarr-mcp-connector",
+      "name": "business-dolibarr-mcp-connector",
+      "author": "sandeeprdy1729",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sandeeprdy1729/skill_galaxy. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "galaxy",
+        "business",
+        "dolibarr",
+        "mcp",
+        "connector"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/sandeeprdy1729/skill_galaxy/skills-business-dolibarr-mcp-connector",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-alirezarezvani-claude-skills-business-growth-skills-business-growth-skills",
       "name": "business-growth-skills-business-growth-skills",
       "author": "alirezarezvani",
@@ -2463,6 +2525,27 @@
       "updatedAt": "1783504629",
       "occupationId": "02",
       "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/business-growth-skills-business-growth-skills",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alirezarezvani-claude-skills-business-growth-skills-customer-success-manager",
+      "name": "business-growth-skills-customer-success-manager",
+      "author": "alirezarezvani",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alirezarezvani/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "business",
+        "growth",
+        "customer",
+        "success"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/business-growth-skills-customer-success-manager",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2651,6 +2734,26 @@
       "updatedAt": "1783504629",
       "occupationId": "02",
       "skillsmpUrl": "https://skillsmp.com/creators/maxvaega/awesome-skills/business-plan-advisor",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-notque-vexjoy-agent-skills-business-productivity",
+      "name": "business-productivity",
+      "author": "notque",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from notque/vexjoy-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "vexjoy",
+        "business",
+        "productivity"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/notque/vexjoy-agent/skills-business-productivity",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -3273,6 +3376,98 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-business-marketing-ceo-advisor",
+      "name": "cli-tool-components-skills-business-marketing-ceo-advisor",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "business"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-business-marketing-ceo-advisor",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-business-marketing-cto-advisor",
+      "name": "cli-tool-components-skills-business-marketing-cto-advisor",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "business"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-business-marketing-cto-advisor",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-business-marketing-marketing-strategy-pmm",
+      "name": "cli-tool-components-skills-business-marketing-marketing-strategy-pmm",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "business"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-business-marketing-marketing-strategy-pmm",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-business-marketing-product-manager-toolkit",
+      "name": "cli-tool-components-skills-business-marketing-product-manager-toolkit",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "business"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-business-marketing-product-manager-toolkit",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-business-marketing-seo-optimizer",
       "name": "cli-tool-components-skills-business-marketing-seo-optimizer",
       "author": "davila7",
@@ -3393,6 +3588,27 @@
       "updatedAt": "1783504629",
       "occupationId": "02",
       "skillsmpUrl": "https://skillsmp.com/creators/xbtlin/ai-berkshire/codex-skills-investment-research",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-xbtlin-ai-berkshire-codex-skills-investment-team",
+      "name": "codex-skills-investment-team",
+      "author": "xbtlin",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from xbtlin/ai-berkshire. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "berkshire",
+        "codex",
+        "investment",
+        "team"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/xbtlin/ai-berkshire/codex-skills-investment-team",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -4599,6 +4815,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-investor-materials",
+      "name": "docs-ja-jp-skills-investor-materials",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "investor",
+        "materials"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-investor-materials",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-affaan-m-ecc-docs-zh-cn-skills-finance-billing-ops",
       "name": "docs-zh-cn-skills-finance-billing-ops",
       "author": "affaan-m",
@@ -4765,6 +5002,29 @@
       "updatedAt": "1783504629",
       "occupationId": "02",
       "skillsmpUrl": "https://skillsmp.com/creators/tubeliu/presales-skills/drawio-skills-draw",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-zeweihan-a-market-ecm-lawyer-plugin-skills-ecm-draft-format-adjust",
+      "name": "ecm-draft-format-adjust",
+      "author": "zeweihan",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zeweihan/a-market-ecm-lawyer-plugin. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "market",
+        "ecm",
+        "lawyer",
+        "plugin",
+        "draft",
+        "format"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/zeweihan/a-market-ecm-lawyer-plugin/skills-ecm-draft-format-adjust",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -4969,6 +5229,27 @@
       "updatedAt": "1783504629",
       "occupationId": "02",
       "skillsmpUrl": "https://skillsmp.com/creators/terminalskills/skills/skills-facebook-marketing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-meiwulang-dalh-skills-fenghuang-niepan-trading",
+      "name": "fenghuang-niepan-trading",
+      "author": "meiwulang",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from meiwulang/dalh. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "dalh",
+        "fenghuang",
+        "niepan",
+        "trading"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/meiwulang/dalh/skills-fenghuang-niepan-trading",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -5484,6 +5765,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-membranedev-application-skills-skills-google-my-business",
+      "name": "google-my-business",
+      "author": "membranedev",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from membranedev/application-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "application",
+        "google",
+        "business"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/membranedev/application-skills/skills-google-my-business",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-thatrebeccarae-claude-marketing-skills-google-tag-manager",
       "name": "google-tag-manager",
       "author": "thatrebeccarae",
@@ -5938,6 +6239,72 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-a5c-ai-babysitter-library-specializations-domains-business-business-analysis-skills-bpmn-generator",
+      "name": "library-specializations-domains-business-business-analysis-skills-bpmn-generator",
+      "author": "a5c-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from a5c-ai/babysitter. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "babysitter",
+        "library",
+        "specializations",
+        "domains",
+        "business"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/a5c-ai/babysitter/library-specializations-domains-business-business-analysis-skills-bpmn-generator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-a5c-ai-babysitter-library-specializations-domains-business-logistics-skills-shipment-visibility-tracker",
+      "name": "library-specializations-domains-business-logistics-skills-shipment-visibility-tracker",
+      "author": "a5c-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from a5c-ai/babysitter. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "babysitter",
+        "library",
+        "specializations",
+        "domains",
+        "business"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/a5c-ai/babysitter/library-specializations-domains-business-logistics-skills-shipment-visibility-tracker",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-a5c-ai-babysitter-library-specializations-domains-business-operations-skills-fmea-facilitator",
+      "name": "library-specializations-domains-business-operations-skills-fmea-facilitator",
+      "author": "a5c-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from a5c-ai/babysitter. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "babysitter",
+        "library",
+        "specializations",
+        "domains",
+        "business"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/a5c-ai/babysitter/library-specializations-domains-business-operations-skills-fmea-facilitator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-membranedev-application-skills-skills-lime-crm",
       "name": "lime-crm",
       "author": "membranedev",
@@ -6220,6 +6587,26 @@
       "updatedAt": "1783504629",
       "occupationId": "02",
       "skillsmpUrl": "https://skillsmp.com/creators/clowlove/hermes-house/skills-marketing-china-ecommerce-operator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-coreyhaines31-marketingskills-skills-marketing-council",
+      "name": "marketing-council",
+      "author": "coreyhaines31",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from coreyhaines31/marketingskills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "marketingskills",
+        "marketing",
+        "council"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/coreyhaines31/marketingskills/skills-marketing-council",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -6720,6 +7107,29 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-yuanjian068yuan-opc-comment-lead-radar-marketplace-skillhub-ppxc-find-customers",
+      "name": "marketplace-skillhub-ppxc-find-customers",
+      "author": "yuanjian068yuan",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from yuanjian068yuan/opc-comment-lead-radar. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "opc",
+        "comment",
+        "lead",
+        "radar",
+        "marketplace",
+        "skillhub"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/yuanjian068yuan/opc-comment-lead-radar/marketplace-skillhub-ppxc-find-customers",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-zhizhunbao-workbuddy-skills-marketplace-skills-ima-skills",
       "name": "marketplace-skills-ima-skills",
       "author": "zhizhunbao",
@@ -7056,6 +7466,29 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-georgedoors888-gb-power-market-jj-openclaw-skills-skills-batduke-doc-format-gw",
+      "name": "openclaw-skills-skills-batduke-doc-format-gw",
+      "author": "georgedoors888",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from georgedoors888/gb-power-market-jj. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "power",
+        "market",
+        "openclaw",
+        "batduke",
+        "doc",
+        "format"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/georgedoors888/gb-power-market-jj/openclaw-skills-skills-batduke-doc-format-gw",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-georgedoors888-gb-power-market-jj-openclaw-skills-skills-bbd145-aws-wechat-article-review",
       "name": "openclaw-skills-skills-bbd145-aws-wechat-article-review",
       "author": "georgedoors888",
@@ -7102,6 +7535,29 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-georgedoors888-gb-power-market-jj-openclaw-skills-skills-beyondbright-walter-listing-operations",
+      "name": "openclaw-skills-skills-beyondbright-walter-listing-operations",
+      "author": "georgedoors888",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from georgedoors888/gb-power-market-jj. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "power",
+        "market",
+        "openclaw",
+        "beyondbright",
+        "walter",
+        "listing"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/georgedoors888/gb-power-market-jj/openclaw-skills-skills-beyondbright-walter-listing-operations",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-georgedoors888-gb-power-market-jj-openclaw-skills-skills-beyondbright-walter-market-intelligence",
       "name": "openclaw-skills-skills-beyondbright-walter-market-intelligence",
       "author": "georgedoors888",
@@ -7142,6 +7598,29 @@
       "updatedAt": "1783504629",
       "occupationId": "02",
       "skillsmpUrl": "https://skillsmp.com/creators/georgedoors888/gb-power-market-jj/openclaw-skills-skills-beyondbright-walter-product-selector",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-georgedoors888-gb-power-market-jj-openclaw-skills-skills-bianchengyy-mitools-desensitize",
+      "name": "openclaw-skills-skills-bianchengyy-mitools-desensitize",
+      "author": "georgedoors888",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from georgedoors888/gb-power-market-jj. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "power",
+        "market",
+        "openclaw",
+        "bianchengyy",
+        "mitools",
+        "desensitize"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/georgedoors888/gb-power-market-jj/openclaw-skills-skills-bianchengyy-mitools-desensitize",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -7325,6 +7804,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-nousresearch-hermes-agent-optional-skills-finance-stocks",
+      "name": "optional-skills-finance-stocks",
+      "author": "nousresearch",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nousresearch/hermes-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "optional",
+        "finance",
+        "stocks"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/optional-skills-finance-stocks",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-nousresearch-hermes-agent-optional-skills-research-osint-investigation",
       "name": "optional-skills-research-osint-investigation",
       "author": "nousresearch",
@@ -7363,6 +7863,48 @@
       "updatedAt": "1783504629",
       "occupationId": "02",
       "skillsmpUrl": "https://skillsmp.com/creators/tradermonty/claude-trading-skills/skills-options-strategy-advisor",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-ericosiu-ai-marketing-skills-outbound-engine",
+      "name": "outbound-engine",
+      "author": "ericosiu",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ericosiu/ai-marketing-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "marketing",
+        "outbound",
+        "engine"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/ericosiu/ai-marketing-skills/outbound-engine",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-kortix-ai-suna-packages-starter-templates-general-knowledge-worker-kortix-opencode-skills-investment-research",
+      "name": "packages-starter-templates-general-knowledge-worker-kortix-opencode-skills-investment-research",
+      "author": "kortix-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from kortix-ai/suna. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "suna",
+        "packages",
+        "starter",
+        "templates",
+        "general"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/kortix-ai/suna/packages-starter-templates-general-knowledge-worker-kortix-opencode-skills-investment-research",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -7624,6 +8166,29 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-dvcrn-openclaw-skills-marketplace-plugins-870021840-teacher-prep-skills-teacher-prep",
+      "name": "plugins-870021840-teacher-prep-skills-teacher-prep",
+      "author": "dvcrn",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dvcrn/openclaw-skills-marketplace. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "openclaw",
+        "marketplace",
+        "plugins",
+        "870021840",
+        "teacher",
+        "prep"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/dvcrn/openclaw-skills-marketplace/plugins-870021840-teacher-prep-skills-teacher-prep",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-dvcrn-openclaw-skills-marketplace-plugins-a3273283-sih-ai-photo-editor-skills-sih-ai-photo-changer",
       "name": "plugins-a3273283-sih-ai-photo-editor-skills-sih-ai-photo-changer",
       "author": "dvcrn",
@@ -7686,6 +8251,28 @@
       "updatedAt": "1783504629",
       "occupationId": "02",
       "skillsmpUrl": "https://skillsmp.com/creators/abcfed/claude-marketplace/plugins-abc-development-plugin-skills-tapd",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-anthropics-financial-services-plugins-agent-plugins-meeting-prep-agent-skills-investment-proposal",
+      "name": "plugins-agent-plugins-meeting-prep-agent-skills-investment-proposal",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/financial-services. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "financial",
+        "services",
+        "plugins",
+        "meeting",
+        "prep"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/financial-services/plugins-agent-plugins-meeting-prep-agent-skills-investment-proposal",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -8142,6 +8729,29 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-jeremylongshore-claude-code-plugins-plus-skills-plugins-business-tools-excel-analyst-pro-skills-excel-pivot-wizard",
+      "name": "plugins-business-tools-excel-analyst-pro-skills-excel-pivot-wizard",
+      "author": "jeremylongshore",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from jeremylongshore/claude-code-plugins-plus-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "plugins",
+        "plus",
+        "business",
+        "tools",
+        "excel"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/jeremylongshore/claude-code-plugins-plus-skills/plugins-business-tools-excel-analyst-pro-skills-excel-pivot-wizard",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-jeremylongshore-claude-code-plugins-plus-skills-plugins-business-tools-wondelai-predictable-revenue",
       "name": "plugins-business-tools-wondelai-predictable-revenue",
       "author": "jeremylongshore",
@@ -8344,6 +8954,29 @@
       "updatedAt": "1783504629",
       "occupationId": "02",
       "skillsmpUrl": "https://skillsmp.com/creators/dvcrn/openclaw-skills-marketplace/plugins-bytesagain3-pinduoduo-listing-skills-pinduoduo-listing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dvcrn-openclaw-skills-marketplace-plugins-bytesagain3-policy-reader-skills-policy-reader",
+      "name": "plugins-bytesagain3-policy-reader-skills-policy-reader",
+      "author": "dvcrn",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dvcrn/openclaw-skills-marketplace. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "openclaw",
+        "marketplace",
+        "plugins",
+        "bytesagain3",
+        "policy",
+        "reader"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/dvcrn/openclaw-skills-marketplace/plugins-bytesagain3-policy-reader-skills-policy-reader",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -8573,6 +9206,52 @@
       "updatedAt": "1783591431",
       "occupationId": "02",
       "skillsmpUrl": "https://skillsmp.com/creators/dvcrn/openclaw-skills-marketplace/plugins-chenchaoqun-wechat-article-spider-skills-wechat-article-spider",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dvcrn-openclaw-skills-marketplace-plugins-chrislee121-pdf-translate-skills-pdf-translate",
+      "name": "plugins-chrislee121-pdf-translate-skills-pdf-translate",
+      "author": "dvcrn",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dvcrn/openclaw-skills-marketplace. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "openclaw",
+        "marketplace",
+        "plugins",
+        "chrislee121",
+        "pdf",
+        "translate"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/dvcrn/openclaw-skills-marketplace/plugins-chrislee121-pdf-translate-skills-pdf-translate",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dvcrn-openclaw-skills-marketplace-plugins-ckchzh-fitness-plan-skills-fitness-plan",
+      "name": "plugins-ckchzh-fitness-plan-skills-fitness-plan",
+      "author": "dvcrn",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dvcrn/openclaw-skills-marketplace. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "openclaw",
+        "marketplace",
+        "plugins",
+        "ckchzh",
+        "fitness",
+        "plan"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/dvcrn/openclaw-skills-marketplace/plugins-ckchzh-fitness-plan-skills-fitness-plan",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -9699,6 +10378,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-swaylq-master-skill-prototypes-enterprise-b2b-sales-master-output",
+      "name": "prototypes-enterprise-b2b-sales-master-output",
+      "author": "swaylq",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from swaylq/master-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "master",
+        "prototypes",
+        "enterprise",
+        "b2b",
+        "sales"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/swaylq/master-skill/prototypes-enterprise-b2b-sales-master-output",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-swaylq-master-skill-prototypes-personal-investing-master-output",
       "name": "prototypes-personal-investing-master-output",
       "author": "swaylq",
@@ -9715,6 +10416,27 @@
       "updatedAt": "1783504629",
       "occupationId": "02",
       "skillsmpUrl": "https://skillsmp.com/creators/swaylq/master-skill/prototypes-personal-investing-master-output",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-swaylq-master-skill-prototypes-product-marketing-master-output",
+      "name": "prototypes-product-marketing-master-output",
+      "author": "swaylq",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from swaylq/master-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "master",
+        "prototypes",
+        "product",
+        "marketing"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/swaylq/master-skill/prototypes-product-marketing-master-output",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -9742,6 +10464,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-coreyhaines31-marketingskills-skills-public-relations",
+      "name": "public-relations",
+      "author": "coreyhaines31",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from coreyhaines31/marketingskills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "marketingskills",
+        "public",
+        "relations"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "02",
+      "skillsmpUrl": "https://skillsmp.com/creators/coreyhaines31/marketingskills/skills-public-relations",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-lzwme-finance-quant-skills-skills-qmt-docs",
       "name": "qmt-docs",
       "author": "lzwme",
@@ -9758,721 +10500,6 @@
       "updatedAt": "1783504629",
       "occupationId": "02",
       "skillsmpUrl": "https://skillsmp.com/creators/lzwme/finance-quant-skills/skills-qmt-docs",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-higress-group-himarket-qoder-skills-harness-creator",
-      "name": "qoder-skills-harness-creator",
-      "author": "higress-group",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from higress-group/himarket. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "himarket",
-        "qoder",
-        "harness",
-        "creator"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/higress-group/himarket/qoder-skills-harness-creator",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-alexclowe-awesome-claude-cowork-plugins-real-estate-skills-real-estate-marketing",
-      "name": "real-estate-skills-real-estate-marketing",
-      "author": "alexclowe",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from alexclowe/awesome-claude-cowork-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "awesome",
-        "cowork",
-        "plugins",
-        "real",
-        "estate"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/alexclowe/awesome-claude-cowork-plugins/real-estate-skills-real-estate-marketing",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-danielmiessler-lifeos-releases-v5-0-0-claude-skills-sales",
-      "name": "releases-v5-0-0-claude-skills-sales",
-      "author": "danielmiessler",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from danielmiessler/lifeos. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "lifeos",
-        "releases",
-        "sales"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/danielmiessler/lifeos/releases-v5-0-0-claude-skills-sales",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-alirezarezvani-claude-skills-research-ops-skills-market-research",
-      "name": "research-ops-skills-market-research",
-      "author": "alirezarezvani",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from alirezarezvani/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "research",
-        "ops",
-        "market"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/research-ops-skills-market-research",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-luwill-research-skills-research-proposal",
-      "name": "research-proposal",
-      "author": "luwill",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from luwill/research-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "research",
-        "proposal"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/luwill/research-skills/research-proposal",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-coreyhaines31-marketingskills-skills-revops",
-      "name": "revops",
-      "author": "coreyhaines31",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from coreyhaines31/marketingskills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "marketingskills",
-        "revops"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/coreyhaines31/marketingskills/skills-revops",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-aiskillstore-marketplace-skills-rollinggo-ai-rollinggo-searchhotel",
-      "name": "rollinggo-ai-rollinggo-searchhotel",
-      "author": "aiskillstore",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from aiskillstore/marketplace. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "marketplace",
-        "rollinggo",
-        "searchhotel"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/aiskillstore/marketplace/skills-rollinggo-ai-rollinggo-searchhotel",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-refoundai-lenny-skills-skills-sales-compensation",
-      "name": "sales-compensation",
-      "author": "refoundai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from refoundai/lenny-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "lenny",
-        "sales",
-        "compensation"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/refoundai/lenny-skills/skills-sales-compensation",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-coreyhaines31-marketingskills-skills-sales-enablement",
-      "name": "sales-enablement",
-      "author": "coreyhaines31",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from coreyhaines31/marketingskills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "marketingskills",
-        "sales",
-        "enablement"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/coreyhaines31/marketingskills/skills-sales-enablement",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-sales-skills-sales-skills-sales-funnel",
-      "name": "sales-funnel",
-      "author": "sales-skills",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from sales-skills/sales. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "sales",
-        "funnel"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/sales-skills/sales/skills-sales-funnel",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-leoyeai-openclaw-master-skills-skills-sales-mastery",
-      "name": "sales-mastery",
-      "author": "leoyeai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from leoyeai/openclaw-master-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "master",
-        "sales",
-        "mastery"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-sales-mastery",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-leoyeai-openclaw-master-skills-skills-sales-powermap",
-      "name": "sales-powermap",
-      "author": "leoyeai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from leoyeai/openclaw-master-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openclaw",
-        "master",
-        "sales",
-        "powermap"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-sales-powermap",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-knowledge-work-plugins-sales-skills-account-research",
-      "name": "sales-skills-account-research",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "knowledge",
-        "work",
-        "plugins",
-        "sales",
-        "account",
-        "research"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/sales-skills-account-research",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-knowledge-work-plugins-sales-skills-call-prep",
-      "name": "sales-skills-call-prep",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "knowledge",
-        "work",
-        "plugins",
-        "sales",
-        "call",
-        "prep"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/sales-skills-call-prep",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-knowledge-work-plugins-sales-skills-call-summary",
-      "name": "sales-skills-call-summary",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "knowledge",
-        "work",
-        "plugins",
-        "sales",
-        "call",
-        "summary"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/sales-skills-call-summary",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-knowledge-work-plugins-sales-skills-create-an-asset",
-      "name": "sales-skills-create-an-asset",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "knowledge",
-        "work",
-        "plugins",
-        "sales",
-        "create",
-        "asset"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/sales-skills-create-an-asset",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-knowledge-work-plugins-sales-skills-daily-briefing",
-      "name": "sales-skills-daily-briefing",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "knowledge",
-        "work",
-        "plugins",
-        "sales",
-        "daily",
-        "briefing"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/sales-skills-daily-briefing",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-knowledge-work-plugins-sales-skills-draft-outreach",
-      "name": "sales-skills-draft-outreach",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "knowledge",
-        "work",
-        "plugins",
-        "sales",
-        "draft",
-        "outreach"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/sales-skills-draft-outreach",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-knowledge-work-plugins-sales-skills-forecast",
-      "name": "sales-skills-forecast",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "knowledge",
-        "work",
-        "plugins",
-        "sales",
-        "forecast"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/sales-skills-forecast",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-knowledge-work-plugins-sales-skills-pipeline-review",
-      "name": "sales-skills-pipeline-review",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "knowledge",
-        "work",
-        "plugins",
-        "sales",
-        "pipeline",
-        "review"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/sales-skills-pipeline-review",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-borghei-claude-skills-sales-success-solutions-architect",
-      "name": "sales-success-solutions-architect",
-      "author": "borghei",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from borghei/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "sales",
-        "success",
-        "solutions",
-        "architect"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/borghei/claude-skills/sales-success-solutions-architect",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-github-awesome-copilot-skills-salesforce-apex-quality",
-      "name": "salesforce-apex-quality",
-      "author": "github",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "awesome",
-        "copilot",
-        "salesforce",
-        "apex",
-        "quality"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-salesforce-apex-quality",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-github-awesome-copilot-skills-salesforce-component-standards",
-      "name": "salesforce-component-standards",
-      "author": "github",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "awesome",
-        "copilot",
-        "salesforce",
-        "component",
-        "standards"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-salesforce-component-standards",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-samthor98-tradingbot-schwab-skill",
-      "name": "schwab",
-      "author": "samthor98",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from samthor98/tradingbot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "tradingbot",
-        "schwab"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/samthor98/tradingbot/schwab-skill",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "search-skillsmp-marketplace",
-      "name": "Search",
-      "author": "SkillsMP",
-      "stars": 0,
-      "description": "Advanced search with filters for marketplace.json, stars, and update time",
-      "tags": [],
-      "updatedAt": "1781508365",
-      "occupationId": "02",
-      "source": "skillsmp",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-coreyhaines31-marketingskills-skills-seo-audit",
-      "name": "seo-audit",
-      "author": "coreyhaines31",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from coreyhaines31/marketingskills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "marketingskills",
-        "seo",
-        "audit"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/coreyhaines31/marketingskills/skills-seo-audit",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "github-com-cesarandreslopez-sidekick-for-claude-max",
-      "name": "Sidekick for Max",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [César Andrés López](https://github.com/cesarandreslopez) - A VS Code extension and standalone terminal dashboard that adds visibility and AI conveniences on top of your Claude Max subscription — inline completions, code transforms, AI commit messages, plus deep session observability (token-burn, a 13-week quota heatmap, multi-account management, cross-session search, and asset extraction). Mature and well-maintained (CI, published to the marketplace and npm, extensive docs).",
-      "tags": [],
-      "updatedAt": "1783500265",
-      "occupationId": "02",
-      "githubUrl": "https://github.com/cesarandreslopez/sidekick-for-claude-max",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-digoal-blog-skills-skills-for-claude-web-finance-weekly-outlook",
-      "name": "skills-for-claude-web-finance-weekly-outlook",
-      "author": "digoal",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from digoal/blog. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "blog",
-        "for",
-        "web",
-        "finance",
-        "weekly"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/digoal/blog/skills-skills-for-claude-web-finance-weekly-outlook",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-digoal-blog-skills-skills-for-claude-web-investor-news-impact",
-      "name": "skills-for-claude-web-investor-news-impact",
-      "author": "digoal",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from digoal/blog. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "blog",
-        "for",
-        "web",
-        "investor",
-        "news"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/digoal/blog/skills-skills-for-claude-web-investor-news-impact",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-knowledge-work-plugins-small-business-skills-business-pulse",
-      "name": "small-business-skills-business-pulse",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "knowledge",
-        "work",
-        "plugins",
-        "small",
-        "business",
-        "pulse"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/small-business-skills-business-pulse",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-knowledge-work-plugins-small-business-skills-call-list",
-      "name": "small-business-skills-call-list",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "knowledge",
-        "work",
-        "plugins",
-        "small",
-        "business",
-        "call"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/small-business-skills-call-list",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-knowledge-work-plugins-small-business-skills-canva-creator",
-      "name": "small-business-skills-canva-creator",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "knowledge",
-        "work",
-        "plugins",
-        "small",
-        "business",
-        "canva"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/small-business-skills-canva-creator",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-knowledge-work-plugins-small-business-skills-cash-flow-snapshot",
-      "name": "small-business-skills-cash-flow-snapshot",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "knowledge",
-        "work",
-        "plugins",
-        "small",
-        "business",
-        "cash"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/small-business-skills-cash-flow-snapshot",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-anthropics-knowledge-work-plugins-small-business-skills-close-month",
-      "name": "small-business-skills-close-month",
-      "author": "anthropics",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "knowledge",
-        "work",
-        "plugins",
-        "small",
-        "business",
-        "close"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "02",
-      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/small-business-skills-close-month",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

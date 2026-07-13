@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-13T09:48:26.564Z",
+  "generatedAt": "2026-07-13T15:12:14.392Z",
   "shardSize": 500,
-  "totalSkills": 10911,
+  "totalSkills": 11515,
   "upstreamTotal": 1447445,
   "projectedShardCount": 2908,
   "missingShardCount": 2866,
@@ -186,7 +186,7 @@
   "groups": [
     {
       "occupationId": "01",
-      "totalSkills": 6063,
+      "totalSkills": 6370,
       "upstreamTotal": 1083465,
       "shardSize": 500,
       "shardCount": 13,
@@ -216,7 +216,7 @@
     },
     {
       "occupationId": "02",
-      "totalSkills": 546,
+      "totalSkills": 584,
       "upstreamTotal": 163071,
       "shardSize": 500,
       "shardCount": 2,
@@ -235,7 +235,7 @@
     },
     {
       "occupationId": "03",
-      "totalSkills": 2026,
+      "totalSkills": 2184,
       "upstreamTotal": 68802,
       "shardSize": 500,
       "shardCount": 5,
@@ -275,7 +275,7 @@
     },
     {
       "occupationId": "05",
-      "totalSkills": 597,
+      "totalSkills": 632,
       "upstreamTotal": 27150,
       "shardSize": 500,
       "shardCount": 2,
@@ -312,7 +312,7 @@
     },
     {
       "occupationId": "07",
-      "totalSkills": 623,
+      "totalSkills": 677,
       "upstreamTotal": 18718,
       "shardSize": 500,
       "shardCount": 2,
@@ -385,7 +385,7 @@
     },
     {
       "occupationId": "11",
-      "totalSkills": 93,
+      "totalSkills": 94,
       "upstreamTotal": 3598,
       "shardSize": 500,
       "shardCount": 1,
@@ -475,7 +475,7 @@
     },
     {
       "occupationId": "16",
-      "totalSkills": 74,
+      "totalSkills": 77,
       "upstreamTotal": 585,
       "shardSize": 500,
       "shardCount": 1,
@@ -505,7 +505,7 @@
     },
     {
       "occupationId": "18",
-      "totalSkills": 153,
+      "totalSkills": 159,
       "upstreamTotal": 265,
       "shardSize": 500,
       "shardCount": 1,
@@ -553,7 +553,7 @@
     },
     {
       "occupationId": "22",
-      "totalSkills": 64,
+      "totalSkills": 66,
       "upstreamTotal": 166,
       "shardSize": 500,
       "shardCount": 1,

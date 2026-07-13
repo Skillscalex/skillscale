@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T09:48:26.564Z",
+  "generatedAt": "2026-07-13T15:12:14.392Z",
   "occupationId": "22",
   "skills": [
     {
@@ -1064,6 +1064,29 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-breverdbidder-spd-site-plan-dev-skills-construction-takeoff",
+      "name": "construction-takeoff",
+      "author": "breverdbidder",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from breverdbidder/spd-site-plan-dev. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "spd",
+        "site",
+        "plan",
+        "dev",
+        "construction",
+        "takeoff"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/breverdbidder/spd-site-plan-dev/skills-construction-takeoff",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-haibarakiku-awesome-skills-skills-construction-worker-carpenter",
       "name": "construction-worker-carpenter",
       "author": "haibarakiku",
@@ -1143,6 +1166,26 @@
       "updatedAt": "1783504629",
       "occupationId": "22",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-zh-cn-skills-agent-harness-construction",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-skyswordw-my-agent-skills-skills-msi-repair-status",
+      "name": "msi-repair-status",
+      "author": "skyswordw",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from skyswordw/my-agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "msi",
+        "repair",
+        "status"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/skyswordw/my-agent-skills/skills-msi-repair-status",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T09:48:26.564Z",
+  "generatedAt": "2026-07-13T15:12:14.392Z",
   "occupationId": "11",
   "skills": [
     {
@@ -1452,6 +1452,27 @@
       "updatedAt": "1783504629",
       "occupationId": "11",
       "skillsmpUrl": "https://skillsmp.com/creators/revfactory/harness-100/ko-74-fitness-program-claude-skills-exercise-biomechanics",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-revfactory-harness-100-ko-74-fitness-program-claude-skills-fitness-program",
+      "name": "ko-74-fitness-program-claude-skills-fitness-program",
+      "author": "revfactory",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from revfactory/harness-100. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "harness",
+        "100",
+        "fitness",
+        "program"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "11",
+      "skillsmpUrl": "https://skillsmp.com/creators/revfactory/harness-100/ko-74-fitness-program-claude-skills-fitness-program",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

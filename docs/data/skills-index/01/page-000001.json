@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T09:48:26.564Z",
+  "generatedAt": "2026-07-13T15:12:14.392Z",
   "occupationId": "01",
   "skills": [
     {
@@ -24,14 +24,14 @@
       "id": "anthropics-skills-frontend-design",
       "name": "frontend design",
       "author": "anthropics",
-      "stars": 657200,
+      "stars": 658300,
       "description": "skills.sh leaderboard skill from anthropics/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936060",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/anthropics/skills",
       "source": "skills.sh",
@@ -42,14 +42,14 @@
       "id": "vercel-labs-agent-skills-vercel-react-best-practices",
       "name": "vercel react best practices",
       "author": "vercel-labs",
-      "stars": 547000,
+      "stars": 547800,
       "description": "skills.sh leaderboard skill from vercel-labs/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936060",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/vercel-labs/agent-skills",
       "source": "skills.sh",
@@ -60,14 +60,14 @@
       "id": "vercel-labs-agent-browser-agent-browser",
       "name": "agent browser",
       "author": "vercel-labs",
-      "stars": 538300,
+      "stars": 539200,
       "description": "skills.sh leaderboard skill from vercel-labs/agent-browser.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936060",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/vercel-labs/agent-browser",
       "source": "skills.sh",
@@ -78,14 +78,14 @@
       "id": "mattpocock-skills-grill-me",
       "name": "grill me",
       "author": "mattpocock",
-      "stars": 533300,
+      "stars": 537300,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936060",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
@@ -96,34 +96,16 @@
       "id": "vercel-labs-agent-skills-web-design-guidelines",
       "name": "web design guidelines",
       "author": "vercel-labs",
-      "stars": 459300,
+      "stars": 460000,
       "description": "skills.sh leaderboard skill from vercel-labs/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/vercel-labs/agent-skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "microsoft-azure-skills-microsoft-foundry",
-      "name": "microsoft foundry",
-      "author": "microsoft",
-      "stars": 449100,
-      "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936061",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -132,16 +114,34 @@
       "id": "mattpocock-skills-grill-with-docs",
       "name": "grill with docs",
       "author": "mattpocock",
-      "stars": 448400,
+      "stars": 452000,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "microsoft-azure-skills-microsoft-foundry",
+      "name": "microsoft foundry",
+      "author": "microsoft",
+      "stars": 450000,
+      "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955488",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -168,14 +168,14 @@
       "id": "mattpocock-skills-improve-codebase-architecture",
       "name": "improve codebase architecture",
       "author": "mattpocock",
-      "stars": 440600,
+      "stars": 444100,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
@@ -186,14 +186,14 @@
       "id": "microsoft-azure-skills-azure-messaging",
       "name": "azure messaging",
       "author": "microsoft",
-      "stars": 433900,
+      "stars": 434800,
       "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
@@ -204,14 +204,14 @@
       "id": "mattpocock-skills-tdd",
       "name": "tdd",
       "author": "mattpocock",
-      "stars": 422800,
+      "stars": 426000,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
@@ -222,14 +222,14 @@
       "id": "remotion-dev-skills-remotion-best-practices",
       "name": "remotion best practices",
       "author": "remotion-dev",
-      "stars": 422700,
+      "stars": 423200,
       "description": "skills.sh leaderboard skill from remotion-dev/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/remotion-dev/skills",
       "source": "skills.sh",
@@ -240,14 +240,14 @@
       "id": "microsoft-azure-skills-azure-hosted-copilot-sdk",
       "name": "azure hosted copilot sdk",
       "author": "microsoft",
-      "stars": 414000,
+      "stars": 414700,
       "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
@@ -258,14 +258,14 @@
       "id": "site-open-feishu-cn-lark-approval",
       "name": "lark approval",
       "author": "site",
-      "stars": 394500,
+      "stars": 397100,
       "description": "skills.sh leaderboard skill from site/open.feishu.cn.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://site/open.feishu.cn",
       "source": "skills.sh",
@@ -276,14 +276,14 @@
       "id": "microsoft-azure-skills-azure-compute",
       "name": "azure compute",
       "author": "microsoft",
-      "stars": 387900,
+      "stars": 388800,
       "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
@@ -384,14 +384,14 @@
       "id": "mattpocock-skills-setup-matt-pocock-skills",
       "name": "setup matt pocock skills",
       "author": "mattpocock",
-      "stars": 378400,
+      "stars": 381600,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
@@ -402,14 +402,14 @@
       "id": "microsoft-azure-skills-azure-cloud-migrate",
       "name": "azure cloud migrate",
       "author": "microsoft",
-      "stars": 377800,
+      "stars": 378800,
       "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
@@ -420,14 +420,14 @@
       "id": "site-open-feishu-cn-lark-okr",
       "name": "lark okr",
       "author": "site",
-      "stars": 374600,
+      "stars": 377200,
       "description": "skills.sh leaderboard skill from site/open.feishu.cn.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://site/open.feishu.cn",
       "source": "skills.sh",
@@ -438,14 +438,14 @@
       "id": "site-open-feishu-cn-lark-markdown",
       "name": "lark markdown",
       "author": "site",
-      "stars": 359500,
+      "stars": 362100,
       "description": "skills.sh leaderboard skill from site/open.feishu.cn.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955488",
       "occupationId": "01",
       "githubUrl": "https://site/open.feishu.cn",
       "source": "skills.sh",
@@ -456,14 +456,14 @@
       "id": "mattpocock-skills-to-prd",
       "name": "to prd",
       "author": "mattpocock",
-      "stars": 356400,
+      "stars": 356600,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
@@ -474,14 +474,14 @@
       "id": "mattpocock-skills-triage",
       "name": "triage",
       "author": "mattpocock",
-      "stars": 352500,
+      "stars": 355400,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
@@ -492,14 +492,14 @@
       "id": "larksuite-cli-lark-doc",
       "name": "lark doc",
       "author": "larksuite",
-      "stars": 347200,
+      "stars": 349500,
       "description": "skills.sh leaderboard skill from larksuite/cli.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/larksuite/cli",
       "source": "skills.sh",
@@ -510,16 +510,70 @@
       "id": "juliusbrussee-caveman-caveman",
       "name": "caveman",
       "author": "juliusbrussee",
-      "stars": 343800,
+      "stars": 345100,
       "description": "skills.sh leaderboard skill from juliusbrussee/caveman.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/juliusbrussee/caveman",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "mattpocock-skills-handoff",
+      "name": "handoff",
+      "author": "mattpocock",
+      "stars": 345000,
+      "description": "skills.sh leaderboard skill from mattpocock/skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955489",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/mattpocock/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "larksuite-cli-lark-event",
+      "name": "lark event",
+      "author": "larksuite",
+      "stars": 345000,
+      "description": "skills.sh leaderboard skill from larksuite/cli.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955489",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/larksuite/cli",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "larksuite-cli-lark-contact",
+      "name": "lark contact",
+      "author": "larksuite",
+      "stars": 344800,
+      "description": "skills.sh leaderboard skill from larksuite/cli.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955489",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/larksuite/cli",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -528,16 +582,34 @@
       "id": "mattpocock-skills-to-issues",
       "name": "to issues",
       "author": "mattpocock",
-      "stars": 343700,
+      "stars": 343900,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "larksuite-cli-lark-skill-maker",
+      "name": "lark skill maker",
+      "author": "larksuite",
+      "stars": 343800,
+      "description": "skills.sh leaderboard skill from larksuite/cli.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955489",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/larksuite/cli",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -597,24 +669,6 @@
       "auditStatus": "approved"
     },
     {
-      "id": "mattpocock-skills-handoff",
-      "name": "handoff",
-      "author": "mattpocock",
-      "stars": 341700,
-      "description": "skills.sh leaderboard skill from mattpocock/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936061",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/mattpocock/skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
       "id": "larksuite-cli-lark-openapi-explorer",
       "name": "lark openapi explorer",
       "author": "larksuite",
@@ -633,19 +687,19 @@
       "auditStatus": "approved"
     },
     {
-      "id": "larksuite-cli-lark-skill-maker",
-      "name": "lark skill maker",
-      "author": "larksuite",
-      "stars": 341500,
-      "description": "skills.sh leaderboard skill from larksuite/cli.",
+      "id": "site-open-feishu-cn-lark-vc-agent",
+      "name": "lark vc agent",
+      "author": "site",
+      "stars": 341000,
+      "description": "skills.sh leaderboard skill from site/open.feishu.cn.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955489",
       "occupationId": "01",
-      "githubUrl": "https://github.com/larksuite/cli",
+      "githubUrl": "https://site/open.feishu.cn",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -705,19 +759,19 @@
       "auditStatus": "approved"
     },
     {
-      "id": "site-open-feishu-cn-lark-vc-agent",
-      "name": "lark vc agent",
-      "author": "site",
-      "stars": 338400,
-      "description": "skills.sh leaderboard skill from site/open.feishu.cn.",
+      "id": "mattpocock-skills-prototype",
+      "name": "prototype",
+      "author": "mattpocock",
+      "stars": 335200,
+      "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955489",
       "occupationId": "01",
-      "githubUrl": "https://site/open.feishu.cn",
+      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -741,35 +795,17 @@
       "auditStatus": "approved"
     },
     {
-      "id": "mattpocock-skills-prototype",
-      "name": "prototype",
-      "author": "mattpocock",
-      "stars": 332100,
-      "description": "skills.sh leaderboard skill from mattpocock/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936061",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/mattpocock/skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
       "id": "larksuite-cli-lark-approval",
       "name": "lark approval",
       "author": "larksuite",
-      "stars": 316200,
+      "stars": 318500,
       "description": "skills.sh leaderboard skill from larksuite/cli.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936061",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/larksuite/cli",
       "source": "skills.sh",
@@ -780,14 +816,14 @@
       "id": "microsoft-azure-skills-azure-quotas",
       "name": "azure quotas",
       "author": "microsoft",
-      "stars": 314400,
+      "stars": 315300,
       "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
@@ -798,14 +834,14 @@
       "id": "anthropics-skills-skill-creator",
       "name": "skill creator",
       "author": "anthropics",
-      "stars": 311600,
+      "stars": 312100,
       "description": "skills.sh leaderboard skill from anthropics/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/anthropics/skills",
       "source": "skills.sh",
@@ -816,14 +852,14 @@
       "id": "microsoft-azure-skills-azure-upgrade",
       "name": "azure upgrade",
       "author": "microsoft",
-      "stars": 306900,
+      "stars": 307800,
       "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
@@ -834,14 +870,14 @@
       "id": "site-open-feishu-cn-lark-apps",
       "name": "lark apps",
       "author": "site",
-      "stars": 303300,
+      "stars": 305900,
       "description": "skills.sh leaderboard skill from site/open.feishu.cn.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://site/open.feishu.cn",
       "source": "skills.sh",
@@ -852,14 +888,14 @@
       "id": "larksuite-cli-lark-slides",
       "name": "lark slides",
       "author": "larksuite",
-      "stars": 296100,
+      "stars": 298400,
       "description": "skills.sh leaderboard skill from larksuite/cli.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/larksuite/cli",
       "source": "skills.sh",
@@ -870,14 +906,14 @@
       "id": "larksuite-cli-lark-attendance",
       "name": "lark attendance",
       "author": "larksuite",
-      "stars": 294600,
+      "stars": 296900,
       "description": "skills.sh leaderboard skill from larksuite/cli.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/larksuite/cli",
       "source": "skills.sh",
@@ -888,34 +924,16 @@
       "id": "supabase-agent-skills-supabase-postgres-best-practices",
       "name": "supabase postgres best practices",
       "author": "supabase",
-      "stars": 284100,
+      "stars": 284600,
       "description": "skills.sh leaderboard skill from supabase/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/supabase/agent-skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "microsoft-azure-skills-azure-enterprise-infra-planner",
-      "name": "azure enterprise infra planner",
-      "author": "microsoft",
-      "stars": 280900,
-      "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936062",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -924,16 +942,34 @@
       "id": "larksuite-cli-lark-okr",
       "name": "lark okr",
       "author": "larksuite",
-      "stars": 280300,
+      "stars": 282600,
       "description": "skills.sh leaderboard skill from larksuite/cli.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/larksuite/cli",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "microsoft-azure-skills-azure-enterprise-infra-planner",
+      "name": "azure enterprise infra planner",
+      "author": "microsoft",
+      "stars": 281800,
+      "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955489",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -942,14 +978,14 @@
       "id": "obra-superpowers-brainstorming",
       "name": "brainstorming",
       "author": "obra",
-      "stars": 274600,
+      "stars": 275200,
       "description": "skills.sh leaderboard skill from obra/superpowers.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/obra/superpowers",
       "source": "skills.sh",
@@ -960,14 +996,14 @@
       "id": "microsoft-azure-skills-azure-kubernetes",
       "name": "azure kubernetes",
       "author": "microsoft",
-      "stars": 273800,
+      "stars": 274700,
       "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
@@ -978,14 +1014,14 @@
       "id": "nextlevelbuilder-ui-ux-pro-max-skill-ui-ux-pro-max",
       "name": "ui ux pro max",
       "author": "nextlevelbuilder",
-      "stars": 263500,
+      "stars": 264100,
       "description": "skills.sh leaderboard skill from nextlevelbuilder/ui-ux-pro-max-skill.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
       "source": "skills.sh",
@@ -996,14 +1032,14 @@
       "id": "larksuite-cli-lark-markdown",
       "name": "lark markdown",
       "author": "larksuite",
-      "stars": 259200,
+      "stars": 261600,
       "description": "skills.sh leaderboard skill from larksuite/cli.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/larksuite/cli",
       "source": "skills.sh",
@@ -1014,14 +1050,14 @@
       "id": "leonxlnx-taste-skill-design-taste-frontend",
       "name": "design taste frontend",
       "author": "leonxlnx",
-      "stars": 249900,
+      "stars": 251000,
       "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955489",
       "occupationId": "01",
       "githubUrl": "https://github.com/leonxlnx/taste-skill",
       "source": "skills.sh",
@@ -1032,14 +1068,14 @@
       "id": "microsoft-azure-skills-azure-cost",
       "name": "azure cost",
       "author": "microsoft",
-      "stars": 249200,
+      "stars": 250200,
       "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955490",
       "occupationId": "01",
       "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
@@ -1050,14 +1086,14 @@
       "id": "vercel-labs-agent-skills-vercel-composition-patterns",
       "name": "vercel composition patterns",
       "author": "vercel-labs",
-      "stars": 246800,
+      "stars": 247200,
       "description": "skills.sh leaderboard skill from vercel-labs/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955490",
       "occupationId": "01",
       "githubUrl": "https://github.com/vercel-labs/agent-skills",
       "source": "skills.sh",
@@ -1086,16 +1122,34 @@
       "id": "roin-orca-skills-simple",
       "name": "simple",
       "author": "roin-orca",
-      "stars": 240600,
+      "stars": 241000,
       "description": "skills.sh leaderboard skill from roin-orca/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955490",
       "occupationId": "01",
       "githubUrl": "https://github.com/roin-orca/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "juliusbrussee-caveman-caveman-commit",
+      "name": "caveman commit",
+      "author": "juliusbrussee",
+      "stars": 235700,
+      "description": "skills.sh leaderboard skill from juliusbrussee/caveman.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955490",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/juliusbrussee/caveman",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -1114,24 +1168,6 @@
       "updatedAt": "1781508346",
       "occupationId": "01",
       "githubUrl": "https://github.com/qu-skills/skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "juliusbrussee-caveman-caveman-commit",
-      "name": "caveman commit",
-      "author": "juliusbrussee",
-      "stars": 234600,
-      "description": "skills.sh leaderboard skill from juliusbrussee/caveman.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936062",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/juliusbrussee/caveman",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -1173,6 +1209,24 @@
       "auditStatus": "approved"
     },
     {
+      "id": "juliusbrussee-caveman-caveman-review",
+      "name": "caveman review",
+      "author": "juliusbrussee",
+      "stars": 233900,
+      "description": "skills.sh leaderboard skill from juliusbrussee/caveman.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955490",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/juliusbrussee/caveman",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
       "id": "agentspace-so-runcomfy-agent-skills-image-edit",
       "name": "image edit",
       "author": "agentspace-so",
@@ -1186,6 +1240,24 @@
       "updatedAt": "1783503155",
       "occupationId": "01",
       "githubUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "larksuite-cli-lark-vc-agent",
+      "name": "lark vc agent",
+      "author": "larksuite",
+      "stars": 233700,
+      "description": "skills.sh leaderboard skill from larksuite/cli.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955490",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/larksuite/cli",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -1227,6 +1299,24 @@
       "auditStatus": "approved"
     },
     {
+      "id": "shadcn-ui-shadcn",
+      "name": "shadcn",
+      "author": "shadcn",
+      "stars": 233500,
+      "description": "skills.sh leaderboard skill from shadcn/ui.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955490",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/shadcn/ui",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
       "id": "agentspace-so-runcomfy-agent-skills-nano-banana-edit",
       "name": "nano banana edit",
       "author": "agentspace-so",
@@ -1258,42 +1348,6 @@
       "updatedAt": "1783503155",
       "occupationId": "01",
       "githubUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "shadcn-ui-shadcn",
-      "name": "shadcn",
-      "author": "shadcn",
-      "stars": 233000,
-      "description": "skills.sh leaderboard skill from shadcn/ui.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936062",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/shadcn/ui",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "juliusbrussee-caveman-caveman-review",
-      "name": "caveman review",
-      "author": "juliusbrussee",
-      "stars": 232800,
-      "description": "skills.sh leaderboard skill from juliusbrussee/caveman.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936062",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/juliusbrussee/caveman",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -1353,6 +1407,24 @@
       "auditStatus": "approved"
     },
     {
+      "id": "juliusbrussee-caveman-caveman-compress",
+      "name": "caveman compress",
+      "author": "juliusbrussee",
+      "stars": 231900,
+      "description": "skills.sh leaderboard skill from juliusbrussee/caveman.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955490",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/juliusbrussee/caveman",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
       "id": "larksuite-cli-lark-minutes",
       "name": "lark minutes",
       "author": "larksuite",
@@ -1371,37 +1443,19 @@
       "auditStatus": "approved"
     },
     {
-      "id": "larksuite-cli-lark-vc-agent",
-      "name": "lark vc agent",
-      "author": "larksuite",
-      "stars": 231300,
-      "description": "skills.sh leaderboard skill from larksuite/cli.",
+      "id": "mattpocock-skills-teach",
+      "name": "teach",
+      "author": "mattpocock",
+      "stars": 228100,
+      "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955490",
       "occupationId": "01",
-      "githubUrl": "https://github.com/larksuite/cli",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "juliusbrussee-caveman-caveman-compress",
-      "name": "caveman compress",
-      "author": "juliusbrussee",
-      "stars": 230800,
-      "description": "skills.sh leaderboard skill from juliusbrussee/caveman.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936062",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/juliusbrussee/caveman",
+      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -1428,34 +1482,16 @@
       "id": "juliusbrussee-caveman-caveman-help",
       "name": "caveman help",
       "author": "juliusbrussee",
-      "stars": 225600,
+      "stars": 226700,
       "description": "skills.sh leaderboard skill from juliusbrussee/caveman.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936062",
+      "updatedAt": "1783955490",
       "occupationId": "01",
       "githubUrl": "https://github.com/juliusbrussee/caveman",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "mattpocock-skills-teach",
-      "name": "teach",
-      "author": "mattpocock",
-      "stars": 225000,
-      "description": "skills.sh leaderboard skill from mattpocock/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936063",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -1464,14 +1500,14 @@
       "id": "mattpocock-skills-write-a-skill",
       "name": "write a skill",
       "author": "mattpocock",
-      "stars": 224600,
+      "stars": 224700,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783915206",
+      "updatedAt": "1783955490",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
@@ -1482,14 +1518,14 @@
       "id": "mattpocock-skills-zoom-out",
       "name": "zoom out",
       "author": "mattpocock",
-      "stars": 223900,
+      "stars": 224100,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783828659",
+      "updatedAt": "1783955490",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
@@ -1515,6 +1551,24 @@
       "auditStatus": "approved"
     },
     {
+      "id": "mattpocock-skills-caveman",
+      "name": "caveman",
+      "author": "mattpocock",
+      "stars": 219000,
+      "description": "skills.sh leaderboard skill from mattpocock/skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955490",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/mattpocock/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
       "id": "github-com-sleekdotdesign-agent-skills",
       "name": "sleek design mobile apps",
       "author": "sleekdotdesign",
@@ -1528,24 +1582,6 @@
       "updatedAt": "1781508348",
       "occupationId": "01",
       "githubUrl": "https://github.com/sleekdotdesign/agent-skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "mattpocock-skills-caveman",
-      "name": "caveman",
-      "author": "mattpocock",
-      "stars": 218900,
-      "description": "skills.sh leaderboard skill from mattpocock/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783828659",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -1608,14 +1644,14 @@
       "id": "heygen-com-hyperframes-hyperframes",
       "name": "hyperframes",
       "author": "heygen-com",
-      "stars": 199600,
+      "stars": 201000,
       "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955490",
       "occupationId": "01",
       "githubUrl": "https://github.com/heygen-com/hyperframes",
       "source": "skills.sh",
@@ -1644,14 +1680,14 @@
       "id": "leonxlnx-taste-skill-high-end-visual-design",
       "name": "high end visual design",
       "author": "leonxlnx",
-      "stars": 196000,
+      "stars": 196800,
       "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955490",
       "occupationId": "01",
       "githubUrl": "https://github.com/leonxlnx/taste-skill",
       "source": "skills.sh",
@@ -1662,14 +1698,14 @@
       "id": "heygen-com-hyperframes-hyperframes-cli",
       "name": "hyperframes cli",
       "author": "heygen-com",
-      "stars": 195000,
+      "stars": 196600,
       "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955490",
       "occupationId": "01",
       "githubUrl": "https://github.com/heygen-com/hyperframes",
       "source": "skills.sh",
@@ -1680,14 +1716,14 @@
       "id": "microsoft-azure-skills-airunway-aks-setup",
       "name": "airunway aks setup",
       "author": "microsoft",
-      "stars": 193900,
+      "stars": 194800,
       "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955490",
       "occupationId": "01",
       "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
@@ -1698,34 +1734,16 @@
       "id": "leonxlnx-taste-skill-redesign-existing-projects",
       "name": "redesign existing projects",
       "author": "leonxlnx",
-      "stars": 192900,
+      "stars": 193700,
       "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955490",
       "occupationId": "01",
       "githubUrl": "https://github.com/leonxlnx/taste-skill",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "pbakaus-impeccable-impeccable",
-      "name": "impeccable",
-      "author": "pbakaus",
-      "stars": 191900,
-      "description": "skills.sh leaderboard skill from pbakaus/impeccable.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936063",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/pbakaus/impeccable",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -1734,16 +1752,34 @@
       "id": "larksuite-cli-lark-apps",
       "name": "lark apps",
       "author": "larksuite",
-      "stars": 191200,
+      "stars": 193500,
       "description": "skills.sh leaderboard skill from larksuite/cli.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955490",
       "occupationId": "01",
       "githubUrl": "https://github.com/larksuite/cli",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "pbakaus-impeccable-impeccable",
+      "name": "impeccable",
+      "author": "pbakaus",
+      "stars": 192300,
+      "description": "skills.sh leaderboard skill from pbakaus/impeccable.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955490",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/pbakaus/impeccable",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -1752,34 +1788,16 @@
       "id": "heygen-com-hyperframes-hyperframes-registry",
       "name": "hyperframes registry",
       "author": "heygen-com",
-      "stars": 188400,
+      "stars": 189800,
       "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955490",
       "occupationId": "01",
       "githubUrl": "https://github.com/heygen-com/hyperframes",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "obra-superpowers-systematic-debugging",
-      "name": "systematic debugging",
-      "author": "obra",
-      "stars": 183900,
-      "description": "skills.sh leaderboard skill from obra/superpowers.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936063",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/obra/superpowers",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -1788,14 +1806,14 @@
       "id": "juliusbrussee-caveman-cavecrew",
       "name": "cavecrew",
       "author": "juliusbrussee",
-      "stars": 183600,
+      "stars": 184700,
       "description": "skills.sh leaderboard skill from juliusbrussee/caveman.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/juliusbrussee/caveman",
       "source": "skills.sh",
@@ -1806,16 +1824,34 @@
       "id": "juliusbrussee-caveman-caveman-stats",
       "name": "caveman stats",
       "author": "juliusbrussee",
-      "stars": 183300,
+      "stars": 184400,
       "description": "skills.sh leaderboard skill from juliusbrussee/caveman.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/juliusbrussee/caveman",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "obra-superpowers-systematic-debugging",
+      "name": "systematic debugging",
+      "author": "obra",
+      "stars": 184400,
+      "description": "skills.sh leaderboard skill from obra/superpowers.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955491",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/obra/superpowers",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -1824,14 +1860,14 @@
       "id": "obra-superpowers-writing-plans",
       "name": "writing plans",
       "author": "obra",
-      "stars": 182000,
+      "stars": 182500,
       "description": "skills.sh leaderboard skill from obra/superpowers.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/obra/superpowers",
       "source": "skills.sh",
@@ -1842,16 +1878,34 @@
       "id": "obra-superpowers-using-superpowers",
       "name": "using superpowers",
       "author": "obra",
-      "stars": 180800,
+      "stars": 181200,
       "description": "skills.sh leaderboard skill from obra/superpowers.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/obra/superpowers",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "site-open-feishu-cn-lark-note",
+      "name": "lark note",
+      "author": "site",
+      "stars": 180600,
+      "description": "skills.sh leaderboard skill from site/open.feishu.cn.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955491",
+      "occupationId": "01",
+      "githubUrl": "https://site/open.feishu.cn",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -1860,14 +1914,14 @@
       "id": "leonxlnx-taste-skill-minimalist-ui",
       "name": "minimalist ui",
       "author": "leonxlnx",
-      "stars": 179600,
+      "stars": 180300,
       "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/leonxlnx/taste-skill",
       "source": "skills.sh",
@@ -1893,35 +1947,17 @@
       "auditStatus": "approved"
     },
     {
-      "id": "site-open-feishu-cn-lark-note",
-      "name": "lark note",
-      "author": "site",
-      "stars": 178100,
-      "description": "skills.sh leaderboard skill from site/open.feishu.cn.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936063",
-      "occupationId": "01",
-      "githubUrl": "https://site/open.feishu.cn",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
       "id": "anthropics-skills-pptx",
       "name": "pptx",
       "author": "anthropics",
-      "stars": 174200,
+      "stars": 174600,
       "description": "skills.sh leaderboard skill from anthropics/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/anthropics/skills",
       "source": "skills.sh",
@@ -1932,14 +1968,14 @@
       "id": "leonxlnx-taste-skill-full-output-enforcement",
       "name": "full output enforcement",
       "author": "leonxlnx",
-      "stars": 171600,
+      "stars": 172300,
       "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/leonxlnx/taste-skill",
       "source": "skills.sh",
@@ -1968,16 +2004,34 @@
       "id": "microsoft-azure-skills-entra-agent-id",
       "name": "entra agent id",
       "author": "microsoft",
-      "stars": 168000,
+      "stars": 169000,
       "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/microsoft/azure-skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "mattpocock-skills-grilling",
+      "name": "grilling",
+      "author": "mattpocock",
+      "stars": 169000,
+      "description": "skills.sh leaderboard skill from mattpocock/skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955491",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -1986,14 +2040,14 @@
       "id": "leonxlnx-taste-skill-industrial-brutalist-ui",
       "name": "industrial brutalist ui",
       "author": "leonxlnx",
-      "stars": 167000,
+      "stars": 167700,
       "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/leonxlnx/taste-skill",
       "source": "skills.sh",
@@ -2004,34 +2058,16 @@
       "id": "leonxlnx-taste-skill-stitch-design-taste",
       "name": "stitch design taste",
       "author": "leonxlnx",
-      "stars": 166000,
+      "stars": 166600,
       "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/leonxlnx/taste-skill",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "mattpocock-skills-grilling",
-      "name": "grilling",
-      "author": "mattpocock",
-      "stars": 165500,
-      "description": "skills.sh leaderboard skill from mattpocock/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936063",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -2055,6 +2091,24 @@
       "auditStatus": "approved"
     },
     {
+      "id": "obra-superpowers-requesting-code-review",
+      "name": "requesting code review",
+      "author": "obra",
+      "stars": 165300,
+      "description": "skills.sh leaderboard skill from obra/superpowers.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955491",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/obra/superpowers",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
       "id": "github-com-agentspace-so-runcomfy-agent-skills",
       "name": "ai music",
       "author": "agentspace-so",
@@ -2073,19 +2127,19 @@
       "auditStatus": "approved"
     },
     {
-      "id": "obra-superpowers-requesting-code-review",
-      "name": "requesting code review",
-      "author": "obra",
-      "stars": 164800,
-      "description": "skills.sh leaderboard skill from obra/superpowers.",
+      "id": "supabase-agent-skills-supabase",
+      "name": "supabase",
+      "author": "supabase",
+      "stars": 164700,
+      "description": "skills.sh leaderboard skill from supabase/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955491",
       "occupationId": "01",
-      "githubUrl": "https://github.com/obra/superpowers",
+      "githubUrl": "https://github.com/supabase/agent-skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -2094,34 +2148,16 @@
       "id": "vercel-labs-agent-skills-vercel-react-native-skills",
       "name": "vercel react native skills",
       "author": "vercel-labs",
-      "stars": 164400,
+      "stars": 164600,
       "description": "skills.sh leaderboard skill from vercel-labs/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936063",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/vercel-labs/agent-skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "supabase-agent-skills-supabase",
-      "name": "supabase",
-      "author": "supabase",
-      "stars": 164300,
-      "description": "skills.sh leaderboard skill from supabase/agent-skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936064",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/supabase/agent-skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -2130,14 +2166,14 @@
       "id": "heygen-com-hyperframes-remotion-to-hyperframes",
       "name": "remotion to hyperframes",
       "author": "heygen-com",
-      "stars": 163300,
+      "stars": 164000,
       "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/heygen-com/hyperframes",
       "source": "skills.sh",
@@ -2148,14 +2184,14 @@
       "id": "obra-superpowers-test-driven-development",
       "name": "test driven development",
       "author": "obra",
-      "stars": 163300,
+      "stars": 163700,
       "description": "skills.sh leaderboard skill from obra/superpowers.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/obra/superpowers",
       "source": "skills.sh",
@@ -2166,14 +2202,14 @@
       "id": "leonxlnx-taste-skill-gpt-taste",
       "name": "gpt taste",
       "author": "leonxlnx",
-      "stars": 161400,
+      "stars": 162100,
       "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/leonxlnx/taste-skill",
       "source": "skills.sh",
@@ -2184,34 +2220,16 @@
       "id": "coreyhaines31-marketingskills-seo-audit",
       "name": "seo audit",
       "author": "coreyhaines31",
-      "stars": 159500,
+      "stars": 159800,
       "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/coreyhaines31/marketingskills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "anthropics-skills-pdf",
-      "name": "pdf",
-      "author": "anthropics",
-      "stars": 155600,
-      "description": "skills.sh leaderboard skill from anthropics/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936064",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/anthropics/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -2220,14 +2238,14 @@
       "id": "mattpocock-skills-domain-modeling",
       "name": "domain modeling",
       "author": "mattpocock",
-      "stars": 155000,
+      "stars": 158200,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
@@ -2235,19 +2253,19 @@
       "auditStatus": "approved"
     },
     {
-      "id": "obra-superpowers-executing-plans",
-      "name": "executing plans",
-      "author": "obra",
-      "stars": 151600,
-      "description": "skills.sh leaderboard skill from obra/superpowers.",
+      "id": "anthropics-skills-pdf",
+      "name": "pdf",
+      "author": "anthropics",
+      "stars": 155800,
+      "description": "skills.sh leaderboard skill from anthropics/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955491",
       "occupationId": "01",
-      "githubUrl": "https://github.com/obra/superpowers",
+      "githubUrl": "https://github.com/anthropics/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -2256,14 +2274,14 @@
       "id": "mattpocock-skills-writing-great-skills",
       "name": "writing great skills",
       "author": "mattpocock",
-      "stars": 150500,
+      "stars": 153500,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
@@ -2274,16 +2292,70 @@
       "id": "mattpocock-skills-codebase-design",
       "name": "codebase design",
       "author": "mattpocock",
-      "stars": 150300,
+      "stars": 153400,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955491",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "mattpocock-skills-diagnosing-bugs",
+      "name": "diagnosing bugs",
+      "author": "mattpocock",
+      "stars": 152000,
+      "description": "skills.sh leaderboard skill from mattpocock/skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955492",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/mattpocock/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "obra-superpowers-executing-plans",
+      "name": "executing plans",
+      "author": "obra",
+      "stars": 152000,
+      "description": "skills.sh leaderboard skill from obra/superpowers.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955491",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/obra/superpowers",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "leonxlnx-taste-skill-brandkit",
+      "name": "brandkit",
+      "author": "leonxlnx",
+      "stars": 150000,
+      "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955492",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/leonxlnx/taste-skill",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -2292,14 +2364,14 @@
       "id": "coreyhaines31-marketingskills-copywriting",
       "name": "copywriting",
       "author": "coreyhaines31",
-      "stars": 149600,
+      "stars": 149900,
       "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955492",
       "occupationId": "01",
       "githubUrl": "https://github.com/coreyhaines31/marketingskills",
       "source": "skills.sh",
@@ -2310,52 +2382,16 @@
       "id": "anthropics-skills-docx",
       "name": "docx",
       "author": "anthropics",
-      "stars": 149400,
+      "stars": 149600,
       "description": "skills.sh leaderboard skill from anthropics/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955492",
       "occupationId": "01",
       "githubUrl": "https://github.com/anthropics/skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "leonxlnx-taste-skill-brandkit",
-      "name": "brandkit",
-      "author": "leonxlnx",
-      "stars": 149300,
-      "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936064",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/leonxlnx/taste-skill",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "mattpocock-skills-diagnosing-bugs",
-      "name": "diagnosing bugs",
-      "author": "mattpocock",
-      "stars": 149000,
-      "description": "skills.sh leaderboard skill from mattpocock/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936064",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -2364,14 +2400,14 @@
       "id": "leonxlnx-taste-skill-image-to-code",
       "name": "image to code",
       "author": "leonxlnx",
-      "stars": 147100,
+      "stars": 147800,
       "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955492",
       "occupationId": "01",
       "githubUrl": "https://github.com/leonxlnx/taste-skill",
       "source": "skills.sh",
@@ -2382,16 +2418,34 @@
       "id": "leonxlnx-taste-skill-imagegen-frontend-web",
       "name": "imagegen frontend web",
       "author": "leonxlnx",
-      "stars": 146300,
+      "stars": 147000,
       "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955492",
       "occupationId": "01",
       "githubUrl": "https://github.com/leonxlnx/taste-skill",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "mattpocock-skills-ask-matt",
+      "name": "ask matt",
+      "author": "mattpocock",
+      "stars": 144700,
+      "description": "skills.sh leaderboard skill from mattpocock/skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955492",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -2400,16 +2454,34 @@
       "id": "obra-superpowers-subagent-driven-development",
       "name": "subagent driven development",
       "author": "obra",
-      "stars": 143800,
+      "stars": 144200,
       "description": "skills.sh leaderboard skill from obra/superpowers.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955492",
       "occupationId": "01",
       "githubUrl": "https://github.com/obra/superpowers",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "leonxlnx-taste-skill-imagegen-frontend-mobile",
+      "name": "imagegen frontend mobile",
+      "author": "leonxlnx",
+      "stars": 143600,
+      "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955492",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/leonxlnx/taste-skill",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -2433,55 +2505,19 @@
       "auditStatus": "approved"
     },
     {
-      "id": "leonxlnx-taste-skill-imagegen-frontend-mobile",
-      "name": "imagegen frontend mobile",
-      "author": "leonxlnx",
-      "stars": 142900,
-      "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936064",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/leonxlnx/taste-skill",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
       "id": "obra-superpowers-verification-before-completion",
       "name": "verification before completion",
       "author": "obra",
-      "stars": 142000,
+      "stars": 142500,
       "description": "skills.sh leaderboard skill from obra/superpowers.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955492",
       "occupationId": "01",
       "githubUrl": "https://github.com/obra/superpowers",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "mattpocock-skills-ask-matt",
-      "name": "ask matt",
-      "author": "mattpocock",
-      "stars": 141700,
-      "description": "skills.sh leaderboard skill from mattpocock/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936064",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -2562,32 +2598,14 @@
       "id": "obra-superpowers-receiving-code-review",
       "name": "receiving code review",
       "author": "obra",
-      "stars": 136100,
+      "stars": 136500,
       "description": "skills.sh leaderboard skill from obra/superpowers.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936064",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/obra/superpowers",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "obra-superpowers-writing-skills",
-      "name": "writing skills",
-      "author": "obra",
-      "stars": 135000,
-      "description": "skills.sh leaderboard skill from obra/superpowers.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936064",
+      "updatedAt": "1783955492",
       "occupationId": "01",
       "githubUrl": "https://github.com/obra/superpowers",
       "source": "skills.sh",
@@ -2598,16 +2616,52 @@
       "id": "mattpocock-skills-design-an-interface",
       "name": "design an interface",
       "author": "mattpocock",
-      "stars": 134600,
+      "stars": 136100,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936065",
+      "updatedAt": "1783955492",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "obra-superpowers-writing-skills",
+      "name": "writing skills",
+      "author": "obra",
+      "stars": 135400,
+      "description": "skills.sh leaderboard skill from obra/superpowers.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955492",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/obra/superpowers",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "emilkowalski-skills-emil-design-eng",
+      "name": "emil design eng",
+      "author": "emilkowalski",
+      "stars": 134400,
+      "description": "skills.sh leaderboard skill from emilkowalski/skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955492",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/emilkowalski/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -2716,24 +2770,6 @@
       "updatedAt": "1783503155",
       "occupationId": "01",
       "githubUrl": "https://github.com/runcomfy-com/skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "emilkowalski-skills-emil-design-eng",
-      "name": "emil design eng",
-      "author": "emilkowalski",
-      "stars": 133700,
-      "description": "skills.sh leaderboard skill from emilkowalski/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936065",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/emilkowalski/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -2878,6 +2914,24 @@
       "updatedAt": "1783503155",
       "occupationId": "01",
       "githubUrl": "https://github.com/runcomfy-com/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "obra-superpowers-dispatching-parallel-agents",
+      "name": "dispatching parallel agents",
+      "author": "obra",
+      "stars": 133600,
+      "description": "skills.sh leaderboard skill from obra/superpowers.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955492",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/obra/superpowers",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -3423,24 +3477,6 @@
       "auditStatus": "approved"
     },
     {
-      "id": "obra-superpowers-dispatching-parallel-agents",
-      "name": "dispatching parallel agents",
-      "author": "obra",
-      "stars": 133200,
-      "description": "skills.sh leaderboard skill from obra/superpowers.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936065",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/obra/superpowers",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
       "id": "runcomfy-com-skills-nano-banana-edit",
       "name": "nano banana edit",
       "author": "runcomfy-com",
@@ -3531,6 +3567,24 @@
       "auditStatus": "approved"
     },
     {
+      "id": "obra-superpowers-using-git-worktrees",
+      "name": "using git worktrees",
+      "author": "obra",
+      "stars": 133100,
+      "description": "skills.sh leaderboard skill from obra/superpowers.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955492",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/obra/superpowers",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
       "id": "github-com-doany-ai-skills",
       "name": "ai music",
       "author": "doany-ai",
@@ -3549,19 +3603,19 @@
       "auditStatus": "approved"
     },
     {
-      "id": "obra-superpowers-using-git-worktrees",
-      "name": "using git worktrees",
-      "author": "obra",
-      "stars": 132700,
-      "description": "skills.sh leaderboard skill from obra/superpowers.",
+      "id": "mattpocock-skills-request-refactor-plan",
+      "name": "request refactor plan",
+      "author": "mattpocock",
+      "stars": 132600,
+      "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936065",
+      "updatedAt": "1783955492",
       "occupationId": "01",
-      "githubUrl": "https://github.com/obra/superpowers",
+      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -3570,34 +3624,16 @@
       "id": "anthropics-skills-xlsx",
       "name": "xlsx",
       "author": "anthropics",
-      "stars": 132100,
+      "stars": 132300,
       "description": "skills.sh leaderboard skill from anthropics/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936065",
+      "updatedAt": "1783955492",
       "occupationId": "01",
       "githubUrl": "https://github.com/anthropics/skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "mattpocock-skills-request-refactor-plan",
-      "name": "request refactor plan",
-      "author": "mattpocock",
-      "stars": 131200,
-      "description": "skills.sh leaderboard skill from mattpocock/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936065",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -3606,34 +3642,16 @@
       "id": "obra-superpowers-finishing-a-development-branch",
       "name": "finishing a development branch",
       "author": "obra",
-      "stars": 130400,
+      "stars": 130800,
       "description": "skills.sh leaderboard skill from obra/superpowers.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936065",
+      "updatedAt": "1783955492",
       "occupationId": "01",
       "githubUrl": "https://github.com/obra/superpowers",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "microsoft-azure-skills-azure-reliability",
-      "name": "azure reliability",
-      "author": "microsoft",
-      "stars": 127600,
-      "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936065",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -3642,16 +3660,34 @@
       "id": "mattpocock-skills-ubiquitous-language",
       "name": "ubiquitous language",
       "author": "mattpocock",
-      "stars": 127200,
+      "stars": 128600,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936065",
+      "updatedAt": "1783955492",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "microsoft-azure-skills-azure-reliability",
+      "name": "azure reliability",
+      "author": "microsoft",
+      "stars": 128500,
+      "description": "skills.sh leaderboard skill from microsoft/azure-skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955492",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/microsoft/azure-skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -3660,14 +3696,14 @@
       "id": "mattpocock-skills-qa",
       "name": "qa",
       "author": "mattpocock",
-      "stars": 126700,
+      "stars": 128100,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936065",
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
@@ -3693,6 +3729,24 @@
       "auditStatus": "approved"
     },
     {
+      "id": "lllllllama-rigorpilot-skills-ai-research-explore",
+      "name": "ai research explore",
+      "author": "lllllllama",
+      "stars": 124900,
+      "description": "skills.sh leaderboard skill from lllllllama/rigorpilot-skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955493",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/lllllllama/rigorpilot-skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
       "id": "mattpocock-skills-git-guardrails-claude-code",
       "name": "git guardrails claude code",
       "author": "mattpocock",
@@ -3706,24 +3760,6 @@
       "updatedAt": "1783936065",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "lllllllama-rigorpilot-skills-ai-research-explore",
-      "name": "ai research explore",
-      "author": "lllllllama",
-      "stars": 124400,
-      "description": "skills.sh leaderboard skill from lllllllama/rigorpilot-skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936065",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/lllllllama/rigorpilot-skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -3801,6 +3837,24 @@
       "auditStatus": "approved"
     },
     {
+      "id": "mattpocock-skills-edit-article",
+      "name": "edit article",
+      "author": "mattpocock",
+      "stars": 123100,
+      "description": "skills.sh leaderboard skill from mattpocock/skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955493",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/mattpocock/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
       "id": "mattpocock-skills-implement",
       "name": "implement",
       "author": "mattpocock",
@@ -3819,35 +3873,17 @@
       "auditStatus": "approved"
     },
     {
-      "id": "mattpocock-skills-edit-article",
-      "name": "edit article",
-      "author": "mattpocock",
-      "stars": 121700,
-      "description": "skills.sh leaderboard skill from mattpocock/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936065",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/mattpocock/skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
       "id": "mattpocock-skills-setup-pre-commit",
       "name": "setup pre commit",
       "author": "mattpocock",
-      "stars": 119800,
+      "stars": 121200,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936065",
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
@@ -3858,14 +3894,14 @@
       "id": "larksuite-cli-lark-note",
       "name": "lark note",
       "author": "larksuite",
-      "stars": 118400,
+      "stars": 120700,
       "description": "skills.sh leaderboard skill from larksuite/cli.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936065",
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/larksuite/cli",
       "source": "skills.sh",
@@ -3876,14 +3912,50 @@
       "id": "mattpocock-skills-scaffold-exercises",
       "name": "scaffold exercises",
       "author": "mattpocock",
-      "stars": 117700,
+      "stars": 119000,
       "description": "skills.sh leaderboard skill from mattpocock/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936065",
+      "updatedAt": "1783955493",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/mattpocock/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "101-skills-skills-ai-video-generation",
+      "name": "ai video generation",
+      "author": "101-skills",
+      "stars": 118100,
+      "description": "skills.sh leaderboard skill from 101-skills/skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955493",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/101-skills/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "mattpocock-skills-writing-shape",
+      "name": "writing shape",
+      "author": "mattpocock",
+      "stars": 116900,
+      "description": "skills.sh leaderboard skill from mattpocock/skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
@@ -3894,34 +3966,16 @@
       "id": "anthropics-skills-webapp-testing",
       "name": "webapp testing",
       "author": "anthropics",
-      "stars": 114100,
+      "stars": 114300,
       "description": "skills.sh leaderboard skill from anthropics/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936065",
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/anthropics/skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "mattpocock-skills-writing-shape",
-      "name": "writing shape",
-      "author": "mattpocock",
-      "stars": 113700,
-      "description": "skills.sh leaderboard skill from mattpocock/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783884689",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -3948,34 +4002,16 @@
       "id": "coreyhaines31-marketingskills-marketing-psychology",
       "name": "marketing psychology",
       "author": "coreyhaines31",
-      "stars": 109800,
+      "stars": 110000,
       "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936065",
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/coreyhaines31/marketingskills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "101-skills-skills-ai-video-generation",
-      "name": "ai video generation",
-      "author": "101-skills",
-      "stars": 109100,
-      "description": "skills.sh leaderboard skill from 101-skills/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936066",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/101-skills/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -4020,14 +4056,14 @@
       "id": "leonxlnx-taste-skill-design-taste-frontend-v1",
       "name": "design taste frontend v1",
       "author": "leonxlnx",
-      "stars": 105800,
+      "stars": 106500,
       "description": "skills.sh leaderboard skill from leonxlnx/taste-skill.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936066",
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/leonxlnx/taste-skill",
       "source": "skills.sh",
@@ -4056,14 +4092,14 @@
       "id": "coreyhaines31-marketingskills-content-strategy",
       "name": "content strategy",
       "author": "coreyhaines31",
-      "stars": 105200,
+      "stars": 105400,
       "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936066",
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/coreyhaines31/marketingskills",
       "source": "skills.sh",
@@ -4074,14 +4110,14 @@
       "id": "firebase-agent-skills-firebase-basics",
       "name": "firebase basics",
       "author": "firebase",
-      "stars": 105000,
+      "stars": 105200,
       "description": "skills.sh leaderboard skill from firebase/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936066",
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/firebase/agent-skills",
       "source": "skills.sh",
@@ -4092,34 +4128,16 @@
       "id": "firebase-agent-skills-firebase-auth-basics",
       "name": "firebase auth basics",
       "author": "firebase",
-      "stars": 104100,
+      "stars": 104400,
       "description": "skills.sh leaderboard skill from firebase/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936066",
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/firebase/agent-skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "sentry-dev-sentry-cli",
-      "name": "sentry cli",
-      "author": "sentry",
-      "stars": 103200,
-      "description": "skills.sh leaderboard skill from sentry/dev.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936066",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/sentry/dev",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -4128,14 +4146,68 @@
       "id": "heygen-com-hyperframes-hyperframes-animation",
       "name": "hyperframes animation",
       "author": "heygen-com",
-      "stars": 102200,
+      "stars": 103600,
       "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936066",
+      "updatedAt": "1783955493",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/heygen-com/hyperframes",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "sentry-dev-sentry-cli",
+      "name": "sentry cli",
+      "author": "sentry",
+      "stars": 103400,
+      "description": "skills.sh leaderboard skill from sentry/dev.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955493",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/sentry/dev",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "heygen-com-hyperframes-hyperframes-core",
+      "name": "hyperframes core",
+      "author": "heygen-com",
+      "stars": 102900,
+      "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955493",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/heygen-com/hyperframes",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "heygen-com-hyperframes-hyperframes-creative",
+      "name": "hyperframes creative",
+      "author": "heygen-com",
+      "stars": 102500,
+      "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/heygen-com/hyperframes",
       "source": "skills.sh",
@@ -4164,14 +4236,14 @@
       "id": "firebase-agent-skills-firebase-hosting-basics",
       "name": "firebase hosting basics",
       "author": "firebase",
-      "stars": 101700,
+      "stars": 101900,
       "description": "skills.sh leaderboard skill from firebase/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936066",
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/firebase/agent-skills",
       "source": "skills.sh",
@@ -4197,55 +4269,19 @@
       "auditStatus": "approved"
     },
     {
-      "id": "heygen-com-hyperframes-hyperframes-core",
-      "name": "hyperframes core",
-      "author": "heygen-com",
-      "stars": 101600,
-      "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936066",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/heygen-com/hyperframes",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
       "id": "firebase-agent-skills-firebase-app-hosting-basics",
       "name": "firebase app hosting basics",
       "author": "firebase",
-      "stars": 101300,
+      "stars": 101500,
       "description": "skills.sh leaderboard skill from firebase/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936066",
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/firebase/agent-skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "heygen-com-hyperframes-hyperframes-creative",
-      "name": "hyperframes creative",
-      "author": "heygen-com",
-      "stars": 101100,
-      "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936066",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/heygen-com/hyperframes",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -4254,14 +4290,14 @@
       "id": "coreyhaines31-marketingskills-programmatic-seo",
       "name": "programmatic seo",
       "author": "coreyhaines31",
-      "stars": 101100,
+      "stars": 101200,
       "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936066",
+      "updatedAt": "1783955493",
       "occupationId": "01",
       "githubUrl": "https://github.com/coreyhaines31/marketingskills",
       "source": "skills.sh",
@@ -4272,14 +4308,14 @@
       "id": "firebase-agent-skills-firebase-data-connect",
       "name": "firebase data connect",
       "author": "firebase",
-      "stars": 100800,
+      "stars": 101000,
       "description": "skills.sh leaderboard skill from firebase/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936066",
+      "updatedAt": "1783955494",
       "occupationId": "01",
       "githubUrl": "https://github.com/firebase/agent-skills",
       "source": "skills.sh",
@@ -4290,14 +4326,14 @@
       "id": "coreyhaines31-marketingskills-marketing-ideas",
       "name": "marketing ideas",
       "author": "coreyhaines31",
-      "stars": 98300,
+      "stars": 98400,
       "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936066",
+      "updatedAt": "1783955494",
       "occupationId": "01",
       "githubUrl": "https://github.com/coreyhaines31/marketingskills",
       "source": "skills.sh",
@@ -4344,14 +4380,14 @@
       "id": "heygen-com-hyperframes-general-video",
       "name": "general video",
       "author": "heygen-com",
-      "stars": 93700,
+      "stars": 94600,
       "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936066",
+      "updatedAt": "1783955494",
       "occupationId": "01",
       "githubUrl": "https://github.com/heygen-com/hyperframes",
       "source": "skills.sh",
@@ -4377,6 +4413,24 @@
       "auditStatus": "approved"
     },
     {
+      "id": "coreyhaines31-marketingskills-copy-editing",
+      "name": "copy editing",
+      "author": "coreyhaines31",
+      "stars": 93100,
+      "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955494",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/coreyhaines31/marketingskills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
       "id": "heygen-com-hyperframes-motion-graphics",
       "name": "motion graphics",
       "author": "heygen-com",
@@ -4395,24 +4449,6 @@
       "auditStatus": "approved"
     },
     {
-      "id": "coreyhaines31-marketingskills-copy-editing",
-      "name": "copy editing",
-      "author": "coreyhaines31",
-      "stars": 92900,
-      "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936066",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/coreyhaines31/marketingskills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
       "id": "heygen-com-hyperframes-product-launch-video",
       "name": "product launch video",
       "author": "heygen-com",
@@ -4424,6 +4460,24 @@
         "Agent Skills"
       ],
       "updatedAt": "1783915210",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/heygen-com/hyperframes",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "heygen-com-hyperframes-website-to-video",
+      "name": "website to video",
+      "author": "heygen-com",
+      "stars": 92900,
+      "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955494",
       "occupationId": "01",
       "githubUrl": "https://github.com/heygen-com/hyperframes",
       "source": "skills.sh",
@@ -4467,17 +4521,35 @@
       "auditStatus": "approved"
     },
     {
-      "id": "heygen-com-hyperframes-website-to-video",
-      "name": "website to video",
+      "id": "heygen-com-hyperframes-pr-to-video",
+      "name": "pr to video",
       "author": "heygen-com",
-      "stars": 92200,
+      "stars": 92400,
       "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936066",
+      "updatedAt": "1783955494",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/heygen-com/hyperframes",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "heygen-com-hyperframes-embedded-captions",
+      "name": "embedded captions",
+      "author": "heygen-com",
+      "stars": 91800,
+      "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955494",
       "occupationId": "01",
       "githubUrl": "https://github.com/heygen-com/hyperframes",
       "source": "skills.sh",
@@ -4488,34 +4560,16 @@
       "id": "firecrawl-cli-firecrawl",
       "name": "firecrawl",
       "author": "firecrawl",
-      "stars": 91700,
+      "stars": 91800,
       "description": "skills.sh leaderboard skill from firecrawl/cli.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783915210",
+      "updatedAt": "1783955494",
       "occupationId": "01",
       "githubUrl": "https://github.com/firecrawl/cli",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "heygen-com-hyperframes-pr-to-video",
-      "name": "pr to video",
-      "author": "heygen-com",
-      "stars": 91600,
-      "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936066",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/heygen-com/hyperframes",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -4557,35 +4611,17 @@
       "auditStatus": "approved"
     },
     {
-      "id": "heygen-com-hyperframes-embedded-captions",
-      "name": "embedded captions",
-      "author": "heygen-com",
-      "stars": 91100,
-      "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936067",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/heygen-com/hyperframes",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
       "id": "vercel-labs-agent-skills-deploy-to-vercel",
       "name": "deploy to vercel",
       "author": "vercel-labs",
-      "stars": 90300,
+      "stars": 90500,
       "description": "skills.sh leaderboard skill from vercel-labs/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936067",
+      "updatedAt": "1783955494",
       "occupationId": "01",
       "githubUrl": "https://github.com/vercel-labs/agent-skills",
       "source": "skills.sh",
@@ -4614,14 +4650,14 @@
       "id": "coreyhaines31-marketingskills-ai-seo",
       "name": "ai seo",
       "author": "coreyhaines31",
-      "stars": 89200,
+      "stars": 89400,
       "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936067",
+      "updatedAt": "1783955494",
       "occupationId": "01",
       "githubUrl": "https://github.com/coreyhaines31/marketingskills",
       "source": "skills.sh",
@@ -4632,14 +4668,14 @@
       "id": "anthropics-skills-mcp-builder",
       "name": "mcp builder",
       "author": "anthropics",
-      "stars": 88600,
+      "stars": 88800,
       "description": "skills.sh leaderboard skill from anthropics/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783915211",
+      "updatedAt": "1783955494",
       "occupationId": "01",
       "githubUrl": "https://github.com/anthropics/skills",
       "source": "skills.sh",
@@ -4668,14 +4704,14 @@
       "id": "anthropics-skills-canvas-design",
       "name": "canvas design",
       "author": "anthropics",
-      "stars": 85700,
+      "stars": 85900,
       "description": "skills.sh leaderboard skill from anthropics/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783915211",
+      "updatedAt": "1783955494",
       "occupationId": "01",
       "githubUrl": "https://github.com/anthropics/skills",
       "source": "skills.sh",
@@ -4686,16 +4722,34 @@
       "id": "higgsfield-ai-skills-higgsfield-generate",
       "name": "higgsfield generate",
       "author": "higgsfield-ai",
-      "stars": 85100,
+      "stars": 85300,
       "description": "skills.sh leaderboard skill from higgsfield-ai/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936067",
+      "updatedAt": "1783955494",
       "occupationId": "01",
       "githubUrl": "https://github.com/higgsfield-ai/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "mattpocock-skills-code-review",
+      "name": "code review",
+      "author": "mattpocock",
+      "stars": 85200,
+      "description": "skills.sh leaderboard skill from mattpocock/skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955494",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -4704,34 +4758,16 @@
       "id": "microsoft-playwright-cli-playwright-cli",
       "name": "playwright cli",
       "author": "microsoft",
-      "stars": 84600,
+      "stars": 84900,
       "description": "skills.sh leaderboard skill from microsoft/playwright-cli.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936067",
+      "updatedAt": "1783955494",
       "occupationId": "01",
       "githubUrl": "https://github.com/microsoft/playwright-cli",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "browser-use-browser-use-browser-use",
-      "name": "browser use",
-      "author": "browser-use",
-      "stars": 84200,
-      "description": "skills.sh leaderboard skill from browser-use/browser-use.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783915211",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/browser-use/browser-use",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -4740,16 +4776,34 @@
       "id": "heygen-com-hyperframes-slideshow",
       "name": "slideshow",
       "author": "heygen-com",
-      "stars": 84200,
+      "stars": 84800,
       "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936067",
+      "updatedAt": "1783955494",
       "occupationId": "01",
       "githubUrl": "https://github.com/heygen-com/hyperframes",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "browser-use-browser-use-browser-use",
+      "name": "browser use",
+      "author": "browser-use",
+      "stars": 84300,
+      "description": "skills.sh leaderboard skill from browser-use/browser-use.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955495",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/browser-use/browser-use",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -4776,14 +4830,14 @@
       "id": "get-convex-agent-skills-convex-quickstart",
       "name": "convex quickstart",
       "author": "get-convex",
-      "stars": 83300,
+      "stars": 83500,
       "description": "skills.sh leaderboard skill from get-convex/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783915211",
+      "updatedAt": "1783955495",
       "occupationId": "01",
       "githubUrl": "https://github.com/get-convex/agent-skills",
       "source": "skills.sh",
@@ -4804,6 +4858,24 @@
       "updatedAt": "1783627473",
       "occupationId": "01",
       "githubUrl": "https://github.com/pbakaus/impeccable",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "get-convex-agent-skills-convex-performance-audit",
+      "name": "convex performance audit",
+      "author": "get-convex",
+      "stars": 83100,
+      "description": "skills.sh leaderboard skill from get-convex/agent-skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955495",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/get-convex/agent-skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -4845,17 +4917,53 @@
       "auditStatus": "approved"
     },
     {
-      "id": "get-convex-agent-skills-convex-performance-audit",
-      "name": "convex performance audit",
+      "id": "get-convex-agent-skills-convex-create-component",
+      "name": "convex create component",
       "author": "get-convex",
-      "stars": 83000,
+      "stars": 82800,
       "description": "skills.sh leaderboard skill from get-convex/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936067",
+      "updatedAt": "1783955495",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/get-convex/agent-skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "get-convex-agent-skills-convex-migration-helper",
+      "name": "convex migration helper",
+      "author": "get-convex",
+      "stars": 82800,
+      "description": "skills.sh leaderboard skill from get-convex/agent-skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955495",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/get-convex/agent-skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "get-convex-agent-skills-convex-setup-auth",
+      "name": "convex setup auth",
+      "author": "get-convex",
+      "stars": 82800,
+      "description": "skills.sh leaderboard skill from get-convex/agent-skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955495",
       "occupationId": "01",
       "githubUrl": "https://github.com/get-convex/agent-skills",
       "source": "skills.sh",
@@ -4881,60 +4989,6 @@
       "auditStatus": "approved"
     },
     {
-      "id": "get-convex-agent-skills-convex-setup-auth",
-      "name": "convex setup auth",
-      "author": "get-convex",
-      "stars": 82400,
-      "description": "skills.sh leaderboard skill from get-convex/agent-skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783884691",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/get-convex/agent-skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "get-convex-agent-skills-convex-create-component",
-      "name": "convex create component",
-      "author": "get-convex",
-      "stars": 82300,
-      "description": "skills.sh leaderboard skill from get-convex/agent-skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783884691",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/get-convex/agent-skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "get-convex-agent-skills-convex-migration-helper",
-      "name": "convex migration helper",
-      "author": "get-convex",
-      "stars": 82300,
-      "description": "skills.sh leaderboard skill from get-convex/agent-skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783884691",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/get-convex/agent-skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
       "id": "pbakaus-impeccable-optimize",
       "name": "optimize",
       "author": "pbakaus",
@@ -4953,6 +5007,24 @@
       "auditStatus": "approved"
     },
     {
+      "id": "mattpocock-skills-resolving-merge-conflicts",
+      "name": "resolving merge conflicts",
+      "author": "mattpocock",
+      "stars": 82300,
+      "description": "skills.sh leaderboard skill from mattpocock/skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955495",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/mattpocock/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
       "id": "pbakaus-impeccable-colorize",
       "name": "colorize",
       "author": "pbakaus",
@@ -4966,24 +5038,6 @@
       "updatedAt": "1783570450",
       "occupationId": "01",
       "githubUrl": "https://github.com/pbakaus/impeccable",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "mattpocock-skills-code-review",
-      "name": "code review",
-      "author": "mattpocock",
-      "stars": 82000,
-      "description": "skills.sh leaderboard skill from mattpocock/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936068",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -5046,34 +5100,16 @@
       "id": "coreyhaines31-marketingskills-ad-creative",
       "name": "ad creative",
       "author": "coreyhaines31",
-      "stars": 80400,
+      "stars": 80600,
       "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936068",
+      "updatedAt": "1783955495",
       "occupationId": "01",
       "githubUrl": "https://github.com/coreyhaines31/marketingskills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "mattpocock-skills-resolving-merge-conflicts",
-      "name": "resolving merge conflicts",
-      "author": "mattpocock",
-      "stars": 80300,
-      "description": "skills.sh leaderboard skill from mattpocock/skills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936068",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -5100,16 +5136,34 @@
       "id": "anthropics-skills-web-artifacts-builder",
       "name": "web artifacts builder",
       "author": "anthropics",
-      "stars": 79700,
+      "stars": 79900,
       "description": "skills.sh leaderboard skill from anthropics/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783915211",
+      "updatedAt": "1783955495",
       "occupationId": "01",
       "githubUrl": "https://github.com/anthropics/skills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "heygen-com-hyperframes-media-use",
+      "name": "media use",
+      "author": "heygen-com",
+      "stars": 79400,
+      "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955495",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/heygen-com/hyperframes",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -5118,14 +5172,14 @@
       "id": "coreyhaines31-marketingskills-cold-email",
       "name": "cold email",
       "author": "coreyhaines31",
-      "stars": 79100,
+      "stars": 79300,
       "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936068",
+      "updatedAt": "1783955495",
       "occupationId": "01",
       "githubUrl": "https://github.com/coreyhaines31/marketingskills",
       "source": "skills.sh",
@@ -5136,14 +5190,14 @@
       "id": "heygen-com-hyperframes-music-to-video",
       "name": "music to video",
       "author": "heygen-com",
-      "stars": 78100,
+      "stars": 78800,
       "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936068",
+      "updatedAt": "1783955495",
       "occupationId": "01",
       "githubUrl": "https://github.com/heygen-com/hyperframes",
       "source": "skills.sh",
@@ -5154,34 +5208,16 @@
       "id": "vercel-labs-agent-skills-vercel-react-view-transitions",
       "name": "vercel react view transitions",
       "author": "vercel-labs",
-      "stars": 77900,
+      "stars": 78100,
       "description": "skills.sh leaderboard skill from vercel-labs/agent-skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936068",
+      "updatedAt": "1783955495",
       "occupationId": "01",
       "githubUrl": "https://github.com/vercel-labs/agent-skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "heygen-com-hyperframes-media-use",
-      "name": "media use",
-      "author": "heygen-com",
-      "stars": 77800,
-      "description": "skills.sh leaderboard skill from heygen-com/hyperframes.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936068",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/heygen-com/hyperframes",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -5190,14 +5226,14 @@
       "id": "coreyhaines31-marketingskills-site-architecture",
       "name": "site architecture",
       "author": "coreyhaines31",
-      "stars": 76500,
+      "stars": 76700,
       "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783915212",
+      "updatedAt": "1783955496",
       "occupationId": "01",
       "githubUrl": "https://github.com/coreyhaines31/marketingskills",
       "source": "skills.sh",
@@ -5208,16 +5244,52 @@
       "id": "coreyhaines31-marketingskills-sales-enablement",
       "name": "sales enablement",
       "author": "coreyhaines31",
-      "stars": 75100,
+      "stars": 75300,
       "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783936068",
+      "updatedAt": "1783955496",
       "occupationId": "01",
       "githubUrl": "https://github.com/coreyhaines31/marketingskills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "coreyhaines31-marketingskills-churn-prevention",
+      "name": "churn prevention",
+      "author": "coreyhaines31",
+      "stars": 75200,
+      "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955496",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/coreyhaines31/marketingskills",
+      "source": "skills.sh",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "mattpocock-skills-research",
+      "name": "research",
+      "author": "mattpocock",
+      "stars": 75200,
+      "description": "skills.sh leaderboard skill from mattpocock/skills.",
+      "tags": [
+        "agent-skill",
+        "skills.sh",
+        "Agent Skills"
+      ],
+      "updatedAt": "1783955496",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/mattpocock/skills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -5236,24 +5308,6 @@
       "updatedAt": "1783778078",
       "occupationId": "01",
       "githubUrl": "https://github.com/101-skills/skills",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "coreyhaines31-marketingskills-churn-prevention",
-      "name": "churn prevention",
-      "author": "coreyhaines31",
-      "stars": 75000,
-      "description": "skills.sh leaderboard skill from coreyhaines31/marketingskills.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783936068",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/coreyhaines31/marketingskills",
       "source": "skills.sh",
       "secureScore": 91,
       "auditStatus": "approved"
@@ -5280,14 +5334,14 @@
       "id": "firecrawl-cli-firecrawl-search",
       "name": "firecrawl search",
       "author": "firecrawl",
-      "stars": 74300,
+      "stars": 74400,
       "description": "skills.sh leaderboard skill from firecrawl/cli.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783915212",
+      "updatedAt": "1783955496",
       "occupationId": "01",
       "githubUrl": "https://github.com/firecrawl/cli",
       "source": "skills.sh",
@@ -5298,14 +5352,14 @@
       "id": "better-auth-skills-better-auth-best-practices",
       "name": "better auth best practices",
       "author": "better-auth",
-      "stars": 73300,
+      "stars": 73500,
       "description": "skills.sh leaderboard skill from better-auth/skills.",
       "tags": [
         "agent-skill",
         "skills.sh",
         "Agent Skills"
       ],
-      "updatedAt": "1783915212",
+      "updatedAt": "1783955496",
       "occupationId": "01",
       "githubUrl": "https://github.com/better-auth/skills",
       "source": "skills.sh",
@@ -6326,6 +6380,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-ffsshhttiikk-opencode-agents-skills-3d-printing",
+      "name": "3d-printing",
+      "author": "ffsshhttiikk",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ffsshhttiikk/opencode-agents-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "opencode",
+        "agents",
+        "printing"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/ffsshhttiikk/opencode-agents-skills/3d-printing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-cl0nazepamm-3dsmax-mcp-skills-3dsmax-mcp-dev",
       "name": "3dsmax-mcp-dev",
       "author": "cl0nazepamm",
@@ -6341,6 +6415,25 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/cl0nazepamm/3dsmax-mcp/skills-3dsmax-mcp-dev",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-terminalskills-skills-skills-3dsmax-rendering",
+      "name": "3dsmax-rendering",
+      "author": "terminalskills",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from terminalskills/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "3dsmax",
+        "rendering"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/terminalskills/skills/skills-3dsmax-rendering",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -6607,6 +6700,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-cai-aa-cae-agent-hub-skill-abaqus-analysis-abaqus-coupled-analysis",
+      "name": "abaqus-analysis-abaqus-coupled-analysis",
+      "author": "cai-aa",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cai-aa/cae-agent-hub. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cae",
+        "hub",
+        "abaqus",
+        "analysis",
+        "coupled"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/cai-aa/cae-agent-hub/skill-abaqus-analysis-abaqus-coupled-analysis",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-cai-aa-cae-agent-hub-skill-abaqus-core-abaqus",
       "name": "abaqus-core-abaqus",
       "author": "cai-aa",
@@ -6801,6 +6916,28 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/aayoawoyemi/ori-mnemos/adapters-hermes",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-likec4-likec4-agents-skills-add-new-element-shape",
+      "name": "add-new-element-shape",
+      "author": "likec4",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from likec4/likec4. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "likec4",
+        "agents",
+        "add",
+        "new",
+        "element"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/likec4/likec4/agents-skills-add-new-element-shape",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -7072,6 +7209,28 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/sfkislev/flue/skills-adobe",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-github-awesome-copilot-skills-adobe-illustrator-scripting",
+      "name": "adobe-illustrator-scripting",
+      "author": "github",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "copilot",
+        "adobe",
+        "illustrator",
+        "scripting"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-adobe-illustrator-scripting",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -7428,6 +7587,25 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/zscole/adversarial-spec/skills-adversarial-spec",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-afadtc-afa-dtc-skills-afa",
+      "name": "afa",
+      "author": "afadtc",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from afadtc/afa-dtc-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "afa",
+        "dtc"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/afadtc/afa-dtc-skills/afa",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -8578,6 +8756,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-arcreel-arcreel-agent-runtime-profile-claude-skills-generate-grid",
+      "name": "agent-runtime-profile-claude-skills-generate-grid",
+      "author": "arcreel",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from arcreel/arcreel. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "arcreel",
+        "runtime",
+        "profile",
+        "generate",
+        "grid"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/arcreel/arcreel/agent-runtime-profile-claude-skills-generate-grid",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-arcreel-arcreel-agent-runtime-profile-claude-skills-generate-storyboard",
       "name": "agent-runtime-profile-claude-skills-generate-storyboard",
       "author": "arcreel",
@@ -8740,6 +8940,27 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/leon-ai/leon/skills-agent-tiny-web-crawler",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sea-go-sea-breakthewaves-agent-v2-skills-global-search",
+      "name": "agent-v2-skills-global-search",
+      "author": "sea-go",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sea-go/sea-breakthewaves. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "sea",
+        "breakthewaves",
+        "global",
+        "search"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/sea-go/sea-breakthewaves/agent-v2-skills-global-search",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -9064,218 +9285,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/inkeep/agents/agents-cookbook-template-projects-activities-planner-advanced-skills-weather-safety-guardrails",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-langchain-ai-langgraph-101-agents-deep-agent-skills-linkedin-post",
-      "name": "agents-deep-agent-skills-linkedin-post",
-      "author": "langchain-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from langchain-ai/langgraph-101. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "langgraph",
-        "101",
-        "agents",
-        "deep",
-        "linkedin",
-        "post"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/langchain-ai/langgraph-101/agents-deep-agent-skills-linkedin-post",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-getsentry-skills-skills-agents-md",
-      "name": "agents-md",
-      "author": "getsentry",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from getsentry/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "agents"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/getsentry/skills/skills-agents-md",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "github-com-taiizor-agents-md-cookbook",
-      "name": "agents-md-cookbook",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [Taiizor](https://github.com/Taiizor) - The tested, tool-agnostic AGENTS.md kit — verified templates, a CI linter, and migrators from .cursorrules/CLAUDE.md/Copilot/Windsurf/Cline/Aider.",
-      "tags": [],
-      "updatedAt": "1783500267",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/Taiizor/agents-md-cookbook",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-4xiaxia-caogao-agents-md-files-zh-soul-claude-skills-chai-shu",
-      "name": "agents-md-files-zh-soul-claude-skills-chai-shu",
-      "author": "4xiaxia",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from 4xiaxia/caogao. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "caogao",
-        "agents",
-        "files",
-        "soul",
-        "chai"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/4xiaxia/caogao/agents-md-files-zh-soul-claude-skills-chai-shu",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "github-com-simple10-agents-observe",
-      "name": "agents-observe",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [Joe Johnston](https://github.com/simple10) - A real-time Claude Code observability dashboard installed as a plugin: it registers hooks across the full session lifecycle (tool calls, subagent start/stop, task and permission events) and streams them to a local React UI backed by a Dockerized SQLite server, with filtering, parent/subagent hierarchy, full session replay, and per-model token stats.",
-      "tags": [],
-      "updatedAt": "1783500267",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/simple10/agents-observe",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-cloudflare-skills-skills-agents-sdk",
-      "name": "agents-sdk",
-      "author": "cloudflare",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from cloudflare/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "agents",
-        "sdk"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/cloudflare/skills/skills-agents-sdk",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-xiaoluolyg-god-agentsociety-custom-skills-cooking-lightmeal",
-      "name": "agentsociety-custom-skills-cooking-lightmeal",
-      "author": "xiaoluolyg",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from xiaoluolyg/god. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "god",
-        "agentsociety",
-        "custom",
-        "cooking",
-        "lightmeal"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/xiaoluolyg/god/agentsociety-custom-skills-cooking-lightmeal",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-xiaoluolyg-god-agentsociety-custom-skills-garden-basic",
-      "name": "agentsociety-custom-skills-garden-basic",
-      "author": "xiaoluolyg",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from xiaoluolyg/god. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "god",
-        "agentsociety",
-        "custom",
-        "garden",
-        "basic"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/xiaoluolyg/god/agentsociety-custom-skills-garden-basic",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-xiaoluolyg-god-agentsociety-custom-skills-youth-communicate",
-      "name": "agentsociety-custom-skills-youth-communicate",
-      "author": "xiaoluolyg",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from xiaoluolyg/god. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "god",
-        "agentsociety",
-        "custom",
-        "youth",
-        "communicate"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/xiaoluolyg/god/agentsociety-custom-skills-youth-communicate",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-agentspace-so-skills-agentspace",
-      "name": "agentspace",
-      "author": "agentspace-so",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from agentspace-so/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "agentspace"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/agentspace-so/skills/agentspace",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-frames-engineering-skills-skills-agentwallet",
-      "name": "agentwallet",
-      "author": "frames-engineering",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from frames-engineering/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "agentwallet"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/frames-engineering/skills/skills-agentwallet",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

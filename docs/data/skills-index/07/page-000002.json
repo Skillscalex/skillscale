@@ -1,7 +1,855 @@
 {
-  "generatedAt": "2026-07-13T09:48:26.564Z",
+  "generatedAt": "2026-07-13T15:12:14.392Z",
   "occupationId": "07",
   "skills": [
+    {
+      "id": "skillsmp-prathamlearnstocode-paper2code-skills-paper2code",
+      "name": "paper2code",
+      "author": "prathamlearnstocode",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from prathamlearnstocode/paper2code. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "paper2code"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/prathamlearnstocode/paper2code/skills-paper2code",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-adu2021-skillxiv-paper2skill-paper2skill-v0-0-2",
+      "name": "paper2skill-paper2skill-v0-0-2",
+      "author": "adu2021",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from adu2021/skillxiv. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "skillxiv",
+        "paper2skill"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/adu2021/skillxiv/paper2skill-paper2skill-v0-0-2",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-paperclipai-paperclip-skills-paperclip",
+      "name": "paperclip",
+      "author": "paperclipai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from paperclipai/paperclip. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "paperclip"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/paperclipai/paperclip/skills-paperclip",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-paperclipai-paperclip-skills-paperclip-board",
+      "name": "paperclip-board",
+      "author": "paperclipai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from paperclipai/paperclip. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "paperclip",
+        "board"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/paperclipai/paperclip/skills-paperclip-board",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-paperclipai-paperclip-skills-paperclip-converting-plans-to-tasks",
+      "name": "paperclip-converting-plans-to-tasks",
+      "author": "paperclipai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from paperclipai/paperclip. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "paperclip",
+        "converting",
+        "plans",
+        "tasks"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/paperclipai/paperclip/skills-paperclip-converting-plans-to-tasks",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-composiohq-awesome-codex-skills-paperjsx",
+      "name": "paperjsx",
+      "author": "composiohq",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from composiohq/awesome-codex-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "codex",
+        "paperjsx"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/composiohq/awesome-codex-skills/paperjsx",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-geederx-paper-rag-skill-skills-paperrag",
+      "name": "paperrag",
+      "author": "geederx",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from geederx/paper-rag-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "paper",
+        "rag",
+        "paperrag"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/geederx/paper-rag-skill/skills-paperrag",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-skills-papers-skill",
+      "name": "papers",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "papers"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/skills-papers-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-k-dense-ai-scientific-agent-skills-skills-paperzilla",
+      "name": "paperzilla",
+      "author": "k-dense-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from k-dense-ai/scientific-agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "scientific",
+        "paperzilla"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-paperzilla",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-paperclipai-paperclip-skills-para-memory-files",
+      "name": "para-memory-files",
+      "author": "paperclipai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from paperclipai/paperclip. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "paperclip",
+        "para",
+        "memory",
+        "files"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/paperclipai/paperclip/skills-para-memory-files",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-garrytan-gbrain-skills-perplexity-research",
+      "name": "perplexity-research",
+      "author": "garrytan",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from garrytan/gbrain. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gbrain",
+        "perplexity",
+        "research"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/garrytan/gbrain/skills-perplexity-research",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-thedotmack-claude-mem-plugin-skills-learn-codebase",
+      "name": "plugin-skills-learn-codebase",
+      "author": "thedotmack",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from thedotmack/claude-mem. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "mem",
+        "plugin",
+        "learn",
+        "codebase"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/thedotmack/claude-mem/plugin-skills-learn-codebase",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-adobe-skills-plugins-aem-project-management-skills-whitepaper",
+      "name": "plugins-aem-project-management-skills-whitepaper",
+      "author": "adobe",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from adobe/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "aem",
+        "project",
+        "management"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/adobe/skills/plugins-aem-project-management-skills-whitepaper",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-context7-auto-research",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-context7-auto-research",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "context7"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-context7-auto-research",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-deep-research",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-deep-research",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "deep"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-deep-research",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-gitlab-automation",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-gitlab-automation",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "gitlab"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-gitlab-automation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-gitlab-ci-patterns",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-gitlab-ci-patterns",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "gitlab"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-gitlab-ci-patterns",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-latex-paper-conversion",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-latex-paper-conversion",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "latex"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-latex-paper-conversion",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-learn",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-learn",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "learn"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-learn",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-lesson-generator",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-lesson-generator",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "lesson"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-lesson-generator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-machine-learning-ops-ml-pipeline",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-machine-learning-ops-ml-pipeline",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "machine"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-machine-learning-ops-ml-pipeline",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-scikit-learn",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-scikit-learn",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "scikit"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-scikit-learn",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-seo-aeo-keyword-research",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-seo-aeo-keyword-research",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "seo"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-seo-aeo-keyword-research",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-superpowers-lab",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-superpowers-lab",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "superpowers"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-superpowers-lab",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-teach",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-teach",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "teach"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-teach",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wshobson-agents-plugins-cicd-automation-skills-gitlab-ci-patterns",
+      "name": "plugins-cicd-automation-skills-gitlab-ci-patterns",
+      "author": "wshobson",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wshobson/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "plugins",
+        "cicd",
+        "automation",
+        "gitlab"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-cicd-automation-skills-gitlab-ci-patterns",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-awslabs-agent-plugins-plugins-deploy-on-aws-skills-aws-architecture-diagram",
+      "name": "plugins-deploy-on-aws-skills-aws-architecture-diagram",
+      "author": "awslabs",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from awslabs/agent-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "deploy",
+        "aws"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/awslabs/agent-plugins/plugins-deploy-on-aws-skills-aws-architecture-diagram",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-gotalab-goal-setter-skill-plugins-goal-setter-skills-goal-setter",
+      "name": "plugins-goal-setter-skills-goal-setter",
+      "author": "gotalab",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from gotalab/goal-setter-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "goal",
+        "setter",
+        "plugins"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/gotalab/goal-setter-skill/plugins-goal-setter-skills-goal-setter",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-nousresearch-hermes-agent-plugins-google-meet",
+      "name": "plugins-google-meet",
+      "author": "nousresearch",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nousresearch/hermes-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "plugins",
+        "google",
+        "meet"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/plugins-google-meet",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-medusajs-medusa-agent-skills-plugins-learn-medusa-skills-learning-medusa",
+      "name": "plugins-learn-medusa-skills-learning-medusa",
+      "author": "medusajs",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from medusajs/medusa-agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "medusa",
+        "plugins",
+        "learn",
+        "learning"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/medusajs/medusa-agent-skills/plugins-learn-medusa-skills-learning-medusa",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-openai-plugins-plugins-life-science-research-skills-chebi-skill",
+      "name": "plugins-life-science-research-skills-chebi",
+      "author": "openai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from openai/plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "life",
+        "science",
+        "research"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/openai/plugins/plugins-life-science-research-skills-chebi-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-openai-plugins-plugins-life-science-research-skills-clinicaltrials-skill",
+      "name": "plugins-life-science-research-skills-clinicaltrials",
+      "author": "openai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from openai/plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "life",
+        "science",
+        "research"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/openai/plugins/plugins-life-science-research-skills-clinicaltrials-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wshobson-agents-plugins-machine-learning-ops-skills-ml-pipeline-workflow",
+      "name": "plugins-machine-learning-ops-skills-ml-pipeline-workflow",
+      "author": "wshobson",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wshobson/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "plugins",
+        "machine",
+        "learning",
+        "ops"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-machine-learning-ops-skills-ml-pipeline-workflow",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-neolabhq-context-engineering-kit-plugins-mcp-skills-setup-codemap-cli",
+      "name": "plugins-mcp-skills-setup-codemap-cli",
+      "author": "neolabhq",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from neolabhq/context-engineering-kit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "context",
+        "engineering",
+        "kit",
+        "plugins",
+        "mcp",
+        "setup"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/neolabhq/context-engineering-kit/plugins-mcp-skills-setup-codemap-cli",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mohitagw15856-pm-claude-skills-plugins-pm-education-skills-student-feedback",
+      "name": "plugins-pm-education-skills-student-feedback",
+      "author": "mohitagw15856",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mohitagw15856/pm-claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "education",
+        "student",
+        "feedback"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/mohitagw15856/pm-claude-skills/plugins-pm-education-skills-student-feedback",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-ruvnet-ruflo-plugins-ruflo-goals-skills-deep-research",
+      "name": "plugins-ruflo-goals-skills-deep-research",
+      "author": "ruvnet",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ruvnet/ruflo. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ruflo",
+        "plugins",
+        "goals",
+        "deep"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/ruvnet/ruflo/plugins-ruflo-goals-skills-deep-research",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-ruvnet-ruflo-plugins-ruflo-goals-skills-research-synthesize",
+      "name": "plugins-ruflo-goals-skills-research-synthesize",
+      "author": "ruvnet",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ruvnet/ruflo. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ruflo",
+        "plugins",
+        "goals",
+        "research"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/ruvnet/ruflo/plugins-ruflo-goals-skills-research-synthesize",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-xlinsist-academic-skills-skills-polish",
+      "name": "polish",
+      "author": "xlinsist",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from xlinsist/academic-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "academic",
+        "polish"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/xlinsist/academic-skills/skills-polish",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-lylll9436-paper-polish-workflow-skill-skills-ppw-literature",
+      "name": "ppw-literature",
+      "author": "lylll9436",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lylll9436/paper-polish-workflow-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "paper",
+        "polish",
+        "workflow",
+        "ppw",
+        "literature"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/lylll9436/paper-polish-workflow-skill/skills-ppw-literature",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-anthropics-knowledge-work-plugins-product-management-skills-synthesize-research",
+      "name": "product-management-skills-synthesize-research",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/knowledge-work-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "knowledge",
+        "work",
+        "plugins",
+        "product",
+        "management",
+        "synthesize"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/knowledge-work-plugins/product-management-skills-synthesize-research",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alirezarezvani-claude-skills-product-team-research-summarizer-skills-research-summarizer",
+      "name": "product-team-research-summarizer-skills-research-summarizer",
+      "author": "alirezarezvani",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alirezarezvani/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "product",
+        "team",
+        "research",
+        "summarizer"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/product-team-research-summarizer-skills-research-summarizer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-nousresearch-hermes-agent-skills-productivity-google-workspace",
       "name": "productivity-google-workspace",
@@ -80,6 +928,48 @@
       "updatedAt": "1783504629",
       "occupationId": "07",
       "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-productivity-notion",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-nousresearch-hermes-agent-skills-productivity-ocr-and-documents",
+      "name": "productivity-ocr-and-documents",
+      "author": "nousresearch",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nousresearch/hermes-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "productivity",
+        "ocr",
+        "and",
+        "documents"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-productivity-ocr-and-documents",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-nousresearch-hermes-agent-skills-productivity-petdex",
+      "name": "productivity-petdex",
+      "author": "nousresearch",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nousresearch/hermes-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "productivity",
+        "petdex"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-productivity-petdex",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -383,6 +1273,25 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-google-deepmind-science-skills-skills-pymol",
+      "name": "pymol",
+      "author": "google-deepmind",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from google-deepmind/science-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "science",
+        "pymol"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/google-deepmind/science-skills/skills-pymol",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-strands-agents-samples-python-01-learn-15-skills-skills-technical-troubleshooting",
       "name": "python-01-learn-15-skills-skills-technical-troubleshooting",
       "author": "strands-agents",
@@ -535,6 +1444,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-nousresearch-hermes-agent-skills-research-arxiv",
+      "name": "research-arxiv",
+      "author": "nousresearch",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nousresearch/hermes-agent. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "research",
+        "arxiv"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-research-arxiv",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-nousresearch-hermes-agent-skills-research-blogwatcher",
       "name": "research-blogwatcher",
       "author": "nousresearch",
@@ -550,6 +1479,27 @@
       "updatedAt": "1783504629",
       "occupationId": "07",
       "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-research-blogwatcher",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-huangwb8-chineseresearchlatex-skills-research-citation-check",
+      "name": "research-citation-check",
+      "author": "huangwb8",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from huangwb8/chineseresearchlatex. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "chineseresearchlatex",
+        "research",
+        "citation",
+        "check"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/huangwb8/chineseresearchlatex/skills-research-citation-check",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -696,6 +1646,29 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-bahayonghang-my-ai-cli-toolkit-skills-research-learning-knowledge-literature-mentor",
+      "name": "research-learning-knowledge-literature-mentor",
+      "author": "bahayonghang",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bahayonghang/my-ai-cli-toolkit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cli",
+        "toolkit",
+        "research",
+        "learning",
+        "knowledge",
+        "literature"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/bahayonghang/my-ai-cli-toolkit/skills-research-learning-knowledge-literature-mentor",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-huangwb8-chineseresearchlatex-skills-research-literature-review",
       "name": "research-literature-review",
       "author": "huangwb8",
@@ -772,6 +1745,25 @@
       "updatedAt": "1783504629",
       "occupationId": "07",
       "skillsmpUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-research-lookup",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-xiuneng0-collab-research-mentor-skill",
+      "name": "research-mentor",
+      "author": "xiuneng0-collab",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from xiuneng0-collab/-. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "research",
+        "mentor"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/xiuneng0-collab/-/research-mentor-skill",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1363,6 +2355,48 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-zlanqing-codex-claude-academic-skills-scientific-toolkit-skill-references-scientific-skills-simpy",
+      "name": "scientific-toolkit-skill-references-scientific-skills-simpy",
+      "author": "zlanqing",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zlanqing/codex-claude-academic-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "codex",
+        "academic",
+        "scientific",
+        "toolkit",
+        "references"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/zlanqing/codex-claude-academic-skills/scientific-toolkit-skill-references-scientific-skills-simpy",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-k-dense-ai-scientific-agent-skills-skills-scikit-learn",
+      "name": "scikit-learn",
+      "author": "k-dense-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from k-dense-ai/scientific-agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "scientific",
+        "scikit",
+        "learn"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-scikit-learn",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-eastsword-dfyx-skills-lab-security-reporter",
       "name": "security-reporter",
       "author": "eastsword",
@@ -1909,6 +2943,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-wordflowlab-novelweave-src-templates-skills-genre-knowledge-fantasy",
+      "name": "src-templates-skills-genre-knowledge-fantasy",
+      "author": "wordflowlab",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wordflowlab/novelweave. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "novelweave",
+        "src",
+        "templates",
+        "genre",
+        "knowledge"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/wordflowlab/novelweave/src-templates-skills-genre-knowledge-fantasy",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-sunflowermm-xrk-agt-skills-standard-office-research",
       "name": "standard-office-research",
       "author": "sunflowermm",
@@ -2087,6 +3143,49 @@
       "updatedAt": "1783504629",
       "occupationId": "07",
       "skillsmpUrl": "https://skillsmp.com/creators/benchflow-ai/skillsbench/tasks-lab-unit-harmonization-environment-skills-lab-unit-harmonization",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wsxwj123-opencode-skills-backup-teacher-paper",
+      "name": "teacher-paper",
+      "author": "wsxwj123",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wsxwj123/opencode-skills-backup. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "opencode",
+        "backup",
+        "teacher",
+        "paper"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/wsxwj123/opencode-skills-backup/teacher-paper",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-zhongweiv-hermes-edu-skills-skills-teacher-tools-teacher-english-lesson-planning",
+      "name": "teacher-tools-teacher-english-lesson-planning",
+      "author": "zhongweiv",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zhongweiv/hermes-edu-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "edu",
+        "teacher",
+        "tools",
+        "english"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/zhongweiv/hermes-edu-skills/skills-teacher-tools-teacher-english-lesson-planning",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2559,6 +3658,27 @@
       "updatedAt": "1783504629",
       "occupationId": "07",
       "skillsmpUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/skills-yuanbao",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-memory125-chinese-classics-skills-zhouyi-learning",
+      "name": "zhouyi-learning",
+      "author": "memory125",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from memory125/chinese-classics-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "chinese",
+        "classics",
+        "zhouyi",
+        "learning"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "07",
+      "skillsmpUrl": "https://skillsmp.com/creators/memory125/chinese-classics-skills/zhouyi-learning",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

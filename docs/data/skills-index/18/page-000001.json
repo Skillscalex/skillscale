@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T09:48:26.564Z",
+  "generatedAt": "2026-07-13T15:12:14.392Z",
   "occupationId": "18",
   "skills": [
     {
@@ -930,6 +930,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-gmh5225-awesome-llvm-security-claude-skills-llvm-obfuscation",
+      "name": "claude-skills-llvm-obfuscation",
+      "author": "gmh5225",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from gmh5225/awesome-llvm-security. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "llvm",
+        "security",
+        "obfuscation"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/gmh5225/awesome-llvm-security/claude-skills-llvm-obfuscation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-agamm-claude-code-owasp-claude-skills-owasp-security",
       "name": "claude-skills-owasp-security",
       "author": "agamm",
@@ -968,6 +989,29 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-security-best-practices",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-wordpress-penetration-testing",
+      "name": "cli-tool-components-skills-security-wordpress-penetration-testing",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-wordpress-penetration-testing",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1934,6 +1978,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-wgpsec-aboutsecurity-skills-general-red-team-assessment",
+      "name": "general-red-team-assessment",
+      "author": "wgpsec",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wgpsec/aboutsecurity. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "aboutsecurity",
+        "general",
+        "red",
+        "team",
+        "assessment"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-general-red-team-assessment",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-wgpsec-aboutsecurity-skills-general-report-generate",
       "name": "general-report-generate",
       "author": "wgpsec",
@@ -2566,6 +2632,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-wshobson-agents-plugins-kubernetes-operations-skills-k8s-security-policies",
+      "name": "plugins-kubernetes-operations-skills-k8s-security-policies",
+      "author": "wshobson",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wshobson/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "plugins",
+        "kubernetes",
+        "operations",
+        "k8s"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-kubernetes-operations-skills-k8s-security-policies",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-wshobson-agents-plugins-protect-mcp-skills-protect-mcp-setup",
       "name": "plugins-protect-mcp-skills-protect-mcp-setup",
       "author": "wshobson",
@@ -2692,6 +2780,27 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/swaylq/master-skill/prototypes-cybersecurity-red-team-master-output",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alirezarezvani-claude-skills-ra-qm-team-skills-information-security-manager-iso27001",
+      "name": "ra-qm-team-skills-information-security-manager-iso27001",
+      "author": "alirezarezvani",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alirezarezvani/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "team",
+        "information",
+        "security",
+        "manager"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/ra-qm-team-skills-information-security-manager-iso27001",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -3052,6 +3161,27 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-tool-katana-crawl",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wgpsec-aboutsecurity-skills-tool-nmap-scan",
+      "name": "tool-nmap-scan",
+      "author": "wgpsec",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wgpsec/aboutsecurity. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "aboutsecurity",
+        "tool",
+        "nmap",
+        "scan"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-tool-nmap-scan",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

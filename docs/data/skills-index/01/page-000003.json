@@ -1,7 +1,812 @@
 {
-  "generatedAt": "2026-07-13T09:48:26.564Z",
+  "generatedAt": "2026-07-13T15:12:14.392Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capacitor-app-upgrades",
+      "name": "capacitor-app-upgrades",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capacitor",
+        "app",
+        "upgrades"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-app-upgrades",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capacitor-expert",
+      "name": "capacitor-expert",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capacitor",
+        "expert"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-expert",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capacitor-in-app-purchases",
+      "name": "capacitor-in-app-purchases",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capacitor",
+        "app",
+        "purchases"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-in-app-purchases",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capacitor-plugin-development",
+      "name": "capacitor-plugin-development",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capacitor",
+        "plugin",
+        "development"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-plugin-development",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capacitor-plugin-spm-support",
+      "name": "capacitor-plugin-spm-support",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capacitor",
+        "plugin",
+        "spm",
+        "support"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-plugin-spm-support",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capacitor-plugin-upgrades",
+      "name": "capacitor-plugin-upgrades",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capacitor",
+        "plugin",
+        "upgrades"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-plugin-upgrades",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capacitor-plugins",
+      "name": "capacitor-plugins",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capacitor",
+        "plugins"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-plugins",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capacitor-push-notifications",
+      "name": "capacitor-push-notifications",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capacitor",
+        "push",
+        "notifications"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-push-notifications",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capacitor-react",
+      "name": "capacitor-react",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capacitor",
+        "react"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-react",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capacitor-vue",
+      "name": "capacitor-vue",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capacitor",
+        "vue"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-vue",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capawesome-cli",
+      "name": "capawesome-cli",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capawesome",
+        "cli"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capawesome-cli",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capawesome-cloud",
+      "name": "capawesome-cloud",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capawesome",
+        "cloud"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capawesome-cloud",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "github-com-renezander030-capcut-cli",
+      "name": "capcut-cli",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [René Zander](https://github.com/renezander030) - A zero-dependency Node CLI (and Claude Code plugin/skill) that lets the agent edit CapCut / JianYing video projects programmatically — inspect timelines, build drafts, add text/audio, word-level captions and Whisper transcription, templates, and cut long-form into shorts — JSON in, JSON out, no server. Deeply mature for a media tool: 205 tests across macOS/Windows/Linux CI, a huge documented command surface, and a deliberately stateless \"the CLI is the protocol\" design.",
+      "tags": [],
+      "updatedAt": "1783500265",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/renezander030/capcut-cli",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "skillsmp-pockebot-openpocket-skills-capcut-edit",
+      "name": "capcut-edit",
+      "author": "pockebot",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from pockebot/openpocket. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "openpocket",
+        "capcut",
+        "edit"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/pockebot/openpocket/skills-capcut-edit",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-zeropointrepo-youtube-skills-skills-captions",
+      "name": "captions",
+      "author": "zeropointrepo",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zeropointrepo/youtube-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "youtube",
+        "captions"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/zeropointrepo/youtube-skills/skills-captions",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-f-is-h-usage4claude-agents-skills-capture-usage4claude-screenshots",
+      "name": "capture-usage4claude-screenshots",
+      "author": "f-is-h",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from f-is-h/usage4claude. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "usage4claude",
+        "agents",
+        "capture",
+        "screenshots"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/f-is-h/usage4claude/agents-skills-capture-usage4claude-screenshots",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "github-com-serpro69-capy",
+      "name": "capy",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [serpro69](https://github.com/serpro69) - 🦫 Privacy-first virtualization layer for LLM context with MCP protocol for tool access.",
+      "tags": [],
+      "updatedAt": "1783500266",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/serpro69/capy",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "skillsmp-lambdatest-agent-skills-capybara-skill",
+      "name": "capybara",
+      "author": "lambdatest",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lambdatest/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capybara"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/lambdatest/agent-skills/capybara-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bear2u-my-skills-skills-card-news-generator",
+      "name": "card-news-generator",
+      "author": "bear2u",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bear2u/my-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "card",
+        "news",
+        "generator"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/bear2u/my-skills/skills-card-news-generator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-publieople-hermes-config-kit-skills-career-career-job-hunting",
+      "name": "career-career-job-hunting",
+      "author": "publieople",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from publieople/hermes-config-kit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "config",
+        "kit",
+        "career",
+        "job",
+        "hunting"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/publieople/hermes-config-kit/skills-career-career-job-hunting",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-santifer-career-ops-agents-skills-career-ops",
+      "name": "career-ops",
+      "author": "santifer",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from santifer/career-ops. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "career",
+        "ops",
+        "agents"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/santifer/career-ops/agents-skills-career-ops",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-refoundai-lenny-skills-skills-career-transitions",
+      "name": "career-transitions",
+      "author": "refoundai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from refoundai/lenny-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "lenny",
+        "career",
+        "transitions"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/refoundai/lenny-skills/skills-career-transitions",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-garrytan-gstack-careful",
+      "name": "careful",
+      "author": "garrytan",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from garrytan/gstack. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gstack",
+        "careful"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/garrytan/gstack/careful",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-thedaviddias-front-end-checklist-skills-carousel-accessibility",
+      "name": "carousel-accessibility",
+      "author": "thedaviddias",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from thedaviddias/front-end-checklist. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "front",
+        "end",
+        "checklist",
+        "carousel",
+        "accessibility"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/thedaviddias/front-end-checklist/skills-carousel-accessibility",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-carrier-relationship-management",
+      "name": "carrier-relationship-management",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "carrier",
+        "relationship",
+        "management"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-carrier-relationship-management",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dawei12138-casego-backend-pg-casego-skills-testcase-generator",
+      "name": "casego-skills-testcase-generator",
+      "author": "dawei12138",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dawei12138/casego-backend-pg. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "casego",
+        "backend",
+        "testcase",
+        "generator"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/dawei12138/casego-backend-pg/casego-skills-testcase-generator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-yunzeforbetter-castflow-castflow-core-skills-origin-evolve-skill",
+      "name": "castflow-core-skills-origin-evolve",
+      "author": "yunzeforbetter",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from yunzeforbetter/castflow. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "castflow",
+        "core",
+        "origin",
+        "evolve"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/yunzeforbetter/castflow/castflow-core-skills-origin-evolve-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-zts212653-clowder-ai-cat-cafe-skills-anime-forge",
+      "name": "cat-cafe-skills-anime-forge",
+      "author": "zts212653",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zts212653/clowder-ai. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "clowder",
+        "cat",
+        "cafe",
+        "anime",
+        "forge"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/zts212653/clowder-ai/cat-cafe-skills-anime-forge",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-zts212653-clowder-ai-cat-cafe-skills-browser-automation",
+      "name": "cat-cafe-skills-browser-automation",
+      "author": "zts212653",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zts212653/clowder-ai. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "clowder",
+        "cat",
+        "cafe",
+        "browser",
+        "automation"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/zts212653/clowder-ai/cat-cafe-skills-browser-automation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-zts212653-clowder-ai-cat-cafe-skills-memory-navigation",
+      "name": "cat-cafe-skills-memory-navigation",
+      "author": "zts212653",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zts212653/clowder-ai. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "clowder",
+        "cat",
+        "cafe",
+        "memory",
+        "navigation"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/zts212653/clowder-ai/cat-cafe-skills-memory-navigation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-zts212653-clowder-ai-cat-cafe-skills-memory-search-best-practices",
+      "name": "cat-cafe-skills-memory-search-best-practices",
+      "author": "zts212653",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zts212653/clowder-ai. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "clowder",
+        "cat",
+        "cafe",
+        "memory",
+        "search"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/zts212653/clowder-ai/cat-cafe-skills-memory-search-best-practices",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-zts212653-clowder-ai-cat-cafe-skills-ttfund-skills",
+      "name": "cat-cafe-skills-ttfund-skills",
+      "author": "zts212653",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zts212653/clowder-ai. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "clowder",
+        "cat",
+        "cafe",
+        "ttfund"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/zts212653/clowder-ai/cat-cafe-skills-ttfund-skills",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-lync-cyber-cataforge-cataforge-skills-req-analysis",
+      "name": "cataforge-skills-req-analysis",
+      "author": "lync-cyber",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lync-cyber/cataforge. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cataforge",
+        "req",
+        "analysis"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/lync-cyber/cataforge/cataforge-skills-req-analysis",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-managedcode-dotnet-skills-catalog-frameworks-blazor-skills-blazor",
+      "name": "catalog-frameworks-blazor-skills-blazor",
+      "author": "managedcode",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from managedcode/dotnet-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "dotnet",
+        "catalog",
+        "frameworks",
+        "blazor"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/managedcode/dotnet-skills/catalog-frameworks-blazor-skills-blazor",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-managedcode-dotnet-skills-catalog-frameworks-winforms-skills-winforms",
+      "name": "catalog-frameworks-winforms-skills-winforms",
+      "author": "managedcode",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from managedcode/dotnet-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "dotnet",
+        "catalog",
+        "frameworks",
+        "winforms"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/managedcode/dotnet-skills/catalog-frameworks-winforms-skills-winforms",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-managedcode-dotnet-skills-catalog-frameworks-wpf-skills-wpf",
+      "name": "catalog-frameworks-wpf-skills-wpf",
+      "author": "managedcode",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from managedcode/dotnet-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "dotnet",
+        "catalog",
+        "frameworks",
+        "wpf"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/managedcode/dotnet-skills/catalog-frameworks-wpf-skills-wpf",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "github-com-0-ai-ug-cate",
+      "name": "Cate",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [0-AI UG](https://github.com/0-AI-UG) - A cross-platform desktop IDE built on an infinite zoomable canvas, where editors, terminals, browsers, and docs float in freeform space instead of tabs — and ships skills that let Claude Code spawn agent terminals on the canvas, coordinate through canvas notes, and drive browser panels. A genuinely novel UX, well-engineered (CI, e2e tests, context-isolated IPC, scoped filesystem access) and widely adopted.",
+      "tags": [],
+      "updatedAt": "1783500265",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/0-AI-UG/cate",
+      "source": "awesome-claude-code",
+      "secureScore": 72,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "categories-skillsmp-unknown",
+      "name": "Categories",
+      "author": "SkillsMP",
+      "stars": 0,
+      "description": "Browse skills organized by domain (Development, AI & ML, DevOps, etc.)",
+      "tags": [],
+      "updatedAt": "1781508365",
+      "occupationId": "01",
+      "source": "skillsmp",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "skillsmp-wccjitou-lgtm-catia-drawing-assistant-skills-catia-automation",
+      "name": "catia-automation",
+      "author": "wccjitou-lgtm",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wccjitou-lgtm/catia-drawing-assistant. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "catia",
+        "drawing",
+        "assistant",
+        "automation"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/wccjitou-lgtm/catia-drawing-assistant/skills-catia-automation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-juliusbrussee-caveman-skills-cavecrew",
+      "name": "cavecrew",
+      "author": "juliusbrussee",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from juliusbrussee/caveman. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "caveman",
+        "cavecrew"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-cavecrew",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-juliusbrussee-caveman-skills-caveman",
+      "name": "caveman",
+      "author": "juliusbrussee",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from juliusbrussee/caveman. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "caveman"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-caveman",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-juliusbrussee-caveman-skills-caveman-commit",
       "name": "caveman-commit",
@@ -863,6 +1668,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-chatcut-inc-agent-plugin-chatcut-skills-chatcut-plugin-basics",
+      "name": "chatcut-skills-chatcut-plugin-basics",
+      "author": "chatcut-inc",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from chatcut-inc/agent-plugin. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugin",
+        "chatcut",
+        "basics"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/chatcut-inc/agent-plugin/chatcut-skills-chatcut-plugin-basics",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-clickhouse-agent-skills-skills-chdb-datastore",
       "name": "chdb-datastore",
       "author": "clickhouse",
@@ -915,6 +1740,27 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/juliusbrussee/cavekit/skills-check",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dykyi-roman-awesome-claude-code-skills-check-file-io",
+      "name": "check-file-io",
+      "author": "dykyi-roman",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dykyi-roman/awesome-claude-code. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "code",
+        "check",
+        "file"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/dykyi-roman/awesome-claude-code/skills-check-file-io",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1884,6 +2730,26 @@
       "auditStatus": "approved"
     },
     {
+      "id": "skillsmp-hanc00l-nemo-agent-v1-claude-code-claude-skills-pentest",
+      "name": "claude-code-claude-skills-pentest",
+      "author": "hanc00l",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from hanc00l/nemo-agent-v1. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "nemo",
+        "code",
+        "pentest"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/hanc00l/nemo-agent-v1/claude-code-claude-skills-pentest",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-sickn33-antigravity-awesome-skills-skills-claude-code-expert",
       "name": "claude-code-expert",
       "author": "sickn33",
@@ -1945,6 +2811,24 @@
       "source": "awesome-claude-code",
       "secureScore": 91,
       "auditStatus": "approved"
+    },
+    {
+      "id": "skillsmp-yuaicode-ai-skills-skills-claude-code-zh",
+      "name": "claude-code-zh",
+      "author": "yuaicode",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from yuaicode/ai-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/yuaicode/ai-skills/skills-claude-code-zh",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
     },
     {
       "id": "skillsmp-leoyishou-personal-ai-company-claude-global-skills-archived-ima-downloader",
@@ -2449,6 +3333,24 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-atopile-atopile-claude-skills-agent",
+      "name": "claude-skills-agent",
+      "author": "atopile",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from atopile/atopile. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "atopile"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/atopile/atopile/claude-skills-agent",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-outfitter-dev-navigator-claude-skills-agent-browser-upstream",
       "name": "claude-skills-agent-browser-upstream",
       "author": "outfitter-dev",
@@ -2464,6 +3366,25 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/outfitter-dev/navigator/claude-skills-agent-browser-upstream",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-atopile-atopile-claude-skills-agent-summary",
+      "name": "claude-skills-agent-summary",
+      "author": "atopile",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from atopile/atopile. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "atopile",
+        "summary"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/atopile/atopile/claude-skills-agent-summary",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2561,6 +3482,26 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/sakurafan1023/aigc-skill/claude-skills-aigc",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-khusdasz-cmd-aigc-dedup-tool-claude-skills-aigc-dedup",
+      "name": "claude-skills-aigc-dedup",
+      "author": "khusdasz-cmd",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from khusdasz-cmd/aigc-dedup-tool. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "aigc",
+        "dedup",
+        "tool"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/khusdasz-cmd/aigc-dedup-tool/claude-skills-aigc-dedup",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -3166,6 +4107,24 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-lotosbin-claude-skills-claude-skills-cfo-skill-md",
+      "name": "claude-skills-cfo",
+      "author": "lotosbin",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lotosbin/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cfo"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/lotosbin/claude-skills/claude-skills-cfo-skill-md",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-maaassistantarknights-maaassistantarknights-claude-skills-changelog",
       "name": "claude-skills-changelog",
       "author": "maaassistantarknights",
@@ -3697,6 +4656,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-hiroppy-mf-dashboard-claude-skills-crawler-scraper",
+      "name": "claude-skills-crawler-scraper",
+      "author": "hiroppy",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from hiroppy/mf-dashboard. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "dashboard",
+        "crawler",
+        "scraper"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/hiroppy/mf-dashboard/claude-skills-crawler-scraper",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-marcusgoll-spec-flow-claude-skills-create-meta-prompts",
       "name": "claude-skills-create-meta-prompts",
       "author": "marcusgoll",
@@ -3815,6 +4794,27 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/agentworkforce/relay/claude-skills-creating-skills-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-realseaberry-automcm-pro-claude-skills-cumcm-master",
+      "name": "claude-skills-cumcm-master",
+      "author": "realseaberry",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from realseaberry/automcm-pro. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "automcm",
+        "pro",
+        "cumcm",
+        "master"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/realseaberry/automcm-pro/claude-skills-cumcm-master",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -3942,6 +4942,26 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/liangdabiao/claude-data-analysis-ultra-main/claude-skills-data-exploration-visualization",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-boutchaz-agritech-claude-skills-data-scientist",
+      "name": "claude-skills-data-scientist",
+      "author": "boutchaz",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from boutchaz/agritech. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agritech",
+        "data",
+        "scientist"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/boutchaz/agritech/claude-skills-data-scientist",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -4184,6 +5204,28 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/langgenius/dify-docs/claude-skills-dify-docs-api-reference",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-storyverse2025-canvas-timeline-claude-skills-director-shot-language-skill",
+      "name": "claude-skills-director-shot-language",
+      "author": "storyverse2025",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from storyverse2025/canvas_timeline. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "canvas",
+        "timeline",
+        "director",
+        "shot",
+        "language"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/storyverse2025/canvas_timeline/claude-skills-director-shot-language-skill",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -4644,6 +5686,45 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/react/react/claude-skills-extract-errors",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-curiositech-some-claude-skills-claude-skills-fancy-yard-landscaper",
+      "name": "claude-skills-fancy-yard-landscaper",
+      "author": "curiositech",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from curiositech/some_claude_skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "some",
+        "fancy",
+        "yard",
+        "landscaper"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/curiositech/some_claude_skills/claude-skills-fancy-yard-landscaper",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-ymahlau-fdtdx-claude-skills-fdtdx",
+      "name": "claude-skills-fdtdx",
+      "author": "ymahlau",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ymahlau/fdtdx. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "fdtdx"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/ymahlau/fdtdx/claude-skills-fdtdx",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -5169,6 +6250,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-handsontable-handsontable-claude-skills-handsontable-demo-page",
+      "name": "claude-skills-handsontable-demo-page",
+      "author": "handsontable",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from handsontable/handsontable. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "handsontable",
+        "demo",
+        "page"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/handsontable/handsontable/claude-skills-handsontable-demo-page",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-garfield-bb-hap-skills-collection-claude-skills-hap-v3-api",
       "name": "claude-skills-hap-v3-api",
       "author": "garfield-bb",
@@ -5614,6 +6715,48 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-decalogue-flyllm-claude-skills-leetcode-coach",
+      "name": "claude-skills-leetcode-coach",
+      "author": "decalogue",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from decalogue/flyllm. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "flyllm",
+        "leetcode",
+        "coach"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/decalogue/flyllm/claude-skills-leetcode-coach",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-ahmet-talha-kavakli-ai-body-backend-claude-skills-lenis-smooth-scroll",
+      "name": "claude-skills-lenis-smooth-scroll",
+      "author": "ahmet-talha-kavakli",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from ahmet-talha-kavakli/ai-body-backend. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "body",
+        "backend",
+        "lenis",
+        "smooth",
+        "scroll"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/ahmet-talha-kavakli/ai-body-backend/claude-skills-lenis-smooth-scroll",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-denoland-deno-claude-skills-lint-js",
       "name": "claude-skills-lint-js",
       "author": "denoland",
@@ -5649,6 +6792,26 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/sundanian1991/openmino/claude-skills-ljg-xray-book",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sirius-db-sirius-claude-skills-log-analyzer",
+      "name": "claude-skills-log-analyzer",
+      "author": "sirius-db",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sirius-db/sirius. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "sirius",
+        "log",
+        "analyzer"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/sirius-db/sirius/claude-skills-log-analyzer",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -6057,6 +7220,25 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/paramountsoftware/ms-access-ai-skill/claude-skills-ms-access-vcs",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-2262727886-stack-mspm0g-contest-skill-claude-skills-mspm0g-contest",
+      "name": "claude-skills-mspm0g-contest",
+      "author": "2262727886-stack",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from 2262727886-stack/mspm0g-contest-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "mspm0g",
+        "contest"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/2262727886-stack/mspm0g-contest-skill/claude-skills-mspm0g-contest",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -6504,6 +7686,25 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-atopile-atopile-claude-skills-planning",
+      "name": "claude-skills-planning",
+      "author": "atopile",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from atopile/atopile. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "atopile",
+        "planning"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/atopile/atopile/claude-skills-planning",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-microsoft-playwright-claude-skills-playwright-dev",
       "name": "claude-skills-playwright-dev",
       "author": "microsoft",
@@ -6783,6 +7984,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-zjl4616-feishu-claude-code-claude-skills-product-toolkit",
+      "name": "claude-skills-product-toolkit",
+      "author": "zjl4616",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zjl4616/feishu-claude-code. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "feishu",
+        "code",
+        "product",
+        "toolkit"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/zjl4616/feishu-claude-code/claude-skills-product-toolkit",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-zhangloveyan-backend-skill-claude-skills-proj-analyze-req",
       "name": "claude-skills-proj-analyze-req",
       "author": "zhangloveyan",
@@ -7039,6 +8261,46 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/zimoliao/scholaraio/claude-skills-quantum-espresso",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mastra-ai-mastra-claude-skills-ralph-plan",
+      "name": "claude-skills-ralph-plan",
+      "author": "mastra-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mastra-ai/mastra. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "mastra",
+        "ralph",
+        "plan"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/mastra-ai/mastra/claude-skills-ralph-plan",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-spring-ai-alibaba-examples-claude-skills-readme-generate",
+      "name": "claude-skills-readme-generate",
+      "author": "spring-ai-alibaba",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from spring-ai-alibaba/examples. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "examples",
+        "readme",
+        "generate"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/spring-ai-alibaba/examples/claude-skills-readme-generate",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -7439,6 +8701,25 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-863401402-she-love-me-claude-skills-she-love-me",
+      "name": "claude-skills-she-love-me",
+      "author": "863401402",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from 863401402/she-love-me. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "she",
+        "love"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/863401402/she-love-me/claude-skills-she-love-me",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-letsrevel-revel-backend-claude-skills-silk-debug",
       "name": "claude-skills-silk-debug",
       "author": "letsrevel",
@@ -7801,6 +9082,26 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/react/react/claude-skills-test",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-pipelex-pipelex-claude-skills-test-model",
+      "name": "claude-skills-test-model",
+      "author": "pipelex",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from pipelex/pipelex. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "pipelex",
+        "test",
+        "model"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/pipelex/pipelex/claude-skills-test-model",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -8184,6 +9485,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-significant-gravitas-autogpt-claude-skills-vercel-react-best-practices",
+      "name": "claude-skills-vercel-react-best-practices",
+      "author": "significant-gravitas",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from significant-gravitas/autogpt. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "autogpt",
+        "vercel",
+        "react",
+        "best",
+        "practices"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/significant-gravitas/autogpt/claude-skills-vercel-react-best-practices",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-react-react-claude-skills-verify",
       "name": "claude-skills-verify",
       "author": "react",
@@ -8500,1385 +9823,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/webiny/webiny-js/claude-skills-write-a-prd",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-leonardomso-33-js-concepts-claude-skills-write-concept",
-      "name": "claude-skills-write-concept",
-      "author": "leonardomso",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from leonardomso/33-js-concepts. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "concepts",
-        "write",
-        "concept"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/leonardomso/33-js-concepts/claude-skills-write-concept",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-prefecthq-prefect-claude-skills-write-docs",
-      "name": "claude-skills-write-docs",
-      "author": "prefecthq",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from prefecthq/prefect. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "prefect",
-        "write",
-        "docs"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/prefecthq/prefect/claude-skills-write-docs",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-significant-gravitas-autogpt-claude-skills-write-frontend-tests",
-      "name": "claude-skills-write-frontend-tests",
-      "author": "significant-gravitas",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from significant-gravitas/autogpt. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "autogpt",
-        "write",
-        "frontend",
-        "tests"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/significant-gravitas/autogpt/claude-skills-write-frontend-tests",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-phil-fan-xmindify-claude-skills-xmindify",
-      "name": "claude-skills-xmindify",
-      "author": "phil-fan",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from phil-fan/xmindify. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "xmindify"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/phil-fan/xmindify/claude-skills-xmindify",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-samuraigpt-ai-youtube-shorts-generator-claude-skills-youtube-shorts-generator",
-      "name": "claude-skills-youtube-shorts-generator",
-      "author": "samuraigpt",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from samuraigpt/ai-youtube-shorts-generator. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "youtube",
-        "shorts",
-        "generator"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/samuraigpt/ai-youtube-shorts-generator/claude-skills-youtube-shorts-generator",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-pytorch-executorch-claude-skills-zephyr",
-      "name": "claude-skills-zephyr",
-      "author": "pytorch",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from pytorch/executorch. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "executorch",
-        "zephyr"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/pytorch/executorch/claude-skills-zephyr",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-x1aox1a-zofiles-claude-skills-zotero-connector",
-      "name": "claude-skills-zotero-connector",
-      "author": "x1aox1a",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from x1aox1a/zofiles. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "zofiles",
-        "zotero",
-        "connector"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/x1aox1a/zofiles/claude-skills-zotero-connector",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-makenotion-notion-cookbook-skills-claude-spec-to-implementation",
-      "name": "claude-spec-to-implementation",
-      "author": "makenotion",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from makenotion/notion-cookbook. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "notion",
-        "cookbook",
-        "spec",
-        "implementation"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/makenotion/notion-cookbook/skills-claude-spec-to-implementation",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "github-com-leeguooooo-claude-code-usage-bar",
-      "name": "claude-statusbar",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [leeguooooo](https://github.com/leeguooooo) - The most complete Claude Code status line: 5-hour and 7-day rate-limit usage with reset countdowns and *learned* end-of-window projections, context window, prompt-cache-expiry countdown, per-session cost, plus live todo/tool/git activity — across 3 styles and 9 themes, configurable by CLI or natural-language skill. Genuinely well-engineered (PyPI, 320+ tests, a sub-1%-CPU daemon, deep docs) and the clear standout of a very crowded field.",
-      "tags": [],
-      "updatedAt": "1783500265",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/leeguooooo/claude-code-usage-bar",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-mohitagw15856-pm-claude-skills-skills-claude-superpowers",
-      "name": "claude-superpowers",
-      "author": "mohitagw15856",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from mohitagw15856/pm-claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "superpowers"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/mohitagw15856/pm-claude-skills/skills-claude-superpowers",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-agricidaniel-claude-youtube-skills-claude-youtube",
-      "name": "claude-youtube",
-      "author": "agricidaniel",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from agricidaniel/claude-youtube. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "youtube"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/agricidaniel/claude-youtube/skills-claude-youtube",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "claude-com-claude-unknown",
-      "name": "claude.com",
-      "author": "Claude",
-      "stars": 0,
-      "description": "",
-      "tags": [],
-      "updatedAt": "1781508338",
-      "occupationId": "01",
-      "source": "claude-official-plugins",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "claude-md-management-claude-unknown",
-      "name": "CLAUDE.md Management",
-      "author": "Claude",
-      "stars": 0,
-      "description": "Tools to maintain CLAUDE.md - audit quality, capture learnings, and keep project memory current.",
-      "tags": [],
-      "updatedAt": "1781508328",
-      "occupationId": "01",
-      "source": "claude-official-plugins",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "github-com-arturogarrido-claudinho",
-      "name": "claudinho",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [Arturo Garrido](https://github.com/arturogarrido) - 2026 World Cup live scores in your terminal, Claude Code statusline &amp; MCP. No API keys.",
-      "tags": [],
-      "updatedAt": "1783500265",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/arturogarrido/claudinho",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-aibot88-sec-skill-store-skills-claudskills-code-patterns",
-      "name": "claudskills-code-patterns",
-      "author": "aibot88",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from aibot88/sec_skill_store. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "sec",
-        "store",
-        "claudskills",
-        "code",
-        "patterns"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/aibot88/sec_skill_store/skills-claudskills-code-patterns",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "github-com-fabioconcina-claumon",
-      "name": "Claumon",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [fabioconcina](https://github.com/fabioconcina) - Claude Code dashboard for Pro/Max users: live rate-limit gauges, calibrated usage forecasts, session costs, memory browser. Single binary, zero config.",
-      "tags": [],
-      "updatedAt": "1783500266",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/fabioconcina/claumon",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "agent-clawdbot",
-      "name": "clawdbot",
-      "author": "agent",
-      "stars": 0,
-      "description": "skills.sh leaderboard skill from agent.",
-      "tags": [
-        "agent-skill",
-        "skills.sh",
-        "Agent Skills"
-      ],
-      "updatedAt": "1783503155",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/agent",
-      "source": "skills.sh",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-wondelai-skills-clean-architecture",
-      "name": "clean-architecture",
-      "author": "wondelai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wondelai/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "clean",
-        "architecture"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wondelai/skills/clean-architecture",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-amelnagdy-guard-skills-skills-clean-code-guard",
-      "name": "clean-code-guard",
-      "author": "amelnagdy",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from amelnagdy/guard-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "guard",
-        "clean",
-        "code"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/amelnagdy/guard-skills/skills-clean-code-guard",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-axeldelafosse-loop-agents-skills-clean-vm",
-      "name": "clean-vm",
-      "author": "axeldelafosse",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from axeldelafosse/loop. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "loop",
-        "agents",
-        "clean"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/axeldelafosse/loop/agents-skills-clean-vm",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "github-com-cleatdev-cleat",
-      "name": "Cleat",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [cleatdev](https://github.com/cleatdev) - Give the agent a cage, not your keys. One-command Docker sandbox for AI coding agents: full autonomous permissions, per-project isolation, your host stays untouched.",
-      "tags": [],
-      "updatedAt": "1783500265",
-      "occupationId": "01",
-      "githubUrl": "https://github.com/cleatdev/cleat",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-ovachiever-droid-tings-skills-clerk-auth",
-      "name": "clerk-auth",
-      "author": "ovachiever",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from ovachiever/droid-tings. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "droid",
-        "tings",
-        "clerk",
-        "auth"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/ovachiever/droid-tings/skills-clerk-auth",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-prefecthq-prefect-mcp-server-skills-cli",
-      "name": "cli",
-      "author": "prefecthq",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from prefecthq/prefect-mcp-server. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "prefect",
-        "mcp",
-        "server",
-        "cli"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/prefecthq/prefect-mcp-server/skills-cli",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "cli-flags-reference-aitmpl-docs-unknown",
-      "name": "CLI Flags Reference",
-      "author": "AITmpl Docs",
-      "stars": 0,
-      "description": "Complete reference for all Claude Code Templates CLI flags and options",
-      "tags": [],
-      "updatedAt": "1781508343",
-      "occupationId": "01",
-      "source": "aitmpl-docs-index",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "cli-tool-overview-aitmpl-docs-unknown",
-      "name": "CLI Tool Overview",
-      "author": "AITmpl Docs",
-      "stars": 0,
-      "description": "Complete guide to the Claude Code Templates CLI for managing components, agents, and configurations",
-      "tags": [],
-      "updatedAt": "1781508343",
-      "occupationId": "01",
-      "source": "aitmpl-docs-index",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-hkuds-cli-anything-skills-cli-anything-calibre",
-      "name": "cli-anything-calibre",
-      "author": "hkuds",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from hkuds/cli-anything. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cli",
-        "anything",
-        "calibre"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/hkuds/cli-anything/skills-cli-anything-calibre",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-hkuds-cli-anything-skills-cli-anything-dify-workflow",
-      "name": "cli-anything-dify-workflow",
-      "author": "hkuds",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from hkuds/cli-anything. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cli",
-        "anything",
-        "dify",
-        "workflow"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/hkuds/cli-anything/skills-cli-anything-dify-workflow",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-hkuds-cli-anything-skills-cli-anything-mubu",
-      "name": "cli-anything-mubu",
-      "author": "hkuds",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from hkuds/cli-anything. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cli",
-        "anything",
-        "mubu"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/hkuds/cli-anything/skills-cli-anything-mubu",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-hkuds-cli-anything-skills-cli-anything-threemf",
-      "name": "cli-anything-threemf",
-      "author": "hkuds",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from hkuds/cli-anything. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cli",
-        "anything",
-        "threemf"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/hkuds/cli-anything/skills-cli-anything-threemf",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-yb2460-harness-anything-cli-anything-wps-skills",
-      "name": "cli-anything-wps-skills",
-      "author": "yb2460",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from yb2460/harness-anything. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "harness",
-        "anything",
-        "cli",
-        "wps"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/yb2460/harness-anything/cli-anything-wps-skills",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-hkuds-cli-anything-skills-cli-anything-zotero",
-      "name": "cli-anything-zotero",
-      "author": "hkuds",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from hkuds/cli-anything. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cli",
-        "anything",
-        "zotero"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/hkuds/cli-anything/skills-cli-anything-zotero",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-piaoyangguohai1-cli-anything-zotero-cli-anything-zotero-skills",
-      "name": "cli-anything-zotero-skills",
-      "author": "piaoyangguohai1",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from piaoyangguohai1/cli-anything-zotero. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cli",
-        "anything",
-        "zotero"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/piaoyangguohai1/cli-anything-zotero/cli-anything-zotero-skills",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-hkuds-cli-anything-cli-hub-matrix-3d-cad",
-      "name": "cli-hub-matrix-3d-cad",
-      "author": "hkuds",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from hkuds/cli-anything. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cli",
-        "anything",
-        "hub",
-        "matrix",
-        "cad"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/hkuds/cli-anything/cli-hub-matrix-3d-cad",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-hkuds-cli-anything-cli-hub-meta-skill",
-      "name": "cli-hub-meta",
-      "author": "hkuds",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from hkuds/cli-anything. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cli",
-        "anything",
-        "hub",
-        "meta"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/hkuds/cli-anything/cli-hub-meta-skill",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-memohai-autofish-cli-skills-autofish-control",
-      "name": "cli-skills-autofish-control",
-      "author": "memohai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from memohai/autofish. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "autofish",
-        "cli",
-        "control"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/memohai/autofish/cli-skills-autofish-control",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-andrewyng-context-hub-cli-skills-get-api-docs",
-      "name": "cli-skills-get-api-docs",
-      "author": "andrewyng",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from andrewyng/context-hub. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "context",
-        "hub",
-        "cli",
-        "get",
-        "api",
-        "docs"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/andrewyng/context-hub/cli-skills-get-api-docs",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-mvanhorn-printing-press-library-cli-skills-pp-nynj-world-cup-concierge",
-      "name": "cli-skills-pp-nynj-world-cup-concierge",
-      "author": "mvanhorn",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from mvanhorn/printing-press-library. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "printing",
-        "press",
-        "library",
-        "cli",
-        "nynj",
-        "world"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/mvanhorn/printing-press-library/cli-skills-pp-nynj-world-cup-concierge",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-development-api-integration-specialist",
-      "name": "cli-tool-components-skills-development-api-integration-specialist",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-api-integration-specialist",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-development-bleu",
-      "name": "cli-tool-components-skills-development-bleu",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-bleu",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-development-cloudflare-deploy",
-      "name": "cli-tool-components-skills-development-cloudflare-deploy",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-cloudflare-deploy",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-development-create-plan",
-      "name": "cli-tool-components-skills-development-create-plan",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-create-plan",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-development-devops-iac-engineer",
-      "name": "cli-tool-components-skills-development-devops-iac-engineer",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-devops-iac-engineer",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-development-gh-fix-ci",
-      "name": "cli-tool-components-skills-development-gh-fix-ci",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-gh-fix-ci",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-development-git-commit-helper",
-      "name": "cli-tool-components-skills-development-git-commit-helper",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-git-commit-helper",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-development-heygen-best-practices",
-      "name": "cli-tool-components-skills-development-heygen-best-practices",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-heygen-best-practices",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-development-it-operations",
-      "name": "cli-tool-components-skills-development-it-operations",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-it-operations",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-development-mermaid-diagram-specialist",
-      "name": "cli-tool-components-skills-development-mermaid-diagram-specialist",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-mermaid-diagram-specialist",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-development-netlify-deploy",
-      "name": "cli-tool-components-skills-development-netlify-deploy",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-netlify-deploy",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-development-nextjs-supabase-auth",
-      "name": "cli-tool-components-skills-development-nextjs-supabase-auth",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "development"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-nextjs-supabase-auth",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-development-playwright",
-      "name": "cli-tool-components-skills-development-playwright",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-playwright",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-document-processing-docx-official",
-      "name": "cli-tool-components-skills-document-processing-docx-official",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "document"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-document-processing-docx-official",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-document-processing-pdf-fill-studio",
-      "name": "cli-tool-components-skills-document-processing-pdf-fill-studio",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "document"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-document-processing-pdf-fill-studio",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-document-processing-pdf-official",
-      "name": "cli-tool-components-skills-document-processing-pdf-official",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "document"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-document-processing-pdf-official",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-document-processing-pdf-processing-pro",
-      "name": "cli-tool-components-skills-document-processing-pdf-processing-pro",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "document"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-document-processing-pdf-processing-pro",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-document-processing-spreadsheet",
-      "name": "cli-tool-components-skills-document-processing-spreadsheet",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "document"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-document-processing-spreadsheet",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-document-processing-xlsx-official",
-      "name": "cli-tool-components-skills-document-processing-xlsx-official",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "document"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-document-processing-xlsx-official",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-enterprise-communication-email-composer",
-      "name": "cli-tool-components-skills-enterprise-communication-email-composer",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "enterprise"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-enterprise-communication-email-composer",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-enterprise-communication-excel-analysis",
-      "name": "cli-tool-components-skills-enterprise-communication-excel-analysis",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "enterprise"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-enterprise-communication-excel-analysis",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-productivity-claude-code-sessions",
-      "name": "cli-tool-components-skills-productivity-claude-code-sessions",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "productivity"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-productivity-claude-code-sessions",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-productivity-notion-knowledge-capture",
-      "name": "cli-tool-components-skills-productivity-notion-knowledge-capture",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "productivity"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-productivity-notion-knowledge-capture",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-productivity-notion-spec-to-implementation",
-      "name": "cli-tool-components-skills-productivity-notion-spec-to-implementation",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "productivity"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-productivity-notion-spec-to-implementation",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-productivity-think-tank",
-      "name": "cli-tool-components-skills-productivity-think-tank",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "productivity"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-productivity-think-tank",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-scientific-latex-posters",
-      "name": "cli-tool-components-skills-scientific-latex-posters",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "scientific"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-scientific-latex-posters",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-sports-footballbin-predictions",
-      "name": "cli-tool-components-skills-sports-footballbin-predictions",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "sports"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-sports-footballbin-predictions",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-utilities-cf-crawl",
-      "name": "cli-tool-components-skills-utilities-cf-crawl",
-      "author": "davila7",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "code",
-        "templates",
-        "cli",
-        "tool",
-        "components",
-        "utilities"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-utilities-cf-crawl",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-clickhouse-agent-skills-skills-clickhouse-architecture-advisor",
-      "name": "clickhouse-architecture-advisor",
-      "author": "clickhouse",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from clickhouse/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "clickhouse",
-        "architecture",
-        "advisor"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/clickhouse/agent-skills/skills-clickhouse-architecture-advisor",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-clickhouse-agent-skills-skills-clickhouse-best-practices",
-      "name": "clickhouse-best-practices",
-      "author": "clickhouse",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from clickhouse/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "clickhouse",
-        "best",
-        "practices"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/clickhouse/agent-skills/skills-clickhouse-best-practices",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

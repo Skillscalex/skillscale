@@ -1,7 +1,70 @@
 {
-  "generatedAt": "2026-07-13T15:12:14.392Z",
+  "generatedAt": "2026-07-13T19:50:04.528Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-flutter-flutter-agents-agents-reidbaker-agent-skills-code-review",
+      "name": "agents-agents-reidbaker-agent-skills-code-review",
+      "author": "flutter",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from flutter/flutter. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "flutter",
+        "agents",
+        "reidbaker",
+        "code"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/flutter/flutter/agents-agents-reidbaker-agent-skills-code-review",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-inkeep-agents-agents-cookbook-template-projects-activities-planner-advanced-skills-structured-itinerary-responses",
+      "name": "agents-cookbook-template-projects-activities-planner-advanced-skills-structured-itinerary-responses",
+      "author": "inkeep",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from inkeep/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "cookbook",
+        "template",
+        "projects"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/inkeep/agents/agents-cookbook-template-projects-activities-planner-advanced-skills-structured-itinerary-responses",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-inkeep-agents-agents-cookbook-template-projects-activities-planner-advanced-skills-weather-safety-guardrails",
+      "name": "agents-cookbook-template-projects-activities-planner-advanced-skills-weather-safety-guardrails",
+      "author": "inkeep",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from inkeep/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "cookbook",
+        "template",
+        "projects"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/inkeep/agents/agents-cookbook-template-projects-activities-planner-advanced-skills-weather-safety-guardrails",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-langchain-ai-langgraph-101-agents-deep-agent-skills-linkedin-post",
       "name": "agents-deep-agent-skills-linkedin-post",
@@ -9834,65 +9897,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/freestylefly/canghe-skills/skills-canghe-manga-drama",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-capawesome-team-skills-skills-capacitor-angular",
-      "name": "capacitor-angular",
-      "author": "capawesome-team",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "capacitor",
-        "angular"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-angular",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-capawesome-team-skills-skills-capacitor-app-creation",
-      "name": "capacitor-app-creation",
-      "author": "capawesome-team",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "capacitor",
-        "app",
-        "creation"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-app-creation",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-capawesome-team-skills-skills-capacitor-app-development",
-      "name": "capacitor-app-development",
-      "author": "capawesome-team",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "capacitor",
-        "app",
-        "development"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-app-development",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

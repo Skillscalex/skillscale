@@ -1,7 +1,70 @@
 {
-  "generatedAt": "2026-07-13T15:12:14.392Z",
+  "generatedAt": "2026-07-13T19:50:04.528Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-rust-skills-azure-identity-rust",
+      "name": "github-plugins-azure-sdk-rust-skills-azure-identity-rust",
+      "author": "microsoft",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "github",
+        "plugins",
+        "azure",
+        "sdk"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-rust-skills-azure-identity-rust",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-rust-skills-azure-keyvault-certificates-rust",
+      "name": "github-plugins-azure-sdk-rust-skills-azure-keyvault-certificates-rust",
+      "author": "microsoft",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "github",
+        "plugins",
+        "azure",
+        "sdk"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-rust-skills-azure-keyvault-certificates-rust",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-rust-skills-azure-keyvault-keys-rust",
+      "name": "github-plugins-azure-sdk-rust-skills-azure-keyvault-keys-rust",
+      "author": "microsoft",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "github",
+        "plugins",
+        "azure",
+        "sdk"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-rust-skills-azure-keyvault-keys-rust",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-rust-skills-azure-keyvault-secrets-rust",
       "name": "github-plugins-azure-sdk-rust-skills-azure-keyvault-secrets-rust",
@@ -9959,65 +10022,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-latex-posters",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-yogthos-matryoshka-skills-lattice",
-      "name": "lattice",
-      "author": "yogthos",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from yogthos/matryoshka. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "matryoshka",
-        "lattice"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/yogthos/matryoshka/skills-lattice",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-microsoft-vscode-agents-skills-launch",
-      "name": "launch",
-      "author": "microsoft",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from microsoft/vscode. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "vscode",
-        "agents",
-        "launch"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/vscode/agents-skills-launch",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-nirholas-xactions-skills-lead-generation",
-      "name": "lead-generation",
-      "author": "nirholas",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from nirholas/xactions. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "xactions",
-        "lead",
-        "generation"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/nirholas/xactions/skills-lead-generation",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

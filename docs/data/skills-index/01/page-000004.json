@@ -1,7 +1,67 @@
 {
-  "generatedAt": "2026-07-13T15:12:14.392Z",
+  "generatedAt": "2026-07-13T19:50:04.528Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-significant-gravitas-autogpt-claude-skills-worktree",
+      "name": "claude-skills-worktree",
+      "author": "significant-gravitas",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from significant-gravitas/autogpt. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "autogpt",
+        "worktree"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/significant-gravitas/autogpt/claude-skills-worktree",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-itamarzand88-cli-anything-web-claude-skills-worldcup-cli",
+      "name": "claude-skills-worldcup-cli",
+      "author": "itamarzand88",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from itamarzand88/cli-anything-web. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cli",
+        "anything",
+        "web",
+        "worldcup"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/itamarzand88/cli-anything-web/claude-skills-worldcup-cli",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-webiny-webiny-js-claude-skills-write-a-prd",
+      "name": "claude-skills-write-a-prd",
+      "author": "webiny",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from webiny/webiny-js. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "webiny",
+        "write",
+        "prd"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/webiny/webiny-js/claude-skills-write-a-prd",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-leonardomso-33-js-concepts-claude-skills-write-concept",
       "name": "claude-skills-write-concept",
@@ -10119,66 +10179,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/lambdatest/agent-skills/cypress-skill",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-cypress-io-ai-toolkit-skills-cypress-author",
-      "name": "cypress-author",
-      "author": "cypress-io",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from cypress-io/ai-toolkit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "toolkit",
-        "cypress",
-        "author"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/cypress-io/ai-toolkit/skills-cypress-author",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-cypress-io-ai-toolkit-skills-cypress-docs",
-      "name": "cypress-docs",
-      "author": "cypress-io",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from cypress-io/ai-toolkit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "toolkit",
-        "cypress",
-        "docs"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/cypress-io/ai-toolkit/skills-cypress-docs",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-cypress-io-ai-toolkit-skills-cypress-explain",
-      "name": "cypress-explain",
-      "author": "cypress-io",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from cypress-io/ai-toolkit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "toolkit",
-        "cypress",
-        "explain"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/cypress-io/ai-toolkit/skills-cypress-explain",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

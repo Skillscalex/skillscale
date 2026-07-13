@@ -1,7 +1,72 @@
 {
-  "generatedAt": "2026-07-13T15:12:14.392Z",
+  "generatedAt": "2026-07-13T19:50:04.528Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-github-awesome-copilot-skills-power-apps-code-app-scaffold",
+      "name": "power-apps-code-app-scaffold",
+      "author": "github",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "copilot",
+        "power",
+        "apps",
+        "code",
+        "app"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-power-apps-code-app-scaffold",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-github-awesome-copilot-skills-power-bi-dax-optimization",
+      "name": "power-bi-dax-optimization",
+      "author": "github",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "copilot",
+        "power",
+        "dax",
+        "optimization"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-power-bi-dax-optimization",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-julianobarbosa-claude-code-skills-skills-power-bi-modeling",
+      "name": "power-bi-modeling",
+      "author": "julianobarbosa",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from julianobarbosa/claude-code-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "power",
+        "modeling"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/julianobarbosa/claude-code-skills/skills-power-bi-modeling",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-github-awesome-copilot-skills-power-bi-performance-troubleshooting",
       "name": "power-bi-performance-troubleshooting",
@@ -9905,63 +9970,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/garrytan/gstack/setup-deploy",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-deepgram-skills-skills-setup-mcp",
-      "name": "setup-mcp",
-      "author": "deepgram",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from deepgram/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "setup",
-        "mcp"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/deepgram/skills/skills-setup-mcp",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-ezefranca-sg-flw-skills-sg-flw-classifier",
-      "name": "sg-flw-classifier",
-      "author": "ezefranca",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from ezefranca/sg-flw. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "flw",
-        "classifier"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/ezefranca/sg-flw/skills-sg-flw-classifier",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-unovue-shadcn-vue-skills-shadcn-vue",
-      "name": "shadcn-vue",
-      "author": "unovue",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from unovue/shadcn-vue. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "shadcn",
-        "vue"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/unovue/shadcn-vue/skills-shadcn-vue",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

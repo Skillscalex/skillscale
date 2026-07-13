@@ -1,7 +1,65 @@
 {
-  "generatedAt": "2026-07-13T15:12:14.392Z",
+  "generatedAt": "2026-07-13T19:50:04.528Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-anthropics-skills-skills-theme-factory",
+      "name": "theme-factory",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "theme",
+        "factory"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/skills/skills-theme-factory",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-linkerlin-puax-skills-theme-hacker",
+      "name": "theme-hacker",
+      "author": "linkerlin",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from linkerlin/puax. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "puax",
+        "theme",
+        "hacker"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/linkerlin/puax/skills-theme-hacker",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-0xe1337-thesis-figure-skill-skills-thesis-figure-skill",
+      "name": "thesis-figure",
+      "author": "0xe1337",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from 0xe1337/thesis-figure-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "thesis",
+        "figure"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/0xe1337/thesis-figure-skill/skills-thesis-figure-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-ginlix-ai-langalpha-skills-thesis-tracker",
       "name": "thesis-tracker",

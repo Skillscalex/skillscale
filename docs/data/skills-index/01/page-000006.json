@@ -1,7 +1,67 @@
 {
-  "generatedAt": "2026-07-13T15:12:14.392Z",
+  "generatedAt": "2026-07-13T19:50:04.528Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-aaaaqwq-agi-super-team-skills-elite-github-skills-hub",
+      "name": "elite-github-skills-hub",
+      "author": "aaaaqwq",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from aaaaqwq/agi-super-team. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agi",
+        "super",
+        "team",
+        "elite",
+        "github",
+        "hub"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/aaaaqwq/agi-super-team/skills-elite-github-skills-hub",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-maxim-ist-elixir-architect-skills-elixir-architect",
+      "name": "elixir-architect",
+      "author": "maxim-ist",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from maxim-ist/elixir-architect. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "elixir",
+        "architect"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/maxim-ist/elixir-architect/skills-elixir-architect",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-elysiajs-skills-elysia",
+      "name": "elysia",
+      "author": "elysiajs",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from elysiajs/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "elysia"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/elysiajs/skills/elysia",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-agricidaniel-claude-email-email",
       "name": "email",
@@ -10113,69 +10173,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-rust-skills-azure-eventhub-rust",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-rust-skills-azure-identity-rust",
-      "name": "github-plugins-azure-sdk-rust-skills-azure-identity-rust",
-      "author": "microsoft",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "github",
-        "plugins",
-        "azure",
-        "sdk"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-rust-skills-azure-identity-rust",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-rust-skills-azure-keyvault-certificates-rust",
-      "name": "github-plugins-azure-sdk-rust-skills-azure-keyvault-certificates-rust",
-      "author": "microsoft",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "github",
-        "plugins",
-        "azure",
-        "sdk"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-rust-skills-azure-keyvault-certificates-rust",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-rust-skills-azure-keyvault-keys-rust",
-      "name": "github-plugins-azure-sdk-rust-skills-azure-keyvault-keys-rust",
-      "author": "microsoft",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "github",
-        "plugins",
-        "azure",
-        "sdk"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-rust-skills-azure-keyvault-keys-rust",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

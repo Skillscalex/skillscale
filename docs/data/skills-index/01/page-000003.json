@@ -1,7 +1,66 @@
 {
-  "generatedAt": "2026-07-13T15:12:14.392Z",
+  "generatedAt": "2026-07-13T19:50:04.528Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capacitor-angular",
+      "name": "capacitor-angular",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capacitor",
+        "angular"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-angular",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capacitor-app-creation",
+      "name": "capacitor-app-creation",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capacitor",
+        "app",
+        "creation"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-app-creation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-capawesome-team-skills-skills-capacitor-app-development",
+      "name": "capacitor-app-development",
+      "author": "capawesome-team",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from capawesome-team/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "capacitor",
+        "app",
+        "development"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/capawesome-team/skills/skills-capacitor-app-development",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-capawesome-team-skills-skills-capacitor-app-upgrades",
       "name": "capacitor-app-upgrades",
@@ -9763,66 +9822,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/kaakati/managing-director/claude-skills-workforce-planning",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-significant-gravitas-autogpt-claude-skills-worktree",
-      "name": "claude-skills-worktree",
-      "author": "significant-gravitas",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from significant-gravitas/autogpt. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "autogpt",
-        "worktree"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/significant-gravitas/autogpt/claude-skills-worktree",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-itamarzand88-cli-anything-web-claude-skills-worldcup-cli",
-      "name": "claude-skills-worldcup-cli",
-      "author": "itamarzand88",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from itamarzand88/cli-anything-web. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cli",
-        "anything",
-        "web",
-        "worldcup"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/itamarzand88/cli-anything-web/claude-skills-worldcup-cli",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-webiny-webiny-js-claude-skills-write-a-prd",
-      "name": "claude-skills-write-a-prd",
-      "author": "webiny",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from webiny/webiny-js. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "webiny",
-        "write",
-        "prd"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/webiny/webiny-js/claude-skills-write-a-prd",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

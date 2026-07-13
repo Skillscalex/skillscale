@@ -1,7 +1,67 @@
 {
-  "generatedAt": "2026-07-13T15:12:14.392Z",
+  "generatedAt": "2026-07-13T19:50:04.528Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-cypress-io-ai-toolkit-skills-cypress-author",
+      "name": "cypress-author",
+      "author": "cypress-io",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cypress-io/ai-toolkit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "toolkit",
+        "cypress",
+        "author"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/cypress-io/ai-toolkit/skills-cypress-author",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-cypress-io-ai-toolkit-skills-cypress-docs",
+      "name": "cypress-docs",
+      "author": "cypress-io",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cypress-io/ai-toolkit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "toolkit",
+        "cypress",
+        "docs"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/cypress-io/ai-toolkit/skills-cypress-docs",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-cypress-io-ai-toolkit-skills-cypress-explain",
+      "name": "cypress-explain",
+      "author": "cypress-io",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cypress-io/ai-toolkit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "toolkit",
+        "cypress",
+        "explain"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/cypress-io/ai-toolkit/skills-cypress-explain",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-dagster-io-skills-skills-dagster-expert-skills-dagster-expert",
       "name": "dagster-expert-skills-dagster-expert",
@@ -10182,66 +10242,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/companion-inc/feynman/skills-eli5",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-aaaaqwq-agi-super-team-skills-elite-github-skills-hub",
-      "name": "elite-github-skills-hub",
-      "author": "aaaaqwq",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from aaaaqwq/agi-super-team. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "agi",
-        "super",
-        "team",
-        "elite",
-        "github",
-        "hub"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/aaaaqwq/agi-super-team/skills-elite-github-skills-hub",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-maxim-ist-elixir-architect-skills-elixir-architect",
-      "name": "elixir-architect",
-      "author": "maxim-ist",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from maxim-ist/elixir-architect. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "elixir",
-        "architect"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/maxim-ist/elixir-architect/skills-elixir-architect",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-elysiajs-skills-elysia",
-      "name": "elysia",
-      "author": "elysiajs",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from elysiajs/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "elysia"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/elysiajs/skills/elysia",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

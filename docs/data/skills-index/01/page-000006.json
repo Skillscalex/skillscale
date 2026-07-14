@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-13T19:50:04.528Z",
+  "generatedAt": "2026-07-14T03:34:37.597Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-companion-inc-feynman-skills-eli5",
+      "name": "eli5",
+      "author": "companion-inc",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from companion-inc/feynman. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "feynman",
+        "eli5"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/companion-inc/feynman/skills-eli5",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-aaaaqwq-agi-super-team-skills-elite-github-skills-hub",
       "name": "elite-github-skills-hub",
@@ -10152,27 +10171,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-rust-skills-azure-cosmos-rust",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-rust-skills-azure-eventhub-rust",
-      "name": "github-plugins-azure-sdk-rust-skills-azure-eventhub-rust",
-      "author": "microsoft",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "github",
-        "plugins",
-        "azure",
-        "sdk"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-rust-skills-azure-eventhub-rust",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

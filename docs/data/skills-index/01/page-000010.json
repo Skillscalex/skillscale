@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-13T19:50:04.528Z",
+  "generatedAt": "2026-07-14T03:34:37.597Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-planning-and-task-breakdown",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-planning-and-task-breakdown",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "planning"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-planning-and-task-breakdown",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-planning-with-files",
       "name": "plugins-antigravity-awesome-skills-claude-skills-planning-with-files",
@@ -10460,19 +10481,6 @@
       "author": "Claude",
       "stars": 0,
       "description": "Connect Claude Code to PostHog. Query analytics, manage flags, run A/B tests, track errors, analyze LLM costs via natural language. 10+ commands, OAuth, EU/US/self-hosted.",
-      "tags": [],
-      "updatedAt": "1781508334",
-      "occupationId": "01",
-      "source": "claude-official-plugins",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "postman-claude-unknown",
-      "name": "postman",
-      "author": "Claude",
-      "stars": 0,
-      "description": "Full API lifecycle management for Claude Code. Sync collections, generate client code, discover APIs, run tests, crea...",
       "tags": [],
       "updatedAt": "1781508334",
       "occupationId": "01",

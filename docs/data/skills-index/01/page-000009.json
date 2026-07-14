@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-13T19:50:04.528Z",
+  "generatedAt": "2026-07-14T03:34:37.597Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-hkuds-openspace-openspace-host-skills-delegate-task",
+      "name": "openspace-host-skills-delegate-task",
+      "author": "hkuds",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from hkuds/openspace. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "openspace",
+        "host",
+        "delegate",
+        "task"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/hkuds/openspace/openspace-host-skills-delegate-task",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-amplifthq-opentag-skills-opentag",
       "name": "opentag",
@@ -10315,27 +10336,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-pitch-psychologist",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-planning-and-task-breakdown",
-      "name": "plugins-antigravity-awesome-skills-claude-skills-planning-and-task-breakdown",
-      "author": "sickn33",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "antigravity",
-        "awesome",
-        "plugins",
-        "planning"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-planning-and-task-breakdown",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

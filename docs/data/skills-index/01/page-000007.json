@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-13T19:50:04.528Z",
+  "generatedAt": "2026-07-14T03:34:37.597Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-rust-skills-azure-eventhub-rust",
+      "name": "github-plugins-azure-sdk-rust-skills-azure-eventhub-rust",
+      "author": "microsoft",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "github",
+        "plugins",
+        "azure",
+        "sdk"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-rust-skills-azure-eventhub-rust",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-rust-skills-azure-identity-rust",
       "name": "github-plugins-azure-sdk-rust-skills-azure-identity-rust",
@@ -10002,26 +10023,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/galaxy-dawn/claude-scholar/skills-latex-conference-template-organizer",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-k-dense-ai-scientific-agent-skills-skills-latex-posters",
-      "name": "latex-posters",
-      "author": "k-dense-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from k-dense-ai/scientific-agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "scientific",
-        "latex",
-        "posters"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-latex-posters",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

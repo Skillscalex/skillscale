@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-13T19:50:04.528Z",
+  "generatedAt": "2026-07-14T03:34:37.597Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-garrytan-gstack-setup-deploy",
+      "name": "setup-deploy",
+      "author": "garrytan",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from garrytan/gstack. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gstack",
+        "setup",
+        "deploy"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/garrytan/gstack/setup-deploy",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-deepgram-skills-skills-setup-mcp",
       "name": "setup-mcp",
@@ -10010,25 +10030,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/dimitrigilbert/ai-skills/the-council",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-jeffallan-claude-skills-skills-the-fool",
-      "name": "the-fool",
-      "author": "jeffallan",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from jeffallan/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "the",
-        "fool"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/jeffallan/claude-skills/skills-the-fool",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

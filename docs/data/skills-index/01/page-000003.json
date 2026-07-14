@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-13T19:50:04.528Z",
+  "generatedAt": "2026-07-14T03:34:37.597Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-freestylefly-canghe-skills-skills-canghe-manga-drama",
+      "name": "canghe-manga-drama",
+      "author": "freestylefly",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from freestylefly/canghe-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "canghe",
+        "manga",
+        "drama"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/freestylefly/canghe-skills/skills-canghe-manga-drama",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-capawesome-team-skills-skills-capacitor-angular",
       "name": "capacitor-angular",
@@ -9801,27 +9821,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/andrem-sec/psc-comet/claude-skills-workflow-site-teardown",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-kaakati-managing-director-claude-skills-workforce-planning",
-      "name": "claude-skills-workforce-planning",
-      "author": "kaakati",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from kaakati/managing-director. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "managing",
-        "director",
-        "workforce",
-        "planning"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/kaakati/managing-director/claude-skills-workforce-planning",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

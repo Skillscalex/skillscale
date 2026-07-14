@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-13T19:50:04.528Z",
+  "generatedAt": "2026-07-14T03:34:37.597Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-jeffallan-claude-skills-skills-the-fool",
+      "name": "the-fool",
+      "author": "jeffallan",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from jeffallan/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "the",
+        "fool"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/jeffallan/claude-skills/skills-the-fool",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-anthropics-skills-skills-theme-factory",
       "name": "theme-factory",

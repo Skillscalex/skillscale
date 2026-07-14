@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-13T19:50:04.528Z",
+  "generatedAt": "2026-07-14T03:34:37.597Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-abhishekmmgn-skills-agents-agent-interoperability-a2a",
+      "name": "agents-agent-interoperability-a2a",
+      "author": "abhishekmmgn",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from abhishekmmgn/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "interoperability",
+        "a2a"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/abhishekmmgn/skills/agents-agent-interoperability-a2a",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-flutter-flutter-agents-agents-reidbaker-agent-skills-code-review",
       "name": "agents-agents-reidbaker-agent-skills-code-review",
@@ -9877,26 +9897,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/garrytan/gstack/canary",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-freestylefly-canghe-skills-skills-canghe-manga-drama",
-      "name": "canghe-manga-drama",
-      "author": "freestylefly",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from freestylefly/canghe-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "canghe",
-        "manga",
-        "drama"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/freestylefly/canghe-skills/skills-canghe-manga-drama",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

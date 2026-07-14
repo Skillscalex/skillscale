@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-13T19:50:04.528Z",
+  "generatedAt": "2026-07-14T03:34:37.597Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-k-dense-ai-scientific-agent-skills-skills-latex-posters",
+      "name": "latex-posters",
+      "author": "k-dense-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from k-dense-ai/scientific-agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "scientific",
+        "latex",
+        "posters"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-latex-posters",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-yogthos-matryoshka-skills-lattice",
       "name": "lattice",
@@ -9850,27 +9870,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/mitsuhiko/agent-stuff/skills-openscad",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-hkuds-openspace-openspace-host-skills-delegate-task",
-      "name": "openspace-host-skills-delegate-task",
-      "author": "hkuds",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from hkuds/openspace. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openspace",
-        "host",
-        "delegate",
-        "task"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/hkuds/openspace/openspace-host-skills-delegate-task",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

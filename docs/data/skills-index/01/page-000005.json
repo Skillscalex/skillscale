@@ -1,7 +1,25 @@
 {
-  "generatedAt": "2026-07-13T19:50:04.528Z",
+  "generatedAt": "2026-07-14T03:34:37.597Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-lambdatest-agent-skills-cypress-skill",
+      "name": "cypress",
+      "author": "lambdatest",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lambdatest/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cypress"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/lambdatest/agent-skills/cypress-skill",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-cypress-io-ai-toolkit-skills-cypress-author",
       "name": "cypress-author",
@@ -10223,25 +10241,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/skills-electron-development",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-companion-inc-feynman-skills-eli5",
-      "name": "eli5",
-      "author": "companion-inc",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from companion-inc/feynman. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "feynman",
-        "eli5"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/companion-inc/feynman/skills-eli5",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

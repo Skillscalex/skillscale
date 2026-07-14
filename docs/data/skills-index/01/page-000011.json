@@ -1,7 +1,20 @@
 {
-  "generatedAt": "2026-07-13T19:50:04.528Z",
+  "generatedAt": "2026-07-14T03:34:37.597Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "postman-claude-unknown",
+      "name": "postman",
+      "author": "Claude",
+      "stars": 0,
+      "description": "Full API lifecycle management for Claude Code. Sync collections, generate client code, discover APIs, run tests, crea...",
+      "tags": [],
+      "updatedAt": "1781508334",
+      "occupationId": "01",
+      "source": "claude-official-plugins",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "skillsmp-github-awesome-copilot-skills-power-apps-code-app-scaffold",
       "name": "power-apps-code-app-scaffold",
@@ -9950,26 +9963,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/garrytan/gstack/setup-browser-cookies",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-garrytan-gstack-setup-deploy",
-      "name": "setup-deploy",
-      "author": "garrytan",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from garrytan/gstack. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gstack",
-        "setup",
-        "deploy"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/garrytan/gstack/setup-deploy",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

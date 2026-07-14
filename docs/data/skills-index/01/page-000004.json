@@ -1,7 +1,29 @@
 {
-  "generatedAt": "2026-07-14T03:34:37.597Z",
+  "generatedAt": "2026-07-14T08:28:54.559Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-andrem-sec-psc-comet-claude-skills-workflow-site-teardown",
+      "name": "claude-skills-workflow-site-teardown",
+      "author": "andrem-sec",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from andrem-sec/psc-comet. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "psc",
+        "comet",
+        "workflow",
+        "site",
+        "teardown"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/andrem-sec/psc-comet/claude-skills-workflow-site-teardown",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-kaakati-managing-director-claude-skills-workforce-planning",
       "name": "claude-skills-workforce-planning",
@@ -10166,25 +10188,6 @@
       "source": "awesome-claude-code",
       "secureScore": 91,
       "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-hainrixz-cyber-neo-skills-cyber-neo",
-      "name": "cyber-neo",
-      "author": "hainrixz",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from hainrixz/cyber-neo. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cyber",
-        "neo"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/hainrixz/cyber-neo/skills-cyber-neo",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
     }
   ]
 }

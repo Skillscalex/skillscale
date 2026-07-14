@@ -1,7 +1,20 @@
 {
-  "generatedAt": "2026-07-14T03:34:37.597Z",
+  "generatedAt": "2026-07-14T08:28:54.559Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "posthog-claude-unknown",
+      "name": "PostHog",
+      "author": "Claude",
+      "stars": 0,
+      "description": "Connect Claude Code to PostHog. Query analytics, manage flags, run A/B tests, track errors, analyze LLM costs via natural language. 10+ commands, OAuth, EU/US/self-hosted.",
+      "tags": [],
+      "updatedAt": "1781508334",
+      "occupationId": "01",
+      "source": "claude-official-plugins",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "postman-claude-unknown",
       "name": "postman",
@@ -9945,27 +9958,6 @@
       "source": "aitmpl-docs-index",
       "secureScore": 91,
       "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-garrytan-gstack-setup-browser-cookies",
-      "name": "setup-browser-cookies",
-      "author": "garrytan",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from garrytan/gstack. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gstack",
-        "setup",
-        "browser",
-        "cookies"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/garrytan/gstack/setup-browser-cookies",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
     }
   ]
 }

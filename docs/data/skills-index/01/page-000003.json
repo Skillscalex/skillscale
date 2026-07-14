@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-14T03:34:37.597Z",
+  "generatedAt": "2026-07-14T08:28:54.559Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-garrytan-gstack-canary",
+      "name": "canary",
+      "author": "garrytan",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from garrytan/gstack. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gstack",
+        "canary"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/garrytan/gstack/canary",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-freestylefly-canghe-skills-skills-canghe-manga-drama",
       "name": "canghe-manga-drama",
@@ -9799,28 +9818,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/cursortouch/windows-mcp/claude-skills-windows-mcp-tool-tester",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-andrem-sec-psc-comet-claude-skills-workflow-site-teardown",
-      "name": "claude-skills-workflow-site-teardown",
-      "author": "andrem-sec",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from andrem-sec/psc-comet. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "psc",
-        "comet",
-        "workflow",
-        "site",
-        "teardown"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/andrem-sec/psc-comet/claude-skills-workflow-site-teardown",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

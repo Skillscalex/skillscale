@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-14T03:34:37.597Z",
+  "generatedAt": "2026-07-14T08:28:54.559Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-hainrixz-cyber-neo-skills-cyber-neo",
+      "name": "cyber-neo",
+      "author": "hainrixz",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from hainrixz/cyber-neo. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cyber",
+        "neo"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/hainrixz/cyber-neo/skills-cyber-neo",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-lambdatest-agent-skills-cypress-skill",
       "name": "cypress",
@@ -10223,27 +10242,6 @@
       "source": "awesome-claude-code",
       "secureScore": 91,
       "auditStatus": "approved"
-    },
-    {
-      "id": "skillsmp-sickn33-antigravity-awesome-skills-skills-electron-development",
-      "name": "electron-development",
-      "author": "sickn33",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "antigravity",
-        "awesome",
-        "electron",
-        "development"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/skills-electron-development",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
     }
   ]
 }

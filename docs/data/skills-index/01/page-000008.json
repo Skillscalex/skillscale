@@ -1,7 +1,29 @@
 {
-  "generatedAt": "2026-07-14T03:34:37.597Z",
+  "generatedAt": "2026-07-14T08:28:54.559Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-galaxy-dawn-claude-scholar-skills-latex-conference-template-organizer",
+      "name": "latex-conference-template-organizer",
+      "author": "galaxy-dawn",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from galaxy-dawn/claude-scholar. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "scholar",
+        "latex",
+        "conference",
+        "template",
+        "organizer"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/galaxy-dawn/claude-scholar/skills-latex-conference-template-organizer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-k-dense-ai-scientific-agent-skills-skills-latex-posters",
       "name": "latex-posters",
@@ -9851,25 +9873,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/alvinunreal/openpets/skills-openpets",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-mitsuhiko-agent-stuff-skills-openscad",
-      "name": "openscad",
-      "author": "mitsuhiko",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from mitsuhiko/agent-stuff. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "stuff",
-        "openscad"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/mitsuhiko/agent-stuff/skills-openscad",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

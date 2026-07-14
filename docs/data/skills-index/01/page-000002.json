@@ -1,7 +1,20 @@
 {
-  "generatedAt": "2026-07-14T03:34:37.597Z",
+  "generatedAt": "2026-07-14T08:28:54.559Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "agents-aitmpl-docs-unknown",
+      "name": "Agents",
+      "author": "AITmpl Docs",
+      "stars": 0,
+      "description": "AI specialists that extend Claude Code with domain expertise",
+      "tags": [],
+      "updatedAt": "1781508343",
+      "occupationId": "01",
+      "source": "aitmpl-docs-index",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "skillsmp-abhishekmmgn-skills-agents-agent-interoperability-a2a",
       "name": "agents-agent-interoperability-a2a",
@@ -9878,25 +9891,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/zhinkgit/embeddedskills/can",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-garrytan-gstack-canary",
-      "name": "canary",
-      "author": "garrytan",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from garrytan/gstack. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gstack",
-        "canary"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/garrytan/gstack/canary",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

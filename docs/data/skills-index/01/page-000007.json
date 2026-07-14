@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-14T03:34:37.597Z",
+  "generatedAt": "2026-07-14T08:28:54.559Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-rust-skills-azure-cosmos-rust",
+      "name": "github-plugins-azure-sdk-rust-skills-azure-cosmos-rust",
+      "author": "microsoft",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "github",
+        "plugins",
+        "azure",
+        "sdk"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-rust-skills-azure-cosmos-rust",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-rust-skills-azure-eventhub-rust",
       "name": "github-plugins-azure-sdk-rust-skills-azure-eventhub-rust",
@@ -10001,28 +10022,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/cocolalilal/lastchat/agents-skills-lastchat-catalog",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-galaxy-dawn-claude-scholar-skills-latex-conference-template-organizer",
-      "name": "latex-conference-template-organizer",
-      "author": "galaxy-dawn",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from galaxy-dawn/claude-scholar. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "scholar",
-        "latex",
-        "conference",
-        "template",
-        "organizer"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/galaxy-dawn/claude-scholar/skills-latex-conference-template-organizer",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

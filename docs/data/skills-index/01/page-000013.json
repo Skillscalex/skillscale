@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T03:35:39.228Z",
+  "generatedAt": "2026-07-15T08:36:49.501Z",
   "occupationId": "01",
   "skills": [
     {
@@ -3563,6 +3563,20 @@
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
+    },
+    {
+      "id": "github-com-alisa0808-vox-director",
+      "name": "Vox director skill",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [Alisa Qian](https://github.com/Alisa0808) - Vox Director is an open-source skill that turns a one-line topic into a finished Vox-style paper-collage explainer or ad video. It automates the full pipeline — script, collage keyframes, motion, voice-over, music, and captions — on the Atlas Cloud API plus local ffmpeg, with two human approval gates for the beat map and visual style.",
+      "tags": [],
+      "updatedAt": "1784104555",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/Alisa0808/vox-director",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
     },
     {
       "id": "skillsmp-deanpeters-product-manager-skills-skills-vp-cpo-readiness-advisor",

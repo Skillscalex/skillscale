@@ -1,7 +1,25 @@
 {
-  "generatedAt": "2026-07-15T14:10:13.995Z",
+  "generatedAt": "2026-07-15T19:37:47.170Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-thu-maic-openmaic-skills-openmaic",
+      "name": "openmaic",
+      "author": "thu-maic",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from thu-maic/openmaic. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "openmaic"
+      ],
+      "updatedAt": "1783955533",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/thu-maic/openmaic/skills-openmaic",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-alvinunreal-openpets-skills-openpets",
       "name": "openpets",
@@ -10310,27 +10328,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-performance-testing-review-ai-review",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-photopea-embedded-editor",
-      "name": "plugins-antigravity-awesome-skills-claude-skills-photopea-embedded-editor",
-      "author": "sickn33",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "antigravity",
-        "awesome",
-        "plugins",
-        "photopea"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-photopea-embedded-editor",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-15T14:10:13.995Z",
+  "generatedAt": "2026-07-15T19:37:47.170Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-razvanneculai-litecode-claude-skills-wiki",
+      "name": "claude-skills-wiki",
+      "author": "razvanneculai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from razvanneculai/litecode. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "litecode",
+        "wiki"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/razvanneculai/litecode/claude-skills-wiki",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-cursortouch-windows-mcp-claude-skills-windows-mcp-tool-tester",
       "name": "claude-skills-windows-mcp-tool-tester",
@@ -10172,26 +10191,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/skills-cv-generator",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-gitpod-io-gitpod-cve-mitigation",
-      "name": "cve-mitigation",
-      "author": "gitpod-io",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from gitpod-io/gitpod. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "gitpod",
-        "cve",
-        "mitigation"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/gitpod-io/gitpod/cve-mitigation",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

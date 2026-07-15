@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-15T14:10:13.995Z",
+  "generatedAt": "2026-07-15T19:37:47.170Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-photopea-embedded-editor",
+      "name": "plugins-antigravity-awesome-skills-claude-skills-photopea-embedded-editor",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "plugins",
+        "photopea"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-photopea-embedded-editor",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-php-pro",
       "name": "plugins-antigravity-awesome-skills-claude-skills-php-pro",
@@ -10470,28 +10491,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/skills-postgresql",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-github-awesome-copilot-skills-postgresql-code-review",
-      "name": "postgresql-code-review",
-      "author": "github",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "awesome",
-        "copilot",
-        "postgresql",
-        "code",
-        "review"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-postgresql-code-review",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

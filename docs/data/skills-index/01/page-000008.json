@@ -1,7 +1,25 @@
 {
-  "generatedAt": "2026-07-15T14:10:13.995Z",
+  "generatedAt": "2026-07-15T19:37:47.170Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-mvanhorn-last30days-skill-skills-last30days",
+      "name": "last30days",
+      "author": "mvanhorn",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mvanhorn/last30days-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "last30days"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/mvanhorn/last30days-skill/skills-last30days",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-cocolalilal-lastchat-agents-skills-lastchat-catalog",
       "name": "lastchat-catalog",
@@ -9857,24 +9875,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/agentscope-ai/openjudge/skills-openjudge",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-thu-maic-openmaic-skills-openmaic",
-      "name": "openmaic",
-      "author": "thu-maic",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from thu-maic/openmaic. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openmaic"
-      ],
-      "updatedAt": "1783955533",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/thu-maic/openmaic/skills-openmaic",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

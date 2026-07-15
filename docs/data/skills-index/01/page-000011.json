@@ -1,7 +1,29 @@
 {
-  "generatedAt": "2026-07-15T14:10:13.995Z",
+  "generatedAt": "2026-07-15T19:37:47.170Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-github-awesome-copilot-skills-postgresql-code-review",
+      "name": "postgresql-code-review",
+      "author": "github",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "copilot",
+        "postgresql",
+        "code",
+        "review"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-postgresql-code-review",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-github-awesome-copilot-skills-postgresql-optimization",
       "name": "postgresql-optimization",
@@ -9951,19 +9973,6 @@
       "updatedAt": "1781508334",
       "occupationId": "01",
       "source": "claude-official-plugins",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "settings-aitmpl-docs-settings",
-      "name": "Settings",
-      "author": "AITmpl Docs",
-      "stars": 0,
-      "description": "Configure Claude Code behavior with permissions, models, and automation",
-      "tags": [],
-      "updatedAt": "1781508343",
-      "occupationId": "01",
-      "source": "aitmpl-docs-index",
       "secureScore": 91,
       "auditStatus": "approved"
     }

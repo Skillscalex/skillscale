@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-15T14:10:13.995Z",
+  "generatedAt": "2026-07-15T19:37:47.170Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-gitpod-io-gitpod-cve-mitigation",
+      "name": "cve-mitigation",
+      "author": "gitpod-io",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from gitpod-io/gitpod. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gitpod",
+        "cve",
+        "mitigation"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/gitpod-io/gitpod/cve-mitigation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "github-com-barnett-studios-cxpak",
       "name": "cxpak",
@@ -10220,26 +10240,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/aahl/skills/skills-edgeone",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-zhaoxuya520-reverse-skill-skills-edr-bypass-re",
-      "name": "edr-bypass-re",
-      "author": "zhaoxuya520",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from zhaoxuya520/reverse-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "reverse",
-        "edr",
-        "bypass"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/zhaoxuya520/reverse-skill/skills-edr-bypass-re",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

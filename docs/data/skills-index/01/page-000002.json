@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-15T14:10:13.995Z",
+  "generatedAt": "2026-07-15T19:37:47.170Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-agentmail-to-agentmail-skills-agentmail-sdk",
+      "name": "agentmail-sdk",
+      "author": "agentmail-to",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from agentmail-to/agentmail-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agentmail",
+        "sdk"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/agentmail-to/agentmail-skills/agentmail-sdk",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-agentmail-to-agentmail-skills-agentmail-toolkit",
       "name": "agentmail-toolkit",
@@ -9872,25 +9891,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/redf0x1/camofox-browser/skills-camofox-browser",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-camunda-skills-skills-camunda-ai-agents",
-      "name": "camunda-ai-agents",
-      "author": "camunda",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from camunda/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "camunda",
-        "agents"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/camunda/skills/skills-camunda-ai-agents",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

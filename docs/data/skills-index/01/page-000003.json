@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-15T14:10:13.995Z",
+  "generatedAt": "2026-07-15T19:37:47.170Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-camunda-skills-skills-camunda-ai-agents",
+      "name": "camunda-ai-agents",
+      "author": "camunda",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from camunda/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "camunda",
+        "agents"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/camunda/skills/skills-camunda-ai-agents",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-zhinkgit-embeddedskills-can",
       "name": "can",
@@ -9797,25 +9816,6 @@
       "updatedAt": "1783591431",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/zxpsuper/zxpsuper.github.io/claude-skills-wechat-crawler",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-razvanneculai-litecode-claude-skills-wiki",
-      "name": "claude-skills-wiki",
-      "author": "razvanneculai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from razvanneculai/litecode. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "litecode",
-        "wiki"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/razvanneculai/litecode/claude-skills-wiki",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

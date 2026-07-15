@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-15T14:10:13.995Z",
+  "generatedAt": "2026-07-15T19:37:47.170Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-zhaoxuya520-reverse-skill-skills-edr-bypass-re",
+      "name": "edr-bypass-re",
+      "author": "zhaoxuya520",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zhaoxuya520/reverse-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "reverse",
+        "edr",
+        "bypass"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/zhaoxuya520/reverse-skill/skills-edr-bypass-re",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "effective-context-engineering-for-ai-agents-github-awesome-agent",
       "name": "Effective Context Engineering for AI Agents",
@@ -10142,27 +10162,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-python-skills-azure-storage-queue-py",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-python-skills-m365-agents-py",
-      "name": "github-plugins-azure-sdk-python-skills-m365-agents-py",
-      "author": "microsoft",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "github",
-        "plugins",
-        "azure",
-        "sdk"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-python-skills-m365-agents-py",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

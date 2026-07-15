@@ -1,7 +1,20 @@
 {
-  "generatedAt": "2026-07-15T14:10:13.995Z",
+  "generatedAt": "2026-07-15T19:37:47.170Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "settings-aitmpl-docs-settings",
+      "name": "Settings",
+      "author": "AITmpl Docs",
+      "stars": 0,
+      "description": "Configure Claude Code behavior with permissions, models, and automation",
+      "tags": [],
+      "updatedAt": "1781508343",
+      "occupationId": "01",
+      "source": "aitmpl-docs-index",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "settings-components-aitmpl-docs-workflow",
       "name": "Settings Components",
@@ -9999,29 +10012,6 @@
       "updatedAt": "1783591431",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/zhongweiv/hermes-edu-skills/skills-textbook-sync-primary-math-rj-textbook-sync",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-zhongweiv-hermes-edu-skills-skills-textbook-sync-primary-math-sj-textbook-sync",
-      "name": "textbook-sync-primary-math-sj-textbook-sync",
-      "author": "zhongweiv",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from zhongweiv/hermes-edu-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "hermes",
-        "edu",
-        "textbook",
-        "sync",
-        "primary",
-        "math"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/zhongweiv/hermes-edu-skills/skills-textbook-sync-primary-math-sj-textbook-sync",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

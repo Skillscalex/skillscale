@@ -1,7 +1,25 @@
 {
-  "generatedAt": "2026-07-15T08:36:49.501Z",
+  "generatedAt": "2026-07-15T14:10:13.995Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-alvinunreal-openpets-skills-openpets",
+      "name": "openpets",
+      "author": "alvinunreal",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alvinunreal/openpets. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "openpets"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/alvinunreal/openpets/skills-openpets",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-mitsuhiko-agent-stuff-skills-openscad",
       "name": "openscad",
@@ -10313,27 +10331,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-photopea-embedded-editor",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-php-pro",
-      "name": "plugins-antigravity-awesome-skills-claude-skills-php-pro",
-      "author": "sickn33",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "antigravity",
-        "awesome",
-        "plugins",
-        "php"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-php-pro",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

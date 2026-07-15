@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-15T08:36:49.501Z",
+  "generatedAt": "2026-07-15T14:10:13.995Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-python-skills-pydantic-models-py",
+      "name": "github-plugins-azure-sdk-python-skills-pydantic-models-py",
+      "author": "microsoft",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "github",
+        "plugins",
+        "azure",
+        "sdk"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-python-skills-pydantic-models-py",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-rust-skills-azure-cosmos-rust",
       "name": "github-plugins-azure-sdk-rust-skills-azure-cosmos-rust",
@@ -10002,26 +10023,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/mvanhorn/last30days-skill/skills-last30days",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-cocolalilal-lastchat-agents-skills-lastchat-catalog",
-      "name": "lastchat-catalog",
-      "author": "cocolalilal",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from cocolalilal/lastchat. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "lastchat",
-        "agents",
-        "catalog"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/cocolalilal/lastchat/agents-skills-lastchat-catalog",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

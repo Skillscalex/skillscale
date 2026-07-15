@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-15T08:36:49.501Z",
+  "generatedAt": "2026-07-15T14:10:13.995Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-zhinkgit-embeddedskills-can",
+      "name": "can",
+      "author": "zhinkgit",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zhinkgit/embeddedskills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "embeddedskills",
+        "can"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/zhinkgit/embeddedskills/can",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-garrytan-gstack-canary",
       "name": "canary",
@@ -9797,27 +9816,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/razvanneculai/litecode/claude-skills-wiki",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-cursortouch-windows-mcp-claude-skills-windows-mcp-tool-tester",
-      "name": "claude-skills-windows-mcp-tool-tester",
-      "author": "cursortouch",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from cursortouch/windows-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "windows",
-        "mcp",
-        "tool",
-        "tester"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/cursortouch/windows-mcp/claude-skills-windows-mcp-tool-tester",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

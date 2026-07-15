@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-15T08:36:49.501Z",
+  "generatedAt": "2026-07-15T14:10:13.995Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-cocolalilal-lastchat-agents-skills-lastchat-catalog",
+      "name": "lastchat-catalog",
+      "author": "cocolalilal",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cocolalilal/lastchat. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "lastchat",
+        "agents",
+        "catalog"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/cocolalilal/lastchat/agents-skills-lastchat-catalog",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-galaxy-dawn-claude-scholar-skills-latex-conference-template-organizer",
       "name": "latex-conference-template-organizer",
@@ -9855,24 +9875,6 @@
       "updatedAt": "1783955533",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/thu-maic/openmaic/skills-openmaic",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-alvinunreal-openpets-skills-openpets",
-      "name": "openpets",
-      "author": "alvinunreal",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from alvinunreal/openpets. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openpets"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/alvinunreal/openpets/skills-openpets",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

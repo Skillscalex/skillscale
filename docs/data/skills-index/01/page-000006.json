@@ -1,7 +1,20 @@
 {
-  "generatedAt": "2026-07-15T08:36:49.501Z",
+  "generatedAt": "2026-07-15T14:10:13.995Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "effective-context-engineering-for-ai-agents-github-awesome-agent",
+      "name": "Effective Context Engineering for AI Agents",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [Anthropic](https://www.anthropic.com) - Anthropic's guide to curating the context window — compaction, just-in-time retrieval, and note-taking — the discipline underlying effective long-horizon agent use.",
+      "tags": [],
+      "updatedAt": "1783500264",
+      "occupationId": "01",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "skillsmp-sickn33-antigravity-awesome-skills-skills-electron-development",
       "name": "electron-development",
@@ -10150,27 +10163,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-python-skills-m365-agents-py",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-python-skills-pydantic-models-py",
-      "name": "github-plugins-azure-sdk-python-skills-pydantic-models-py",
-      "author": "microsoft",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "github",
-        "plugins",
-        "azure",
-        "sdk"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-python-skills-pydantic-models-py",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

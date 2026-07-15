@@ -1,7 +1,21 @@
 {
-  "generatedAt": "2026-07-15T08:36:49.501Z",
+  "generatedAt": "2026-07-15T14:10:13.995Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "github-com-barnett-studios-cxpak",
+      "name": "cxpak",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [Barnett Studios](https://github.com/Barnett-Studios) - A code-intelligence Claude Code plugin and MCP server (Rust, single binary, 43 languages) that builds a typed dependency graph and packs token-budgeted, annotated context bundles for any task. Exceptionally engineered and security-forward — 2,400+ tests, recorded ADRs, a sandboxed WASM plugin SDK, and cosign-signed, SBOM-attested release images.",
+      "tags": [],
+      "updatedAt": "1783500264",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/Barnett-Studios/cxpak",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "skillsmp-hainrixz-cyber-neo-skills-cyber-neo",
       "name": "cyber-neo",
@@ -10229,19 +10243,6 @@
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
-    },
-    {
-      "id": "effective-context-engineering-for-ai-agents-github-awesome-agent",
-      "name": "Effective Context Engineering for AI Agents",
-      "author": "GitHub Awesome",
-      "stars": 0,
-      "description": "by [Anthropic](https://www.anthropic.com) - Anthropic's guide to curating the context window — compaction, just-in-time retrieval, and note-taking — the discipline underlying effective long-horizon agent use.",
-      "tags": [],
-      "updatedAt": "1783500264",
-      "occupationId": "01",
-      "source": "awesome-claude-code",
-      "secureScore": 91,
-      "auditStatus": "approved"
     }
   ]
 }

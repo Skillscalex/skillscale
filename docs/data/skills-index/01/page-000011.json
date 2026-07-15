@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-15T08:36:49.501Z",
+  "generatedAt": "2026-07-15T14:10:13.995Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-github-awesome-copilot-skills-postgresql-optimization",
+      "name": "postgresql-optimization",
+      "author": "github",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "copilot",
+        "postgresql",
+        "optimization"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-postgresql-optimization",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "posthog-claude-unknown",
       "name": "PostHog",
@@ -9939,19 +9960,6 @@
       "author": "AITmpl Docs",
       "stars": 0,
       "description": "Configure Claude Code behavior with permissions, models, and automation",
-      "tags": [],
-      "updatedAt": "1781508343",
-      "occupationId": "01",
-      "source": "aitmpl-docs-index",
-      "secureScore": 91,
-      "auditStatus": "approved"
-    },
-    {
-      "id": "settings-components-aitmpl-docs-workflow",
-      "name": "Settings Components",
-      "author": "AITmpl Docs",
-      "stars": 0,
-      "description": "60+ configuration presets for Claude Code behavior, integrations, and workflow customization",
       "tags": [],
       "updatedAt": "1781508343",
       "occupationId": "01",

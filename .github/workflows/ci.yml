@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Check deployment env contract
+        run: npm run check:deploy-env
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Build
+        run: npm run build
+      - name: Test ingestion
+        run: npm run test:ingestion
+      - name: Test autonomous skills
+        run: npm run test:autonomous-skills
+      - name: Test agentic civilization
+        run: npm run test:agentic-civilization
+      - name: Test mobile static layout
+        run: npm run test:e2e:mobile
+      - name: Test GitHub Pages skills shell
+        run: npm run test:pages-smoke
+      - name: Test deploy helpers
+        run: npm run test:deploy-env
+      - name: Audit high severity production dependency issues
+        run: npm audit --audit-level=high

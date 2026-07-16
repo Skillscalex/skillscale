@@ -20,7 +20,11 @@
     "test:agentic-civilization": "jiti src/lib/agentic-civilization/__tests__/simulator.test.ts",
     "test:autonomous-skills": "jiti src/ingestion/autonomous/__tests__/autonomousSkillLoop.test.ts",
     "test:ingestion": "jiti src/ingestion/__tests__/ingestion.test.ts",
-    "test:e2e:mobile": "jiti src/ingestion/__tests__/mobile-layout.test.ts"
+    "test:e2e:mobile": "jiti src/ingestion/__tests__/mobile-layout.test.ts",
+    "test:deploy-env": "node scripts/check-deploy-env.test.mjs && node scripts/generate-pages-auth-config.test.mjs",
+    "test:pages-smoke": "node scripts/pages-skills-smoke.test.mjs",
+    "check:deploy-env": "node scripts/check-deploy-env.mjs --mode=ci",
+    "pages:auth-config": "node scripts/generate-pages-auth-config.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.98.0",
@@ -50,7 +54,7 @@
     "recharts": "^3.8.1",
     "stripe": "^22.1.1",
     "tailwind-merge": "^3.6.0",
-    "viem": "^2.50.4",
+    "viem": "^2.55.2",
     "wagmi": "^3.6.15",
     "zod": "^4.4.3"
   },

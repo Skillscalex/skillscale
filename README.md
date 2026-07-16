@@ -161,3 +161,4 @@ Useful scripts:
 - Next.js can deploy to Vercel or another Node host.
 - Supabase stores auth, private vault rows, mirrored SkillsMP records, market tables, and realtime data.
 - Agent server should run as a long-lived process on DigitalOcean, Railway, or Render.
+- Production setup is documented in [`docs/deployment-runbook.md`](docs/deployment-runbook.md).

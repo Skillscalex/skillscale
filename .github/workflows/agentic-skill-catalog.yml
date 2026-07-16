@@ -23,14 +23,19 @@ jobs:
         env:
           SKILLS_SH_BEARER_TOKEN: ${{ secrets.SKILLS_SH_BEARER_TOKEN }}
           VERCEL_OIDC_TOKEN: ${{ secrets.VERCEL_OIDC_TOKEN }}
+      - name: Generate public Pages Supabase config when env is present
+        run: npm run pages:auth-config
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
       - name: Commit catalog updates
         run: |
-          if [ -z "$(git status --porcelain -- docs/data/skills-catalog.json docs/data/occupation-counts.json docs/data/skills-index)" ]; then
+          if [ -z "$(git status --porcelain -- docs/data/auth-config.json docs/data/skills-catalog.json docs/data/occupation-counts.json docs/data/skills-index)" ]; then
             echo "No catalog changes"
             exit 0
           fi
           git config user.name "skillscale-agent"
           git config user.email "actions@github.com"
-          git add docs/data/skills-catalog.json docs/data/occupation-counts.json docs/data/skills-index
+          git add docs/data/auth-config.json docs/data/skills-catalog.json docs/data/occupation-counts.json docs/data/skills-index
           git commit -m "Update agentic skill catalog"
           git push

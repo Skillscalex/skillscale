@@ -1,8 +1,17 @@
 import Stripe from "stripe";
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "sk_test_placeholder", {
-  apiVersion: "2026-04-22.dahlia",
-});
+let stripeClient: Stripe | null = null;
+
+export function getStripe() {
+  const secretKey = process.env.STRIPE_SECRET_KEY;
+  if (!secretKey || secretKey.includes("your-") || secretKey.includes("example")) {
+    throw new Error("STRIPE_SECRET_KEY is not configured.");
+  }
+  stripeClient ??= new Stripe(secretKey, {
+    apiVersion: "2026-04-22.dahlia",
+  });
+  return stripeClient;
+}
 
 export const PLATFORM_FEE_PERCENT = 15;
 

@@ -3,21 +3,34 @@ import { runIngestion } from "@/ingestion";
 
 function authorized(req: NextRequest) {
   if (process.env.NODE_ENV !== "production") return true;
-  const token = process.env.INGEST_ADMIN_TOKEN;
-  return Boolean(token && req.headers.get("authorization") === `Bearer ${token}`);
+  const authorization = req.headers.get("authorization");
+  const adminToken = process.env.INGEST_ADMIN_TOKEN;
+  const cronSecret = process.env.CRON_SECRET;
+  return Boolean(
+    (adminToken && authorization === `Bearer ${adminToken}`) ||
+    (cronSecret && authorization === `Bearer ${cronSecret}`)
+  );
 }
 
-export async function POST(req: NextRequest) {
+async function runAuthorizedIngestion(req: NextRequest, options?: { cron?: boolean }) {
   if (!authorized(req)) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   try {
-    const body = await req.json().catch(() => ({}));
+    const body = options?.cron ? {} : await req.json().catch(() => ({}));
     const result = await runIngestion({
       source: typeof body.source === "string" ? body.source : undefined,
       dryRun: Boolean(body.dryRun),
-      resume: Boolean(body.resume),
+      resume: options?.cron ? true : Boolean(body.resume),
     });
-    return NextResponse.json({ ok: true, ...result });
+    return NextResponse.json({ ok: true, cron: Boolean(options?.cron), ...result });
   } catch (error) {
     return NextResponse.json({ error: error instanceof Error ? error.message : "Ingestion failed" }, { status: 500 });
   }
+}
+
+export async function POST(req: NextRequest) {
+  return runAuthorizedIngestion(req);
+}
+
+export async function GET(req: NextRequest) {
+  return runAuthorizedIngestion(req, { cron: true });
 }

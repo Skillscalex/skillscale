@@ -5,7 +5,7 @@
       "schedule": "0 0 * * 0"
     },
     {
-      "path": "/api/admin/ingest/status",
+      "path": "/api/admin/ingest/run",
       "schedule": "10 7 * * *"
     }
   ]

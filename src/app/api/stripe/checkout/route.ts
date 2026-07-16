@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { stripe } from "@/lib/stripe";
+import { getStripe } from "@/lib/stripe";
 import { z } from "zod";
 
 const CheckoutSchema = z.object({
@@ -17,6 +17,7 @@ export async function POST(req: NextRequest) {
     const { skillId, quantity, currency, priceUsd, skillTitle } = CheckoutSchema.parse(body);
 
     const unitAmount = Math.round((priceUsd ?? 9.99) * 100);
+    const stripe = getStripe();
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],

@@ -1,7 +1,53 @@
 {
-  "generatedAt": "2026-07-16T08:35:18.654Z",
+  "generatedAt": "2026-07-17T02:56:06.856Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-zhongweiv-hermes-edu-skills-skills-textbook-sync-junior-math-rj-textbook-sync",
+      "name": "textbook-sync-junior-math-rj-textbook-sync",
+      "author": "zhongweiv",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zhongweiv/hermes-edu-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "edu",
+        "textbook",
+        "sync",
+        "junior",
+        "math"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/zhongweiv/hermes-edu-skills/skills-textbook-sync-junior-math-rj-textbook-sync",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-zhongweiv-hermes-edu-skills-skills-textbook-sync-primary-math-rj-textbook-sync",
+      "name": "textbook-sync-primary-math-rj-textbook-sync",
+      "author": "zhongweiv",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zhongweiv/hermes-edu-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "edu",
+        "textbook",
+        "sync",
+        "primary",
+        "math"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/zhongweiv/hermes-edu-skills/skills-textbook-sync-primary-math-rj-textbook-sync",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-zhongweiv-hermes-edu-skills-skills-textbook-sync-primary-math-sj-textbook-sync",
       "name": "textbook-sync-primary-math-sj-textbook-sync",

@@ -1,7 +1,46 @@
 {
-  "generatedAt": "2026-07-16T08:35:18.654Z",
+  "generatedAt": "2026-07-17T02:56:06.856Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-jeffallan-claude-skills-skills-laravel-specialist",
+      "name": "laravel-specialist",
+      "author": "jeffallan",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from jeffallan/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "laravel",
+        "specialist"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/jeffallan/claude-skills/skills-laravel-specialist",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-laravel-tdd",
+      "name": "laravel-tdd",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "laravel",
+        "tdd"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-laravel-tdd",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-mvanhorn-last30days-skill-skills-last30days",
       "name": "last30days",
@@ -9836,45 +9875,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/openfate-ai/bazi-mcp/skills-openfate-bazi",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-aaaaqwq-agi-super-team-skills-openhr",
-      "name": "openhr",
-      "author": "aaaaqwq",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from aaaaqwq/agi-super-team. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "agi",
-        "super",
-        "team",
-        "openhr"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/aaaaqwq/agi-super-team/skills-openhr",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-agentscope-ai-openjudge-skills-openjudge",
-      "name": "openjudge",
-      "author": "agentscope-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from agentscope-ai/openjudge. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "openjudge"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/agentscope-ai/openjudge/skills-openjudge",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

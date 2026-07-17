@@ -1,7 +1,46 @@
 {
-  "generatedAt": "2026-07-16T08:35:18.654Z",
+  "generatedAt": "2026-07-17T02:56:06.856Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-nimbusxr-custos-skills-custos-bullseye",
+      "name": "custos-bullseye",
+      "author": "nimbusxr",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nimbusxr/custos. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "custos",
+        "bullseye"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/nimbusxr/custos/skills-custos-bullseye",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sickn33-antigravity-awesome-skills-skills-cv-generator",
+      "name": "cv-generator",
+      "author": "sickn33",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "antigravity",
+        "awesome",
+        "generator"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/skills-cv-generator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-gitpod-io-gitpod-cve-mitigation",
       "name": "cve-mitigation",
@@ -10203,43 +10242,6 @@
       "updatedAt": "1783611284",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/cmdrvl/edgar-change-interpreter/skills-edgar-change-interpreter",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-aahl-skills-skills-edge-tts",
-      "name": "edge-tts",
-      "author": "aahl",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from aahl/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "edge",
-        "tts"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/aahl/skills/skills-edge-tts",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-aahl-skills-skills-edgeone",
-      "name": "edgeone",
-      "author": "aahl",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from aahl/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "edgeone"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/aahl/skills/skills-edgeone",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

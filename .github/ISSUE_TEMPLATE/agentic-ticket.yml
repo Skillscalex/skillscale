@@ -1,0 +1,35 @@
+name: Agentic delivery ticket
+description: Spec-first implementation ticket for the CEO→PM→Architect→Engineering pipeline
+title: "[Agentic Ticket]: "
+labels: ["agentic-delivery", "needs-spec"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Link CEO/PM/architecture/spec artifacts.
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Files allowed to touch
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Required tests and commands
+      value: |
+        npm run test:agentic-delivery
+        npm run typecheck
+        npm run build
+    validations:
+      required: true
+  - type: textarea
+    id: approval
+    attributes:
+      label: Approval and release gate
+      description: Define preview/staging/prod approval requirements.
+    validations:
+      required: true

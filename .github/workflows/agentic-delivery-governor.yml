@@ -1,0 +1,54 @@
+name: Agentic Delivery Governor
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate-agentic-delivery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - name: Validate spec-first delivery artifacts
+        run: npm run test:agentic-delivery
+      - name: Check spec-first gate for changed files
+        if: github.event_name == 'pull_request'
+        run: |
+          git fetch origin ${{ github.base_ref }} --depth=1
+          CHANGED_FILES="$(git diff --name-only origin/${{ github.base_ref }}...HEAD)" npm run check:spec-first
+      - name: Scheduled governance report
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Agentic delivery governor report';
+            const body = [
+              '## Agentic delivery governor',
+              '',
+              `Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              '',
+              '- Spec-first artifacts validated.',
+              '- Next coding work must link to `docs/specs/platform-v1.md` and one `docs/tickets/platform-v1/*.md` ticket.',
+              '- Production remains gated by human approval.',
+            ].join('\n');
+            const {owner, repo} = context.repo;
+            const existing = await github.rest.issues.listForRepo({owner, repo, state: 'open', labels: 'agentic-delivery', per_page: 20});
+            const report = existing.data.find(issue => issue.title === title);
+            if (report) {
+              await github.rest.issues.createComment({owner, repo, issue_number: report.number, body});
+            } else {
+              await github.rest.issues.create({owner, repo, title, body, labels: ['agentic-delivery', 'automation']});
+            }

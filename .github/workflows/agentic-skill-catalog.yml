@@ -36,6 +36,6 @@ jobs:
           fi
           git config user.name "skillscale-agent"
           git config user.email "actions@github.com"
-          git add -A -- docs/data/auth-config.json docs/data/skills-catalog.json docs/data/occupation-counts.json docs/data/skills-index
+          git add -A -- docs/data
           git commit -m "Update agentic skill catalog"
           git push

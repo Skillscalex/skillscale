@@ -44,10 +44,15 @@ jobs:
           git add -A -- docs/data
           git commit -m "Update agentic skill catalog"
           git push --set-upstream origin "$branch"
-          gh pr create \
+          if gh pr create \
             --title "Update agentic skill catalog" \
             --body "Automated catalog refresh from workflow run ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}." \
             --base main \
             --head "$branch" \
             --label agentic-delivery \
-            --label automation
+            --label automation; then
+            echo "Catalog update PR opened."
+          else
+            echo "Catalog branch pushed but PR creation is blocked by repository/organization Actions permissions."
+            echo "Open manually or via Hermes governor: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/pull/new/${branch}"
+          fi

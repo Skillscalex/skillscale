@@ -23,6 +23,7 @@
     "test:e2e:mobile": "jiti src/ingestion/__tests__/mobile-layout.test.ts",
     "test:deploy-env": "node scripts/check-deploy-env.test.mjs && node scripts/generate-pages-auth-config.test.mjs",
     "test:pages-smoke": "node scripts/pages-skills-smoke.test.mjs",
+    "test:pages-mobile": "node scripts/pages-mobile-smoke.test.mjs",
     "check:deploy-env": "node scripts/check-deploy-env.mjs --mode=ci",
     "pages:auth-config": "node scripts/generate-pages-auth-config.mjs",
     "test:agentic-delivery": "node scripts/validate-agentic-delivery.mjs",

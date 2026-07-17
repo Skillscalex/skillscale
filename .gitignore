@@ -41,3 +41,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .gstack/
+
+# local tool/runtime caches
+.pipx/
+__pycache__/
+.pytest_cache/

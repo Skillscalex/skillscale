@@ -190,6 +190,7 @@ function ThemeToggle({ theme, onToggle }) {
    Nav
    ==================================================== */
 function Nav({ theme, onToggle, currentPage }) {
+  const [mobileOpen, setMobileOpen] = useState(false);
   const isLight = theme === 'light';
   const navText = isLight ? '#111110' : '#D8CFC1';
   const navMuted = isLight ? '#111110' : '#AAA093';
@@ -200,6 +201,22 @@ function Nav({ theme, onToggle, currentPage }) {
     { href: 'community.html', label: 'Community' },
     { href: 'mcps.html',      label: 'MCPs'      },
   ];
+  const utilityPages = [
+    { href: 'vault.html', label: 'Vault', icon: '✦' },
+    { href: 'hubs.html', label: 'Hubs', icon: '⬡' },
+    { href: 'studio.html', label: 'Studio', icon: '⌬' },
+    { href: 'auth.html', label: 'Safety', icon: '◈' },
+  ];
+  const linkStyle = {
+    fontFamily: 'JetBrains Mono', fontSize: '.72rem', letterSpacing: '.04em',
+    padding: '6px 14px', borderRadius: 9999,
+    color: navMuted, transition: 'all 0.15s',
+  };
+  const pillStyle = {
+    display:'flex', alignItems:'center', gap:6, fontFamily: 'JetBrains Mono', fontSize: '.72rem',
+    color: navMuted, padding: '7px 14px', borderRadius: 9999,
+    border:`1px solid ${isLight ? 'rgba(54,43,34,0.18)' : 'var(--border)'}`, transition:'all 0.15s', textDecoration:'none'
+  };
   return (
     <nav className="nav lg" style={{
       padding: '12px 24px',
@@ -208,40 +225,26 @@ function Nav({ theme, onToggle, currentPage }) {
       background: isLight ? 'rgba(253,250,245,0.92)' : 'rgba(12,11,9,0.72)'
     }}>
       <div className="nav-inner">
-        {/* Logo */}
-        <a href="index.html" style={{ fontFamily: 'Archivo Black', fontSize: '1.05rem', color: navText, letterSpacing: '-.01em', flexShrink: 0 }}>
+        <a href="index.html" className="brand-link" aria-label="Skillscale home" style={{ fontFamily: 'Archivo Black', fontSize: '1.05rem', color: navText, letterSpacing: '-.01em', flexShrink: 0 }}>
           skill<span style={{ color: isLight ? navText : 'var(--accent)' }}>scale</span>
         </a>
 
-        {/* Nav links pill */}
-        <div className="nav-links" style={{ display: 'flex', alignItems: 'center', padding: '6px 6px', borderRadius: 9999, gap: 2 }}>
+        <div className="nav-links desktop-nav-links" style={{ display: 'flex', alignItems: 'center', padding: '6px 6px', borderRadius: 9999, gap: 2 }}>
           {pages.map(p => (
             <a key={p.href} href={p.href}
               style={{
-                fontFamily: 'JetBrains Mono', fontSize: '.72rem', letterSpacing: '.04em',
-                padding: '6px 14px', borderRadius: 9999,
+                ...linkStyle,
                 color: currentPage === p.href && !isLight ? 'var(--accent)' : navMuted,
                 background: currentPage === p.href ? 'rgba(23,124,176,0.08)' : 'transparent',
-                transition: 'all 0.15s',
               }}
             >{p.label}</a>
           ))}
         </div>
 
-        {/* Right side */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <a href="vault.html"
-            style={{ display:'flex', alignItems:'center', gap:6, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color:navMuted, padding: '7px 14px', borderRadius: 9999, border:`1px solid ${isLight ? 'rgba(54,43,34,0.18)' : 'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
-            ✦ Vault
-          </a>
-          <a href="hubs.html"
-            style={{ display:'flex', alignItems:'center', gap:6, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: navMuted, padding: '7px 14px', borderRadius: 9999, border:`1px solid ${isLight ? 'rgba(54,43,34,0.18)' : 'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
-            ⬡ Hubs
-          </a>
-          <a href="studio.html"
-            style={{ display:'flex', alignItems:'center', gap:6, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: navMuted, padding: '7px 14px', borderRadius: 9999, border:`1px solid ${isLight ? 'rgba(54,43,34,0.18)' : 'var(--border)'}`, transition:'all 0.15s', textDecoration:'none' }}>
-            ⌬ Studio
-          </a>
+        <div className="desktop-nav-actions" style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          {utilityPages.slice(0, 3).map(p => (
+            <a key={p.href} href={p.href} style={pillStyle}>{p.icon} {p.label}</a>
+          ))}
           <a href="skills.html"
             style={{ display:'flex', alignItems:'center', gap:8, fontFamily: 'JetBrains Mono', fontSize: '.72rem', color: isLight ? navText : 'var(--accent)', background:'rgba(23,124,176,0.08)', border:'1px solid rgba(23,124,176,0.3)', padding: '7px 16px', borderRadius: 9999, transition:'all 0.15s', textDecoration:'none' }}>
             Browse Skills
@@ -255,7 +258,48 @@ function Nav({ theme, onToggle, currentPage }) {
           </a>
           <ThemeToggle theme={theme} onToggle={onToggle} />
         </div>
+
+        <div className="mobile-nav-actions">
+          <a href="skills.html" className="mobile-primary-link">Skills</a>
+          <ThemeToggle theme={theme} onToggle={onToggle} />
+          <button
+            type="button"
+            className="mobile-menu-button lg"
+            aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-navigation"
+            onClick={() => setMobileOpen(open => !open)}
+          >
+            <span aria-hidden="true" className={mobileOpen ? 'mobile-menu-icon open' : 'mobile-menu-icon'}>
+              <i></i><i></i><i></i>
+            </span>
+          </button>
+        </div>
       </div>
+
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            id="mobile-navigation"
+            className="mobile-nav-panel lg-s"
+            initial={{ opacity: 0, y: -8, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -8, scale: 0.98 }}
+            transition={{ duration: 0.18, ease: 'easeOut' }}
+          >
+            <div className="mobile-nav-section">
+              <span className="mobile-nav-kicker">Navigate</span>
+              {[...pages, ...utilityPages].map(p => (
+                <a key={p.href} href={p.href} className="mobile-nav-link" onClick={() => setMobileOpen(false)}>
+                  <span>{p.icon ? `${p.icon} ${p.label}` : p.label}</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              ))}
+            </div>
+            <a href="skills.html" className="mobile-nav-cta" onClick={() => setMobileOpen(false)}>Browse skill catalog</a>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }

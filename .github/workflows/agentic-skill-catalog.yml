@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   publish-catalog:
@@ -28,14 +29,25 @@ jobs:
         env:
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-      - name: Commit catalog updates
+      - name: Open catalog update PR
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           if [ -z "$(git status --porcelain -- docs/data/auth-config.json docs/data/skills-catalog.json docs/data/occupation-counts.json docs/data/skills-index)" ]; then
             echo "No catalog changes"
             exit 0
           fi
+          branch="automation/agentic-skill-catalog-${GITHUB_RUN_ID}"
           git config user.name "skillscale-agent"
           git config user.email "actions@github.com"
+          git checkout -b "$branch"
           git add -A -- docs/data
           git commit -m "Update agentic skill catalog"
-          git push
+          git push --set-upstream origin "$branch"
+          gh pr create \
+            --title "Update agentic skill catalog" \
+            --body "Automated catalog refresh from workflow run ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}." \
+            --base main \
+            --head "$branch" \
+            --label agentic-delivery \
+            --label automation

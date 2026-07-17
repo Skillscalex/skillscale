@@ -1,7 +1,40 @@
 {
-  "generatedAt": "2026-07-16T08:35:18.654Z",
+  "generatedAt": "2026-07-17T03:00:39.431Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "github-com-betabots-llc-callimachus",
+      "name": "Callimachus",
+      "author": "GitHub Awesome",
+      "stars": 0,
+      "description": "by [BetaBots-LLC](https://github.com/BetaBots-LLC) - One local, searchable index of your AI coding-agent history Claude Code, Codex, Cursor, Gemini &amp; more. Keyword + semantic search, MCP server, CLI &amp; VS Code extension.",
+      "tags": [],
+      "updatedAt": "1783500266",
+      "occupationId": "01",
+      "githubUrl": "https://github.com/BetaBots-LLC/callimachus",
+      "source": "awesome-claude-code",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
+    {
+      "id": "skillsmp-redf0x1-camofox-browser-skills-camofox-browser",
+      "name": "camofox-browser",
+      "author": "redf0x1",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from redf0x1/camofox-browser. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "camofox",
+        "browser"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/redf0x1/camofox-browser/skills-camofox-browser",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-camunda-skills-skills-camunda-ai-agents",
       "name": "camunda-ai-agents",
@@ -9775,47 +9808,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/zimoliao/scholaraio/claude-skills-websearch",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-nicepkg-auto-company-claude-skills-websh",
-      "name": "claude-skills-websh",
-      "author": "nicepkg",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from nicepkg/auto-company. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "auto",
-        "company",
-        "websh"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/nicepkg/auto-company/claude-skills-websh",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-zxpsuper-zxpsuper-github-io-claude-skills-wechat-crawler",
-      "name": "claude-skills-wechat-crawler",
-      "author": "zxpsuper",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from zxpsuper/zxpsuper.github.io. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "zxpsuper",
-        "github",
-        "wechat",
-        "crawler"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/zxpsuper/zxpsuper.github.io/claude-skills-wechat-crawler",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

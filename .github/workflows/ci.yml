@@ -38,5 +38,7 @@ jobs:
         run: npm run test:pages-smoke
       - name: Test deploy helpers
         run: npm run test:deploy-env
+      - name: Test agentic delivery governor
+        run: npm run test:agentic-delivery
       - name: Audit high severity production dependency issues
         run: npm audit --audit-level=high

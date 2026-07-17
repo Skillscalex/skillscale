@@ -1,0 +1,100 @@
+name: Gated Deployment
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Deployment target
+        type: choice
+        options: [preview, staging, production]
+        default: preview
+  pull_request:
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  preview:
+    if: github.event_name == 'pull_request' || inputs.target == 'preview'
+    runs-on: ubuntu-latest
+    environment: preview
+    env:
+      HAS_VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - run: npm run test:agentic-delivery
+      - run: npm run typecheck
+      - run: npm run build
+      - name: Vercel preview deployment
+        if: env.HAS_VERCEL_TOKEN == 'true'
+        run: npx vercel deploy --yes --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      - name: Preview deploy skipped
+        if: env.HAS_VERCEL_TOKEN != 'true'
+        run: echo "VERCEL_TOKEN missing; CI verified build but skipped preview deployment."
+
+  staging:
+    if: github.event_name == 'workflow_dispatch' && inputs.target == 'staging'
+    runs-on: ubuntu-latest
+    environment: staging
+    env:
+      HAS_VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN != '' }}
+      HAS_GCP_DEPLOY: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER != '' && secrets.GCP_SERVICE_ACCOUNT != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run build
+      - name: Deploy staging web
+        if: env.HAS_VERCEL_TOKEN == 'true'
+        run: npx vercel deploy --yes --target=staging --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      - name: Deploy staging Cloud Run services
+        if: env.HAS_GCP_DEPLOY == 'true'
+        run: echo "Cloud Run staging deploy placeholder; service specs must be approved before enabling."
+
+  production:
+    if: github.event_name == 'workflow_dispatch' && inputs.target == 'production'
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      HAS_VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - run: npm run test:agentic-delivery
+      - run: npm run typecheck
+      - run: npm run build
+      - name: Deploy production web after environment approval
+        if: env.HAS_VERCEL_TOKEN == 'true'
+        run: npx vercel deploy --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      - name: Production canary
+        run: |
+          python3 - <<'PY'
+          import urllib.request
+          url = 'https://skillscalex.github.io/skillscale/'
+          response = urllib.request.urlopen(url, timeout=20)
+          assert response.status == 200, response.status
+          print('canary ok', url, response.status)
+          PY

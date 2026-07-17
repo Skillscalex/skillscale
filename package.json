@@ -24,7 +24,9 @@
     "test:deploy-env": "node scripts/check-deploy-env.test.mjs && node scripts/generate-pages-auth-config.test.mjs",
     "test:pages-smoke": "node scripts/pages-skills-smoke.test.mjs",
     "check:deploy-env": "node scripts/check-deploy-env.mjs --mode=ci",
-    "pages:auth-config": "node scripts/generate-pages-auth-config.mjs"
+    "pages:auth-config": "node scripts/generate-pages-auth-config.mjs",
+    "test:agentic-delivery": "node scripts/validate-agentic-delivery.mjs",
+    "check:spec-first": "node scripts/check-spec-first.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.98.0",

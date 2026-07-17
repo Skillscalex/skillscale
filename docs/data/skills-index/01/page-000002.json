@@ -1,7 +1,63 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-07-17T08:29:17.127Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-agentic-os",
+      "name": "agentic-os",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "agentic"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-agentic-os",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-coinbase-agentic-wallet-skills-skills-agentic-wallet",
+      "name": "agentic-wallet",
+      "author": "coinbase",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from coinbase/agentic-wallet-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agentic",
+        "wallet"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/coinbase/agentic-wallet-skills/skills-agentic-wallet",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-agentmail-to-agentmail-skills-agentmail",
+      "name": "agentmail",
+      "author": "agentmail-to",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from agentmail-to/agentmail-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agentmail"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/agentmail-to/agentmail-skills/agentmail",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-agentmail-to-agentmail-skills-agentmail-cli",
       "name": "agentmail-cli",
@@ -9838,64 +9894,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/znlgis/opengis-skills/cad-freecad",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-zunyiqingfeng-code-skills-cad-mcp",
-      "name": "cad-mcp",
-      "author": "zunyiqingfeng-code",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from zunyiqingfeng-code/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cad",
-        "mcp"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/zunyiqingfeng-code/skills/cad-mcp",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-nethrananda21-cadx-cad-skills-cad-core",
-      "name": "cad-skills-cad-core",
-      "author": "nethrananda21",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from nethrananda21/cadx. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "cadx",
-        "cad",
-        "core"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/nethrananda21/cadx/cad-skills-cad-core",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-caido-skills-skills-caido-mode",
-      "name": "caido-mode",
-      "author": "caido",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from caido/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "caido",
-        "mode"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/caido/skills/skills-caido-mode",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

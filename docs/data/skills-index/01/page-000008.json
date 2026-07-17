@@ -1,7 +1,67 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-07-17T08:29:17.127Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-asyrafhussin-agent-skills-skills-laravel-mcp",
+      "name": "laravel-mcp",
+      "author": "asyrafhussin",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from asyrafhussin/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "laravel",
+        "mcp"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/asyrafhussin/agent-skills/skills-laravel-mcp",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-laravel-patterns",
+      "name": "laravel-patterns",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "laravel",
+        "patterns"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-laravel-patterns",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-laravel-plugin-discovery",
+      "name": "laravel-plugin-discovery",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "laravel",
+        "plugin",
+        "discovery"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-laravel-plugin-discovery",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-jeffallan-claude-skills-skills-laravel-specialist",
       "name": "laravel-specialist",
@@ -9818,63 +9878,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/steffen025/pai-opencode/opencode-skills-utilities-codereview",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-terminalskills-skills-skills-opencv",
-      "name": "opencv",
-      "author": "terminalskills",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from terminalskills/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "opencv"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/terminalskills/skills/skills-opencv",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-chujianyun-skills-skills-opendataloader-pdf",
-      "name": "opendataloader-pdf",
-      "author": "chujianyun",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from chujianyun/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "opendataloader",
-        "pdf"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/chujianyun/skills/skills-opendataloader-pdf",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-openfate-ai-bazi-mcp-skills-openfate-bazi",
-      "name": "openfate-bazi",
-      "author": "openfate-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from openfate-ai/bazi-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "bazi",
-        "mcp",
-        "openfate"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/openfate-ai/bazi-mcp/skills-openfate-bazi",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

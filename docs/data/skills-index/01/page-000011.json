@@ -1,7 +1,71 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-07-17T08:29:17.127Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-tencentedgeone-awesome-website-prompts-and-skills-skills-portfolio-flow",
+      "name": "portfolio-flow",
+      "author": "tencentedgeone",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from tencentedgeone/awesome-website-prompts-and-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "website",
+        "prompts",
+        "and",
+        "portfolio",
+        "flow"
+      ],
+      "updatedAt": "1783591431",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/tencentedgeone/awesome-website-prompts-and-skills/skills-portfolio-flow",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-xpzouying-xiaohongshu-mcp-skills-post-to-xhs",
+      "name": "post-to-xhs",
+      "author": "xpzouying",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from xpzouying/xiaohongshu-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "xiaohongshu",
+        "mcp",
+        "post",
+        "xhs"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/xpzouying/xiaohongshu-mcp/skills-post-to-xhs",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-postgres-patterns",
+      "name": "postgres-patterns",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "postgres",
+        "patterns"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-postgres-patterns",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-jeffallan-claude-skills-skills-postgres-pro",
       "name": "postgres-pro",
@@ -9929,58 +9993,6 @@
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-nostrband-servicegraph-skills-servicegraph",
-      "name": "servicegraph",
-      "author": "nostrband",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from nostrband/servicegraph. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "servicegraph"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/nostrband/servicegraph/skills-servicegraph",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-moeru-ai-airi-services-minecraft-codex-skills-minecraft-debug-mcp",
-      "name": "services-minecraft-codex-skills-minecraft-debug-mcp",
-      "author": "moeru-ai",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from moeru-ai/airi. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "airi",
-        "services",
-        "minecraft",
-        "codex"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/moeru-ai/airi/services-minecraft-codex-skills-minecraft-debug-mcp",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "session-sharing-aitmpl-docs-unknown",
-      "name": "Session Sharing",
-      "author": "AITmpl Docs",
-      "stars": 0,
-      "description": "Export, share, and clone Claude Code conversation sessions with team members",
-      "tags": [],
-      "updatedAt": "1781508342",
-      "occupationId": "01",
-      "source": "aitmpl-docs-index",
-      "secureScore": 91,
-      "auditStatus": "approved"
     }
   ]
 }

@@ -1,7 +1,64 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-07-17T08:29:17.127Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-terminalskills-skills-skills-opencv",
+      "name": "opencv",
+      "author": "terminalskills",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from terminalskills/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "opencv"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/terminalskills/skills/skills-opencv",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-chujianyun-skills-skills-opendataloader-pdf",
+      "name": "opendataloader-pdf",
+      "author": "chujianyun",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from chujianyun/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "opendataloader",
+        "pdf"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/chujianyun/skills/skills-opendataloader-pdf",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-openfate-ai-bazi-mcp-skills-openfate-bazi",
+      "name": "openfate-bazi",
+      "author": "openfate-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from openfate-ai/bazi-mcp. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "bazi",
+        "mcp",
+        "openfate"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/openfate-ai/bazi-mcp/skills-openfate-bazi",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-aaaaqwq-agi-super-team-skills-openhr",
       "name": "openhr",
@@ -10262,69 +10319,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-pentest-checklist",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-pentest-commands",
-      "name": "plugins-antigravity-awesome-skills-claude-skills-pentest-commands",
-      "author": "sickn33",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "antigravity",
-        "awesome",
-        "plugins",
-        "pentest"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-pentest-commands",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-performance-engineer",
-      "name": "plugins-antigravity-awesome-skills-claude-skills-performance-engineer",
-      "author": "sickn33",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "antigravity",
-        "awesome",
-        "plugins",
-        "performance"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-performance-engineer",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-performance-optimization",
-      "name": "plugins-antigravity-awesome-skills-claude-skills-performance-optimization",
-      "author": "sickn33",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from sickn33/antigravity-awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "antigravity",
-        "awesome",
-        "plugins",
-        "performance"
-      ],
-      "updatedAt": "1783611284",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-performance-optimization",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -26,7 +26,8 @@
     "check:deploy-env": "node scripts/check-deploy-env.mjs --mode=ci",
     "pages:auth-config": "node scripts/generate-pages-auth-config.mjs",
     "test:agentic-delivery": "node scripts/validate-agentic-delivery.mjs",
-    "check:spec-first": "node scripts/check-spec-first.mjs"
+    "check:spec-first": "node scripts/check-spec-first.mjs",
+    "test:pages-mobile": "node scripts/pages-mobile-smoke.test.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.98.0",

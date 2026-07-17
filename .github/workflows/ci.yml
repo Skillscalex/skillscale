@@ -36,6 +36,8 @@ jobs:
         run: npm run test:e2e:mobile
       - name: Test GitHub Pages skills shell
         run: npm run test:pages-smoke
+      - name: Test GitHub Pages mobile home
+        run: npm run test:pages-mobile
       - name: Test deploy helpers
         run: npm run test:deploy-env
       - name: Test agentic delivery governor

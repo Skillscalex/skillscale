@@ -1,7 +1,26 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-07-17T14:04:52.437Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-caido-skills-skills-caido-mode",
+      "name": "caido-mode",
+      "author": "caido",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from caido/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "caido",
+        "mode"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/caido/skills/skills-caido-mode",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "github-com-betabots-llc-callimachus",
       "name": "Callimachus",
@@ -9789,25 +9808,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/mrgoonie/claudekit-skills/claude-skills-web-testing",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-zimoliao-scholaraio-claude-skills-websearch",
-      "name": "claude-skills-websearch",
-      "author": "zimoliao",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from zimoliao/scholaraio. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "scholaraio",
-        "websearch"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/zimoliao/scholaraio/claude-skills-websearch",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

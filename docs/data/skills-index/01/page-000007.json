@@ -1,7 +1,28 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-07-17T14:04:52.437Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-python-skills-azure-storage-file-datalake-py",
+      "name": "github-plugins-azure-sdk-python-skills-azure-storage-file-datalake-py",
+      "author": "microsoft",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "github",
+        "plugins",
+        "azure",
+        "sdk"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-python-skills-azure-storage-file-datalake-py",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-python-skills-azure-storage-file-share-py",
       "name": "github-plugins-azure-sdk-python-skills-azure-storage-file-share-py",
@@ -10008,27 +10029,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-laravel-patterns",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-affaan-m-ecc-skills-laravel-plugin-discovery",
-      "name": "laravel-plugin-discovery",
-      "author": "affaan-m",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "ecc",
-        "laravel",
-        "plugin",
-        "discovery"
-      ],
-      "updatedAt": "1783591431",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-laravel-plugin-discovery",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-07-17T14:04:52.437Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-cmdrvl-edgar-change-interpreter-skills-edgar-change-interpreter",
+      "name": "edgar-change-interpreter",
+      "author": "cmdrvl",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cmdrvl/edgar-change-interpreter. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "edgar",
+        "change",
+        "interpreter"
+      ],
+      "updatedAt": "1783611284",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/cmdrvl/edgar-change-interpreter/skills-edgar-change-interpreter",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-aahl-skills-skills-edge-tts",
       "name": "edge-tts",
@@ -10136,27 +10156,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-python-skills-azure-storage-blob-py",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-python-skills-azure-storage-file-datalake-py",
-      "name": "github-plugins-azure-sdk-python-skills-azure-storage-file-datalake-py",
-      "author": "microsoft",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from microsoft/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "github",
-        "plugins",
-        "azure",
-        "sdk"
-      ],
-      "updatedAt": "1783504629",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/microsoft/skills/github-plugins-azure-sdk-python-skills-azure-storage-file-datalake-py",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

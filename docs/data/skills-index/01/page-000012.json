@@ -1,7 +1,20 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-07-17T14:04:52.437Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "session-sharing-aitmpl-docs-unknown",
+      "name": "Session Sharing",
+      "author": "AITmpl Docs",
+      "stars": 0,
+      "description": "Export, share, and clone Claude Code conversation sessions with team members",
+      "tags": [],
+      "updatedAt": "1781508342",
+      "occupationId": "01",
+      "source": "aitmpl-docs-index",
+      "secureScore": 91,
+      "auditStatus": "approved"
+    },
     {
       "id": "skillsmp-softaworks-agent-toolkit-skills-session-handoff",
       "name": "session-handoff",
@@ -9980,25 +9993,6 @@
       "updatedAt": "1783504629",
       "occupationId": "01",
       "skillsmpUrl": "https://skillsmp.com/creators/lambdatest/agent-skills/testunit-skill",
-      "source": "skillsmp-sitemap",
-      "secureScore": 84,
-      "auditStatus": "needs_review"
-    },
-    {
-      "id": "skillsmp-wlzh-skills-text-to-speech",
-      "name": "text-to-speech",
-      "author": "wlzh",
-      "stars": 0,
-      "description": "SkillsMP public sitemap skill from wlzh/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
-      "tags": [
-        "skillsmp",
-        "sitemap",
-        "text",
-        "speech"
-      ],
-      "updatedAt": "1783955533",
-      "occupationId": "01",
-      "skillsmpUrl": "https://skillsmp.com/creators/wlzh/skills/text-to-speech",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

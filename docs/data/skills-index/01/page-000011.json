@@ -1,7 +1,27 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-07-17T14:04:52.437Z",
   "occupationId": "01",
   "skills": [
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-postgres-patterns",
+      "name": "postgres-patterns",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "postgres",
+        "patterns"
+      ],
+      "updatedAt": "1783504629",
+      "occupationId": "01",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-postgres-patterns",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
     {
       "id": "skillsmp-jeffallan-claude-skills-skills-postgres-pro",
       "name": "postgres-pro",
@@ -9968,19 +9988,6 @@
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
-    },
-    {
-      "id": "session-sharing-aitmpl-docs-unknown",
-      "name": "Session Sharing",
-      "author": "AITmpl Docs",
-      "stars": 0,
-      "description": "Export, share, and clone Claude Code conversation sessions with team members",
-      "tags": [],
-      "updatedAt": "1781508342",
-      "occupationId": "01",
-      "source": "aitmpl-docs-index",
-      "secureScore": 91,
-      "auditStatus": "approved"
     }
   ]
 }

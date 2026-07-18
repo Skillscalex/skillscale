@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-07-18T03:32:37.830Z",
   "occupationId": "18",
   "skills": [
     {
@@ -930,6 +930,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-davila7-claude-code-templates-claude-plugin-skills-owasp-security",
+      "name": "claude-plugin-skills-owasp-security",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "plugin",
+        "owasp",
+        "security"
+      ],
+      "updatedAt": "1784345557",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/claude-plugin-skills-owasp-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-gmh5225-awesome-llvm-security-claude-skills-llvm-obfuscation",
       "name": "claude-skills-llvm-obfuscation",
       "author": "gmh5225",
@@ -989,6 +1011,29 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-security-best-practices",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-security-threat-model",
+      "name": "cli-tool-components-skills-security-security-threat-model",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1784345557",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-security-threat-model",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1363,6 +1408,48 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-cyberstrikeus-cyberstrike-cyberstrike-skill-nist-sp800-171-rev3-03-10-physical-protection-alternate-work-site-03-10-06-alternate-work-site",
+      "name": "cyberstrike-skill-nist-sp800-171-rev3-03-10-physical-protection-alternate-work-site-03-10-06-alternate-work-site",
+      "author": "cyberstrikeus",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cyberstrikeus/cyberstrike. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cyberstrike",
+        "nist",
+        "sp800",
+        "171"
+      ],
+      "updatedAt": "1784345557",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/cyberstrikeus/cyberstrike/cyberstrike-skill-nist-sp800-171-rev3-03-10-physical-protection-alternate-work-site-03-10-06-alternate-work-site",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-cyberstrikeus-cyberstrike-cyberstrike-skill-nist-sp800-171-rev3-03-10-physical-protection-monitoring-physical-access-03-10-02-monitoring-physical-access",
+      "name": "cyberstrike-skill-nist-sp800-171-rev3-03-10-physical-protection-monitoring-physical-access-03-10-02-monitoring-physical-access",
+      "author": "cyberstrikeus",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from cyberstrikeus/cyberstrike. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cyberstrike",
+        "nist",
+        "sp800",
+        "171"
+      ],
+      "updatedAt": "1784345557",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/cyberstrikeus/cyberstrike/cyberstrike-skill-nist-sp800-171-rev3-03-10-physical-protection-monitoring-physical-access-03-10-02-monitoring-physical-access",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-affaan-m-ecc-skills-defi-amm-security",
       "name": "defi-amm-security",
       "author": "affaan-m",
@@ -1504,6 +1591,27 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-es-skills-laravel-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-docs-es-skills-quarkus-security",
+      "name": "docs-es-skills-quarkus-security",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "quarkus",
+        "security"
+      ],
+      "updatedAt": "1784345557",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-es-skills-quarkus-security",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1952,6 +2060,26 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/staruhub/claudeskills/skills-geek-skills-security-audit",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-saeed-vayghan-gemini-agent-skills-gemini-skills-incident-responder",
+      "name": "gemini-skills-incident-responder",
+      "author": "saeed-vayghan",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from saeed-vayghan/gemini-agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gemini",
+        "incident",
+        "responder"
+      ],
+      "updatedAt": "1784345557",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/saeed-vayghan/gemini-agent-skills/gemini-skills-incident-responder",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2718,6 +2846,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-wshobson-agents-plugins-security-scanning-skills-stride-analysis-patterns",
+      "name": "plugins-security-scanning-skills-stride-analysis-patterns",
+      "author": "wshobson",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wshobson/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "plugins",
+        "security",
+        "scanning",
+        "stride"
+      ],
+      "updatedAt": "1784345557",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-security-scanning-skills-stride-analysis-patterns",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-wgpsec-aboutsecurity-skills-postexploit-product-sonarqube-tactics",
       "name": "postexploit-product-sonarqube-tactics",
       "author": "wgpsec",
@@ -2824,6 +2974,28 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-reverse-engineering-android-malware-with-jadx",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-killvxk-cybersecurity-skills-zh-skills-reverse-engineering-ios-app-with-frida",
+      "name": "reverse-engineering-ios-app-with-frida",
+      "author": "killvxk",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from killvxk/cybersecurity-skills-zh. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "cybersecurity",
+        "reverse",
+        "engineering",
+        "ios",
+        "app"
+      ],
+      "updatedAt": "1784345557",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/killvxk/cybersecurity-skills-zh/skills-reverse-engineering-ios-app-with-frida",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2977,6 +3149,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-sethdford-claude-skills-security-incident-response-skills-root-cause-analysis-security",
+      "name": "security-incident-response-skills-root-cause-analysis-security",
+      "author": "sethdford",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sethdford/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "security",
+        "incident",
+        "response",
+        "root"
+      ],
+      "updatedAt": "1784345557",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/sethdford/claude-skills/security-incident-response-skills-root-cause-analysis-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-aivos-xie-hermes-skills-security-reverse-engineering",
       "name": "security-reverse-engineering",
       "author": "aivos-xie",
@@ -3101,6 +3294,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-dwani-ai-overwatch-src-overwatch-agents-skills-incident-brief",
+      "name": "src-overwatch-agents-skills-incident-brief",
+      "author": "dwani-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dwani-ai/overwatch. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "overwatch",
+        "src",
+        "agents",
+        "incident"
+      ],
+      "updatedAt": "1784345557",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/dwani-ai/overwatch/src-overwatch-agents-skills-incident-brief",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-incidentfox-incidentfox-sre-agent-claude-skills-database-mysql",
       "name": "sre-agent-claude-skills-database-mysql",
       "author": "incidentfox",
@@ -3117,6 +3331,28 @@
       "updatedAt": "1783591431",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/incidentfox/incidentfox/sre-agent-claude-skills-database-mysql",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-fengshao1227-ccg-workflow-templates-skills-domains-security",
+      "name": "templates-skills-domains-security",
+      "author": "fengshao1227",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from fengshao1227/ccg-workflow. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ccg",
+        "workflow",
+        "templates",
+        "domains",
+        "security"
+      ],
+      "updatedAt": "1784345557",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/fengshao1227/ccg-workflow/templates-skills-domains-security",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

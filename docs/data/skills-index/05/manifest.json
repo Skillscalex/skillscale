@@ -1,14 +1,14 @@
 {
   "occupationId": "05",
-  "totalSkills": 632,
-  "upstreamTotal": 46480,
+  "totalSkills": 718,
+  "upstreamTotal": 46711,
   "shardSize": 500,
   "shardCount": 2,
-  "projectedShardCount": 93,
+  "projectedShardCount": 94,
   "missingShardRanges": [
     {
       "start": 3,
-      "end": 93
+      "end": 94
     }
   ],
   "nextMissingShard": 3,

@@ -29,6 +29,10 @@
     "check:spec-first": "node scripts/check-spec-first.mjs",
     "test:pages-mobile": "node scripts/pages-mobile-smoke.test.mjs"
   },
+  "overrides": {
+    "postcss": "8.5.10",
+    "sharp": "0.35.0"
+  },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.98.0",
     "@radix-ui/react-avatar": "^1.1.11",

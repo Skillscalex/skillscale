@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-08-07T07:41:59.834Z",
   "occupationId": "22",
   "skills": [
     {
@@ -867,6 +867,29 @@
       "auditStatus": "approved"
     },
     {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-1-ddc-toolkit-cad-converters-batch-cad-converter",
+      "name": "1-ddc-toolkit-cad-converters-batch-cad-converter",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "toolkit",
+        "cad"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/1-ddc-toolkit-cad-converters-batch-cad-converter",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-1-ddc-toolkit-cad-converters-dwg-to-excel",
       "name": "1-ddc-toolkit-cad-converters-dwg-to-excel",
       "author": "datadrivenconstruction",
@@ -885,6 +908,190 @@
       "updatedAt": "1783504629",
       "occupationId": "22",
       "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/1-ddc-toolkit-cad-converters-dwg-to-excel",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-1-ddc-toolkit-cwicr-database-cwicr-change-order",
+      "name": "1-ddc-toolkit-cwicr-database-cwicr-change-order",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "toolkit",
+        "cwicr"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/1-ddc-toolkit-cwicr-database-cwicr-change-order",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-1-ddc-toolkit-cwicr-database-cwicr-comparison-tool",
+      "name": "1-ddc-toolkit-cwicr-database-cwicr-comparison-tool",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "toolkit",
+        "cwicr"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/1-ddc-toolkit-cwicr-database-cwicr-comparison-tool",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-1-ddc-toolkit-cwicr-database-cwicr-cost-calculator",
+      "name": "1-ddc-toolkit-cwicr-database-cwicr-cost-calculator",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "toolkit",
+        "cwicr"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/1-ddc-toolkit-cwicr-database-cwicr-cost-calculator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-1-ddc-toolkit-cwicr-database-cwicr-crew-optimizer",
+      "name": "1-ddc-toolkit-cwicr-database-cwicr-crew-optimizer",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "toolkit",
+        "cwicr"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/1-ddc-toolkit-cwicr-database-cwicr-crew-optimizer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-1-ddc-toolkit-cwicr-database-cwicr-data-loader",
+      "name": "1-ddc-toolkit-cwicr-database-cwicr-data-loader",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "toolkit",
+        "cwicr"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/1-ddc-toolkit-cwicr-database-cwicr-data-loader",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-1-ddc-toolkit-cwicr-database-cwicr-data-validator",
+      "name": "1-ddc-toolkit-cwicr-database-cwicr-data-validator",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "toolkit",
+        "cwicr"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/1-ddc-toolkit-cwicr-database-cwicr-data-validator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-1-ddc-toolkit-cwicr-database-cwicr-escalation",
+      "name": "1-ddc-toolkit-cwicr-database-cwicr-escalation",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "toolkit",
+        "cwicr"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/1-ddc-toolkit-cwicr-database-cwicr-escalation",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-1-ddc-toolkit-cwicr-database-cwicr-historical-cost",
+      "name": "1-ddc-toolkit-cwicr-database-cwicr-historical-cost",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "toolkit",
+        "cwicr"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/1-ddc-toolkit-cwicr-database-cwicr-historical-cost",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -959,6 +1166,190 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-3-ddc-insights-field-automation-voice-to-report",
+      "name": "3-ddc-insights-field-automation-voice-to-report",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "insights",
+        "field"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/3-ddc-insights-field-automation-voice-to-report",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-3-ddc-insights-safety-quality-incident-reporting",
+      "name": "3-ddc-insights-safety-quality-incident-reporting",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "insights",
+        "safety"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/3-ddc-insights-safety-quality-incident-reporting",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-3-ddc-insights-safety-quality-quality-control-workflow",
+      "name": "3-ddc-insights-safety-quality-quality-control-workflow",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "insights",
+        "safety"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/3-ddc-insights-safety-quality-quality-control-workflow",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-3-ddc-insights-safety-quality-safety-inspection-checklist",
+      "name": "3-ddc-insights-safety-quality-safety-inspection-checklist",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "insights",
+        "safety"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/3-ddc-insights-safety-quality-safety-inspection-checklist",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-3-ddc-insights-safety-quality-toolbox-talk-generator",
+      "name": "3-ddc-insights-safety-quality-toolbox-talk-generator",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "insights",
+        "safety"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/3-ddc-insights-safety-quality-toolbox-talk-generator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-3-ddc-insights-schedule-optimization-critical-path-analyzer",
+      "name": "3-ddc-insights-schedule-optimization-critical-path-analyzer",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "insights",
+        "schedule"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/3-ddc-insights-schedule-optimization-critical-path-analyzer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-3-ddc-insights-schedule-optimization-delay-analysis",
+      "name": "3-ddc-insights-schedule-optimization-delay-analysis",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "insights",
+        "schedule"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/3-ddc-insights-schedule-optimization-delay-analysis",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-3-ddc-insights-schedule-optimization-look-ahead-scheduler",
+      "name": "3-ddc-insights-schedule-optimization-look-ahead-scheduler",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "insights",
+        "schedule"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/3-ddc-insights-schedule-optimization-look-ahead-scheduler",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-affaan-m-ecc-skills-agent-harness-construction",
       "name": "agent-harness-construction",
       "author": "affaan-m",
@@ -996,6 +1387,92 @@
       "updatedAt": "1783504629",
       "occupationId": "22",
       "skillsmpUrl": "https://skillsmp.com/creators/xiaoluolyg/god/agentsociety-custom-skills-computer-repair",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-xiaoluolyg-god-agentsociety-custom-skills-repair-basic",
+      "name": "agentsociety-custom-skills-repair-basic",
+      "author": "xiaoluolyg",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from xiaoluolyg/god. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "god",
+        "agentsociety",
+        "custom",
+        "repair",
+        "basic"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/xiaoluolyg/god/agentsociety-custom-skills-repair-basic",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-xiaoluolyg-god-agentsociety-custom-skills-tools-repair",
+      "name": "agentsociety-custom-skills-tools-repair",
+      "author": "xiaoluolyg",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from xiaoluolyg/god. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "god",
+        "agentsociety",
+        "custom",
+        "tools",
+        "repair"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/xiaoluolyg/god/agentsociety-custom-skills-tools-repair",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-lionelsimai-claude-skills-collection-skills-aviation-maintenance-plan",
+      "name": "aviation-maintenance-plan",
+      "author": "lionelsimai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lionelsimai/claude-skills-collection. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "collection",
+        "aviation",
+        "maintenance",
+        "plan"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/lionelsimai/claude-skills-collection/skills-aviation-maintenance-plan",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dleerdefi-claude-code-construction-claude-skills-bid-evaluator",
+      "name": "claude-skills-bid-evaluator",
+      "author": "dleerdefi",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dleerdefi/claude-code-construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "construction",
+        "bid",
+        "evaluator"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/dleerdefi/claude-code-construction/claude-skills-bid-evaluator",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1059,6 +1536,28 @@
       "updatedAt": "1783504629",
       "occupationId": "22",
       "skillsmpUrl": "https://skillsmp.com/creators/haibarakiku/awesome-skills/skills-construction-electrical-engineer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-alexclowe-awesome-claude-cowork-plugins-construction-pm-skills-construction-management",
+      "name": "construction-pm-skills-construction-management",
+      "author": "alexclowe",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from alexclowe/awesome-claude-cowork-plugins. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "cowork",
+        "plugins",
+        "construction",
+        "management"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/alexclowe/awesome-claude-cowork-plugins/construction-pm-skills-construction-management",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1150,6 +1649,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-agent-harness-construction",
+      "name": "docs-ja-jp-skills-agent-harness-construction",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "harness",
+        "construction"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-agent-harness-construction",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-affaan-m-ecc-docs-zh-cn-skills-agent-harness-construction",
       "name": "docs-zh-cn-skills-agent-harness-construction",
       "author": "affaan-m",
@@ -1166,6 +1686,66 @@
       "updatedAt": "1783504629",
       "occupationId": "22",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-zh-cn-skills-agent-harness-construction",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-lionelsimai-claude-skills-collection-skills-floor-maintenance-plan",
+      "name": "floor-maintenance-plan",
+      "author": "lionelsimai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lionelsimai/claude-skills-collection. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "collection",
+        "floor",
+        "maintenance",
+        "plan"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/lionelsimai/claude-skills-collection/skills-floor-maintenance-plan",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-lionelsimai-claude-skills-collection-skills-landscape-maintenance-plan",
+      "name": "landscape-maintenance-plan",
+      "author": "lionelsimai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lionelsimai/claude-skills-collection. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "collection",
+        "landscape",
+        "maintenance",
+        "plan"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/lionelsimai/claude-skills-collection/skills-landscape-maintenance-plan",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bytesagain-ai-skills-maintenance",
+      "name": "maintenance",
+      "author": "bytesagain",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bytesagain/ai-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "maintenance"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/bytesagain/ai-skills/maintenance",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1191,6 +1771,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-theneoai-awesome-skills-skills-persona-construction-electrical-engineer",
+      "name": "persona-construction-electrical-engineer",
+      "author": "theneoai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from theneoai/awesome-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "persona",
+        "construction",
+        "electrical",
+        "engineer"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/theneoai/awesome-skills/skills-persona-construction-electrical-engineer",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-wshobson-agents-plugins-security-scanning-skills-attack-tree-construction",
       "name": "plugins-security-scanning-skills-attack-tree-construction",
       "author": "wshobson",
@@ -1208,6 +1810,27 @@
       "updatedAt": "1783611284",
       "occupationId": "22",
       "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-security-scanning-skills-attack-tree-construction",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-lionelsimai-claude-skills-collection-skills-post-construction-clean",
+      "name": "post-construction-clean",
+      "author": "lionelsimai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lionelsimai/claude-skills-collection. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "collection",
+        "post",
+        "construction",
+        "clean"
+      ],
+      "updatedAt": "1786088519",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/lionelsimai/claude-skills-collection/skills-post-construction-clean",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

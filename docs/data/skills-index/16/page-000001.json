@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-08-11T07:38:12.783Z",
   "occupationId": "16",
   "skills": [
     {
@@ -967,6 +967,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-zgiai-zgi-api-internal-modules-skills-catalog-intent-router",
+      "name": "api-internal-modules-skills-catalog-intent-router",
+      "author": "zgiai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from zgiai/zgi. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "zgi",
+        "api",
+        "internal",
+        "modules",
+        "catalog"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/zgiai/zgi/api-internal-modules-skills-catalog-intent-router",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-apollographql-skills-skills-apollo-router",
       "name": "apollo-router",
       "author": "apollographql",
@@ -1002,6 +1024,29 @@
       "updatedAt": "1783504629",
       "occupationId": "16",
       "skillsmpUrl": "https://skillsmp.com/creators/apollographql/skills/skills-apollo-router-plugin-creator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-publieople-hermes-config-kit-skills-archive-ai-drama-pipeline-route-planning",
+      "name": "archive-ai-drama-pipeline-route-planning",
+      "author": "publieople",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from publieople/hermes-config-kit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "config",
+        "kit",
+        "archive",
+        "drama",
+        "pipeline"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/publieople/hermes-config-kit/skills-archive-ai-drama-pipeline-route-planning",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1059,6 +1104,93 @@
       "updatedAt": "1783504629",
       "occupationId": "16",
       "skillsmpUrl": "https://skillsmp.com/creators/finch-xu/cc-router/claude-skills-new-provider",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-williamcorrea23-sap-router-skill-agents-skills-cpi-iflow-development",
+      "name": "cpi-iflow-development",
+      "author": "williamcorrea23",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from williamcorrea23/sap-router-skill. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "sap",
+        "router",
+        "agents",
+        "cpi",
+        "iflow",
+        "development"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/williamcorrea23/sap-router-skill/agents-skills-cpi-iflow-development",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-claude-devfleet",
+      "name": "docs-ja-jp-skills-claude-devfleet",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "devfleet"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-claude-devfleet",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-logistics-exception-management",
+      "name": "docs-ja-jp-skills-logistics-exception-management",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "logistics",
+        "exception",
+        "management"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-logistics-exception-management",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-returns-reverse-logistics",
+      "name": "docs-ja-jp-skills-returns-reverse-logistics",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "returns",
+        "reverse",
+        "logistics"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-returns-reverse-logistics",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1151,6 +1283,48 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-lionelsimai-claude-skills-collection-skills-fleet-management-auto",
+      "name": "fleet-management-auto",
+      "author": "lionelsimai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from lionelsimai/claude-skills-collection. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "collection",
+        "fleet",
+        "management",
+        "auto"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/lionelsimai/claude-skills-collection/skills-fleet-management-auto",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bouclem-skills-skills-frameworks-react-001-nextjs-app-router-patterns",
+      "name": "frameworks-react-001-nextjs-app-router-patterns",
+      "author": "bouclem",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bouclem/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "frameworks",
+        "react",
+        "001",
+        "nextjs"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/bouclem/skills/skills-frameworks-react-001-nextjs-app-router-patterns",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-microsoft-skills-github-plugins-azure-sdk-python-skills-fastapi-router-py",
       "name": "github-plugins-azure-sdk-python-skills-fastapi-router-py",
       "author": "microsoft",
@@ -1216,6 +1390,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-midudev-autoskills-packages-autoskills-skills-registry-wordpress-router",
+      "name": "packages-autoskills-skills-registry-wordpress-router",
+      "author": "midudev",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from midudev/autoskills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "autoskills",
+        "packages",
+        "registry",
+        "wordpress"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/midudev/autoskills/packages-autoskills-skills-registry-wordpress-router",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-expo-expo-packages-expo-router-claude-skills-android-e2e-testing",
       "name": "packages-expo-router-claude-skills-android-e2e-testing",
       "author": "expo",
@@ -1232,6 +1427,28 @@
       "updatedAt": "1783504629",
       "occupationId": "16",
       "skillsmpUrl": "https://skillsmp.com/creators/expo/expo/packages-expo-router-claude-skills-android-e2e-testing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-trpc-trpc-packages-next-skills-nextjs-app-router",
+      "name": "packages-next-skills-nextjs-app-router",
+      "author": "trpc",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from trpc/trpc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "trpc",
+        "packages",
+        "next",
+        "nextjs",
+        "app"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/trpc/trpc/packages-next-skills-nextjs-app-router",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1342,6 +1559,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-posthog-posthog-products-warehouse-sources-skills-setting-up-a-data-warehouse-source",
+      "name": "products-warehouse-sources-skills-setting-up-a-data-warehouse-source",
+      "author": "posthog",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from posthog/posthog. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "posthog",
+        "products",
+        "warehouse",
+        "sources",
+        "setting"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/posthog/posthog/products-warehouse-sources-skills-setting-up-a-data-warehouse-source",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-remix-run-react-router-agents-skills-react-router",
       "name": "react-router",
       "author": "remix-run",
@@ -1362,6 +1601,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-affaan-m-ecc-skills-returns-reverse-logistics",
+      "name": "returns-reverse-logistics",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "returns",
+        "reverse",
+        "logistics"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-returns-reverse-logistics",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-deepleaper-leaper-agent-skills-skills-l1-industry-logistics",
       "name": "skills-l1-industry-logistics",
       "author": "deepleaper",
@@ -1377,6 +1637,48 @@
       "updatedAt": "1783955533",
       "occupationId": "16",
       "skillsmpUrl": "https://skillsmp.com/creators/deepleaper/leaper-agent/skills-skills-l1-industry-logistics",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-contextgo-contextgo-src-process-resources-assistant-engineering-everything-in-claude-code-skills-logistics-exception-management",
+      "name": "src-process-resources-assistant-engineering-everything-in-claude-code-skills-logistics-exception-management",
+      "author": "contextgo",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from contextgo/contextgo. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "contextgo",
+        "src",
+        "process",
+        "resources",
+        "assistant"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/contextgo/contextgo/src-process-resources-assistant-engineering-everything-in-claude-code-skills-logistics-exception-management",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-itgoyo-hermes-skills-supply-chain-supply-chain-route-optimizer",
+      "name": "supply-chain-supply-chain-route-optimizer",
+      "author": "itgoyo",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from itgoyo/hermes-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "supply",
+        "chain"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/itgoyo/hermes-skills/supply-chain-supply-chain-route-optimizer",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1436,6 +1738,28 @@
       "updatedAt": "1783611284",
       "occupationId": "16",
       "skillsmpUrl": "https://skillsmp.com/creators/antfu/skills/skills-vue-router-best-practices",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-posthog-posthog-agents-skills-warehouse-source-new-version",
+      "name": "warehouse-source-new-version",
+      "author": "posthog",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from posthog/posthog. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "posthog",
+        "agents",
+        "warehouse",
+        "source",
+        "new"
+      ],
+      "updatedAt": "1786433892",
+      "occupationId": "16",
+      "skillsmpUrl": "https://skillsmp.com/creators/posthog/posthog/agents-skills-warehouse-source-new-version",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

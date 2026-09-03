@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-09-03T04:34:38.364Z",
   "occupationId": "18",
   "skills": [
     {
@@ -867,6 +867,50 @@
       "auditStatus": "approved"
     },
     {
+      "id": "skillsmp-wgpsec-aboutsecurity-skills-ai-security-prompt-jailbreak",
+      "name": "ai-security-prompt-jailbreak",
+      "author": "wgpsec",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wgpsec/aboutsecurity. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "aboutsecurity",
+        "security",
+        "prompt",
+        "jailbreak"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-ai-security-prompt-jailbreak",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-analyzing-android-malware-with-apktool",
+      "name": "analyzing-android-malware-with-apktool",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "analyzing",
+        "android",
+        "malware",
+        "with"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-analyzing-android-malware-with-apktool",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-ed1s0nz-cyberstrikeai-skills-api-security-testing",
       "name": "api-security-testing",
       "author": "ed1s0nz",
@@ -930,6 +974,48 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-mikewuping-bios-security-analysis-skills-bios-security-analysis",
+      "name": "bios-security-analysis",
+      "author": "mikewuping",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mikewuping/bios-security-analysis. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "bios",
+        "security",
+        "analysis"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mikewuping/bios-security-analysis/skills-bios-security-analysis",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-claude-plugin-skills-owasp-security",
+      "name": "claude-plugin-skills-owasp-security",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "plugin",
+        "owasp",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/claude-plugin-skills-owasp-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-gmh5225-awesome-llvm-security-claude-skills-llvm-obfuscation",
       "name": "claude-skills-llvm-obfuscation",
       "author": "gmh5225",
@@ -971,6 +1057,213 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-enterprise-communication-information-security-manager-iso27001",
+      "name": "cli-tool-components-skills-enterprise-communication-information-security-manager-iso27001",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "enterprise"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-enterprise-communication-information-security-manager-iso27001",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-api-fuzzing-bug-bounty",
+      "name": "cli-tool-components-skills-security-api-fuzzing-bug-bounty",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-api-fuzzing-bug-bounty",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-aws-penetration-testing",
+      "name": "cli-tool-components-skills-security-aws-penetration-testing",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-aws-penetration-testing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-cra-vulnerability-obligations",
+      "name": "cli-tool-components-skills-security-cra-vulnerability-obligations",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-cra-vulnerability-obligations",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-ethical-hacking-methodology",
+      "name": "cli-tool-components-skills-security-ethical-hacking-methodology",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-ethical-hacking-methodology",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-incident-reporting-navigator",
+      "name": "cli-tool-components-skills-security-incident-reporting-navigator",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-incident-reporting-navigator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-pentest-checklist",
+      "name": "cli-tool-components-skills-security-pentest-checklist",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-pentest-checklist",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-pentest-commands",
+      "name": "cli-tool-components-skills-security-pentest-commands",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-pentest-commands",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-red-team-tools",
+      "name": "cli-tool-components-skills-security-red-team-tools",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-red-team-tools",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-security-best-practices",
       "name": "cli-tool-components-skills-security-security-best-practices",
       "author": "davila7",
@@ -989,6 +1282,98 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-security-best-practices",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-ssh-penetration-testing",
+      "name": "cli-tool-components-skills-security-ssh-penetration-testing",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-ssh-penetration-testing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-vulnerability-scanner",
+      "name": "cli-tool-components-skills-security-vulnerability-scanner",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-vulnerability-scanner",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-web-security-testing",
+      "name": "cli-tool-components-skills-security-web-security-testing",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-web-security-testing",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-davila7-claude-code-templates-cli-tool-components-skills-security-wireshark-analysis",
+      "name": "cli-tool-components-skills-security-wireshark-analysis",
+      "author": "davila7",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from davila7/claude-code-templates. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "templates",
+        "cli",
+        "tool",
+        "components",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-security-wireshark-analysis",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1122,6 +1507,75 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-conducting-cyber-risk-assessment-with-nist-800-30",
+      "name": "conducting-cyber-risk-assessment-with-nist-800-30",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "conducting",
+        "cyber",
+        "risk",
+        "assessment"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-conducting-cyber-risk-assessment-with-nist-800-30",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-conducting-mobile-app-penetration-test",
+      "name": "conducting-mobile-app-penetration-test",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "conducting",
+        "mobile",
+        "app",
+        "penetration"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-conducting-mobile-app-penetration-test",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-conducting-pass-the-ticket-attack",
+      "name": "conducting-pass-the-ticket-attack",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "conducting",
+        "pass",
+        "the",
+        "ticket"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-conducting-pass-the-ticket-attack",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-waynesutton-convexskills-skills-convex-security-audit",
       "name": "convex-security-audit",
       "author": "waynesutton",
@@ -1224,6 +1678,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-wgpsec-aboutsecurity-skills-ctf-ctf-misc",
+      "name": "ctf-ctf-misc",
+      "author": "wgpsec",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wgpsec/aboutsecurity. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "aboutsecurity",
+        "ctf",
+        "misc"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-ctf-ctf-misc",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-wgpsec-aboutsecurity-skills-ctf-ctf-pwn",
       "name": "ctf-ctf-pwn",
       "author": "wgpsec",
@@ -1259,6 +1733,27 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-ctf-ctf-reverse",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wgpsec-aboutsecurity-skills-ctf-ctf-web-methodology",
+      "name": "ctf-ctf-web-methodology",
+      "author": "wgpsec",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wgpsec/aboutsecurity. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "aboutsecurity",
+        "ctf",
+        "web",
+        "methodology"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-ctf-ctf-web-methodology",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1379,6 +1874,94 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-defi-amm-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-deobfuscating-powershell-obfuscated-malware",
+      "name": "deobfuscating-powershell-obfuscated-malware",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "deobfuscating",
+        "powershell",
+        "obfuscated",
+        "malware"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-deobfuscating-powershell-obfuscated-malware",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-as0ler-skills-deobfuscation-vmprotect",
+      "name": "deobfuscation-vmprotect",
+      "author": "as0ler",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from as0ler/skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "deobfuscation",
+        "vmprotect"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/as0ler/skills/deobfuscation-vmprotect",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-detecting-cloud-threats-with-guardduty",
+      "name": "detecting-cloud-threats-with-guardduty",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "detecting",
+        "cloud",
+        "threats",
+        "with"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-detecting-cloud-threats-with-guardduty",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-detecting-command-and-control-over-dns",
+      "name": "detecting-command-and-control-over-dns",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "detecting",
+        "command",
+        "and",
+        "control"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-detecting-command-and-control-over-dns",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1509,6 +2092,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-affaan-m-ecc-docs-es-skills-quarkus-security",
+      "name": "docs-es-skills-quarkus-security",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "quarkus",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-es-skills-quarkus-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-affaan-m-ecc-docs-es-skills-security-review",
       "name": "docs-es-skills-security-review",
       "author": "affaan-m",
@@ -1551,6 +2155,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-defi-amm-security",
+      "name": "docs-ja-jp-skills-defi-amm-security",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "defi",
+        "amm",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-defi-amm-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-django-security",
       "name": "docs-ja-jp-skills-django-security",
       "author": "affaan-m",
@@ -1572,6 +2198,70 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-perl-security",
+      "name": "docs-ja-jp-skills-perl-security",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "perl",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-perl-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-quarkus-security",
+      "name": "docs-ja-jp-skills-quarkus-security",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "quarkus",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-quarkus-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-security-bounty-hunter",
+      "name": "docs-ja-jp-skills-security-bounty-hunter",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "security",
+        "bounty",
+        "hunter"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-security-bounty-hunter",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-security-review",
       "name": "docs-ja-jp-skills-security-review",
       "author": "affaan-m",
@@ -1588,6 +2278,48 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-security-review",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-security-scan",
+      "name": "docs-ja-jp-skills-security-scan",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "security",
+        "scan"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-security-scan",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-springboot-security",
+      "name": "docs-ja-jp-skills-springboot-security",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "springboot",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-springboot-security",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1630,6 +2362,27 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-tr-skills-laravel-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-docs-tr-skills-quarkus-security",
+      "name": "docs-tr-skills-quarkus-security",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "quarkus",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-tr-skills-quarkus-security",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1870,6 +2623,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-wgpsec-aboutsecurity-skills-evasion-evasion-technique-integrate",
+      "name": "evasion-evasion-technique-integrate",
+      "author": "wgpsec",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wgpsec/aboutsecurity. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "aboutsecurity",
+        "evasion",
+        "technique",
+        "integrate"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-evasion-evasion-technique-integrate",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-tibsfox-gsd-skill-creator-examples-skills-technology-cybersecurity-basics",
       "name": "examples-skills-technology-cybersecurity-basics",
       "author": "tibsfox",
@@ -1893,6 +2667,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-wgpsec-aboutsecurity-skills-exploit-network-service-ftp-pentesting",
+      "name": "exploit-network-service-ftp-pentesting",
+      "author": "wgpsec",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wgpsec/aboutsecurity. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "aboutsecurity",
+        "exploit",
+        "network",
+        "service",
+        "ftp"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-exploit-network-service-ftp-pentesting",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-wgpsec-aboutsecurity-skills-exploit-network-service-mysql-pentesting",
       "name": "exploit-network-service-mysql-pentesting",
       "author": "wgpsec",
@@ -1910,6 +2706,27 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-exploit-network-service-mysql-pentesting",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-wgpsec-aboutsecurity-skills-exploit-web-method-web-vuln-scan",
+      "name": "exploit-web-method-web-vuln-scan",
+      "author": "wgpsec",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wgpsec/aboutsecurity. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "aboutsecurity",
+        "exploit",
+        "web",
+        "method"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-exploit-web-method-web-vuln-scan",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1952,6 +2769,26 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/staruhub/claudeskills/skills-geek-skills-security-audit",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-saeed-vayghan-gemini-agent-skills-gemini-skills-incident-responder",
+      "name": "gemini-skills-incident-responder",
+      "author": "saeed-vayghan",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from saeed-vayghan/gemini-agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gemini",
+        "incident",
+        "responder"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/saeed-vayghan/gemini-agent-skills/gemini-skills-incident-responder",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2107,6 +2944,29 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-implementing-aws-macie-for-data-classification",
+      "name": "implementing-aws-macie-for-data-classification",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "implementing",
+        "aws",
+        "macie",
+        "for"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-implementing-aws-macie-for-data-classification",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-implementing-iso-27001-information-security-management",
       "name": "implementing-iso-27001-information-security-management",
       "author": "mukul975",
@@ -2125,6 +2985,117 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-implementing-iso-27001-information-security-management",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-implementing-privileged-access-management-with-cyberark",
+      "name": "implementing-privileged-access-management-with-cyberark",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "implementing",
+        "privileged",
+        "access",
+        "management"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-implementing-privileged-access-management-with-cyberark",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-implementing-threat-intelligence-lifecycle-management",
+      "name": "implementing-threat-intelligence-lifecycle-management",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "implementing",
+        "threat",
+        "intelligence",
+        "lifecycle"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-implementing-threat-intelligence-lifecycle-management",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-agentsecops-secopsagentkit-skills-incident-response-detection-sigma",
+      "name": "incident-response-detection-sigma",
+      "author": "agentsecops",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from agentsecops/secopsagentkit. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "secopsagentkit",
+        "incident",
+        "response",
+        "detection",
+        "sigma"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/agentsecops/secopsagentkit/skills-incident-response-detection-sigma",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-xalgord-xalgorix-internal-tools-skills-data-soc-operations-correlating-security-events-in-qradar",
+      "name": "internal-tools-skills-data-soc-operations-correlating-security-events-in-qradar",
+      "author": "xalgord",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from xalgord/xalgorix. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "xalgorix",
+        "internal",
+        "tools",
+        "data",
+        "soc"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/xalgord/xalgorix/internal-tools-skills-data-soc-operations-correlating-security-events-in-qradar",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-kiro-skills-django-security",
+      "name": "kiro-skills-django-security",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "kiro",
+        "django",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/kiro-skills-django-security",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2192,6 +3163,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-wgpsec-aboutsecurity-skills-lateral-oa-system-attack",
+      "name": "lateral-oa-system-attack",
+      "author": "wgpsec",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wgpsec/aboutsecurity. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "aboutsecurity",
+        "lateral",
+        "system",
+        "attack"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-lateral-oa-system-attack",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-wgpsec-aboutsecurity-skills-mobile-android-app-pentesting",
       "name": "mobile-android-app-pentesting",
       "author": "wgpsec",
@@ -2236,6 +3228,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-hoangnguyen0403-agent-skills-standard-skills-nestjs-nestjs-security",
+      "name": "nestjs-nestjs-security",
+      "author": "hoangnguyen0403",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from hoangnguyen0403/agent-skills-standard. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "standard",
+        "nestjs",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/hoangnguyen0403/agent-skills-standard/skills-nestjs-nestjs-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-tech-leads-club-agent-skills-packages-skills-catalog-skills-security-security-threat-model",
       "name": "packages-skills-catalog-skills-security-security-threat-model",
       "author": "tech-leads-club",
@@ -2251,6 +3263,187 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/tech-leads-club/agent-skills/packages-skills-catalog-skills-security-security-threat-model",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-performing-api-security-testing-with-postman",
+      "name": "performing-api-security-testing-with-postman",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "performing",
+        "api",
+        "security",
+        "testing"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-performing-api-security-testing-with-postman",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-performing-binary-exploitation-analysis",
+      "name": "performing-binary-exploitation-analysis",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "performing",
+        "binary",
+        "exploitation",
+        "analysis"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-performing-binary-exploitation-analysis",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-performing-dynamic-analysis-of-android-app",
+      "name": "performing-dynamic-analysis-of-android-app",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "performing",
+        "dynamic",
+        "analysis",
+        "android"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-performing-dynamic-analysis-of-android-app",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-performing-hash-cracking-with-hashcat",
+      "name": "performing-hash-cracking-with-hashcat",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "performing",
+        "hash",
+        "cracking",
+        "with"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-performing-hash-cracking-with-hashcat",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-performing-malware-ioc-extraction",
+      "name": "performing-malware-ioc-extraction",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "performing",
+        "malware",
+        "ioc",
+        "extraction"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-performing-malware-ioc-extraction",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-performing-paste-site-monitoring-for-credentials",
+      "name": "performing-paste-site-monitoring-for-credentials",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "performing",
+        "paste",
+        "site",
+        "monitoring"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-performing-paste-site-monitoring-for-credentials",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-performing-plc-firmware-security-analysis",
+      "name": "performing-plc-firmware-security-analysis",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "performing",
+        "plc",
+        "firmware",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-performing-plc-firmware-security-analysis",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-skills-perl-security",
+      "name": "perl-security",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "perl",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-perl-security",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2530,6 +3723,47 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-anthropics-claude-plugins-official-plugins-claude-security-skills-claude-security",
+      "name": "plugins-claude-security-skills-claude-security",
+      "author": "anthropics",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from anthropics/claude-plugins-official. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "official",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/anthropics/claude-plugins-official/plugins-claude-security-skills-claude-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-latestaiagents-agent-skills-plugins-devops-sre-skills-incident-response-root-cause-analysis",
+      "name": "plugins-devops-sre-skills-incident-response-root-cause-analysis",
+      "author": "latestaiagents",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from latestaiagents/agent-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "plugins",
+        "devops",
+        "sre",
+        "incident"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/latestaiagents/agent-skills/plugins-devops-sre-skills-incident-response-root-cause-analysis",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-ghostsecurity-skills-plugins-ghost-skills-proxy",
       "name": "plugins-ghost-skills-proxy",
       "author": "ghostsecurity",
@@ -2632,6 +3866,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-wshobson-agents-plugins-incident-response-skills-incident-runbook-templates",
+      "name": "plugins-incident-response-skills-incident-runbook-templates",
+      "author": "wshobson",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from wshobson/agents. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "agents",
+        "plugins",
+        "incident",
+        "response"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-incident-response-skills-incident-runbook-templates",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-wshobson-agents-plugins-kubernetes-operations-skills-k8s-security-policies",
       "name": "plugins-kubernetes-operations-skills-k8s-security-policies",
       "author": "wshobson",
@@ -2718,6 +3973,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-masx200-codebuddy-plugins-official-plugins-skills-security-check-skills-skills-security-check",
+      "name": "plugins-skills-security-check-skills-skills-security-check",
+      "author": "masx200",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from masx200/codebuddy-plugins-official. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "codebuddy",
+        "plugins",
+        "official",
+        "security",
+        "check"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/masx200/codebuddy-plugins-official/plugins-skills-security-check-skills-skills-security-check",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-wgpsec-aboutsecurity-skills-postexploit-product-sonarqube-tactics",
       "name": "postexploit-product-sonarqube-tactics",
       "author": "wgpsec",
@@ -2785,6 +4062,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-koala73-worldmonitor-public-well-known-agent-skills-scan-cyber-threats",
+      "name": "public-well-known-agent-skills-scan-cyber-threats",
+      "author": "koala73",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from koala73/worldmonitor. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "worldmonitor",
+        "public",
+        "well",
+        "known",
+        "scan"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/koala73/worldmonitor/public-well-known-agent-skills-scan-cyber-threats",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-alirezarezvani-claude-skills-ra-qm-team-skills-information-security-manager-iso27001",
       "name": "ra-qm-team-skills-information-security-manager-iso27001",
       "author": "alirezarezvani",
@@ -2824,6 +4123,52 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-reverse-engineering-android-malware-with-jadx",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-reverse-engineering-ios-app-with-frida",
+      "name": "reverse-engineering-ios-app-with-frida",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "reverse",
+        "engineering",
+        "ios",
+        "app"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-reverse-engineering-ios-app-with-frida",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-reverse-engineering-malware-with-ghidra",
+      "name": "reverse-engineering-malware-with-ghidra",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "reverse",
+        "engineering",
+        "malware",
+        "with"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-reverse-engineering-malware-with-ghidra",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2870,6 +4215,27 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-reverse-engineering-rust-malware",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-aivos-xie-hermes-skills-security-ai-reverse-engineering",
+      "name": "security-ai-reverse-engineering",
+      "author": "aivos-xie",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from aivos-xie/hermes-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "hermes",
+        "security",
+        "reverse",
+        "engineering"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/aivos-xie/hermes-skills/security-ai-reverse-engineering",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -2972,6 +4338,27 @@
       "updatedAt": "1783611284",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/elastic/agent-skills/skills-security-case-management",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-sethdford-claude-skills-security-incident-response-skills-root-cause-analysis-security",
+      "name": "security-incident-response-skills-root-cause-analysis-security",
+      "author": "sethdford",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from sethdford/claude-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "security",
+        "incident",
+        "response",
+        "root"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/sethdford/claude-skills/security-incident-response-skills-root-cause-analysis-security",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -3081,6 +4468,26 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-tugoukezhang-workbuddy-skills-skills-skills-security-check",
+      "name": "skills-security-check",
+      "author": "tugoukezhang",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from tugoukezhang/workbuddy-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "workbuddy",
+        "security",
+        "check"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/tugoukezhang/workbuddy-skills/skills-skills-security-check",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-affaan-m-ecc-skills-springboot-security",
       "name": "springboot-security",
       "author": "affaan-m",
@@ -3096,6 +4503,27 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-springboot-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dwani-ai-overwatch-src-overwatch-agents-skills-incident-brief",
+      "name": "src-overwatch-agents-skills-incident-brief",
+      "author": "dwani-ai",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dwani-ai/overwatch. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "overwatch",
+        "src",
+        "agents",
+        "incident"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/dwani-ai/overwatch/src-overwatch-agents-skills-incident-brief",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -3122,6 +4550,28 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-fengshao1227-ccg-workflow-templates-skills-domains-security",
+      "name": "templates-skills-domains-security",
+      "author": "fengshao1227",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from fengshao1227/ccg-workflow. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ccg",
+        "workflow",
+        "templates",
+        "domains",
+        "security"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/fengshao1227/ccg-workflow/templates-skills-domains-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-fengshao1227-ccg-workflow-templates-skills-tools-verify-security",
       "name": "templates-skills-tools-verify-security",
       "author": "fengshao1227",
@@ -3140,6 +4590,51 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/fengshao1227/ccg-workflow/templates-skills-tools-verify-security",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-testing-api-security-with-owasp-top-10",
+      "name": "testing-api-security-with-owasp-top-10",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "testing",
+        "api",
+        "security",
+        "with"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-testing-api-security-with-owasp-top-10",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-github-awesome-copilot-skills-threat-model-analyst",
+      "name": "threat-model-analyst",
+      "author": "github",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from github/awesome-copilot. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "awesome",
+        "copilot",
+        "threat",
+        "model",
+        "analyst"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-threat-model-analyst",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -3203,6 +4698,29 @@
       "updatedAt": "1783504629",
       "occupationId": "18",
       "skillsmpUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-tool-nuclei-scan",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-mukul975-anthropic-cybersecurity-skills-skills-triaging-vulnerabilities-with-ssvc-framework",
+      "name": "triaging-vulnerabilities-with-ssvc-framework",
+      "author": "mukul975",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from mukul975/anthropic-cybersecurity-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "anthropic",
+        "cybersecurity",
+        "triaging",
+        "vulnerabilities",
+        "with",
+        "ssvc"
+      ],
+      "updatedAt": "1788410077",
+      "occupationId": "18",
+      "skillsmpUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-triaging-vulnerabilities-with-ssvc-framework",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"

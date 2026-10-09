@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T03:00:39.431Z",
+  "generatedAt": "2026-10-09T22:39:24.359Z",
   "occupationId": "22",
   "skills": [
     {
@@ -867,6 +867,29 @@
       "auditStatus": "approved"
     },
     {
+      "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-1-ddc-toolkit-bim-analysis-co2-carbon-footprint",
+      "name": "1-ddc-toolkit-bim-analysis-co2-carbon-footprint",
+      "author": "datadrivenconstruction",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from datadrivenconstruction/ddc_skills_for_ai_agents_in_construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ddc",
+        "for",
+        "agents",
+        "construction",
+        "toolkit",
+        "bim"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/datadrivenconstruction/ddc_skills_for_ai_agents_in_construction/1-ddc-toolkit-bim-analysis-co2-carbon-footprint",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-datadrivenconstruction-ddc-skills-for-ai-agents-in-construction-1-ddc-toolkit-cad-converters-dwg-to-excel",
       "name": "1-ddc-toolkit-cad-converters-dwg-to-excel",
       "author": "datadrivenconstruction",
@@ -959,6 +982,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-kernel8901-ai-agent-skills-classification-aec-construction-plan",
+      "name": "aec-construction-plan",
+      "author": "kernel8901",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from kernel8901/ai-agent-skills-classification. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "classification",
+        "aec",
+        "construction",
+        "plan"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/kernel8901/ai-agent-skills-classification/aec-construction-plan",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-affaan-m-ecc-skills-agent-harness-construction",
       "name": "agent-harness-construction",
       "author": "affaan-m",
@@ -1001,6 +1045,27 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-dleerdefi-claude-code-construction-claude-skills-bid-evaluator",
+      "name": "claude-skills-bid-evaluator",
+      "author": "dleerdefi",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dleerdefi/claude-code-construction. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "code",
+        "construction",
+        "bid",
+        "evaluator"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/dleerdefi/claude-code-construction/claude-skills-bid-evaluator",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-timjrobinson-claude-code-construction-manager-claude-skills-budget-check",
       "name": "claude-skills-budget-check",
       "author": "timjrobinson",
@@ -1038,6 +1103,26 @@
       "updatedAt": "1783504629",
       "occupationId": "22",
       "skillsmpUrl": "https://skillsmp.com/creators/haibarakiku/awesome-skills/skills-construction-construction-manager",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-abhinavbwj-skills-architects-skills-construction-documentation",
+      "name": "construction-documentation",
+      "author": "abhinavbwj",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from abhinavbwj/skills-architects. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "architects",
+        "construction",
+        "documentation"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/abhinavbwj/skills-architects/skills-construction-documentation",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1150,6 +1235,49 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-dgcruzing-construction-office-skills-daily-site-diary",
+      "name": "daily-site-diary",
+      "author": "dgcruzing",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dgcruzing/construction-office-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "construction",
+        "office",
+        "daily",
+        "site",
+        "diary"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/dgcruzing/construction-office-skills/daily-site-diary",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-affaan-m-ecc-docs-ja-jp-skills-agent-harness-construction",
+      "name": "docs-ja-jp-skills-agent-harness-construction",
+      "author": "affaan-m",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from affaan-m/ecc. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "ecc",
+        "docs",
+        "harness",
+        "construction"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-agent-harness-construction",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-affaan-m-ecc-docs-zh-cn-skills-agent-harness-construction",
       "name": "docs-zh-cn-skills-agent-harness-construction",
       "author": "affaan-m",
@@ -1166,6 +1294,89 @@
       "updatedAt": "1783504629",
       "occupationId": "22",
       "skillsmpUrl": "https://skillsmp.com/creators/affaan-m/ecc/docs-zh-cn-skills-agent-harness-construction",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dgcruzing-construction-office-skills-inbox-triage",
+      "name": "inbox-triage",
+      "author": "dgcruzing",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dgcruzing/construction-office-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "construction",
+        "office",
+        "inbox",
+        "triage"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/dgcruzing/construction-office-skills/inbox-triage",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dgcruzing-construction-office-skills-itp-holdpoint-check",
+      "name": "itp-holdpoint-check",
+      "author": "dgcruzing",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dgcruzing/construction-office-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "construction",
+        "office",
+        "itp",
+        "holdpoint",
+        "check"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/dgcruzing/construction-office-skills/itp-holdpoint-check",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-bytesagain-ai-skills-maintenance",
+      "name": "maintenance",
+      "author": "bytesagain",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from bytesagain/ai-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "maintenance"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/bytesagain/ai-skills/maintenance",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dgcruzing-construction-office-skills-meeting-minutes-actions",
+      "name": "meeting-minutes-actions",
+      "author": "dgcruzing",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dgcruzing/construction-office-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "construction",
+        "office",
+        "meeting",
+        "minutes",
+        "actions"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/dgcruzing/construction-office-skills/meeting-minutes-actions",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
@@ -1213,6 +1424,49 @@
       "auditStatus": "needs_review"
     },
     {
+      "id": "skillsmp-construction-gamma-construction-gamma-skills-skills-procore-project-management",
+      "name": "procore-project-management",
+      "author": "construction-gamma",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from construction-gamma/construction-gamma-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "construction",
+        "gamma",
+        "procore",
+        "project",
+        "management"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/construction-gamma/construction-gamma-skills/skills-procore-project-management",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dgcruzing-construction-office-skills-rfi-drafter",
+      "name": "rfi-drafter",
+      "author": "dgcruzing",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dgcruzing/construction-office-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "construction",
+        "office",
+        "rfi",
+        "drafter"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/dgcruzing/construction-office-skills/rfi-drafter",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
       "id": "skillsmp-benchflow-ai-skillsbench-tasks-ada-bathroom-plan-repair-environment-skills-ada-plan-view-accessibility",
       "name": "tasks-ada-bathroom-plan-repair-environment-skills-ada-plan-view-accessibility",
       "author": "benchflow-ai",
@@ -1252,6 +1506,71 @@
       "updatedAt": "1783504629",
       "occupationId": "22",
       "skillsmpUrl": "https://skillsmp.com/creators/benchflow-ai/skillsbench/tasks-ada-bathroom-plan-repair-environment-skills-architectural-dxf-extraction",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dgcruzing-construction-office-skills-tender-compare-matrix",
+      "name": "tender-compare-matrix",
+      "author": "dgcruzing",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dgcruzing/construction-office-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "construction",
+        "office",
+        "tender",
+        "compare",
+        "matrix"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/dgcruzing/construction-office-skills/tender-compare-matrix",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-dgcruzing-construction-office-skills-variation-eot-draft",
+      "name": "variation-eot-draft",
+      "author": "dgcruzing",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from dgcruzing/construction-office-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "construction",
+        "office",
+        "variation",
+        "eot",
+        "draft"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/dgcruzing/construction-office-skills/variation-eot-draft",
+      "source": "skillsmp-sitemap",
+      "secureScore": 84,
+      "auditStatus": "needs_review"
+    },
+    {
+      "id": "skillsmp-nikunjkothiya-gpt-6-astra-skills-skills-visual-reconstruction",
+      "name": "visual-reconstruction",
+      "author": "nikunjkothiya",
+      "stars": 0,
+      "description": "SkillsMP public sitemap skill from nikunjkothiya/gpt-6-astra-skills. Mirrored from the public SkillsMP sitemap for browsing and indexing.",
+      "tags": [
+        "skillsmp",
+        "sitemap",
+        "gpt",
+        "astra",
+        "visual",
+        "reconstruction"
+      ],
+      "updatedAt": "1791585562",
+      "occupationId": "22",
+      "skillsmpUrl": "https://skillsmp.com/creators/nikunjkothiya/gpt-6-astra-skills/skills-visual-reconstruction",
       "source": "skillsmp-sitemap",
       "secureScore": 84,
       "auditStatus": "needs_review"
